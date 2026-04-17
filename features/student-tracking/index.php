@@ -41,7 +41,7 @@ include '../../partials/nav.php';
 
       <!-- Breadcrumb -->
       <nav aria-label="Breadcrumb" class="mb-8">
-        <ol class="flex flex-wrap items-center gap-2 text-sm" style="color: var(--text-muted);">
+        <ol class="flex flex-wrap items-center gap-2 text-base" style="color: var(--text-muted);">
           <li><a href="/" style="color: var(--text-muted);">Home</a></li>
           <li aria-hidden="true" style="color: var(--text-muted);">›</li>
           <li><a href="/features/" style="color: var(--text-muted);">Features</a></li>
@@ -87,7 +87,7 @@ include '../../partials/nav.php';
               <span class="text-2xl" aria-hidden="true">🔥</span>
               <div>
                 <div class="font-heading font-bold mb-1" style="color: var(--text-primary);">Study Streak</div>
-                <p class="text-sm" style="color: var(--text-secondary);">Har roz padhne ka streak track hota hai. 7 din, 30 din, 100 din — streak todna mat. Motivation ka sabse bada source.</p>
+                <p class="text-base" style="color: var(--text-secondary);">Har roz padhne ka streak track hota hai. 7 din, 30 din, 100 din — streak todna mat. Motivation ka sabse bada source.</p>
               </div>
             </div>
           </div>
@@ -96,7 +96,7 @@ include '../../partials/nav.php';
               <span class="text-2xl" aria-hidden="true">📉</span>
               <div>
                 <div class="font-heading font-bold mb-1" style="color: var(--text-primary);">Weakness Graphs</div>
-                <p class="text-sm" style="color: var(--text-secondary);">Maths mein Algebra weak hai? Chemistry ke kaunse topics pe zyada time laga? Graph clearly dikhata hai — no guessing.</p>
+                <p class="text-base" style="color: var(--text-secondary);">Maths mein Algebra weak hai? Chemistry ke kaunse topics pe zyada time laga? Graph clearly dikhata hai — no guessing.</p>
               </div>
             </div>
           </div>
@@ -105,7 +105,7 @@ include '../../partials/nav.php';
               <span class="text-2xl" aria-hidden="true">🏅</span>
               <div>
                 <div class="font-heading font-bold mb-1" style="color: var(--text-primary);">Badge System</div>
-                <p class="text-sm" style="color: var(--text-secondary);">First 7-day streak, Chapter Master, 100 Questions Solved — achievements jo tum earn karte ho. Real pride.</p>
+                <p class="text-base" style="color: var(--text-secondary);">First 7-day streak, Chapter Master, 100 Questions Solved — achievements jo tum earn karte ho. Real pride.</p>
               </div>
             </div>
           </div>
@@ -135,19 +135,19 @@ include '../../partials/nav.php';
         <div class="card animate-on-scroll" style="border-top: 4px solid var(--primary);">
           <div class="text-2xl mb-3" aria-hidden="true">🔥</div>
           <div class="font-heading font-bold mb-2" style="color: var(--text-primary);">Daily Streak Tracker</div>
-          <p class="text-sm" style="color: var(--text-secondary);">Consecutive study days ka count. Break hone pe notification — "Aaj bhi padho, streak mat todo!"</p>
+          <p class="text-base" style="color: var(--text-secondary);">Consecutive study days ka count. Break hone pe notification — "Aaj bhi padho, streak mat todo!"</p>
         </div>
 
         <div class="card animate-on-scroll" style="border-top: 4px solid var(--accent);">
           <div class="text-2xl mb-3" aria-hidden="true">📊</div>
           <div class="font-heading font-bold mb-2" style="color: var(--text-primary);">Subject Weakness Graph</div>
-          <p class="text-sm" style="color: var(--text-secondary);">Bar chart — har subject mein score. Red = weak, green = strong. Ek nazar mein kahan mehnat karni hai.</p>
+          <p class="text-base" style="color: var(--text-secondary);">Bar chart — har subject mein score. Red = weak, green = strong. Ek nazar mein kahan mehnat karni hai.</p>
         </div>
 
         <div class="card animate-on-scroll" style="border-top: 4px solid var(--success);">
           <div class="text-2xl mb-3" aria-hidden="true">⏱️</div>
           <div class="font-heading font-bold mb-2" style="color: var(--text-primary);">Time Per Topic</div>
-          <p class="text-sm" style="color: var(--text-secondary);">Kaunse topic pe kitna time laga — detailed breakdown. Slow topics = revision needed.</p>
+          <p class="text-base" style="color: var(--text-secondary);">Kaunse topic pe kitna time laga — detailed breakdown. Slow topics = revision needed.</p>
         </div>
 
         <div class="card animate-on-scroll" style="border-top: 4px solid var(--info);">
@@ -159,13 +159,13 @@ include '../../partials/nav.php';
         <div class="card animate-on-scroll" style="border-top: 4px solid var(--text-muted);">
           <div class="text-2xl mb-3" aria-hidden="true">👥</div>
           <div class="font-heading font-bold mb-2" style="color: var(--text-primary);">Anonymous Class Compare</div>
-          <p class="text-sm" style="color: var(--text-secondary);">Class average se apni comparison — anonymous. Naam nahi pata, sirf: "Tum top 30% mein ho."</p>
+          <p class="text-base" style="color: var(--text-secondary);">Class average se apni comparison — anonymous. Naam nahi pata, sirf: "Tum top 30% mein ho."</p>
         </div>
 
         <div class="card animate-on-scroll" style="border-top: 4px solid var(--primary);">
           <div class="text-2xl mb-3" aria-hidden="true">📈</div>
           <div class="font-heading font-bold mb-2" style="color: var(--text-primary);">Weekly Progress Report</div>
-          <p class="text-sm" style="color: var(--text-secondary);">Har hafte ka summary — kitna padha, kaha improve hua, kahan aur dhyan chahiye. Clear aur actionable.</p>
+          <p class="text-base" style="color: var(--text-secondary);">Har hafte ka summary — kitna padha, kaha improve hua, kahan aur dhyan chahiye. Clear aur actionable.</p>
         </div>
 
       </div>
@@ -187,22 +187,22 @@ include '../../partials/nav.php';
         <a href="/features/adaptive-learning/" class="card animate-on-scroll" style="text-decoration: none; display: block;">
           <div class="text-2xl mb-3" aria-hidden="true">🧠</div>
           <div class="font-heading font-bold mb-2" style="color: var(--text-primary);">Adaptive Learning</div>
-          <p class="text-sm mb-3" style="color: var(--text-secondary);">Dashboard mein weak spots pata chala — Adaptive Learning automatically wahan focus karti hai.</p>
-          <span class="text-sm font-bold" style="color: var(--primary-light);">Explore →</span>
+          <p class="text-base mb-3" style="color: var(--text-secondary);">Dashboard mein weak spots pata chala — Adaptive Learning automatically wahan focus karti hai.</p>
+          <span class="text-base font-bold" style="color: var(--primary-light);">Explore →</span>
         </a>
 
         <a href="/features/parent-portal/" class="card animate-on-scroll" style="text-decoration: none; display: block;">
           <div class="text-2xl mb-3" aria-hidden="true">👪</div>
           <div class="font-heading font-bold mb-2" style="color: var(--text-primary);">Parent Portal</div>
-          <p class="text-sm mb-3" style="color: var(--text-secondary);">Tumhara dashboard — maa-baap ka portal. Weekly summary auto-share hoti hai.</p>
-          <span class="text-sm font-bold" style="color: var(--primary-light);">Explore →</span>
+          <p class="text-base mb-3" style="color: var(--text-secondary);">Tumhara dashboard — maa-baap ka portal. Weekly summary auto-share hoti hai.</p>
+          <span class="text-base font-bold" style="color: var(--primary-light);">Explore →</span>
         </a>
 
         <a href="/features/mock-exams/" class="card animate-on-scroll" style="text-decoration: none; display: block;">
           <div class="text-2xl mb-3" aria-hidden="true">📝</div>
           <div class="font-heading font-bold mb-2" style="color: var(--text-primary);">Mock Exams</div>
-          <p class="text-sm mb-3" style="color: var(--text-secondary);">Mock exam results dashboard mein auto-save — progress track karte raho.</p>
-          <span class="text-sm font-bold" style="color: var(--primary-light);">Explore →</span>
+          <p class="text-base mb-3" style="color: var(--text-secondary);">Mock exam results dashboard mein auto-save — progress track karte raho.</p>
+          <span class="text-base font-bold" style="color: var(--primary-light);">Explore →</span>
         </a>
 
       </div>

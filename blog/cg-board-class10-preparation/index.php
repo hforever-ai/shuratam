@@ -90,7 +90,7 @@ include '../../partials/nav.php';
           <span class="badge badge-primary">📋 Board Exam</span>
           <span class="badge badge-accent">Class 10</span>
           <span class="badge" style="background: var(--bg-surface); color: var(--text-muted); border: 1px solid var(--border-subtle);">CG Board 2026</span>
-          <span class="text-sm" style="color: var(--text-muted);">Apr 17, 2026 · SAAVI Didi</span>
+          <span class="text-base" style="color: var(--text-muted);">Apr 17, 2026 · SAAVI Didi</span>
         </div>
 
         <h1 class="text-4xl sm:text-5xl font-heading font-bold mb-3 text-gradient">
@@ -108,7 +108,7 @@ include '../../partials/nav.php';
         <!-- Quick summary box -->
         <div class="card mb-8" style="border-left: 4px solid var(--accent); background: var(--bg-surface);">
           <div class="font-heading font-bold mb-3" style="color: var(--accent);">Is Guide Mein Milega:</div>
-          <ul class="text-sm space-y-1" style="color: var(--text-secondary);">
+          <ul class="text-base space-y-1" style="color: var(--text-secondary);">
             <li>✅ CGBSE exam pattern — theory, practical, pass marks</li>
             <li>✅ 6-month month-wise study schedule</li>
             <li>✅ Science, Maths, Hindi ke important topics</li>
@@ -140,17 +140,17 @@ include '../../partials/nav.php';
           <div class="grid grid-cols-1 sm:grid-cols-3 gap-4 mb-6">
             <div class="card animate-on-scroll text-center" style="border-top: 3px solid var(--primary);">
               <div class="text-3xl font-heading font-bold mb-1" style="color: var(--primary-light);">75</div>
-              <div class="text-sm font-heading font-bold" style="color: var(--text-primary);">Theory Marks</div>
+              <div class="text-base font-heading font-bold" style="color: var(--text-primary);">Theory Marks</div>
               <p class="text-xs mt-1" style="color: var(--text-muted);">Written exam — 3 hours</p>
             </div>
             <div class="card animate-on-scroll text-center" style="border-top: 3px solid var(--accent);">
               <div class="text-3xl font-heading font-bold mb-1" style="color: var(--accent);">25</div>
-              <div class="text-sm font-heading font-bold" style="color: var(--text-primary);">Practical Marks</div>
+              <div class="text-base font-heading font-bold" style="color: var(--text-primary);">Practical Marks</div>
               <p class="text-xs mt-1" style="color: var(--text-muted);">Lab / Internal assessment</p>
             </div>
             <div class="card animate-on-scroll text-center" style="border-top: 3px solid var(--success);">
               <div class="text-3xl font-heading font-bold mb-1" style="color: var(--success);">33%</div>
-              <div class="text-sm font-heading font-bold" style="color: var(--text-primary);">Pass Marks</div>
+              <div class="text-base font-heading font-bold" style="color: var(--text-primary);">Pass Marks</div>
               <p class="text-xs mt-1" style="color: var(--text-muted);">Theory aur Practical dono mein alag-alag</p>
             </div>
           </div>
@@ -181,7 +181,7 @@ include '../../partials/nav.php';
                 <div class="w-8 h-8 rounded-full flex items-center justify-center font-heading font-bold text-sm flex-shrink-0" style="background: var(--primary-glow); color: var(--primary-light); border: 2px solid var(--primary);">1</div>
                 <div class="font-heading font-bold" style="color: var(--text-primary);">August–September — Foundation Banao</div>
               </div>
-              <p class="text-sm" style="color: var(--text-secondary);">Poora syllabus ek baar padho — koi bhi chapter skip mat karo. Focus karo samajhne pe, ratt-a pe nahi. SAAVI ke saath concepts ko conversationally samjho. Agar koi chapter Class 9 ka yaad nahi, toh pehle woh revise karo — foundation agar strong hai tabhi aage banegi.</p>
+              <p class="text-base" style="color: var(--text-secondary);">Poora syllabus ek baar padho — koi bhi chapter skip mat karo. Focus karo samajhne pe, ratt-a pe nahi. SAAVI ke saath concepts ko conversationally samjho. Agar koi chapter Class 9 ka yaad nahi, toh pehle woh revise karo — foundation agar strong hai tabhi aage banegi.</p>
             </div>
 
             <div class="card animate-on-scroll" style="border-left: 4px solid var(--accent);">
@@ -189,7 +189,7 @@ include '../../partials/nav.php';
                 <div class="w-8 h-8 rounded-full flex items-center justify-center font-heading font-bold text-sm flex-shrink-0" style="background: var(--accent-glow); color: var(--accent); border: 2px solid var(--accent);">2</div>
                 <div class="font-heading font-bold" style="color: var(--text-primary);">October — Important Chapters Deep Dive</div>
               </div>
-              <p class="text-sm" style="color: var(--text-secondary);">High-marks chapters pe zyada time do. Science mein Chemical Reactions aur Electricity, Maths mein Quadratic Equations aur Trigonometry. Notes banao — khud haath se likhna yaad karne mein help karta hai. Diagrams aur equations baar baar practice karo.</p>
+              <p class="text-base" style="color: var(--text-secondary);">High-marks chapters pe zyada time do. Science mein Chemical Reactions aur Electricity, Maths mein Quadratic Equations aur Trigonometry. Notes banao — khud haath se likhna yaad karne mein help karta hai. Diagrams aur equations baar baar practice karo.</p>
             </div>
 
             <div class="card animate-on-scroll" style="border-left: 4px solid var(--warning);">
@@ -197,7 +197,7 @@ include '../../partials/nav.php';
                 <div class="w-8 h-8 rounded-full flex items-center justify-center font-heading font-bold text-sm flex-shrink-0" style="background: rgba(234,179,8,0.15); color: var(--warning); border: 2px solid var(--warning);">3</div>
                 <div class="font-heading font-bold" style="color: var(--text-primary);">November — Practice aur Mock Tests</div>
               </div>
-              <p class="text-sm" style="color: var(--text-secondary);">Previous year papers solve karna shuru karo — 2023, 2024, 2025 ke papers. Time limit ke saath likho — 3 ghante mein poora paper finish karne ki practice karo. SAAVI se topic-wise quiz lo — instant feedback milti hai.</p>
+              <p class="text-base" style="color: var(--text-secondary);">Previous year papers solve karna shuru karo — 2023, 2024, 2025 ke papers. Time limit ke saath likho — 3 ghante mein poora paper finish karne ki practice karo. SAAVI se topic-wise quiz lo — instant feedback milti hai.</p>
             </div>
 
             <div class="card animate-on-scroll" style="border-left: 4px solid var(--success);">
@@ -205,7 +205,7 @@ include '../../partials/nav.php';
                 <div class="w-8 h-8 rounded-full flex items-center justify-center font-heading font-bold text-sm flex-shrink-0" style="background: rgba(34,197,94,0.15); color: var(--success); border: 2px solid var(--success);">4</div>
                 <div class="font-heading font-bold" style="color: var(--text-primary);">December — Weak Areas Fix Karo</div>
               </div>
-              <p class="text-sm" style="color: var(--text-secondary);">Mock tests se pata chala kaun sa topic weak hai? December mein sirf unhi pe focus karo. Ek topic baar baar practice karo jab tak confidence na aaye. Yeh woh mahina hai jab students sabse zyada improvement feel karte hain.</p>
+              <p class="text-base" style="color: var(--text-secondary);">Mock tests se pata chala kaun sa topic weak hai? December mein sirf unhi pe focus karo. Ek topic baar baar practice karo jab tak confidence na aaye. Yeh woh mahina hai jab students sabse zyada improvement feel karte hain.</p>
             </div>
 
             <div class="card animate-on-scroll" style="border-left: 4px solid var(--primary-light);">
@@ -213,7 +213,7 @@ include '../../partials/nav.php';
                 <div class="w-8 h-8 rounded-full flex items-center justify-center font-heading font-bold text-sm flex-shrink-0" style="background: var(--primary-glow); color: var(--primary-light); border: 2px solid var(--primary);">5</div>
                 <div class="font-heading font-bold" style="color: var(--text-primary);">January — Revision aur Formula Sheets</div>
               </div>
-              <p class="text-sm" style="color: var(--text-secondary);">Ek page pe har subject ke saare important formulas, definitions, aur equations likho. Roz subah 10 minute yeh sheet dekho. Naya kuch padhne ki zaroorat nahi — sirf jo padha hai use solid karo.</p>
+              <p class="text-base" style="color: var(--text-secondary);">Ek page pe har subject ke saare important formulas, definitions, aur equations likho. Roz subah 10 minute yeh sheet dekho. Naya kuch padhne ki zaroorat nahi — sirf jo padha hai use solid karo.</p>
             </div>
 
             <div class="card animate-on-scroll" style="border-left: 4px solid var(--error);">
@@ -221,7 +221,7 @@ include '../../partials/nav.php';
                 <div class="w-8 h-8 rounded-full flex items-center justify-center font-heading font-bold text-sm flex-shrink-0" style="background: rgba(239,68,68,0.15); color: var(--error); border: 2px solid var(--error);">6</div>
                 <div class="font-heading font-bold" style="color: var(--text-primary);">February-March — Final Revision Only</div>
               </div>
-              <p class="text-sm" style="color: var(--text-secondary);">Exam se 2 hafte pehle koi nayi cheez mat padho. Sirf revision karo. Neend poori lo, khana sahi khaao, aur SAAVI ke saath quick concept checks karte raho. Exam se ek raat pehle sirf formula sheets dekho aur kal ke liye fresh raho.</p>
+              <p class="text-base" style="color: var(--text-secondary);">Exam se 2 hafte pehle koi nayi cheez mat padho. Sirf revision karo. Neend poori lo, khana sahi khaao, aur SAAVI ke saath quick concept checks karte raho. Exam se ek raat pehle sirf formula sheets dekho aur kal ke liye fresh raho.</p>
             </div>
 
           </div>
@@ -246,15 +246,15 @@ include '../../partials/nav.php';
             <div class="space-y-3">
               <div>
                 <div class="font-heading font-bold text-sm mb-1" style="color: var(--text-primary);">Chemical Reactions and Equations <span style="color: var(--success);">(6-8 marks)</span></div>
-                <p class="text-sm" style="color: var(--text-secondary);">Balancing equations, types of reactions (combination, decomposition, displacement, redox). Yeh chapter ekdum basic hai — equations baar baar likhne ki practice karo. CG Board mein balance karo aur type identify karo — dono aate hain.</p>
+                <p class="text-base" style="color: var(--text-secondary);">Balancing equations, types of reactions (combination, decomposition, displacement, redox). Yeh chapter ekdum basic hai — equations baar baar likhne ki practice karo. CG Board mein balance karo aur type identify karo — dono aate hain.</p>
               </div>
               <div style="border-top: 1px solid var(--border-subtle); padding-top: 0.75rem;">
                 <div class="font-heading font-bold text-sm mb-1" style="color: var(--text-primary);">Electricity <span style="color: var(--success);">(6-8 marks)</span></div>
-                <p class="text-sm" style="color: var(--text-secondary);">Ohm's law, resistance in series and parallel, power calculations. Numerical problems guaranteed aate hain. Formula yaad karo: V=IR, P=VI, aur series-parallel ke formulas. Practice ke bina yeh topic mushkil lagta hai — SAAVI ke saath numericals karo.</p>
+                <p class="text-base" style="color: var(--text-secondary);">Ohm's law, resistance in series and parallel, power calculations. Numerical problems guaranteed aate hain. Formula yaad karo: V=IR, P=VI, aur series-parallel ke formulas. Practice ke bina yeh topic mushkil lagta hai — SAAVI ke saath numericals karo.</p>
               </div>
               <div style="border-top: 1px solid var(--border-subtle); padding-top: 0.75rem;">
                 <div class="font-heading font-bold text-sm mb-1" style="color: var(--text-primary);">Life Processes <span style="color: var(--success);">(5-6 marks)</span></div>
-                <p class="text-sm" style="color: var(--text-secondary);">Nutrition, respiration, transportation, excretion. Diagrams zaroori hain — heart ka diagram, nephron ka diagram, aur digestive system. Labeled diagrams mein 3-4 marks easily aate hain.</p>
+                <p class="text-base" style="color: var(--text-secondary);">Nutrition, respiration, transportation, excretion. Diagrams zaroori hain — heart ka diagram, nephron ka diagram, aur digestive system. Labeled diagrams mein 3-4 marks easily aate hain.</p>
               </div>
             </div>
           </div>
@@ -268,15 +268,15 @@ include '../../partials/nav.php';
             <div class="space-y-3">
               <div>
                 <div class="font-heading font-bold text-sm mb-1" style="color: var(--text-primary);">Quadratic Equations <span style="color: var(--success);">(6-8 marks)</span></div>
-                <p class="text-sm" style="color: var(--text-secondary);">Teeno methods — factorization, completing the square, quadratic formula — sab yaad karo. Word problems bhi aate hain. Discriminant (b²-4ac) ka use karke roots ki nature batana — yeh concept clear rakhna zaroori hai.</p>
+                <p class="text-base" style="color: var(--text-secondary);">Teeno methods — factorization, completing the square, quadratic formula — sab yaad karo. Word problems bhi aate hain. Discriminant (b²-4ac) ka use karke roots ki nature batana — yeh concept clear rakhna zaroori hai.</p>
               </div>
               <div style="border-top: 1px solid var(--border-subtle); padding-top: 0.75rem;">
                 <div class="font-heading font-bold text-sm mb-1" style="color: var(--text-primary);">Trigonometry <span style="color: var(--success);">(8-10 marks)</span></div>
-                <p class="text-sm" style="color: var(--text-secondary);">Sin, cos, tan ke values (0°, 30°, 45°, 60°, 90°) raat ko neend mein bhi aane chahiye. Identities yaad karo. Heights and distances ke word problems aate hain — angle of elevation aur depression ke diagrams banana seekho.</p>
+                <p class="text-base" style="color: var(--text-secondary);">Sin, cos, tan ke values (0°, 30°, 45°, 60°, 90°) raat ko neend mein bhi aane chahiye. Identities yaad karo. Heights and distances ke word problems aate hain — angle of elevation aur depression ke diagrams banana seekho.</p>
               </div>
               <div style="border-top: 1px solid var(--border-subtle); padding-top: 0.75rem;">
                 <div class="font-heading font-bold text-sm mb-1" style="color: var(--text-primary);">Statistics <span style="color: var(--success);">(6-8 marks)</span></div>
-                <p class="text-sm" style="color: var(--text-secondary);">Mean, median, mode — grouped data ke liye. Cumulative frequency table banana aur ogive draw karna. Yeh topic agar ek baar practice kar lo toh guaranteed marks hain — formula straightforward hai, sirf careful calculation chahiye.</p>
+                <p class="text-base" style="color: var(--text-secondary);">Mean, median, mode — grouped data ke liye. Cumulative frequency table banana aur ogive draw karna. Yeh topic agar ek baar practice kar lo toh guaranteed marks hain — formula straightforward hai, sirf careful calculation chahiye.</p>
               </div>
             </div>
           </div>
@@ -287,8 +287,8 @@ include '../../partials/nav.php';
               <span class="text-2xl">📖</span>
               <div class="font-heading font-bold text-xl" style="color: var(--warning);">Hindi</div>
             </div>
-            <p class="text-sm mb-3" style="color: var(--text-secondary);">Hindi mein Grammar section se guaranteed marks aate hain — sandhi, samas, muhavare, alankar. Literature mein poems aur prose ke important questions yaad karo. Essay aur letter writing mein format sahi rakhne se extra marks milte hain. Prayogvaachak nibandh mein apni language mein likhna — points copy karne se zyada marks milte hain.</p>
-            <div class="text-sm font-heading font-bold" style="color: var(--warning);">Pro tip: Grammar ke questions 15-20 marks ke hote hain — yeh sab objective type hain. 100% marks lana possible hai agar grammar solid ho!</div>
+            <p class="text-base mb-3" style="color: var(--text-secondary);">Hindi mein Grammar section se guaranteed marks aate hain — sandhi, samas, muhavare, alankar. Literature mein poems aur prose ke important questions yaad karo. Essay aur letter writing mein format sahi rakhne se extra marks milte hain. Prayogvaachak nibandh mein apni language mein likhna — points copy karne se zyada marks milte hain.</p>
+            <div class="text-base font-heading font-bold" style="color: var(--warning);">Pro tip: Grammar ke questions 15-20 marks ke hote hain — yeh sab objective type hain. 100% marks lana possible hai agar grammar solid ho!</div>
           </div>
         </div>
 
@@ -309,7 +309,7 @@ include '../../partials/nav.php';
                 <span class="text-2xl">❌</span>
                 <div>
                   <div class="font-heading font-bold mb-1" style="color: var(--error);">Sirf NCERT padh ke CG Board dena</div>
-                  <p class="text-sm" style="color: var(--text-secondary);">CG Board ka syllabus CBSE jaisa hai but exam pattern alag hai. CG Board ke previous year papers zaroor practice karo. Objective section ka weightage alag hai — woh pattern practice se hi samajh aata hai.</p>
+                  <p class="text-base" style="color: var(--text-secondary);">CG Board ka syllabus CBSE jaisa hai but exam pattern alag hai. CG Board ke previous year papers zaroor practice karo. Objective section ka weightage alag hai — woh pattern practice se hi samajh aata hai.</p>
                 </div>
               </div>
             </div>
@@ -319,7 +319,7 @@ include '../../partials/nav.php';
                 <span class="text-2xl">❌</span>
                 <div>
                   <div class="font-heading font-bold mb-1" style="color: var(--error);">Practical ko chhod dena</div>
-                  <p class="text-sm" style="color: var(--text-secondary);">25 marks ke practical mostly assured hote hain agar tum attend karo aur basic record banao. Par agar theory mein thodi kami rahi toh practical marks rescue karte hain. Kabhi bunk mat karo.</p>
+                  <p class="text-base" style="color: var(--text-secondary);">25 marks ke practical mostly assured hote hain agar tum attend karo aur basic record banao. Par agar theory mein thodi kami rahi toh practical marks rescue karte hain. Kabhi bunk mat karo.</p>
                 </div>
               </div>
             </div>
@@ -329,7 +329,7 @@ include '../../partials/nav.php';
                 <span class="text-2xl">❌</span>
                 <div>
                   <div class="font-heading font-bold mb-1" style="color: var(--error);">Maths mein sirf formula yaad karna, practice nahi karna</div>
-                  <p class="text-sm" style="color: var(--text-secondary);">Maths mein formula sirf 1 mark ka hai — application 5-6 marks ki. Roz minimum 10-15 questions practice karo. Calculator nahi milega exam mein — mental calculation tez karo. Rough work neat rakhna bhi marks bachaata hai.</p>
+                  <p class="text-base" style="color: var(--text-secondary);">Maths mein formula sirf 1 mark ka hai — application 5-6 marks ki. Roz minimum 10-15 questions practice karo. Calculator nahi milega exam mein — mental calculation tez karo. Rough work neat rakhna bhi marks bachaata hai.</p>
                 </div>
               </div>
             </div>
@@ -339,7 +339,7 @@ include '../../partials/nav.php';
                 <span class="text-2xl">❌</span>
                 <div>
                   <div class="font-heading font-bold mb-1" style="color: var(--error);">January tak start nahi karna</div>
-                  <p class="text-sm" style="color: var(--text-secondary);">Chhattisgarh ke bahut se students January mein "serious" hote hain — tab tak sirf 4-6 hafte bacha hota hai. Stress mein padha hua yaad nahi rehta. August-September se hi shuru karo — slow aur steady wins the board exam.</p>
+                  <p class="text-base" style="color: var(--text-secondary);">Chhattisgarh ke bahut se students January mein "serious" hote hain — tab tak sirf 4-6 hafte bacha hota hai. Stress mein padha hua yaad nahi rehta. August-September se hi shuru karo — slow aur steady wins the board exam.</p>
                 </div>
               </div>
             </div>
@@ -361,17 +361,17 @@ include '../../partials/nav.php';
             <div class="card animate-on-scroll text-center">
               <div class="text-3xl mb-2">💬</div>
               <div class="font-heading font-bold" style="color: var(--text-primary);">Concept Samjhao</div>
-              <p class="text-sm" style="color: var(--text-secondary);">Jo bhi nahi samjha — SAAVI se pooch lo. Woh 5 alag tarike se samjha sakti hai jab tak clear na ho jaaye.</p>
+              <p class="text-base" style="color: var(--text-secondary);">Jo bhi nahi samjha — SAAVI se pooch lo. Woh 5 alag tarike se samjha sakti hai jab tak clear na ho jaaye.</p>
             </div>
             <div class="card animate-on-scroll text-center">
               <div class="text-3xl mb-2">🎯</div>
               <div class="font-heading font-bold" style="color: var(--text-primary);">Adaptive Practice</div>
-              <p class="text-sm" style="color: var(--text-secondary);">SAAVI tumhari performance dekh ke questions ka level adjust karti hai — na boring, na frustrating.</p>
+              <p class="text-base" style="color: var(--text-secondary);">SAAVI tumhari performance dekh ke questions ka level adjust karti hai — na boring, na frustrating.</p>
             </div>
             <div class="card animate-on-scroll text-center">
               <div class="text-3xl mb-2">📊</div>
               <div class="font-heading font-bold" style="color: var(--text-primary);">Progress Track</div>
-              <p class="text-sm" style="color: var(--text-secondary);">Kaunsa topic strong hai, kaunsa weak — SAAVI track karti hai aur tum pe focus karne ko kehti hai.</p>
+              <p class="text-base" style="color: var(--text-secondary);">Kaunsa topic strong hai, kaunsa weak — SAAVI track karti hai aur tum pe focus karne ko kehti hai.</p>
             </div>
           </div>
 
@@ -379,7 +379,7 @@ include '../../partials/nav.php';
             <p class="text-lg font-heading font-bold mb-4" style="color: var(--accent);">
               CG Board 2026 Mein Ache Marks Laana Chahte Ho?
             </p>
-            <p class="text-sm mb-2" style="color: var(--text-secondary);">
+            <p class="text-base mb-2" style="color: var(--text-secondary);">
               SAAVI ke saath practice karo — Hindi mein, apne syllabus ke saath. Early access ke liye waitlist join karo.
             </p>
             <a href="/waitlist/" class="btn btn-primary">Join Shrutam Waitlist — Free Hai →</a>
@@ -408,7 +408,7 @@ include '../../partials/nav.php';
               <span style="color: var(--primary-light);">+</span>
             </summary>
             <div class="mt-4 pt-4" style="border-top: 1px solid var(--border-subtle);">
-              <p class="text-sm" style="color: var(--text-body);">
+              <p class="text-base" style="color: var(--text-body);">
                 CGBSE Class 10 mein pass hone ke liye har subject mein minimum <strong>33% marks chahiye</strong>. Theory (75 marks) mein alag se 33% aur Practical (25 marks) mein alag se 33% — dono mein alag alag pass karna zaroori hai. Overall aggregate se kaam nahi chalta. Matlab theory mein kam se kam 25 marks aur practical mein kam se kam 9 marks chahiye.
               </p>
             </div>
@@ -420,7 +420,7 @@ include '../../partials/nav.php';
               <span style="color: var(--primary-light);">+</span>
             </summary>
             <div class="mt-4 pt-4" style="border-top: 1px solid var(--border-subtle);">
-              <p class="text-sm" style="color: var(--text-body);">
+              <p class="text-base" style="color: var(--text-body);">
                 CGBSE Class 10 board exams typically <strong>February-March</strong> mein hote hain. 2026 ke exact dates ke liye cgbse.nic.in official website check karo. Preparation ke liye abhi se start karo — 6 months pehle se daily 4-5 hours ki padhai best results deti hai. Date announce hone ka wait mat karo!
               </p>
             </div>
@@ -432,7 +432,7 @@ include '../../partials/nav.php';
               <span style="color: var(--primary-light);">+</span>
             </summary>
             <div class="mt-4 pt-4" style="border-top: 1px solid var(--border-subtle);">
-              <p class="text-sm" style="color: var(--text-body);">
+              <p class="text-base" style="color: var(--text-body);">
                 CG Board Class 10 Science mein sabse zyada marks wale chapters hain: <strong>Chemical Reactions and Equations</strong> (5-7 marks), <strong>Electricity</strong> (6-8 marks), <strong>Life Processes</strong> (5-6 marks), aur <strong>Light</strong> (5-6 marks). Har saal inme se zaroor questions aate hain. Equations aur diagrams pe focus karo — woh marks ke biggest source hain.
               </p>
             </div>
@@ -444,7 +444,7 @@ include '../../partials/nav.php';
               <span style="color: var(--primary-light);">+</span>
             </summary>
             <div class="mt-4 pt-4" style="border-top: 1px solid var(--border-subtle);">
-              <p class="text-sm" style="color: var(--text-body);">
+              <p class="text-base" style="color: var(--text-body);">
                 Quadratic Equations sirf <strong>teen methods</strong> yaad karo: Factorization, Completing the Square, aur Quadratic Formula. Pehle easy practice questions karo (discriminant nikalna), phir word problems. Roz 5-10 questions practice karo — ek hafte mein confidence aa jaata hai. SAAVI ke saath adaptive practice karo — woh tumhari speed aur accuracy ke hisaab se questions adjust karti hai.
               </p>
             </div>
@@ -456,7 +456,7 @@ include '../../partials/nav.php';
               <span style="color: var(--primary-light);">+</span>
             </summary>
             <div class="mt-4 pt-4" style="border-top: 1px solid var(--border-subtle);">
-              <p class="text-sm" style="color: var(--text-body);">
+              <p class="text-base" style="color: var(--text-body);">
                 CG Board ka syllabus CBSE se milta julta hai but <strong>exam pattern thoda alag hai</strong>. CG Board mein objective questions zyada hote hain aur practical marks separately count hote hain. CBSE ke sample papers se practice karna helpful hai, par CG Board ke previous year papers practice karna mandatory hai — wahi pattern samajhne ka best tarika hai.
               </p>
             </div>
@@ -481,12 +481,12 @@ include '../../partials/nav.php';
           <a href="/blog/adaptive-learning-kya-hai/" class="card flex flex-col gap-2 animate-on-scroll" style="text-decoration: none; border-top: 3px solid var(--primary);">
             <span class="badge badge-primary self-start">Learning</span>
             <div class="font-heading font-bold" style="color: var(--text-primary);">Adaptive Learning Kya Hai</div>
-            <p class="text-sm" style="color: var(--text-secondary);">SAAVI kaise har student ke liye alag padhai path banati hai — samjho simple mein.</p>
+            <p class="text-base" style="color: var(--text-secondary);">SAAVI kaise har student ke liye alag padhai path banati hai — samjho simple mein.</p>
           </a>
           <a href="/blog/zero-to-hero-learning/" class="card flex flex-col gap-2 animate-on-scroll" style="text-decoration: none; border-top: 3px solid var(--accent);">
             <span class="badge badge-accent self-start">Strategy</span>
             <div class="font-heading font-bold" style="color: var(--text-primary);">Zero to Hero — Kuch Nahi Se Board Ready</div>
-            <p class="text-sm" style="color: var(--text-secondary);">Prerequisites check karo, gaps fill karo, board exam ready ho jao.</p>
+            <p class="text-base" style="color: var(--text-secondary);">Prerequisites check karo, gaps fill karo, board exam ready ho jao.</p>
           </a>
         </div>
 

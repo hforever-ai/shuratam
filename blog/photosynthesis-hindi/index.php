@@ -90,7 +90,7 @@ include '../../partials/nav.php';
           <span class="badge badge-primary">🔬 Science</span>
           <span class="badge badge-accent">Class 8</span>
           <span class="badge" style="background: var(--bg-surface); color: var(--text-muted); border: 1px solid var(--border-subtle);">CBSE + CG Board</span>
-          <span class="text-sm" style="color: var(--text-muted);">Apr 17, 2026 · SAAVI Didi</span>
+          <span class="text-base" style="color: var(--text-muted);">Apr 17, 2026 · SAAVI Didi</span>
         </div>
 
         <h1 class="text-4xl sm:text-5xl font-heading font-bold mb-3 text-gradient">
@@ -108,7 +108,7 @@ include '../../partials/nav.php';
         <!-- Quick summary box -->
         <div class="card mb-8" style="border-left: 4px solid var(--accent); background: var(--bg-surface);">
           <div class="font-heading font-bold mb-3" style="color: var(--accent);">Is Article Mein Seekhoge:</div>
-          <ul class="text-sm space-y-1" style="color: var(--text-secondary);">
+          <ul class="text-base space-y-1" style="color: var(--text-secondary);">
             <li>✅ Photosynthesis kya hai — simple analogy ke saath</li>
             <li>✅ Step-by-step process kaise hoti hai</li>
             <li>✅ Formula yaad karne ka trick (mnemonic)</li>
@@ -141,7 +141,7 @@ include '../../partials/nav.php';
           <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-6">
             <div class="card animate-on-scroll" style="border-left: 4px solid var(--warning);">
               <div class="font-heading font-bold mb-2" style="color: var(--warning);">Input (jo andar jaata hai)</div>
-              <ul class="text-sm space-y-2" style="color: var(--text-secondary);">
+              <ul class="text-base space-y-2" style="color: var(--text-secondary);">
                 <li>☀️ <strong>Sunlight</strong> = gas stove (energy source)</li>
                 <li>💧 <strong>H₂O (Paani)</strong> = roots se aata hai</li>
                 <li>🌬️ <strong>CO₂ (Carbon dioxide)</strong> = stomata se andar</li>
@@ -150,7 +150,7 @@ include '../../partials/nav.php';
             </div>
             <div class="card animate-on-scroll" style="border-left: 4px solid var(--success);">
               <div class="font-heading font-bold mb-2" style="color: var(--success);">Output (jo bahar aata hai)</div>
-              <ul class="text-sm space-y-2" style="color: var(--text-secondary);">
+              <ul class="text-base space-y-2" style="color: var(--text-secondary);">
                 <li>🍬 <strong>Glucose (C₆H₁₂O₆)</strong> = ped ka khaana</li>
                 <li>💨 <strong>O₂ (Oxygen)</strong> = bonus byproduct</li>
                 <li>🫁 Yahi oxygen hum breathe karte hain!</li>
@@ -179,7 +179,7 @@ include '../../partials/nav.php';
               <div class="w-10 h-10 rounded-full flex-shrink-0 flex items-center justify-center font-heading font-bold text-lg" style="background: var(--primary-glow); color: var(--primary-light); border: 2px solid var(--primary);">1</div>
               <div>
                 <div class="font-heading font-bold mb-1" style="color: var(--text-primary);">Sunlight Absorption</div>
-                <p class="text-sm" style="color: var(--text-secondary);">Patte mein maujood <strong>chlorophyll</strong> pigment sunlight absorb karta hai. Chlorophyll sirf green light reflect karta hai — isliye patte hame green dikhte hain. Chloroplast ke andar thylakoid membranes pe yeh kaam hota hai.</p>
+                <p class="text-base" style="color: var(--text-secondary);">Patte mein maujood <strong>chlorophyll</strong> pigment sunlight absorb karta hai. Chlorophyll sirf green light reflect karta hai — isliye patte hame green dikhte hain. Chloroplast ke andar thylakoid membranes pe yeh kaam hota hai.</p>
               </div>
             </div>
 
@@ -187,7 +187,7 @@ include '../../partials/nav.php';
               <div class="w-10 h-10 rounded-full flex-shrink-0 flex items-center justify-center font-heading font-bold text-lg" style="background: var(--primary-glow); color: var(--primary-light); border: 2px solid var(--primary);">2</div>
               <div>
                 <div class="font-heading font-bold mb-1" style="color: var(--text-primary);">Paani Ka Safar — Roots Se Patte Tak</div>
-                <p class="text-sm" style="color: var(--text-secondary);">Roots zameen se paani absorb karte hain. Yeh paani <strong>xylem vessels</strong> ke through stem aur phir patte tak pahunchta hai. Bina paani ke photosynthesis nahi ho sakti — just like bina paani ke cooking nahi hoti!</p>
+                <p class="text-base" style="color: var(--text-secondary);">Roots zameen se paani absorb karte hain. Yeh paani <strong>xylem vessels</strong> ke through stem aur phir patte tak pahunchta hai. Bina paani ke photosynthesis nahi ho sakti — just like bina paani ke cooking nahi hoti!</p>
               </div>
             </div>
 
@@ -195,7 +195,7 @@ include '../../partials/nav.php';
               <div class="w-10 h-10 rounded-full flex-shrink-0 flex items-center justify-center font-heading font-bold text-lg" style="background: var(--primary-glow); color: var(--primary-light); border: 2px solid var(--primary);">3</div>
               <div>
                 <div class="font-heading font-bold mb-1" style="color: var(--text-primary);">CO₂ Ka Entrance — Stomata Se</div>
-                <p class="text-sm" style="color: var(--text-secondary);">Patte ke neeche chote chote pore hote hain — inhe <strong>stomata</strong> kehte hain. Inhi se CO₂ (carbon dioxide) andar jaati hai. Raat ko ya dry weather mein stomata band ho jaate hain — isliye photosynthesis ruk jaati hai.</p>
+                <p class="text-base" style="color: var(--text-secondary);">Patte ke neeche chote chote pore hote hain — inhe <strong>stomata</strong> kehte hain. Inhi se CO₂ (carbon dioxide) andar jaati hai. Raat ko ya dry weather mein stomata band ho jaate hain — isliye photosynthesis ruk jaati hai.</p>
               </div>
             </div>
 
@@ -203,7 +203,7 @@ include '../../partials/nav.php';
               <div class="w-10 h-10 rounded-full flex-shrink-0 flex items-center justify-center font-heading font-bold text-lg" style="background: var(--accent-glow); color: var(--accent); border: 2px solid var(--accent);">4</div>
               <div>
                 <div class="font-heading font-bold mb-1" style="color: var(--text-primary);">Chloroplast Mein Reaction — Yahan Magic Hoti Hai!</div>
-                <p class="text-sm" style="color: var(--text-secondary);">Chloroplast ke andar sunlight ki energy se paani ke molecules toot jaate hain (photolysis). Phir CO₂ molecules ke saath glucose banana shuru hota hai. Yeh reaction do stages mein hoti hai — Light Reaction aur Dark Reaction (Calvin Cycle). Board ke liye stages ke naam zaroori hain!</p>
+                <p class="text-base" style="color: var(--text-secondary);">Chloroplast ke andar sunlight ki energy se paani ke molecules toot jaate hain (photolysis). Phir CO₂ molecules ke saath glucose banana shuru hota hai. Yeh reaction do stages mein hoti hai — Light Reaction aur Dark Reaction (Calvin Cycle). Board ke liye stages ke naam zaroori hain!</p>
               </div>
             </div>
 
@@ -211,7 +211,7 @@ include '../../partials/nav.php';
               <div class="w-10 h-10 rounded-full flex-shrink-0 flex items-center justify-center font-heading font-bold text-lg" style="background: var(--accent-glow); color: var(--accent); border: 2px solid var(--accent);">5</div>
               <div>
                 <div class="font-heading font-bold mb-1" style="color: var(--text-primary);">Glucose Banta Hai — Ped Ka Khaana Ready!</div>
-                <p class="text-sm" style="color: var(--text-secondary);"><strong>Glucose (C₆H₁₂O₆)</strong> banta hai — yeh ped ka primary food source hai. Glucose use hota hai ped ke growth ke liye, energy ke liye, aur baad mein starch (storage) mein convert hota hai. Fruit, vegetable mein jo sweetness hai — wo bhi glucose hi hai!</p>
+                <p class="text-base" style="color: var(--text-secondary);"><strong>Glucose (C₆H₁₂O₆)</strong> banta hai — yeh ped ka primary food source hai. Glucose use hota hai ped ke growth ke liye, energy ke liye, aur baad mein starch (storage) mein convert hota hai. Fruit, vegetable mein jo sweetness hai — wo bhi glucose hi hai!</p>
               </div>
             </div>
 
@@ -219,7 +219,7 @@ include '../../partials/nav.php';
               <div class="w-10 h-10 rounded-full flex-shrink-0 flex items-center justify-center font-heading font-bold text-lg" style="background: var(--success); color: #000; border: 2px solid var(--success);">6</div>
               <div>
                 <div class="font-heading font-bold mb-1" style="color: var(--text-primary);">O₂ Release — Humara Gift!</div>
-                <p class="text-sm" style="color: var(--text-secondary);">Photosynthesis ka byproduct hai <strong>oxygen (O₂)</strong>. Yeh stomata se bahar nikal jaati hai — aur atmosphere mein aa jaati hai. Hum jo saas lete hain, woh isi oxygen se bani hai. Ek ped din mein itni oxygen produce karta hai jitni ek insaan ko ek din ke liye chahiye!</p>
+                <p class="text-base" style="color: var(--text-secondary);">Photosynthesis ka byproduct hai <strong>oxygen (O₂)</strong>. Yeh stomata se bahar nikal jaati hai — aur atmosphere mein aa jaati hai. Hum jo saas lete hain, woh isi oxygen se bani hai. Ek ped din mein itni oxygen produce karta hai jitni ek insaan ko ek din ke liye chahiye!</p>
               </div>
             </div>
 
@@ -242,7 +242,7 @@ include '../../partials/nav.php';
             <div class="text-2xl sm:text-3xl font-heading font-bold" style="color: var(--success);">
               C₆H₁₂O₆ + 6O₂
             </div>
-            <div class="text-sm mt-4" style="color: var(--text-muted);">
+            <div class="text-base mt-4" style="color: var(--text-muted);">
               6 Carbon dioxide + 6 Paani + Light Energy → Glucose + 6 Oxygen
             </div>
           </div>
@@ -253,7 +253,7 @@ include '../../partials/nav.php';
             <p class="text-base font-heading font-bold mb-3" style="color: var(--text-primary);">
               "6 Cows (CO₂) + 6 Horses (H₂O) + Sun = Carrot Grass (C₆H₁₂O₆) + 6 Oranges (O₂)"
             </p>
-            <div class="grid grid-cols-2 sm:grid-cols-4 gap-3 text-center text-sm">
+            <div class="grid grid-cols-2 sm:grid-cols-4 gap-3 text-center text-base">
               <div>
                 <div class="text-2xl">🐄🐄🐄🐄🐄🐄</div>
                 <div style="color: var(--text-muted);">6 CO₂</div>
@@ -293,7 +293,7 @@ include '../../partials/nav.php';
               <span class="text-xl mt-1">🫁</span>
               <div>
                 <div class="font-heading font-bold" style="color: var(--text-primary);">Oxygen Ka Source</div>
-                <p class="text-sm" style="color: var(--text-secondary);">Bina photosynthesis ke, atmosphere mein oxygen nahi milegi. Hum sans nahi le payenge. Poori duniya ki oxygen supply photosynthesis pe depend karti hai — trees, algae, plants sab milke karte hain yeh kaam.</p>
+                <p class="text-base" style="color: var(--text-secondary);">Bina photosynthesis ke, atmosphere mein oxygen nahi milegi. Hum sans nahi le payenge. Poori duniya ki oxygen supply photosynthesis pe depend karti hai — trees, algae, plants sab milke karte hain yeh kaam.</p>
               </div>
             </div>
 
@@ -301,7 +301,7 @@ include '../../partials/nav.php';
               <span class="text-xl mt-1">🍔</span>
               <div>
                 <div class="font-heading font-bold" style="color: var(--text-primary);">Sab Food Chains Ka Starting Point</div>
-                <p class="text-sm" style="color: var(--text-secondary);">Gaay ghaas khati hai → hum gaay ka doodh peete hain. Ghaas kahan se aai? Photosynthesis se! Yeh duniya ki sabse badi food factory hai. Herbivores, carnivores, omnivores — sab ultimately photosynthesis pe dependent hain.</p>
+                <p class="text-base" style="color: var(--text-secondary);">Gaay ghaas khati hai → hum gaay ka doodh peete hain. Ghaas kahan se aai? Photosynthesis se! Yeh duniya ki sabse badi food factory hai. Herbivores, carnivores, omnivores — sab ultimately photosynthesis pe dependent hain.</p>
               </div>
             </div>
 
@@ -309,7 +309,7 @@ include '../../partials/nav.php';
               <span class="text-xl mt-1">⛽</span>
               <div>
                 <div class="font-heading font-bold" style="color: var(--text-primary);">Fossil Fuels Bhi Plants Se Bane Hain</div>
-                <p class="text-sm" style="color: var(--text-secondary);">Petrol, coal, natural gas — yeh sab millions of years pehle ke plants se bane hain. Un plants ne photosynthesis ki thi, glucose banaaya tha. Woh compress hokar fuel ban gaye. Toh technically teri gaadi photosynthesis se chal rahi hai!</p>
+                <p class="text-base" style="color: var(--text-secondary);">Petrol, coal, natural gas — yeh sab millions of years pehle ke plants se bane hain. Un plants ne photosynthesis ki thi, glucose banaaya tha. Woh compress hokar fuel ban gaye. Toh technically teri gaadi photosynthesis se chal rahi hai!</p>
               </div>
             </div>
 
@@ -317,7 +317,7 @@ include '../../partials/nav.php';
               <span class="text-xl mt-1">🌡️</span>
               <div>
                 <div class="font-heading font-bold" style="color: var(--text-primary);">Climate Change Ko Rokne Mein Help</div>
-                <p class="text-sm" style="color: var(--text-secondary);">Global warming se CO₂ badh raha hai. Plants photosynthesis ke through CO₂ absorb karte hain — isliye jungal katna climate ke liye itna harmful hai. Jitne zyada ped, utni zyada CO₂ absorb, utna kum global warming. Tree planting = photosynthesis power!</p>
+                <p class="text-base" style="color: var(--text-secondary);">Global warming se CO₂ badh raha hai. Plants photosynthesis ke through CO₂ absorb karte hain — isliye jungal katna climate ke liye itna harmful hai. Jitne zyada ped, utni zyada CO₂ absorb, utna kum global warming. Tree planting = photosynthesis power!</p>
               </div>
             </div>
           </div>
@@ -340,7 +340,7 @@ include '../../partials/nav.php';
                 <div class="font-heading font-bold" style="color: var(--text-primary);">"Photosynthesis ki definition likho"</div>
                 <span class="badge badge-primary flex-shrink-0">2 marks</span>
               </div>
-              <p class="text-sm" style="color: var(--text-secondary);">
+              <p class="text-base" style="color: var(--text-secondary);">
                 <strong style="color: var(--primary-light);">Model Answer:</strong> Photosynthesis woh process hai jisme hare paudhe chlorophyll pigment ki madad se sunlight, CO₂ aur H₂O ko use karke glucose (food) banaate hain aur O₂ release karte hain.
               </p>
             </div>
@@ -350,7 +350,7 @@ include '../../partials/nav.php';
                 <div class="font-heading font-bold" style="color: var(--text-primary);">"Photosynthesis ka equation likho"</div>
                 <span class="badge badge-primary flex-shrink-0">1 mark</span>
               </div>
-              <p class="text-sm font-heading font-bold" style="color: var(--success);">
+              <p class="text-base font-heading font-bold" style="color: var(--success);">
                 6CO₂ + 6H₂O → (Sunlight + Chlorophyll) → C₆H₁₂O₆ + 6O₂
               </p>
             </div>
@@ -360,7 +360,7 @@ include '../../partials/nav.php';
                 <div class="font-heading font-bold" style="color: var(--text-primary);">"Chlorophyll ka role explain karo"</div>
                 <span class="badge badge-accent flex-shrink-0">3 marks</span>
               </div>
-              <p class="text-sm" style="color: var(--text-secondary);">
+              <p class="text-base" style="color: var(--text-secondary);">
                 Chlorophyll patte ka green pigment hai. Yeh (1) sunlight ko absorb karta hai, (2) light energy ko chemical energy mein convert karta hai, aur (3) photosynthesis ki reaction start karta hai. Bina chlorophyll ke photosynthesis impossible hai.
               </p>
             </div>
@@ -371,7 +371,7 @@ include '../../partials/nav.php';
                 <span class="badge" style="background: var(--warning); color: #000; flex-shrink: 0;">5 marks — Table!</span>
               </div>
               <div class="overflow-x-auto">
-                <table class="w-full text-sm" style="border-collapse: collapse;">
+                <table class="w-full text-base" style="border-collapse: collapse;">
                   <thead>
                     <tr style="background: var(--bg-elevated);">
                       <th class="text-left p-2" style="color: var(--text-muted); border-bottom: 1px solid var(--border-subtle);">Point</th>
@@ -415,7 +415,7 @@ include '../../partials/nav.php';
                 <div class="font-heading font-bold" style="color: var(--text-primary);">"Agar kisi ped ke patte green na ho toh kya photosynthesis hoga?"</div>
                 <span class="badge" style="background: var(--error); color: #fff; flex-shrink: 0;">Tricky!</span>
               </div>
-              <p class="text-sm" style="color: var(--text-secondary);">
+              <p class="text-base" style="color: var(--text-secondary);">
                 <strong style="color: var(--primary-light);">Smart Answer:</strong> Patte ka green colour chlorophyll ki wajah se hota hai. Agar patte green nahi hain, toh chlorophyll nahi hai. Bina chlorophyll ke sunlight absorb nahi hogi. Isliye photosynthesis nahi hogi ya bahut kam hogi. Example: purple/red patte wale plants mein chlorophyll hota hai but covered hota hai other pigments se — unme bhi photosynthesis hoti hai!
               </p>
             </div>
@@ -440,7 +440,7 @@ include '../../partials/nav.php';
                 <span class="text-2xl">❌</span>
                 <div>
                   <div class="font-heading font-bold mb-1" style="color: var(--error);">"Ped sirf O₂ dete hain"</div>
-                  <p class="text-sm" style="color: var(--text-secondary);">
+                  <p class="text-base" style="color: var(--text-secondary);">
                     <strong style="color: var(--text-primary);">Wrong!</strong> Ped din mein O₂ dete hain (photosynthesis ke through), par <strong>raat ko CO₂ release karte hain</strong> (respiration ke through). Isliye log kehte hain raat ko pedo ke paas nahi sona chahiye — scientifically correct hai!
                   </p>
                 </div>
@@ -452,7 +452,7 @@ include '../../partials/nav.php';
                 <span class="text-2xl">❌</span>
                 <div>
                   <div class="font-heading font-bold mb-1" style="color: var(--error);">"Sirf sunlight chahiye photosynthesis ke liye"</div>
-                  <p class="text-sm" style="color: var(--text-secondary);">
+                  <p class="text-base" style="color: var(--text-secondary);">
                     <strong style="color: var(--text-primary);">Wrong!</strong> Sunlight zaroori hai, par CO₂ aur H₂O <em>equally zaroori</em> hain. Tino factors mein se koi bhi missing ho toh photosynthesis ruk jaayegi. Formula mein teen cheezein hain — teeno chahiye!
                   </p>
                 </div>
@@ -464,7 +464,7 @@ include '../../partials/nav.php';
                 <span class="text-2xl">❌</span>
                 <div>
                   <div class="font-heading font-bold mb-1" style="color: var(--error);">"Photosynthesis sirf patte mein hota hai"</div>
-                  <p class="text-sm" style="color: var(--text-secondary);">
+                  <p class="text-base" style="color: var(--text-secondary);">
                     <strong style="color: var(--text-primary);">Mostly correct, but not fully!</strong> Mostly patte mein hota hai kyunki wahan chlorophyll zyada hota hai. Par green stems (cactus!), green fruits mein bhi thodi photosynthesis ho sakti hai. Board exam mein "mostly patte mein" likho — safe answer.
                   </p>
                 </div>
@@ -488,22 +488,22 @@ include '../../partials/nav.php';
             <div class="card animate-on-scroll text-center">
               <div class="text-3xl mb-2">🧪</div>
               <div class="font-heading font-bold" style="color: var(--text-primary);">Experiment Style</div>
-              <p class="text-sm" style="color: var(--text-secondary);">Ghar pe iodine test se photosynthesis prove karo — SAAVI guide karegi</p>
+              <p class="text-base" style="color: var(--text-secondary);">Ghar pe iodine test se photosynthesis prove karo — SAAVI guide karegi</p>
             </div>
             <div class="card animate-on-scroll text-center">
               <div class="text-3xl mb-2">🎯</div>
               <div class="font-heading font-bold" style="color: var(--text-primary);">Quiz Mode</div>
-              <p class="text-sm" style="color: var(--text-secondary);">10 MCQ questions — instant feedback ke saath, board pattern mein</p>
+              <p class="text-base" style="color: var(--text-secondary);">10 MCQ questions — instant feedback ke saath, board pattern mein</p>
             </div>
             <div class="card animate-on-scroll text-center">
               <div class="text-3xl mb-2">📖</div>
               <div class="font-heading font-bold" style="color: var(--text-primary);">Story Mode</div>
-              <p class="text-sm" style="color: var(--text-secondary);">Ek ped ki kahani — photosynthesis ek hero ki journey ki tarah</p>
+              <p class="text-base" style="color: var(--text-secondary);">Ek ped ki kahani — photosynthesis ek hero ki journey ki tarah</p>
             </div>
             <div class="card animate-on-scroll text-center">
               <div class="text-3xl mb-2">🔁</div>
               <div class="font-heading font-bold" style="color: var(--text-primary);">Revision Mode</div>
-              <p class="text-sm" style="color: var(--text-secondary);">Exam se 1 din pehle — 10 min mein poora photosynthesis chapter revise</p>
+              <p class="text-base" style="color: var(--text-secondary);">Exam se 1 din pehle — 10 min mein poora photosynthesis chapter revise</p>
             </div>
           </div>
 
@@ -511,7 +511,7 @@ include '../../partials/nav.php';
             <p class="text-lg font-heading font-bold mb-4" style="color: var(--accent);">
               SAAVI Didi Se Photosynthesis Seekhna Chahte Ho?
             </p>
-            <p class="text-sm mb-2" style="color: var(--text-secondary);">
+            <p class="text-base mb-2" style="color: var(--text-secondary);">
               Hindi, Hinglish ya Telugu — apni language mein. CG Board ya CBSE — apna syllabus. May 20 launch pe pehle access pao.
             </p>
             <a href="/waitlist/" class="btn btn-primary">Join Shrutam Waitlist — Free Hai →</a>
@@ -540,7 +540,7 @@ include '../../partials/nav.php';
               <span style="color: var(--primary-light);">+</span>
             </summary>
             <div class="mt-4 pt-4" style="border-top: 1px solid var(--border-subtle);">
-              <p class="text-sm" style="color: var(--text-body);">
+              <p class="text-base" style="color: var(--text-body);">
                 Photosynthesis woh process hai jisme <strong>ped apna khana khud banata hai</strong>. Sunlight, paani (H₂O) aur carbon dioxide (CO₂) ko use karke glucose (sugar) banata hai aur oxygen (O₂) release karta hai. SAAVI style mein: ped ka apna kitchen — sunlight stove hai, chlorophyll chef hai, CO₂ aur paani ingredients hain, glucose khaana hai, aur O₂ humara gift.
               </p>
             </div>
@@ -552,10 +552,10 @@ include '../../partials/nav.php';
               <span style="color: var(--primary-light);">+</span>
             </summary>
             <div class="mt-4 pt-4" style="border-top: 1px solid var(--border-subtle);">
-              <p class="text-sm mb-3" style="color: var(--text-body);">
+              <p class="text-base mb-3" style="color: var(--text-body);">
                 <strong style="color: var(--success);">6CO₂ + 6H₂O + Sunlight → C₆H₁₂O₆ + 6O₂</strong>
               </p>
-              <p class="text-sm" style="color: var(--text-secondary);">
+              <p class="text-base" style="color: var(--text-secondary);">
                 Mnemonic: "6 Cows + 6 Horses + Sun = Carrot Grass + 6 Oranges." Yaad rakhne ka trick: 6-6-Sun → 1-6. 6 CO₂ plus 6 H₂O plus sunlight deta hai 1 glucose molecule aur 6 oxygen molecules.
               </p>
             </div>
@@ -567,7 +567,7 @@ include '../../partials/nav.php';
               <span style="color: var(--primary-light);">+</span>
             </summary>
             <div class="mt-4 pt-4" style="border-top: 1px solid var(--border-subtle);">
-              <p class="text-sm" style="color: var(--text-body);">
+              <p class="text-base" style="color: var(--text-body);">
                 Chlorophyll patte mein maujood green pigment hai jo <strong>sunlight absorb karta hai</strong>. Yeh photosynthesis ka "chef" hai — energy source pakadta hai. Bina chlorophyll ke na sunlight absorb hogi, na photosynthesis shuru hogi. Green colour isliye dikhta hai kyunki chlorophyll green wavelength reflect karta hai aur baaki absorb karta hai.
               </p>
             </div>
@@ -579,7 +579,7 @@ include '../../partials/nav.php';
               <span style="color: var(--primary-light);">+</span>
             </summary>
             <div class="mt-4 pt-4" style="border-top: 1px solid var(--border-subtle);">
-              <p class="text-sm" style="color: var(--text-body);">
+              <p class="text-base" style="color: var(--text-body);">
                 <strong style="color: var(--error);">Nahi!</strong> Photosynthesis ke liye sunlight zaroori hai — isliye yeh sirf din mein hota hai. Raat ko paudhe sirf <strong>respiration</strong> karte hain, jisme wo CO₂ release karte hain aur O₂ absorb karte hain. Isliye kehte hain raat ko pedo ke paas nahi sona chahiye — bilkul sach hai! Subah se shaam tak photosynthesis, raat bhar respiration.
               </p>
             </div>
@@ -591,7 +591,7 @@ include '../../partials/nav.php';
               <span style="color: var(--primary-light);">+</span>
             </summary>
             <div class="mt-4 pt-4" style="border-top: 1px solid var(--border-subtle);">
-              <p class="text-sm" style="color: var(--text-body);">
+              <p class="text-base" style="color: var(--text-body);">
                 CBSE aur CG Board dono mein photosynthesis <strong>usually 2 se 5 marks</strong> ka aata hai. Common questions hain: Definition (2 marks), equation (1 mark), chlorophyll ka role (3 marks), aur photosynthesis vs respiration comparison table (5 marks). Definition aur equation toh pakka yaad karo — woh guaranteed marks hain!
               </p>
             </div>
@@ -616,12 +616,12 @@ include '../../partials/nav.php';
           <a href="/blog/cg-board-class10-preparation/" class="card flex flex-col gap-2 animate-on-scroll" style="text-decoration: none; border-top: 3px solid var(--accent);">
             <span class="badge badge-accent self-start">Board Exam</span>
             <div class="font-heading font-bold" style="color: var(--text-primary);">CG Board Class 10 Taiyaari 2026 — Complete Guide</div>
-            <p class="text-sm" style="color: var(--text-secondary);">Subject-wise strategy, timetable, aur SAAVI ke saath revision plan.</p>
+            <p class="text-base" style="color: var(--text-secondary);">Subject-wise strategy, timetable, aur SAAVI ke saath revision plan.</p>
           </a>
           <a href="/blog/adaptive-learning-kya-hai/" class="card flex flex-col gap-2 animate-on-scroll" style="text-decoration: none; border-top: 3px solid var(--primary);">
             <span class="badge badge-primary self-start">Learning</span>
             <div class="font-heading font-bold" style="color: var(--text-primary);">Adaptive Learning Kya Hai</div>
-            <p class="text-sm" style="color: var(--text-secondary);">Har bachcha alag hai — toh padhana bhi alag kyun nahi? SAAVI ka adaptive approach.</p>
+            <p class="text-base" style="color: var(--text-secondary);">Har bachcha alag hai — toh padhana bhi alag kyun nahi? SAAVI ka adaptive approach.</p>
           </a>
         </div>
 

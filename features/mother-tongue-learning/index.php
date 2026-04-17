@@ -41,7 +41,7 @@ include '../../partials/nav.php';
 
       <!-- Breadcrumb -->
       <nav aria-label="Breadcrumb" class="mb-8">
-        <ol class="flex flex-wrap items-center gap-2 text-sm" style="color: var(--text-muted);">
+        <ol class="flex flex-wrap items-center gap-2 text-base" style="color: var(--text-muted);">
           <li><a href="/" style="color: var(--text-muted);">Home</a></li>
           <li aria-hidden="true" style="color: var(--text-muted);">›</li>
           <li><a href="/features/" style="color: var(--text-muted);">Features</a></li>
@@ -91,7 +91,7 @@ include '../../partials/nav.php';
               <span class="text-2xl" aria-hidden="true">🧠</span>
               <div>
                 <div class="font-heading font-bold mb-1" style="color: var(--text-primary);">Native Generation, Not Translation</div>
-                <p class="text-sm" style="color: var(--text-secondary);">SAAVI pehle Hindi mein sochti hai, phir bolti hai. Machine translation ki awkward phrasing nahi — real Hindi jaisi explanation.</p>
+                <p class="text-base" style="color: var(--text-secondary);">SAAVI pehle Hindi mein sochti hai, phir bolti hai. Machine translation ki awkward phrasing nahi — real Hindi jaisi explanation.</p>
               </div>
             </div>
           </div>
@@ -100,7 +100,7 @@ include '../../partials/nav.php';
               <span class="text-2xl" aria-hidden="true">🌐</span>
               <div>
                 <div class="font-heading font-bold mb-1" style="color: var(--text-primary);">5 Languages Ready</div>
-                <p class="text-sm" style="color: var(--text-secondary);">Hindi, Hinglish, Marathi, Telugu, Gujarati — ek hi app mein. Apni language choose karo, baaki SAAVI sambhal leti hai.</p>
+                <p class="text-base" style="color: var(--text-secondary);">Hindi, Hinglish, Marathi, Telugu, Gujarati — ek hi app mein. Apni language choose karo, baaki SAAVI sambhal leti hai.</p>
               </div>
             </div>
           </div>
@@ -109,7 +109,7 @@ include '../../partials/nav.php';
               <span class="text-2xl" aria-hidden="true">📖</span>
               <div>
                 <div class="font-heading font-bold mb-1" style="color: var(--text-primary);">Concept-Level Adaptation</div>
-                <p class="text-sm" style="color: var(--text-secondary);">Ek hi concept ko SAAVI har language mein alag tarah se explain karti hai — local analogies, familiar examples, apni culture se.</p>
+                <p class="text-base" style="color: var(--text-secondary);">Ek hi concept ko SAAVI har language mein alag tarah se explain karti hai — local analogies, familiar examples, apni culture se.</p>
               </div>
             </div>
           </div>
@@ -139,42 +139,42 @@ include '../../partials/nav.php';
 
         <div class="card animate-on-scroll" style="border-top: 4px solid var(--primary);">
           <div class="text-xs font-bold uppercase tracking-wide mb-3" style="color: var(--primary-light);">Hindi</div>
-          <p class="text-sm" style="color: var(--text-secondary);">
+          <p class="text-base" style="color: var(--text-secondary);">
             "पत्तियाँ सूरज की रोशनी को खाना बनाने में इस्तेमाल करती हैं — जैसे हम गैस चूल्हे पर खाना पकाते हैं, पत्तियाँ सूरज की रोशनी पर।"
           </p>
         </div>
 
         <div class="card animate-on-scroll" style="border-top: 4px solid var(--accent);">
           <div class="text-xs font-bold uppercase tracking-wide mb-3" style="color: var(--accent);">Hinglish</div>
-          <p class="text-sm" style="color: var(--text-secondary);">
+          <p class="text-base" style="color: var(--text-secondary);">
             "Leaves basically sunlight ko use karke apna khana banati hain — like a solar-powered kitchen. CO₂ in, oxygen out, glucose bana liya!"
           </p>
         </div>
 
         <div class="card animate-on-scroll" style="border-top: 4px solid var(--success);">
           <div class="text-xs font-bold uppercase tracking-wide mb-3" style="color: var(--success);">Marathi</div>
-          <p class="text-sm" style="color: var(--text-secondary);">
+          <p class="text-base" style="color: var(--text-secondary);">
             "पाने सूर्यप्रकाशाचा वापर करून स्वतःचं अन्न तयार करतात — जसं आपण चुलीवर स्वयंपाक करतो, पानं सूर्यावर करतात."
           </p>
         </div>
 
         <div class="card animate-on-scroll" style="border-top: 4px solid var(--info);">
           <div class="text-xs font-bold uppercase tracking-wide mb-3" style="color: var(--info);">Telugu</div>
-          <p class="text-sm" style="color: var(--text-secondary);">
+          <p class="text-base" style="color: var(--text-secondary);">
             "ఆకులు సూర్యకాంతిని ఉపయోగించి తమ ఆహారాన్ని తయారు చేసుకుంటాయి — మనం వంట చేసినట్టే, కానీ సూర్యుడే వాటి గ్యాస్ స్టవ్."
           </p>
         </div>
 
         <div class="card animate-on-scroll" style="border-top: 4px solid var(--text-muted);">
           <div class="text-xs font-bold uppercase tracking-wide mb-3" style="color: var(--text-secondary);">Gujarati</div>
-          <p class="text-sm" style="color: var(--text-secondary);">
+          <p class="text-base" style="color: var(--text-secondary);">
             "પાંદડા સૂર્યપ્રકાશ વાપરીને પોતાનો ખોરાક બનાવે છે — જેમ આપણે ગેસ પર રાંધીએ, તેમ પાંદડા સૂર્ય પર."
           </p>
         </div>
 
         <div class="card animate-on-scroll" style="border-top: 4px solid var(--primary); background: var(--primary-glow);">
           <div class="text-xs font-bold uppercase tracking-wide mb-3" style="color: var(--primary-light);">Result</div>
-          <p class="text-sm font-bold" style="color: var(--text-primary);">
+          <p class="text-base font-bold" style="color: var(--text-primary);">
             Sirf words translate nahi kiye — poori analogy local culture se match karti hai. Isliye samajh aata hai.
           </p>
         </div>
@@ -202,7 +202,7 @@ include '../../partials/nav.php';
         <div class="card text-center animate-on-scroll" style="border-top: 4px solid var(--error);">
           <div class="text-3xl mb-4" aria-hidden="true">😵</div>
           <div class="font-heading font-bold mb-3" style="color: var(--text-primary);">Double Processing</div>
-          <p class="text-sm" style="color: var(--text-secondary);">
+          <p class="text-base" style="color: var(--text-secondary);">
             English mein padho, Hindi mein samjho, phir English mein answer likho. Teen baar kaam. SAAVI isko ek step mein karta hai.
           </p>
         </div>
@@ -210,7 +210,7 @@ include '../../partials/nav.php';
         <div class="card text-center animate-on-scroll" style="border-top: 4px solid var(--accent);">
           <div class="text-3xl mb-4" aria-hidden="true">🔄</div>
           <div class="font-heading font-bold mb-3" style="color: var(--text-primary);">Lost in Translation</div>
-          <p class="text-sm" style="color: var(--text-secondary);">
+          <p class="text-base" style="color: var(--text-secondary);">
             Google Translate waali Hindi aur real Hindi mein fark hai. SAAVI real conversational language use karti hai — jaise tumhara best friend samjhaye.
           </p>
         </div>
@@ -218,7 +218,7 @@ include '../../partials/nav.php';
         <div class="card text-center animate-on-scroll" style="border-top: 4px solid var(--success);">
           <div class="text-3xl mb-4" aria-hidden="true">✅</div>
           <div class="font-heading font-bold mb-3" style="color: var(--text-primary);">Native = Faster</div>
-          <p class="text-sm" style="color: var(--text-secondary);">
+          <p class="text-base" style="color: var(--text-secondary);">
             Research bolti hai: native language mein padhne se concept 40% faster samajh aata hai. SAAVI isi research pe built hai.
           </p>
         </div>
@@ -242,22 +242,22 @@ include '../../partials/nav.php';
         <a href="/features/exam-notes/" class="card animate-on-scroll" style="text-decoration: none; display: block;">
           <div class="text-2xl mb-3" aria-hidden="true">📋</div>
           <div class="font-heading font-bold mb-2" style="color: var(--text-primary);">Exam Notes</div>
-          <p class="text-sm mb-3" style="color: var(--text-secondary);">Auto-generated notes apni language mein — board exam format mein, chapter-wise.</p>
-          <span class="text-sm font-bold" style="color: var(--primary-light);">Explore →</span>
+          <p class="text-base mb-3" style="color: var(--text-secondary);">Auto-generated notes apni language mein — board exam format mein, chapter-wise.</p>
+          <span class="text-base font-bold" style="color: var(--primary-light);">Explore →</span>
         </a>
 
         <a href="/features/photo-doubt-solver/" class="card animate-on-scroll" style="text-decoration: none; display: block;">
           <div class="text-2xl mb-3" aria-hidden="true">📸</div>
           <div class="font-heading font-bold mb-2" style="color: var(--text-primary);">Photo Doubt Solver</div>
-          <p class="text-sm mb-3" style="color: var(--text-secondary);">Hindi handwriting bhi parhti hai SAAVI. Photo kheechi, apni zubaan mein jawab pao.</p>
-          <span class="text-sm font-bold" style="color: var(--primary-light);">Explore →</span>
+          <p class="text-base mb-3" style="color: var(--text-secondary);">Hindi handwriting bhi parhti hai SAAVI. Photo kheechi, apni zubaan mein jawab pao.</p>
+          <span class="text-base font-bold" style="color: var(--primary-light);">Explore →</span>
         </a>
 
         <a href="/features/spoken-english/" class="card animate-on-scroll" style="text-decoration: none; display: block;">
           <div class="text-2xl mb-3" aria-hidden="true">🗣️</div>
           <div class="font-heading font-bold mb-2" style="color: var(--text-primary);">Spoken English</div>
-          <p class="text-sm mb-3" style="color: var(--text-secondary);">Hinglish se confident English tak — apni pace pe, bina judgment ke.</p>
-          <span class="text-sm font-bold" style="color: var(--primary-light);">Explore →</span>
+          <p class="text-base mb-3" style="color: var(--text-secondary);">Hinglish se confident English tak — apni pace pe, bina judgment ke.</p>
+          <span class="text-base font-bold" style="color: var(--primary-light);">Explore →</span>
         </a>
 
       </div>

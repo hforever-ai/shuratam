@@ -41,7 +41,7 @@ include '../../partials/nav.php';
 
       <!-- Breadcrumb -->
       <nav aria-label="Breadcrumb" class="mb-8">
-        <ol class="flex flex-wrap items-center gap-2 text-sm" style="color: var(--text-muted);">
+        <ol class="flex flex-wrap items-center gap-2 text-base" style="color: var(--text-muted);">
           <li><a href="/" style="color: var(--text-muted);">Home</a></li>
           <li aria-hidden="true" style="color: var(--text-muted);">›</li>
           <li><a href="/features/" style="color: var(--text-muted);">Features</a></li>
@@ -92,7 +92,7 @@ include '../../partials/nav.php';
               <span class="text-2xl" aria-hidden="true">📊</span>
               <div>
                 <div class="font-heading font-bold mb-1" style="color: var(--text-primary);">Daily Progress Report</div>
-                <p class="text-sm" style="color: var(--text-secondary);">Aaj kitna padha, kaunse chapters, kya score aaya — parent dashboard pe clearly dikhta hai. Roz.</p>
+                <p class="text-base" style="color: var(--text-secondary);">Aaj kitna padha, kaunse chapters, kya score aaya — parent dashboard pe clearly dikhta hai. Roz.</p>
               </div>
             </div>
           </div>
@@ -101,7 +101,7 @@ include '../../partials/nav.php';
               <span class="text-2xl" aria-hidden="true">🌙</span>
               <div>
                 <div class="font-heading font-bold mb-1" style="color: var(--text-primary);">Bedtime Lock</div>
-                <p class="text-sm" style="color: var(--text-secondary);">Raat 10 baje auto-off — set karo aur bhool jao. Baccha phone use karna chahe bhi toh app lock ho jaayegi.</p>
+                <p class="text-base" style="color: var(--text-secondary);">Raat 10 baje auto-off — set karo aur bhool jao. Baccha phone use karna chahe bhi toh app lock ho jaayegi.</p>
               </div>
             </div>
           </div>
@@ -110,7 +110,7 @@ include '../../partials/nav.php';
               <span class="text-2xl" aria-hidden="true">💬</span>
               <div>
                 <div class="font-heading font-bold mb-1" style="color: var(--text-primary);">WhatsApp Weekly Summary</div>
-                <p class="text-sm" style="color: var(--text-secondary);">Har hafte summary WhatsApp pe aati hai — app download karne ki zaroorat nahi. Simple aur familiar.</p>
+                <p class="text-base" style="color: var(--text-secondary);">Har hafte summary WhatsApp pe aati hai — app download karne ki zaroorat nahi. Simple aur familiar.</p>
               </div>
             </div>
           </div>
@@ -140,25 +140,25 @@ include '../../partials/nav.php';
         <div class="card text-center animate-on-scroll" style="border-top: 4px solid var(--success);">
           <div class="text-3xl mb-3" aria-hidden="true">🚫</div>
           <div class="font-heading font-bold mb-2" style="color: var(--text-primary);">Zero Ads</div>
-          <p class="text-sm" style="color: var(--text-secondary);">Koi advertisement nahi — koi bhi. Na gaming ads, na shopping, na anything inappropriate.</p>
+          <p class="text-base" style="color: var(--text-secondary);">Koi advertisement nahi — koi bhi. Na gaming ads, na shopping, na anything inappropriate.</p>
         </div>
 
         <div class="card text-center animate-on-scroll" style="border-top: 4px solid var(--success);">
           <div class="text-3xl mb-3" aria-hidden="true">🔒</div>
           <div class="font-heading font-bold mb-2" style="color: var(--text-primary);">No Social Media</div>
-          <p class="text-sm" style="color: var(--text-secondary);">Koi social feed nahi, koi strangers nahi. Sirf SAAVI aur content — safe environment.</p>
+          <p class="text-base" style="color: var(--text-secondary);">Koi social feed nahi, koi strangers nahi. Sirf SAAVI aur content — safe environment.</p>
         </div>
 
         <div class="card text-center animate-on-scroll" style="border-top: 4px solid var(--primary);">
           <div class="text-3xl mb-3" aria-hidden="true">📚</div>
           <div class="font-heading font-bold mb-2" style="color: var(--text-primary);">NCERT Aligned</div>
-          <p class="text-sm" style="color: var(--text-secondary);">Sab content NCERT se aligned — school syllabus exact match. Koi random content nahi.</p>
+          <p class="text-base" style="color: var(--text-secondary);">Sab content NCERT se aligned — school syllabus exact match. Koi random content nahi.</p>
         </div>
 
         <div class="card text-center animate-on-scroll" style="border-top: 4px solid var(--accent);">
           <div class="text-3xl mb-3" aria-hidden="true">🌙</div>
           <div class="font-heading font-bold mb-2" style="color: var(--text-primary);">Bedtime Lock</div>
-          <p class="text-sm" style="color: var(--text-secondary);">Parent-set time pe auto-off. Raat mein padhai bhi nahi — neend zaroori hai.</p>
+          <p class="text-base" style="color: var(--text-secondary);">Parent-set time pe auto-off. Raat mein padhai bhi nahi — neend zaroori hai.</p>
         </div>
 
       </div>
@@ -184,19 +184,19 @@ include '../../partials/nav.php';
         <div class="card text-center animate-on-scroll" style="border-top: 4px solid var(--primary);">
           <div class="text-3xl mb-4" aria-hidden="true">📱</div>
           <div class="font-heading font-bold mb-3" style="color: var(--text-primary);">WhatsApp Report</div>
-          <p class="text-sm" style="color: var(--text-secondary);">Har hafte automatically WhatsApp pe report aati hai — aaj kitna padha, kaunse subjects, kahan improvement hua.</p>
+          <p class="text-base" style="color: var(--text-secondary);">Har hafte automatically WhatsApp pe report aati hai — aaj kitna padha, kaunse subjects, kahan improvement hua.</p>
         </div>
 
         <div class="card text-center animate-on-scroll" style="border-top: 4px solid var(--accent);">
           <div class="text-3xl mb-4" aria-hidden="true">🎯</div>
           <div class="font-heading font-bold mb-3" style="color: var(--text-primary);">Alert System</div>
-          <p class="text-sm" style="color: var(--text-secondary);">Baccha 3 din se nahi padha — parent ko notification. Streak toot gayi — gentle reminder. Involved parents = better results.</p>
+          <p class="text-base" style="color: var(--text-secondary);">Baccha 3 din se nahi padha — parent ko notification. Streak toot gayi — gentle reminder. Involved parents = better results.</p>
         </div>
 
         <div class="card text-center animate-on-scroll" style="border-top: 4px solid var(--success);">
           <div class="text-3xl mb-4" aria-hidden="true">😌</div>
           <div class="font-heading font-bold mb-3" style="color: var(--text-primary);">Peace of Mind</div>
-          <p class="text-sm" style="color: var(--text-secondary);">Baccha phone pe hai — safe hai, padh raha hai. No more "phone rakh ke padh!" arguments. SAAVI handle kar rahi hai.</p>
+          <p class="text-base" style="color: var(--text-secondary);">Baccha phone pe hai — safe hai, padh raha hai. No more "phone rakh ke padh!" arguments. SAAVI handle kar rahi hai.</p>
         </div>
 
       </div>
@@ -218,22 +218,22 @@ include '../../partials/nav.php';
         <a href="/features/student-tracking/" class="card animate-on-scroll" style="text-decoration: none; display: block;">
           <div class="text-2xl mb-3" aria-hidden="true">📊</div>
           <div class="font-heading font-bold mb-2" style="color: var(--text-primary);">Student Tracking</div>
-          <p class="text-sm mb-3" style="color: var(--text-secondary);">Bacche ka personal dashboard — parent portal uska summary dikhata hai.</p>
-          <span class="text-sm font-bold" style="color: var(--primary-light);">Explore →</span>
+          <p class="text-base mb-3" style="color: var(--text-secondary);">Bacche ka personal dashboard — parent portal uska summary dikhata hai.</p>
+          <span class="text-base font-bold" style="color: var(--primary-light);">Explore →</span>
         </a>
 
         <a href="/features/mock-exams/" class="card animate-on-scroll" style="text-decoration: none; display: block;">
           <div class="text-2xl mb-3" aria-hidden="true">📝</div>
           <div class="font-heading font-bold mb-2" style="color: var(--text-primary);">Mock Exams</div>
-          <p class="text-sm mb-3" style="color: var(--text-secondary);">Mock exam scores parent dashboard mein dikhte hain — progress clearly track karo.</p>
-          <span class="text-sm font-bold" style="color: var(--primary-light);">Explore →</span>
+          <p class="text-base mb-3" style="color: var(--text-secondary);">Mock exam scores parent dashboard mein dikhte hain — progress clearly track karo.</p>
+          <span class="text-base font-bold" style="color: var(--primary-light);">Explore →</span>
         </a>
 
         <a href="/features/revision-mode/" class="card animate-on-scroll" style="text-decoration: none; display: block;">
           <div class="text-2xl mb-3" aria-hidden="true">🔄</div>
           <div class="font-heading font-bold mb-2" style="color: var(--text-primary);">Revision Mode</div>
-          <p class="text-sm mb-3" style="color: var(--text-secondary);">School ke baad Revision Mode — parent portal mein dikhega kitna revise kiya.</p>
-          <span class="text-sm font-bold" style="color: var(--primary-light);">Explore →</span>
+          <p class="text-base mb-3" style="color: var(--text-secondary);">School ke baad Revision Mode — parent portal mein dikhega kitna revise kiya.</p>
+          <span class="text-base font-bold" style="color: var(--primary-light);">Explore →</span>
         </a>
 
       </div>

@@ -41,7 +41,7 @@ include '../../partials/nav.php';
 
       <!-- Breadcrumb -->
       <nav aria-label="Breadcrumb" class="mb-8">
-        <ol class="flex flex-wrap items-center gap-2 text-sm" style="color: var(--text-muted);">
+        <ol class="flex flex-wrap items-center gap-2 text-base" style="color: var(--text-muted);">
           <li><a href="/" style="color: var(--text-muted);">Home</a></li>
           <li aria-hidden="true" style="color: var(--text-muted);">›</li>
           <li><a href="/features/" style="color: var(--text-muted);">Features</a></li>
@@ -87,7 +87,7 @@ include '../../partials/nav.php';
               <span class="text-2xl" aria-hidden="true">⬆️</span>
               <div>
                 <div class="font-heading font-bold mb-1" style="color: var(--text-primary);">3 Sahi → Harder</div>
-                <p class="text-sm" style="color: var(--text-secondary);">Teen consecutive sahi jawab? SAAVI tum par automatic next difficulty level pe le jaati hai. Boredom ka chance nahi.</p>
+                <p class="text-base" style="color: var(--text-secondary);">Teen consecutive sahi jawab? SAAVI tum par automatic next difficulty level pe le jaati hai. Boredom ka chance nahi.</p>
               </div>
             </div>
           </div>
@@ -96,7 +96,7 @@ include '../../partials/nav.php';
               <span class="text-2xl" aria-hidden="true">⬇️</span>
               <div>
                 <div class="font-heading font-bold mb-1" style="color: var(--text-primary);">2 Galat → Basics</div>
-                <p class="text-sm" style="color: var(--text-secondary);">Do baar galat? No judgment. SAAVI quietly wapas basics pe le jaati hai — foundation dobara strong karti hai.</p>
+                <p class="text-base" style="color: var(--text-secondary);">Do baar galat? No judgment. SAAVI quietly wapas basics pe le jaati hai — foundation dobara strong karti hai.</p>
               </div>
             </div>
           </div>
@@ -105,7 +105,7 @@ include '../../partials/nav.php';
               <span class="text-2xl" aria-hidden="true">⏱️</span>
               <div>
                 <div class="font-heading font-bold mb-1" style="color: var(--text-primary);">Time Tracking Per Question</div>
-                <p class="text-sm" style="color: var(--text-secondary);">Kitna time liya har question pe — SAAVI yeh bhi track karti hai. Slow spots = revision targets.</p>
+                <p class="text-base" style="color: var(--text-secondary);">Kitna time liya har question pe — SAAVI yeh bhi track karti hai. Slow spots = revision targets.</p>
               </div>
             </div>
           </div>
@@ -168,11 +168,11 @@ include '../../partials/nav.php';
         <div class="grid grid-cols-2 gap-4">
           <div class="card animate-on-scroll" style="border: 2px solid var(--success);">
             <div class="font-heading font-bold mb-2" style="color: var(--success);">3 Sahi Streak</div>
-            <p class="text-sm" style="color: var(--text-secondary);">SAAVI next level pe le jaati hai. Harder questions, naya concept. Boredom khatam.</p>
+            <p class="text-base" style="color: var(--text-secondary);">SAAVI next level pe le jaati hai. Harder questions, naya concept. Boredom khatam.</p>
           </div>
           <div class="card animate-on-scroll" style="border: 2px solid var(--error);">
             <div class="font-heading font-bold mb-2" style="color: var(--error);">2 Galat Row</div>
-            <p class="text-sm" style="color: var(--text-secondary);">SAAVI basics pe wapas — easier questions + explanation. Foundation solid hogi tab advance hogi.</p>
+            <p class="text-base" style="color: var(--text-secondary);">SAAVI basics pe wapas — easier questions + explanation. Foundation solid hogi tab advance hogi.</p>
           </div>
         </div>
 
@@ -196,19 +196,19 @@ include '../../partials/nav.php';
         <div class="card text-center animate-on-scroll" style="border-top: 4px solid var(--primary);">
           <div class="text-3xl mb-4" aria-hidden="true">🎯</div>
           <div class="font-heading font-bold mb-3" style="color: var(--text-primary);">Zero Time Waste</div>
-          <p class="text-sm" style="color: var(--text-secondary);">Jo tumhe pata hai woh dobara mat padho. SAAVI sirf weak spots pe focus karti hai — session ekdum efficient.</p>
+          <p class="text-base" style="color: var(--text-secondary);">Jo tumhe pata hai woh dobara mat padho. SAAVI sirf weak spots pe focus karti hai — session ekdum efficient.</p>
         </div>
 
         <div class="card text-center animate-on-scroll" style="border-top: 4px solid var(--accent);">
           <div class="text-3xl mb-4" aria-hidden="true">📈</div>
           <div class="font-heading font-bold mb-3" style="color: var(--text-primary);">Steady Progress</div>
-          <p class="text-sm" style="color: var(--text-secondary);">Na zyada easy, na zyada hard. SAAVI hamesha tumhare ek step aage rehti hai — growth zone mein.</p>
+          <p class="text-base" style="color: var(--text-secondary);">Na zyada easy, na zyada hard. SAAVI hamesha tumhare ek step aage rehti hai — growth zone mein.</p>
         </div>
 
         <div class="card text-center animate-on-scroll" style="border-top: 4px solid var(--success);">
           <div class="text-3xl mb-4" aria-hidden="true">💪</div>
           <div class="font-heading font-bold mb-3" style="color: var(--text-primary);">Confidence Build</div>
-          <p class="text-sm" style="color: var(--text-secondary);">Har right answer ek step aage. Galat hua toh bhi explanation milti hai. Dono cases mein sikhte rehte ho.</p>
+          <p class="text-base" style="color: var(--text-secondary);">Har right answer ek step aage. Galat hua toh bhi explanation milti hai. Dono cases mein sikhte rehte ho.</p>
         </div>
 
       </div>
@@ -230,22 +230,22 @@ include '../../partials/nav.php';
         <a href="/features/zero-to-hero/" class="card animate-on-scroll" style="text-decoration: none; display: block;">
           <div class="text-2xl mb-3" aria-hidden="true">🚀</div>
           <div class="font-heading font-bold mb-2" style="color: var(--text-primary);">Zero to Hero</div>
-          <p class="text-sm mb-3" style="color: var(--text-secondary);">Prerequisite gaps dhundho — Class 6 se 10 tak ka poora path banao.</p>
-          <span class="text-sm font-bold" style="color: var(--primary-light);">Explore →</span>
+          <p class="text-base mb-3" style="color: var(--text-secondary);">Prerequisite gaps dhundho — Class 6 se 10 tak ka poora path banao.</p>
+          <span class="text-base font-bold" style="color: var(--primary-light);">Explore →</span>
         </a>
 
         <a href="/features/mock-exams/" class="card animate-on-scroll" style="text-decoration: none; display: block;">
           <div class="text-2xl mb-3" aria-hidden="true">📝</div>
           <div class="font-heading font-bold mb-2" style="color: var(--text-primary);">Mock Exams</div>
-          <p class="text-sm mb-3" style="color: var(--text-secondary);">Adaptive learning ke baad — board-ready exams se test karo apni strength.</p>
-          <span class="text-sm font-bold" style="color: var(--primary-light);">Explore →</span>
+          <p class="text-base mb-3" style="color: var(--text-secondary);">Adaptive learning ke baad — board-ready exams se test karo apni strength.</p>
+          <span class="text-base font-bold" style="color: var(--primary-light);">Explore →</span>
         </a>
 
         <a href="/features/student-tracking/" class="card animate-on-scroll" style="text-decoration: none; display: block;">
           <div class="text-2xl mb-3" aria-hidden="true">📊</div>
           <div class="font-heading font-bold mb-2" style="color: var(--text-primary);">Student Tracking</div>
-          <p class="text-sm mb-3" style="color: var(--text-secondary);">Tumhara progress dashboard — subject-wise weakness graphs + streak tracking.</p>
-          <span class="text-sm font-bold" style="color: var(--primary-light);">Explore →</span>
+          <p class="text-base mb-3" style="color: var(--text-secondary);">Tumhara progress dashboard — subject-wise weakness graphs + streak tracking.</p>
+          <span class="text-base font-bold" style="color: var(--primary-light);">Explore →</span>
         </a>
 
       </div>

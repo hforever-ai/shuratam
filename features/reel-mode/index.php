@@ -41,7 +41,7 @@ include '../../partials/nav.php';
 
       <!-- Breadcrumb -->
       <nav aria-label="Breadcrumb" class="mb-8">
-        <ol class="flex flex-wrap items-center gap-2 text-sm" style="color: var(--text-muted);">
+        <ol class="flex flex-wrap items-center gap-2 text-base" style="color: var(--text-muted);">
           <li><a href="/" style="color: var(--text-muted);">Home</a></li>
           <li aria-hidden="true" style="color: var(--text-muted);">›</li>
           <li><a href="/features/" style="color: var(--text-muted);">Features</a></li>
@@ -87,7 +87,7 @@ include '../../partials/nav.php';
               <span class="text-2xl" aria-hidden="true">👆</span>
               <div>
                 <div class="font-heading font-bold mb-1" style="color: var(--text-primary);">Swipe to Learn</div>
-                <p class="text-sm" style="color: var(--text-secondary);">Instagram jaisi UX — upar swipe karo, naya concept. Poora chapter aise hi swipe karte karte khatam ho jaata hai.</p>
+                <p class="text-base" style="color: var(--text-secondary);">Instagram jaisi UX — upar swipe karo, naya concept. Poora chapter aise hi swipe karte karte khatam ho jaata hai.</p>
               </div>
             </div>
           </div>
@@ -96,7 +96,7 @@ include '../../partials/nav.php';
               <span class="text-2xl" aria-hidden="true">🎨</span>
               <div>
                 <div class="font-heading font-bold mb-1" style="color: var(--text-primary);">Fun Animations</div>
-                <p class="text-sm" style="color: var(--text-secondary);">Boring textbook diagrams nahi — colorful animations. DNA replication, chemical reactions, geometry — sab animated.</p>
+                <p class="text-base" style="color: var(--text-secondary);">Boring textbook diagrams nahi — colorful animations. DNA replication, chemical reactions, geometry — sab animated.</p>
               </div>
             </div>
           </div>
@@ -105,7 +105,7 @@ include '../../partials/nav.php';
               <span class="text-2xl" aria-hidden="true">⏱️</span>
               <div>
                 <div class="font-heading font-bold mb-1" style="color: var(--text-primary);">Bite-Sized — 3-5 Min</div>
-                <p class="text-sm" style="color: var(--text-secondary);">Koi 40-minute lecture nahi. Har reel ek concept — 3 se 5 minute. Attention span ke hisaab se designed.</p>
+                <p class="text-base" style="color: var(--text-secondary);">Koi 40-minute lecture nahi. Har reel ek concept — 3 se 5 minute. Attention span ke hisaab se designed.</p>
               </div>
             </div>
           </div>
@@ -138,7 +138,7 @@ include '../../partials/nav.php';
           </div>
           <div class="text-xs font-bold uppercase tracking-wide mb-2" style="color: var(--primary-light);">Step 1</div>
           <div class="text-xl font-heading font-bold mb-3" style="color: var(--text-primary);">Reel Mode Open Karo</div>
-          <p class="text-sm" style="color: var(--text-secondary);">
+          <p class="text-base" style="color: var(--text-secondary);">
             Subject choose karo — Maths, Science, History — phir reels feed shuru hoti hai. Seedha relevant content.
           </p>
         </div>
@@ -149,7 +149,7 @@ include '../../partials/nav.php';
           </div>
           <div class="text-xs font-bold uppercase tracking-wide mb-2" style="color: var(--accent);">Step 2</div>
           <div class="text-xl font-heading font-bold mb-3" style="color: var(--text-primary);">Swipe Karo</div>
-          <p class="text-sm" style="color: var(--text-secondary);">
+          <p class="text-base" style="color: var(--text-secondary);">
             Ek reel khatam hua — swipe up. Naya concept. Ek chapter 15-20 reels mein — 1 hour mein ek chapter done.
           </p>
         </div>
@@ -160,7 +160,7 @@ include '../../partials/nav.php';
           </div>
           <div class="text-xs font-bold uppercase tracking-wide mb-2" style="color: var(--success);">Step 3</div>
           <div class="text-xl font-heading font-bold mb-3" style="color: var(--text-primary);">Quick Quiz</div>
-          <p class="text-sm" style="color: var(--text-secondary);">
+          <p class="text-base" style="color: var(--text-secondary);">
             Har 5 reels ke baad 2-question quick quiz — samjha ya nahi, turant pata chalta hai. Wrong pe explanation milti hai.
           </p>
         </div>
@@ -188,19 +188,19 @@ include '../../partials/nav.php';
         <div class="card text-center animate-on-scroll" style="border-top: 4px solid var(--primary);">
           <div class="text-3xl mb-4" aria-hidden="true">🧠</div>
           <div class="font-heading font-bold mb-3" style="color: var(--text-primary);">Short = Better Retention</div>
-          <p class="text-sm" style="color: var(--text-secondary);">Research: 5 minute concepts yaad rehte hain zyada. 40 minute lecture mein last half bhool jaate hain. Reels ka science yahi hai.</p>
+          <p class="text-base" style="color: var(--text-secondary);">Research: 5 minute concepts yaad rehte hain zyada. 40 minute lecture mein last half bhool jaate hain. Reels ka science yahi hai.</p>
         </div>
 
         <div class="card text-center animate-on-scroll" style="border-top: 4px solid var(--accent);">
           <div class="text-3xl mb-4" aria-hidden="true">🎨</div>
           <div class="font-heading font-bold mb-3" style="color: var(--text-primary);">Visual = Faster Understand</div>
-          <p class="text-sm" style="color: var(--text-secondary);">Animated visual + audio — dono saath milke concept seedha brain mein enter hota hai. Boring text se 6x faster.</p>
+          <p class="text-base" style="color: var(--text-secondary);">Animated visual + audio — dono saath milke concept seedha brain mein enter hota hai. Boring text se 6x faster.</p>
         </div>
 
         <div class="card text-center animate-on-scroll" style="border-top: 4px solid var(--success);">
           <div class="text-3xl mb-4" aria-hidden="true">😊</div>
           <div class="font-heading font-bold mb-3" style="color: var(--text-primary);">Fun = More Time Spent</div>
-          <p class="text-sm" style="color: var(--text-secondary);">Boring padhai se 30 minute mein dil bhar jaata hai. Reels mein? "Bas ek aur…" — 2 ghante ho jaate hain bina pata chale.</p>
+          <p class="text-base" style="color: var(--text-secondary);">Boring padhai se 30 minute mein dil bhar jaata hai. Reels mein? "Bas ek aur…" — 2 ghante ho jaate hain bina pata chale.</p>
         </div>
 
       </div>
@@ -222,22 +222,22 @@ include '../../partials/nav.php';
         <a href="/features/adaptive-learning/" class="card animate-on-scroll" style="text-decoration: none; display: block;">
           <div class="text-2xl mb-3" aria-hidden="true">🧠</div>
           <div class="font-heading font-bold mb-2" style="color: var(--text-primary);">Adaptive Learning</div>
-          <p class="text-sm mb-3" style="color: var(--text-secondary);">Reel se concept pata chala — Adaptive Learning se practice karo apne level pe.</p>
-          <span class="text-sm font-bold" style="color: var(--primary-light);">Explore →</span>
+          <p class="text-base mb-3" style="color: var(--text-secondary);">Reel se concept pata chala — Adaptive Learning se practice karo apne level pe.</p>
+          <span class="text-base font-bold" style="color: var(--primary-light);">Explore →</span>
         </a>
 
         <a href="/features/exam-notes/" class="card animate-on-scroll" style="text-decoration: none; display: block;">
           <div class="text-2xl mb-3" aria-hidden="true">📋</div>
           <div class="font-heading font-bold mb-2" style="color: var(--text-primary);">Exam Notes</div>
-          <p class="text-sm mb-3" style="color: var(--text-secondary);">Reel dekha — notes mein read karo detail mein. Board exam ke liye complete package.</p>
-          <span class="text-sm font-bold" style="color: var(--primary-light);">Explore →</span>
+          <p class="text-base mb-3" style="color: var(--text-secondary);">Reel dekha — notes mein read karo detail mein. Board exam ke liye complete package.</p>
+          <span class="text-base font-bold" style="color: var(--primary-light);">Explore →</span>
         </a>
 
         <a href="/features/photo-doubt-solver/" class="card animate-on-scroll" style="text-decoration: none; display: block;">
           <div class="text-2xl mb-3" aria-hidden="true">📸</div>
           <div class="font-heading font-bold mb-2" style="color: var(--text-primary);">Photo Doubt Solver</div>
-          <p class="text-sm mb-3" style="color: var(--text-secondary);">Reel ke baad homework mein doubt? Photo kheecho — SAAVI solve kar deti hai.</p>
-          <span class="text-sm font-bold" style="color: var(--primary-light);">Explore →</span>
+          <p class="text-base mb-3" style="color: var(--text-secondary);">Reel ke baad homework mein doubt? Photo kheecho — SAAVI solve kar deti hai.</p>
+          <span class="text-base font-bold" style="color: var(--primary-light);">Explore →</span>
         </a>
 
       </div>

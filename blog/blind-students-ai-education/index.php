@@ -90,7 +90,7 @@ include '../../partials/nav.php';
           <span class="badge badge-primary">♿ Accessibility</span>
           <span class="badge badge-accent">Aarambha</span>
           <span class="badge" style="background: var(--bg-surface); color: var(--text-muted); border: 1px solid var(--border-subtle);">FREE Forever</span>
-          <span class="text-sm" style="color: var(--text-muted);">Apr 17, 2026 · SAAVI Didi</span>
+          <span class="text-base" style="color: var(--text-muted);">Apr 17, 2026 · SAAVI Didi</span>
         </div>
 
         <h1 class="text-4xl sm:text-5xl font-heading font-bold mb-3 text-gradient">
@@ -108,7 +108,7 @@ include '../../partials/nav.php';
         <!-- Quick summary box -->
         <div class="card mb-8" style="border-left: 4px solid var(--accent); background: var(--bg-surface);">
           <div class="font-heading font-bold mb-3" style="color: var(--accent);">Is Article Mein:</div>
-          <ul class="text-sm space-y-1" style="color: var(--text-secondary);">
+          <ul class="text-base space-y-1" style="color: var(--text-secondary);">
             <li>✅ India mein blind education ki sach-chi tasveer</li>
             <li>✅ Existing solutions kyun kaam nahi karte</li>
             <li>✅ AI kyun naturally blind-friendly hai</li>
@@ -160,17 +160,17 @@ include '../../partials/nav.php';
 
             <div class="card animate-on-scroll" style="border-left: 4px solid var(--warning);">
               <div class="font-heading font-bold mb-2" style="color: var(--warning);">Braille Books</div>
-              <p class="text-sm" style="color: var(--text-secondary);">Expensive, heavy, bulky, aur typically English mein. Latest edition late aata hai — Class 10 ke students ko kai baar purani syllabus se padh ke naya exam dena padta hai. Ghar pe rakhna bhi mushkil — ek set 10-12 books ka hota hai jo physically bahut jagah leta hai. Aur agar chapter ko revision karna ho? Poori book dhundhni padegi.</p>
+              <p class="text-base" style="color: var(--text-secondary);">Expensive, heavy, bulky, aur typically English mein. Latest edition late aata hai — Class 10 ke students ko kai baar purani syllabus se padh ke naya exam dena padta hai. Ghar pe rakhna bhi mushkil — ek set 10-12 books ka hota hai jo physically bahut jagah leta hai. Aur agar chapter ko revision karna ho? Poori book dhundhni padegi.</p>
             </div>
 
             <div class="card animate-on-scroll" style="border-left: 4px solid var(--warning);">
               <div class="font-heading font-bold mb-2" style="color: var(--warning);">Special Schools</div>
-              <p class="text-sm" style="color: var(--text-secondary);">India mein special schools mainly cities mein hain — Raipur, Bhopal, Mumbai. Rural aur semi-urban areas mein sirf kuch hi hain. Hostel mandatory hota hai — families zyada se zyada 1-2 baar milne aati hain. Boarding schools se bachpan mein siblings aur parents se dur rehna ek emotional toll bhi hai jo data mein capture nahi hota.</p>
+              <p class="text-base" style="color: var(--text-secondary);">India mein special schools mainly cities mein hain — Raipur, Bhopal, Mumbai. Rural aur semi-urban areas mein sirf kuch hi hain. Hostel mandatory hota hai — families zyada se zyada 1-2 baar milne aati hain. Boarding schools se bachpan mein siblings aur parents se dur rehna ek emotional toll bhi hai jo data mein capture nahi hota.</p>
             </div>
 
             <div class="card animate-on-scroll" style="border-left: 4px solid var(--warning);">
               <div class="font-heading font-bold mb-2" style="color: var(--warning);">Current Ed-tech Apps</div>
-              <p class="text-sm" style="color: var(--text-secondary);">Byju's, Khan Academy — sab visual-first design hai. Drag-and-drop interfaces, video-heavy lessons, interactive diagrams — yeh sab TalkBack ke saath completely break ho jaate hain. Kuch apps mein "accessibility" sirf itna hai ki font size bada ho sakta hai. Genuinely usable? Nahi.</p>
+              <p class="text-base" style="color: var(--text-secondary);">Byju's, Khan Academy — sab visual-first design hai. Drag-and-drop interfaces, video-heavy lessons, interactive diagrams — yeh sab TalkBack ke saath completely break ho jaate hain. Kuch apps mein "accessibility" sirf itna hai ki font size bada ho sakta hai. Genuinely usable? Nahi.</p>
             </div>
 
           </div>
@@ -211,7 +211,7 @@ include '../../partials/nav.php';
               <div class="w-10 h-10 rounded-full flex-shrink-0 flex items-center justify-center font-heading font-bold text-lg" style="background: var(--primary-glow); color: var(--primary-light); border: 2px solid var(--primary);">1</div>
               <div>
                 <div class="font-heading font-bold mb-1" style="color: var(--text-primary);">Voice Quiz Mode</div>
-                <p class="text-sm" style="color: var(--text-secondary);">SAAVI questions bolti hai — student answers bolke deta hai. Keyboard ya touch ki zaroorat nahi. Sahi answer pe SAAVI warmly confirm karti hai, galat pe explain karti hai. Bilkul ek real teacher jaisi experience.</p>
+                <p class="text-base" style="color: var(--text-secondary);">SAAVI questions bolti hai — student answers bolke deta hai. Keyboard ya touch ki zaroorat nahi. Sahi answer pe SAAVI warmly confirm karti hai, galat pe explain karti hai. Bilkul ek real teacher jaisi experience.</p>
               </div>
             </div>
 
@@ -219,7 +219,7 @@ include '../../partials/nav.php';
               <div class="w-10 h-10 rounded-full flex-shrink-0 flex items-center justify-center font-heading font-bold text-lg" style="background: var(--primary-glow); color: var(--primary-light); border: 2px solid var(--primary);">2</div>
               <div>
                 <div class="font-heading font-bold mb-1" style="color: var(--text-primary);">Scribe Cues Generator</div>
-                <p class="text-sm" style="color: var(--text-secondary);">Board exam mein blind students ko scribe milta hai. SAAVI automatically woh phrases generate karti hai jo student apne scribe ko dictate kar sake — clearly, correctly, marks ke liye sahi format mein. Exam preparation sirf padhne tak nahi, dictation practice bhi hai.</p>
+                <p class="text-base" style="color: var(--text-secondary);">Board exam mein blind students ko scribe milta hai. SAAVI automatically woh phrases generate karti hai jo student apne scribe ko dictate kar sake — clearly, correctly, marks ke liye sahi format mein. Exam preparation sirf padhne tak nahi, dictation practice bhi hai.</p>
               </div>
             </div>
 
@@ -235,7 +235,7 @@ include '../../partials/nav.php';
               <div class="w-10 h-10 rounded-full flex-shrink-0 flex items-center justify-center font-heading font-bold text-lg" style="background: var(--accent-glow); color: var(--accent); border: 2px solid var(--accent);">4</div>
               <div>
                 <div class="font-heading font-bold mb-1" style="color: var(--text-primary);">Verbal Diagram Descriptions</div>
-                <p class="text-sm" style="color: var(--text-secondary);">Science ke diagrams — heart, nephron, food chain — SAAVI unhe step-by-step verbally describe karti hai. Sirf description nahi, woh mental model banana mein help karti hai. "Imagine karo ki..." se shuru hokar visual concepts bhi audio mein samajh aa jaate hain.</p>
+                <p class="text-base" style="color: var(--text-secondary);">Science ke diagrams — heart, nephron, food chain — SAAVI unhe step-by-step verbally describe karti hai. Sirf description nahi, woh mental model banana mein help karti hai. "Imagine karo ki..." se shuru hokar visual concepts bhi audio mein samajh aa jaate hain.</p>
               </div>
             </div>
 
@@ -243,7 +243,7 @@ include '../../partials/nav.php';
               <div class="w-10 h-10 rounded-full flex-shrink-0 flex items-center justify-center font-heading font-bold text-lg" style="background: var(--accent-glow); color: var(--accent); border: 2px solid var(--accent);">5</div>
               <div>
                 <div class="font-heading font-bold mb-1" style="color: var(--text-primary);">Keyboard Navigation First</div>
-                <p class="text-sm" style="color: var(--text-secondary);">Poora app keyboard se navigate ho sakta hai — tab, arrows, enter. Touch screen zaroor nahi. Woh students jo Braille keyboard ya external keyboard use karte hain, unke liye specifically optimized hai.</p>
+                <p class="text-base" style="color: var(--text-secondary);">Poora app keyboard se navigate ho sakta hai — tab, arrows, enter. Touch screen zaroor nahi. Woh students jo Braille keyboard ya external keyboard use karte hain, unke liye specifically optimized hai.</p>
               </div>
             </div>
 
@@ -251,7 +251,7 @@ include '../../partials/nav.php';
               <div class="w-10 h-10 rounded-full flex-shrink-0 flex items-center justify-center font-heading font-bold text-lg" style="background: var(--success); color: #000; border: 2px solid var(--success);">6</div>
               <div>
                 <div class="font-heading font-bold mb-1" style="color: var(--text-primary);">High Contrast Mode</div>
-                <p class="text-sm" style="color: var(--text-secondary);">Low vision students ke liye — jinhe thodi roshni dikhti hai. High contrast mode mein text aur background ka contrast maximum hota hai. Font size also adjustable hai large pe. Partially sighted students bhi comfortably padhh sakte hain.</p>
+                <p class="text-base" style="color: var(--text-secondary);">Low vision students ke liye — jinhe thodi roshni dikhti hai. High contrast mode mein text aur background ka contrast maximum hota hai. Font size also adjustable hai large pe. Partially sighted students bhi comfortably padhh sakte hain.</p>
               </div>
             </div>
 
@@ -259,7 +259,7 @@ include '../../partials/nav.php';
               <div class="w-10 h-10 rounded-full flex-shrink-0 flex items-center justify-center font-heading font-bold text-lg" style="background: var(--success); color: #000; border: 2px solid var(--success);">7</div>
               <div>
                 <div class="font-heading font-bold mb-1" style="color: var(--text-primary);">Offline Audio Mode</div>
-                <p class="text-sm" style="color: var(--text-secondary);">Rural areas mein net connection unreliable hota hai. SAAVI key lessons aur explanations offline save kar sakti hai — jab net ho tab sync karo, jab na ho tab bhi padho. Internet access barrier nahi hona chahiye.</p>
+                <p class="text-base" style="color: var(--text-secondary);">Rural areas mein net connection unreliable hota hai. SAAVI key lessons aur explanations offline save kar sakti hai — jab net ho tab sync karo, jab na ho tab bhi padho. Internet access barrier nahi hona chahiye.</p>
               </div>
             </div>
 
@@ -278,7 +278,7 @@ include '../../partials/nav.php';
 
           <div class="card animate-on-scroll mb-6" style="border: 2px solid var(--accent); background: var(--accent-glow);">
             <p class="text-base font-heading font-bold mb-2" style="color: var(--accent);">Ek Blind Student Ab Ghar Se Board Exam Prepare Kar Sakta Hai</p>
-            <p class="text-sm" style="color: var(--text-secondary);">TalkBack on karo. SAAVI se bolo "Science ka Chapter 1 samjhao." Woh bolegi — warm teacher style mein, Hindi mein, examples ke saath. Quiz lo — voice se. Revision karo — audio se. Scribe cues practice karo. Exam ready ho jao. Sab kuch bina kisi visual dependency ke.</p>
+            <p class="text-base" style="color: var(--text-secondary);">TalkBack on karo. SAAVI se bolo "Science ka Chapter 1 samjhao." Woh bolegi — warm teacher style mein, Hindi mein, examples ke saath. Quiz lo — voice se. Revision karo — audio se. Scribe cues practice karo. Exam ready ho jao. Sab kuch bina kisi visual dependency ke.</p>
           </div>
 
           <p class="text-base" style="color: var(--text-body);">
@@ -304,7 +304,7 @@ include '../../partials/nav.php';
             <p class="text-lg font-heading font-bold mb-4" style="color: var(--accent);">
               SAAVI Ka Blind Mode — Join Karo, FREE Hai
             </p>
-            <p class="text-sm mb-2" style="color: var(--text-secondary);">
+            <p class="text-base mb-2" style="color: var(--text-secondary);">
               Ek blind student ke liye, ya unke family ke liye — waitlist join karo. Launch pe pehle access milega. Always free.
             </p>
             <a href="/waitlist/" class="btn btn-primary">Join Shrutam Waitlist — Free Hai →</a>
@@ -333,7 +333,7 @@ include '../../partials/nav.php';
               <span style="color: var(--primary-light);">+</span>
             </summary>
             <div class="mt-4 pt-4" style="border-top: 1px solid var(--border-subtle);">
-              <p class="text-sm" style="color: var(--text-body);">
+              <p class="text-base" style="color: var(--text-body);">
                 Shrutam Blind Mode ek <strong>fully audio-first learning experience</strong> hai jo specially blind aur visually impaired students ke liye design kiya gaya hai. Ismein voice-based quiz, scribe cues, TalkBack aur VoiceOver compatibility, verbal diagram descriptions, aur offline audio mode hai. Student bina kuch dekhe sirf sunke aur bol ke SAAVI se seekh sakta hai — bilkul ek real teacher ke saath baat karne jaisa.
               </p>
             </div>
@@ -345,7 +345,7 @@ include '../../partials/nav.php';
               <span style="color: var(--primary-light);">+</span>
             </summary>
             <div class="mt-4 pt-4" style="border-top: 1px solid var(--border-subtle);">
-              <p class="text-sm" style="color: var(--text-body);">
+              <p class="text-base" style="color: var(--text-body);">
                 Haan. Shrutam ka Blind Mode <strong>Android TalkBack aur iOS VoiceOver</strong> ke saath fully compatible aur tested hai. Saare buttons, labels, aur interactions screen reader ke liye optimized hain. Student apna familiar screen reader use karte hue SAAVI se padh sakta hai — kuch nayi technology sikhne ki zaroorat nahi.
               </p>
             </div>
@@ -357,7 +357,7 @@ include '../../partials/nav.php';
               <span style="color: var(--primary-light);">+</span>
             </summary>
             <div class="mt-4 pt-4" style="border-top: 1px solid var(--border-subtle);">
-              <p class="text-sm" style="color: var(--text-body);">
+              <p class="text-base" style="color: var(--text-body);">
                 Blind students board exam ki taiyaari ke liye SAAVI ke <strong>voice quiz mode</strong> ka use kar sakte hain — jahan SAAVI questions bolti hai aur student answers bolke deta hai. <strong>Scribe cues feature</strong> automatically woh phrases generate karta hai jo scribe ko dictate ki ja sakti hain — exam format mein. Regular audio-based revision se exam anxiety bhi kam hoti hai aur dictation practice bhi hoti hai.
               </p>
             </div>
@@ -369,7 +369,7 @@ include '../../partials/nav.php';
               <span style="color: var(--primary-light);">+</span>
             </summary>
             <div class="mt-4 pt-4" style="border-top: 1px solid var(--border-subtle);">
-              <p class="text-sm" style="color: var(--text-body);">
+              <p class="text-base" style="color: var(--text-body);">
                 Haan — Aarambha initiative ke tahat Shrutam Blind Mode <strong>bilkul FREE hai aur hamesha FREE rahega.</strong> Hum believe karte hain ki disability kisi bhi student ki padhai ka raasta nahi rokni chahiye. Koi subscription nahi, koi free trial nahi, koi hidden charges nahi. Join waitlist karo aur launch pe direct access pao.
               </p>
             </div>
@@ -381,7 +381,7 @@ include '../../partials/nav.php';
               <span style="color: var(--primary-light);">+</span>
             </summary>
             <div class="mt-4 pt-4" style="border-top: 1px solid var(--border-subtle);">
-              <p class="text-sm" style="color: var(--text-body);">
+              <p class="text-base" style="color: var(--text-body);">
                 National Blindness and Visual Impairment Survey ke anusar India mein approximately <strong>50 lakh se zyada</strong> blind aur severely visually impaired log hain. Inme se bahut se school-age children hain jo quality education access nahi kar pa rahe. Braille books expensive hain, special schools limited aur mainly cities mein hain — digital audio-first learning yeh gap fill kar sakta hai.
               </p>
             </div>
@@ -406,12 +406,12 @@ include '../../partials/nav.php';
           <a href="/blog/adaptive-learning-kya-hai/" class="card flex flex-col gap-2 animate-on-scroll" style="text-decoration: none; border-top: 3px solid var(--primary);">
             <span class="badge badge-primary self-start">Learning</span>
             <div class="font-heading font-bold" style="color: var(--text-primary);">Adaptive Learning Kya Hai</div>
-            <p class="text-sm" style="color: var(--text-secondary);">SAAVI kaise har student ke liye alag padhai path banati hai — samjho simple mein.</p>
+            <p class="text-base" style="color: var(--text-secondary);">SAAVI kaise har student ke liye alag padhai path banati hai — samjho simple mein.</p>
           </a>
           <a href="/blog/cg-board-class10-preparation/" class="card flex flex-col gap-2 animate-on-scroll" style="text-decoration: none; border-top: 3px solid var(--accent);">
             <span class="badge badge-accent self-start">Board Exam</span>
             <div class="font-heading font-bold" style="color: var(--text-primary);">CG Board Class 10 Taiyaari 2026</div>
-            <p class="text-sm" style="color: var(--text-secondary);">Complete guide — important topics, study schedule, SAAVI se practice.</p>
+            <p class="text-base" style="color: var(--text-secondary);">Complete guide — important topics, study schedule, SAAVI se practice.</p>
           </a>
         </div>
 

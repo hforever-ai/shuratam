@@ -41,7 +41,7 @@ include '../../partials/nav.php';
 
       <!-- Breadcrumb -->
       <nav aria-label="Breadcrumb" class="mb-8">
-        <ol class="flex flex-wrap items-center gap-2 text-sm" style="color: var(--text-muted);">
+        <ol class="flex flex-wrap items-center gap-2 text-base" style="color: var(--text-muted);">
           <li><a href="/" style="color: var(--text-muted);">Home</a></li>
           <li aria-hidden="true" style="color: var(--text-muted);">›</li>
           <li><a href="/features/" style="color: var(--text-muted);">Features</a></li>
@@ -87,7 +87,7 @@ include '../../partials/nav.php';
               <span class="text-2xl" aria-hidden="true">🎙️</span>
               <div>
                 <div class="font-heading font-bold mb-1" style="color: var(--text-primary);">Daily 10-Min Practice</div>
-                <p class="text-sm" style="color: var(--text-secondary);">Roz 10 minute ka conversation session — SAAVI partner hai. Har roz naya topic, har roz thoda aur confident.</p>
+                <p class="text-base" style="color: var(--text-secondary);">Roz 10 minute ka conversation session — SAAVI partner hai. Har roz naya topic, har roz thoda aur confident.</p>
               </div>
             </div>
           </div>
@@ -96,7 +96,7 @@ include '../../partials/nav.php';
               <span class="text-2xl" aria-hidden="true">🔊</span>
               <div>
                 <div class="font-heading font-bold mb-1" style="color: var(--text-primary);">Pronunciation Feedback</div>
-                <p class="text-sm" style="color: var(--text-secondary);">Galat pronounce kiya? SAAVI kindly correct karti hai — mockery nahi, improvement. "Isko aise bolo…"</p>
+                <p class="text-base" style="color: var(--text-secondary);">Galat pronounce kiya? SAAVI kindly correct karti hai — mockery nahi, improvement. "Isko aise bolo…"</p>
               </div>
             </div>
           </div>
@@ -105,7 +105,7 @@ include '../../partials/nav.php';
               <span class="text-2xl" aria-hidden="true">🎓</span>
               <div>
                 <div class="font-heading font-bold mb-1" style="color: var(--text-primary);">Interview Prep</div>
-                <p class="text-sm" style="color: var(--text-secondary);">Class 10 ke baad college/college interviews. "Tell me about yourself", "Why this course" — SAAVI practice karati hai.</p>
+                <p class="text-base" style="color: var(--text-secondary);">Class 10 ke baad college/college interviews. "Tell me about yourself", "Why this course" — SAAVI practice karati hai.</p>
               </div>
             </div>
           </div>
@@ -138,7 +138,7 @@ include '../../partials/nav.php';
           </div>
           <div class="text-xs font-bold uppercase tracking-wide mb-2" style="color: var(--primary-light);">Week 1–2</div>
           <div class="text-xl font-heading font-bold mb-3" style="color: var(--text-primary);">Hinglish Start</div>
-          <p class="text-sm" style="color: var(--text-secondary);">
+          <p class="text-base" style="color: var(--text-secondary);">
             Apni language mein baat karo — SAAVI sun ti hai, galat grammar correct karti hai gently. Confidence pehle.
           </p>
         </div>
@@ -149,7 +149,7 @@ include '../../partials/nav.php';
           </div>
           <div class="text-xs font-bold uppercase tracking-wide mb-2" style="color: var(--accent);">Week 3–6</div>
           <div class="text-xl font-heading font-bold mb-3" style="color: var(--text-primary);">Mixed Practice</div>
-          <p class="text-sm" style="color: var(--text-secondary);">
+          <p class="text-base" style="color: var(--text-secondary);">
             SAAVI thoda thoda English mein le jaati hai. Key sentences, common phrases — dheere dheere shift hota hai.
           </p>
         </div>
@@ -160,7 +160,7 @@ include '../../partials/nav.php';
           </div>
           <div class="text-xs font-bold uppercase tracking-wide mb-2" style="color: var(--success);">Week 7+</div>
           <div class="text-xl font-heading font-bold mb-3" style="color: var(--text-primary);">Confident English</div>
-          <p class="text-sm" style="color: var(--text-secondary);">
+          <p class="text-base" style="color: var(--text-secondary);">
             Fluent conversations, interview practice. Bina ruke, bina soche — English mein bol sako. Tumhari achievement.
           </p>
         </div>
@@ -185,19 +185,19 @@ include '../../partials/nav.php';
         <div class="card text-center animate-on-scroll" style="border-top: 4px solid var(--error);">
           <div class="text-3xl mb-4" aria-hidden="true">😰</div>
           <div class="font-heading font-bold mb-3" style="color: var(--text-primary);">School Ka Darr</div>
-          <p class="text-sm" style="color: var(--text-secondary);">Class mein English bolne pe classmates haste hain. Teacher correct karte hain publicly. Yeh confidence tod deta hai.</p>
+          <p class="text-base" style="color: var(--text-secondary);">Class mein English bolne pe classmates haste hain. Teacher correct karte hain publicly. Yeh confidence tod deta hai.</p>
         </div>
 
         <div class="card text-center animate-on-scroll" style="border-top: 4px solid var(--accent);">
           <div class="text-3xl mb-4" aria-hidden="true">🤖</div>
           <div class="font-heading font-bold mb-2" style="color: var(--text-primary);">SAAVI — No Mockery</div>
-          <p class="text-sm" style="color: var(--text-secondary);">SAAVI kabhi nahi hasegi. Galat hua toh sirf "Aise bol sakte ho..." — encouraging, supportive. Hamesha.</p>
+          <p class="text-base" style="color: var(--text-secondary);">SAAVI kabhi nahi hasegi. Galat hua toh sirf "Aise bol sakte ho..." — encouraging, supportive. Hamesha.</p>
         </div>
 
         <div class="card text-center animate-on-scroll" style="border-top: 4px solid var(--success);">
           <div class="text-3xl mb-4" aria-hidden="true">💪</div>
           <div class="font-heading font-bold mb-3" style="color: var(--text-primary);">Confidence First</div>
-          <p class="text-sm" style="color: var(--text-secondary);">Pehle confidence build hota hai, phir grammar. SAAVI ka approach: bolo pehle, perfect karo baad mein.</p>
+          <p class="text-base" style="color: var(--text-secondary);">Pehle confidence build hota hai, phir grammar. SAAVI ka approach: bolo pehle, perfect karo baad mein.</p>
         </div>
 
       </div>
@@ -219,22 +219,22 @@ include '../../partials/nav.php';
         <a href="/features/mother-tongue-learning/" class="card animate-on-scroll" style="text-decoration: none; display: block;">
           <div class="text-2xl mb-3" aria-hidden="true">🌏</div>
           <div class="font-heading font-bold mb-2" style="color: var(--text-primary);">Mother Tongue Learning</div>
-          <p class="text-sm mb-3" style="color: var(--text-secondary);">Pehle apni bhasha mein concepts clear karo — phir English mein express karna asaan ho jaata hai.</p>
-          <span class="text-sm font-bold" style="color: var(--primary-light);">Explore →</span>
+          <p class="text-base mb-3" style="color: var(--text-secondary);">Pehle apni bhasha mein concepts clear karo — phir English mein express karna asaan ho jaata hai.</p>
+          <span class="text-base font-bold" style="color: var(--primary-light);">Explore →</span>
         </a>
 
         <a href="/features/revision-mode/" class="card animate-on-scroll" style="text-decoration: none; display: block;">
           <div class="text-2xl mb-3" aria-hidden="true">🔄</div>
           <div class="font-heading font-bold mb-2" style="color: var(--text-primary);">Revision Mode</div>
-          <p class="text-sm mb-3" style="color: var(--text-secondary);">School ke baad Revision Mode + Spoken English practice — dono saath karo.</p>
-          <span class="text-sm font-bold" style="color: var(--primary-light);">Explore →</span>
+          <p class="text-base mb-3" style="color: var(--text-secondary);">School ke baad Revision Mode + Spoken English practice — dono saath karo.</p>
+          <span class="text-base font-bold" style="color: var(--primary-light);">Explore →</span>
         </a>
 
         <a href="/features/reel-mode/" class="card animate-on-scroll" style="text-decoration: none; display: block;">
           <div class="text-2xl mb-3" aria-hidden="true">🎬</div>
           <div class="font-heading font-bold mb-2" style="color: var(--text-primary);">Reel Mode</div>
-          <p class="text-sm mb-3" style="color: var(--text-secondary);">English bolne ke examples short reels mein dekho — real life conversations, fun aur educational.</p>
-          <span class="text-sm font-bold" style="color: var(--primary-light);">Explore →</span>
+          <p class="text-base mb-3" style="color: var(--text-secondary);">English bolne ke examples short reels mein dekho — real life conversations, fun aur educational.</p>
+          <span class="text-base font-bold" style="color: var(--primary-light);">Explore →</span>
         </a>
 
       </div>

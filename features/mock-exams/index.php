@@ -41,7 +41,7 @@ include '../../partials/nav.php';
 
       <!-- Breadcrumb -->
       <nav aria-label="Breadcrumb" class="mb-8">
-        <ol class="flex flex-wrap items-center gap-2 text-sm" style="color: var(--text-muted);">
+        <ol class="flex flex-wrap items-center gap-2 text-base" style="color: var(--text-muted);">
           <li><a href="/" style="color: var(--text-muted);">Home</a></li>
           <li aria-hidden="true" style="color: var(--text-muted);">›</li>
           <li><a href="/features/" style="color: var(--text-muted);">Features</a></li>
@@ -92,7 +92,7 @@ include '../../partials/nav.php';
               <span class="text-2xl" aria-hidden="true">🎯</span>
               <div>
                 <div class="font-heading font-bold mb-1" style="color: var(--text-primary);">Chapter-wise + Full Syllabus</div>
-                <p class="text-sm" style="color: var(--text-secondary);">Ek chapter pe focus karo ya poore syllabus ka mock do — dono options hain. Apni zaroorat ke hisaab se.</p>
+                <p class="text-base" style="color: var(--text-secondary);">Ek chapter pe focus karo ya poore syllabus ka mock do — dono options hain. Apni zaroorat ke hisaab se.</p>
               </div>
             </div>
           </div>
@@ -101,7 +101,7 @@ include '../../partials/nav.php';
               <span class="text-2xl" aria-hidden="true">🔀</span>
               <div>
                 <div class="font-heading font-bold mb-1" style="color: var(--text-primary);">Assertion & Reasoning Type</div>
-                <p class="text-sm" style="color: var(--text-secondary);">CBSE standard question types — MCQ, Short Answer, A&R. Real board exam ka feel ghar pe.</p>
+                <p class="text-base" style="color: var(--text-secondary);">CBSE standard question types — MCQ, Short Answer, A&R. Real board exam ka feel ghar pe.</p>
               </div>
             </div>
           </div>
@@ -110,7 +110,7 @@ include '../../partials/nav.php';
               <span class="text-2xl" aria-hidden="true">⚡</span>
               <div>
                 <div class="font-heading font-bold mb-1" style="color: var(--text-primary);">Instant Feedback</div>
-                <p class="text-sm" style="color: var(--text-secondary);">Submit karo — turant pata chalta hai kya sahi kya galat. Har wrong answer pe detailed explanation milti hai.</p>
+                <p class="text-base" style="color: var(--text-secondary);">Submit karo — turant pata chalta hai kya sahi kya galat. Har wrong answer pe detailed explanation milti hai.</p>
               </div>
             </div>
           </div>
@@ -140,28 +140,28 @@ include '../../partials/nav.php';
         <div class="card text-center animate-on-scroll" style="border-top: 4px solid var(--success);">
           <div class="text-3xl mb-3" aria-hidden="true">🟢</div>
           <div class="font-heading font-bold text-lg mb-2" style="color: var(--success);">Level 1: Easy</div>
-          <p class="text-sm" style="color: var(--text-secondary);">Basic recall aur definition questions. Concept yaad hai ya nahi — yahan se pata chalta hai.</p>
+          <p class="text-base" style="color: var(--text-secondary);">Basic recall aur definition questions. Concept yaad hai ya nahi — yahan se pata chalta hai.</p>
           <div class="mt-3 text-xs font-bold" style="color: var(--text-muted);">Starting point</div>
         </div>
 
         <div class="card text-center animate-on-scroll" style="border-top: 4px solid var(--info);">
           <div class="text-3xl mb-3" aria-hidden="true">🔵</div>
           <div class="font-heading font-bold text-lg mb-2" style="color: var(--info);">Level 2: Medium</div>
-          <p class="text-sm" style="color: var(--text-secondary);">Application-based questions. Concept samjha ya sirf yaad kiya — yahan pata chalta hai.</p>
+          <p class="text-base" style="color: var(--text-secondary);">Application-based questions. Concept samjha ya sirf yaad kiya — yahan pata chalta hai.</p>
           <div class="mt-3 text-xs font-bold" style="color: var(--text-muted);">Building up</div>
         </div>
 
         <div class="card text-center animate-on-scroll" style="border-top: 4px solid var(--accent);">
           <div class="text-3xl mb-3" aria-hidden="true">🟠</div>
           <div class="font-heading font-bold text-lg mb-2" style="color: var(--accent);">Level 3: Hard</div>
-          <p class="text-sm" style="color: var(--text-secondary);">Multi-step numericals, case-based. Real exam jaisi thinking ki zaroorat hai. Asserts Reasoning included.</p>
+          <p class="text-base" style="color: var(--text-secondary);">Multi-step numericals, case-based. Real exam jaisi thinking ki zaroorat hai. Asserts Reasoning included.</p>
           <div class="mt-3 text-xs font-bold" style="color: var(--text-muted);">Exam ready</div>
         </div>
 
         <div class="card text-center animate-on-scroll" style="border-top: 4px solid var(--error);">
           <div class="text-3xl mb-3" aria-hidden="true">🔴</div>
           <div class="font-heading font-bold text-lg mb-2" style="color: var(--error);">Level 4: Complex</div>
-          <p class="text-sm" style="color: var(--text-secondary);">Board Exam standard. Previous years pattern. Yahan pass ho gaye — board mein koi dar nahi.</p>
+          <p class="text-base" style="color: var(--text-secondary);">Board Exam standard. Previous years pattern. Yahan pass ho gaye — board mein koi dar nahi.</p>
           <div class="mt-3 text-xs font-bold" style="color: var(--error);">Board Ready</div>
         </div>
 
@@ -185,19 +185,19 @@ include '../../partials/nav.php';
         <div class="card text-center animate-on-scroll" style="border-top: 4px solid var(--primary);">
           <div class="text-3xl mb-4" aria-hidden="true">😌</div>
           <div class="font-heading font-bold mb-3" style="color: var(--text-primary);">Exam Anxiety Khatam</div>
-          <p class="text-sm" style="color: var(--text-secondary);">Jitna zyada practice — utna kam darr. SAAVI ke saath real exam se pehle hazaaron questions solve kar loge.</p>
+          <p class="text-base" style="color: var(--text-secondary);">Jitna zyada practice — utna kam darr. SAAVI ke saath real exam se pehle hazaaron questions solve kar loge.</p>
         </div>
 
         <div class="card text-center animate-on-scroll" style="border-top: 4px solid var(--accent);">
           <div class="text-3xl mb-4" aria-hidden="true">📊</div>
           <div class="font-heading font-bold mb-3" style="color: var(--text-primary);">Weak Topic Identify</div>
-          <p class="text-sm" style="color: var(--text-secondary);">Mock ke baad SAAVI batati hai — kahan zyada galat ho, kaunsa concept weak hai. Targeted revision milti hai.</p>
+          <p class="text-base" style="color: var(--text-secondary);">Mock ke baad SAAVI batati hai — kahan zyada galat ho, kaunsa concept weak hai. Targeted revision milti hai.</p>
         </div>
 
         <div class="card text-center animate-on-scroll" style="border-top: 4px solid var(--success);">
           <div class="text-3xl mb-4" aria-hidden="true">🏆</div>
           <div class="font-heading font-bold mb-3" style="color: var(--text-primary);">Real Board Feel</div>
-          <p class="text-sm" style="color: var(--text-secondary);">CBSE pattern, time limit, Assertion & Reasoning — ghar baithe real board exam jaisa experience milta hai.</p>
+          <p class="text-base" style="color: var(--text-secondary);">CBSE pattern, time limit, Assertion & Reasoning — ghar baithe real board exam jaisa experience milta hai.</p>
         </div>
 
       </div>
@@ -219,22 +219,22 @@ include '../../partials/nav.php';
         <a href="/features/zero-to-hero/" class="card animate-on-scroll" style="text-decoration: none; display: block;">
           <div class="text-2xl mb-3" aria-hidden="true">🚀</div>
           <div class="font-heading font-bold mb-2" style="color: var(--text-primary);">Zero to Hero</div>
-          <p class="text-sm mb-3" style="color: var(--text-secondary);">Pehle gaps fill karo — phir mock exams mein zyada marks aayenge.</p>
-          <span class="text-sm font-bold" style="color: var(--primary-light);">Explore →</span>
+          <p class="text-base mb-3" style="color: var(--text-secondary);">Pehle gaps fill karo — phir mock exams mein zyada marks aayenge.</p>
+          <span class="text-base font-bold" style="color: var(--primary-light);">Explore →</span>
         </a>
 
         <a href="/features/exam-notes/" class="card animate-on-scroll" style="text-decoration: none; display: block;">
           <div class="text-2xl mb-3" aria-hidden="true">📋</div>
           <div class="font-heading font-bold mb-2" style="color: var(--text-primary);">Exam Notes</div>
-          <p class="text-sm mb-3" style="color: var(--text-secondary);">Mock se pehle notes revise karo — chapter-wise summary + formulas.</p>
-          <span class="text-sm font-bold" style="color: var(--primary-light);">Explore →</span>
+          <p class="text-base mb-3" style="color: var(--text-secondary);">Mock se pehle notes revise karo — chapter-wise summary + formulas.</p>
+          <span class="text-base font-bold" style="color: var(--primary-light);">Explore →</span>
         </a>
 
         <a href="/features/adaptive-learning/" class="card animate-on-scroll" style="text-decoration: none; display: block;">
           <div class="text-2xl mb-3" aria-hidden="true">🧠</div>
           <div class="font-heading font-bold mb-2" style="color: var(--text-primary);">Adaptive Learning</div>
-          <p class="text-sm mb-3" style="color: var(--text-secondary);">Mock mein weak spots find hue — Adaptive Learning se strengthen karo.</p>
-          <span class="text-sm font-bold" style="color: var(--primary-light);">Explore →</span>
+          <p class="text-base mb-3" style="color: var(--text-secondary);">Mock mein weak spots find hue — Adaptive Learning se strengthen karo.</p>
+          <span class="text-base font-bold" style="color: var(--primary-light);">Explore →</span>
         </a>
 
       </div>

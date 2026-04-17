@@ -41,7 +41,7 @@ include '../../partials/nav.php';
 
       <!-- Breadcrumb -->
       <nav aria-label="Breadcrumb" class="mb-8">
-        <ol class="flex flex-wrap items-center gap-2 text-sm" style="color: var(--text-muted);">
+        <ol class="flex flex-wrap items-center gap-2 text-base" style="color: var(--text-muted);">
           <li><a href="/" style="color: var(--text-muted);">Home</a></li>
           <li aria-hidden="true" style="color: var(--text-muted);">›</li>
           <li><a href="/features/" style="color: var(--text-muted);">Features</a></li>
@@ -89,10 +89,10 @@ include '../../partials/nav.php';
           <div class="p-8 rounded-2xl text-center animate-on-scroll" style="background: var(--bg-surface); border: 2px solid var(--border-default);">
             <div class="stat-number mb-2" style="font-size: clamp(4rem, 10vw, 6rem);">10</div>
             <div class="font-heading font-bold text-xl mb-2" style="color: var(--text-primary);">Tarike Hain SAAVI Ke Paas</div>
-            <p class="text-sm" style="color: var(--text-secondary);">Analogy · Story · Real Life · Diagram · Equation · Experiment · Quiz · Comparison · Common Mistake · Mnemonic</p>
+            <p class="text-base" style="color: var(--text-secondary);">Analogy · Story · Real Life · Diagram · Equation · Experiment · Quiz · Comparison · Common Mistake · Mnemonic</p>
           </div>
           <div class="p-4 rounded-2xl text-center" style="background: var(--success-bg); border: 1px solid var(--success);">
-            <p class="text-sm font-bold" style="color: var(--success);">
+            <p class="text-base font-bold" style="color: var(--success);">
               Agar pehla tarika nahi samjha → SAAVI automatic agle tarike pe chali jaati hai
             </p>
           </div>
@@ -127,7 +127,7 @@ include '../../partials/nav.php';
             <div>
               <div class="text-xs font-bold uppercase tracking-wide mb-1" style="color: var(--accent);">Paani wali analogy</div>
               <div class="font-heading font-bold mb-2" style="color: var(--text-primary);">Water Analogy</div>
-              <p class="text-sm" style="color: var(--text-secondary);">
+              <p class="text-base" style="color: var(--text-secondary);">
                 "Electricity = paani ka bahna. Wire = pipe. Current = paani ki speed. Voltage = pressure."
                 Jaise paani upar se neeche behta hai, waise electrons negative se positive jaate hain.
               </p>
@@ -142,7 +142,7 @@ include '../../partials/nav.php';
             <div>
               <div class="text-xs font-bold uppercase tracking-wide mb-1" style="color: var(--primary-light);">Kahani sunao</div>
               <div class="font-heading font-bold mb-2" style="color: var(--text-primary);">Story</div>
-              <p class="text-sm" style="color: var(--text-secondary);">
+              <p class="text-base" style="color: var(--text-secondary);">
                 "Ek gaon mein bijli aayi pehli baar. Bulb jala. Kyun? Electrons movement se —
                 battery ne unhe push kiya wire mein, phir wire se bulb ke filament pe, aur filament
                 garam hokar chama chama karne laga."
@@ -158,7 +158,7 @@ include '../../partials/nav.php';
             <div>
               <div class="text-xs font-bold uppercase tracking-wide mb-1" style="color: var(--success);">Apni zindagi mein</div>
               <div class="font-heading font-bold mb-2" style="color: var(--text-primary);">Real Life</div>
-              <p class="text-sm" style="color: var(--text-secondary);">
+              <p class="text-base" style="color: var(--text-secondary);">
                 "Phone charge kyun hota hai? Charger electrons pump karta hai battery mein.
                 Phir jab phone use karo, woh electrons bahar nikalte hain screen aur processor ke liye.
                 Jab electrons khatam, battery dead."
@@ -174,7 +174,7 @@ include '../../partials/nav.php';
             <div>
               <div class="text-xs font-bold uppercase tracking-wide mb-1" style="color: var(--info);">Aankhon ke bina bhi</div>
               <div class="font-heading font-bold mb-2" style="color: var(--text-primary);">Diagram Description <span class="text-xs" style="color: var(--info);">(♿ Blind-Accessible)</span></div>
-              <p class="text-sm" style="color: var(--text-secondary);">
+              <p class="text-base" style="color: var(--text-secondary);">
                 "Ek circle socho. Battery positive → wire → bulb → wire → battery negative.
                 Yeh circuit hai. Electrons is circle mein ek direction mein ghoomte hain —
                 jaise ek road pe cars ek taraf hi chalti hain."
@@ -190,7 +190,7 @@ include '../../partials/nav.php';
             <div>
               <div class="text-xs font-bold uppercase tracking-wide mb-1" style="color: var(--warning);">Formula se samjho</div>
               <div class="font-heading font-bold mb-2" style="color: var(--text-primary);">Equation</div>
-              <p class="text-sm" style="color: var(--text-secondary);">
+              <p class="text-base" style="color: var(--text-secondary);">
                 "<strong style="color: var(--accent);">V = IR</strong> — Voltage = Current × Resistance.
                 Voltage matlab kitna push. Current matlab kitne electrons.
                 Resistance matlab wire ki rokne ki power.
@@ -207,7 +207,7 @@ include '../../partials/nav.php';
             <div>
               <div class="text-xs font-bold uppercase tracking-wide mb-1" style="color: var(--primary-light);">Ghar pe karo</div>
               <div class="font-heading font-bold mb-2" style="color: var(--text-primary);">Experiment</div>
-              <p class="text-sm" style="color: var(--text-secondary);">
+              <p class="text-base" style="color: var(--text-secondary);">
                 "Lemon battery ghar pe banao: ek lemon lo, copper coin aur zinc nail ghusao.
                 Multimeter lagao — 0.9V dikhega! Lemon ke andar chemical reaction hoti hai
                 jisse electrons move karte hain. Yahi electricity hai."
@@ -223,7 +223,7 @@ include '../../partials/nav.php';
             <div>
               <div class="text-xs font-bold uppercase tracking-wide mb-1" style="color: var(--accent);">Khud sochke samjho</div>
               <div class="font-heading font-bold mb-2" style="color: var(--text-primary);">Quiz Format</div>
-              <p class="text-sm" style="color: var(--text-secondary);">
+              <p class="text-base" style="color: var(--text-secondary);">
                 "Agar voltage double karo aur resistance same rakho — current ka kya hoga?
                 Double hoga? Half hoga? Same rahega?
                 <em>(Hint: V = IR — ek side double, doosri kya change hogi?)</em>
@@ -240,7 +240,7 @@ include '../../partials/nav.php';
             <div>
               <div class="text-xs font-bold uppercase tracking-wide mb-1" style="color: var(--success);">Doosre se milao</div>
               <div class="font-heading font-bold mb-2" style="color: var(--text-primary);">Comparison</div>
-              <p class="text-sm" style="color: var(--text-secondary);">
+              <p class="text-base" style="color: var(--text-secondary);">
                 "Electricity vs paani — kya same hai, kya alag?
                 Same: dono flow karte hain, dono pressure se behte hain, dono pipe mein rok sakte hain.
                 Alag: electrons itne chote hain ki dikhte nahi, aur bahut faster move karte hain."
@@ -256,7 +256,7 @@ include '../../partials/nav.php';
             <div>
               <div class="text-xs font-bold uppercase tracking-wide mb-1" style="color: var(--error);">Galti pakdo</div>
               <div class="font-heading font-bold mb-2" style="color: var(--text-primary);">Common Mistake</div>
-              <p class="text-sm" style="color: var(--text-secondary);">
+              <p class="text-base" style="color: var(--text-secondary);">
                 "Log bolte hain 'bijli aati hai' — actually electrons jaate hain, aate nahi.
                 Aur log sochte hain bijli hawa mein fly karti hai — actually wire ke andar
                 electrons shift karte hain, ek domino chain ki tarah.
@@ -273,7 +273,7 @@ include '../../partials/nav.php';
             <div>
               <div class="text-xs font-bold uppercase tracking-wide mb-1" style="color: var(--info);">Yaad rakhne ka trick</div>
               <div class="font-heading font-bold mb-2" style="color: var(--text-primary);">Mnemonic</div>
-              <p class="text-sm" style="color: var(--text-secondary);">
+              <p class="text-base" style="color: var(--text-secondary);">
                 "<strong style="color: var(--accent);">VIR — Very Important Rule</strong>
                 (Voltage = Current × Resistance)
                 Jab bhi Ohm's Law bhool jao, VIR yaad karo.
@@ -290,7 +290,7 @@ include '../../partials/nav.php';
         <p class="font-heading font-bold text-lg mb-2" style="color: var(--text-primary);">
           Yeh sirf ek example tha — "What is Electricity?"
         </p>
-        <p class="text-sm" style="color: var(--text-secondary);">
+        <p class="text-base" style="color: var(--text-secondary);">
           SAAVI ke paas NCERT ke har concept ke liye yeh 10 approaches trained hain —
           Class 6 se Class 10 tak, har subject mein. Koi concept impossible nahi hai.
         </p>
@@ -316,7 +316,7 @@ include '../../partials/nav.php';
         <div class="card text-center animate-on-scroll">
           <div class="text-3xl mb-3" aria-hidden="true">🧠</div>
           <div class="font-heading font-bold mb-2" style="color: var(--text-primary);">Multiple Intelligences</div>
-          <p class="text-sm" style="color: var(--text-secondary);">
+          <p class="text-base" style="color: var(--text-secondary);">
             Howard Gardner ki theory — koi visual hai, koi logical, koi storytelling se seekhta hai.
             SAAVI sab ke liye ready hai.
           </p>
@@ -324,14 +324,14 @@ include '../../partials/nav.php';
         <div class="card text-center animate-on-scroll">
           <div class="text-3xl mb-3" aria-hidden="true">🔁</div>
           <div class="font-heading font-bold mb-2" style="color: var(--text-primary);">Spaced Repetition</div>
-          <p class="text-sm" style="color: var(--text-secondary);">
+          <p class="text-base" style="color: var(--text-secondary);">
             Ek hi cheez alag angle se baar baar dekhne se long-term memory mein permanently save ho jaati hai.
           </p>
         </div>
         <div class="card text-center animate-on-scroll">
           <div class="text-3xl mb-3" aria-hidden="true">❤️</div>
           <div class="font-heading font-bold mb-2" style="color: var(--text-primary);">Zero Frustration</div>
-          <p class="text-sm" style="color: var(--text-secondary);">
+          <p class="text-base" style="color: var(--text-secondary);">
             Jab student frustrate hota hai toh seekhna band ho jaata hai.
             10 options matlab kabhi "I give up" wala moment nahi aata.
           </p>
@@ -356,30 +356,30 @@ include '../../partials/nav.php';
         <a href="/features/zero-to-hero/" class="card animate-on-scroll" style="text-decoration: none; display: block;">
           <div class="text-2xl mb-3" aria-hidden="true">🚀</div>
           <div class="font-heading font-bold mb-2" style="color: var(--text-primary);">Zero to Hero</div>
-          <p class="text-sm mb-3" style="color: var(--text-secondary);">
+          <p class="text-base mb-3" style="color: var(--text-secondary);">
             SAAVI pehle check karti hai kya basics pata hain. Phir Class 6 se 10 tak ka poora path banati hai.
           </p>
-          <span class="text-sm font-bold" style="color: var(--primary-light);">Explore →</span>
+          <span class="text-base font-bold" style="color: var(--primary-light);">Explore →</span>
         </a>
 
         <!-- Related: Adaptive Learning -->
         <a href="/features/" class="card animate-on-scroll" style="text-decoration: none; display: block;">
           <div class="text-2xl mb-3" aria-hidden="true">🧠</div>
           <div class="font-heading font-bold mb-2" style="color: var(--text-primary);">Adaptive Learning</div>
-          <p class="text-sm mb-3" style="color: var(--text-secondary);">
+          <p class="text-base mb-3" style="color: var(--text-secondary);">
             SAAVI tumhara pace observe karti hai aur automatically adjust karti hai — sirf weak topics pe zyaada time.
           </p>
-          <span class="text-sm font-bold" style="color: var(--primary-light);">Explore →</span>
+          <span class="text-base font-bold" style="color: var(--primary-light);">Explore →</span>
         </a>
 
         <!-- Related: Mock Exams -->
         <a href="/features/" class="card animate-on-scroll" style="text-decoration: none; display: block;">
           <div class="text-2xl mb-3" aria-hidden="true">📝</div>
           <div class="font-heading font-bold mb-2" style="color: var(--text-primary);">Mock Exams</div>
-          <p class="text-sm mb-3" style="color: var(--text-secondary);">
+          <p class="text-base mb-3" style="color: var(--text-secondary);">
             Board pattern pe practice — real exam jaisi feel, ghar baithe. Har galat answer pe full explanation.
           </p>
-          <span class="text-sm font-bold" style="color: var(--primary-light);">Explore →</span>
+          <span class="text-base font-bold" style="color: var(--primary-light);">Explore →</span>
         </a>
 
       </div>

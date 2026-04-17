@@ -41,7 +41,7 @@ include '../../partials/nav.php';
 
       <!-- Breadcrumb -->
       <nav aria-label="Breadcrumb" class="mb-8">
-        <ol class="flex flex-wrap items-center gap-2 text-sm" style="color: var(--text-muted);">
+        <ol class="flex flex-wrap items-center gap-2 text-base" style="color: var(--text-muted);">
           <li><a href="/" style="color: var(--text-muted);">Home</a></li>
           <li aria-hidden="true" style="color: var(--text-muted);">›</li>
           <li><a href="/features/" style="color: var(--text-muted);">Features</a></li>
@@ -87,7 +87,7 @@ include '../../partials/nav.php';
               <span class="text-2xl" aria-hidden="true">⚡</span>
               <div>
                 <div class="font-heading font-bold mb-1" style="color: var(--text-primary);">Auto-Generated</div>
-                <p class="text-sm" style="color: var(--text-secondary);">Chapter select karo — notes ready. Summary, formulas, definitions, key points — sab ek page pe.</p>
+                <p class="text-base" style="color: var(--text-secondary);">Chapter select karo — notes ready. Summary, formulas, definitions, key points — sab ek page pe.</p>
               </div>
             </div>
           </div>
@@ -96,7 +96,7 @@ include '../../partials/nav.php';
               <span class="text-2xl" aria-hidden="true">🎯</span>
               <div>
                 <div class="font-heading font-bold mb-1" style="color: var(--text-primary);">Board Exam Format</div>
-                <p class="text-sm" style="color: var(--text-secondary);">CBSE board ke hisaab se structured — 1 mark, 3 mark, 5 mark ke liye alag sections. Ek baar padhna kaafi.</p>
+                <p class="text-base" style="color: var(--text-secondary);">CBSE board ke hisaab se structured — 1 mark, 3 mark, 5 mark ke liye alag sections. Ek baar padhna kaafi.</p>
               </div>
             </div>
           </div>
@@ -105,7 +105,7 @@ include '../../partials/nav.php';
               <span class="text-2xl" aria-hidden="true">🌐</span>
               <div>
                 <div class="font-heading font-bold mb-1" style="color: var(--text-primary);">5 Languages Mein</div>
-                <p class="text-sm" style="color: var(--text-secondary);">Hindi, Hinglish, Marathi, Telugu, Gujarati — apni language choose karo. Notes wahi language mein milenge.</p>
+                <p class="text-base" style="color: var(--text-secondary);">Hindi, Hinglish, Marathi, Telugu, Gujarati — apni language choose karo. Notes wahi language mein milenge.</p>
               </div>
             </div>
           </div>
@@ -135,37 +135,37 @@ include '../../partials/nav.php';
         <div class="card animate-on-scroll" style="border-top: 4px solid var(--primary);">
           <div class="text-2xl mb-3" aria-hidden="true">📝</div>
           <div class="font-heading font-bold mb-2" style="color: var(--text-primary);">Chapter Summary</div>
-          <p class="text-sm" style="color: var(--text-secondary);">Poore chapter ka crisp summary — 1 page mein. Exam se pehle ek baar padhlo, sab yaad aa jaayega.</p>
+          <p class="text-base" style="color: var(--text-secondary);">Poore chapter ka crisp summary — 1 page mein. Exam se pehle ek baar padhlo, sab yaad aa jaayega.</p>
         </div>
 
         <div class="card animate-on-scroll" style="border-top: 4px solid var(--accent);">
           <div class="text-2xl mb-3" aria-hidden="true">🔢</div>
           <div class="font-heading font-bold mb-2" style="color: var(--text-primary);">All Formulas</div>
-          <p class="text-sm" style="color: var(--text-secondary);">Subject-wise formula sheets — Maths, Physics, Chemistry. Box mein highlight kiya hua taaki aankh seedha padh le.</p>
+          <p class="text-base" style="color: var(--text-secondary);">Subject-wise formula sheets — Maths, Physics, Chemistry. Box mein highlight kiya hua taaki aankh seedha padh le.</p>
         </div>
 
         <div class="card animate-on-scroll" style="border-top: 4px solid var(--success);">
           <div class="text-2xl mb-3" aria-hidden="true">💎</div>
           <div class="font-heading font-bold mb-2" style="color: var(--text-primary);">Key Definitions</div>
-          <p class="text-sm" style="color: var(--text-secondary);">Board exam mein exactly yahi likha jaata hai — SAAVI NCERT-aligned definitions deti hai apni language mein.</p>
+          <p class="text-base" style="color: var(--text-secondary);">Board exam mein exactly yahi likha jaata hai — SAAVI NCERT-aligned definitions deti hai apni language mein.</p>
         </div>
 
         <div class="card animate-on-scroll" style="border-top: 4px solid var(--info);">
           <div class="text-2xl mb-3" aria-hidden="true">🧠</div>
           <div class="font-heading font-bold mb-2" style="color: var(--text-primary);">Mnemonics</div>
-          <p class="text-sm" style="color: var(--text-secondary);">Yaad karne ke tricks — funny, easy mnemonics Hindi mein. Periodic table, taxonomy, history dates — sab.</p>
+          <p class="text-base" style="color: var(--text-secondary);">Yaad karne ke tricks — funny, easy mnemonics Hindi mein. Periodic table, taxonomy, history dates — sab.</p>
         </div>
 
         <div class="card animate-on-scroll" style="border-top: 4px solid var(--text-muted);">
           <div class="text-2xl mb-3" aria-hidden="true">⭐</div>
           <div class="font-heading font-bold mb-2" style="color: var(--text-primary);">Important Points</div>
-          <p class="text-sm" style="color: var(--text-secondary);">Previous years mein zyada baar aaye topics — starred. Inhe pehle padhna zaroori hai.</p>
+          <p class="text-base" style="color: var(--text-secondary);">Previous years mein zyada baar aaye topics — starred. Inhe pehle padhna zaroori hai.</p>
         </div>
 
         <div class="card animate-on-scroll" style="border-top: 4px solid var(--primary);">
           <div class="text-2xl mb-3" aria-hidden="true">🗺️</div>
           <div class="font-heading font-bold mb-2" style="color: var(--text-primary);">Mind Maps</div>
-          <p class="text-sm" style="color: var(--text-secondary);">Complex chapters ke liye visual mind map — ek nazar mein poora chapter samajh lo.</p>
+          <p class="text-base" style="color: var(--text-secondary);">Complex chapters ke liye visual mind map — ek nazar mein poora chapter samajh lo.</p>
         </div>
 
       </div>
@@ -187,22 +187,22 @@ include '../../partials/nav.php';
         <a href="/features/mock-exams/" class="card animate-on-scroll" style="text-decoration: none; display: block;">
           <div class="text-2xl mb-3" aria-hidden="true">📝</div>
           <div class="font-heading font-bold mb-2" style="color: var(--text-primary);">Mock Exams</div>
-          <p class="text-sm mb-3" style="color: var(--text-secondary);">Notes padhe — ab mock exam do. Board pattern pe test karo.</p>
-          <span class="text-sm font-bold" style="color: var(--primary-light);">Explore →</span>
+          <p class="text-base mb-3" style="color: var(--text-secondary);">Notes padhe — ab mock exam do. Board pattern pe test karo.</p>
+          <span class="text-base font-bold" style="color: var(--primary-light);">Explore →</span>
         </a>
 
         <a href="/features/revision-mode/" class="card animate-on-scroll" style="text-decoration: none; display: block;">
           <div class="text-2xl mb-3" aria-hidden="true">🔄</div>
           <div class="font-heading font-bold mb-2" style="color: var(--text-primary);">Revision Mode</div>
-          <p class="text-sm mb-3" style="color: var(--text-secondary);">Aaj ke chapter ke notes + revision — ek saath. School ke baad perfect combo.</p>
-          <span class="text-sm font-bold" style="color: var(--primary-light);">Explore →</span>
+          <p class="text-base mb-3" style="color: var(--text-secondary);">Aaj ke chapter ke notes + revision — ek saath. School ke baad perfect combo.</p>
+          <span class="text-base font-bold" style="color: var(--primary-light);">Explore →</span>
         </a>
 
         <a href="/features/mother-tongue-learning/" class="card animate-on-scroll" style="text-decoration: none; display: block;">
           <div class="text-2xl mb-3" aria-hidden="true">🌏</div>
           <div class="font-heading font-bold mb-2" style="color: var(--text-primary);">Mother Tongue Learning</div>
-          <p class="text-sm mb-3" style="color: var(--text-secondary);">Notes apni language mein — concept aur bhi deep samajh aata hai.</p>
-          <span class="text-sm font-bold" style="color: var(--primary-light);">Explore →</span>
+          <p class="text-base mb-3" style="color: var(--text-secondary);">Notes apni language mein — concept aur bhi deep samajh aata hai.</p>
+          <span class="text-base font-bold" style="color: var(--primary-light);">Explore →</span>
         </a>
 
       </div>

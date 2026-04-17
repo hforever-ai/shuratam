@@ -41,7 +41,7 @@ include '../../partials/nav.php';
 
       <!-- Breadcrumb -->
       <nav aria-label="Breadcrumb" class="mb-8">
-        <ol class="flex flex-wrap items-center gap-2 text-sm" style="color: var(--text-muted);">
+        <ol class="flex flex-wrap items-center gap-2 text-base" style="color: var(--text-muted);">
           <li><a href="/" style="color: var(--text-muted);">Home</a></li>
           <li aria-hidden="true" style="color: var(--text-muted);">›</li>
           <li><a href="/features/" style="color: var(--text-muted);">Features</a></li>
@@ -87,7 +87,7 @@ include '../../partials/nav.php';
               <span class="text-2xl" aria-hidden="true">🔍</span>
               <div>
                 <div class="font-heading font-bold mb-1" style="color: var(--text-primary);">Gap Detection</div>
-                <p class="text-sm" style="color: var(--text-secondary);">SAAVI automatically pehchanti hai kaunse prerequisites nahi pata. Ek quick diagnostic test se sab clear ho jaata hai.</p>
+                <p class="text-base" style="color: var(--text-secondary);">SAAVI automatically pehchanti hai kaunse prerequisites nahi pata. Ek quick diagnostic test se sab clear ho jaata hai.</p>
               </div>
             </div>
           </div>
@@ -96,7 +96,7 @@ include '../../partials/nav.php';
               <span class="text-2xl" aria-hidden="true">🗺️</span>
               <div>
                 <div class="font-heading font-bold mb-1" style="color: var(--text-primary);">Auto Path Builder</div>
-                <p class="text-sm" style="color: var(--text-secondary);">Tumhara personal learning roadmap — Class 6 se 10 tak, ek connected chain. NCERT sequence ke anusaar.</p>
+                <p class="text-base" style="color: var(--text-secondary);">Tumhara personal learning roadmap — Class 6 se 10 tak, ek connected chain. NCERT sequence ke anusaar.</p>
               </div>
             </div>
           </div>
@@ -105,7 +105,7 @@ include '../../partials/nav.php';
               <span class="text-2xl" aria-hidden="true">🏆</span>
               <div>
                 <div class="font-heading font-bold mb-1" style="color: var(--text-primary);">Board Ready Certification</div>
-                <p class="text-sm" style="color: var(--text-secondary);">Jab poora path complete ho, SAAVI confirm karti hai: "Tum Board Exam ke liye ready ho!" Har topic pe confidence.</p>
+                <p class="text-base" style="color: var(--text-secondary);">Jab poora path complete ho, SAAVI confirm karti hai: "Tum Board Exam ke liye ready ho!" Har topic pe confidence.</p>
               </div>
             </div>
           </div>
@@ -141,7 +141,7 @@ include '../../partials/nav.php';
               <span class="badge badge-accent">Class 10 — Goal</span>
             </div>
             <div class="text-xl font-heading font-bold" style="color: var(--accent);">Quadratic Equations</div>
-            <p class="text-sm mt-1" style="color: var(--text-secondary);">ax² + bx + c = 0 — Board exam ka important chapter</p>
+            <p class="text-base mt-1" style="color: var(--text-secondary);">ax² + bx + c = 0 — Board exam ka important chapter</p>
           </div>
         </div>
 
@@ -161,7 +161,7 @@ include '../../partials/nav.php';
               <span class="badge badge-primary">Class 9</span>
             </div>
             <div class="text-xl font-heading font-bold" style="color: var(--primary-light);">Factorization</div>
-            <p class="text-sm mt-1" style="color: var(--text-secondary);">Polynomials ko factors mein todna — quadratic solve karne ke liye mandatory</p>
+            <p class="text-base mt-1" style="color: var(--text-secondary);">Polynomials ko factors mein todna — quadratic solve karne ke liye mandatory</p>
           </div>
         </div>
 
@@ -181,7 +181,7 @@ include '../../partials/nav.php';
               <span style="background: var(--info-bg); color: var(--info); border: 1px solid var(--info); border-radius: 9999px; padding: .375rem .75rem; font-size: .75rem; font-weight: 600; display: inline-flex;">Class 8</span>
             </div>
             <div class="text-xl font-heading font-bold" style="color: var(--info);">Linear Equations</div>
-            <p class="text-sm mt-1" style="color: var(--text-secondary);">Ek variable wali equations — algebra ka pehla serious step</p>
+            <p class="text-base mt-1" style="color: var(--text-secondary);">Ek variable wali equations — algebra ka pehla serious step</p>
           </div>
         </div>
 
@@ -201,7 +201,7 @@ include '../../partials/nav.php';
               <span style="background: var(--success-bg); color: var(--success); border: 1px solid var(--success); border-radius: 9999px; padding: .375rem .75rem; font-size: .75rem; font-weight: 600; display: inline-flex;">Class 7</span>
             </div>
             <div class="text-xl font-heading font-bold" style="color: var(--success);">Basic Algebra</div>
-            <p class="text-sm mt-1" style="color: var(--text-secondary);">Variables, expressions, simple equations — algebra ki pehli zubaan</p>
+            <p class="text-base mt-1" style="color: var(--text-secondary);">Variables, expressions, simple equations — algebra ki pehli zubaan</p>
           </div>
         </div>
 
@@ -221,13 +221,13 @@ include '../../partials/nav.php';
               <span style="background: var(--bg-subtle); color: var(--text-secondary); border: 1px solid var(--border-default); border-radius: 9999px; padding: .375rem .75rem; font-size: .75rem; font-weight: 600; display: inline-flex;">Class 6 — Foundation</span>
             </div>
             <div class="text-xl font-heading font-bold" style="color: var(--text-primary);">Numbers &amp; Operations</div>
-            <p class="text-sm mt-1" style="color: var(--text-secondary);">BODMAS, integers, fractions — sab kuch ka base yahan se shuru hota hai</p>
+            <p class="text-base mt-1" style="color: var(--text-secondary);">BODMAS, integers, fractions — sab kuch ka base yahan se shuru hota hai</p>
           </div>
         </div>
 
       </div>
 
-      <p class="text-center mt-10 text-sm" style="color: var(--text-muted);">
+      <p class="text-center mt-10 text-base" style="color: var(--text-muted);">
         SAAVI detect karti hai tum kahan rok gaye — aur wahan se shuru karti hai. Time waste nahi.
       </p>
     </div>
@@ -256,7 +256,7 @@ include '../../partials/nav.php';
           </div>
           <div class="text-xs font-bold uppercase tracking-wide mb-2" style="color: var(--primary-light);">Step 1</div>
           <div class="text-xl font-heading font-bold mb-3" style="color: var(--text-primary);">Check</div>
-          <p class="text-sm" style="color: var(--text-secondary);">
+          <p class="text-base" style="color: var(--text-secondary);">
             SAAVI ek short diagnostic quiz leta hai. 5 minutes mein identify ho jaata hai — kaunse topics pata hain, kaunse bilkul nahi.
             Koi judgment nahi. Sirf diagnosis.
           </p>
@@ -269,7 +269,7 @@ include '../../partials/nav.php';
           </div>
           <div class="text-xs font-bold uppercase tracking-wide mb-2" style="color: var(--accent);">Step 2</div>
           <div class="text-xl font-heading font-bold mb-3" style="color: var(--text-primary);">Fill Gaps</div>
-          <p class="text-sm" style="color: var(--text-secondary);">
+          <p class="text-base" style="color: var(--text-secondary);">
             Jahan gap hai, SAAVI wahan se padhaana shuru karti hai — Hindi mein, examples ke saath.
             Koi topic repeat nahi hoga jo tum already jaante ho.
             Sirf jo missing hai.
@@ -283,7 +283,7 @@ include '../../partials/nav.php';
           </div>
           <div class="text-xs font-bold uppercase tracking-wide mb-2" style="color: var(--success);">Step 3</div>
           <div class="text-xl font-heading font-bold mb-3" style="color: var(--text-primary);">Advance</div>
-          <p class="text-sm" style="color: var(--text-secondary);">
+          <p class="text-base" style="color: var(--text-secondary);">
             Jab base strong ho jaaye, SAAVI tum par automatically current class ke topic pe le jaati hai.
             Class 10 Board Exam — ab darne ki zaroorat nahi.
           </p>
@@ -296,7 +296,7 @@ include '../../partials/nav.php';
         <p class="text-lg font-heading font-bold mb-2" style="color: var(--text-primary);">
           Average gap fill time: <span style="color: var(--accent);">2–3 weeks</span>
         </p>
-        <p class="text-sm" style="color: var(--text-secondary);">
+        <p class="text-base" style="color: var(--text-secondary);">
           Class 6 se Class 10 tak ka poora prerequisite chain — sirf 2-3 hafte mein, din ke 30 minute mein.
           SAAVI ka adaptive engine time waste nahi karta.
         </p>
@@ -320,30 +320,30 @@ include '../../partials/nav.php';
         <a href="/features/" class="card animate-on-scroll" style="text-decoration: none; display: block;">
           <div class="text-2xl mb-3" aria-hidden="true">🧠</div>
           <div class="font-heading font-bold mb-2" style="color: var(--text-primary);">Adaptive Learning</div>
-          <p class="text-sm mb-3" style="color: var(--text-secondary);">
+          <p class="text-base mb-3" style="color: var(--text-secondary);">
             SAAVI tumhara pace aur level observe karti hai. Har session ke baad automatically adjust hoti hai.
           </p>
-          <span class="text-sm font-bold" style="color: var(--primary-light);">Explore →</span>
+          <span class="text-base font-bold" style="color: var(--primary-light);">Explore →</span>
         </a>
 
         <!-- Related: Ask Like 10 -->
         <a href="/features/ask-like-10/" class="card animate-on-scroll" style="text-decoration: none; display: block;">
           <div class="text-2xl mb-3" aria-hidden="true">💡</div>
           <div class="font-heading font-bold mb-2" style="color: var(--text-primary);">Ask Like 10</div>
-          <p class="text-sm mb-3" style="color: var(--text-secondary);">
+          <p class="text-base mb-3" style="color: var(--text-secondary);">
             Samajh nahi aaya? SAAVI ke paas ek hi concept ke 10 alag tarike hain — analogy, story, experiment aur zyaada.
           </p>
-          <span class="text-sm font-bold" style="color: var(--primary-light);">Explore →</span>
+          <span class="text-base font-bold" style="color: var(--primary-light);">Explore →</span>
         </a>
 
         <!-- Related: Mock Exams -->
         <a href="/features/" class="card animate-on-scroll" style="text-decoration: none; display: block;">
           <div class="text-2xl mb-3" aria-hidden="true">📝</div>
           <div class="font-heading font-bold mb-2" style="color: var(--text-primary);">Mock Exams</div>
-          <p class="text-sm mb-3" style="color: var(--text-secondary);">
+          <p class="text-base mb-3" style="color: var(--text-secondary);">
             Board pattern pe practice tests. Real exam jaisa feel — ghar baithe. Har answer pe detailed feedback.
           </p>
-          <span class="text-sm font-bold" style="color: var(--primary-light);">Explore →</span>
+          <span class="text-base font-bold" style="color: var(--primary-light);">Explore →</span>
         </a>
 
       </div>

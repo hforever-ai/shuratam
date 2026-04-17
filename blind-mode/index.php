@@ -36,7 +36,7 @@ include '../partials/nav.php';
 
       <!-- Breadcrumb -->
       <nav aria-label="Breadcrumb" class="mb-8">
-        <ol class="flex items-center gap-2 text-sm" style="color: var(--text-muted);">
+        <ol class="flex items-center gap-2 text-base" style="color: var(--text-muted);">
           <li><a href="/" style="color: var(--primary-light);">Home</a></li>
           <li aria-hidden="true" style="color: var(--border-default);">/</li>
           <li aria-current="page" style="color: var(--text-secondary);">Blind Mode</li>
@@ -134,7 +134,7 @@ include '../partials/nav.php';
               <div class="font-heading font-bold text-xl mb-1" style="color: var(--text-primary);">
                 No "See the Diagram" — Ever
               </div>
-              <p class="text-sm" style="color: var(--text-secondary);">
+              <p class="text-base" style="color: var(--text-secondary);">
                 Normal apps mein visuals mandatory hote hain. SAAVI Blind Mode mein every concept
                 is spoken in pure words — koi image reference nahi.
               </p>
@@ -145,13 +145,13 @@ include '../partials/nav.php';
           <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 mt-2">
             <div class="rounded-xl p-4" style="background: var(--bg-elevated); border: 1px solid var(--error);">
               <div class="text-xs font-bold uppercase tracking-wide mb-3" style="color: var(--error);">Normal App</div>
-              <p class="text-sm font-mono" style="color: var(--text-secondary);">
+              <p class="text-base font-mono" style="color: var(--text-secondary);">
                 "Refer to the figure below to understand the circle."
               </p>
             </div>
             <div class="rounded-xl p-4" style="background: var(--bg-elevated); border: 1px solid var(--success);">
               <div class="text-xs font-bold uppercase tracking-wide mb-3" style="color: var(--success);">SAAVI Blind Mode</div>
-              <p class="text-sm font-mono leading-relaxed" style="color: var(--text-body);">
+              <p class="text-base font-mono leading-relaxed" style="color: var(--text-body);">
                 "Ek circle socho. Beech mein ek point O hai — yeh centre hai.
                 O se circle ke edge tak line — yeh radius hai.
                 Radius circle ki naap hai."
@@ -171,7 +171,7 @@ include '../partials/nav.php';
               <div class="font-heading font-bold text-xl mb-1" style="color: var(--text-primary);">
                 Math Spoken Aloud
               </div>
-              <p class="text-sm" style="color: var(--text-secondary);">
+              <p class="text-base" style="color: var(--text-secondary);">
                 Equations, formulas, chemical symbols — sab kuch natural speech mein convert hota hai.
                 Screen reader pe equation jaisa dikhta hai, SAAVI usise bolti nahi — properly bolti hai.
               </p>
@@ -182,19 +182,19 @@ include '../partials/nav.php';
           <div class="rounded-xl p-4 mt-2" style="background: var(--bg-elevated); border: 1px solid var(--border-subtle);">
             <div class="text-xs font-bold uppercase tracking-wide mb-3" style="color: var(--accent);">Conversion Examples</div>
             <div class="grid grid-cols-1 sm:grid-cols-3 gap-3">
-              <div class="rounded-lg p-3 text-sm" style="background: var(--bg-base);">
+              <div class="rounded-lg p-3 text-base" style="background: var(--bg-base);">
                 <div class="text-xs mb-1" style="color: var(--text-muted);">Written</div>
                 <div class="font-mono font-bold mb-2" style="color: var(--error);">x² + 3x + 2 = 0</div>
                 <div class="text-xs mb-1" style="color: var(--text-muted);">SAAVI bolti hai</div>
                 <div style="color: var(--success);">"x squared plus 3 x plus 2 equals zero"</div>
               </div>
-              <div class="rounded-lg p-3 text-sm" style="background: var(--bg-base);">
+              <div class="rounded-lg p-3 text-base" style="background: var(--bg-base);">
                 <div class="text-xs mb-1" style="color: var(--text-muted);">Written</div>
                 <div class="font-mono font-bold mb-2" style="color: var(--error);">H₂O</div>
                 <div class="text-xs mb-1" style="color: var(--text-muted);">SAAVI bolti hai</div>
                 <div style="color: var(--success);">"H 2 O — hydrogen do, oxygen ek"</div>
               </div>
-              <div class="rounded-lg p-3 text-sm" style="background: var(--bg-base);">
+              <div class="rounded-lg p-3 text-base" style="background: var(--bg-base);">
                 <div class="text-xs mb-1" style="color: var(--text-muted);">Written</div>
                 <div class="font-mono font-bold mb-2" style="color: var(--error);">3/4</div>
                 <div class="text-xs mb-1" style="color: var(--text-muted);">SAAVI bolti hai</div>
@@ -215,7 +215,7 @@ include '../partials/nav.php';
               <div class="font-heading font-bold text-xl mb-1" style="color: var(--text-primary);">
                 Tables → Spoken Lists
               </div>
-              <p class="text-sm" style="color: var(--text-secondary);">
+              <p class="text-base" style="color: var(--text-secondary);">
                 Periodic table, data tables, comparison charts — sab kuch structured spoken format mein
                 convert ho jaata hai. Koi grid, koi column — sirf clear, ordered speech.
               </p>
@@ -249,7 +249,7 @@ include '../partials/nav.php';
             </div>
             <div class="rounded-xl p-4" style="background: var(--bg-elevated); border: 1px solid var(--success);">
               <div class="text-xs font-bold uppercase tracking-wide mb-3" style="color: var(--success);">SAAVI Blind Mode</div>
-              <p class="text-sm font-mono leading-relaxed" style="color: var(--text-body);">
+              <p class="text-base font-mono leading-relaxed" style="color: var(--text-body);">
                 "Periodic table ka pehla element: Hydrogen.
                 Symbol: H. Atomic number: 1. Mass: 1.<br><br>
                 Doosra element: Helium.
@@ -270,7 +270,7 @@ include '../partials/nav.php';
               <div class="font-heading font-bold text-xl mb-1" style="color: var(--text-primary);">
                 Scribe Dictation Cues
               </div>
-              <p class="text-sm" style="color: var(--text-secondary);">
+              <p class="text-base" style="color: var(--text-secondary);">
                 Exam mein scribe use karte hain? SAAVI content mein explicit dictation cues built-in hain —
                 exactly waise jaise ek scribe ko sunna chahiye.
               </p>
@@ -279,7 +279,7 @@ include '../partials/nav.php';
 
           <div class="rounded-xl p-4 mt-2" style="background: var(--bg-elevated); border: 1px solid var(--success);">
             <div class="text-xs font-bold uppercase tracking-wide mb-3" style="color: var(--success);">SAAVI Scribe Output</div>
-            <p class="text-sm font-mono leading-relaxed" style="color: var(--text-body);">
+            <p class="text-base font-mono leading-relaxed" style="color: var(--text-body);">
               "<span style="color: var(--accent);">[Scribe: capital P]</span> Photosynthesis
               <span style="color: var(--accent);">[Scribe: new line]</span> is the process
               <span style="color: var(--accent);">[Scribe: new paragraph]</span><br><br>
@@ -304,7 +304,7 @@ include '../partials/nav.php';
               <div class="font-heading font-bold text-xl mb-1" style="color: var(--text-primary);">
                 Voice-Only Quiz Mode
               </div>
-              <p class="text-sm" style="color: var(--text-secondary);">
+              <p class="text-base" style="color: var(--text-secondary);">
                 SAAVI question bolti hai, options bolti hai — student bolke answer deta hai.
                 Koi tap nahi, koi screen nahi. Purely conversational exam practice.
               </p>
@@ -315,7 +315,7 @@ include '../partials/nav.php';
           <div class="flex flex-col gap-3 mt-2">
             <div class="rounded-xl p-4 ml-0 mr-8" style="background: var(--primary-glow); border: 1px solid var(--primary);">
               <div class="text-xs font-bold mb-1" style="color: var(--primary-light);">SAAVI</div>
-              <p class="text-sm" style="color: var(--text-body);">
+              <p class="text-base" style="color: var(--text-body);">
                 "Cell ka powerhouse kise kehte hain?
                 Option A: Nucleus,
                 Option B: Mitochondria,
@@ -325,11 +325,11 @@ include '../partials/nav.php';
             </div>
             <div class="rounded-xl p-4 ml-8 mr-0" style="background: var(--bg-elevated); border: 1px solid var(--border-subtle);">
               <div class="text-xs font-bold mb-1" style="color: var(--text-muted);">Student</div>
-              <p class="text-sm" style="color: var(--text-body);">"B — Mitochondria"</p>
+              <p class="text-base" style="color: var(--text-body);">"B — Mitochondria"</p>
             </div>
             <div class="rounded-xl p-4 ml-0 mr-8" style="background: var(--primary-glow); border: 1px solid var(--success);">
               <div class="text-xs font-bold mb-1" style="color: var(--success);">SAAVI</div>
-              <p class="text-sm" style="color: var(--text-body);">
+              <p class="text-base" style="color: var(--text-body);">
                 "Bilkul sahi! Mitochondria cell ka powerhouse hai kyunki yahan ATP banta hai —
                 jo cell ki energy currency hai."
               </p>
@@ -348,7 +348,7 @@ include '../partials/nav.php';
               <div class="font-heading font-bold text-xl mb-1" style="color: var(--text-primary);">
                 Screen Reader Compatible
               </div>
-              <p class="text-sm" style="color: var(--text-secondary);">
+              <p class="text-base" style="color: var(--text-secondary);">
                 Sirf "accessible" nahi — properly tested har major assistive technology ke saath.
                 Blind students jo bhi device use karte hain, SAAVI wahan chalegi.
               </p>
@@ -361,28 +361,28 @@ include '../partials/nav.php';
               <div class="text-2xl mb-2">📱</div>
               <div class="font-heading font-bold text-sm mb-1" style="color: var(--text-primary);">TalkBack</div>
               <div class="text-xs" style="color: var(--text-muted);">Android</div>
-              <div class="mt-2 font-bold text-sm" style="color: var(--success);">✅ Tested</div>
+              <div class="mt-2 font-bold text-base" style="color: var(--success);">✅ Tested</div>
             </div>
             <div class="rounded-xl p-4 text-center animate-on-scroll"
               style="background: var(--bg-elevated); border: 1px solid var(--success);">
               <div class="text-2xl mb-2">🍎</div>
               <div class="font-heading font-bold text-sm mb-1" style="color: var(--text-primary);">VoiceOver</div>
               <div class="text-xs" style="color: var(--text-muted);">iOS</div>
-              <div class="mt-2 font-bold text-sm" style="color: var(--success);">✅ Tested</div>
+              <div class="mt-2 font-bold text-base" style="color: var(--success);">✅ Tested</div>
             </div>
             <div class="rounded-xl p-4 text-center animate-on-scroll"
               style="background: var(--bg-elevated); border: 1px solid var(--success);">
               <div class="text-2xl mb-2">🖥️</div>
               <div class="font-heading font-bold text-sm mb-1" style="color: var(--text-primary);">NVDA</div>
               <div class="text-xs" style="color: var(--text-muted);">Windows</div>
-              <div class="mt-2 font-bold text-sm" style="color: var(--success);">✅ Tested</div>
+              <div class="mt-2 font-bold text-base" style="color: var(--success);">✅ Tested</div>
             </div>
             <div class="rounded-xl p-4 text-center animate-on-scroll"
               style="background: var(--bg-elevated); border: 1px solid var(--success);">
               <div class="text-2xl mb-2">💻</div>
               <div class="font-heading font-bold text-sm mb-1" style="color: var(--text-primary);">JAWS</div>
               <div class="text-xs" style="color: var(--text-muted);">Windows</div>
-              <div class="mt-2 font-bold text-sm" style="color: var(--success);">✅ Tested</div>
+              <div class="mt-2 font-bold text-base" style="color: var(--success);">✅ Tested</div>
             </div>
           </div>
         </div>
@@ -398,7 +398,7 @@ include '../partials/nav.php';
               <div class="font-heading font-bold text-xl mb-1" style="color: var(--text-primary);">
                 Braille Literacy Subject
               </div>
-              <p class="text-sm mb-3" style="color: var(--text-secondary);">
+              <p class="text-base mb-3" style="color: var(--text-secondary);">
                 India mein pehla digital platform jahaan blind student Braille padhna seekh sakta hai —
                 audio se. Braille book ki zaroorat nahi. SAAVI tumhare saath step-by-step seekhti hai.
               </p>
@@ -406,7 +406,7 @@ include '../partials/nav.php';
           </div>
 
           <div class="rounded-xl p-5 mt-2" style="background: var(--bg-elevated); border: 1px solid var(--border-subtle);">
-            <div class="grid grid-cols-1 sm:grid-cols-3 gap-4 text-center text-sm">
+            <div class="grid grid-cols-1 sm:grid-cols-3 gap-4 text-center text-base">
               <div>
                 <div class="text-2xl mb-2">🔤</div>
                 <div class="font-heading font-bold mb-1" style="color: var(--text-primary);">Grade 1 Braille</div>
@@ -451,7 +451,7 @@ include '../partials/nav.php';
             "Shrutam ka Blind Mode — HAMESHA FREE. Koi subscription nahi.
             Koi expiry nahi. Kyunki education access — right hai, privilege nahi."
           </p>
-          <cite class="text-sm not-italic" style="color: var(--text-secondary);">
+          <cite class="text-base not-italic" style="color: var(--text-secondary);">
             — Aarambha Team (Kishyam AI Pvt Ltd)
           </cite>
         </blockquote>
@@ -461,21 +461,21 @@ include '../partials/nav.php';
           <div class="card text-center animate-on-scroll">
             <div class="text-3xl mb-3">⚖️</div>
             <div class="font-heading font-bold mb-2" style="color: var(--text-primary);">Legal Commitment</div>
-            <p class="text-sm" style="color: var(--text-secondary);">
+            <p class="text-base" style="color: var(--text-secondary);">
               Terms of Service mein likhit hai — Blind Mode subscription ke peeche kabhi nahi jayega.
             </p>
           </div>
           <div class="card text-center animate-on-scroll">
             <div class="text-3xl mb-3">🤝</div>
             <div class="font-heading font-bold mb-2" style="color: var(--text-primary);">No Tricks</div>
-            <p class="text-sm" style="color: var(--text-secondary);">
+            <p class="text-base" style="color: var(--text-secondary);">
               Koi "free tier with limits" nahi. Poora Blind Mode — poori features — hamesha free.
             </p>
           </div>
           <div class="card text-center animate-on-scroll">
             <div class="text-3xl mb-3">📧</div>
             <div class="font-heading font-bold mb-2" style="color: var(--text-primary);">Direct Contact</div>
-            <p class="text-sm" style="color: var(--text-secondary);">
+            <p class="text-base" style="color: var(--text-secondary);">
               Koi bhi issue ho — directly reach karo:
               <a href="mailto:accessibility@shrutam.ai" class="font-bold" style="color: var(--accent);">
                 accessibility@shrutam.ai
@@ -536,7 +536,7 @@ include '../partials/nav.php';
           </a>
         </div>
 
-        <div class="flex flex-wrap justify-center gap-6 text-sm" style="color: var(--text-secondary);">
+        <div class="flex flex-wrap justify-center gap-6 text-base" style="color: var(--text-secondary);">
           <div class="flex items-center gap-2">
             <span style="color: var(--success);">✓</span>
             <span>Zero cost — forever</span>
@@ -555,7 +555,7 @@ include '../partials/nav.php';
           </div>
         </div>
 
-        <p class="mt-8 text-sm" style="color: var(--text-muted);">
+        <p class="mt-8 text-base" style="color: var(--text-muted);">
           Questions? Write to us:
           <a href="mailto:accessibility@shrutam.ai" style="color: var(--accent);">
             accessibility@shrutam.ai

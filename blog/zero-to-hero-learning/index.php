@@ -90,7 +90,7 @@ include '../../partials/nav.php';
           <span class="badge badge-primary">🚀 Strategy</span>
           <span class="badge badge-accent">Prerequisite Learning</span>
           <span class="badge" style="background: var(--bg-surface); color: var(--text-muted); border: 1px solid var(--border-subtle);">Any Class</span>
-          <span class="text-sm" style="color: var(--text-muted);">Apr 17, 2026 · SAAVI Didi</span>
+          <span class="text-base" style="color: var(--text-muted);">Apr 17, 2026 · SAAVI Didi</span>
         </div>
 
         <h1 class="text-3xl sm:text-4xl font-heading font-bold mb-3 text-gradient">
@@ -109,7 +109,7 @@ include '../../partials/nav.php';
         <!-- Quick summary box -->
         <div class="card mb-8" style="border-left: 4px solid var(--accent); background: var(--bg-surface);">
           <div class="font-heading font-bold mb-3" style="color: var(--accent);">Is Article Mein:</div>
-          <ul class="text-sm space-y-1" style="color: var(--text-secondary);">
+          <ul class="text-base space-y-1" style="color: var(--text-secondary);">
             <li>✅ Knowledge gaps kyun hote hain — real kahani</li>
             <li>✅ Prerequisite-based learning kya hai</li>
             <li>✅ SAAVI ka Check → Fill → Advance system</li>
@@ -144,7 +144,7 @@ include '../../partials/nav.php';
 
           <div class="card animate-on-scroll mb-6" style="border: 2px solid var(--error); background: rgba(239,68,68,0.05);">
             <div class="font-heading font-bold mb-2" style="color: var(--error);">Priya Ka Real Problem:</div>
-            <p class="text-sm" style="color: var(--text-secondary);">Class 7 mein ek important mahina woh beemar rahi thi — algebra ka concept miss hua. Tab teacher ne ruk ke dobara nahi samjhaya — class aage nikal gayi. Class 8 mein linear equations padhiN — surface level samajh aa gayi, par deep clarity nahi thi. Class 9 bhi somewhat pass ho gayi. Aur ab Class 10 mein quadratic equations — yeh toh possible hi nahi lagta.</p>
+            <p class="text-base" style="color: var(--text-secondary);">Class 7 mein ek important mahina woh beemar rahi thi — algebra ka concept miss hua. Tab teacher ne ruk ke dobara nahi samjhaya — class aage nikal gayi. Class 8 mein linear equations padhiN — surface level samajh aa gayi, par deep clarity nahi thi. Class 9 bhi somewhat pass ho gayi. Aur ab Class 10 mein quadratic equations — yeh toh possible hi nahi lagta.</p>
           </div>
 
           <p class="text-base" style="color: var(--text-body);">
@@ -166,7 +166,7 @@ include '../../partials/nav.php';
             Prerequisite-based learning mein pehle yeh check hota hai ki tumhare paas us topic ka <em style="color: var(--text-muted);">foundation</em> hai ya nahi. Agar hai toh aage jaao. Agar nahi hai toh pehle foundation banao, phir aage jaao. Simple — par ye traditionally impossible tha kyunki ek teacher 40 students ke liye yeh individual check nahi kar sakta. AI yeh instantly kar sakti hai.
           </p>
 
-          <div class="grid grid-cols-3 gap-2 mb-6 animate-on-scroll text-center text-sm">
+          <div class="grid grid-cols-3 gap-2 mb-6 animate-on-scroll text-center text-base">
             <div class="card" style="border-top: 3px solid var(--error);">
               <div class="font-heading font-bold mb-1" style="color: var(--error);">❌ Without Prereqs</div>
               <p style="color: var(--text-secondary);">Topic samajh nahi aata, ratt-a karna padta hai, exam mein application fail</p>
@@ -200,8 +200,8 @@ include '../../partials/nav.php';
               </div>
               <div class="flex-1">
                 <div class="font-heading font-bold text-xl mb-2" style="color: var(--primary-light);">CHECK — Pehle Jaanta Hai Ya Nahi?</div>
-                <p class="text-sm mb-3" style="color: var(--text-secondary);">Jab tum koi topic shuru karte ho, SAAVI pehle 3-5 diagnostic questions deti hai — woh questions jo specifically check karte hain ki kya tumhare paas prerequisites hain. Yeh questions easy lagte hain but woh targeted hote hain. Ek baar results aaye — SAAVI exactly jaanti hai tumhara foundation kahan tak solid hai.</p>
-                <div class="card text-sm" style="background: var(--bg-elevated); color: var(--text-muted);">
+                <p class="text-base mb-3" style="color: var(--text-secondary);">Jab tum koi topic shuru karte ho, SAAVI pehle 3-5 diagnostic questions deti hai — woh questions jo specifically check karte hain ki kya tumhare paas prerequisites hain. Yeh questions easy lagte hain but woh targeted hote hain. Ek baar results aaye — SAAVI exactly jaanti hai tumhara foundation kahan tak solid hai.</p>
+                <div class="card text-base" style="background: var(--bg-elevated); color: var(--text-muted);">
                   <em>Priya ke case mein: SAAVI ne detect kiya ki algebra mein variable isolation ka concept weak hai — tab se woh jaanti hai ki Priya ko wahan se start karna hai.</em>
                 </div>
               </div>
@@ -213,8 +213,8 @@ include '../../partials/nav.php';
               </div>
               <div class="flex-1">
                 <div class="font-heading font-bold text-xl mb-2" style="color: var(--accent);">FILL — Gap Fill Karo, Step by Step</div>
-                <p class="text-sm mb-3" style="color: var(--text-secondary);">Check se pata chala kahan gap hai — ab SAAVI wahan se start karti hai. Seedhi Class 7 level ki language mein, bina judgment ke, bilkul warmly. Woh ek step at a time build karti hai — concept explain karti hai, practice karaati hai, confirm karti hai ki samajh aaya, phir next step. Gap fill hone mein exactly jitna time chahiye — utna hi time lagta hai.</p>
-                <div class="card text-sm" style="background: var(--bg-elevated); color: var(--text-muted);">
+                <p class="text-base mb-3" style="color: var(--text-secondary);">Check se pata chala kahan gap hai — ab SAAVI wahan se start karti hai. Seedhi Class 7 level ki language mein, bina judgment ke, bilkul warmly. Woh ek step at a time build karti hai — concept explain karti hai, practice karaati hai, confirm karti hai ki samajh aaya, phir next step. Gap fill hone mein exactly jitna time chahiye — utna hi time lagta hai.</p>
+                <div class="card text-base" style="background: var(--bg-elevated); color: var(--text-muted);">
                   <em>Priya ke case mein: SAAVI ne teen concepts fill kiye — variable, expression, aur equation — seedhe simple examples se. Ek hafte mein Priya ne linear equations confidently solve karna shuru kar diya.</em>
                 </div>
               </div>
@@ -226,8 +226,8 @@ include '../../partials/nav.php';
               </div>
               <div class="flex-1">
                 <div class="font-heading font-bold text-xl mb-2" style="color: var(--success);">ADVANCE — Ab Aage Badho, Confidence Se</div>
-                <p class="text-sm mb-3" style="color: var(--text-secondary);">Jab foundation solid ho jaata hai — aur SAAVI verify karti hai check questions se — tab woh tum pe trust karti hai aur original topic pe aati hai. Ab wahi topic jo pehle impossible lagta tha — naturally samajh aata hai. Kyunki ab foundation hai.</p>
-                <div class="card text-sm" style="background: var(--bg-elevated); color: var(--text-muted);">
+                <p class="text-base mb-3" style="color: var(--text-secondary);">Jab foundation solid ho jaata hai — aur SAAVI verify karti hai check questions se — tab woh tum pe trust karti hai aur original topic pe aati hai. Ab wahi topic jo pehle impossible lagta tha — naturally samajh aata hai. Kyunki ab foundation hai.</p>
+                <div class="card text-base" style="background: var(--bg-elevated); color: var(--text-muted);">
                   <em>Priya ke case mein: 2 hafte ke baad Priya Quadratic Equations solve kar rahi hai — factorization method confidently. Woh same topic jo 2 hafte pehle "impossible" lagta tha.</em>
                 </div>
               </div>
@@ -249,9 +249,9 @@ include '../../partials/nav.php';
           <div class="space-y-3 animate-on-scroll">
 
             <div class="flex items-center gap-4">
-              <div class="w-10 h-10 rounded-full flex-shrink-0 flex items-center justify-center font-heading font-bold text-sm" style="background: rgba(239,68,68,0.15); color: var(--error); border: 2px solid var(--error);">5</div>
+              <div class="w-10 h-10 rounded-full flex-shrink-0 flex items-center justify-center font-heading font-bold text-base" style="background: rgba(239,68,68,0.15); color: var(--error); border: 2px solid var(--error);">5</div>
               <div class="card flex-1" style="border-left: 3px solid var(--error);">
-                <div class="font-heading font-bold text-sm" style="color: var(--error);">Trigonometry (Class 10 goal)</div>
+                <div class="font-heading font-bold text-base" style="color: var(--error);">Trigonometry (Class 10 goal)</div>
                 <p class="text-xs mt-1" style="color: var(--text-muted);">Sin, cos, tan ratios + identities + heights & distances</p>
               </div>
             </div>
@@ -261,9 +261,9 @@ include '../../partials/nav.php';
             </div>
 
             <div class="flex items-center gap-4">
-              <div class="w-10 h-10 rounded-full flex-shrink-0 flex items-center justify-center font-heading font-bold text-sm" style="background: rgba(234,179,8,0.15); color: var(--warning); border: 2px solid var(--warning);">4</div>
+              <div class="w-10 h-10 rounded-full flex-shrink-0 flex items-center justify-center font-heading font-bold text-base" style="background: rgba(234,179,8,0.15); color: var(--warning); border: 2px solid var(--warning);">4</div>
               <div class="card flex-1" style="border-left: 3px solid var(--warning);">
-                <div class="font-heading font-bold text-sm" style="color: var(--warning);">Similar Triangles + Pythagoras Theorem (Class 9-10)</div>
+                <div class="font-heading font-bold text-base" style="color: var(--warning);">Similar Triangles + Pythagoras Theorem (Class 9-10)</div>
                 <p class="text-xs mt-1" style="color: var(--text-muted);">Right triangles, hypotenuse, angle relationships</p>
               </div>
             </div>
@@ -273,9 +273,9 @@ include '../../partials/nav.php';
             </div>
 
             <div class="flex items-center gap-4">
-              <div class="w-10 h-10 rounded-full flex-shrink-0 flex items-center justify-center font-heading font-bold text-sm" style="background: rgba(99,102,241,0.15); color: var(--primary-light); border: 2px solid var(--primary);">3</div>
+              <div class="w-10 h-10 rounded-full flex-shrink-0 flex items-center justify-center font-heading font-bold text-base" style="background: rgba(99,102,241,0.15); color: var(--primary-light); border: 2px solid var(--primary);">3</div>
               <div class="card flex-1" style="border-left: 3px solid var(--primary);">
-                <div class="font-heading font-bold text-sm" style="color: var(--primary-light);">Basic Geometry — Triangles, Angles (Class 7-8)</div>
+                <div class="font-heading font-bold text-base" style="color: var(--primary-light);">Basic Geometry — Triangles, Angles (Class 7-8)</div>
                 <p class="text-xs mt-1" style="color: var(--text-muted);">Types of triangles, angle sum, congruence</p>
               </div>
             </div>
@@ -285,9 +285,9 @@ include '../../partials/nav.php';
             </div>
 
             <div class="flex items-center gap-4">
-              <div class="w-10 h-10 rounded-full flex-shrink-0 flex items-center justify-center font-heading font-bold text-sm" style="background: rgba(16,185,129,0.15); color: var(--success); border: 2px solid var(--success);">2</div>
+              <div class="w-10 h-10 rounded-full flex-shrink-0 flex items-center justify-center font-heading font-bold text-base" style="background: rgba(16,185,129,0.15); color: var(--success); border: 2px solid var(--success);">2</div>
               <div class="card flex-1" style="border-left: 3px solid var(--success);">
-                <div class="font-heading font-bold text-sm" style="color: var(--success);">Ratio and Proportion (Class 6-7)</div>
+                <div class="font-heading font-bold text-base" style="color: var(--success);">Ratio and Proportion (Class 6-7)</div>
                 <p class="text-xs mt-1" style="color: var(--text-muted);">Fractions, ratios, proportional relationships</p>
               </div>
             </div>
@@ -297,9 +297,9 @@ include '../../partials/nav.php';
             </div>
 
             <div class="flex items-center gap-4">
-              <div class="w-10 h-10 rounded-full flex-shrink-0 flex items-center justify-center font-heading font-bold text-sm" style="background: rgba(16,185,129,0.15); color: var(--success); border: 2px solid var(--success);">1</div>
+              <div class="w-10 h-10 rounded-full flex-shrink-0 flex items-center justify-center font-heading font-bold text-base" style="background: rgba(16,185,129,0.15); color: var(--success); border: 2px solid var(--success);">1</div>
               <div class="card flex-1" style="border-left: 3px solid var(--success);">
-                <div class="font-heading font-bold text-sm" style="color: var(--success);">Division and Fractions (Class 4-5)</div>
+                <div class="font-heading font-bold text-base" style="color: var(--success);">Division and Fractions (Class 4-5)</div>
                 <p class="text-xs mt-1" style="color: var(--text-muted);">Ye foundation hai — baki sab iski upar build hota hai</p>
               </div>
             </div>
@@ -328,11 +328,11 @@ include '../../partials/nav.php';
           <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-6">
             <div class="card animate-on-scroll" style="border-left: 4px solid var(--error);">
               <div class="font-heading font-bold mb-2" style="color: var(--error);">Jo Student Sochta Hai:</div>
-              <p class="text-sm" style="color: var(--text-secondary);">"Mujhe Maths ek dum se nahi aati, Class 5 se hi weak raha hoon. Board mein kya hoga?"</p>
+              <p class="text-base" style="color: var(--text-secondary);">"Mujhe Maths ek dum se nahi aati, Class 5 se hi weak raha hoon. Board mein kya hoga?"</p>
             </div>
             <div class="card animate-on-scroll" style="border-left: 4px solid var(--success);">
               <div class="font-heading font-bold mb-2" style="color: var(--success);">SAAVI Ka Jawab:</div>
-              <p class="text-sm" style="color: var(--text-secondary);">"Koi baat nahi — Class 5 se hi shuru karte hain. Tum mujhe batao nahi — main khud check karti hoon kahan se shuru karna chahiye. Phir ek ek step solid karte hain."</p>
+              <p class="text-base" style="color: var(--text-secondary);">"Koi baat nahi — Class 5 se hi shuru karte hain. Tum mujhe batao nahi — main khud check karti hoon kahan se shuru karna chahiye. Phir ek ek step solid karte hain."</p>
             </div>
           </div>
 
@@ -353,7 +353,7 @@ include '../../partials/nav.php';
 
           <div class="card animate-on-scroll mb-6" style="border: 2px solid var(--primary); background: var(--bg-surface);">
             <div class="font-heading font-bold mb-4" style="color: var(--primary-light);">Typical Timeline:</div>
-            <div class="space-y-3 text-sm" style="color: var(--text-secondary);">
+            <div class="space-y-3 text-base" style="color: var(--text-secondary);">
               <div class="flex items-center gap-3">
                 <span class="font-heading font-bold" style="color: var(--text-muted); min-width: 80px;">Week 1</span>
                 <span>SAAVI assessment karti hai, foundation concepts explain karti hai, easy practice se start</span>
@@ -392,7 +392,7 @@ include '../../partials/nav.php';
             <p class="text-lg font-heading font-bold mb-4" style="color: var(--accent);">
               Zero Se Hero Tak — SAAVI Ke Saath
             </p>
-            <p class="text-sm mb-2" style="color: var(--text-secondary);">
+            <p class="text-base mb-2" style="color: var(--text-secondary);">
               Waitlist join karo. May 20 launch pe pehle access milega. Hindi mein, tumhare syllabus ke saath, tumhare pace pe.
             </p>
             <a href="/waitlist/" class="btn btn-primary">Join Shrutam Waitlist — Free Hai →</a>
@@ -421,7 +421,7 @@ include '../../partials/nav.php';
               <span style="color: var(--primary-light);">+</span>
             </summary>
             <div class="mt-4 pt-4" style="border-top: 1px solid var(--border-subtle);">
-              <p class="text-sm" style="color: var(--text-body);">
+              <p class="text-base" style="color: var(--text-body);">
                 Prerequisite learning mein system pehle check karta hai ki tumhe kisi topic ke liye required <strong>basic knowledge aati hai ya nahi</strong>. Agar nahi aati, toh woh pehle woh basics fill karta hai, phir main topic pe jaata hai. Jaise Quadratic Equations ke liye pehle linear equations aani chahiye — SAAVI pehle check karti hai aur tab tak fill kart hai jab tak foundation solid na ho jaaye.
               </p>
             </div>
@@ -433,7 +433,7 @@ include '../../partials/nav.php';
               <span style="color: var(--primary-light);">+</span>
             </summary>
             <div class="mt-4 pt-4" style="border-top: 1px solid var(--border-subtle);">
-              <p class="text-sm" style="color: var(--text-body);">
+              <p class="text-base" style="color: var(--text-body);">
                 Bilkul. SAAVI ka Zero to Hero system specifically isi ke liye bana hai. Agar Class 10 ka topic samajh nahi aa raha kyunki Class 7-8 ka foundation weak hai, SAAVI automatically detect karti hai aur <strong>wahan se start karti hai jahan tumhara actual understanding level hai</strong> — na Class 10 se, na Class 1 se, exactly wahan se jahan zaroorat hai.
               </p>
             </div>
@@ -445,7 +445,7 @@ include '../../partials/nav.php';
               <span style="color: var(--primary-light);">+</span>
             </summary>
             <div class="mt-4 pt-4" style="border-top: 1px solid var(--border-subtle);">
-              <p class="text-sm" style="color: var(--text-body);">
+              <p class="text-base" style="color: var(--text-body);">
                 Average mein students <strong>2-3 hafte mein apne major knowledge gaps fill</strong> kar lete hain, agar roz 45-60 minutes practice karein. Yeh depend karta hai gap kitna bada hai aur consistency pe. Par important baat yeh hai ki yeh possible hai — koi bhi student 'too far behind' nahi hota. Progress har hafte visible hoti hai.
               </p>
             </div>
@@ -457,7 +457,7 @@ include '../../partials/nav.php';
               <span style="color: var(--primary-light);">+</span>
             </summary>
             <div class="mt-4 pt-4" style="border-top: 1px solid var(--border-subtle);">
-              <p class="text-sm" style="color: var(--text-body);">
+              <p class="text-base" style="color: var(--text-body);">
                 Haan — yeh exactly woh scenario hai jo Zero to Hero ke liye design kiya gaya hai. SAAVI Class 6 level se start karegi, <strong>seedhi simple language mein bina judgment ke</strong>, aur step by step Class 10 tak le aayegi. Koi bhi sawaal chota ya bada nahi hota SAAVI ke liye — woh wahan se start karti hai jahan tum ho.
               </p>
             </div>
@@ -469,7 +469,7 @@ include '../../partials/nav.php';
               <span style="color: var(--primary-light);">+</span>
             </summary>
             <div class="mt-4 pt-4" style="border-top: 1px solid var(--border-subtle);">
-              <p class="text-sm" style="color: var(--text-body);">
+              <p class="text-base" style="color: var(--text-body);">
                 Haan — agar enough time ho aur consistent practice ho. SAAVI ka prerequisite chain system ensure karta hai ki koi bhi concept skip na ho. Foundation se upar ki taraf build hota hai — sab kuch connected hai. Students jinhone SAAVI ke saath zero se shuru kiya hai woh typically <strong>4-6 hafte mein board-level questions handle karne lagte hain</strong>.
               </p>
             </div>
@@ -494,12 +494,12 @@ include '../../partials/nav.php';
           <a href="/blog/adaptive-learning-kya-hai/" class="card flex flex-col gap-2 animate-on-scroll" style="text-decoration: none; border-top: 3px solid var(--primary);">
             <span class="badge badge-primary self-start">Learning</span>
             <div class="font-heading font-bold" style="color: var(--text-primary);">Adaptive Learning Kya Hai</div>
-            <p class="text-sm" style="color: var(--text-secondary);">SAAVI kaise real-time mein tumhari difficulty adjust karti hai — samjho simple mein.</p>
+            <p class="text-base" style="color: var(--text-secondary);">SAAVI kaise real-time mein tumhari difficulty adjust karti hai — samjho simple mein.</p>
           </a>
           <a href="/blog/photosynthesis-hindi/" class="card flex flex-col gap-2 animate-on-scroll" style="text-decoration: none; border-top: 3px solid var(--accent);">
             <span class="badge badge-accent self-start">Science</span>
             <div class="font-heading font-bold" style="color: var(--text-primary);">Photosynthesis Kya Hai</div>
-            <p class="text-sm" style="color: var(--text-secondary);">SAAVI style mein samjho — teacher style, simple Hindi mein. Class 8 CBSE + CG Board.</p>
+            <p class="text-base" style="color: var(--text-secondary);">SAAVI style mein samjho — teacher style, simple Hindi mein. Class 8 CBSE + CG Board.</p>
           </a>
         </div>
 

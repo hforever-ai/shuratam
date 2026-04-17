@@ -41,7 +41,7 @@ include '../../partials/nav.php';
 
       <!-- Breadcrumb -->
       <nav aria-label="Breadcrumb" class="mb-8">
-        <ol class="flex flex-wrap items-center gap-2 text-sm" style="color: var(--text-muted);">
+        <ol class="flex flex-wrap items-center gap-2 text-base" style="color: var(--text-muted);">
           <li><a href="/" style="color: var(--text-muted);">Home</a></li>
           <li aria-hidden="true" style="color: var(--text-muted);">›</li>
           <li><a href="/features/" style="color: var(--text-muted);">Features</a></li>
@@ -87,7 +87,7 @@ include '../../partials/nav.php';
               <span class="text-2xl" aria-hidden="true">📅</span>
               <div>
                 <div class="font-heading font-bold mb-1" style="color: var(--text-primary);">Today's Topics Auto-Prepared</div>
-                <p class="text-sm" style="color: var(--text-secondary);">Apna school aur class set karo — SAAVI aaj ka syllabus automatically match kar ke ready kar deti hai.</p>
+                <p class="text-base" style="color: var(--text-secondary);">Apna school aur class set karo — SAAVI aaj ka syllabus automatically match kar ke ready kar deti hai.</p>
               </div>
             </div>
           </div>
@@ -96,7 +96,7 @@ include '../../partials/nav.php';
               <span class="text-2xl" aria-hidden="true">⭐</span>
               <div>
                 <div class="font-heading font-bold mb-1" style="color: var(--text-primary);">Topper Community Notes</div>
-                <p class="text-sm" style="color: var(--text-secondary);">State board toppers ke handwritten + digital notes. Curated aur verified. Kisi bhi chapter ke liye.</p>
+                <p class="text-base" style="color: var(--text-secondary);">State board toppers ke handwritten + digital notes. Curated aur verified. Kisi bhi chapter ke liye.</p>
               </div>
             </div>
           </div>
@@ -105,7 +105,7 @@ include '../../partials/nav.php';
               <span class="text-2xl" aria-hidden="true">🗣️</span>
               <div>
                 <div class="font-heading font-bold mb-1" style="color: var(--text-primary);">SAAVI Notes Ko Explain Karti Hai</div>
-                <p class="text-sm" style="color: var(--text-secondary);">Notes mein kuch samajh nahi aaya? SAAVI usi note ka concept apni language mein bol ke samjha deti hai.</p>
+                <p class="text-base" style="color: var(--text-secondary);">Notes mein kuch samajh nahi aaya? SAAVI usi note ka concept apni language mein bol ke samjha deti hai.</p>
               </div>
             </div>
           </div>
@@ -135,7 +135,7 @@ include '../../partials/nav.php';
           </div>
           <div class="text-xs font-bold uppercase tracking-wide mb-2" style="color: var(--primary-light);">Step 1</div>
           <div class="text-xl font-heading font-bold mb-3" style="color: var(--text-primary);">School Mein</div>
-          <p class="text-sm" style="color: var(--text-secondary);">
+          <p class="text-base" style="color: var(--text-secondary);">
             Teacher padhata hai — tum sun te ho. Jo samajh aaya, jo nahi aaya — dono note karo. SAAVI baad mein dono handle kar legi.
           </p>
         </div>
@@ -146,7 +146,7 @@ include '../../partials/nav.php';
           </div>
           <div class="text-xs font-bold uppercase tracking-wide mb-2" style="color: var(--accent);">Step 2</div>
           <div class="text-xl font-heading font-bold mb-3" style="color: var(--text-primary);">Revision Mode On</div>
-          <p class="text-sm" style="color: var(--text-secondary);">
+          <p class="text-base" style="color: var(--text-secondary);">
             Ghar aao, app kholo — aaj ke topics already lined up hain. Topper notes + SAAVI explanation ekdum ready.
           </p>
         </div>
@@ -157,7 +157,7 @@ include '../../partials/nav.php';
           </div>
           <div class="text-xs font-bold uppercase tracking-wide mb-2" style="color: var(--success);">Step 3</div>
           <div class="text-xl font-heading font-bold mb-3" style="color: var(--text-primary);">Revise + Quiz</div>
-          <p class="text-sm" style="color: var(--text-secondary);">
+          <p class="text-base" style="color: var(--text-secondary);">
             Notes padho, SAAVI se samjho, phir 5-question quick quiz — aaj ka chapter pakka ho gaya. No stress.
           </p>
         </div>
@@ -168,7 +168,7 @@ include '../../partials/nav.php';
         <p class="text-lg font-heading font-bold mb-2" style="color: var(--text-primary);">
           Daily revision time: sirf <span style="color: var(--accent);">20-30 minutes</span>
         </p>
-        <p class="text-sm" style="color: var(--text-secondary);">
+        <p class="text-base" style="color: var(--text-secondary);">
           School ke baad ek ghante ki tuition ki zaroorat nahi. SAAVI ke saath 30 minute kaafi hain — smart revision, efficient learning.
         </p>
       </div>
@@ -190,22 +190,22 @@ include '../../partials/nav.php';
         <a href="/features/exam-notes/" class="card animate-on-scroll" style="text-decoration: none; display: block;">
           <div class="text-2xl mb-3" aria-hidden="true">📋</div>
           <div class="font-heading font-bold mb-2" style="color: var(--text-primary);">Exam Notes</div>
-          <p class="text-sm mb-3" style="color: var(--text-secondary);">Board exam format mein auto-generated notes — chapter-wise, apni language mein.</p>
-          <span class="text-sm font-bold" style="color: var(--primary-light);">Explore →</span>
+          <p class="text-base mb-3" style="color: var(--text-secondary);">Board exam format mein auto-generated notes — chapter-wise, apni language mein.</p>
+          <span class="text-base font-bold" style="color: var(--primary-light);">Explore →</span>
         </a>
 
         <a href="/features/mock-exams/" class="card animate-on-scroll" style="text-decoration: none; display: block;">
           <div class="text-2xl mb-3" aria-hidden="true">📝</div>
           <div class="font-heading font-bold mb-2" style="color: var(--text-primary);">Mock Exams</div>
-          <p class="text-sm mb-3" style="color: var(--text-secondary);">Revision ke baad practice test — board exam ready feel karo.</p>
-          <span class="text-sm font-bold" style="color: var(--primary-light);">Explore →</span>
+          <p class="text-base mb-3" style="color: var(--text-secondary);">Revision ke baad practice test — board exam ready feel karo.</p>
+          <span class="text-base font-bold" style="color: var(--primary-light);">Explore →</span>
         </a>
 
         <a href="/features/photo-doubt-solver/" class="card animate-on-scroll" style="text-decoration: none; display: block;">
           <div class="text-2xl mb-3" aria-hidden="true">📸</div>
           <div class="font-heading font-bold mb-2" style="color: var(--text-primary);">Photo Doubt Solver</div>
-          <p class="text-sm mb-3" style="color: var(--text-secondary);">Revision mein doubt aaya? Photo kheecho — SAAVI solve kar deti hai.</p>
-          <span class="text-sm font-bold" style="color: var(--primary-light);">Explore →</span>
+          <p class="text-base mb-3" style="color: var(--text-secondary);">Revision mein doubt aaya? Photo kheecho — SAAVI solve kar deti hai.</p>
+          <span class="text-base font-bold" style="color: var(--primary-light);">Explore →</span>
         </a>
 
       </div>

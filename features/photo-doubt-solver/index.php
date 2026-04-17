@@ -41,7 +41,7 @@ include '../../partials/nav.php';
 
       <!-- Breadcrumb -->
       <nav aria-label="Breadcrumb" class="mb-8">
-        <ol class="flex flex-wrap items-center gap-2 text-sm" style="color: var(--text-muted);">
+        <ol class="flex flex-wrap items-center gap-2 text-base" style="color: var(--text-muted);">
           <li><a href="/" style="color: var(--text-muted);">Home</a></li>
           <li aria-hidden="true" style="color: var(--text-muted);">›</li>
           <li><a href="/features/" style="color: var(--text-muted);">Features</a></li>
@@ -91,7 +91,7 @@ include '../../partials/nav.php';
               <span class="text-2xl" aria-hidden="true">📷</span>
               <div>
                 <div class="font-heading font-bold mb-1" style="color: var(--text-primary);">Click — Done</div>
-                <p class="text-sm" style="color: var(--text-secondary);">Phone camera se photo click karo. Printed textbook, handwritten notes, worksheet — sab work karta hai.</p>
+                <p class="text-base" style="color: var(--text-secondary);">Phone camera se photo click karo. Printed textbook, handwritten notes, worksheet — sab work karta hai.</p>
               </div>
             </div>
           </div>
@@ -100,7 +100,7 @@ include '../../partials/nav.php';
               <span class="text-2xl" aria-hidden="true">🔢</span>
               <div>
                 <div class="font-heading font-bold mb-1" style="color: var(--text-primary);">Step-by-Step Solution</div>
-                <p class="text-sm" style="color: var(--text-secondary);">Sirf answer nahi — poora process. Har step explain hota hai taaki concept samajh aaye, yaad na karna pade.</p>
+                <p class="text-base" style="color: var(--text-secondary);">Sirf answer nahi — poora process. Har step explain hota hai taaki concept samajh aaye, yaad na karna pade.</p>
               </div>
             </div>
           </div>
@@ -109,7 +109,7 @@ include '../../partials/nav.php';
               <span class="text-2xl" aria-hidden="true">✍️</span>
               <div>
                 <div class="font-heading font-bold mb-1" style="color: var(--text-primary);">Hindi Handwriting Supported</div>
-                <p class="text-sm" style="color: var(--text-secondary);">Apne haath ki Hindi likhawat bhi SAAVI samajh leti hai. Devanagari script, mixed Hindi-English — sab OK.</p>
+                <p class="text-base" style="color: var(--text-secondary);">Apne haath ki Hindi likhawat bhi SAAVI samajh leti hai. Devanagari script, mixed Hindi-English — sab OK.</p>
               </div>
             </div>
           </div>
@@ -142,7 +142,7 @@ include '../../partials/nav.php';
           </div>
           <div class="text-xs font-bold uppercase tracking-wide mb-2" style="color: var(--primary-light);">Step 1</div>
           <div class="text-xl font-heading font-bold mb-3" style="color: var(--text-primary);">Photo Click Karo</div>
-          <p class="text-sm" style="color: var(--text-secondary);">
+          <p class="text-base" style="color: var(--text-secondary);">
             Question ka photo lo — textbook, worksheet, ya apni notebook se. Ek click kaafi hai.
           </p>
         </div>
@@ -153,7 +153,7 @@ include '../../partials/nav.php';
           </div>
           <div class="text-xs font-bold uppercase tracking-wide mb-2" style="color: var(--accent);">Step 2</div>
           <div class="text-xl font-heading font-bold mb-3" style="color: var(--text-primary);">SAAVI Padh Leti Hai</div>
-          <p class="text-sm" style="color: var(--text-secondary);">
+          <p class="text-base" style="color: var(--text-secondary);">
             SAAVI photo mein question identify karti hai — printed ho ya handwritten. Hindi, English, mixed — sab.
           </p>
         </div>
@@ -164,7 +164,7 @@ include '../../partials/nav.php';
           </div>
           <div class="text-xs font-bold uppercase tracking-wide mb-2" style="color: var(--success);">Step 3</div>
           <div class="text-xl font-heading font-bold mb-3" style="color: var(--text-primary);">Step-by-Step Jawab</div>
-          <p class="text-sm" style="color: var(--text-secondary);">
+          <p class="text-base" style="color: var(--text-secondary);">
             Full solution milti hai — apni language mein, har step ke saath. Concept bhi clear hota hai, sirf answer nahi.
           </p>
         </div>
@@ -232,22 +232,22 @@ include '../../partials/nav.php';
         <a href="/features/adaptive-learning/" class="card animate-on-scroll" style="text-decoration: none; display: block;">
           <div class="text-2xl mb-3" aria-hidden="true">🧠</div>
           <div class="font-heading font-bold mb-2" style="color: var(--text-primary);">Adaptive Learning</div>
-          <p class="text-sm mb-3" style="color: var(--text-secondary);">Us concept pe aur questions karo — SAAVI tumhara level dekh ke questions adjust karti hai.</p>
-          <span class="text-sm font-bold" style="color: var(--primary-light);">Explore →</span>
+          <p class="text-base mb-3" style="color: var(--text-secondary);">Us concept pe aur questions karo — SAAVI tumhara level dekh ke questions adjust karti hai.</p>
+          <span class="text-base font-bold" style="color: var(--primary-light);">Explore →</span>
         </a>
 
         <a href="/features/revision-mode/" class="card animate-on-scroll" style="text-decoration: none; display: block;">
           <div class="text-2xl mb-3" aria-hidden="true">🔄</div>
           <div class="font-heading font-bold mb-2" style="color: var(--text-primary);">Revision Mode</div>
-          <p class="text-sm mb-3" style="color: var(--text-secondary);">Aaj ke saare doubts solve karo, phir full chapter revision mode mein karo.</p>
-          <span class="text-sm font-bold" style="color: var(--primary-light);">Explore →</span>
+          <p class="text-base mb-3" style="color: var(--text-secondary);">Aaj ke saare doubts solve karo, phir full chapter revision mode mein karo.</p>
+          <span class="text-base font-bold" style="color: var(--primary-light);">Explore →</span>
         </a>
 
         <a href="/features/mock-exams/" class="card animate-on-scroll" style="text-decoration: none; display: block;">
           <div class="text-2xl mb-3" aria-hidden="true">📝</div>
           <div class="font-heading font-bold mb-2" style="color: var(--text-primary);">Mock Exams</div>
-          <p class="text-sm mb-3" style="color: var(--text-secondary);">Concept clear hua — ab exam mein test karo. Board pattern pe practice karo.</p>
-          <span class="text-sm font-bold" style="color: var(--primary-light);">Explore →</span>
+          <p class="text-base mb-3" style="color: var(--text-secondary);">Concept clear hua — ab exam mein test karo. Board pattern pe practice karo.</p>
+          <span class="text-base font-bold" style="color: var(--primary-light);">Explore →</span>
         </a>
 
       </div>
