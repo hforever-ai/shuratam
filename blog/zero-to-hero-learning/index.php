@@ -98,7 +98,7 @@ include '../../partials/nav.php';
         </h1>
 
         <div class="chalkboard mx-auto my-6">
-            <img src="/assets/images/blog/zero-to-hero.png" alt="Zero to Hero — learning journey from basics to board ready" loading="lazy" class="w-full max-w-lg mx-auto my-8 rounded-xl">
+            <img src="/assets/images/blog/zero-to-hero.png" alt="Zero to Hero — learning journey from basics to board ready" loading="lazy" class="w-full max-w-sm md:max-w-xl lg:max-w-2xl mx-auto my-8 rounded-xl">
           </div>
 
         <p class="text-xl mb-6" style="color: var(--text-body);">

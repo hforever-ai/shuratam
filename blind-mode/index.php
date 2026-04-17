@@ -62,7 +62,7 @@ include '../partials/nav.php';
         </p>
 
         <div class="chalkboard mx-auto my-6">
-            <img src="/assets/images/features/blind-mode.png" alt="Blind Mode — TalkBack, VoiceOver, headphones, braille compatible" loading="lazy" class="w-full max-w-[280px] mx-auto my-6 rounded-xl">
+            <img src="/assets/images/features/blind-mode.png" alt="Blind Mode — TalkBack, VoiceOver, headphones, braille compatible" loading="lazy" class="w-full max-w-[280px] md:max-w-sm lg:max-w-md mx-auto my-6 rounded-xl">
           </div>
 
         <!-- Emotional problem statement -->

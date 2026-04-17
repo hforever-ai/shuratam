@@ -98,7 +98,7 @@ include '../../partials/nav.php';
         </h1>
 
         <div class="chalkboard mx-auto my-6">
-            <img src="/assets/images/blog/cg-board-preparation.png" alt="CG Board Class 10 exam preparation — student studying" loading="lazy" class="w-full max-w-lg mx-auto my-8 rounded-xl">
+            <img src="/assets/images/blog/cg-board-preparation.png" alt="CG Board Class 10 exam preparation — student studying" loading="lazy" class="w-full max-w-sm md:max-w-xl lg:max-w-2xl mx-auto my-8 rounded-xl">
           </div>
 
         <p class="text-xl mb-6" style="color: var(--text-body);">
