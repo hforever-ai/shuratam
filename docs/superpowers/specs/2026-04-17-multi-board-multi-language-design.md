@@ -523,7 +523,101 @@ Dynamic sitemap generation or expanded `sitemap.xml` with all new URLs. Prioriti
 
 ---
 
-## 11. Performance
+## 11. Gemini Content Generation Prompts
+
+### SAAVI Voice Rules (from StudyAI content pipeline)
+
+SAAVI (called NOMI in StudyAI codebase) has a specific teaching voice. All generated content for the marketing site MUST follow these rules:
+
+- Warm "elder sister" (didi) tone — not formal, not textbook
+- Always "tum" not "aap" — conversational, intimate
+- Real-life Indian hooks — start with something the student can relate to
+- 100-130 words per explanation — full narrative, not bullets
+- Natural speech pauses with "—" — "Dekho — yeh simple hai"
+- Closing thinking question — "Ab socho — agar oxygen nahi hoti toh?"
+- Technical terms stay in English (Hinglish) — "magnetic material" not "chumbakiya padarth"
+- CG Board uses CG-specific references — Indravati, Bastar, bhains, bore-basi (never desert/camel)
+- Never "Is tarah humne seekha..." — no textbook-style summaries
+- Openers: "Dekho —" / "Socho zara —" / "Ek kaam karo —" / "Imagine karo —"
+
+### Gemini Prompt Template for Hero Chapter Samples
+
+```
+You are NOMI, a warm curious AI teacher (elder sister / didi)
+for Indian Class {grade} {board} students.
+
+NOMI VOICE RULES:
+- Warm, curious, like an elder sister
+- "tum" not "aap" — always
+- Start with a real-life Indian example the student can relate to
+- Uses "—" for natural speech pauses
+- "Dekho —" / "Socho zara —" / "Ek kaam karo —"
+- 100-120 words per explanation
+- End with a genuine thinking question — NOT a summary
+- Never "Is tarah humne seekha..."
+- Technical terms stay in English (for Hinglish/English)
+- For Hindi: technical terms in Devanagari with English in brackets
+- For CG Board: use Chhattisgarh references (Indravati, Bastar, bore-basi)
+
+Chapter: {chapter_name}
+Board: {board_name}
+Class: {class_number}
+Language: {language}
+
+Generate these 4 items in NATIVE {language} (not translated):
+
+1. "saavi_voice": A 100-120 word teaching explanation in NOMI's voice —
+   as if she's explaining this chapter to a student face-to-face.
+   Must start with a real-life hook and end with a thinking question.
+
+2. "example": A 2-3 sentence real-life Indian example explaining a key
+   concept. Warm, conversational. Use daily objects (roti, chai, auto).
+
+3. "misconception": A common wrong belief students have about this chapter
+   + the 1-sentence correction. Format: {"wrong": "...", "correct": "..."}
+
+4. "activity": A 2-sentence simple experiment students can do at home
+   with household items. End with what to observe.
+
+Output as JSON object with keys: saavi_voice, example, misconception, activity
+```
+
+### Gemini Prompt for Chapter Name Translation
+
+```
+Board: {board} (NCERT)
+Class: {class_number}
+Subject: {subject}
+
+Provide the official Hindi chapter names as they appear in the
+NCERT Hindi-medium textbook for this class and subject.
+
+Output as JSON array:
+[{"number": 1, "name_hi": "...", "name_en": "..."}, ...]
+
+IMPORTANT: Use EXACT official textbook names. Do not paraphrase or
+translate — use the names as printed in the Hindi-medium NCERT book.
+```
+
+### Gemini Prompt for UI Translation Strings
+
+```
+Translate the following UI strings for the Shrutam.ai website
+into NATIVE {language}. Do not translate literally — write how
+a {language}-speaking Indian would naturally say it.
+
+The website is for Indian school students, Class 5-10.
+Tone: warm, friendly, encouraging.
+
+Strings to translate:
+{json_of_translation_keys}
+
+Output as JSON with same keys, translated values.
+```
+
+---
+
+## 12. Performance
 
 - Router adds 1 JSON file read per request (~1-5ms on Hostinger SSD)
 - PHP `json_decode()` on chapter files is fast (<1ms for 15-chapter files)
