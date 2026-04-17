@@ -54,7 +54,7 @@ include '../../partials/nav.php';
 
         <!-- Left: Copy -->
         <div>
-          <div class="flex flex-wrap gap-3 mb-6">
+          <div class="flex flex-wrap gap-3 mb-3">
             <span class="badge badge-accent">📝 Board Pattern</span>
             <span class="badge badge-primary">4 Difficulty Levels</span>
           </div>
@@ -67,7 +67,7 @@ include '../../partials/nav.php';
             Easy से शुरू — Board तक पहुँचो।
           </p>
 
-          <div class="chalkboard mx-auto my-6">
+          <div class="chalkboard mx-auto my-3">
             <img src="/assets/images/features/mock-exams.png" alt="Mock exams — 4 difficulty levels from easy to board ready" loading="lazy" class="w-full max-w-[200px] md:max-w-[240px] lg:max-w-[280px] mx-auto my-3 rounded-xl">
           </div>
 

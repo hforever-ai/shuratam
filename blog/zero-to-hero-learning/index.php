@@ -72,12 +72,12 @@ include '../../partials/nav.php';
   <!-- =====================================================
        ARTICLE HERO
        ===================================================== -->
-  <section class="section" style="background: linear-gradient(160deg, var(--bg-base) 60%, var(--bg-elevated) 100%);">
+  <section class="section" style="padding-top: 1.5rem; background: linear-gradient(160deg, var(--bg-base) 60%, var(--bg-elevated) 100%);">
     <div class="container">
       <div class="max-w-3xl mx-auto">
 
         <!-- Breadcrumb -->
-        <nav aria-label="Breadcrumb" class="text-sm mb-6" style="color: var(--text-muted);">
+        <nav aria-label="Breadcrumb" class="text-sm mb-2" style="color: var(--text-muted);">
           <a href="/" style="color: var(--primary-light);">Home</a>
           <span class="mx-2">/</span>
           <a href="/blog/" style="color: var(--primary-light);">Blog</a>
@@ -86,19 +86,19 @@ include '../../partials/nav.php';
         </nav>
 
         <!-- Meta row -->
-        <div class="flex flex-wrap items-center gap-3 mb-6">
+        <div class="flex flex-wrap items-center gap-3 mb-3">
           <span class="badge badge-primary">🚀 Strategy</span>
           <span class="badge badge-accent">Prerequisite Learning</span>
           <span class="badge" style="background: var(--bg-surface); color: var(--text-muted); border: 1px solid var(--border-subtle);">Any Class</span>
           <span class="text-sm" style="color: var(--text-muted);">Apr 17, 2026 · SAAVI Didi</span>
         </div>
 
-        <h1 class="text-3xl sm:text-4xl font-heading font-bold mb-6 text-gradient">
+        <h1 class="text-3xl sm:text-4xl font-heading font-bold mb-3 text-gradient">
           Zero to Hero<br>
           <span class="text-2xl sm:text-3xl">Kuch Nahi Se Board Ready Tak</span>
         </h1>
 
-        <div class="chalkboard mx-auto my-6">
+        <div class="chalkboard mx-auto my-3">
             <img src="/assets/images/blog/zero-to-hero.png" alt="Zero to Hero — learning journey from basics to board ready" loading="lazy" class="w-full max-w-xs md:max-w-sm lg:max-w-md mx-auto my-4 rounded-xl">
           </div>
 
@@ -393,7 +393,7 @@ include '../../partials/nav.php';
             <p class="text-lg font-heading font-bold mb-4" style="color: var(--accent);">
               Zero Se Hero Tak — SAAVI Ke Saath
             </p>
-            <p class="text-sm mb-6" style="color: var(--text-secondary);">
+            <p class="text-sm mb-2" style="color: var(--text-secondary);">
               Waitlist join karo. May 20 launch pe pehle access milega. Hindi mein, tumhare syllabus ke saath, tumhare pace pe.
             </p>
             <a href="/waitlist/" class="btn btn-primary">Join Shrutam Waitlist — Free Hai →</a>

@@ -54,7 +54,7 @@ include '../../partials/nav.php';
 
         <!-- Left: Copy -->
         <div>
-          <div class="flex flex-wrap gap-3 mb-6">
+          <div class="flex flex-wrap gap-3 mb-3">
             <span class="badge badge-accent">🌏 Native Language</span>
             <span class="badge badge-primary">5 Languages</span>
           </div>
@@ -67,7 +67,7 @@ include '../../partials/nav.php';
             अपनी भाषा में समझो — फिर दुनिया समझेगी।
           </p>
 
-          <div class="chalkboard mx-auto my-6">
+          <div class="chalkboard mx-auto my-3">
             <img src="/assets/images/features/mother-tongue.png" alt="Mother tongue learning — Hindi, Telugu, Marathi, English" loading="lazy" class="w-full max-w-[200px] md:max-w-[240px] lg:max-w-[280px] mx-auto my-3 rounded-xl">
           </div>
 

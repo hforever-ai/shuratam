@@ -54,7 +54,7 @@ include '../../partials/nav.php';
 
         <!-- Left: Copy -->
         <div>
-          <div class="flex flex-wrap gap-3 mb-6">
+          <div class="flex flex-wrap gap-3 mb-3">
             <span class="badge badge-accent">👪 Safe Learning</span>
             <span class="badge badge-primary">WhatsApp Updates</span>
           </div>
@@ -67,7 +67,7 @@ include '../../partials/nav.php';
             बच्चा पढ़ रहा है या नहीं — जानो।
           </p>
 
-          <div class="chalkboard mx-auto my-6">
+          <div class="chalkboard mx-auto my-3">
             <img src="/assets/images/features/parent-portal.png" alt="Parent portal — track child progress, bedtime lock, WhatsApp reports" loading="lazy" class="w-full max-w-[200px] md:max-w-[240px] lg:max-w-[280px] mx-auto my-3 rounded-xl">
           </div>
 

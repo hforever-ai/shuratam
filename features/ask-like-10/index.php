@@ -54,7 +54,7 @@ include '../../partials/nav.php';
 
         <!-- Left: Copy -->
         <div>
-          <div class="flex flex-wrap gap-3 mb-6">
+          <div class="flex flex-wrap gap-3 mb-3">
             <span class="badge badge-accent">💡 AI Feature</span>
             <span class="badge badge-primary">10 Tarike — Ek Concept</span>
           </div>
@@ -67,7 +67,7 @@ include '../../partials/nav.php';
             हर बच्चे का समझने का तरीका अलग होता है।
           </p>
 
-          <div class="chalkboard mx-auto my-6">
+          <div class="chalkboard mx-auto my-3">
             <img src="/assets/images/features/ask-like-10.png" alt="Ask Like 10 — one concept explained 10 different ways" loading="lazy" class="w-full max-w-[200px] md:max-w-[240px] lg:max-w-[280px] mx-auto my-3 rounded-xl">
           </div>
 

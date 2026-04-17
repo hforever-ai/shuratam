@@ -54,7 +54,7 @@ include '../../partials/nav.php';
 
         <!-- Left: Copy -->
         <div>
-          <div class="flex flex-wrap gap-3 mb-6">
+          <div class="flex flex-wrap gap-3 mb-3">
             <span class="badge badge-accent">🚀 AI Feature</span>
             <span class="badge badge-primary">📚 NCERT Chain Learning</span>
           </div>

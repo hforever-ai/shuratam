@@ -46,7 +46,7 @@ include '../partials/nav.php';
       <div class="max-w-3xl mx-auto text-center">
 
         <!-- Badges -->
-        <div class="flex flex-wrap justify-center gap-3 mb-6">
+        <div class="flex flex-wrap justify-center gap-3 mb-3">
           <span class="badge badge-accent">♿ India Ka Pehla</span>
           <span class="badge badge-primary">FREE Forever</span>
         </div>
@@ -61,7 +61,7 @@ include '../partials/nav.php';
           सुनो, सीखो, आगे बढ़ो।
         </p>
 
-        <div class="chalkboard mx-auto my-6">
+        <div class="chalkboard mx-auto my-3">
             <img src="/assets/images/features/blind-mode.png" alt="Blind Mode — TalkBack, VoiceOver, headphones, braille compatible" loading="lazy" class="w-full max-w-[200px] md:max-w-[240px] lg:max-w-[280px] mx-auto my-3 rounded-xl">
           </div>
 
