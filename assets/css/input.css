@@ -480,10 +480,9 @@
   /* Chalkboard card — theme-adaptive background */
   .chalkboard {
     background: var(--bg-elevated);
-    border-radius: var(--radius-lg);
-    padding: 1.25rem;
+    border-radius: var(--radius);
+    padding: 0.5rem;
     border: 1px solid var(--border-subtle);
-    box-shadow: inset 0 1px 3px rgba(0,0,0,0.2);
     display: inline-block;
   }
   .chalkboard img {

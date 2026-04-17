@@ -68,7 +68,7 @@ include '../../partials/nav.php';
           </p>
 
           <div class="chalkboard mx-auto my-6">
-            <img src="/assets/images/features/parent-portal.png" alt="Parent portal — track child progress, bedtime lock, WhatsApp reports" loading="lazy" class="w-full max-w-[240px] md:max-w-sm lg:max-w-md mx-auto my-6 rounded-xl">
+            <img src="/assets/images/features/parent-portal.png" alt="Parent portal — track child progress, bedtime lock, WhatsApp reports" loading="lazy" class="w-full max-w-[200px] md:max-w-[240px] lg:max-w-[280px] mx-auto my-3 rounded-xl">
           </div>
 
           <p class="text-lg mb-8" style="color: var(--text-body);">
