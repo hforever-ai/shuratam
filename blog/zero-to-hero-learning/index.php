@@ -93,8 +93,9 @@ include '../../partials/nav.php';
           <span class="text-sm" style="color: var(--text-muted);">Apr 17, 2026 · SAAVI Didi</span>
         </div>
 
-        <h1 class="text-4xl sm:text-5xl font-heading font-bold mb-6 text-gradient">
-          Zero to Hero — Kuch Nahi Se Board Ready Tak
+        <h1 class="text-3xl sm:text-4xl font-heading font-bold mb-6 text-gradient">
+          Zero to Hero<br>
+          <span class="text-2xl sm:text-3xl">Kuch Nahi Se Board Ready Tak</span>
         </h1>
 
         <div class="chalkboard mx-auto my-6">
