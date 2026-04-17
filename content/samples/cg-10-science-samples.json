@@ -1,0 +1,107 @@
+{
+  "board": "cg",
+  "class": 10,
+  "subject": "science",
+  "samples": [
+    {
+      "chapter_number": 1,
+      "chapter_title": "Chemical Reactions and Equations",
+      "blocks": {
+        "hi": [
+          {
+            "type": "example",
+            "heading": "Bore-basi और Fermentation Reaction",
+            "content": "Bore-basi — रात का बचा हुआ भात जो पानी में भिगोया जाता है — यह सिर्फ खाना नहीं है, यह एक chemical reaction है! रात भर में bacteria rice के starch को ferment करते हैं, lactic acid बनती है। इसीलिए सुबह bore-basi थोड़ी खट्टी और ठंडी लगती है। यही fermentation reaction है।",
+            "icon": "lightbulb"
+          },
+          {
+            "type": "misconception",
+            "heading": "गलतफहमी: Indravati का पानी साफ दिखता है — तो chemical-free है?",
+            "wrong": "नदी का साफ दिखने वाला पानी chemically pure होता है",
+            "correct": "नहीं! Indravati नदी का पानी भले transparent लगे, उसमें dissolved salts, minerals, और sometimes bacteria होते हैं। Physical appearance और chemical composition अलग होते हैं।",
+            "icon": "triangle-alert"
+          },
+          {
+            "type": "activity",
+            "heading": "Rusting — Bastar की Clay से Test करो",
+            "content": "एक iron nail को Bastar के junglon की नम मिट्टी में गाड़ो। दूसरी nail को सूखी जगह रखो। 3 दिन बाद तुलना करो। नम मिट्टी वाली nail ज़्यादा rust करेगी — क्योंकि moisture और oxygen dono मिलते हैं। यह corrosion reaction है।",
+            "cta": "ऐप में corrosion experiment देखो →",
+            "icon": "flask-conical"
+          }
+        ],
+        "en": [
+          {
+            "type": "example",
+            "heading": "Bore-basi and Fermentation",
+            "content": "Bore-basi — leftover rice soaked in water overnight — isn't just food, it's a chemical reaction! Bacteria ferment the starch in the rice, producing lactic acid. That's why bore-basi tastes slightly sour and cool in the morning. This is fermentation — a real chemical change.",
+            "icon": "lightbulb"
+          },
+          {
+            "type": "misconception",
+            "heading": "Clear River Water = Chemically Pure?",
+            "wrong": "River water that looks clear is chemically pure",
+            "correct": "Not at all! The Indravati river may look transparent, but it contains dissolved salts, minerals, and sometimes bacteria. Physical appearance and chemical composition are different things.",
+            "icon": "triangle-alert"
+          },
+          {
+            "type": "activity",
+            "heading": "Test Rusting with Local Soil",
+            "content": "Push an iron nail into moist soil (like you'd find near Bastar's forests). Leave another nail in a dry spot. Compare after 3 days. The nail in moist soil rusts more — because both moisture and oxygen are present. That's a corrosion reaction.",
+            "cta": "See corrosion experiment in app →",
+            "icon": "flask-conical"
+          }
+        ]
+      }
+    },
+    {
+      "chapter_number": 2,
+      "chapter_title": "Acids, Bases and Salts",
+      "blocks": {
+        "hi": [
+          {
+            "type": "example",
+            "heading": "Imli और Acid — Chhattisgarh का Flavor",
+            "content": "Chhattisgarh में imli (इमली) का use दाल, chutney, हर जगह होता है। Imli खट्टी क्यों? क्योंकि उसमें tartaric acid और citric acid होते हैं। जब भी tum imli खाते हो — तुम actually एक weak acid consume कर रहे हो। Acids सिर्फ lab में नहीं होते!",
+            "icon": "lightbulb"
+          },
+          {
+            "type": "misconception",
+            "heading": "गलतफहमी: Base हमेशा Soap जैसा Slippery होता है?",
+            "wrong": "सभी bases slippery और soapy feel देते हैं",
+            "correct": "Strong bases जैसे NaOH slippery लगते हैं क्योंकि वो skin के fats को saponify करते हैं — dangerous! Weak bases जैसे baking soda सुरक्षित है। Slipperiness ≠ all bases।",
+            "icon": "triangle-alert"
+          },
+          {
+            "type": "activity",
+            "heading": "Haldi Indicator — घर पर pH Test",
+            "content": "हल्दी (turmeric) एक natural indicator है। हल्दी को थोड़े पानी में घोलो — yellow solution बनेगा। अब नींबू का रस डालो — yellow रहेगा (acid)। Soap का पानी डालो — लाल/orange हो जाएगा (base)। Chhattisgarh की kitchen ही science lab है!",
+            "cta": "ऐप में indicators comparison देखो →",
+            "icon": "flask-conical"
+          }
+        ],
+        "en": [
+          {
+            "type": "example",
+            "heading": "Imli and Acid — Chhattisgarh's Favourite Flavour",
+            "content": "In Chhattisgarh, imli is used everywhere — dal, chutney, snacks. Why is it sour? Because it contains tartaric and citric acids. Every time you eat imli, you're consuming a weak acid. Acids aren't just in labs!",
+            "icon": "lightbulb"
+          },
+          {
+            "type": "misconception",
+            "heading": "Are All Bases Slippery Like Soap?",
+            "wrong": "All bases feel slippery and soapy",
+            "correct": "Strong bases like NaOH feel slippery because they saponify skin fats — and they're dangerous. Weak bases like baking soda are safe. Slipperiness is a property of strong bases, not all bases.",
+            "icon": "triangle-alert"
+          },
+          {
+            "type": "activity",
+            "heading": "Haldi as a pH Indicator",
+            "content": "Turmeric is a natural indicator. Dissolve a pinch in water — yellow solution. Add lemon juice — stays yellow (acid). Add soapy water — turns red/orange (base). The Chhattisgarh kitchen is a science lab!",
+            "cta": "See indicators comparison in app →",
+            "icon": "flask-conical"
+          }
+        ]
+      }
+    }
+  ]
+}

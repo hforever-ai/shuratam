@@ -1,0 +1,107 @@
+{
+  "board": "cg",
+  "class": 9,
+  "subject": "mathematics",
+  "samples": [
+    {
+      "chapter_number": 1,
+      "chapter_title": "Number Systems",
+      "blocks": {
+        "hi": [
+          {
+            "type": "example",
+            "heading": "Number Line — Indravati के किनारे",
+            "content": "Indravati नदी के किनारे एक सीधी रेखा खींचो — यह number line है। बाढ़ का पानी जब किनारे से ऊपर आए — positive। जब नीचे हो — negative। जब किसान के account में ₹500 हो — positive 500। जब ₹200 का loan हो — negative 200। Number line सिर्फ paper पर नहीं, जीवन में भी है।",
+            "icon": "lightbulb"
+          },
+          {
+            "type": "misconception",
+            "heading": "गलतफहमी: 0 न Positive है, न Negative — तो Number नहीं?",
+            "wrong": "0 कोई real number नहीं है क्योंकि यह positive या negative नहीं है",
+            "correct": "0 एक real number है — actually एक बहुत important one! यह positive और negative numbers के बीच में है। Number line पर origin (शुरुआत) है। 0 के बिना number system अधूरा है।",
+            "icon": "triangle-alert"
+          },
+          {
+            "type": "activity",
+            "heading": "Surds — Bastar की ज़मीन से",
+            "content": "मान लो एक square खेत है जिसका area 5 square meters है। Side = √5 meters। √5 ≈ 2.236... — यह irrational है। Number line पर compass से mark करो: 2 unit का एक side, 1 unit का दूसरा — hypotenuse = √5। यह exact point है number line पर!",
+            "cta": "ऐप में surds construction देखो →",
+            "icon": "flask-conical"
+          }
+        ],
+        "en": [
+          {
+            "type": "example",
+            "heading": "Number Line — Along the Indravati",
+            "content": "Draw a straight line along the Indravati riverbank — that's a number line. When flood water rises above the bank — positive. When it's below — negative. A farmer with ₹500 in his account: positive 500. With a ₹200 loan: negative 200. Number lines exist in life, not just on paper.",
+            "icon": "lightbulb"
+          },
+          {
+            "type": "misconception",
+            "heading": "Is Zero Not a Real Number?",
+            "wrong": "Zero is not a real number because it's neither positive nor negative",
+            "correct": "Zero is absolutely a real number — and a crucial one! It sits between positive and negative, acting as the origin of the number line. The number system is incomplete without 0.",
+            "icon": "triangle-alert"
+          },
+          {
+            "type": "activity",
+            "heading": "Surds — From a Field in Bastar",
+            "content": "Say a square field has an area of 5 square metres. Its side = √5 metres. √5 ≈ 2.236... — irrational. Mark it on the number line using a compass: make a right triangle with sides 2 and 1. The hypotenuse = √5. That exact point is √5 on the number line!",
+            "cta": "See surds construction in app →",
+            "icon": "flask-conical"
+          }
+        ]
+      }
+    },
+    {
+      "chapter_number": 2,
+      "chapter_title": "Polynomials",
+      "blocks": {
+        "hi": [
+          {
+            "type": "example",
+            "heading": "Polynomial — Dhaan की Yield",
+            "content": "Chhattisgarh में एक किसान की dhaan (धान) की yield मानो h = -2x² + 12x + 20 है (x = fertilizer units)। यह quadratic polynomial है। Farmer जानना चाहता है — कितना fertilizer डालने पर maximum yield? यह polynomial का maximum point problem है — real life maths!",
+            "icon": "lightbulb"
+          },
+          {
+            "type": "misconception",
+            "heading": "गलतफहमी: Constant Polynomial की कोई Degree नहीं?",
+            "wrong": "Constant polynomial जैसे p(x) = 7 की कोई degree नहीं होती",
+            "correct": "Constant polynomial (non-zero) की degree 0 होती है — क्योंकि 7 = 7x⁰। लेकिन zero polynomial (p(x) = 0) की degree undefined है — यह exception है।",
+            "icon": "triangle-alert"
+          },
+          {
+            "type": "activity",
+            "heading": "Remainder Theorem — बिना Division किए",
+            "content": "p(x) = x³ - 2x² + 3x - 5 है। p(2) निकालो: p(2) = 8 - 8 + 6 - 5 = 1। Remainder theorem कहता है: जब p(x) को (x-2) से divide करते हो, remainder = p(2) = 1। Check करो long division से — same answer! यह shortcut है।",
+            "cta": "ऐप में remainder theorem examples देखो →",
+            "icon": "flask-conical"
+          }
+        ],
+        "en": [
+          {
+            "type": "example",
+            "heading": "Polynomial — Dhaan Yield in Chhattisgarh",
+            "content": "A Chhattisgarh farmer's dhaan yield is modelled as h = -2x² + 12x + 20, where x is units of fertilizer. This is a quadratic polynomial. The farmer wants to know: how much fertilizer gives maximum yield? That's finding the maximum of a polynomial — real maths!",
+            "icon": "lightbulb"
+          },
+          {
+            "type": "misconception",
+            "heading": "Does a Constant Polynomial Have No Degree?",
+            "wrong": "A constant polynomial like p(x) = 7 has no degree",
+            "correct": "A non-zero constant polynomial has degree 0 — because 7 = 7x⁰. But the zero polynomial p(x) = 0 has undefined degree — that's the special exception.",
+            "icon": "triangle-alert"
+          },
+          {
+            "type": "activity",
+            "heading": "Remainder Theorem — No Long Division Needed",
+            "content": "Take p(x) = x³ - 2x² + 3x - 5. Find p(2): p(2) = 8 - 8 + 6 - 5 = 1. The Remainder Theorem says: when p(x) is divided by (x - 2), the remainder = p(2) = 1. Verify with long division — same answer! It's the shortcut.",
+            "cta": "See remainder theorem examples in app →",
+            "icon": "flask-conical"
+          }
+        ]
+      }
+    }
+  ]
+}

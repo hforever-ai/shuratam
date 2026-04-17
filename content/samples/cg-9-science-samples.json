@@ -1,0 +1,107 @@
+{
+  "board": "cg",
+  "class": 9,
+  "subject": "science",
+  "samples": [
+    {
+      "chapter_number": 1,
+      "chapter_title": "Matter in Our Surroundings",
+      "blocks": {
+        "hi": [
+          {
+            "type": "example",
+            "heading": "Indravati का पानी और States of Matter",
+            "content": "Indravati नदी के किनारे बैठो। पानी liquid है। धूप में नदी की surface से water vapour उठती है — वो gas (water vapour) है। सर्दियों में किनारे की मिट्टी freeze हो जाती है — वो solid। एक ही substance (H₂O) तीनों states में! States matter की property हैं, molecule नहीं बदलता।",
+            "icon": "lightbulb"
+          },
+          {
+            "type": "misconception",
+            "heading": "गलतफहमी: Bhains का दूध उबलने पर Chemically Change होता है?",
+            "wrong": "Bhains का दूध उबालने पर chemical change होता है",
+            "correct": "नहीं! Boiling एक physical change है — दूध का composition नहीं बदलता, बस temperature बढ़ती है और bacteria मरते हैं (pasteurization effect)। Chemical change तब होता जब नये substances बनें।",
+            "icon": "triangle-alert"
+          },
+          {
+            "type": "activity",
+            "heading": "Evaporation — Bastar की गर्मी में",
+            "content": "एक wet cloth को धूप में रखो और एक छांव में। Note करो कौन पहले सूखता है। फिर try करो: एक wet cloth पर fan चलाओ। Surface area, temperature, और wind speed — तीनों evaporation को affect करते हैं। Bastar की गर्मी science का experiment है!",
+            "cta": "ऐप में evaporation factors देखो →",
+            "icon": "flask-conical"
+          }
+        ],
+        "en": [
+          {
+            "type": "example",
+            "heading": "Indravati River and the Three States",
+            "content": "Sit by the Indravati river. The water is liquid. In sunlight, water vapour rises from the surface — that's gas. In winter, the mud on the banks freezes — that's solid. The same substance (H₂O) in three states! States are properties of matter; the molecule itself doesn't change.",
+            "icon": "lightbulb"
+          },
+          {
+            "type": "misconception",
+            "heading": "Does Boiling Bhains Milk Cause a Chemical Change?",
+            "wrong": "Boiling buffalo milk causes a chemical change",
+            "correct": "No! Boiling is a physical change — the composition of the milk doesn't change, just the temperature rises and bacteria are killed. A chemical change would create entirely new substances.",
+            "icon": "triangle-alert"
+          },
+          {
+            "type": "activity",
+            "heading": "Evaporation in Bastar's Heat",
+            "content": "Place one wet cloth in sunlight and another in shade. Note which dries first. Then try: fan a wet cloth. Surface area, temperature, and wind speed all affect evaporation rate. Bastar's summer heat is a free science experiment!",
+            "cta": "See evaporation factors in app →",
+            "icon": "flask-conical"
+          }
+        ]
+      }
+    },
+    {
+      "chapter_number": 2,
+      "chapter_title": "Is Matter Around Us Pure?",
+      "blocks": {
+        "hi": [
+          {
+            "type": "example",
+            "heading": "Bore-basi — Mixture या Pure Substance?",
+            "content": "Bore-basi में चावल, पानी, नमक — यह एक mixture है। हर component अपनी identity रखता है। लेकिन जब bore-basi ferment होती है और lactic acid बनती है — अब chemical change हुआ, नया substance बना। Mixture physical है, compound chemical।",
+            "icon": "lightbulb"
+          },
+          {
+            "type": "misconception",
+            "heading": "गलतफहमी: Filtered Water = Pure Water?",
+            "wrong": "Filter किया हुआ पानी chemically pure होता है",
+            "correct": "नहीं! Filtration सिर्फ suspended particles हटाता है — dissolved salts और minerals रहते हैं। Chemically pure water के लिए distillation चाहिए। Filtered ≠ Pure।",
+            "icon": "triangle-alert"
+          },
+          {
+            "type": "activity",
+            "heading": "Crystallization — नमक से घर पर",
+            "content": "Saturated salt solution बनाओ (बहुत सारा नमक पानी में मिलाओ जब तक और न घुले)। एक string उसमें डुबोओ। 2-3 दिन बाद देखो — string पर salt crystals बनेंगे। यह crystallization है — pure salt को mixture से अलग करने का तरीका।",
+            "cta": "ऐप में purification methods देखो →",
+            "icon": "flask-conical"
+          }
+        ],
+        "en": [
+          {
+            "type": "example",
+            "heading": "Bore-basi — Mixture or Pure Substance?",
+            "content": "Bore-basi contains rice, water, salt — it's a mixture. Each component keeps its own identity. But when it ferments and lactic acid is formed — now a new substance has been created through a chemical change. Mixture is physical; compound is chemical.",
+            "icon": "lightbulb"
+          },
+          {
+            "type": "misconception",
+            "heading": "Is Filtered Water Chemically Pure?",
+            "wrong": "Filtered water is chemically pure",
+            "correct": "No! Filtration only removes suspended particles — dissolved salts and minerals remain. For chemically pure water, you need distillation. Filtered ≠ Pure.",
+            "icon": "triangle-alert"
+          },
+          {
+            "type": "activity",
+            "heading": "Crystallisation with Salt at Home",
+            "content": "Make a saturated salt solution — keep adding salt until no more dissolves. Dip a string into it. After 2-3 days, salt crystals will form on the string. That's crystallisation — a way to separate a pure solid from a mixture.",
+            "cta": "See purification methods in app →",
+            "icon": "flask-conical"
+          }
+        ]
+      }
+    }
+  ]
+}

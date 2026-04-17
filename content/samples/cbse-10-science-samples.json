@@ -1,0 +1,107 @@
+{
+  "board": "cbse",
+  "class": 10,
+  "subject": "science",
+  "samples": [
+    {
+      "chapter_number": 1,
+      "chapter_title": "Chemical Reactions and Equations",
+      "blocks": {
+        "hi": [
+          {
+            "type": "example",
+            "heading": "रोज़मर्रा की Chemical Reaction",
+            "content": "सुबह रोटी सेंकते समय आटा भूरा और खुशबूदार हो जाता है — यह सिर्फ heat नहीं है, यह एक real chemical reaction है! आटे के molecules टूटते हैं, नये compounds बनते हैं, और इसीलिए raw dough से अलग smell आती है। जब भी नये substances बनें, समझ लो — chemical change हुआ।",
+            "icon": "lightbulb"
+          },
+          {
+            "type": "misconception",
+            "heading": "गलतफहमी: Rust सिर्फ Iron पे?",
+            "wrong": "Rust सिर्फ iron पे ही होता है",
+            "correct": "नहीं! Copper पे भी corrosion होता है — वो green layer जो पुराने तांबे के बर्तनों पे दिखती है, उसे patina कहते हैं। Silver भी काला पड़ता है — dono chemical reactions हैं।",
+            "icon": "triangle-alert"
+          },
+          {
+            "type": "activity",
+            "heading": "घर पे करो: Oxidation देखो",
+            "content": "एक iron nail लो। आधा नींबू काटो और nail उस पर रखो। 2 दिन बाद देखो — nail का रंग बदलेगा, लाल-भूरा होगा। यह oxidation है। Lemon का acid reaction को तेज़ करता है। Note करो: nail का mass थोड़ा बदला क्या?",
+            "cta": "ऐप में interactive experiment देखो →",
+            "icon": "flask-conical"
+          }
+        ],
+        "en": [
+          {
+            "type": "example",
+            "heading": "Everyday Chemical Reaction",
+            "content": "When you toast a roti on the tawa, the dough turns brown and fragrant — that's not just heat, it's a real chemical reaction! The molecules in the flour break apart and form new compounds, which is why it smells different from raw dough. Whenever new substances are formed, you know a chemical change has happened.",
+            "icon": "lightbulb"
+          },
+          {
+            "type": "misconception",
+            "heading": "Rust Only on Iron?",
+            "wrong": "Rust only happens on iron",
+            "correct": "Not true! Copper also corrodes — that green layer on old copper vessels is called patina. Silver turns black too. Both are chemical reactions, just different metals.",
+            "icon": "triangle-alert"
+          },
+          {
+            "type": "activity",
+            "heading": "Try at Home: Watch Oxidation",
+            "content": "Take an iron nail. Cut half a lemon and place the nail on it. Check after 2 days — the nail will turn reddish-brown. That's oxidation. The acid in the lemon speeds up the reaction. Bonus: does the nail's mass change slightly?",
+            "cta": "See interactive experiment in app →",
+            "icon": "flask-conical"
+          }
+        ]
+      }
+    },
+    {
+      "chapter_number": 2,
+      "chapter_title": "Acids, Bases and Salts",
+      "blocks": {
+        "hi": [
+          {
+            "type": "example",
+            "heading": "इमली और Acid — एक ही बात!",
+            "content": "इमली खट्टी क्यों होती है? क्योंकि उसमें tartaric acid होता है। नींबू में citric acid है, दही में lactic acid है — इसीलिए वो खट्टे हैं। जो भी cheez tum खाते हो जो खट्टी लगे, उसमें कोई acid ज़रूर है। Acid का मतलब dangerous नहीं — kitchen मे रोज़ use होता है।",
+            "icon": "lightbulb"
+          },
+          {
+            "type": "misconception",
+            "heading": "गलतफहमी: Acid हमेशा खतरनाक?",
+            "wrong": "सभी acids dangerous और corrosive होते हैं",
+            "correct": "नहीं! Weak acids जैसे citric acid, acetic acid (सिरका) रोज़ खाने में use होते हैं। Dangerous तो strong acids होते हैं जैसे H₂SO₄। Concentration और strength में फर्क है।",
+            "icon": "triangle-alert"
+          },
+          {
+            "type": "activity",
+            "heading": "घर पे Natural Indicator बनाओ",
+            "content": "Red cabbage (बंद गोभी) के कुछ पत्ते उबालो। वो पानी purple होगा — यह natural indicator है। अब उसमें नींबू का रस डालो — pink/red हो जाएगा (acid)। फिर baking soda डालो — green/yellow हो जाएगा (base)। देखो science kitchen में है!",
+            "cta": "ऐप में pH scale visual देखो →",
+            "icon": "flask-conical"
+          }
+        ],
+        "en": [
+          {
+            "type": "example",
+            "heading": "Tamarind and Acid — Same Thing!",
+            "content": "Why is tamarind sour? Because it contains tartaric acid. Lemon has citric acid, curd has lactic acid — that's why they all taste sour. Every sour food you eat contains some kind of acid. Acid doesn't mean dangerous — it's used in your kitchen every day.",
+            "icon": "lightbulb"
+          },
+          {
+            "type": "misconception",
+            "heading": "Are All Acids Dangerous?",
+            "wrong": "All acids are dangerous and corrosive",
+            "correct": "No! Weak acids like citric acid and acetic acid (vinegar) are used in food every day. Dangerous ones are strong acids like H₂SO₄. The key difference is concentration and strength.",
+            "icon": "triangle-alert"
+          },
+          {
+            "type": "activity",
+            "heading": "Make a Natural Indicator at Home",
+            "content": "Boil a few leaves of red cabbage. The water turns purple — that's your natural indicator. Add lemon juice — it turns pink/red (acid). Add baking soda — it turns green/yellow (base). Science is right there in your kitchen!",
+            "cta": "See pH scale visual in app →",
+            "icon": "flask-conical"
+          }
+        ]
+      }
+    }
+  ]
+}

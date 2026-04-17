@@ -1,0 +1,107 @@
+{
+  "board": "cbse",
+  "class": 10,
+  "subject": "mathematics",
+  "samples": [
+    {
+      "chapter_number": 1,
+      "chapter_title": "Real Numbers",
+      "blocks": {
+        "hi": [
+          {
+            "type": "example",
+            "heading": "HCF और रोज़ का काम",
+            "content": "मान लो तुम्हारे पास 48 samosas हैं और 36 cups of chai। तुम्हें equal packets बनाने हैं — हर packet में same number of samosas और chai हो। Maximum कितने packets बन सकते हैं? HCF(48, 36) = 12। तो 12 packets — हर एक में 4 samosas और 3 chai। यही है HCF का real use।",
+            "icon": "lightbulb"
+          },
+          {
+            "type": "misconception",
+            "heading": "गलतफहमी: √2 को fraction में लिख सकते हैं?",
+            "wrong": "√2 को किसी fraction p/q के रूप में लिख सकते हैं",
+            "correct": "नहीं! √2 irrational है — यह proof by contradiction से साबित होता है। अगर √2 = p/q (in lowest terms) मानो, तो p² even होगा, p भी even, फिर q भी even — contradiction! इसीलिए √2 rational नहीं है।",
+            "icon": "triangle-alert"
+          },
+          {
+            "type": "activity",
+            "heading": "Euclid's Algorithm — आज़माओ",
+            "content": "अपनी class के students की संख्या और rows की संख्या लो। Euclid's division algorithm से HCF निकालो। Step: divide करो, remainder लो, फिर remainder से divisor divide करो। Zero remainder आने तक। Last non-zero remainder = HCF। Fast और simple!",
+            "cta": "ऐप में step-by-step solver देखो →",
+            "icon": "flask-conical"
+          }
+        ],
+        "en": [
+          {
+            "type": "example",
+            "heading": "HCF in Real Life",
+            "content": "Say you have 48 samosas and 36 cups of chai. You want to make equal packets — same samosas and chai in each. Max packets? HCF(48, 36) = 12. So 12 packets, each with 4 samosas and 3 chai. That's the real use of HCF — dividing things equally without waste.",
+            "icon": "lightbulb"
+          },
+          {
+            "type": "misconception",
+            "heading": "Can √2 be Written as a Fraction?",
+            "wrong": "√2 can be written as some fraction p/q",
+            "correct": "No! √2 is irrational — proved by contradiction. If √2 = p/q in lowest terms, then p² is even, so p is even, so q must also be even — that contradicts 'lowest terms'. Hence √2 is irrational.",
+            "icon": "triangle-alert"
+          },
+          {
+            "type": "activity",
+            "heading": "Try Euclid's Algorithm",
+            "content": "Take the number of students in your class and the number of rows. Use Euclid's division algorithm to find HCF. Divide, take remainder, then divide the previous divisor by the remainder. Keep going till remainder is 0. Last non-zero remainder is your HCF.",
+            "cta": "See step-by-step solver in app →",
+            "icon": "flask-conical"
+          }
+        ]
+      }
+    },
+    {
+      "chapter_number": 2,
+      "chapter_title": "Polynomials",
+      "blocks": {
+        "hi": [
+          {
+            "type": "example",
+            "heading": "Parabola — Cricket की Ball का रास्ता",
+            "content": "जब cricketer ball फेंकता है, तो ball एक curve में जाती है — ऊपर और फिर नीचे। यह curve एक quadratic polynomial का graph है। अगर ball की height h = -5t² + 20t है, तो highest point कब? जब t = 2 sec। Graph पे यह point vertex है — parabola का सबसे ऊपरी point।",
+            "icon": "lightbulb"
+          },
+          {
+            "type": "misconception",
+            "heading": "गलतफहमी: Zeroes मतलब polynomial zero है?",
+            "wrong": "Polynomial का 'zero' मतलब पूरी polynomial = 0",
+            "correct": "नहीं! Zero of a polynomial वो value of x है जहाँ polynomial की value 0 होती है। जैसे p(x) = x² - 5x + 6 के zeroes हैं x = 2 और x = 3 — क्योंकि p(2) = 0 और p(3) = 0।",
+            "icon": "triangle-alert"
+          },
+          {
+            "type": "activity",
+            "heading": "अपना Polynomial Graph बनाओ",
+            "content": "p(x) = x² - 4 लो। x = -3, -2, -1, 0, 1, 2, 3 के लिए values निकालो। Graph paper पर plot करो। देखो graph x-axis को कहाँ cross करता है — वहाँ zeroes हैं (x = 2 और x = -2)। यही graphical method है।",
+            "cta": "ऐप में interactive graph plotter देखो →",
+            "icon": "flask-conical"
+          }
+        ],
+        "en": [
+          {
+            "type": "example",
+            "heading": "Parabola — The Path of a Cricket Ball",
+            "content": "When a cricketer throws the ball, it travels in a curve — up and then down. That curve is the graph of a quadratic polynomial. If the height is h = -5t² + 20t, when does it reach its highest point? At t = 2 sec. On the graph, that's the vertex — the topmost point of the parabola.",
+            "icon": "lightbulb"
+          },
+          {
+            "type": "misconception",
+            "heading": "Does 'Zero of Polynomial' Mean the Whole Thing is Zero?",
+            "wrong": "Zero of a polynomial means the entire polynomial equals zero",
+            "correct": "No! A zero of a polynomial is the value of x where the polynomial equals 0. For p(x) = x² - 5x + 6, the zeroes are x = 2 and x = 3 because p(2) = 0 and p(3) = 0.",
+            "icon": "triangle-alert"
+          },
+          {
+            "type": "activity",
+            "heading": "Draw Your Own Polynomial Graph",
+            "content": "Take p(x) = x² - 4. Find values for x = -3, -2, -1, 0, 1, 2, 3. Plot on graph paper. See where the graph crosses the x-axis — those are the zeroes (x = 2 and x = -2). That's the graphical method of finding zeroes.",
+            "cta": "See interactive graph plotter in app →",
+            "icon": "flask-conical"
+          }
+        ]
+      }
+    }
+  ]
+}

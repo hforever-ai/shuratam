@@ -1,0 +1,107 @@
+{
+  "board": "cbse",
+  "class": 9,
+  "subject": "mathematics",
+  "samples": [
+    {
+      "chapter_number": 1,
+      "chapter_title": "Number Systems",
+      "blocks": {
+        "hi": [
+          {
+            "type": "example",
+            "heading": "Number Line और Auto का Meter",
+            "content": "Auto rickshaw का meter 0 से start होता है और आगे बढ़ता है — यह number line है। जब तुम negative numbers सुनते हो, सोचो: −5°C मतलब zero से 5 degree नीचे। Number line पे left of zero। Temperature, bank balance, depth — सब जगह negative numbers real हैं।",
+            "icon": "lightbulb"
+          },
+          {
+            "type": "misconception",
+            "heading": "गलतफहमी: Irrational Number को Decimal में नहीं लिख सकते?",
+            "wrong": "Irrational numbers का decimal form नहीं होता",
+            "correct": "होता है, लेकिन वो non-terminating और non-repeating होता है। जैसे π = 3.14159265... बिना कभी repeat किए चलता रहता है। √2 = 1.41421356... भी।",
+            "icon": "triangle-alert"
+          },
+          {
+            "type": "activity",
+            "heading": "√2 को Number Line पे ढूंढो",
+            "content": "एक unit length का square बनाओ (1cm × 1cm)। Diagonal = √2 cm (Pythagoras से)। Compass से वो diagonal length number line पर 0 से mark करो — exactly √2 पर पहुंचोगे। Irrational भी number line पर real point है!",
+            "cta": "ऐप में geometric construction देखो →",
+            "icon": "flask-conical"
+          }
+        ],
+        "en": [
+          {
+            "type": "example",
+            "heading": "Number Line and the Auto Meter",
+            "content": "An auto rickshaw meter starts at 0 and goes forward — that's a number line. When you hear negative numbers, think: −5°C means 5 degrees below zero, which is to the left on the number line. Temperature, bank balance, depth below sea level — negative numbers are real everywhere.",
+            "icon": "lightbulb"
+          },
+          {
+            "type": "misconception",
+            "heading": "Can Irrational Numbers Be Written as Decimals?",
+            "wrong": "Irrational numbers have no decimal form",
+            "correct": "They do — but it's non-terminating and non-repeating. For example π = 3.14159265... goes on forever without any pattern. Same with √2 = 1.41421356...",
+            "icon": "triangle-alert"
+          },
+          {
+            "type": "activity",
+            "heading": "Locate √2 on the Number Line",
+            "content": "Draw a square with side 1 cm. Its diagonal = √2 cm (by Pythagoras). Use a compass to transfer that diagonal length onto the number line from 0 — you land exactly on √2. Even irrational numbers are real points on the number line!",
+            "cta": "See geometric construction in app →",
+            "icon": "flask-conical"
+          }
+        ]
+      }
+    },
+    {
+      "chapter_number": 2,
+      "chapter_title": "Polynomials",
+      "blocks": {
+        "hi": [
+          {
+            "type": "example",
+            "heading": "Polynomial — मिठाई की दुकान में",
+            "content": "मान लो एक mithai की दुकान में laddoo ₹10 का है और barfi ₹15 की। अगर तुम x laddoos और y barfis खरीदते हो, total cost = 10x + 15y। यह एक polynomial expression है — real life में हर जगह polynomials हैं, बस हम उन्हें नाम नहीं देते।",
+            "icon": "lightbulb"
+          },
+          {
+            "type": "misconception",
+            "heading": "गलतफहमी: Monomial में सिर्फ एक Number?",
+            "wrong": "Monomial में सिर्फ एक number होता है",
+            "correct": "नहीं! Monomial में एक term होती है जिसमें variable भी हो सकता है। जैसे 5x², -3y, 7xyz — सब monomials हैं। Number of terms matters, coefficients नहीं।",
+            "icon": "triangle-alert"
+          },
+          {
+            "type": "activity",
+            "heading": "Factor Tree से Polynomial Factor करो",
+            "content": "p(x) = x² + 5x + 6 लो। Think: कौन से दो numbers ऐसे हैं जिनका product 6 है और sum 5? Answer: 2 और 3। तो p(x) = (x+2)(x+3)। Check: (x+2)(x+3) को expand करो — same polynomial मिलेगा! यही factorization है।",
+            "cta": "ऐप में polynomial factoring tool देखो →",
+            "icon": "flask-conical"
+          }
+        ],
+        "en": [
+          {
+            "type": "example",
+            "heading": "Polynomials in the Mithai Shop",
+            "content": "Say a mithai shop sells laddoos for ₹10 and barfi for ₹15. If you buy x laddoos and y barfis, total cost = 10x + 15y. That's a polynomial expression. Polynomials are everywhere in real life — we just don't give them that name.",
+            "icon": "lightbulb"
+          },
+          {
+            "type": "misconception",
+            "heading": "Does Monomial Mean Just One Number?",
+            "wrong": "A monomial contains only one number",
+            "correct": "No! A monomial is a single term that can include variables. 5x², -3y, 7xyz — all are monomials. It's about the number of terms, not the number of coefficients.",
+            "icon": "triangle-alert"
+          },
+          {
+            "type": "activity",
+            "heading": "Factorise a Polynomial Mentally",
+            "content": "Take p(x) = x² + 5x + 6. Ask: which two numbers multiply to 6 and add to 5? Answer: 2 and 3. So p(x) = (x+2)(x+3). Verify: expand (x+2)(x+3) and check you get the original polynomial. That's factorisation!",
+            "cta": "See polynomial factoring tool in app →",
+            "icon": "flask-conical"
+          }
+        ]
+      }
+    }
+  ]
+}

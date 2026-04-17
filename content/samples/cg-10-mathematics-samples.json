@@ -1,0 +1,107 @@
+{
+  "board": "cg",
+  "class": 10,
+  "subject": "mathematics",
+  "samples": [
+    {
+      "chapter_number": 1,
+      "chapter_title": "Real Numbers",
+      "blocks": {
+        "hi": [
+          {
+            "type": "example",
+            "heading": "HCF — Bastar के बाज़ार में",
+            "content": "Bastar के हाट में एक किसान के पास 84 kg dhaan (धान) है और 56 kg maize है। वो equal-weight bags बनाना चाहता है — हर bag में same weight हो। Maximum कितना kg हर bag में? HCF(84, 56) = 28। हर bag में 28 kg — 3 bags dhaan के, 2 bags maize के। HCF का real use!",
+            "icon": "lightbulb"
+          },
+          {
+            "type": "misconception",
+            "heading": "गलतफहमी: LCM हमेशा बड़ा होता है HCF से?",
+            "wrong": "LCM हमेशा HCF से बड़ा होता है",
+            "correct": "Almost always true, लेकिन exception है: जब दो numbers equal हों, जैसे 6 और 6, तो HCF = LCM = 6। General rule: LCM × HCF = Product of two numbers।",
+            "icon": "triangle-alert"
+          },
+          {
+            "type": "activity",
+            "heading": "Indravati के Cycle से LCM",
+            "content": "मान लो Indravati नदी के किनारे दो boats हैं। Boat A हर 6 minutes में वापस आती है, Boat B हर 8 minutes में। दोनों एक साथ कब आएंगी? LCM(6, 8) = 24 minutes। LCM वो smallest time है जब दोनों events साथ होते हैं।",
+            "cta": "ऐप में LCM visual देखो →",
+            "icon": "flask-conical"
+          }
+        ],
+        "en": [
+          {
+            "type": "example",
+            "heading": "HCF at Bastar's Haat Market",
+            "content": "At a Bastar haat, a farmer has 84 kg of dhaan and 56 kg of maize. He wants to pack them in equal-weight bags. Maximum weight per bag? HCF(84, 56) = 28. So each bag holds 28 kg — 3 bags of dhaan, 2 of maize. That's HCF in real action.",
+            "icon": "lightbulb"
+          },
+          {
+            "type": "misconception",
+            "heading": "Is LCM Always Greater Than HCF?",
+            "wrong": "LCM is always greater than HCF",
+            "correct": "Almost always, but not when two numbers are equal. If both numbers are 6, then HCF = LCM = 6. The general rule is: LCM × HCF = Product of the two numbers.",
+            "icon": "triangle-alert"
+          },
+          {
+            "type": "activity",
+            "heading": "LCM with Boats on the Indravati",
+            "content": "Imagine two boats on the Indravati river. Boat A returns every 6 minutes, Boat B every 8 minutes. When do they return together? LCM(6, 8) = 24 minutes. LCM is the smallest time when two repeating events happen simultaneously.",
+            "cta": "See LCM visual in app →",
+            "icon": "flask-conical"
+          }
+        ]
+      }
+    },
+    {
+      "chapter_number": 2,
+      "chapter_title": "Polynomials",
+      "blocks": {
+        "hi": [
+          {
+            "type": "example",
+            "heading": "Polynomial — Bhains के दूध की Calculation",
+            "content": "मान लो एक bhains (भैंस) रोज़ x litres दूध देती है। एक हफ्ते में total दूध = 7x litres। अगर दूध ₹40/litre है, income = 40 × 7x = 280x। यह एक linear polynomial है। अगर दूध घटता-बढ़ता है: output = 5x² - 3x + 10 — quadratic polynomial। हर calculation polynomial है!",
+            "icon": "lightbulb"
+          },
+          {
+            "type": "misconception",
+            "heading": "गलतफहमी: Degree मतलब Coefficients की संख्या?",
+            "wrong": "Polynomial की degree उसके coefficients की संख्या है",
+            "correct": "नहीं! Degree है highest power of variable। p(x) = 3x⁴ + 2x² + 7x + 1 की degree 4 है — चाहे terms कितनी भी हों। Power देखो, terms नहीं।",
+            "icon": "triangle-alert"
+          },
+          {
+            "type": "activity",
+            "heading": "Zero of Polynomial — Guess करो",
+            "content": "p(x) = 2x - 6 लो। p(x) = 0 कब होगा? 2x - 6 = 0, x = 3। Check: p(3) = 2(3) - 6 = 0. ✓ अब try करो p(x) = x² - 9। Clue: (x-3)(x+3) = x² - 9। Zeroes क्या हैं? Graph पे x-axis crossing points!",
+            "cta": "ऐप में zero-finding game खेलो →",
+            "icon": "flask-conical"
+          }
+        ],
+        "en": [
+          {
+            "type": "example",
+            "heading": "Polynomials — Bhains Milk Calculation",
+            "content": "Say a bhains gives x litres of milk daily. Weekly total = 7x litres. At ₹40/litre, income = 280x. That's a linear polynomial. If output varies: 5x² - 3x + 10 — that's quadratic. Every real-life calculation is a polynomial in disguise!",
+            "icon": "lightbulb"
+          },
+          {
+            "type": "misconception",
+            "heading": "Does Degree Mean Number of Coefficients?",
+            "wrong": "The degree of a polynomial is the count of its coefficients",
+            "correct": "No! Degree is the highest power of the variable. In p(x) = 3x⁴ + 2x² + 7x + 1, the degree is 4. Count the power, not the terms.",
+            "icon": "triangle-alert"
+          },
+          {
+            "type": "activity",
+            "heading": "Find the Zero — Guess and Check",
+            "content": "Take p(x) = 2x - 6. When is p(x) = 0? Solve: 2x - 6 = 0 → x = 3. Check: p(3) = 2(3) - 6 = 0. ✓ Now try p(x) = x² - 9. Hint: (x-3)(x+3) = x² - 9. What are the zeroes? They're the points where the graph crosses the x-axis!",
+            "cta": "Play the zero-finding game in app →",
+            "icon": "flask-conical"
+          }
+        ]
+      }
+    }
+  ]
+}
