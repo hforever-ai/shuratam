@@ -1,0 +1,86 @@
+{
+  "board": "cbse",
+  "class": 10,
+  "subject": "science",
+  "total_chapters": 13,
+  "chapters": [
+    {
+      "number": 1,
+      "name_hi": "रासायनिक अभिक्रियाएँ एवं समीकरण",
+      "name_en": "Chemical Reactions and Equations",
+      "is_hero": true
+    },
+    {
+      "number": 2,
+      "name_hi": "अम्ल, क्षारक एवं लवण",
+      "name_en": "Acids Bases and Salts",
+      "is_hero": true
+    },
+    {
+      "number": 3,
+      "name_hi": "धातु एवं अधातु",
+      "name_en": "Metals and Non-metals",
+      "is_hero": false
+    },
+    {
+      "number": 4,
+      "name_hi": "कार्बन एवं उसके यौगिक",
+      "name_en": "Carbon and its Compounds",
+      "is_hero": false
+    },
+    {
+      "number": 5,
+      "name_hi": "जैव प्रक्रम",
+      "name_en": "Life Processes",
+      "is_hero": false
+    },
+    {
+      "number": 6,
+      "name_hi": "नियंत्रण एवं समन्वय",
+      "name_en": "Control and Coordination",
+      "is_hero": false
+    },
+    {
+      "number": 7,
+      "name_hi": "जीव जनन कैसे करते हैं",
+      "name_en": "How do Organisms Reproduce",
+      "is_hero": false
+    },
+    {
+      "number": 8,
+      "name_hi": "अनुवांशिकता",
+      "name_en": "Heredity",
+      "is_hero": false
+    },
+    {
+      "number": 9,
+      "name_hi": "प्रकाश: परावर्तन तथा अपवर्तन",
+      "name_en": "Light Reflection and Refraction",
+      "is_hero": false
+    },
+    {
+      "number": 10,
+      "name_hi": "मानव नेत्र तथा रंगबिरंगा संसार",
+      "name_en": "The Human Eye and the Colourful World",
+      "is_hero": false
+    },
+    {
+      "number": 11,
+      "name_hi": "विद्युत",
+      "name_en": "Electricity",
+      "is_hero": false
+    },
+    {
+      "number": 12,
+      "name_hi": "विद्युत धारा के चुम्बकीय प्रभाव",
+      "name_en": "Magnetic Effects of Electric Current",
+      "is_hero": false
+    },
+    {
+      "number": 13,
+      "name_hi": "हमारा पर्यावरण",
+      "name_en": "Our Environment",
+      "is_hero": false
+    }
+  ]
+}

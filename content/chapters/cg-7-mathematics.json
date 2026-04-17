@@ -1,0 +1,98 @@
+{
+  "board": "cg",
+  "class": 7,
+  "subject": "mathematics",
+  "total_chapters": 15,
+  "chapters": [
+    {
+      "number": 1,
+      "name_hi": "पूर्णांक",
+      "name_en": "Integers",
+      "is_hero": true
+    },
+    {
+      "number": 2,
+      "name_hi": "भिन्न एवं दशमलव",
+      "name_en": "Fractions and Decimals",
+      "is_hero": true
+    },
+    {
+      "number": 3,
+      "name_hi": "आँकड़ों का प्रबंधन",
+      "name_en": "Data Handling",
+      "is_hero": false
+    },
+    {
+      "number": 4,
+      "name_hi": "सरल समीकरण",
+      "name_en": "Simple Equations",
+      "is_hero": false
+    },
+    {
+      "number": 5,
+      "name_hi": "रेखाएँ और कोण",
+      "name_en": "Lines and Angles",
+      "is_hero": false
+    },
+    {
+      "number": 6,
+      "name_hi": "त्रिभुज और उसके गुण",
+      "name_en": "The Triangle and its Properties",
+      "is_hero": false
+    },
+    {
+      "number": 7,
+      "name_hi": "त्रिभुजों की सर्वांगसमता",
+      "name_en": "Congruence of Triangles",
+      "is_hero": false
+    },
+    {
+      "number": 8,
+      "name_hi": "राशियों की तुलना",
+      "name_en": "Comparing Quantities",
+      "is_hero": false
+    },
+    {
+      "number": 9,
+      "name_hi": "परिमेय संख्याएँ",
+      "name_en": "Rational Numbers",
+      "is_hero": false
+    },
+    {
+      "number": 10,
+      "name_hi": "व्यावहारिक ज्यामिति",
+      "name_en": "Practical Geometry",
+      "is_hero": false
+    },
+    {
+      "number": 11,
+      "name_hi": "परिमाप और क्षेत्रफल",
+      "name_en": "Perimeter and Area",
+      "is_hero": false
+    },
+    {
+      "number": 12,
+      "name_hi": "बीजीय व्यंजक",
+      "name_en": "Algebraic Expressions",
+      "is_hero": false
+    },
+    {
+      "number": 13,
+      "name_hi": "घातांक और घात",
+      "name_en": "Exponents and Powers",
+      "is_hero": false
+    },
+    {
+      "number": 14,
+      "name_hi": "सममिति",
+      "name_en": "Symmetry",
+      "is_hero": false
+    },
+    {
+      "number": 15,
+      "name_hi": "ठोस आकारों का चित्रण",
+      "name_en": "Visualising Solid Shapes",
+      "is_hero": false
+    }
+  ]
+}

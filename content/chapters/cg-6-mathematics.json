@@ -1,0 +1,92 @@
+{
+  "board": "cg",
+  "class": 6,
+  "subject": "mathematics",
+  "total_chapters": 14,
+  "chapters": [
+    {
+      "number": 1,
+      "name_hi": "अपनी संख्याओं की जानकारी",
+      "name_en": "Knowing Our Numbers",
+      "is_hero": true
+    },
+    {
+      "number": 2,
+      "name_hi": "पूर्ण संख्याएँ",
+      "name_en": "Whole Numbers",
+      "is_hero": true
+    },
+    {
+      "number": 3,
+      "name_hi": "संख्याओं के साथ खेलना",
+      "name_en": "Playing with Numbers",
+      "is_hero": false
+    },
+    {
+      "number": 4,
+      "name_hi": "आधारभूत ज्यामितीय अवधारणाएँ",
+      "name_en": "Basic Geometrical Ideas",
+      "is_hero": false
+    },
+    {
+      "number": 5,
+      "name_hi": "प्रारंभिक आकारों को समझना",
+      "name_en": "Understanding Elementary Shapes",
+      "is_hero": false
+    },
+    {
+      "number": 6,
+      "name_hi": "पूर्णांक",
+      "name_en": "Integers",
+      "is_hero": false
+    },
+    {
+      "number": 7,
+      "name_hi": "भिन्न",
+      "name_en": "Fractions",
+      "is_hero": false
+    },
+    {
+      "number": 8,
+      "name_hi": "दशमलव",
+      "name_en": "Decimals",
+      "is_hero": false
+    },
+    {
+      "number": 9,
+      "name_hi": "आँकड़ों का प्रबंधन",
+      "name_en": "Data Handling",
+      "is_hero": false
+    },
+    {
+      "number": 10,
+      "name_hi": "क्षेत्रमिति",
+      "name_en": "Mensuration",
+      "is_hero": false
+    },
+    {
+      "number": 11,
+      "name_hi": "बीजगणित",
+      "name_en": "Algebra",
+      "is_hero": false
+    },
+    {
+      "number": 12,
+      "name_hi": "अनुपात और समानुपात",
+      "name_en": "Ratio and Proportion",
+      "is_hero": false
+    },
+    {
+      "number": 13,
+      "name_hi": "सममिति",
+      "name_en": "Symmetry",
+      "is_hero": false
+    },
+    {
+      "number": 14,
+      "name_hi": "व्यावहारिक ज्यामिति",
+      "name_en": "Practical Geometry",
+      "is_hero": false
+    }
+  ]
+}

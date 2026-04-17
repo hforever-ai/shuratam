@@ -1,0 +1,98 @@
+{
+  "board": "cg",
+  "class": 9,
+  "subject": "mathematics",
+  "total_chapters": 15,
+  "chapters": [
+    {
+      "number": 1,
+      "name_hi": "संख्या पद्धति",
+      "name_en": "Number Systems",
+      "is_hero": true
+    },
+    {
+      "number": 2,
+      "name_hi": "बहुपद",
+      "name_en": "Polynomials",
+      "is_hero": true
+    },
+    {
+      "number": 3,
+      "name_hi": "निर्देशांक ज्यामिति",
+      "name_en": "Coordinate Geometry",
+      "is_hero": false
+    },
+    {
+      "number": 4,
+      "name_hi": "दो चरों वाले रैखिक समीकरण",
+      "name_en": "Linear Equations in Two Variables",
+      "is_hero": false
+    },
+    {
+      "number": 5,
+      "name_hi": "यूक्लिड की ज्यामिति का परिचय",
+      "name_en": "Introduction to Euclid's Geometry",
+      "is_hero": false
+    },
+    {
+      "number": 6,
+      "name_hi": "रेखाएँ और कोण",
+      "name_en": "Lines and Angles",
+      "is_hero": false
+    },
+    {
+      "number": 7,
+      "name_hi": "त्रिभुज",
+      "name_en": "Triangles",
+      "is_hero": false
+    },
+    {
+      "number": 8,
+      "name_hi": "चतुर्भुज",
+      "name_en": "Quadrilaterals",
+      "is_hero": false
+    },
+    {
+      "number": 9,
+      "name_hi": "समान्तर चतुर्भुजों और त्रिभुजों के क्षेत्रफल",
+      "name_en": "Areas of Parallelograms and Triangles",
+      "is_hero": false
+    },
+    {
+      "number": 10,
+      "name_hi": "वृत्त",
+      "name_en": "Circles",
+      "is_hero": false
+    },
+    {
+      "number": 11,
+      "name_hi": "रचनाएँ",
+      "name_en": "Constructions",
+      "is_hero": false
+    },
+    {
+      "number": 12,
+      "name_hi": "हीरोन का सूत्र",
+      "name_en": "Heron's Formula",
+      "is_hero": false
+    },
+    {
+      "number": 13,
+      "name_hi": "पृष्ठीय क्षेत्रफल और आयतन",
+      "name_en": "Surface Areas and Volumes",
+      "is_hero": false
+    },
+    {
+      "number": 14,
+      "name_hi": "सांख्यिकी",
+      "name_en": "Statistics",
+      "is_hero": false
+    },
+    {
+      "number": 15,
+      "name_hi": "प्रायिकता",
+      "name_en": "Probability",
+      "is_hero": false
+    }
+  ]
+}

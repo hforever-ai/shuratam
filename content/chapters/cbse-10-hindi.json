@@ -1,0 +1,68 @@
+{
+  "board": "cbse",
+  "class": 10,
+  "subject": "hindi",
+  "total_chapters": 10,
+  "chapters": [
+    {
+      "number": 1,
+      "name_hi": "साखी",
+      "name_en": "साखी",
+      "is_hero": true
+    },
+    {
+      "number": 2,
+      "name_hi": "पद",
+      "name_en": "पद",
+      "is_hero": true
+    },
+    {
+      "number": 3,
+      "name_hi": "दोहे",
+      "name_en": "दोहे",
+      "is_hero": false
+    },
+    {
+      "number": 4,
+      "name_hi": "मानवीय करुणा की दिव्य चमक",
+      "name_en": "मानवीय करुणा की दिव्य चमक",
+      "is_hero": false
+    },
+    {
+      "number": 5,
+      "name_hi": "बालगोबिन भगत",
+      "name_en": "बालगोबिन भगत",
+      "is_hero": false
+    },
+    {
+      "number": 6,
+      "name_hi": "नेताजी का चश्मा",
+      "name_en": "नेताजी का चश्मा",
+      "is_hero": false
+    },
+    {
+      "number": 7,
+      "name_hi": "एक कहानी यह भी",
+      "name_en": "एक कहानी यह भी",
+      "is_hero": false
+    },
+    {
+      "number": 8,
+      "name_hi": "नौबतखाने में इबादत",
+      "name_en": "नौबतखाने में इबादत",
+      "is_hero": false
+    },
+    {
+      "number": 9,
+      "name_hi": "संस्कृति",
+      "name_en": "संस्कृति",
+      "is_hero": false
+    },
+    {
+      "number": 10,
+      "name_hi": "लखनवी अंदाज़",
+      "name_en": "लखनवी अंदाज़",
+      "is_hero": false
+    }
+  ]
+}

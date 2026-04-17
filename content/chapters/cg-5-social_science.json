@@ -1,0 +1,68 @@
+{
+  "board": "cg",
+  "class": 5,
+  "subject": "social_science",
+  "total_chapters": 10,
+  "chapters": [
+    {
+      "number": 1,
+      "name_hi": "हमारा देश भारत",
+      "name_en": "Our Country India",
+      "is_hero": true
+    },
+    {
+      "number": 2,
+      "name_hi": "भारत की जलवायु",
+      "name_en": "Climate of India",
+      "is_hero": true
+    },
+    {
+      "number": 3,
+      "name_hi": "मानचित्र और ग्लोब",
+      "name_en": "Maps and Globes",
+      "is_hero": false
+    },
+    {
+      "number": 4,
+      "name_hi": "संसाधन और विकास",
+      "name_en": "Resources and Development",
+      "is_hero": false
+    },
+    {
+      "number": 5,
+      "name_hi": "हमारी सरकार",
+      "name_en": "Our Government",
+      "is_hero": false
+    },
+    {
+      "number": 6,
+      "name_hi": "अधिकार और कर्तव्य",
+      "name_en": "Rights and Duties",
+      "is_hero": false
+    },
+    {
+      "number": 7,
+      "name_hi": "परिवहन और संचार",
+      "name_en": "Transport and Communication",
+      "is_hero": false
+    },
+    {
+      "number": 8,
+      "name_hi": "हमारी विरासत",
+      "name_en": "Our Heritage",
+      "is_hero": false
+    },
+    {
+      "number": 9,
+      "name_hi": "पर्यावरण",
+      "name_en": "The Environment",
+      "is_hero": false
+    },
+    {
+      "number": 10,
+      "name_hi": "सुरक्षा और प्राथमिक उपचार",
+      "name_en": "Safety and First Aid",
+      "is_hero": false
+    }
+  ]
+}

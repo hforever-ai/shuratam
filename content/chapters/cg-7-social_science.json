@@ -1,0 +1,80 @@
+{
+  "board": "cg",
+  "class": 7,
+  "subject": "social_science",
+  "total_chapters": 12,
+  "chapters": [
+    {
+      "number": 1,
+      "name_hi": "हजार वर्षों के दौरान हुए परिवर्तनों की पड़ताल",
+      "name_en": "Tracing Changes Through a Thousand Years",
+      "is_hero": true
+    },
+    {
+      "number": 2,
+      "name_hi": "नए राजा और राज्य",
+      "name_en": "New Kings and Kingdoms",
+      "is_hero": true
+    },
+    {
+      "number": 3,
+      "name_hi": "दिल्ली के सुलतान",
+      "name_en": "The Delhi Sultans",
+      "is_hero": false
+    },
+    {
+      "number": 4,
+      "name_hi": "मुगल साम्राज्य",
+      "name_en": "The Mughal Empire",
+      "is_hero": false
+    },
+    {
+      "number": 5,
+      "name_hi": "शासक और इमारतें",
+      "name_en": "Rulers and Buildings",
+      "is_hero": false
+    },
+    {
+      "number": 6,
+      "name_hi": "नगर, व्यापारी और शिल्पी",
+      "name_en": "Towns Traders and Craftspeople",
+      "is_hero": false
+    },
+    {
+      "number": 7,
+      "name_hi": "जनजातियाँ, खानाबदोश और एक जगह बसे हुए समुदाय",
+      "name_en": "Tribes Nomads and Settled Communities",
+      "is_hero": false
+    },
+    {
+      "number": 8,
+      "name_hi": "ईश्वर से अनुराग",
+      "name_en": "Devotional Paths to the Divine",
+      "is_hero": false
+    },
+    {
+      "number": 9,
+      "name_hi": "पर्यावरण",
+      "name_en": "Environment",
+      "is_hero": false
+    },
+    {
+      "number": 10,
+      "name_hi": "हमारी पृथ्वी के भीतर",
+      "name_en": "Inside Our Earth",
+      "is_hero": false
+    },
+    {
+      "number": 11,
+      "name_hi": "हमारी बदलती पृथ्वी",
+      "name_en": "Our Changing Earth",
+      "is_hero": false
+    },
+    {
+      "number": 12,
+      "name_hi": "वायु",
+      "name_en": "Air",
+      "is_hero": false
+    }
+  ]
+}

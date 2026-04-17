@@ -1,0 +1,68 @@
+{
+  "board": "cbse",
+  "class": 7,
+  "subject": "english",
+  "total_chapters": 10,
+  "chapters": [
+    {
+      "number": 1,
+      "name_hi": "तीन प्रश्न",
+      "name_en": "Three Questions",
+      "is_hero": true
+    },
+    {
+      "number": 2,
+      "name_hi": "चप्पलों का उपहार",
+      "name_en": "A Gift of Chappals",
+      "is_hero": true
+    },
+    {
+      "number": 3,
+      "name_hi": "गोपाल और हिल्सा मछली",
+      "name_en": "Gopal and the Hilsa Fish",
+      "is_hero": false
+    },
+    {
+      "number": 4,
+      "name_hi": "राख जिसने पेड़ों को खिलाया",
+      "name_en": "The Ashes That Made Trees Bloom",
+      "is_hero": false
+    },
+    {
+      "number": 5,
+      "name_hi": "गुणवत्ता",
+      "name_en": "Quality",
+      "is_hero": false
+    },
+    {
+      "number": 6,
+      "name_hi": "विशेषज्ञ जासूस",
+      "name_en": "Expert Detectives",
+      "is_hero": false
+    },
+    {
+      "number": 7,
+      "name_hi": "विटा-वॉन्क का आविष्कार",
+      "name_en": "The Invention of Vita-Wonk",
+      "is_hero": false
+    },
+    {
+      "number": 8,
+      "name_hi": "अग्नि: मित्र और शत्रु",
+      "name_en": "Fire Friend and Foe",
+      "is_hero": false
+    },
+    {
+      "number": 9,
+      "name_hi": "अच्छी हालत में साइकिल",
+      "name_en": "A Bicycle in Good Repair",
+      "is_hero": false
+    },
+    {
+      "number": 10,
+      "name_hi": "क्रिकेट की कहानी",
+      "name_en": "The Story of Cricket",
+      "is_hero": false
+    }
+  ]
+}

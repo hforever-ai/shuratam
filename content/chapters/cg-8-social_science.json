@@ -1,0 +1,80 @@
+{
+  "board": "cg",
+  "class": 8,
+  "subject": "social_science",
+  "total_chapters": 12,
+  "chapters": [
+    {
+      "number": 1,
+      "name_hi": "कैसे, कब और कहाँ",
+      "name_en": "How When and Where",
+      "is_hero": true
+    },
+    {
+      "number": 2,
+      "name_hi": "व्यापार से साम्राज्य तक",
+      "name_en": "From Trade to Territory",
+      "is_hero": true
+    },
+    {
+      "number": 3,
+      "name_hi": "ग्रामीण क्षेत्र पर शासन",
+      "name_en": "Ruling the Countryside",
+      "is_hero": false
+    },
+    {
+      "number": 4,
+      "name_hi": "आदिवासी दिकू और एक स्वर्ण युग की कल्पना",
+      "name_en": "Tribals Dikus and the Vision of a Golden Age",
+      "is_hero": false
+    },
+    {
+      "number": 5,
+      "name_hi": "जब जनता बगावत करती है",
+      "name_en": "When People Rebel",
+      "is_hero": false
+    },
+    {
+      "number": 6,
+      "name_hi": "बुनकर लौह-स्मेल्टर और फैक्ट्री मालिक",
+      "name_en": "Weavers Iron Smelters and Factory Owners",
+      "is_hero": false
+    },
+    {
+      "number": 7,
+      "name_hi": "देशी जनता को सभ्य बनाना: राष्ट्र को शिक्षित करना",
+      "name_en": "Civilising the Native Educating the Nation",
+      "is_hero": false
+    },
+    {
+      "number": 8,
+      "name_hi": "महिलाएँ जाति और सुधार",
+      "name_en": "Women Caste and Reform",
+      "is_hero": false
+    },
+    {
+      "number": 9,
+      "name_hi": "संसाधन",
+      "name_en": "Resources",
+      "is_hero": false
+    },
+    {
+      "number": 10,
+      "name_hi": "भूमि, मृदा, जल, प्राकृतिक वनस्पति और वन्य जीवन",
+      "name_en": "Land Soil Water Natural Vegetation and Wildlife",
+      "is_hero": false
+    },
+    {
+      "number": 11,
+      "name_hi": "कृषि",
+      "name_en": "Agriculture",
+      "is_hero": false
+    },
+    {
+      "number": 12,
+      "name_hi": "उद्योग",
+      "name_en": "Industries",
+      "is_hero": false
+    }
+  ]
+}

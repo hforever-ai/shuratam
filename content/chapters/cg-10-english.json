@@ -1,0 +1,68 @@
+{
+  "board": "cg",
+  "class": 10,
+  "subject": "english",
+  "total_chapters": 10,
+  "chapters": [
+    {
+      "number": 1,
+      "name_hi": "भगवान को पत्र",
+      "name_en": "A Letter to God",
+      "is_hero": true
+    },
+    {
+      "number": 2,
+      "name_hi": "नेल्सन मंडेला: स्वतंत्रता की लंबी राह",
+      "name_en": "Nelson Mandela Long Walk to Freedom",
+      "is_hero": true
+    },
+    {
+      "number": 3,
+      "name_hi": "उड़ान की दो कहानियाँ",
+      "name_en": "Two Stories about Flying",
+      "is_hero": false
+    },
+    {
+      "number": 4,
+      "name_hi": "ऐनी फ्रैंक की डायरी से",
+      "name_en": "From the Diary of Anne Frank",
+      "is_hero": false
+    },
+    {
+      "number": 5,
+      "name_hi": "सौ पोशाकें",
+      "name_en": "The Hundred Dresses",
+      "is_hero": false
+    },
+    {
+      "number": 6,
+      "name_hi": "गोआ का एक नानबाई",
+      "name_en": "A Baker from Goa",
+      "is_hero": false
+    },
+    {
+      "number": 7,
+      "name_hi": "कूर्ग",
+      "name_en": "Coorg",
+      "is_hero": false
+    },
+    {
+      "number": 8,
+      "name_hi": "असम की चाय",
+      "name_en": "Tea from Assam",
+      "is_hero": false
+    },
+    {
+      "number": 9,
+      "name_hi": "वृक्ष",
+      "name_en": "The Trees",
+      "is_hero": false
+    },
+    {
+      "number": 10,
+      "name_hi": "कोहरा",
+      "name_en": "Fog",
+      "is_hero": false
+    }
+  ]
+}

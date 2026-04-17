@@ -1,0 +1,68 @@
+{
+  "board": "cbse",
+  "class": 5,
+  "subject": "english",
+  "total_chapters": 10,
+  "chapters": [
+    {
+      "number": 1,
+      "name_hi": "आइसक्रीम वाला",
+      "name_en": "Ice Cream Man",
+      "is_hero": true
+    },
+    {
+      "number": 2,
+      "name_hi": "अद्भुत अपशिष्ट",
+      "name_en": "Wonderful Waste",
+      "is_hero": true
+    },
+    {
+      "number": 3,
+      "name_hi": "टीमवर्क",
+      "name_en": "Teamwork",
+      "is_hero": false
+    },
+    {
+      "number": 4,
+      "name_hi": "मेरी परछाईं",
+      "name_en": "My Shadow",
+      "is_hero": false
+    },
+    {
+      "number": 5,
+      "name_hi": "रॉबिन्सन क्रूसो",
+      "name_en": "Robinson Crusoe",
+      "is_hero": false
+    },
+    {
+      "number": 6,
+      "name_hi": "नींगथो कौन बनेगा",
+      "name_en": "Who Will be Ningthou",
+      "is_hero": false
+    },
+    {
+      "number": 7,
+      "name_hi": "बिल्कुल साफ",
+      "name_en": "Crystal Clear",
+      "is_hero": false
+    },
+    {
+      "number": 8,
+      "name_hi": "किसी का दोस्त नहीं",
+      "name_en": "Nobody's Friend",
+      "is_hero": false
+    },
+    {
+      "number": 9,
+      "name_hi": "लोगों का गाना गाओ",
+      "name_en": "Sing a Song of People",
+      "is_hero": false
+    },
+    {
+      "number": 10,
+      "name_hi": "दुनिया के चारों ओर",
+      "name_en": "Around the World",
+      "is_hero": false
+    }
+  ]
+}

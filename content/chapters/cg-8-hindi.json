@@ -1,0 +1,68 @@
+{
+  "board": "cg",
+  "class": 8,
+  "subject": "hindi",
+  "total_chapters": 10,
+  "chapters": [
+    {
+      "number": 1,
+      "name_hi": "ध्वनि",
+      "name_en": "ध्वनि",
+      "is_hero": true
+    },
+    {
+      "number": 2,
+      "name_hi": "लाख की चूड़ियाँ",
+      "name_en": "लाख की चूड़ियाँ",
+      "is_hero": true
+    },
+    {
+      "number": 3,
+      "name_hi": "बस की यात्रा",
+      "name_en": "बस की यात्रा",
+      "is_hero": false
+    },
+    {
+      "number": 4,
+      "name_hi": "दीवानों की हस्ती",
+      "name_en": "दीवानों की हस्ती",
+      "is_hero": false
+    },
+    {
+      "number": 5,
+      "name_hi": "चिट्ठियों की अनूठी दुनिया",
+      "name_en": "चिट्ठियों की अनूठी दुनिया",
+      "is_hero": false
+    },
+    {
+      "number": 6,
+      "name_hi": "भगवान के डाकिये",
+      "name_en": "भगवान के डाकिये",
+      "is_hero": false
+    },
+    {
+      "number": 7,
+      "name_hi": "क्या निराश हुआ जाए",
+      "name_en": "क्या निराश हुआ जाए",
+      "is_hero": false
+    },
+    {
+      "number": 8,
+      "name_hi": "यह सबसे कठिन समय नहीं",
+      "name_en": "यह सबसे कठिन समय नहीं",
+      "is_hero": false
+    },
+    {
+      "number": 9,
+      "name_hi": "कबीर की सखियाँ",
+      "name_en": "कबीर की सखियाँ",
+      "is_hero": false
+    },
+    {
+      "number": 10,
+      "name_hi": "कामचोर",
+      "name_en": "कामचोर",
+      "is_hero": false
+    }
+  ]
+}

@@ -1,0 +1,68 @@
+{
+  "board": "cbse",
+  "class": 6,
+  "subject": "english",
+  "total_chapters": 10,
+  "chapters": [
+    {
+      "number": 1,
+      "name_hi": "पैट्रिक का होमवर्क किसने किया",
+      "name_en": "Who Did Patrick's Homework",
+      "is_hero": true
+    },
+    {
+      "number": 2,
+      "name_hi": "कुत्ते को नया मालिक कैसे मिला",
+      "name_en": "How the Dog Found Himself a New Master",
+      "is_hero": true
+    },
+    {
+      "number": 3,
+      "name_hi": "तारो का पुरस्कार",
+      "name_en": "Taro's Reward",
+      "is_hero": false
+    },
+    {
+      "number": 4,
+      "name_hi": "अंतरिक्ष में एक भारतीय-अमेरिकी महिला",
+      "name_en": "An Indian American Woman in Space",
+      "is_hero": false
+    },
+    {
+      "number": 5,
+      "name_hi": "एक अलग तरह का स्कूल",
+      "name_en": "A Different Kind of School",
+      "is_hero": false
+    },
+    {
+      "number": 6,
+      "name_hi": "मैं कौन हूँ",
+      "name_en": "Who I Am",
+      "is_hero": false
+    },
+    {
+      "number": 7,
+      "name_hi": "उचित खेल",
+      "name_en": "Fair Play",
+      "is_hero": false
+    },
+    {
+      "number": 8,
+      "name_hi": "बरगद का पेड़",
+      "name_en": "The Banyan Tree",
+      "is_hero": false
+    },
+    {
+      "number": 9,
+      "name_hi": "रेगिस्तानी जानवर",
+      "name_en": "Desert Animals",
+      "is_hero": false
+    },
+    {
+      "number": 10,
+      "name_hi": "अद्भुत शब्द",
+      "name_en": "The Wonderful Words",
+      "is_hero": false
+    }
+  ]
+}

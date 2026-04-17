@@ -1,0 +1,68 @@
+{
+  "board": "cg",
+  "class": 9,
+  "subject": "english",
+  "total_chapters": 10,
+  "chapters": [
+    {
+      "number": 1,
+      "name_hi": "उनका मज़ा",
+      "name_en": "The Fun They Had",
+      "is_hero": true
+    },
+    {
+      "number": 2,
+      "name_hi": "संगीत की ध्वनि",
+      "name_en": "The Sound of Music",
+      "is_hero": true
+    },
+    {
+      "number": 3,
+      "name_hi": "छोटी लड़की",
+      "name_en": "The Little Girl",
+      "is_hero": false
+    },
+    {
+      "number": 4,
+      "name_hi": "सच में सुंदर मन",
+      "name_en": "A Truly Beautiful Mind",
+      "is_hero": false
+    },
+    {
+      "number": 5,
+      "name_hi": "साँप और दर्पण",
+      "name_en": "The Snake and the Mirror",
+      "is_hero": false
+    },
+    {
+      "number": 6,
+      "name_hi": "मेरा बचपन",
+      "name_en": "My Childhood",
+      "is_hero": false
+    },
+    {
+      "number": 7,
+      "name_hi": "पैकिंग",
+      "name_en": "Packing",
+      "is_hero": false
+    },
+    {
+      "number": 8,
+      "name_hi": "शीर्ष पर पहुँचो",
+      "name_en": "Reach for the Top",
+      "is_hero": false
+    },
+    {
+      "number": 9,
+      "name_hi": "प्रेम का बंधन",
+      "name_en": "The Bond of Love",
+      "is_hero": false
+    },
+    {
+      "number": 10,
+      "name_hi": "काठमांडू",
+      "name_en": "Kathmandu",
+      "is_hero": false
+    }
+  ]
+}

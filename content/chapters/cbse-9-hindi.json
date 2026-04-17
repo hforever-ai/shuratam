@@ -1,0 +1,68 @@
+{
+  "board": "cbse",
+  "class": 9,
+  "subject": "hindi",
+  "total_chapters": 10,
+  "chapters": [
+    {
+      "number": 1,
+      "name_hi": "दो बैलों की कथा",
+      "name_en": "दो बैलों की कथा",
+      "is_hero": true
+    },
+    {
+      "number": 2,
+      "name_hi": "ल्हासा की ओर",
+      "name_en": "ल्हासा की ओर",
+      "is_hero": true
+    },
+    {
+      "number": 3,
+      "name_hi": "उपभोक्तावाद की संस्कृति",
+      "name_en": "उपभोक्तावाद की संस्कृति",
+      "is_hero": false
+    },
+    {
+      "number": 4,
+      "name_hi": "साँवले सपनों की याद",
+      "name_en": "साँवले सपनों की याद",
+      "is_hero": false
+    },
+    {
+      "number": 5,
+      "name_hi": "नाना साहब की पुत्री देवी मैना को भस्म कर दिया गया",
+      "name_en": "नाना साहब की पुत्री देवी मैना को भस्म कर दिया गया",
+      "is_hero": false
+    },
+    {
+      "number": 6,
+      "name_hi": "प्रेमचंद के फटे जूते",
+      "name_en": "प्रेमचंद के फटे जूते",
+      "is_hero": false
+    },
+    {
+      "number": 7,
+      "name_hi": "मेरे बचपन के दिन",
+      "name_en": "मेरे बचपन के दिन",
+      "is_hero": false
+    },
+    {
+      "number": 8,
+      "name_hi": "एक कुत्ता और एक मैना",
+      "name_en": "एक कुत्ता और एक मैना",
+      "is_hero": false
+    },
+    {
+      "number": 9,
+      "name_hi": "साखियाँ एवं सबद",
+      "name_en": "साखियाँ एवं सबद",
+      "is_hero": false
+    },
+    {
+      "number": 10,
+      "name_hi": "वाख",
+      "name_en": "वाख",
+      "is_hero": false
+    }
+  ]
+}

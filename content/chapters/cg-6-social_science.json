@@ -1,0 +1,80 @@
+{
+  "board": "cg",
+  "class": 6,
+  "subject": "social_science",
+  "total_chapters": 12,
+  "chapters": [
+    {
+      "number": 1,
+      "name_hi": "क्या, कहाँ, कैसे और कब?",
+      "name_en": "What Where How and When",
+      "is_hero": true
+    },
+    {
+      "number": 2,
+      "name_hi": "आदिमानव की खोज में",
+      "name_en": "On the Trail of the Earliest People",
+      "is_hero": true
+    },
+    {
+      "number": 3,
+      "name_hi": "संग्रह से खेती की ओर",
+      "name_en": "From Gathering to Growing Food",
+      "is_hero": false
+    },
+    {
+      "number": 4,
+      "name_hi": "आरंभिक नगरों में",
+      "name_en": "In the Earliest Cities",
+      "is_hero": false
+    },
+    {
+      "number": 5,
+      "name_hi": "पुस्तकें और कब्रें क्या बताती हैं",
+      "name_en": "What Books and Burials Tell Us",
+      "is_hero": false
+    },
+    {
+      "number": 6,
+      "name_hi": "राज्य, राजा और एक प्राचीन गणराज्य",
+      "name_en": "Kingdoms Kings and an Early Republic",
+      "is_hero": false
+    },
+    {
+      "number": 7,
+      "name_hi": "नए प्रश्न और विचार",
+      "name_en": "New Questions and Ideas",
+      "is_hero": false
+    },
+    {
+      "number": 8,
+      "name_hi": "अशोक: एक अनोखा सम्राट जिसने युद्ध का त्याग किया",
+      "name_en": "Ashoka the Emperor Who Gave Up War",
+      "is_hero": false
+    },
+    {
+      "number": 9,
+      "name_hi": "सौरमंडल में पृथ्वी",
+      "name_en": "The Earth in the Solar System",
+      "is_hero": false
+    },
+    {
+      "number": 10,
+      "name_hi": "ग्लोब: अक्षांश एवं देशांतर",
+      "name_en": "Globe Latitudes and Longitudes",
+      "is_hero": false
+    },
+    {
+      "number": 11,
+      "name_hi": "पृथ्वी की गतियाँ",
+      "name_en": "Motions of the Earth",
+      "is_hero": false
+    },
+    {
+      "number": 12,
+      "name_hi": "मानचित्र",
+      "name_en": "Maps",
+      "is_hero": false
+    }
+  ]
+}

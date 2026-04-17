@@ -1,0 +1,68 @@
+{
+  "board": "cbse",
+  "class": 5,
+  "subject": "hindi",
+  "total_chapters": 10,
+  "chapters": [
+    {
+      "number": 1,
+      "name_hi": "गुल्लक",
+      "name_en": "गुल्लक",
+      "is_hero": true
+    },
+    {
+      "number": 2,
+      "name_hi": "सैर-सपाटा",
+      "name_en": "सैर-सपाटा",
+      "is_hero": true
+    },
+    {
+      "number": 3,
+      "name_hi": "खिलौनेवाला",
+      "name_en": "खिलौनेवाला",
+      "is_hero": false
+    },
+    {
+      "number": 4,
+      "name_hi": "पुस्तकालय",
+      "name_en": "पुस्तकालय",
+      "is_hero": false
+    },
+    {
+      "number": 5,
+      "name_hi": "बुद्धि का फल",
+      "name_en": "बुद्धि का फल",
+      "is_hero": false
+    },
+    {
+      "number": 6,
+      "name_hi": "गुरु और चेला",
+      "name_en": "गुरु और चेला",
+      "is_hero": false
+    },
+    {
+      "number": 7,
+      "name_hi": "स्वामी की दादी",
+      "name_en": "स्वामी की दादी",
+      "is_hero": false
+    },
+    {
+      "number": 8,
+      "name_hi": "चिट्ठी पत्री",
+      "name_en": "चिट्ठी पत्री",
+      "is_hero": false
+    },
+    {
+      "number": 9,
+      "name_hi": "प्रकृति",
+      "name_en": "प्रकृति",
+      "is_hero": false
+    },
+    {
+      "number": 10,
+      "name_hi": "हमारा देश",
+      "name_en": "हमारा देश",
+      "is_hero": false
+    }
+  ]
+}

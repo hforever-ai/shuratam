@@ -1,0 +1,68 @@
+{
+  "board": "cg",
+  "class": 6,
+  "subject": "hindi",
+  "total_chapters": 10,
+  "chapters": [
+    {
+      "number": 1,
+      "name_hi": "वह चिड़िया जो",
+      "name_en": "वह चिड़िया जो",
+      "is_hero": true
+    },
+    {
+      "number": 2,
+      "name_hi": "बचपन",
+      "name_en": "बचपन",
+      "is_hero": true
+    },
+    {
+      "number": 3,
+      "name_hi": "नादान दोस्त",
+      "name_en": "नादान दोस्त",
+      "is_hero": false
+    },
+    {
+      "number": 4,
+      "name_hi": "चाँद से थोड़ी-सी गप्पें",
+      "name_en": "चाँद से थोड़ी-सी गप्पें",
+      "is_hero": false
+    },
+    {
+      "number": 5,
+      "name_hi": "अक्षरों का महत्व",
+      "name_en": "अक्षरों का महत्व",
+      "is_hero": false
+    },
+    {
+      "number": 6,
+      "name_hi": "पार नज़र के",
+      "name_en": "पार नज़र के",
+      "is_hero": false
+    },
+    {
+      "number": 7,
+      "name_hi": "साथी हाथ बढ़ाना",
+      "name_en": "साथी हाथ बढ़ाना",
+      "is_hero": false
+    },
+    {
+      "number": 8,
+      "name_hi": "झाँसी की रानी",
+      "name_en": "झाँसी की रानी",
+      "is_hero": false
+    },
+    {
+      "number": 9,
+      "name_hi": "जो देखकर भी नहीं देखते",
+      "name_en": "जो देखकर भी नहीं देखते",
+      "is_hero": false
+    },
+    {
+      "number": 10,
+      "name_hi": "संसार पुस्तक है",
+      "name_en": "संसार पुस्तक है",
+      "is_hero": false
+    }
+  ]
+}

@@ -1,0 +1,68 @@
+{
+  "board": "cg",
+  "class": 7,
+  "subject": "hindi",
+  "total_chapters": 10,
+  "chapters": [
+    {
+      "number": 1,
+      "name_hi": "हम पंछी उन्मुक्त गगन के",
+      "name_en": "हम पंछी उन्मुक्त गगन के",
+      "is_hero": true
+    },
+    {
+      "number": 2,
+      "name_hi": "दादी माँ",
+      "name_en": "दादी माँ",
+      "is_hero": true
+    },
+    {
+      "number": 3,
+      "name_hi": "हिमालय की बेटियाँ",
+      "name_en": "हिमालय की बेटियाँ",
+      "is_hero": false
+    },
+    {
+      "number": 4,
+      "name_hi": "कठपुतली",
+      "name_en": "कठपुतली",
+      "is_hero": false
+    },
+    {
+      "number": 5,
+      "name_hi": "मिठाईवाला",
+      "name_en": "मिठाईवाला",
+      "is_hero": false
+    },
+    {
+      "number": 6,
+      "name_hi": "रक्त और हमारा शरीर",
+      "name_en": "रक्त और हमारा शरीर",
+      "is_hero": false
+    },
+    {
+      "number": 7,
+      "name_hi": "पापा खो गए",
+      "name_en": "पापा खो गए",
+      "is_hero": false
+    },
+    {
+      "number": 8,
+      "name_hi": "शाम एक किसान",
+      "name_en": "शाम एक किसान",
+      "is_hero": false
+    },
+    {
+      "number": 9,
+      "name_hi": "चिड़िया की बच्ची",
+      "name_en": "चिड़िया की बच्ची",
+      "is_hero": false
+    },
+    {
+      "number": 10,
+      "name_hi": "अपूर्व अनुभव",
+      "name_en": "अपूर्व अनुभव",
+      "is_hero": false
+    }
+  ]
+}

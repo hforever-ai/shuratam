@@ -1,0 +1,104 @@
+{
+  "board": "cbse",
+  "class": 6,
+  "subject": "science",
+  "total_chapters": 16,
+  "chapters": [
+    {
+      "number": 1,
+      "name_hi": "भोजन: यह कहाँ से आता है?",
+      "name_en": "Food: Where Does it Come From?",
+      "is_hero": true
+    },
+    {
+      "number": 2,
+      "name_hi": "भोजन के घटक",
+      "name_en": "Components of Food",
+      "is_hero": true
+    },
+    {
+      "number": 3,
+      "name_hi": "तंतु से वस्त्र तक",
+      "name_en": "Fibre to Fabric",
+      "is_hero": false
+    },
+    {
+      "number": 4,
+      "name_hi": "पदार्थों का समूहों में वर्गीकरण",
+      "name_en": "Sorting Materials into Groups",
+      "is_hero": false
+    },
+    {
+      "number": 5,
+      "name_hi": "पदार्थों का पृथक्करण",
+      "name_en": "Separation of Substances",
+      "is_hero": false
+    },
+    {
+      "number": 6,
+      "name_hi": "हमारे चारों ओर परिवर्तन",
+      "name_en": "Changes Around Us",
+      "is_hero": false
+    },
+    {
+      "number": 7,
+      "name_hi": "पौधों को जानिए",
+      "name_en": "Getting to Know Plants",
+      "is_hero": false
+    },
+    {
+      "number": 8,
+      "name_hi": "शरीर में गति",
+      "name_en": "Body Movements",
+      "is_hero": false
+    },
+    {
+      "number": 9,
+      "name_hi": "सजीव जगत और उसका परिवेश",
+      "name_en": "The Living Organisms and Their Surroundings",
+      "is_hero": false
+    },
+    {
+      "number": 10,
+      "name_hi": "गति एवं दूरियों का मापन",
+      "name_en": "Motion and Measurement of Distances",
+      "is_hero": false
+    },
+    {
+      "number": 11,
+      "name_hi": "प्रकाश छाया और परावर्तन",
+      "name_en": "Light Shadows and Reflections",
+      "is_hero": false
+    },
+    {
+      "number": 12,
+      "name_hi": "विद्युत तथा परिपथ",
+      "name_en": "Electricity and Circuits",
+      "is_hero": false
+    },
+    {
+      "number": 13,
+      "name_hi": "चुम्बकों के साथ मज़े",
+      "name_en": "Fun with Magnets",
+      "is_hero": false
+    },
+    {
+      "number": 14,
+      "name_hi": "जल",
+      "name_en": "Water",
+      "is_hero": false
+    },
+    {
+      "number": 15,
+      "name_hi": "हमारे चारों ओर वायु",
+      "name_en": "Air Around Us",
+      "is_hero": false
+    },
+    {
+      "number": 16,
+      "name_hi": "कचरा संग्रहण और निपटान",
+      "name_en": "Garbage In Garbage Out",
+      "is_hero": false
+    }
+  ]
+}

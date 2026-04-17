@@ -1,0 +1,80 @@
+{
+  "board": "cbse",
+  "class": 10,
+  "subject": "social_science",
+  "total_chapters": 12,
+  "chapters": [
+    {
+      "number": 1,
+      "name_hi": "यूरोप में राष्ट्रवाद का उदय",
+      "name_en": "The Rise of Nationalism in Europe",
+      "is_hero": true
+    },
+    {
+      "number": 2,
+      "name_hi": "भारत में राष्ट्रवाद",
+      "name_en": "Nationalism in India",
+      "is_hero": true
+    },
+    {
+      "number": 3,
+      "name_hi": "भूमंडलीकृत विश्व का बनना",
+      "name_en": "The Making of a Global World",
+      "is_hero": false
+    },
+    {
+      "number": 4,
+      "name_hi": "औद्योगीकरण का युग",
+      "name_en": "The Age of Industrialisation",
+      "is_hero": false
+    },
+    {
+      "number": 5,
+      "name_hi": "मुद्रण संस्कृति और आधुनिक दुनिया",
+      "name_en": "Print Culture and the Modern World",
+      "is_hero": false
+    },
+    {
+      "number": 6,
+      "name_hi": "संसाधन और विकास",
+      "name_en": "Resources and Development",
+      "is_hero": false
+    },
+    {
+      "number": 7,
+      "name_hi": "वन और वन्य जीव संसाधन",
+      "name_en": "Forest and Wildlife Resources",
+      "is_hero": false
+    },
+    {
+      "number": 8,
+      "name_hi": "जल संसाधन",
+      "name_en": "Water Resources",
+      "is_hero": false
+    },
+    {
+      "number": 9,
+      "name_hi": "कृषि",
+      "name_en": "Agriculture",
+      "is_hero": false
+    },
+    {
+      "number": 10,
+      "name_hi": "खनिज और ऊर्जा संसाधन",
+      "name_en": "Minerals and Energy Resources",
+      "is_hero": false
+    },
+    {
+      "number": 11,
+      "name_hi": "सत्ता की साझेदारी",
+      "name_en": "Power Sharing",
+      "is_hero": false
+    },
+    {
+      "number": 12,
+      "name_hi": "संघवाद",
+      "name_en": "Federalism",
+      "is_hero": false
+    }
+  ]
+}

@@ -1,0 +1,68 @@
+{
+  "board": "cg",
+  "class": 8,
+  "subject": "english",
+  "total_chapters": 10,
+  "chapters": [
+    {
+      "number": 1,
+      "name_hi": "विश्व का सर्वश्रेष्ठ क्रिसमस उपहार",
+      "name_en": "The Best Christmas Present in the World",
+      "is_hero": true
+    },
+    {
+      "number": 2,
+      "name_hi": "सुनामी",
+      "name_en": "The Tsunami",
+      "is_hero": true
+    },
+    {
+      "number": 3,
+      "name_hi": "अतीत की झलकियाँ",
+      "name_en": "Glimpses of the Past",
+      "is_hero": false
+    },
+    {
+      "number": 4,
+      "name_hi": "बेपिन चौधरी की स्मृतिलोप",
+      "name_en": "Bepin Choudhry's Lapse of Memory",
+      "is_hero": false
+    },
+    {
+      "number": 5,
+      "name_hi": "भीतर का शिखर",
+      "name_en": "The Summit Within",
+      "is_hero": false
+    },
+    {
+      "number": 6,
+      "name_hi": "यह जोडी का हिरण-शावक है",
+      "name_en": "This is Jody's Fawn",
+      "is_hero": false
+    },
+    {
+      "number": 7,
+      "name_hi": "कैम्ब्रिज की यात्रा",
+      "name_en": "A Visit to Cambridge",
+      "is_hero": false
+    },
+    {
+      "number": 8,
+      "name_hi": "एक संक्षिप्त मानसून डायरी",
+      "name_en": "A Short Monsoon Diary",
+      "is_hero": false
+    },
+    {
+      "number": 9,
+      "name_hi": "महान पत्थर का चेहरा",
+      "name_en": "The Great Stone Face",
+      "is_hero": false
+    },
+    {
+      "number": 10,
+      "name_hi": "जलेबियाँ",
+      "name_en": "Jalebis",
+      "is_hero": false
+    }
+  ]
+}

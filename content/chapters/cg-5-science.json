@@ -1,0 +1,68 @@
+{
+  "board": "cg",
+  "class": 5,
+  "subject": "science",
+  "total_chapters": 10,
+  "chapters": [
+    {
+      "number": 1,
+      "name_hi": "जीवित या निर्जीव",
+      "name_en": "Alive or Not Alive",
+      "is_hero": true
+    },
+    {
+      "number": 2,
+      "name_hi": "मानव शरीर और स्वास्थ्य",
+      "name_en": "Human Body and Health",
+      "is_hero": true
+    },
+    {
+      "number": 3,
+      "name_hi": "जानवर: आवास",
+      "name_en": "Animals: Habitats",
+      "is_hero": false
+    },
+    {
+      "number": 4,
+      "name_hi": "पौधे: वृद्धि और परिवर्तन",
+      "name_en": "Plants: Growing and Changing",
+      "is_hero": false
+    },
+    {
+      "number": 5,
+      "name_hi": "भोजन और पोषण",
+      "name_en": "Food and Nutrition",
+      "is_hero": false
+    },
+    {
+      "number": 6,
+      "name_hi": "जल",
+      "name_en": "Water",
+      "is_hero": false
+    },
+    {
+      "number": 7,
+      "name_hi": "पदार्थ और घोल",
+      "name_en": "Materials and Solutions",
+      "is_hero": false
+    },
+    {
+      "number": 8,
+      "name_hi": "बल और ऊर्जा",
+      "name_en": "Force and Energy",
+      "is_hero": false
+    },
+    {
+      "number": 9,
+      "name_hi": "हमारा पर्यावरण",
+      "name_en": "Our Environment",
+      "is_hero": false
+    },
+    {
+      "number": 10,
+      "name_hi": "मौसम और ऋतुएँ",
+      "name_en": "Weather and Seasons",
+      "is_hero": false
+    }
+  ]
+}

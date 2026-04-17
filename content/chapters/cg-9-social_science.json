@@ -1,0 +1,80 @@
+{
+  "board": "cg",
+  "class": 9,
+  "subject": "social_science",
+  "total_chapters": 12,
+  "chapters": [
+    {
+      "number": 1,
+      "name_hi": "फ्रांसीसी क्रांति",
+      "name_en": "The French Revolution",
+      "is_hero": true
+    },
+    {
+      "number": 2,
+      "name_hi": "यूरोप में समाजवाद और रूसी क्रांति",
+      "name_en": "Socialism in Europe and the Russian Revolution",
+      "is_hero": true
+    },
+    {
+      "number": 3,
+      "name_hi": "नात्सीवाद और हिटलर का उदय",
+      "name_en": "Nazism and the Rise of Hitler",
+      "is_hero": false
+    },
+    {
+      "number": 4,
+      "name_hi": "वन समाज और उपनिवेशवाद",
+      "name_en": "Forest Society and Colonialism",
+      "is_hero": false
+    },
+    {
+      "number": 5,
+      "name_hi": "आधुनिक विश्व में चरवाहे",
+      "name_en": "Pastoralists in the Modern World",
+      "is_hero": false
+    },
+    {
+      "number": 6,
+      "name_hi": "भारत: आकार और स्थिति",
+      "name_en": "India Size and Location",
+      "is_hero": false
+    },
+    {
+      "number": 7,
+      "name_hi": "भारत का भौतिक स्वरूप",
+      "name_en": "Physical Features of India",
+      "is_hero": false
+    },
+    {
+      "number": 8,
+      "name_hi": "अपवाह",
+      "name_en": "Drainage",
+      "is_hero": false
+    },
+    {
+      "number": 9,
+      "name_hi": "जलवायु",
+      "name_en": "Climate",
+      "is_hero": false
+    },
+    {
+      "number": 10,
+      "name_hi": "प्राकृतिक वनस्पति तथा वन्य प्राणी",
+      "name_en": "Natural Vegetation and Wild Life",
+      "is_hero": false
+    },
+    {
+      "number": 11,
+      "name_hi": "समकालीन विश्व में लोकतंत्र",
+      "name_en": "Democracy in the Contemporary World",
+      "is_hero": false
+    },
+    {
+      "number": 12,
+      "name_hi": "लोकतंत्र क्या है? लोकतंत्र क्यों?",
+      "name_en": "What is Democracy Why Democracy",
+      "is_hero": false
+    }
+  ]
+}

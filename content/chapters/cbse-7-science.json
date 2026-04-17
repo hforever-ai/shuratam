@@ -1,0 +1,116 @@
+{
+  "board": "cbse",
+  "class": 7,
+  "subject": "science",
+  "total_chapters": 18,
+  "chapters": [
+    {
+      "number": 1,
+      "name_hi": "पादपों में पोषण",
+      "name_en": "Nutrition in Plants",
+      "is_hero": true
+    },
+    {
+      "number": 2,
+      "name_hi": "प्राणियों में पोषण",
+      "name_en": "Nutrition in Animals",
+      "is_hero": true
+    },
+    {
+      "number": 3,
+      "name_hi": "ऊन और रेशम",
+      "name_en": "Fibre to Fabric",
+      "is_hero": false
+    },
+    {
+      "number": 4,
+      "name_hi": "ऊष्मा",
+      "name_en": "Heat",
+      "is_hero": false
+    },
+    {
+      "number": 5,
+      "name_hi": "अम्ल, क्षारक और लवण",
+      "name_en": "Acids Bases and Salts",
+      "is_hero": false
+    },
+    {
+      "number": 6,
+      "name_hi": "भौतिक एवं रासायनिक परिवर्तन",
+      "name_en": "Physical and Chemical Changes",
+      "is_hero": false
+    },
+    {
+      "number": 7,
+      "name_hi": "मौसम, जलवायु तथा जलवायु के अनुरूप जंतुओं द्वारा अनुकूलन",
+      "name_en": "Weather Climate and Adaptations of Animals to Climate",
+      "is_hero": false
+    },
+    {
+      "number": 8,
+      "name_hi": "पवन, तूफान और चक्रवात",
+      "name_en": "Winds Storms and Cyclones",
+      "is_hero": false
+    },
+    {
+      "number": 9,
+      "name_hi": "मृदा",
+      "name_en": "Soil",
+      "is_hero": false
+    },
+    {
+      "number": 10,
+      "name_hi": "जीवों में श्वसन",
+      "name_en": "Respiration in Organisms",
+      "is_hero": false
+    },
+    {
+      "number": 11,
+      "name_hi": "जंतुओं और पादप में परिवहन",
+      "name_en": "Transportation in Animals and Plants",
+      "is_hero": false
+    },
+    {
+      "number": 12,
+      "name_hi": "पादप में जनन",
+      "name_en": "Reproduction in Plants",
+      "is_hero": false
+    },
+    {
+      "number": 13,
+      "name_hi": "गति एवं समय",
+      "name_en": "Motion and Time",
+      "is_hero": false
+    },
+    {
+      "number": 14,
+      "name_hi": "विद्युत धारा और इसके प्रभाव",
+      "name_en": "Electric Current and Its Effects",
+      "is_hero": false
+    },
+    {
+      "number": 15,
+      "name_hi": "प्रकाश",
+      "name_en": "Light",
+      "is_hero": false
+    },
+    {
+      "number": 16,
+      "name_hi": "जल: एक बहुमूल्य संसाधन",
+      "name_en": "Water A Precious Resource",
+      "is_hero": false
+    },
+    {
+      "number": 17,
+      "name_hi": "वन: हमारी जीवन रेखा",
+      "name_en": "Forests Our Lifeline",
+      "is_hero": false
+    },
+    {
+      "number": 18,
+      "name_hi": "अपशिष्ट जल की कहानी",
+      "name_en": "Wastewater Story",
+      "is_hero": false
+    }
+  ]
+}

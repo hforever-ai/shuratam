@@ -1,0 +1,116 @@
+{
+  "board": "cbse",
+  "class": 8,
+  "subject": "science",
+  "total_chapters": 18,
+  "chapters": [
+    {
+      "number": 1,
+      "name_hi": "फसल उत्पादन और प्रबंध",
+      "name_en": "Crop Production and Management",
+      "is_hero": true
+    },
+    {
+      "number": 2,
+      "name_hi": "सूक्ष्मजीव: मित्र एवं शत्रु",
+      "name_en": "Microorganisms Friend and Foe",
+      "is_hero": true
+    },
+    {
+      "number": 3,
+      "name_hi": "संश्लेषित रेशे और प्लास्टिक",
+      "name_en": "Synthetic Fibres and Plastics",
+      "is_hero": false
+    },
+    {
+      "number": 4,
+      "name_hi": "पदार्थ: धातु एवं अधातु",
+      "name_en": "Materials Metals and Non-Metals",
+      "is_hero": false
+    },
+    {
+      "number": 5,
+      "name_hi": "कोयला और पेट्रोलियम",
+      "name_en": "Coal and Petroleum",
+      "is_hero": false
+    },
+    {
+      "number": 6,
+      "name_hi": "दहन और ज्वाला",
+      "name_en": "Combustion and Flame",
+      "is_hero": false
+    },
+    {
+      "number": 7,
+      "name_hi": "पौधे और जंतुओं का संरक्षण",
+      "name_en": "Conservation of Plants and Animals",
+      "is_hero": false
+    },
+    {
+      "number": 8,
+      "name_hi": "कोशिका: संरचना एवं प्रकार्य",
+      "name_en": "Cell Structure and Functions",
+      "is_hero": false
+    },
+    {
+      "number": 9,
+      "name_hi": "जंतुओं में जनन",
+      "name_en": "Reproduction in Animals",
+      "is_hero": false
+    },
+    {
+      "number": 10,
+      "name_hi": "किशोरावस्था की ओर",
+      "name_en": "Reaching the Age of Adolescence",
+      "is_hero": false
+    },
+    {
+      "number": 11,
+      "name_hi": "बल तथा दाब",
+      "name_en": "Force and Pressure",
+      "is_hero": false
+    },
+    {
+      "number": 12,
+      "name_hi": "घर्षण",
+      "name_en": "Friction",
+      "is_hero": false
+    },
+    {
+      "number": 13,
+      "name_hi": "ध्वनि",
+      "name_en": "Sound",
+      "is_hero": false
+    },
+    {
+      "number": 14,
+      "name_hi": "विद्युत धारा के रासायनिक प्रभाव",
+      "name_en": "Chemical Effects of Electric Current",
+      "is_hero": false
+    },
+    {
+      "number": 15,
+      "name_hi": "कुछ प्राकृतिक परिघटनाएँ",
+      "name_en": "Some Natural Phenomena",
+      "is_hero": false
+    },
+    {
+      "number": 16,
+      "name_hi": "प्रकाश",
+      "name_en": "Light",
+      "is_hero": false
+    },
+    {
+      "number": 17,
+      "name_hi": "तारे एवं सौर परिवार",
+      "name_en": "Stars and the Solar System",
+      "is_hero": false
+    },
+    {
+      "number": 18,
+      "name_hi": "वायु तथा जल का प्रदूषण",
+      "name_en": "Pollution of Air and Water",
+      "is_hero": false
+    }
+  ]
+}

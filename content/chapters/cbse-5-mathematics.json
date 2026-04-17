@@ -1,0 +1,68 @@
+{
+  "board": "cbse",
+  "class": 5,
+  "subject": "mathematics",
+  "total_chapters": 10,
+  "chapters": [
+    {
+      "number": 1,
+      "name_hi": "संख्याएँ और संख्या-पद्धति",
+      "name_en": "Numbers and Numeration",
+      "is_hero": true
+    },
+    {
+      "number": 2,
+      "name_hi": "जोड़ और घटाव",
+      "name_en": "Addition and Subtraction",
+      "is_hero": true
+    },
+    {
+      "number": 3,
+      "name_hi": "गुणा और भाग",
+      "name_en": "Multiplication and Division",
+      "is_hero": false
+    },
+    {
+      "number": 4,
+      "name_hi": "भिन्न",
+      "name_en": "Fractions",
+      "is_hero": false
+    },
+    {
+      "number": 5,
+      "name_hi": "दशमलव",
+      "name_en": "Decimals",
+      "is_hero": false
+    },
+    {
+      "number": 6,
+      "name_hi": "ज्यामिति",
+      "name_en": "Geometry",
+      "is_hero": false
+    },
+    {
+      "number": 7,
+      "name_hi": "मापन",
+      "name_en": "Measurement",
+      "is_hero": false
+    },
+    {
+      "number": 8,
+      "name_hi": "आँकड़ों का प्रबंधन",
+      "name_en": "Data Handling",
+      "is_hero": false
+    },
+    {
+      "number": 9,
+      "name_hi": "पैटर्न",
+      "name_en": "Patterns",
+      "is_hero": false
+    },
+    {
+      "number": 10,
+      "name_hi": "मुद्रा",
+      "name_en": "Money",
+      "is_hero": false
+    }
+  ]
+}

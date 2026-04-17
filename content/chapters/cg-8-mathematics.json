@@ -1,0 +1,104 @@
+{
+  "board": "cg",
+  "class": 8,
+  "subject": "mathematics",
+  "total_chapters": 16,
+  "chapters": [
+    {
+      "number": 1,
+      "name_hi": "परिमेय संख्याएँ",
+      "name_en": "Rational Numbers",
+      "is_hero": true
+    },
+    {
+      "number": 2,
+      "name_hi": "एक चर वाले रैखिक समीकरण",
+      "name_en": "Linear Equations in One Variable",
+      "is_hero": true
+    },
+    {
+      "number": 3,
+      "name_hi": "चतुर्भुजों को समझना",
+      "name_en": "Understanding Quadrilaterals",
+      "is_hero": false
+    },
+    {
+      "number": 4,
+      "name_hi": "व्यावहारिक ज्यामिति",
+      "name_en": "Practical Geometry",
+      "is_hero": false
+    },
+    {
+      "number": 5,
+      "name_hi": "आँकड़ों का प्रबंधन",
+      "name_en": "Data Handling",
+      "is_hero": false
+    },
+    {
+      "number": 6,
+      "name_hi": "वर्ग और वर्गमूल",
+      "name_en": "Squares and Square Roots",
+      "is_hero": false
+    },
+    {
+      "number": 7,
+      "name_hi": "घन और घनमूल",
+      "name_en": "Cubes and Cube Roots",
+      "is_hero": false
+    },
+    {
+      "number": 8,
+      "name_hi": "राशियों की तुलना",
+      "name_en": "Comparing Quantities",
+      "is_hero": false
+    },
+    {
+      "number": 9,
+      "name_hi": "बीजीय व्यंजक एवं सर्वसमिकाएँ",
+      "name_en": "Algebraic Expressions and Identities",
+      "is_hero": false
+    },
+    {
+      "number": 10,
+      "name_hi": "ठोस आकारों का चित्रण",
+      "name_en": "Visualising Solid Shapes",
+      "is_hero": false
+    },
+    {
+      "number": 11,
+      "name_hi": "क्षेत्रमिति",
+      "name_en": "Mensuration",
+      "is_hero": false
+    },
+    {
+      "number": 12,
+      "name_hi": "घातांक और घात",
+      "name_en": "Exponents and Powers",
+      "is_hero": false
+    },
+    {
+      "number": 13,
+      "name_hi": "सीधा और व्युत्क्रम समानुपात",
+      "name_en": "Direct and Inverse Proportions",
+      "is_hero": false
+    },
+    {
+      "number": 14,
+      "name_hi": "गुणनखंडन",
+      "name_en": "Factorisation",
+      "is_hero": false
+    },
+    {
+      "number": 15,
+      "name_hi": "आलेखों से परिचय",
+      "name_en": "Introduction to Graphs",
+      "is_hero": false
+    },
+    {
+      "number": 16,
+      "name_hi": "संख्याओं के साथ खेलना",
+      "name_en": "Playing with Numbers",
+      "is_hero": false
+    }
+  ]
+}

@@ -1,0 +1,98 @@
+{
+  "board": "cbse",
+  "class": 9,
+  "subject": "science",
+  "total_chapters": 15,
+  "chapters": [
+    {
+      "number": 1,
+      "name_hi": "हमारे आस-पास के पदार्थ",
+      "name_en": "Matter in Our Surroundings",
+      "is_hero": true
+    },
+    {
+      "number": 2,
+      "name_hi": "क्या हमारे आस-पास के पदार्थ शुद्ध हैं",
+      "name_en": "Is Matter Around Us Pure",
+      "is_hero": true
+    },
+    {
+      "number": 3,
+      "name_hi": "परमाणु एवं अणु",
+      "name_en": "Atoms and Molecules",
+      "is_hero": false
+    },
+    {
+      "number": 4,
+      "name_hi": "परमाणु की संरचना",
+      "name_en": "Structure of the Atom",
+      "is_hero": false
+    },
+    {
+      "number": 5,
+      "name_hi": "जीवन की मौलिक इकाई",
+      "name_en": "The Fundamental Unit of Life",
+      "is_hero": false
+    },
+    {
+      "number": 6,
+      "name_hi": "ऊतक",
+      "name_en": "Tissues",
+      "is_hero": false
+    },
+    {
+      "number": 7,
+      "name_hi": "जीवों में विविधता",
+      "name_en": "Diversity in Living Organisms",
+      "is_hero": false
+    },
+    {
+      "number": 8,
+      "name_hi": "गति",
+      "name_en": "Motion",
+      "is_hero": false
+    },
+    {
+      "number": 9,
+      "name_hi": "बल तथा गति के नियम",
+      "name_en": "Force and Laws of Motion",
+      "is_hero": false
+    },
+    {
+      "number": 10,
+      "name_hi": "गुरुत्वाकर्षण",
+      "name_en": "Gravitation",
+      "is_hero": false
+    },
+    {
+      "number": 11,
+      "name_hi": "कार्य और ऊर्जा",
+      "name_en": "Work and Energy",
+      "is_hero": false
+    },
+    {
+      "number": 12,
+      "name_hi": "ध्वनि",
+      "name_en": "Sound",
+      "is_hero": false
+    },
+    {
+      "number": 13,
+      "name_hi": "हम बीमार क्यों होते हैं",
+      "name_en": "Why Do We Fall Ill",
+      "is_hero": false
+    },
+    {
+      "number": 14,
+      "name_hi": "प्राकृतिक संपदा",
+      "name_en": "Natural Resources",
+      "is_hero": false
+    },
+    {
+      "number": 15,
+      "name_hi": "खाद्य संसाधनों में सुधार",
+      "name_en": "Improvement in Food Resources",
+      "is_hero": false
+    }
+  ]
+}
