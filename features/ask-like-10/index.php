@@ -67,6 +67,8 @@ include '../../partials/nav.php';
             हर बच्चे का समझने का तरीका अलग होता है।
           </p>
 
+          <img src="/assets/images/features/ask-like-10.png" alt="Ask Like 10 — one concept explained 10 different ways" loading="lazy" class="w-full max-w-[240px] mx-auto my-6 rounded-xl">
+
           <p class="text-lg mb-8" style="color: var(--text-body);">
             Normal app mein ek hi explanation hoti hai — samjho ya mat samjho.
             SAAVI ke paas <strong style="color: var(--text-primary);">ek concept ke 10 alag tarike</strong> hain.

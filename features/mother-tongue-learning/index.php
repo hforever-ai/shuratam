@@ -67,6 +67,8 @@ include '../../partials/nav.php';
             अपनी भाषा में समझो — फिर दुनिया समझेगी।
           </p>
 
+          <img src="/assets/images/features/mother-tongue.png" alt="Mother tongue learning — Hindi, Telugu, Marathi, English" loading="lazy" class="w-full max-w-[240px] mx-auto my-6 rounded-xl">
+
           <p class="text-lg mb-8" style="color: var(--text-body);">
             English medium school mein bhi kuch concepts tab tak nahi samajh aate jab tak
             <strong style="color: var(--text-primary);">apni zubaan mein nahi sunate</strong>.

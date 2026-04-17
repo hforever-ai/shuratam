@@ -62,6 +62,7 @@ $schema      = json_encode([
   ],
 ], JSON_UNESCAPED_SLASHES | JSON_UNESCAPED_UNICODE);
 
+$og_image = 'https://shrutam.ai/assets/images/blog/photosynthesis.png';
 include '../../partials/head.php';
 include '../../partials/nav.php';
 ?>
@@ -95,6 +96,8 @@ include '../../partials/nav.php';
         <h1 class="text-4xl sm:text-5xl font-heading font-bold mb-6 text-gradient">
           Photosynthesis — Ped Ka Apna Kitchen
         </h1>
+
+        <img src="/assets/images/blog/photosynthesis.png" alt="Photosynthesis — ped ka kitchen, sunlight se khana banata hai" loading="lazy" class="w-full max-w-lg mx-auto my-8 rounded-xl">
 
         <p class="text-xl mb-6" style="color: var(--text-body);">
           Socho ek sawaal: <strong style="color: var(--accent);">Ped ko khaana kaun deta hai?</strong> Hum log market se khaana lete hain. Ped? Woh khud banata hai! Yeh magic process hai — photosynthesis.

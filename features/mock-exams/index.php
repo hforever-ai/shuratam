@@ -67,6 +67,8 @@ include '../../partials/nav.php';
             Easy से शुरू — Board तक पहुँचो।
           </p>
 
+          <img src="/assets/images/features/mock-exams.png" alt="Mock exams — 4 difficulty levels from easy to board ready" loading="lazy" class="w-full max-w-[240px] mx-auto my-6 rounded-xl">
+
           <p class="text-lg mb-8" style="color: var(--text-body);">
             Board exam ka darr asli nahi hona chahiye.
             <strong style="color: var(--text-primary);">SAAVI ke Mock Exams</strong> tumhara confidence

@@ -62,6 +62,7 @@ $schema      = json_encode([
   ],
 ], JSON_UNESCAPED_SLASHES | JSON_UNESCAPED_UNICODE);
 
+$og_image = 'https://shrutam.ai/assets/images/blog/adaptive-learning.png';
 include '../../partials/head.php';
 include '../../partials/nav.php';
 ?>
@@ -95,6 +96,8 @@ include '../../partials/nav.php';
         <h1 class="text-4xl sm:text-5xl font-heading font-bold mb-6 text-gradient">
           Adaptive Learning Kya Hai — Simple Hindi Mein Samjho
         </h1>
+
+        <img src="/assets/images/blog/adaptive-learning.png" alt="Adaptive learning — difficulty levels adjust automatically" loading="lazy" class="w-full max-w-lg mx-auto my-8 rounded-xl">
 
         <p class="text-xl mb-6" style="color: var(--text-body);">
           Tumne kabhi notice kiya? Kuch topics tum ek baar mein samajh lete ho, kuch mein 5 baar samjhana padta hai. Phir bhi sab ek hi speed se padhte hain class mein. <strong style="color: var(--accent);">Adaptive learning yahi problem solve karti hai — AI dekh ke decide karta hai tumhare liye exactly kitna aur kya padhna hai.</strong>

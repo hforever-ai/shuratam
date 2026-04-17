@@ -61,6 +61,8 @@ include '../partials/nav.php';
           सुनो, सीखो, आगे बढ़ो।
         </p>
 
+        <img src="/assets/images/features/blind-mode.png" alt="Blind Mode — TalkBack, VoiceOver, headphones, braille compatible" loading="lazy" class="w-full max-w-[280px] mx-auto my-6 rounded-xl">
+
         <!-- Emotional problem statement -->
         <div class="rounded-2xl p-8 mb-10 text-left animate-on-scroll"
           style="background: var(--bg-surface); border: 1px solid var(--border-subtle);">

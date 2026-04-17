@@ -62,6 +62,7 @@ $schema      = json_encode([
   ],
 ], JSON_UNESCAPED_SLASHES | JSON_UNESCAPED_UNICODE);
 
+$og_image = 'https://shrutam.ai/assets/images/blog/zero-to-hero.png';
 include '../../partials/head.php';
 include '../../partials/nav.php';
 ?>
@@ -95,6 +96,8 @@ include '../../partials/nav.php';
         <h1 class="text-4xl sm:text-5xl font-heading font-bold mb-6 text-gradient">
           Zero to Hero — Kuch Nahi Se Board Ready Tak
         </h1>
+
+        <img src="/assets/images/blog/zero-to-hero.png" alt="Zero to Hero — learning journey from basics to board ready" loading="lazy" class="w-full max-w-lg mx-auto my-8 rounded-xl">
 
         <p class="text-xl mb-6" style="color: var(--text-body);">
           Kabhi aisa laga hai ki Class 10 ka topic tab se samajh nahi aaya jab se Class 7 mein woh chapter miss hua tha? Ya ki maths mein equations samajh nahi aati kyunki algebra ka concept hi shayad kabhi clear nahi hua? <strong style="color: var(--accent);">Yeh tumhari galti nahi hai — yeh ek gap hai. Aur gaps fill ho sakte hain.</strong>

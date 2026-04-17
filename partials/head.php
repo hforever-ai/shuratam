@@ -1,5 +1,5 @@
 <?php
-$og_image = $og_image ?? 'https://shrutam.ai/assets/og/default.png';
+$og_image = $og_image ?? 'https://shrutam.ai/assets/images/og/default.png';
 $schema = $schema ?? '';
 ?>
 <!DOCTYPE html>
