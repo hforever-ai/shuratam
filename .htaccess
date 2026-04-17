@@ -8,6 +8,11 @@ RewriteEngine On
 RewriteCond %{HTTPS} off
 RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
 
+# Multi-language router — route /{lang}/... to router.php
+RewriteCond %{REQUEST_URI} ^/(hi|en|mr|te)(/.*)?$
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^(hi|en|mr|te)(/(.*))?$ router.php?lang=$1&path=$3 [L,QSA]
+
 # Remove trailing slash for files, add for directories
 RewriteCond %{REQUEST_FILENAME} !-d
 RewriteRule ^(.*)/$ /$1 [L,R=301]
