@@ -100,7 +100,9 @@ include 'partials/nav.php';
         <!-- Right: SAAVI chat demo -->
         <div id="saavi-chat-demo" class="flex flex-col gap-4 p-6 rounded-2xl" style="background: var(--bg-surface); border: 1px solid var(--border-subtle);" aria-label="SAAVI chat demonstration">
 
-          <img src="/assets/images/hero/saavi-teaching.png" alt="SAAVI didi teaching students on blackboard" loading="lazy" class="w-full max-w-[280px] mx-auto mb-4 rounded-xl">
+          <div class="chalkboard mx-auto mb-4">
+            <img src="/assets/images/hero/saavi-teaching.png" alt="SAAVI didi teaching students on blackboard" loading="lazy" class="w-full max-w-[280px] rounded-xl">
+          </div>
 
           <!-- Header -->
           <div class="flex items-center gap-3 pb-4" style="border-bottom: 1px solid var(--border-subtle);">

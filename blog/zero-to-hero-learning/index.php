@@ -97,7 +97,9 @@ include '../../partials/nav.php';
           Zero to Hero — Kuch Nahi Se Board Ready Tak
         </h1>
 
-        <img src="/assets/images/blog/zero-to-hero.png" alt="Zero to Hero — learning journey from basics to board ready" loading="lazy" class="w-full max-w-lg mx-auto my-8 rounded-xl">
+        <div class="chalkboard mx-auto my-6">
+            <img src="/assets/images/blog/zero-to-hero.png" alt="Zero to Hero — learning journey from basics to board ready" loading="lazy" class="w-full max-w-lg mx-auto my-8 rounded-xl">
+          </div>
 
         <p class="text-xl mb-6" style="color: var(--text-body);">
           Kabhi aisa laga hai ki Class 10 ka topic tab se samajh nahi aaya jab se Class 7 mein woh chapter miss hua tha? Ya ki maths mein equations samajh nahi aati kyunki algebra ka concept hi shayad kabhi clear nahi hua? <strong style="color: var(--accent);">Yeh tumhari galti nahi hai — yeh ek gap hai. Aur gaps fill ho sakte hain.</strong>

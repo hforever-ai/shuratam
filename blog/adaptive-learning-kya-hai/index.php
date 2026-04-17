@@ -97,7 +97,9 @@ include '../../partials/nav.php';
           Adaptive Learning Kya Hai — Simple Hindi Mein Samjho
         </h1>
 
-        <img src="/assets/images/blog/adaptive-learning.png" alt="Adaptive learning — difficulty levels adjust automatically" loading="lazy" class="w-full max-w-lg mx-auto my-8 rounded-xl">
+        <div class="chalkboard mx-auto my-6">
+            <img src="/assets/images/blog/adaptive-learning.png" alt="Adaptive learning — difficulty levels adjust automatically" loading="lazy" class="w-full max-w-lg mx-auto my-8 rounded-xl">
+          </div>
 
         <p class="text-xl mb-6" style="color: var(--text-body);">
           Tumne kabhi notice kiya? Kuch topics tum ek baar mein samajh lete ho, kuch mein 5 baar samjhana padta hai. Phir bhi sab ek hi speed se padhte hain class mein. <strong style="color: var(--accent);">Adaptive learning yahi problem solve karti hai — AI dekh ke decide karta hai tumhare liye exactly kitna aur kya padhna hai.</strong>

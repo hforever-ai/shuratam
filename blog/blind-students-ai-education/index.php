@@ -97,7 +97,9 @@ include '../../partials/nav.php';
           Blind Students Ke Liye AI Education — Ab Mumkin Hai
         </h1>
 
-        <img src="/assets/images/blog/blind-education.png" alt="Blind student learning with AI — headphones, braille, SAAVI" loading="lazy" class="w-full max-w-lg mx-auto my-8 rounded-xl">
+        <div class="chalkboard mx-auto my-6">
+            <img src="/assets/images/blog/blind-education.png" alt="Blind student learning with AI — headphones, braille, SAAVI" loading="lazy" class="w-full max-w-lg mx-auto my-8 rounded-xl">
+          </div>
 
         <p class="text-xl mb-6" style="color: var(--text-body);">
           Raipur mein ek 15 saal ka ladka — naam hai Aakash. Board exam ready hona chahta hai par uske sheher ki special school mein sirf 3 subjects padhate hain. Braille books 3 mahine late aati hain. Koi online platform uske screen reader ke saath kaam nahi karta. <strong style="color: var(--accent);">Yeh sirf Aakash ki kahani nahi hai — India ke 50 lakh se zyada blind students ki yahi kahani hai.</strong>

@@ -67,7 +67,9 @@ include '../../partials/nav.php';
             बच्चा पढ़ रहा है या नहीं — जानो।
           </p>
 
-          <img src="/assets/images/features/parent-portal.png" alt="Parent portal — track child progress, bedtime lock, WhatsApp reports" loading="lazy" class="w-full max-w-[240px] mx-auto my-6 rounded-xl">
+          <div class="chalkboard mx-auto my-6">
+            <img src="/assets/images/features/parent-portal.png" alt="Parent portal — track child progress, bedtime lock, WhatsApp reports" loading="lazy" class="w-full max-w-[240px] mx-auto my-6 rounded-xl">
+          </div>
 
           <p class="text-lg mb-8" style="color: var(--text-body);">
             Baccha phone pe kya kar raha hai — yeh tension sab parents ki hai.

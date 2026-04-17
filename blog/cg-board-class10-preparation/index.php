@@ -97,7 +97,9 @@ include '../../partials/nav.php';
           CG Board Class 10 Taiyaari 2026 — Complete Guide
         </h1>
 
-        <img src="/assets/images/blog/cg-board-preparation.png" alt="CG Board Class 10 exam preparation — student studying" loading="lazy" class="w-full max-w-lg mx-auto my-8 rounded-xl">
+        <div class="chalkboard mx-auto my-6">
+            <img src="/assets/images/blog/cg-board-preparation.png" alt="CG Board Class 10 exam preparation — student studying" loading="lazy" class="w-full max-w-lg mx-auto my-8 rounded-xl">
+          </div>
 
         <p class="text-xl mb-6" style="color: var(--text-body);">
           Board exam sun ke dil mein thodi si ghabrahat aati hai — bilkul normal baat hai! Par sahi strategy aur regular practice se <strong style="color: var(--accent);">CG Board Class 10 mein ache marks laana bilkul possible hai</strong>. SAAVI didi ke saath aaj se hi shuru karte hain.

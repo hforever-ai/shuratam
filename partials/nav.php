@@ -57,8 +57,9 @@
       <div class="flex items-center gap-1" role="radiogroup" aria-label="Theme switcher">
         <button onclick="setTheme('navy')" class="theme-btn p-2 rounded-lg hover:bg-[var(--bg-elevated)]" aria-label="Navy theme" title="Navy + Saffron">🌙</button>
         <button onclick="setTheme('forest')" class="theme-btn p-2 rounded-lg hover:bg-[var(--bg-elevated)] hidden sm:block" aria-label="Forest theme" title="Forest Focus">🌿</button>
-        <button onclick="setTheme('bright')" class="theme-btn p-2 rounded-lg hover:bg-[var(--bg-elevated)]" aria-label="Bright theme" title="Bright Day">☀️</button>
-        <button onclick="setTheme('gaming')" class="theme-btn p-2 rounded-lg hover:bg-[var(--bg-elevated)] hidden sm:block" aria-label="Gaming theme" title="Gaming">🎮</button>
+        <!-- Bright theme hidden for now -->
+        <!-- <button onclick="setTheme('bright')" class="theme-btn p-2 rounded-lg hover:bg-[var(--bg-elevated)]" aria-label="Bright theme" title="Bright Day">☀️</button> -->
+        <button onclick="setTheme('gaming')" class="theme-btn p-2 rounded-lg hover:bg-[var(--bg-elevated)]" aria-label="Gaming theme" title="Gaming">🎮</button>
       </div>
 
       <!-- CTA -->
