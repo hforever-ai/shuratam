@@ -1,0 +1,8 @@
+User-agent: *
+Allow: /
+Disallow: /admin/
+Disallow: /config/
+Disallow: /partials/
+Disallow: /api/
+
+Sitemap: https://shrutam.ai/sitemap.xml
