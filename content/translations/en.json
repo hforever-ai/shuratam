@@ -1,0 +1,101 @@
+{
+  "nav": {
+    "features": "Features",
+    "blind_mode": "Blind Mode",
+    "classes": "Classes",
+    "boards": "Boards",
+    "pricing": "Pricing",
+    "blog": "Blog",
+    "for_schools": "For Schools",
+    "join_waitlist": "Join Waitlist Free →"
+  },
+  "hero": {
+    "tagline": "Listen and Learn.",
+    "headline": "Learning is Now as Easy as Listening",
+    "body": "SAAVI didi is your own AI teacher.\nIn your language. At 2 AM too. Without judging.\nFrom Hindi medium to topper — with SAAVI.",
+    "cta_waitlist": "Join Free Waitlist →",
+    "cta_demo": "Try SAAVI Demo",
+    "launching": "🟢 Launching May 20, 2026 — Join Free",
+    "blind_badge": "♿ India's First Blind-Accessible AI Tutor"
+  },
+  "stats": {
+    "waitlist": "Waitlist",
+    "languages": "Languages",
+    "classes": "Class 5-10",
+    "price": "Per Month"
+  },
+  "problem": {
+    "headline": "The Pain of 250 Million Indian Students",
+    "rote_stat": "Students learn by rote",
+    "rote_desc": "No understanding — just memorization. Forgotten after the exam.",
+    "tutor_stat": "Private tutor cost — per month",
+    "tutor_desc": "Unaffordable for 90% of families. Not available in villages.",
+    "blind_stat": "Blind students — ZERO edtech serves them",
+    "blind_desc": "BYJU's, Vedantu, Unacademy — none of them thought about it.",
+    "bottom_line": "We're here to change all of this.",
+    "saavi_line": "SAAVI — for everyone, absolutely everyone."
+  },
+  "subject_page": {
+    "chapters_title": "Chapters",
+    "hero_chapter_label": "Here's how SAAVI teaches this:",
+    "all_chapters_cta": "Learn the full chapter with SAAVI →",
+    "board_exam_weight": "Board Exam",
+    "marks": "marks",
+    "total_chapters": "Total Chapters",
+    "learn_with_saavi": "Learn with SAAVI"
+  },
+  "class_page": {
+    "subjects_title": "Subjects",
+    "chapters_count": "chapters"
+  },
+  "board_page": {
+    "classes_title": "Classes",
+    "exam_pattern": "Exam Pattern",
+    "theory": "Theory",
+    "practical": "Practical",
+    "internal": "Internal Assessment",
+    "pass_marks": "Pass Marks",
+    "cities_title": "Cities",
+    "textbook_source": "Textbook"
+  },
+  "common": {
+    "class": "Class",
+    "coming_soon": "Coming Soon",
+    "join_waitlist": "Join Waitlist",
+    "free_forever": "Free Forever",
+    "per_month": "per month",
+    "languages_available": "Languages Available",
+    "board_exam_pattern": "Exam Pattern",
+    "home": "Home",
+    "boards": "Boards",
+    "back_to": "Back to"
+  },
+  "sample_blocks": {
+    "example": "Example",
+    "misconception": "Misconception",
+    "activity": "Activity",
+    "key_point": "Key Point",
+    "try_in_app": "Try in app →"
+  },
+  "coming_soon": {
+    "title": "Coming Soon!",
+    "body": "We're working on it. Join the waitlist — you'll be the first to get access at launch.",
+    "notify_me": "Notify Me"
+  },
+  "pricing": {
+    "headline": "Private Tutor ₹3,000 vs SAAVI ₹199",
+    "free_trial": "Free Trial",
+    "free_trial_days": "7 days",
+    "pro": "Shrutam Pro",
+    "pro_price": "₹199/month",
+    "start_trial": "Start Free Trial",
+    "no_credit_card": "No credit card required"
+  },
+  "footer": {
+    "tagline": "\"Listen and Learn.\"",
+    "blind_mode_free": "♿ Blind Mode — FREE Forever",
+    "copyright": "© 2026 Aarambha · Kishyam AI Pvt Ltd · shrutam.ai",
+    "product_of": "A product of Aarambha (आरम्भ)",
+    "accessibility_email": "accessibility@shrutam.ai"
+  }
+}

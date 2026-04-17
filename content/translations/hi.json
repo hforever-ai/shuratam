@@ -1,0 +1,101 @@
+{
+  "nav": {
+    "features": "विशेषताएँ",
+    "blind_mode": "ब्लाइंड मोड",
+    "classes": "कक्षाएँ",
+    "boards": "बोर्ड",
+    "pricing": "मूल्य",
+    "blog": "ब्लॉग",
+    "for_schools": "स्कूलों के लिए",
+    "join_waitlist": "वेटलिस्ट जॉइन करो →"
+  },
+  "hero": {
+    "tagline": "सुनते हो, सीखते हो।",
+    "headline": "पढ़ना अब सुनने जैसा आसान है",
+    "body": "SAAVI दीदी तुम्हारी अपनी AI teacher है।\nहिंदी में। रात 2 बजे भी। बिना judge किये।\nHindi medium से topper तक — SAAVI के साथ।",
+    "cta_waitlist": "फ़्री वेटलिस्ट जॉइन करो →",
+    "cta_demo": "SAAVI डेमो देखो",
+    "launching": "🟢 20 मई 2026 को लॉन्च — फ़्री जॉइन करो",
+    "blind_badge": "♿ भारत का पहला Blind-Accessible AI Tutor"
+  },
+  "stats": {
+    "waitlist": "वेटलिस्ट",
+    "languages": "भाषाएँ",
+    "classes": "कक्षा 5-10",
+    "price": "प्रति माह"
+  },
+  "problem": {
+    "headline": "भारत के 25 करोड़ Students का दर्द",
+    "rote_stat": "Students रटकर पढ़ते हैं",
+    "rote_desc": "समझा नहीं — बस याद किया। Exam के बाद सब भूल गये।",
+    "tutor_stat": "Private tutor की cost — प्रति माह",
+    "tutor_desc": "90% परिवारों के लिए afford नहीं। गाँव में तो मिलता ही नहीं।",
+    "blind_stat": "Blind students — ZERO edtech उनके लिए",
+    "blind_desc": "BYJU's, Vedantu, Unacademy — किसीने नहीं सोचा।",
+    "bottom_line": "हम यहाँ हैं — यह सब बदलने के लिए।",
+    "saavi_line": "SAAVI — सबके लिए, बिल्कुल सबके लिए।"
+  },
+  "subject_page": {
+    "chapters_title": "अध्याय",
+    "hero_chapter_label": "SAAVI इसे ऐसे पढ़ाती है:",
+    "all_chapters_cta": "पूरा chapter SAAVI के साथ सीखो →",
+    "board_exam_weight": "बोर्ड परीक्षा",
+    "marks": "अंक",
+    "total_chapters": "कुल अध्याय",
+    "learn_with_saavi": "SAAVI के साथ सीखो"
+  },
+  "class_page": {
+    "subjects_title": "विषय",
+    "chapters_count": "अध्याय"
+  },
+  "board_page": {
+    "classes_title": "कक्षाएँ",
+    "exam_pattern": "परीक्षा पैटर्न",
+    "theory": "थ्योरी",
+    "practical": "प्रायोगिक",
+    "internal": "आंतरिक मूल्यांकन",
+    "pass_marks": "उत्तीर्ण अंक",
+    "cities_title": "शहर",
+    "textbook_source": "पाठ्यपुस्तक"
+  },
+  "common": {
+    "class": "कक्षा",
+    "coming_soon": "जल्द आ रहा है",
+    "join_waitlist": "वेटलिस्ट जॉइन करो",
+    "free_forever": "हमेशा मुफ़्त",
+    "per_month": "प्रति माह",
+    "languages_available": "भाषाएँ उपलब्ध",
+    "board_exam_pattern": "परीक्षा पैटर्न",
+    "home": "होम",
+    "boards": "बोर्ड",
+    "back_to": "वापस जाओ"
+  },
+  "sample_blocks": {
+    "example": "उदाहरण",
+    "misconception": "गलतफहमी",
+    "activity": "गतिविधि",
+    "key_point": "मुख्य बात",
+    "try_in_app": "ऐप में देखो →"
+  },
+  "coming_soon": {
+    "title": "जल्द आ रहा है!",
+    "body": "हम इस पर काम कर रहे हैं। वेटलिस्ट जॉइन करो — लॉन्च पर सबसे पहले access मिलेगा।",
+    "notify_me": "मुझे सूचित करो"
+  },
+  "pricing": {
+    "headline": "Private Tutor ₹3,000 vs SAAVI ₹199",
+    "free_trial": "फ़्री ट्रायल",
+    "free_trial_days": "7 दिन",
+    "pro": "Shrutam Pro",
+    "pro_price": "₹199/माह",
+    "start_trial": "फ़्री ट्रायल शुरू करो",
+    "no_credit_card": "कोई credit card नहीं चाहिए"
+  },
+  "footer": {
+    "tagline": "\"सुनते हो, सीखते हो।\"",
+    "blind_mode_free": "♿ ब्लाइंड मोड — हमेशा मुफ़्त",
+    "copyright": "© 2026 आरम्भ · किश्यम AI प्रा. लि. · shrutam.ai",
+    "product_of": "आरम्भ (Aarambha) का उत्पाद",
+    "accessibility_email": "accessibility@shrutam.ai"
+  }
+}

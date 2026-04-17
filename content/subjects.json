@@ -1,0 +1,27 @@
+{
+  "science": {
+    "slug": "science",
+    "name": { "hi": "विज्ञान", "en": "Science" },
+    "icon": "🔬"
+  },
+  "mathematics": {
+    "slug": "mathematics",
+    "name": { "hi": "गणित", "en": "Mathematics" },
+    "icon": "📐"
+  },
+  "hindi": {
+    "slug": "hindi",
+    "name": { "hi": "हिंदी", "en": "Hindi" },
+    "icon": "📖"
+  },
+  "social-science": {
+    "slug": "social-science",
+    "name": { "hi": "सामाजिक विज्ञान", "en": "Social Science" },
+    "icon": "🌍"
+  },
+  "english": {
+    "slug": "english",
+    "name": { "hi": "अंग्रेज़ी", "en": "English" },
+    "icon": "🗣️"
+  }
+}

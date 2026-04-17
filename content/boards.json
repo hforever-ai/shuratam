@@ -1,0 +1,46 @@
+{
+  "cbse": {
+    "name": { "en": "CBSE", "hi": "सीबीएसई" },
+    "full_name": { "en": "Central Board of Secondary Education", "hi": "केंद्रीय माध्यमिक शिक्षा बोर्ड" },
+    "slug": "cbse",
+    "languages": ["hi", "en"],
+    "classes": [5, 6, 7, 8, 9, 10],
+    "subjects": ["science", "mathematics", "hindi", "social-science", "english"],
+    "textbook_source": "NCERT",
+    "exam_pattern": { "theory": 80, "internal": 20, "pass_marks": 33 },
+    "status": "active"
+  },
+  "cg-board": {
+    "name": { "hi": "CG Board", "en": "CG Board" },
+    "full_name": { "hi": "छत्तीसगढ़ माध्यमिक शिक्षा मंडल", "en": "Chhattisgarh Board of Secondary Education" },
+    "slug": "cg-board",
+    "languages": ["hi"],
+    "classes": [5, 6, 7, 8, 9, 10],
+    "subjects": ["science", "mathematics", "hindi", "social-science", "english"],
+    "textbook_source": "NCERT",
+    "exam_pattern": { "theory": 75, "practical": 25, "pass_marks": 33 },
+    "cities": ["Raipur", "Bilaspur", "Durg", "Korba", "Jagdalpur", "Bastar", "Rajnandgaon", "Ambikapur"],
+    "status": "active"
+  },
+  "maharashtra-ssc": {
+    "name": { "en": "Maharashtra SSC", "mr": "महाराष्ट्र एसएससी", "hi": "महाराष्ट्र SSC" },
+    "full_name": { "mr": "महाराष्ट्र राज्य माध्यमिक व उच्च माध्यमिक शिक्षण मंडळ" },
+    "slug": "maharashtra-ssc",
+    "languages": ["mr"],
+    "status": "coming_soon"
+  },
+  "mp-board": {
+    "name": { "hi": "MP Board", "en": "MP Board" },
+    "full_name": { "hi": "मध्य प्रदेश माध्यमिक शिक्षा मंडल" },
+    "slug": "mp-board",
+    "languages": ["hi"],
+    "status": "coming_soon"
+  },
+  "ap-board": {
+    "name": { "en": "AP Board", "te": "ఏపీ బోర్డు" },
+    "full_name": { "te": "ఆంధ్రప్రదేశ్ రాష్ట్ర విద్యా పరిశోధన శిక్షణ సంస్థ" },
+    "slug": "ap-board",
+    "languages": ["te"],
+    "status": "coming_soon"
+  }
+}
