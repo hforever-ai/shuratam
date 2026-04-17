@@ -32,7 +32,7 @@ include '../partials/nav.php';
        ============================================================ -->
   <section class="section" aria-labelledby="blind-hero-heading"
     style="background: linear-gradient(160deg, var(--bg-base) 60%, var(--bg-elevated) 100%);">
-    <div class="container">
+    <div class="container article-content">
 
       <!-- Breadcrumb -->
       <nav aria-label="Breadcrumb" class="mb-8">
@@ -108,7 +108,7 @@ include '../partials/nav.php';
        SECTION 2: 7 BLIND MODE FEATURES
        ============================================================ -->
   <section id="features" class="section section-dark" aria-labelledby="features-heading">
-    <div class="container">
+    <div class="container article-content">
 
       <div class="text-center mb-12">
         <span class="badge badge-primary mb-4">7 Dedicated Features</span>
@@ -434,7 +434,7 @@ include '../partials/nav.php';
        SECTION 3: COMMITMENT — FREE Forever
        ============================================================ -->
   <section class="section" aria-labelledby="commitment-heading">
-    <div class="container">
+    <div class="container article-content">
       <div class="max-w-3xl mx-auto">
 
         <div class="text-center mb-10">
@@ -516,7 +516,7 @@ include '../partials/nav.php';
        ============================================================ -->
   <section class="section section-dark" aria-labelledby="cta-heading"
     style="background: linear-gradient(160deg, var(--bg-elevated) 0%, var(--bg-base) 100%);">
-    <div class="container">
+    <div class="container article-content">
       <div class="max-w-2xl mx-auto text-center">
 
         <span class="badge badge-accent mb-6">Free Access</span>

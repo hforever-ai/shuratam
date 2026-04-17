@@ -37,7 +37,7 @@ include '../../partials/nav.php';
        SECTION 1: HERO
        ======================================================== -->
   <section class="section" aria-labelledby="hero-heading" style="background: linear-gradient(160deg, var(--bg-base) 60%, var(--bg-elevated) 100%);">
-    <div class="container">
+    <div class="container article-content">
 
       <!-- Breadcrumb -->
       <nav aria-label="Breadcrumb" class="mb-8">
@@ -119,7 +119,7 @@ include '../../partials/nav.php';
        SECTION 2: ADAPTIVE FLOW VISUAL
        ======================================================== -->
   <section class="section section-dark" aria-labelledby="flow-heading">
-    <div class="container">
+    <div class="container article-content">
       <div class="text-center mb-12">
         <span class="badge badge-primary mb-4">Adaptive Flow</span>
         <h2 id="flow-heading" class="text-4xl font-heading font-bold mb-4">
@@ -184,7 +184,7 @@ include '../../partials/nav.php';
        SECTION 3: KEY BENEFITS
        ======================================================== -->
   <section class="section" aria-labelledby="benefits-heading">
-    <div class="container">
+    <div class="container article-content">
       <div class="text-center mb-12">
         <h2 id="benefits-heading" class="text-4xl font-heading font-bold mb-4">
           Adaptive Learning Se Kya Milta Hai?
@@ -219,7 +219,7 @@ include '../../partials/nav.php';
        SECTION 4: RELATED FEATURES
        ======================================================== -->
   <section class="section section-dark" aria-labelledby="related-heading">
-    <div class="container">
+    <div class="container article-content">
       <div class="text-center mb-10">
         <h2 id="related-heading" class="text-3xl font-heading font-bold mb-3">Aur Bhi Features Hain</h2>
         <p class="text-lg" style="color: var(--text-secondary);">Adaptive Learning ke saath yeh features aur bhi powerful ho jaate hain.</p>
@@ -256,7 +256,7 @@ include '../../partials/nav.php';
        SECTION 5: CTA
        ======================================================== -->
   <section class="section" aria-labelledby="cta-heading">
-    <div class="container">
+    <div class="container article-content">
       <div class="max-w-2xl mx-auto text-center">
         <span class="badge badge-accent mb-6">🟢 Launching May 20, 2026</span>
         <h2 id="cta-heading" class="text-4xl font-heading font-bold mb-4">

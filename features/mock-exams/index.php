@@ -37,7 +37,7 @@ include '../../partials/nav.php';
        SECTION 1: HERO
        ======================================================== -->
   <section class="section" aria-labelledby="hero-heading" style="background: linear-gradient(160deg, var(--bg-base) 60%, var(--bg-elevated) 100%);">
-    <div class="container">
+    <div class="container article-content">
 
       <!-- Breadcrumb -->
       <nav aria-label="Breadcrumb" class="mb-8">
@@ -124,7 +124,7 @@ include '../../partials/nav.php';
        SECTION 2: 4 LEVELS
        ======================================================== -->
   <section class="section section-dark" aria-labelledby="levels-heading">
-    <div class="container">
+    <div class="container article-content">
       <div class="text-center mb-12">
         <span class="badge badge-primary mb-4">4 Levels</span>
         <h2 id="levels-heading" class="text-4xl font-heading font-bold mb-4">
@@ -173,7 +173,7 @@ include '../../partials/nav.php';
        SECTION 3: KEY BENEFITS
        ======================================================== -->
   <section class="section" aria-labelledby="benefits-heading">
-    <div class="container">
+    <div class="container article-content">
       <div class="text-center mb-12">
         <h2 id="benefits-heading" class="text-4xl font-heading font-bold mb-4">
           Mock Exams Se Kya Milta Hai?
@@ -208,7 +208,7 @@ include '../../partials/nav.php';
        SECTION 4: RELATED FEATURES
        ======================================================== -->
   <section class="section section-dark" aria-labelledby="related-heading">
-    <div class="container">
+    <div class="container article-content">
       <div class="text-center mb-10">
         <h2 id="related-heading" class="text-3xl font-heading font-bold mb-3">Mock Exam Ke Saath Yeh Bhi Karo</h2>
         <p class="text-lg" style="color: var(--text-secondary);">Poori board preparation strategy — SAAVI ke saath.</p>
@@ -245,7 +245,7 @@ include '../../partials/nav.php';
        SECTION 5: CTA
        ======================================================== -->
   <section class="section" aria-labelledby="cta-heading">
-    <div class="container">
+    <div class="container article-content">
       <div class="max-w-2xl mx-auto text-center">
         <span class="badge badge-accent mb-6">🟢 Launching May 20, 2026</span>
         <h2 id="cta-heading" class="text-4xl font-heading font-bold mb-4">

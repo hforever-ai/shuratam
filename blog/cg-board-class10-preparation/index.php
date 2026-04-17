@@ -73,7 +73,7 @@ include '../../partials/nav.php';
        ARTICLE HERO
        ===================================================== -->
   <section class="section" style="padding-top: 1.5rem; background: linear-gradient(160deg, var(--bg-base) 60%, var(--bg-elevated) 100%);">
-    <div class="container">
+    <div class="container article-content">
       
 
         <!-- Breadcrumb -->
@@ -124,7 +124,7 @@ include '../../partials/nav.php';
        ARTICLE BODY
        ===================================================== -->
   <section class="section section-dark">
-    <div class="container">
+    <div class="container article-content">
       
 
         <!-- ─── Section 1: Exam Pattern ──────────────────── -->
@@ -393,7 +393,7 @@ include '../../partials/nav.php';
        FAQ SECTION
        ===================================================== -->
   <section class="section" aria-labelledby="faq-heading">
-    <div class="container">
+    <div class="container article-content">
       
 
         <h2 id="faq-heading" class="text-3xl font-heading font-bold mb-8" style="color: var(--text-primary);">
@@ -470,7 +470,7 @@ include '../../partials/nav.php';
        RELATED POSTS + BOTTOM CTA
        ===================================================== -->
   <section class="section section-dark">
-    <div class="container">
+    <div class="container article-content">
       
 
         <h2 class="text-2xl font-heading font-bold mb-6" style="color: var(--text-primary);">

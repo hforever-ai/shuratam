@@ -37,7 +37,7 @@ include '../../partials/nav.php';
        SECTION 1: HERO
        ======================================================== -->
   <section class="section" aria-labelledby="hero-heading" style="background: linear-gradient(160deg, var(--bg-base) 60%, var(--bg-elevated) 100%);">
-    <div class="container">
+    <div class="container article-content">
 
       <!-- Breadcrumb -->
       <nav aria-label="Breadcrumb" class="mb-8">
@@ -124,7 +124,7 @@ include '../../partials/nav.php';
        SECTION 2: SAFETY FEATURES
        ======================================================== -->
   <section class="section section-dark" aria-labelledby="safety-heading">
-    <div class="container">
+    <div class="container article-content">
       <div class="text-center mb-12">
         <span class="badge badge-primary mb-4">Safe by Design</span>
         <h2 id="safety-heading" class="text-4xl font-heading font-bold mb-4">
@@ -169,7 +169,7 @@ include '../../partials/nav.php';
        SECTION 3: WHAT PARENTS GET
        ======================================================== -->
   <section class="section" aria-labelledby="parents-heading">
-    <div class="container">
+    <div class="container article-content">
       <div class="text-center mb-12">
         <h2 id="parents-heading" class="text-4xl font-heading font-bold mb-4">
           Maa-Baap Ko Kya Milega?
@@ -207,7 +207,7 @@ include '../../partials/nav.php';
        SECTION 4: RELATED FEATURES
        ======================================================== -->
   <section class="section section-dark" aria-labelledby="related-heading">
-    <div class="container">
+    <div class="container article-content">
       <div class="text-center mb-10">
         <h2 id="related-heading" class="text-3xl font-heading font-bold mb-3">Poora SAAVI System</h2>
         <p class="text-lg" style="color: var(--text-secondary);">Parent Portal + yeh features = complete learning ecosystem.</p>
@@ -244,7 +244,7 @@ include '../../partials/nav.php';
        SECTION 5: CTA
        ======================================================== -->
   <section class="section" aria-labelledby="cta-heading">
-    <div class="container">
+    <div class="container article-content">
       <div class="max-w-2xl mx-auto text-center">
         <span class="badge badge-accent mb-6">🟢 Launching May 20, 2026</span>
         <h2 id="cta-heading" class="text-4xl font-heading font-bold mb-4">
