@@ -1,0 +1,105 @@
+{
+  "board": "cbse",
+  "class": 9,
+  "subject": "hindi",
+  "samples": [
+    {
+      "chapter_number": 1,
+      "blocks": {
+        "hi": [
+          {
+            "type": "example",
+            "heading": "उदाहरण",
+            "content": "अरे! तुम्हें याद है, जब तुम्हारी और तुम्हारे दोस्त की किसी एक की शिकायत टीचर से होती है — और दूसरा दोस्त भी उसके साथ खड़ा हो जाता है, भले ही उसे पता हो कि डांट पड़ेगी? या घर में जैसे तुम और तुम्हारी दीदी/भैया जब एक-दूसरे के लिए मम्मी-पापा से झूठ बोलकर बचाते हो? — बस कुछ ऐसी ही गहरी दोस्ती थी हीरा और मोती के बीच! सोचे ज़रा — ऐसी पक्की दोस्ती में सबसे ज़रूरी चीज़ क्या होती है?",
+            "icon": "lightbulb"
+          },
+          {
+            "type": "misconception",
+            "heading": "गलतफहमी",
+            "wrong": "कई बच्चे सोचते हैं कि जानवर सिर्फ़ खाने-पीने और सोने के बारे में सोचते हैं, और उनमें इंसानों जैसी भावनाएँ नहीं होतीं।",
+            "correct": "पर ये बिल्कुल गलत है! — इस कहानी में भी तुमने देखा होगा कि हीरा और मोती को एक-दूसरे की चिंता थी, उन्हें आज़ादी प्यारी थी, और ज़ुल्म सहना उन्हें गवारा नहीं था। वे दर्द महसूस करते हैं, खुशी भी और दोस्ती भी — बस हमें उनकी 'भाषा' समझनी आनी चाहिए। तुम्हें क्या लगता है, हम जानवरों की भावनाओं को कैसे समझ सकते हैं, जब वे बोल नहीं पाते?",
+            "icon": "triangle-alert"
+          },
+          {
+            "type": "activity",
+            "heading": "गतिविधि",
+            "content": "एक काम करो — अपने आस-पास किसी पालतू जानवर (जैसे कुत्ता या बिल्ली) या किसी आवारा जानवर (जैसे गली की गाय या चिड़िया) को कुछ देर के लिए ध्यान से देखो। उनकी हरकतों को, आवाज़ों को समझने की कोशिश करो — वे क्या कर रहे हैं, क्यों कर रहे हैं, क्या वे भूखे हैं या खुश हैं? तुम्हें क्या लगता है, अगली बार जब तुम उन्हें देखो, तो तुम उनके लिए क्या बेहतर कर सकते हो?",
+            "cta": "ऐप में interactive experiment देखो →",
+            "icon": "flask-conical"
+          }
+        ],
+        "en": [
+          {
+            "type": "example",
+            "heading": "Example",
+            "content": "Hey, remember how sometimes in school, if one friend gets into trouble, the other one also stands by them, even if they know they might get scolded? Or at home, maybe you and your sibling try to protect each other from your parents? — Heera and Moti had exactly this kind of deep friendship! So, what do you think is the most important thing in such strong friendships?",
+            "icon": "lightbulb"
+          },
+          {
+            "type": "misconception",
+            "heading": "Misconception",
+            "wrong": "Many students think that animals only care about basic needs like eating, sleeping, and don't have human-like emotions.",
+            "correct": "But that's not true at all! — In this story, you saw how Heera and Moti cared for each other, longed for freedom, and wouldn't tolerate cruelty. They feel pain, happiness, and friendship too — we just need to learn to 'read' their language. How do you think we can understand an animal's feelings when they can't speak our language?",
+            "icon": "triangle-alert"
+          },
+          {
+            "type": "activity",
+            "heading": "Activity",
+            "content": "Here’s a small thing you can do — carefully observe a pet animal (like a dog or cat) or even a stray animal nearby (like a street cow or a bird) for a while. Try to understand their movements, their sounds — what are they doing, why are they doing it? Are they hungry, happy, or scared? Next time you see them, what do you think you could do to make their day a little better?",
+            "cta": "See interactive experiment in app →",
+            "icon": "flask-conical"
+          }
+        ]
+      }
+    },
+    {
+      "chapter_number": 2,
+      "blocks": {
+        "hi": [
+          {
+            "type": "example",
+            "heading": "उदाहरण",
+            "content": "Dekho — kabhi socha hai, humare dada-dadi ke zamane mein jab log door ke mandir ya gaon jaate the, toh kitni mushkil hoti thi? Roads nahi the, gaadiyaan nahi thi, aur kai baar toh sirf paidal hi jaana padta tha. Lhāsā kī Or chapter mein bhi kuch aisa hi hai — Rahul Sankrityayan ji ko Tibbat (Tibet) jaane ke liye kitne papad belne pade, kabhi ek fakir ke bhesh mein, toh kabhi ek bhadra vyakti ke roop mein. Socho zara, agar tumhe bina internet, bina phone ke kisi anjaan jagah jaana pade, toh tum kya-kya tayari karoge aur kaisa bhesh badloge?",
+            "icon": "lightbulb"
+          },
+          {
+            "type": "misconception",
+            "heading": "गलतफहमी",
+            "wrong": "Aksar bachche sochte hain ki Lhāsā kī Or toh bas ek yātrā kī kahānī hai — ghūmne-phirne ki bāt.",
+            "correct": "Lekin, sach yeh hai ki yeh chapter humein us samay ke Tibbat (Tibet) ke samāaj, log, unki sanskriti aur us mushkil yātrā ke baare mein kitni gehri jaankari deta hai, jo aaj se bilkul alag thi. Yah sirf ghūmna nahin, balki ek aitihāsik aur sāmaajik dastaavez hai.",
+            "icon": "triangle-alert"
+          },
+          {
+            "type": "activity",
+            "heading": "गतिविधि",
+            "content": "Ek kaam karo — apne ghar ke aas-paas ke ilake ko aise dekho jaise tum kisi anjaan jagah par ho. Apni mummy-papa ya dada-dadi se poocho ki jab woh tumhari umar ke the, toh unke liye sabse mushkil yatra kaun si thi aur unhone kya-kya dekha tha.",
+            "cta": "ऐप में interactive experiment देखो →",
+            "icon": "flask-conical"
+          }
+        ],
+        "en": [
+          {
+            "type": "example",
+            "heading": "Example",
+            "content": "Dekho — have you ever thought about how difficult it must have been for our grandparents to travel to far-off villages or pilgrimage sites like Vaishno Devi or Kedarnath? There were no proper roads, no easy transport, and sometimes they even had to walk for days! This chapter, \"Lhasa ki Aur,\" talks about similar challenges — Rahul Sankrityayan ji faced so many hurdles to reach Tibet, sometimes disguised as a beggar, sometimes as a respectable traveler. Socho zara, if you had to travel to an unknown place today without the internet or your phone, what preparations would you make and how would you adapt?",
+            "icon": "lightbulb"
+          },
+          {
+            "type": "misconception",
+            "heading": "Misconception",
+            "wrong": "Often students think that \"Lhasa ki Aur\" is just a fun travel story, a simple account of someone visiting a place.",
+            "correct": "But the truth is, this chapter gives us such deep insights into the society, people, and culture of Tibet at that time, and the difficult journey itself, which was completely different from today. It's not just travel; it's a historical and social document of a bygone era.",
+            "icon": "triangle-alert"
+          },
+          {
+            "type": "activity",
+            "heading": "Activity",
+            "content": "Ek kaam karo — look at your neighbourhood as if you are a traveler from a completely different place, noticing everything for the first time. Then, ask your parents or grandparents about the most challenging journey they ever took when they were your age, and what they learned from it.",
+            "cta": "See interactive experiment in app →",
+            "icon": "flask-conical"
+          }
+        ]
+      }
+    }
+  ]
+}

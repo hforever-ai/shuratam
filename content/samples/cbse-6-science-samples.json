@@ -1,0 +1,105 @@
+{
+  "board": "cbse",
+  "class": 6,
+  "subject": "science",
+  "samples": [
+    {
+      "chapter_number": 1,
+      "blocks": {
+        "hi": [
+          {
+            "type": "example",
+            "heading": "उदाहरण",
+            "content": "Dekho — tumhari mummy jab subah breakfast mein idli-sambar banati hain, toh usme kitni saari cheezein lagti hain na? Chawal, dal, pyaaz, tamatar, aur sabziyan. Socho zara — ye sab alag-alag ingredients kahan se aate hain?",
+            "icon": "lightbulb"
+          },
+          {
+            "type": "misconception",
+            "heading": "गलतफहमी",
+            "wrong": "हमें लगता है कि पौधे हमें सिर्फ फल और सब्ज़ियाँ देते हैं जो हम सीधे खाते हैं।",
+            "correct": "Sach toh yeh hai ki hum paudhon ke alag-alag hisse khaate hain — jaise paudhon ke patte (spinach), tana (potato), jad (carrot), aur beej (rice, dal). Kya tumne kabhi socha hai ki tumhara favourite fruit bhi ek plant ka hi hissa hai?",
+            "icon": "triangle-alert"
+          },
+          {
+            "type": "activity",
+            "heading": "गतिविधि",
+            "content": "Ek kaam karo — ek mutthi moong dal lo aur use raat bhar paani mein bhigo do. Agle din, paani nikaal kar dal ko ek geelay kapde mein baandh kar rakho. Kuch din mein dekhna, usme se chote-chote ankur nikal aayenge. Ye ankur kya dikhate hain?",
+            "cta": "ऐप में interactive experiment देखो →",
+            "icon": "flask-conical"
+          }
+        ],
+        "en": [
+          {
+            "type": "example",
+            "heading": "Example",
+            "content": "When your didi makes a yummy paneer butter masala for you — she uses so many things, right? Paneer, butter, tomatoes, onions, spices. Have you ever wondered where each of these ingredients actually comes from?",
+            "icon": "lightbulb"
+          },
+          {
+            "type": "misconception",
+            "heading": "Misconception",
+            "wrong": "We often think that plants only give us fruits and vegetables that we eat directly.",
+            "correct": "But actually, we eat different parts of plants — sometimes leaves (like spinach), sometimes stems (like potato), sometimes roots (like carrot), and sometimes seeds (like rice or pulses). Can you think of another plant part you've eaten?",
+            "icon": "triangle-alert"
+          },
+          {
+            "type": "activity",
+            "heading": "Activity",
+            "content": "Take a handful of moong dal and soak it in water overnight. The next day, drain the water and tie the dal in a wet cloth. Watch how small white sprouts emerge in a few days. What do these sprouts tell us about how plants grow?",
+            "cta": "See interactive experiment in app →",
+            "icon": "flask-conical"
+          }
+        ]
+      }
+    },
+    {
+      "chapter_number": 2,
+      "blocks": {
+        "hi": [
+          {
+            "type": "example",
+            "heading": "उदाहरण",
+            "content": "Dekho — jab tumari mummy garmiyon mein aam ras aur poori banati hain, ya sardiyon mein sarson ka saag aur makke ki roti — tumhare thali mein kitni alag-alag cheezein hoti hain na? Roti/chawal se energy milti hai, dal se body banati hai, aur sabzi se bimariyon se ladne ki shakti! Ek kaam karo — agle baar jab tum khana khaoge, socho zara, isme kaun sa component hai jo tumari body ko mil raha hai?",
+            "icon": "lightbulb"
+          },
+          {
+            "type": "misconception",
+            "heading": "गलतफहमी",
+            "wrong": "Bahut log sochte hain ki bas mehenga ya special dikhne wala khana hi healthy hota hai, aur dal-roti jaisa sadharan khana itna faydemand nahi hota.",
+            "correct": "Lekin Nomi didi kehti hain, asal mein tumhare ghar ka sadharan dal-chawal, sabzi aur roti hi sabse complete aur balanced diet hai! Isme carbohydrates, protein, vitamins aur minerals sab sahi matra mein hote hain.",
+            "icon": "triangle-alert"
+          },
+          {
+            "type": "activity",
+            "heading": "गतिविधि",
+            "content": "Ek kaam karo — apne ghar mein ek chota sa kagaz ka tukda lo. Us par thoda sa tel ya ghee ki boond dalo, ya fir ek namkeen (snack) ko halka sa ragdo. Kuch der baad dekhna, kya kagaz par ek translucent (ar-par dikhne wala) dhabba ban gaya hai? Ye fat (वसा) ki nishani hai! Ab socho — tumhare khane mein aur kaun si cheez mein fat hota hoga jo tum seedhe-seedhe tel jaisa nahi dikhta?",
+            "cta": "ऐप में interactive experiment देखो →",
+            "icon": "flask-conical"
+          }
+        ],
+        "en": [
+          {
+            "type": "example",
+            "heading": "Example",
+            "content": "Dekho — when your mom makes a big, yummy thali for a festival, or even packs your school tiffin — she often puts different things, right? There's rice or roti for energy, dal for building muscles, and sabzi for staying healthy and fighting germs! So next time you eat, can you try to guess what each food item is giving your body?",
+            "icon": "lightbulb"
+          },
+          {
+            "type": "misconception",
+            "heading": "Misconception",
+            "wrong": "Many students think that only eating a lot of protein, like dal or eggs, will make them strong and healthy, and other foods are not as important.",
+            "correct": "But Nomi didi says, your body needs *all* kinds of nutrients, not just protein! Carbohydrates give you energy to play, vitamins protect you, and even fats in small amounts are important. It's like a team where everyone plays a role!",
+            "icon": "triangle-alert"
+          },
+          {
+            "type": "activity",
+            "heading": "Activity",
+            "content": "Ek kaam karo — take a small piece of paper from your notebook. Gently rub a tiny bit of butter, or a few drops of cooking oil, or even a piece of fried snack like a samosa on it. Hold the paper up to the light after a few minutes. Do you see a greasy, translucent (see-through) spot? That's a sign of fat! Can you think of other foods you eat that might leave a similar spot, even if you don't add oil directly?",
+            "cta": "See interactive experiment in app →",
+            "icon": "flask-conical"
+          }
+        ]
+      }
+    }
+  ]
+}

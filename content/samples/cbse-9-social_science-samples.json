@@ -1,0 +1,105 @@
+{
+  "board": "cbse",
+  "class": 9,
+  "subject": "social_science",
+  "samples": [
+    {
+      "chapter_number": 1,
+      "blocks": {
+        "hi": [
+          {
+            "type": "example",
+            "heading": "उदाहरण",
+            "content": "Dekho — जैसे कभी तुम किसी सरकारी दफ्तर में जाओ या किसी बड़े स्कूल में, तो क्या तुमने देखा है कि कैसे कुछ लोगों को \"VIP treatment\" मिलता है और बाकियों को लंबी लाइन में खड़ा रहना पड़ता है? — फ्रांस में भी ना, क्रांति से पहले, समाज ऐसे ही कुछ ख़ास वर्गों (Estates) में बंटा हुआ था जहाँ कुछ लोगों को जन्म से ही ढेर सारे अधिकार और फायदे मिले हुए थे और बाकी आम लोगों को कुछ नहीं। — है ना कितनी नाइंसाफी वाली बात? सोचो ज़रा।",
+            "icon": "lightbulb"
+          },
+          {
+            "type": "misconception",
+            "heading": "गलतफहमी",
+            "wrong": "फ़्रांसीसी क्रांति बस कुछ ही महीनों में शुरू हुई और खत्म भी हो गई थी, और फ्रांस तुरंत एक डेमोक्रेसी बन गया था।",
+            "correct": "नहीं रे बाबा — ये एक बहुत लंबी और complicated प्रक्रिया थी जो दशकों तक चली! इसमें बहुत से उतार-चढ़ाव आए — Monarchs, फिर Jacobins, फिर Directory और आखिर में Napoleon भी आया। Democracy बनने में बहुत वक्त लगा और कई पड़ाव थे।",
+            "icon": "triangle-alert"
+          },
+          {
+            "type": "activity",
+            "heading": "गतिविधि",
+            "content": "एक काम करो — अपने घर के कुछ लोगों को इकट्ठा करो। उनमें से दो-तीन को बोलो कि वो बिना बोले सिर्फ़ इशारों से कोई कहानी सुनाएँ, जबकि बाकियों को सिर्फ़ देखकर समझना है। — इससे तुम्हें क्या समझ आता है कि जब लोगों को अपनी बात कहने की पूरी आज़ादी नहीं मिलती, तो कितना मुश्किल होता है, नहीं?",
+            "cta": "ऐप में interactive experiment देखो →",
+            "icon": "flask-conical"
+          }
+        ],
+        "en": [
+          {
+            "type": "example",
+            "heading": "Example",
+            "content": "Dekho — ever noticed how some people in India get special treatment or faster service, maybe because they're 'important' or have 'contacts', while others have to wait in long queues for hours? — Well, in pre-revolutionary France, it was quite similar! The 'privileged classes' (Estates) enjoyed all the benefits and power, while ordinary people struggled for basic rights and a fair life. — Doesn't that sound incredibly unfair? Socho zara.",
+            "icon": "lightbulb"
+          },
+          {
+            "type": "misconception",
+            "heading": "Misconception",
+            "wrong": "The French Revolution was a quick and decisive event that immediately established democracy in France.",
+            "correct": "Oh, my dear, no! It was a really long and complex journey spanning decades! It saw many ups and downs — from Monarchs to the Jacobin Reign of Terror, then the Directory, and even Napoleon. Establishing democracy was a gradual process with many twists and turns!",
+            "icon": "triangle-alert"
+          },
+          {
+            "type": "activity",
+            "heading": "Activity",
+            "content": "Ek kaam karo — gather your family members and try to communicate a complex idea or a short story to them, but only using drawings or gestures, without speaking a single word. — Socho zara — how difficult it is to express yourself fully when you don't have complete freedom to speak, isn't it? It gives you a tiny glimpse into what it felt like when information and speech were controlled.",
+            "cta": "See interactive experiment in app →",
+            "icon": "flask-conical"
+          }
+        ]
+      }
+    },
+    {
+      "chapter_number": 2,
+      "blocks": {
+        "hi": [
+          {
+            "type": "example",
+            "heading": "उदाहरण",
+            "content": "Dekho — socho zara — tumhare gaon ya sheher mein, agar ek hi dukaan ka malik saare zaroori samaan ka daam apni marzi se badha de, toh tum jaise aam log kya karenge? Socialism mein log sochte hain ki samaaj ke sab logon ke liye cheezein aasani se upalabdh hon, na ki sirf ek aadmi ki jeb bhare. Kaisa laga ye idea?",
+            "icon": "lightbulb"
+          },
+          {
+            "type": "misconception",
+            "heading": "गलतफहमी",
+            "wrong": "Aksar bachchon ko lagta hai ki Russian Revolution hote hi sab log ekdum se baraabar ho gaye aur sabke paas khoob paisa aa gaya tha.",
+            "correct": "Nahi, beta — ye ek bahut lamba aur mushkil safar tha. Revolution ke baad bhi kai saalon tak Civil War chali aur logon ko bahut nuksanaat uthane pade. Maksad toh बराबरी lana tha, par ye ekdum se nahi hua aur uske apne chunautiyan the.",
+            "icon": "triangle-alert"
+          },
+          {
+            "type": "activity",
+            "heading": "गतिविधि",
+            "content": "Ek kaam karo — ghar mein koi ek cheez, jaise ek chocolate ya ek fruit, lao. Ab sabko barabar hisse mein baantne ki koshish karo aur dekho kitni mushkil hoti hai, aur kya sab khush hote hain. Socho zara — ye kya batata hai ki samaaj mein sansadhan (resources) kaise baante jaate hain?",
+            "cta": "ऐप में interactive experiment देखो →",
+            "icon": "flask-conical"
+          }
+        ],
+        "en": [
+          {
+            "type": "example",
+            "heading": "Example",
+            "content": "Dekho — imagine your family owns a small chai shop. If your parents decide that all the profits will be used only for themselves, that's one way. But what if they decide to use some of the profits to improve the working conditions of their staff, or even share a part of it with the community? That's a tiny glimpse into thinking about collective welfare over purely individual profit, which is a key idea in socialism. Socho zara — wouldn't that be a different way to run things?",
+            "icon": "lightbulb"
+          },
+          {
+            "type": "misconception",
+            "heading": "Misconception",
+            "wrong": "A common belief is that the Russian Revolution instantly transformed Russia into a perfect, equal society where everyone was happy and prosperous.",
+            "correct": "Well, didi/bhaiya — it wasn't quite that simple. The revolution was just the start of a very turbulent period. After the Tsar was overthrown, there was a bitter Civil War and huge economic and social challenges. Building a new socialist society was a long, difficult process, not an overnight utopia.",
+            "icon": "triangle-alert"
+          },
+          {
+            "type": "activity",
+            "heading": "Activity",
+            "content": "Here's a small experiment you can try at home. Get a family-sized snack, like a packet of biscuits or a bag of chips. Try to distribute it perfectly equally among everyone in your family, making sure no one feels they got less. Notice how tricky it can be to achieve 'perfect' fairness, and how everyone reacts. Socho zara — what does this tell you about distributing resources in a bigger society?",
+            "cta": "See interactive experiment in app →",
+            "icon": "flask-conical"
+          }
+        ]
+      }
+    }
+  ]
+}

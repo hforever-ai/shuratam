@@ -1,0 +1,105 @@
+{
+  "board": "cg",
+  "class": 7,
+  "subject": "english",
+  "samples": [
+    {
+      "chapter_number": 1,
+      "blocks": {
+        "hi": [
+          {
+            "type": "example",
+            "heading": "उदाहरण",
+            "content": "Dekho — imagine karo tum abhi apni pasand ka koi bore-basi kha rahe ho, aur tabhi tumhari mummy Indravati nadi ke kinare dhaan ki khet mein madad maangti hain. Unki madad karna sabse sahi samay kab hai — abhi tumhare bore-basi khatam hone ke baad ya usi pal jab unhein zaroorat hai? Socho zara — kyun?",
+            "icon": "lightbulb"
+          },
+          {
+            "type": "misconception",
+            "heading": "गलतफहमी",
+            "wrong": "तुम्हें लग सकता है कि \"सबसे ज़रुरी लोग\" हमेशा बड़े-बड़े नेता, मंत्री या टीवी वाले मशहूर लोग होते हैं, और सही समय वो होता है जब हम कोई बड़ा काम शुरू करते हैं।",
+            "correct": "नहीं, कहानी हमें सिखाती है कि सबसे ज़रुरी लोग वो हैं जिनके साथ तुम अभी हो — जैसे तुम्हारे दोस्त या परिवार वाले. और सबसे सही समय 'अभी' है, जब तुम कुछ अच्छा कर सकते हो या किसी की मदद कर सकते हो.",
+            "icon": "triangle-alert"
+          },
+          {
+            "type": "activity",
+            "heading": "गतिविधि",
+            "content": "Ek kaam karo — आज दिन भर में, जब तुम किसी से बात करो या कोई छोटा सा काम करो (जैसे अपना स्कूल बैग जमाना), तो पूरा ध्यान उसी पर लगाओ. देखो तुम कितनी ज़्यादा चीज़ें नोटिस कर पाते हो और तुम्हें कैसा लगता है!",
+            "cta": "ऐप में interactive experiment देखो →",
+            "icon": "flask-conical"
+          }
+        ],
+        "en": [
+          {
+            "type": "example",
+            "heading": "Example",
+            "content": "Imagine you've just come home from school and your dad, who works in the dhaan ki kheti, asks for your help to carry some tools. What do you think is the right time to help him — after you've played for an hour, or right then, immediately? Socho zara — why?",
+            "icon": "lightbulb"
+          },
+          {
+            "type": "misconception",
+            "heading": "Misconception",
+            "wrong": "Students often think that 'the most important people' are always famous leaders, rich people, or kings, and 'the right time' is for big, important events only.",
+            "correct": "But the story actually teaches us that the most important people are the ones you are with right now — like your family or friends. And the most important time is 'now', because that's when you can truly do something good or helpful.",
+            "icon": "triangle-alert"
+          },
+          {
+            "type": "activity",
+            "heading": "Activity",
+            "content": "Ek kaam karo — for one whole day, try to fully focus on whatever you are doing at that moment, whether it's eating your food, listening to someone, or even walking. Just observe how much more you notice and how different it feels!",
+            "cta": "See interactive experiment in app →",
+            "icon": "flask-conical"
+          }
+        ]
+      }
+    },
+    {
+      "chapter_number": 2,
+      "blocks": {
+        "hi": [
+          {
+            "type": "example",
+            "heading": "उदाहरण",
+            "content": "Tumhe yaad hai — jab tum dhaan ki kheti ke baad thake hue ghar aate ho aur mummy bore-basi khilaati hain — kitna achha lagta hai na? Waise hi, jab hum dekhte hain ki kisi aur ko bhi kisi cheez ki zaroorat hai — jaise ek nange paon wale bhikhari ko chappal ki — toh humari bhi ichha hoti hai uski madad karne ki. Socho zara — tumhe aise kiski madad karna sabse achha lagta hai?",
+            "icon": "lightbulb"
+          },
+          {
+            "type": "misconception",
+            "heading": "गलतफहमी",
+            "wrong": "Kuch students sochte hain ki dusron ki madad karne ke liye hamesha bade-bade kaam karne padte hain ya bahut paise dene padte hain.",
+            "correct": "NOMI ko lagta hai ki 'A Gift of Chappals' mein bachchon ne ek bhookhe aur garib insaan ki madad karne ke liye apni taraf se chappal de di. Unka iraada accha tha — ki uski takleef kam ho. Dekho — kabhi-kabhi, chhoti-chhoti cheezein bhi bohot fark daalti hain, jaise kisi ko thanda paani dena ya ek muskurahat. Zaroori hai ki hum dusron ki takleef samjhein aur apni taraf se jo ho sake, woh karein.",
+            "icon": "triangle-alert"
+          },
+          {
+            "type": "activity",
+            "heading": "गतिविधि",
+            "content": "Ek kaam karo — agle ek din ke liye, apne ghar mein ya aas-paas dekho. Koi aisa hai jise kisi cheez ki zaroorat ho? Ho sakta hai kisi ke paas pen na ho, ya koi bhains ko paani pilaana bhool gaya ho. Bas unki zaroorat ko dekho, aur phir soch kar dekho tum kaise uski chupchaap madad kar sakte ho, bina kisi ko bataye, bilkul kahani ke bachchon ki tarah.",
+            "cta": "ऐप में interactive experiment देखो →",
+            "icon": "flask-conical"
+          }
+        ],
+        "en": [
+          {
+            "type": "example",
+            "heading": "Example",
+            "content": "Remember how good it feels — when you're super tired after helping with the dhaan ki kheti, and your Mummy gives you some refreshing bore-basi? — That feeling of someone understanding your need and helping out. This story is a bit like that — about understanding someone else's difficulty, like a barefoot beggar needing chappals, and then doing something about it. What kind of help do you think makes the biggest difference to someone?",
+            "icon": "lightbulb"
+          },
+          {
+            "type": "misconception",
+            "heading": "Misconception",
+            "wrong": "Some students might think that helping others always means giving away a lot of money or doing something very grand.",
+            "correct": "NOMI thinks from 'A Gift of Chappals', we learn that even small things can make a huge difference. The children gave away chappals to help a needy person — their intention was good, they just wanted to ease his difficulty. See — sometimes, just noticing someone's struggle and offering a small comfort, like a pair of chappals, can be a huge help. It’s about understanding and doing what you can.",
+            "icon": "triangle-alert"
+          },
+          {
+            "type": "activity",
+            "heading": "Activity",
+            "content": "For the next day, try to observe your home or neighborhood. Is there someone who looks like they could use a little help? Maybe someone needs help carrying groceries, or your younger didi needs help with her homework. Just observe their need, and then try to think how you could quietly help them, just like the children did in the story.",
+            "cta": "See interactive experiment in app →",
+            "icon": "flask-conical"
+          }
+        ]
+      }
+    }
+  ]
+}

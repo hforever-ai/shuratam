@@ -1,0 +1,105 @@
+{
+  "board": "cg",
+  "class": 9,
+  "subject": "hindi",
+  "samples": [
+    {
+      "chapter_number": 1,
+      "blocks": {
+        "hi": [
+          {
+            "type": "example",
+            "heading": "उदाहरण",
+            "content": "Tumhe yaad hai na, humare gaon mein ya Bastar ke jungle ke paas ke khet mein — kaise kisaan apni bhains ya dhaan ki kheti mein kaam karne wale bailon se aise baat karte hain jaise wo sab samajhte hon? Unki aankhon mein dekh kar hi unka mood samajh jaate hain — ki aaj unhe bore-basi pasand nahi aa rahi ya wo thak gaye hain. Bail bhi apne maalik ko dekh kar hi khush ho jaate hain.",
+            "icon": "lightbulb"
+          },
+          {
+            "type": "misconception",
+            "heading": "गलतफहमी",
+            "wrong": "Kai baar hum sochte hain ki janwar sirf khaana-peena aur aaraam karna jaante hain, unke andar dosti ya azaadi ki koi gehri bhavna nahi hoti. Humein lagta hai ki wo sirf apni insticts se chalte hain.",
+            "correct": "Lekin, Hira aur Moti ki kahani batati hai ki janwar bhi gehri dosti nibhate hain, ghar ke liye tadapte hain, aur azaadi ki keemat khoob jaante hain — bilkul insaano ki tarah. Unki bhi apni ek alag duniya hoti hai bhavnao ki, jise humein samajhna chahiye.",
+            "icon": "triangle-alert"
+          },
+          {
+            "type": "activity",
+            "heading": "गतिविधि",
+            "content": "Ek kaam karo — apne ghar ke aas-paas ya gali mein kisi janwar (jaise kisi kutte, billi, ya gaay) ko 10-15 minute tak dhyan se dekho. Jab tum usse pyar se bulaoge ya khana doge, tab uska chehra ya sharir ki bhasha kaisi hoti hai — aur jab ignore karoge tab? Uske alag-alag moods ko samjhne ki koshish karo.",
+            "cta": "ऐप में interactive experiment देखो →",
+            "icon": "flask-conical"
+          }
+        ],
+        "en": [
+          {
+            "type": "example",
+            "heading": "Example",
+            "content": "Hey, remember how in our villages— like around the Indravati river or in the fields near Bastar ke jungle— farmers talk to their bhains or the bullocks ploughing the dhaan fields as if they understand everything? They just look into their eyes and know their mood— whether they're tired or don't like their bore-basi today. The bullocks too get happy just seeing their owner, right?",
+            "icon": "lightbulb"
+          },
+          {
+            "type": "misconception",
+            "heading": "Misconception",
+            "wrong": "Sometimes, we might think that animals only care about eating and sleeping, and they don't really have deep feelings like friendship or a strong desire for freedom. We often assume they just follow their basic instincts.",
+            "correct": "But 'Do Bailon Ki Katha' clearly shows us that animals like Hira and Moti share deep bonds of friendship, long for their home, and truly value their freedom— just like humans do. They have their own complex world of emotions that we should try to understand.",
+            "icon": "triangle-alert"
+          },
+          {
+            "type": "activity",
+            "heading": "Activity",
+            "content": "Here's something you can try— for 10-15 minutes, carefully observe an animal near your home or in your street (like a dog, cat, or a cow). How does its face or body language change when you lovingly call it or offer food— and when you ignore it? Try to understand its different moods.",
+            "cta": "See interactive experiment in app →",
+            "icon": "flask-conical"
+          }
+        ]
+      }
+    },
+    {
+      "chapter_number": 2,
+      "blocks": {
+        "hi": [
+          {
+            "type": "example",
+            "heading": "उदाहरण",
+            "content": "Tumne kabhi socha hai — jaise humare gaon se koi Raipur shehar pahli baar jaata hai, ya humare dada-dadi kisi door mandir ki yatra par nikalte hain? Kitne naye log milte hain, kitni nayi baatein dekhne ko milti hain, aur kabhi-kabhi raaste mein mushkilein bhi aati hain. Rahul Sankrityayan ki Lhaasa ki yatra bhi kuch aisi hi thi — anjaan raaste, nayi sanskriti, aur har mod par ek naya anubhav. Tumhe kya lagta hai, unhone sabse zyaada kya seekha hoga?",
+            "icon": "lightbulb"
+          },
+          {
+            "type": "misconception",
+            "heading": "गलतफहमी",
+            "wrong": "Socho zara — kayi baar humein lagta hai ki 'Lhaasa ki Aur' chapter sirf pahadon aur khatarnak raston ke baare mein hai, ya ki Rahul Sankrityayan ne toh bas adventure kiya hoga aur unhe koi dikkat nahin aayi hogi.",
+            "correct": "Par asal mein, unki yatra mein dakuon ka darr, rehne ki jagah ki talaash jaisi kayi mushkilein theen. Par in sabke beech bhi, unhone logon ki madad, Tibbati sanskriti ki khoobsurati aur insaaniyat ko mehsoos kiya. Yeh sirf ek physical journey nahin thi, balki ek saanskritik aur aatmik anubhav bhi tha. Tumhe kya lagta hai, aisi yatra humein kya sikhati hai?",
+            "icon": "triangle-alert"
+          },
+          {
+            "type": "activity",
+            "heading": "गतिविधि",
+            "content": "Ek kaam karo — apne ghar mein hi, Bharat ke kisi aise hisse ya duniya ke kisi aise desh ke baare mein jaankari ikatthi karo jahan tum kabhi gaye nahin ho. Jaise internet par search karo Tibet ke logon ka khaana kya hai, woh kaun se tyohaar manate hain ya unke ghar kaise hote hain. Dekho kitni nayi baatein pata chalti hain! Tumhe sabse anokhi cheez kya lagi?",
+            "cta": "ऐप में interactive experiment देखो →",
+            "icon": "flask-conical"
+          }
+        ],
+        "en": [
+          {
+            "type": "example",
+            "heading": "Example",
+            "content": "You know how sometimes, your parents or elder siblings travel from a village near the Indravati river to a big city like Raipur, or your grandparents go on a pilgrimage far away? They see so many new things, meet different people, and sometimes face challenges on the way. Rahul Sankrityayan's journey to Lhasa was a bit like that — difficult paths, new cultures, and a fresh experience at every turn. What do you think he learned the most from his journey?",
+            "icon": "lightbulb"
+          },
+          {
+            "type": "misconception",
+            "heading": "Misconception",
+            "wrong": "Dekho — often, we think the chapter 'Lhasa ki Aur' is just about mountains and dangerous roads, or that Rahul Sankrityayan just had an adventure with no difficulties.",
+            "correct": "But actually, his journey had many challenges — the fear of dacoits, searching for a place to stay. Yet amidst all this, he experienced human kindness, the beauty of Tibetan culture, and people's hospitality. It wasn't just a physical journey, but a cultural and spiritual experience too. What do you think is the biggest lesson we can learn from facing unexpected challenges on a trip?",
+            "icon": "triangle-alert"
+          },
+          {
+            "type": "activity",
+            "heading": "Activity",
+            "content": "One thing you can do — right at home, gather information about a part of India or a country in the world where you've never been. For example, use the internet to search what kind of food people eat in Tibet, what festivals they celebrate, or how their houses look. See how many new things you can discover! What was the most unique thing you found out?",
+            "cta": "See interactive experiment in app →",
+            "icon": "flask-conical"
+          }
+        ]
+      }
+    }
+  ]
+}

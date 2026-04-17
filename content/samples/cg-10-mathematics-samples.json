@@ -5,49 +5,48 @@
   "samples": [
     {
       "chapter_number": 1,
-      "chapter_title": "Real Numbers",
       "blocks": {
         "hi": [
           {
             "type": "example",
-            "heading": "HCF — Bastar के बाज़ार में",
-            "content": "Bastar के हाट में एक किसान के पास 84 kg dhaan (धान) है और 56 kg maize है। वो equal-weight bags बनाना चाहता है — हर bag में same weight हो। Maximum कितना kg हर bag में? HCF(84, 56) = 28। हर bag में 28 kg — 3 bags dhaan के, 2 bags maize के। HCF का real use!",
+            "heading": "उदाहरण",
+            "content": "Socho zara — prasad ki thaliyon mein laddoos lagane hain, maan lo tumhare paas 30 laddoos hain. Tumhe unhe barabar-barabar hisson mein baantna hai, bina kuch bache. Tum 2-2 ke jode bana sakte ho, ya 3-3 ke, ya 5-5 ke. Har sankhya ke aise 'mool tukde' hote hain jo use banaate hain. Isse hi toh hum Prime Factorization kehte hain — kisi bhi sankhya ko uske sabse chote, abhajya (prime) tukdon mein todna. Kya har sankhya ko sirf ek hi tarike se aise tukdon mein toda ja sakta hai?",
             "icon": "lightbulb"
           },
           {
             "type": "misconception",
-            "heading": "गलतफहमी: LCM हमेशा बड़ा होता है HCF से?",
-            "wrong": "LCM हमेशा HCF से बड़ा होता है",
-            "correct": "Almost always true, लेकिन exception है: जब दो numbers equal हों, जैसे 6 और 6, तो HCF = LCM = 6। General rule: LCM × HCF = Product of two numbers।",
+            "heading": "गलतफहमी",
+            "wrong": "Bachche kabhi-kabhi sochte hain ki Real Numbers bas woh numbers hote hain jinhe hum counting ke liye use karte hain — jaise 1, 2, 3 ya fir -1, -2. Fractions (bhinn) ya Roots (vargamool) Real Numbers nahi hote.",
+            "correct": "Par nahi didi, Real Numbers toh saare numbers ko include karte hain — woh sabhi jinhe hum number line par dikha sakte hain! Isme tumhare counting numbers, fractions, decimals aur roots bhi aate hain. Irrational numbers bhi Real Numbers ka hi hissa hain.",
             "icon": "triangle-alert"
           },
           {
             "type": "activity",
-            "heading": "Indravati के Cycle से LCM",
-            "content": "मान लो Indravati नदी के किनारे दो boats हैं। Boat A हर 6 minutes में वापस आती है, Boat B हर 8 minutes में। दोनों एक साथ कब आएंगी? LCM(6, 8) = 24 minutes। LCM वो smallest time है जब दोनों events साथ होते हैं।",
-            "cta": "ऐप में LCM visual देखो →",
+            "heading": "गतिविधि",
+            "content": "Ek kaam karo — ghar mein chawal ke daane ya kanch ki goliyan hongi na? Thodi si goliyan le lo, maan lo 17 goliyan. Ab unhe 3-3 ke groups mein baantne ki koshish karo, aur dekho kitni goliyan bach jaati hain. Yahi toh hai Euclid's Division Lemma ka seedha-saada matlab — kisi cheez ko groups mein baantna aur bache hue hisse ko dekhna!",
+            "cta": "ऐप में interactive experiment देखो →",
             "icon": "flask-conical"
           }
         ],
         "en": [
           {
             "type": "example",
-            "heading": "HCF at Bastar's Haat Market",
-            "content": "At a Bastar haat, a farmer has 84 kg of dhaan and 56 kg of maize. He wants to pack them in equal-weight bags. Maximum weight per bag? HCF(84, 56) = 28. So each bag holds 28 kg — 3 bags of dhaan, 2 of maize. That's HCF in real action.",
+            "heading": "Example",
+            "content": "Socho zara — you have a big basket of laddoos for prasad, say 30 laddoos. You need to arrange them into smaller plates, so each plate has an equal number of laddoos, and nothing is left over. You could put 2 laddoos on each plate, or 3, or 5. Every number has these 'prime building blocks' that make it up. This is what we call Prime Factorization — breaking down any number into its smallest, prime pieces. Can every number be broken down into these prime pieces in only one unique way?",
             "icon": "lightbulb"
           },
           {
             "type": "misconception",
-            "heading": "Is LCM Always Greater Than HCF?",
-            "wrong": "LCM is always greater than HCF",
-            "correct": "Almost always, but not when two numbers are equal. If both numbers are 6, then HCF = LCM = 6. The general rule is: LCM × HCF = Product of the two numbers.",
+            "heading": "Misconception",
+            "wrong": "Students sometimes think that Real Numbers are just those numbers we use for counting — like 1, 2, 3 or even negative ones like -1, -2. They believe that fractions or square roots are not Real Numbers.",
+            "correct": "But no didi, Real Numbers actually include all numbers — everything that we can place on a number line! This includes your counting numbers, fractions, decimals, and even roots. Irrational numbers are also a part of Real Numbers.",
             "icon": "triangle-alert"
           },
           {
             "type": "activity",
-            "heading": "LCM with Boats on the Indravati",
-            "content": "Imagine two boats on the Indravati river. Boat A returns every 6 minutes, Boat B every 8 minutes. When do they return together? LCM(6, 8) = 24 minutes. LCM is the smallest time when two repeating events happen simultaneously.",
-            "cta": "See LCM visual in app →",
+            "heading": "Activity",
+            "content": "Ek kaam karo — collect some small items at home, like rice grains or marbles. Let's say you have 17 marbles. Now, try to arrange them into groups of 3, and see how many marbles are left over. This is exactly what Euclid's Division Lemma means in simple terms — dividing something into groups and observing the remainder!",
+            "cta": "See interactive experiment in app →",
             "icon": "flask-conical"
           }
         ]
@@ -55,49 +54,48 @@
     },
     {
       "chapter_number": 2,
-      "chapter_title": "Polynomials",
       "blocks": {
         "hi": [
           {
             "type": "example",
-            "heading": "Polynomial — Bhains के दूध की Calculation",
-            "content": "मान लो एक bhains (भैंस) रोज़ x litres दूध देती है। एक हफ्ते में total दूध = 7x litres। अगर दूध ₹40/litre है, income = 40 × 7x = 280x। यह एक linear polynomial है। अगर दूध घटता-बढ़ता है: output = 5x² - 3x + 10 — quadratic polynomial। हर calculation polynomial है!",
+            "heading": "उदाहरण",
+            "content": "Dekho na — jab tum bazaar jaate ho bore-basi ke liye aloo aur bhaji kharidne, to tum kaise calculate karte ho total kharcha? Maan lo aloo ka rate 'x' rupaye kilo hai aur bhaji ka 'y' rupaye guccha hai. Agar tumne 2 kilo aloo aur 3 guccha bhaji li, to total bill kya hua — 2x + 3y, hai na? Yahi sab expressions, jismein numbers aur variables hote hain, polynomials ke roop hote hain. Socho zara — kya hum har baar 'x' aur 'y' ki jagah numbers hi rakhenge ya ye aur bhi tareeke se kaam aa sakte hain?",
             "icon": "lightbulb"
           },
           {
             "type": "misconception",
-            "heading": "गलतफहमी: Degree मतलब Coefficients की संख्या?",
-            "wrong": "Polynomial की degree उसके coefficients की संख्या है",
-            "correct": "नहीं! Degree है highest power of variable। p(x) = 3x⁴ + 2x² + 7x + 1 की degree 4 है — चाहे terms कितनी भी हों। Power देखो, terms नहीं।",
+            "heading": "गलतफहमी",
+            "wrong": "Aksar students sochte hain ki koi bhi expression jismein x, y jaise letters hon, wo polynomial hai. Jaise, \"x + 1/x\" ya \"√x + 5\" bhi polynomial hain.",
+            "correct": "Lekin aisa nahi hai didi! Polynomial sirf woh algebraic expressions hain jismein variable ki power (exponent) hamesha ek poorn sankhya (whole number) ho. 1/x ka matlab x ki power -1 hota hai, aur √x ka matlab x ki power 1/2 hota hai. Ye dono poorn sankhya nahi hain, isliye ye polynomial nahi hain.",
             "icon": "triangle-alert"
           },
           {
             "type": "activity",
-            "heading": "Zero of Polynomial — Guess करो",
-            "content": "p(x) = 2x - 6 लो। p(x) = 0 कब होगा? 2x - 6 = 0, x = 3। Check: p(3) = 2(3) - 6 = 0. ✓ अब try करो p(x) = x² - 9। Clue: (x-3)(x+3) = x² - 9। Zeroes क्या हैं? Graph पे x-axis crossing points!",
-            "cta": "ऐप में zero-finding game खेलो →",
+            "heading": "गतिविधि",
+            "content": "Ek kaam karo — ek kagaz lo aur uspar ek polynomial expression likho, jaise \"x² - 4\". Ab, x ki jagah alag-alag numbers rakh kar dekho — jaise 1, 2, 0, -1, -2. Kis number ko rakhne par tumhara expression zero ho gaya? Wahi number us polynomial ka 'zero' hai!",
+            "cta": "ऐप में interactive experiment देखो →",
             "icon": "flask-conical"
           }
         ],
         "en": [
           {
             "type": "example",
-            "heading": "Polynomials — Bhains Milk Calculation",
-            "content": "Say a bhains gives x litres of milk daily. Weekly total = 7x litres. At ₹40/litre, income = 280x. That's a linear polynomial. If output varies: 5x² - 3x + 10 — that's quadratic. Every real-life calculation is a polynomial in disguise!",
+            "heading": "Example",
+            "content": "Tumhe pata hai na — Chhattisgarh mein dhaan ki kheti kitni important hai? Socho zara, ek kisan ko apni fasal bechne ke baad kitna munafa hua, yeh kaise pata chalega? Agar ek kilo dhaan ka rate 'P' rupees hai, aur usne 'Q' kilo dhaan becha, to uski total income hui P x Q. Lekin agar uski kharch 'C' rupees hua ho, to uska munafa ho gaya (P x Q) - C. These expressions, with variables and numbers, are often polynomials! Do you think these kinds of expressions help farmers predict their earnings even before they harvest?",
             "icon": "lightbulb"
           },
           {
             "type": "misconception",
-            "heading": "Does Degree Mean Number of Coefficients?",
-            "wrong": "The degree of a polynomial is the count of its coefficients",
-            "correct": "No! Degree is the highest power of the variable. In p(x) = 3x⁴ + 2x² + 7x + 1, the degree is 4. Count the power, not the terms.",
+            "heading": "Misconception",
+            "wrong": "Many students often think that any algebraic expression with letters like 'x' or 'y' is automatically a polynomial. For example, they might consider \"x + 1/x\" or \"√x + 5\" to be polynomials.",
+            "correct": "But no, didi! A polynomial is a special type of algebraic expression where the powers (exponents) of the variables must always be whole numbers (0, 1, 2, 3...). In \"1/x\", the power of x is -1, and in \"√x\", the power of x is 1/2. Since these are not whole numbers, these expressions are not polynomials.",
             "icon": "triangle-alert"
           },
           {
             "type": "activity",
-            "heading": "Find the Zero — Guess and Check",
-            "content": "Take p(x) = 2x - 6. When is p(x) = 0? Solve: 2x - 6 = 0 → x = 3. Check: p(3) = 2(3) - 6 = 0. ✓ Now try p(x) = x² - 9. Hint: (x-3)(x+3) = x² - 9. What are the zeroes? They're the points where the graph crosses the x-axis!",
-            "cta": "Play the zero-finding game in app →",
+            "heading": "Activity",
+            "content": "Ek kaam karo — take a piece of paper and write down a simple polynomial expression, like \"x² - 9\". Now, try substituting different numbers for 'x' — maybe 1, 2, 3, 0, -1, -2, -3. Which numbers made your expression equal to zero? Those are the 'zeros' of your polynomial!",
+            "cta": "See interactive experiment in app →",
             "icon": "flask-conical"
           }
         ]

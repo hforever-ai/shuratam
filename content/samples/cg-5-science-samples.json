@@ -1,0 +1,105 @@
+{
+  "board": "cg",
+  "class": 5,
+  "subject": "science",
+  "samples": [
+    {
+      "chapter_number": 1,
+      "blocks": {
+        "hi": [
+          {
+            "type": "example",
+            "heading": "उदाहरण",
+            "content": "Dekho — jab tum apne khet mein dhaan ka chhota paudha lagate ho, woh dheere-dheere kitna bada ho jaata hai, hai na? Usmein se chawal nikalte hain. Lekin tumhari cycle ya woh pathar jo Indravati nadi ke kinare pada hai — kya woh bhi aise hi bade hote hain, ya khaana khaate hain?",
+            "icon": "lightbulb"
+          },
+          {
+            "type": "misconception",
+            "heading": "गलतफहमी",
+            "wrong": "Kuch bachche sochte hain ki jo cheez chalti hai ya hilati hai, bas wahi zinda hai, jaise ek bus ya tumhari khilaune waali gadi.",
+            "correct": "Par socho zara — ek ped toh apni jagah se chalta nahi hai, hai na? Phir bhi woh zinda hota hai. Aur tumhari cycle toh chalti hai, par kya woh zinda hai? Nahi na. Toh sirf chalna hi zinda hone ki ek lauti nishani nahi hai, aur bhi bahut si baatein dekhni padti hain.",
+            "icon": "triangle-alert"
+          },
+          {
+            "type": "activity",
+            "heading": "गतिविधि",
+            "content": "Ek kaam karo — ek chhota sa beej le lo, jaise mung ya chana ka, aur use ek chhote se gile kapde mein lapet kar rakh do. Uske bagal mein ek chhota sa pathar rakh do.",
+            "cta": "ऐप में interactive experiment देखो →",
+            "icon": "flask-conical"
+          }
+        ],
+        "en": [
+          {
+            "type": "example",
+            "heading": "Example",
+            "content": "Dekho — when you plant a small rice seedling (dhaan ka paudha) in your field, it slowly grows so big, doesn't it? It gives us rice. But your bicycle or that stone lying by the Indravati river — do they also grow bigger like that, or eat food?",
+            "icon": "lightbulb"
+          },
+          {
+            "type": "misconception",
+            "heading": "Misconception",
+            "wrong": "Some children think that anything that moves or wiggles is alive, like a bus or your toy car.",
+            "correct": "But think about it — a tree doesn't move from its spot, does it? Yet, it's alive. And your bicycle moves, but is it alive? No, right? So, just moving isn't the only sign of being alive; there are many other things we need to observe.",
+            "icon": "triangle-alert"
+          },
+          {
+            "type": "activity",
+            "heading": "Activity",
+            "content": "Ek kaam karo — take a small seed, like a moong dal or chana seed, and wrap it in a small, damp cloth. Next to it, place a small pebble.",
+            "cta": "See interactive experiment in app →",
+            "icon": "flask-conical"
+          }
+        ]
+      }
+    },
+    {
+      "chapter_number": 2,
+      "blocks": {
+        "hi": [
+          {
+            "type": "example",
+            "heading": "उदाहरण",
+            "content": "Dekho — tum subah bore-basi kha kar school aate ho na? Ya jab Papa ya didi bhains ko charane Indravati nadi ki taraf jaate hain, toh unmein itni taakat kahaan se aati hai? Hamara sharir bhi ek dum motor gaadi jaisa hai jisko chalne ke liye 'energy' (ऊर्जा) chahiye — aur ye energy humein hamaare khaane se milti hai, jaise dhaan se banta hai bhat, aur usse milne wali taakat. Socho zara — agar hum khaana na khaayein toh kya hum utni taakat se khel paayenge?",
+            "icon": "lightbulb"
+          },
+          {
+            "type": "misconception",
+            "heading": "गलतफहमी",
+            "wrong": "Bahut bachche sochte hain ki haath toh tab dhona chahiye jab unmein mitti lage, ya sirf khaana khane se pehle bas.",
+            "correct": "Lekin ye poora sach nahi hai didi. Hamare haathon mein chote-chote 'germs' (कीटाणु) hote hain jo dikhte nahi. Ye hamaari aankhon, naak ya muh se sharir mein jaakar hamein bimaar kar sakte hain. Isliye, school se aane ke baad, tatti karne ke baad, aur khaana khane se pehle — har baar haath dhona bahut zaroori hai, taaki hum tandurust rahein.",
+            "icon": "triangle-alert"
+          },
+          {
+            "type": "activity",
+            "heading": "गतिविधि",
+            "content": "Ek kaam karo — ek gilaas paani lo aur ek 'straw' (स्ट्रॉ). Straw ko paani mein daal kar zor se phoonko. Dekho — kitne bade-bade 'bubbles' (बुलबुले) ban rahe hain! Socho zara — isse kya pata chalta hai hamare sharir ke andar ki hawa ke baare mein, aur hamare fefdon (lungs) ki taakat ke baare mein?",
+            "cta": "ऐप में interactive experiment देखो →",
+            "icon": "flask-conical"
+          }
+        ],
+        "en": [
+          {
+            "type": "example",
+            "heading": "Example",
+            "content": "Hey didi — when you eat your 'bore-basi' in the morning before school, or when Papa or Didi take the buffaloes towards the Indravati river for grazing, where do they get all that energy from? Our body is like a super amazing machine, just like a motor vehicle that needs 'fuel' (energy) to run smoothly. And guess what our body's fuel is? It's the food we eat — like the rice ('bhat') made from paddy ('dhaan') that gives us so much strength! So, what do you think would happen if we didn't eat proper food? Would we be able to play with the same energy?",
+            "icon": "lightbulb"
+          },
+          {
+            "type": "misconception",
+            "heading": "Misconception",
+            "wrong": "Many kids think that you only need to wash your hands when they look dirty, or just before you eat food.",
+            "correct": "But that's not completely true, little brother/sister. Our hands carry tiny, tiny 'germs' that we can't see with our eyes. These germs can enter our body through our eyes, nose, or mouth and make us sick. That's why it's super important to wash your hands after coming home from school, after going to the toilet, and before eating — every single time, to stay healthy!",
+            "icon": "triangle-alert"
+          },
+          {
+            "type": "activity",
+            "heading": "Activity",
+            "content": "Ek kaam karo — grab a glass of water and a 'straw'. Put the straw in the water and blow into it really hard. Wow — look at those big 'bubbles'! What do you think this tells us about the air inside our body, and how strong our lungs are?",
+            "cta": "See interactive experiment in app →",
+            "icon": "flask-conical"
+          }
+        ]
+      }
+    }
+  ]
+}

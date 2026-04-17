@@ -1,0 +1,105 @@
+{
+  "board": "cbse",
+  "class": 7,
+  "subject": "science",
+  "samples": [
+    {
+      "chapter_number": 1,
+      "blocks": {
+        "hi": [
+          {
+            "type": "example",
+            "heading": "उदाहरण",
+            "content": "Dekho — tumhari mummy kitchen mein kitna kuch banati hain, roti, sabzi, daal — sab family ke liye, hai na? Par kabhi socha hai, ped-paudhe अपना खाना कैसे बनाते हैं? उन्हें तो कोई नहीं खिलाता! Socho zara, unke paas kaun sa 'kitchen' hota hoga?",
+            "icon": "lightbulb"
+          },
+          {
+            "type": "misconception",
+            "heading": "गलतफहमी",
+            "wrong": "Bahut se bachche sochte hain ki ped-paudhe mitti (soil) se apna khaana khaate hain. Jaise hum khaana khaate hain, waise hi mitti se khaate honge.",
+            "correct": "Aisa nahi hai, pagle! Ped mitti se sirf paani aur kuch minerals (खनिज) lete hain. Unka asli khaana to unki पत्तियों (leaves) mein banta hai, suraj ki roshni aur hawa mein maujood carbon dioxide se — bilkul jaadu ki tarah!",
+            "icon": "triangle-alert"
+          },
+          {
+            "type": "activity",
+            "heading": "गतिविधि",
+            "content": "Ek kaam karo — ek pattiyon wale paudhe ko do din tak ek andheri jagah mein rakho. Phir uski ek patti tod kar us par iodine solution daalo aur doosri patti ko suraj ki roshni mein rakhne ke baad daalo. Phir dekho kya difference aata hai!",
+            "cta": "ऐप में interactive experiment देखो →",
+            "icon": "flask-conical"
+          }
+        ],
+        "en": [
+          {
+            "type": "example",
+            "heading": "Example",
+            "content": "Hey Nidhi — you know how your Amma cooks such delicious food in the kitchen for the whole family, right? She uses ingredients like atta, sabzi, spices to make roti, daal, everything. But have you ever wondered — how do plants get their food? Who cooks for them? Socho zara, do they have their own little kitchen somewhere?",
+            "icon": "lightbulb"
+          },
+          {
+            "type": "misconception",
+            "heading": "Misconception",
+            "wrong": "A lot of students think that plants 'eat' soil, just like we eat our food. They imagine the plant's roots gobbling up the soil for nutrition.",
+            "correct": "But that's not quite right, silly! Plants take only water and important minerals from the soil. Their real food — the sugar they need to grow — is actually made in their leaves, using sunlight and carbon dioxide from the air. It's like they have a super-power to create their own food!",
+            "icon": "triangle-alert"
+          },
+          {
+            "type": "activity",
+            "heading": "Activity",
+            "content": "Ek kaam karo — take a potted plant and keep it in a dark room for two days. Then, take one leaf from it and put a few drops of iodine solution on it. Now, bring the plant back to sunlight and after a few hours, take another leaf and test it with iodine again. Notice the change!",
+            "cta": "See interactive experiment in app →",
+            "icon": "flask-conical"
+          }
+        ]
+      }
+    },
+    {
+      "chapter_number": 2,
+      "blocks": {
+        "hi": [
+          {
+            "type": "example",
+            "heading": "उदाहरण",
+            "content": "Dekho — जब तुम अपनी favourite माँ के हाथ की रोटी या डोसा खाते हो, तो क्या वो सीधे शरीर को ऊर्जा दे देता है? नहीं ना! — पहले उसे छोटे-छोटे टुकड़ों में तोड़ना पड़ता है ताकि शरीर उसे इस्तेमाल कर सके। जानवरों में भी ऐसे ही होता है — इसे ही पाचन (digestion) कहते हैं। अच्छा सोचो — गाय को घास चबाते हुए देखा है? वो क्यों बार-बार उसे मुँह में वापस लाती है?",
+            "icon": "lightbulb"
+          },
+          {
+            "type": "misconception",
+            "heading": "गलतफहमी",
+            "wrong": "बहुत से बच्चे सोचते हैं कि सारे जानवर एक ही तरीके से खाना पचाते हैं।",
+            "correct": "अरे नहीं नहीं — ऐसा बिलकुल नहीं है! शेर माँस खाता है, गाय घास खाती है और अमीबा तो बस छोटे कण निगल लेता है। सबका अपना-अपना तरीका होता है खाना अंदर लेने (ingestion) और पचाने (digestion) का। क्या इंसान और गाय का पाचन तंत्र (digestive system) एक जैसा हो सकता है? क्यों?",
+            "icon": "triangle-alert"
+          },
+          {
+            "type": "activity",
+            "heading": "गतिविधि",
+            "content": "एक छोटा सा रोटी का टुकड़ा लो और उसे करीब 30-40 सेकंड तक धीरे-धीरे चबाओ, जैसे तुम किसी चीज़ का स्वाद ले रहे हो। तुम्हें थोड़ी देर में उसका स्वाद मीठा लगने लगेगा, है ना?",
+            "cta": "ऐप में interactive experiment देखो →",
+            "icon": "flask-conical"
+          }
+        ],
+        "en": [
+          {
+            "type": "example",
+            "heading": "Example",
+            "content": "Dekho — when you eat your favourite gulab jamun or a crunchy dosa, does your body use it directly for energy? No, right? — First, it needs to be broken down into tiny, simpler substances that your body can actually use. This whole process of taking in food, breaking it down, using it, and then getting rid of waste, is called nutrition! Socho zara — why can't we just absorb a whole chapati directly into our blood?",
+            "icon": "lightbulb"
+          },
+          {
+            "type": "misconception",
+            "heading": "Misconception",
+            "wrong": "Many students think that our food is fully digested in the stomach itself.",
+            "correct": "Oh, not at all! The stomach is just one part of the journey where food gets churned and partially broken down. Most of the actual digestion and absorption of nutrients happens much later, in the small intestine! Why do you think our small intestine is so long and coiled up inside us?",
+            "icon": "triangle-alert"
+          },
+          {
+            "type": "activity",
+            "heading": "Activity",
+            "content": "Take a small piece of plain roti or bread and just chew it slowly for about 30-40 seconds, without swallowing it. Notice how its taste changes and it starts feeling a bit sweeter after some time, even though you didn't add sugar?",
+            "cta": "See interactive experiment in app →",
+            "icon": "flask-conical"
+          }
+        ]
+      }
+    }
+  ]
+}

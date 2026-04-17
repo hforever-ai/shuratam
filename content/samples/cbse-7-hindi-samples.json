@@ -1,0 +1,105 @@
+{
+  "board": "cbse",
+  "class": 7,
+  "subject": "hindi",
+  "samples": [
+    {
+      "chapter_number": 1,
+      "blocks": {
+        "hi": [
+          {
+            "type": "example",
+            "heading": "उदाहरण",
+            "content": "Dekho — tumhein yaad hai jab garmiyon ki chuttiyon mein tumhare dost bahar khel rahe hote the, aur tum ghar mein a-c mein baith kar apne favorite snacks kha rahe ho — tab bhi tumhara man karta hai na bahar jaakar unke saath khelne ka, khuli hawa mein daudne ka? Vo a-c aur snacks bhale hi kitne bhi acche hon, khul kar khelne ki azadi alag hi hoti hai!",
+            "icon": "lightbulb"
+          },
+          {
+            "type": "misconception",
+            "heading": "गलतफहमी",
+            "wrong": "Bahut se bachche sochte hain ki pinjre mein panchhi khush rehte hain, kyunki unhein khana aur pani aasani se mil jaata hai aur koi khatra bhi nahi hota.",
+            "correct": "Lekin socho zara — panchhi ko sona nahi, udna pasand hai! Unhein udne ki, apni marzi se daana chugne ki, aur khule akash mein gaane ki azadi chahiye. Ek sone ka pinjra bhi unke liye sirf ek bandhan hi hota hai.",
+            "icon": "triangle-alert"
+          },
+          {
+            "type": "activity",
+            "heading": "गतिविधि",
+            "content": "Ek kaam karo — apne ghar ke paas ya park mein kisi bhi panchhi ko dhyan se dekho. Vo kaise apni marzi se ek daali se doosri daali par kudte hain, kaise hawa mein kalola karte hain — unki azadi par gaur karo. Aur socho ki agar unhein kisi chote se band jagah mein rakh diya jaaye, to kya vo utne hi khush rahenge?",
+            "cta": "ऐप में interactive experiment देखो →",
+            "icon": "flask-conical"
+          }
+        ],
+        "en": [
+          {
+            "type": "example",
+            "heading": "Example",
+            "content": "Socho zara — remember those summer holidays when your friends were out playing gully cricket, and you were stuck at home, maybe with a slight fever, watching TV with all your favourite snacks? Even with all the comfort and yummy food, you wished you could be out there, right? That feeling of wanting to be free, despite the comfort, is exactly what the poem talks about!",
+            "icon": "lightbulb"
+          },
+          {
+            "type": "misconception",
+            "heading": "Misconception",
+            "wrong": "Many students think that birds in a cage are happy because they get food, water, and shelter easily, without any danger.",
+            "correct": "But socho zara — a bird wants to fly in the open sky, not just sit in a golden cage! Their true happiness lies in flapping their wings, finding their own food, and singing freely. Confinement, no matter how comfortable, takes away their most precious gift: freedom.",
+            "icon": "triangle-alert"
+          },
+          {
+            "type": "activity",
+            "heading": "Activity",
+            "content": "Ek kaam karo — find a quiet spot near a window or in a park and watch the birds flying around. See how they soar, hop from branch to branch, and go wherever they please. Now, imagine if they were suddenly put into a small box, even a fancy one — would they still look as happy and lively?",
+            "cta": "See interactive experiment in app →",
+            "icon": "flask-conical"
+          }
+        ]
+      }
+    },
+    {
+      "chapter_number": 2,
+      "blocks": {
+        "hi": [
+          {
+            "type": "example",
+            "heading": "उदाहरण",
+            "content": "Socho zara — tumhare ghar mein jab koi badi taiyari chal rahi hoti hai, jaise shaadi ya koi pooja, ya phir agar ghar mein kisi ki tabiyat theek na ho — tab kaun hai jo sabse zyada bhaag-daud karta hai, sabka khayal rakhta hai, aur sabko himmat deta hai? Zyadatar tumhari दादी या नानी hi hoti hain na, jo sab kuchh sambhal leti hain — bilkul kahani ki दादी माँ ki tarah. Unka pyaar aur anubhav hi to ghar ki neenv hai! Tum kya sochte ho, aaj ke samay mein bhi daadi-naani ka aisa hi mahatva hai kya?",
+            "icon": "lightbulb"
+          },
+          {
+            "type": "misconception",
+            "heading": "गलतफहमी",
+            "wrong": "Bahut baar bachche sochte hain ki 'दादी माँ' chapter toh bas ek purani kahani hai, jisme ek strict दादी माँ ke baare mein bataya gaya hai aur ab aisa kuchh nahi hota.",
+            "correct": "Lekin asal mein — ye kahani sirf purane zamane ki nahi hai. Yeh rishton ki gehrai, parivaarik moolyon, aur bade-bujurgon ke anubhav ki baat karti hai, jo aaj bhi utne hi zaroori hain. Unka pyaar aur anushasan hi to humein sahi raah dikhata hai — soch ke dekho zara!",
+            "icon": "triangle-alert"
+          },
+          {
+            "type": "activity",
+            "heading": "गतिविधि",
+            "content": "Ek kaam karo — aaj apni दादी या नानी (ya ghar ke kisi bade) ke paas baitho aur unse unke bachpan ki ya apni pasandida koi ek kahani sunne ko kaho. Tum dekhoge ki unke anubhav kitne khaas hote hain aur tumhe unke baare mein kitna naya seekhne ko milega! Kya tumhe lagta hai ki unki kahani sun kar tum unhe aur behtar samajh paaye?",
+            "cta": "ऐप में interactive experiment देखो →",
+            "icon": "flask-conical"
+          }
+        ],
+        "en": [
+          {
+            "type": "example",
+            "heading": "Example",
+            "content": "Hey, tumhein yaad hai jab tumhare ghar mein koi wedding hoti hai ya koi festival chal raha hota hai? Dekho — us time your Dadi or Nani becomes the busiest person, right? She manages everything, from cooking special dishes to making sure everyone is comfortable, sometimes even handling finances or little family disputes. Doesn't that remind you of the Dadi Ma in our story, always caring and keeping the family together? What do you think is the most important role your Dadi or Nani plays in your family?",
+            "icon": "lightbulb"
+          },
+          {
+            "type": "misconception",
+            "heading": "Misconception",
+            "wrong": "Many students think that the story 'Dadi Ma' is just an old tale about a strict grandmother from a bygone era, and that such grandmothers don't exist anymore.",
+            "correct": "But actually — this story isn't just about the past. It's about the deep bonds of family, traditional values, and the wisdom of elders, which are still very relevant today. Their love and discipline often guide us in the right direction — don't you think so?",
+            "icon": "triangle-alert"
+          },
+          {
+            "type": "activity",
+            "heading": "Activity",
+            "content": "Ek kaam karo — today, sit with your Dadi or Nani (or any elder in your family) and ask them to share one of their favourite childhood memories or a story from their younger days. You'll see how special their experiences are and how much you can learn about them! Did listening to their story help you understand them better?",
+            "cta": "See interactive experiment in app →",
+            "icon": "flask-conical"
+          }
+        ]
+      }
+    }
+  ]
+}

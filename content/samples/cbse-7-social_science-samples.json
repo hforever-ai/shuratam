@@ -1,0 +1,105 @@
+{
+  "board": "cbse",
+  "class": 7,
+  "subject": "social_science",
+  "samples": [
+    {
+      "chapter_number": 1,
+      "blocks": {
+        "hi": [
+          {
+            "type": "example",
+            "heading": "उदाहरण",
+            "content": "Dekho — aaj hum jab 'Hindustan' ya 'India' bolte hain, toh tumhare dimag mein poora desh aa jata hai, borders ke saath, hai na? Magar bahut saal pehle, jab pehli baar yeh shabd istemal hua tha — tab uska matlab sirf Punjab, Haryana aur Ganga-Yamuna ke beech ka ilaaka tha. Socho — ek hi shabd ka matlab samay ke saath kitna badal gaya!",
+            "icon": "lightbulb"
+          },
+          {
+            "type": "misconception",
+            "heading": "गलतफहमी",
+            "wrong": "Bohat saare bacche sochte hain ki purane zamane mein bhi log 'Hindustan' ko bilkul waise hi samajhte the, jaise aaj hum poore India ko dekhte hain, borders ke saath.",
+            "correct": "Nahi, nahi, aisa bilkul nahi tha! Alag-alag samay mein 'Hindustan' shabd ka matlab alag-alag tha — kabhi sirf Punjab, Haryana, aur Ganga-Yamuna ke beech ka ilaaka, toh kabhi kisi aur raja ka rajya. Poore desh ka jo modern concept hai, woh toh bahut baad mein aaya, didi-bhaiya.",
+            "icon": "triangle-alert"
+          },
+          {
+            "type": "activity",
+            "heading": "गतिविधि",
+            "content": "Ek kaam karo — apne ghar mein koi purani photo ya newspaper dhundo, jo tumhare sheher ya gaon ka ho. Phir aaj ki date mein dekho ki us jagah mein kitna badlav aa gaya hai, jaise road, building, ya market. Socho — kitni cheezein badal jaati hain samay ke saath!",
+            "cta": "ऐप में interactive experiment देखो →",
+            "icon": "flask-conical"
+          }
+        ],
+        "en": [
+          {
+            "type": "example",
+            "heading": "Example",
+            "content": "Dekho — today when we say 'Hindustan' or 'India,' your mind immediately pictures the entire country, with its borders, right? But many years ago, when this word was first used — it only referred to the area of Punjab, Haryana, and the land between the Ganga and Yamuna rivers. Socho — how much the meaning of a single word can change over time!",
+            "icon": "lightbulb"
+          },
+          {
+            "type": "misconception",
+            "heading": "Misconception",
+            "wrong": "Many students think that people in ancient times viewed 'India' exactly as we do today, as a single, unified country with fixed borders.",
+            "correct": "No, no, that's not right at all! The term 'Hindustan' had different meanings at different times — sometimes just the Punjab, Haryana, and Ganga-Yamuna region, and sometimes referring to the kingdom of a particular ruler. The modern concept of an entire nation with defined borders is something that developed much later, didi-bhaiya.",
+            "icon": "triangle-alert"
+          },
+          {
+            "type": "activity",
+            "heading": "Activity",
+            "content": "Ek kaam karo — find an old photograph or newspaper clipping from your home, showing your city or village. Then, look at that same place today. See how much has changed — like the roads, buildings, or markets. Socho — how many things transform over time!",
+            "cta": "See interactive experiment in app →",
+            "icon": "flask-conical"
+          }
+        ]
+      }
+    },
+    {
+      "chapter_number": 2,
+      "blocks": {
+        "hi": [
+          {
+            "type": "example",
+            "heading": "उदाहरण",
+            "content": "Dekho — tumhare gaon ya sheher mein, kabhi koi local neta ya zameendaar dekha hai? Pehle wo shayad kisi bade neta ke liye kaam karta ho ya uski madad karta ho — ek tarah se uska 'subordinate' ho. Socho zara — agar wo neta bahut achha kaam kare, logon ki madad kare, aur apni ek alag pehchaan bana le — toh kya wo ek din khud ka 'raajya' ya apni party nahi bana sakta? बस ऐसा ही कुछ हुआ था पुराने ज़माने में जब छोटे 'सामंत' (subordinates) अपनी ताकत और दौलत बढ़ाकर खुद ही राजा बन बैठते थे!",
+            "icon": "lightbulb"
+          },
+          {
+            "type": "misconception",
+            "heading": "गलतफहमी",
+            "wrong": "Bachche sochte hain ki sabhi raja hamesha se hi bade-bade mahal aur sena ke saath janam lete the, jaise filmon mein dikhate hain.",
+            "correct": "Asal mein, kai saare naye raja toh pehle chhote 'सामंत' (subordinates) ya zameen ke maalik the. Unhone apni mehnat, yudh aur dosti se dheere-dheere apni taakat badhayi, dusre rajaon ki गुलामी chhodi aur tab jaakar bade-bade rajya banaye. Wo 'शुरू से' raja nahi the, balki 'बने' the!",
+            "icon": "triangle-alert"
+          },
+          {
+            "type": "activity",
+            "heading": "गतिविधि",
+            "content": "Ek kaam karo — apne ghar mein alag-alag rang ke 3-4 kankad ya bindi le lo. Ek chhota sa khilona ya rumaal bich mein rakho — ye hai 'Kannauj'. Ab har rang ke kankad ko koshish karni hai ki wo us rumaal ke sabse kareeb aa jaye. Dekhna kaise alag-alag kankad us par kabza karne ki koshish karenge — ye bilkul waisa hi tha jaise us waqt bade-bade rajya Kannauj par niyantran (control) ke liye ladte the! Hai na mazedaar?",
+            "cta": "ऐप में interactive experiment देखो →",
+            "icon": "flask-conical"
+          }
+        ],
+        "en": [
+          {
+            "type": "example",
+            "heading": "Example",
+            "content": "Dekho — have you ever seen how in your town or village, a local strongman or a powerful contractor who initially worked for a big builder or politician eventually becomes so influential? They gather their own resources, help many people, and gain enough power to start their own independent projects, or even become a respected leader in their own right, sometimes even bigger than their original 'boss'! — This is quite similar to how 'samantas' grew strong and established new kingdoms back then!",
+            "icon": "lightbulb"
+          },
+          {
+            "type": "misconception",
+            "heading": "Misconception",
+            "wrong": "Many students think that the kingdoms back then had fixed, clear boundaries just like the states or countries on our maps today.",
+            "correct": "But actually, those kingdom boundaries were very fluid, meaning they kept changing all the time! Because of constant wars and invasions, territories were frequently won and lost. So, a king's 'kingdom' could be much bigger one year and smaller the next, depending on his strength and military success. Do you think it would have been easy to live in such uncertain times?",
+            "icon": "triangle-alert"
+          },
+          {
+            "type": "activity",
+            "heading": "Activity",
+            "content": "Ek kaam karo — take a piece of paper, cut it into a strip, and make a simple crown. Now, wear your paper crown and stand in your room. 'Declare' yourself the 'King' or 'Queen' of your room to your family. You'll see — this simple act of claiming a 'title' and making 'rules' is a bit like how new kings would announce their power and legitimacy to everyone! What do you think, did just wearing a crown make someone a king back then?",
+            "cta": "See interactive experiment in app →",
+            "icon": "flask-conical"
+          }
+        ]
+      }
+    }
+  ]
+}

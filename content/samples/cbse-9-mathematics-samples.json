@@ -5,49 +5,48 @@
   "samples": [
     {
       "chapter_number": 1,
-      "chapter_title": "Number Systems",
       "blocks": {
         "hi": [
           {
             "type": "example",
-            "heading": "Number Line और Auto का Meter",
-            "content": "Auto rickshaw का meter 0 से start होता है और आगे बढ़ता है — यह number line है। जब तुम negative numbers सुनते हो, सोचो: −5°C मतलब zero से 5 degree नीचे। Number line पे left of zero। Temperature, bank balance, depth — सब जगह negative numbers real हैं।",
+            "heading": "उदाहरण",
+            "content": "Dekho — jab tum apni mummy ke saath bazaar jaati ho aur 1 kg pyaaz leti ho. Fir papa bolte hain 1.5 kg le lo. Ya agar tumhare paas 100 rupaye hain aur tumhe 2.5 kg aaloo lene hain — toh aise fractions ya decimals ka kitna use hota hai na? Socho zara — aise aur kitni tarah ki gintiyaan hum roz marra ki zindagi mein dekhte hain, jo sirf 1, 2, 3 tak seemit nahi hoti. Isi se hum numbers ki duniya mein gehrayi se utarte hain! Kya tumne kabhi socha hai ki aise kitne alag-alag tarah ke numbers ho sakte hain?",
             "icon": "lightbulb"
           },
           {
             "type": "misconception",
-            "heading": "गलतफहमी: Irrational Number को Decimal में नहीं लिख सकते?",
-            "wrong": "Irrational numbers का decimal form नहीं होता",
-            "correct": "होता है, लेकिन वो non-terminating और non-repeating होता है। जैसे π = 3.14159265... बिना कभी repeat किए चलता रहता है। √2 = 1.41421356... भी।",
+            "heading": "गलतफहमी",
+            "wrong": "Aksar tum jaisay bachche sochte hain ki do rational numbers, jaise 1 aur 2 ke beech mein, shayad thode bohot hi numbers mil sakte hain. Bas 1.5 ya 1.25 types ke.",
+            "correct": "Lekin sach yeh hai ki kisi bhi do alag rational numbers ke beech mein anant (infinite) rational numbers hote hain! Aur sirf rational hi nahi, anant irrational numbers bhi hote hain — ye Number Line ki kitni kamaal ki baat hai na?",
             "icon": "triangle-alert"
           },
           {
             "type": "activity",
-            "heading": "√2 को Number Line पे ढूंढो",
-            "content": "एक unit length का square बनाओ (1cm × 1cm)। Diagonal = √2 cm (Pythagoras से)। Compass से वो diagonal length number line पर 0 से mark करो — exactly √2 पर पहुंचोगे। Irrational भी number line पर real point है!",
-            "cta": "ऐप में geometric construction देखो →",
+            "heading": "गतिविधि",
+            "content": "Ek kaam karo — apne drawing sheet par ek lambi number line banao. Us par 0 aur 1 ko bade marks se dikhao. Ab koshish karo 1/2, 1/4, 3/4 jaise numbers ko wahan locate karne ki, aur dekho tum unhe kitne chhote hisson mein baant sakti ho. Kitne aur numbers tum 0 aur 1 ke beech mein dhoondh sakti ho?",
+            "cta": "ऐप में interactive experiment देखो →",
             "icon": "flask-conical"
           }
         ],
         "en": [
           {
             "type": "example",
-            "heading": "Number Line and the Auto Meter",
-            "content": "An auto rickshaw meter starts at 0 and goes forward — that's a number line. When you hear negative numbers, think: −5°C means 5 degrees below zero, which is to the left on the number line. Temperature, bank balance, depth below sea level — negative numbers are real everywhere.",
+            "heading": "Example",
+            "content": "Dekho — when you're helping your parents measure ingredients for your favourite biryani, you might use 1 cup of rice, or perhaps 1/2 a cup of oil. And if you're sharing a pizza with your friends, everyone gets a fraction of it, right? Socho zara — these aren't just whole numbers like 1, 2, 3. We use so many different types of numbers every day without even thinking! Isn't it amazing how many forms numbers can take in our daily lives?",
             "icon": "lightbulb"
           },
           {
             "type": "misconception",
-            "heading": "Can Irrational Numbers Be Written as Decimals?",
-            "wrong": "Irrational numbers have no decimal form",
-            "correct": "They do — but it's non-terminating and non-repeating. For example π = 3.14159265... goes on forever without any pattern. Same with √2 = 1.41421356...",
+            "heading": "Misconception",
+            "wrong": "A common thought is that between any two rational numbers, like 0 and 1, you can only find a limited number of other rational numbers – maybe 0.5, 0.25, 0.75, and that's it.",
+            "correct": "But guess what? Between any two distinct rational numbers, there are actually infinitely many rational numbers! And not just rational ones, but infinitely many irrational numbers too. Socho zara — the number line is much denser than we often imagine!",
             "icon": "triangle-alert"
           },
           {
             "type": "activity",
-            "heading": "Locate √2 on the Number Line",
-            "content": "Draw a square with side 1 cm. Its diagonal = √2 cm (by Pythagoras). Use a compass to transfer that diagonal length onto the number line from 0 — you land exactly on √2. Even irrational numbers are real points on the number line!",
-            "cta": "See geometric construction in app →",
+            "heading": "Activity",
+            "content": "Ek kaam karo — grab a ruler and a sheet of paper. Draw a long, straight line and mark '0' and '1' clearly on it, maybe 10-15 cm apart. Now, try to mark as many rational numbers as you can between 0 and 1 — like 1/2, 1/4, 3/4, and then even finer ones like 1/8, 3/8, 5/8. Socho zara — how many more can you find and mark? Doesn't this show you just how many numbers are actually hiding between two simple integers?",
+            "cta": "See interactive experiment in app →",
             "icon": "flask-conical"
           }
         ]
@@ -55,49 +54,48 @@
     },
     {
       "chapter_number": 2,
-      "chapter_title": "Polynomials",
       "blocks": {
         "hi": [
           {
             "type": "example",
-            "heading": "Polynomial — मिठाई की दुकान में",
-            "content": "मान लो एक mithai की दुकान में laddoo ₹10 का है और barfi ₹15 की। अगर तुम x laddoos और y barfis खरीदते हो, total cost = 10x + 15y। यह एक polynomial expression है — real life में हर जगह polynomials हैं, बस हम उन्हें नाम नहीं देते।",
+            "heading": "उदाहरण",
+            "content": "Dekho, tumne kabhi apne ghar mein kitchen mein chutney banate hue dekha hai? — Nani ya Mummy alag-alag cheezein daalti hain na — dhaniya, mirch, adrak, namak — har cheez ki ek khaas matra (quantity) hoti hai. Har ingredient ek variable hai, aur kitni matra mein daala gaya hai, woh uska coefficient. Polynomial bhi aise hi alag-alag 'terms' ka combination hota hai, jahan variables ki powers poorn sankhya mein hoti hain. Socho zara, agar tum chutney mein namak ki jagah -2 chamach namak daal do toh kya hoga? Ya aadha mirch ka powder? Variables ki power ke saath bhi kuch aise hi rules hote hain!",
             "icon": "lightbulb"
           },
           {
             "type": "misconception",
-            "heading": "गलतफहमी: Monomial में सिर्फ एक Number?",
-            "wrong": "Monomial में सिर्फ एक number होता है",
-            "correct": "नहीं! Monomial में एक term होती है जिसमें variable भी हो सकता है। जैसे 5x², -3y, 7xyz — सब monomials हैं। Number of terms matters, coefficients नहीं।",
+            "heading": "गलतफहमी",
+            "wrong": "Tum kabhi-kabhi sochte ho ki `x + 1/x` ya `√x + 5` jaisi koi bhi algebraic expression ek Polynomial hoti hai.",
+            "correct": "Lekin, ek Polynomial mein variable ki power (exponent) hamesha ek poorn sankhya (whole number) honi chahiye — na negative, na fraction. `1/x` ko `x⁻¹` likhte hain (negative power) aur `√x` ko `x¹/²` (fractional power) likhte hain. Toh yeh Polynomials nahi hain.",
             "icon": "triangle-alert"
           },
           {
             "type": "activity",
-            "heading": "Factor Tree से Polynomial Factor करो",
-            "content": "p(x) = x² + 5x + 6 लो। Think: कौन से दो numbers ऐसे हैं जिनका product 6 है और sum 5? Answer: 2 और 3। तो p(x) = (x+2)(x+3)। Check: (x+2)(x+3) को expand करो — same polynomial मिलेगा! यही factorization है।",
-            "cta": "ऐप में polynomial factoring tool देखो →",
+            "heading": "गतिविधि",
+            "content": "Ek kaam karo — apne ghar mein kuch alag-alag rang ke marbles ya buttons ikatthi karo. Har rang ko ek alag variable ki power mano, jaise neela `x` ke liye, laal `x²` ke liye. Ab in marbles ko use karke alag-alag Polynomial expressions banane ki koshish karo, jaise 2 neele aur 3 laal buttons matlab `2x + 3x²`!",
+            "cta": "ऐप में interactive experiment देखो →",
             "icon": "flask-conical"
           }
         ],
         "en": [
           {
             "type": "example",
-            "heading": "Polynomials in the Mithai Shop",
-            "content": "Say a mithai shop sells laddoos for ₹10 and barfi for ₹15. If you buy x laddoos and y barfis, total cost = 10x + 15y. That's a polynomial expression. Polynomials are everywhere in real life — we just don't give them that name.",
+            "heading": "Example",
+            "content": "Hey, you know how sometimes your family plans a trip, say to a hill station like Shimla? — You need to account for different things: tickets, hotel rooms, food, sightseeing. Each of these is a separate 'component' or 'term'. The number of tickets, the number of nights in a hotel, the budget for food — these are like 'coefficients' for each 'variable' (ticket, hotel, food). A Polynomial is very similar – it’s an expression combining different terms, where variables have whole number powers. Socho zara, can you have -3 tickets for a trip, or 1/2 a hotel room? Why do you think variable powers in polynomials also can't be negative or fractions?",
             "icon": "lightbulb"
           },
           {
             "type": "misconception",
-            "heading": "Does Monomial Mean Just One Number?",
-            "wrong": "A monomial contains only one number",
-            "correct": "No! A monomial is a single term that can include variables. 5x², -3y, 7xyz — all are monomials. It's about the number of terms, not the number of coefficients.",
+            "heading": "Misconception",
+            "wrong": "Sometimes, you might get confused and think that any algebraic expression, like `x + 1/x` or `√x + 5`, is automatically a Polynomial.",
+            "correct": "But actually, for an expression to be a Polynomial, the power (exponent) of its variable must *always* be a whole number — no negative numbers or fractions allowed! `1/x` is `x⁻¹` (a negative power) and `√x` is `x¹/²` (a fractional power). So, these expressions are not Polynomials.",
             "icon": "triangle-alert"
           },
           {
             "type": "activity",
-            "heading": "Factorise a Polynomial Mentally",
-            "content": "Take p(x) = x² + 5x + 6. Ask: which two numbers multiply to 6 and add to 5? Answer: 2 and 3. So p(x) = (x+2)(x+3). Verify: expand (x+2)(x+3) and check you get the original polynomial. That's factorisation!",
-            "cta": "See polynomial factoring tool in app →",
+            "heading": "Activity",
+            "content": "Ek kaam karo — gather some different coloured building blocks or Lego pieces from home. Assign each colour to a specific variable or power of a variable (e.g., red for `x`, blue for `x²`, green for `x³`). Now, use these blocks to physically build and represent different Polynomial expressions, like 2 red blocks and 3 blue blocks for `2x + 3x²`!",
+            "cta": "See interactive experiment in app →",
             "icon": "flask-conical"
           }
         ]

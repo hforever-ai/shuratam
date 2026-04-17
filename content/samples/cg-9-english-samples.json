@@ -1,0 +1,105 @@
+{
+  "board": "cg",
+  "class": 9,
+  "subject": "english",
+  "samples": [
+    {
+      "chapter_number": 1,
+      "blocks": {
+        "hi": [
+          {
+            "type": "example",
+            "heading": "उदाहरण",
+            "content": "Dekho, tumhe yaad hai jab COVID ke time hum sab ghar par online classes karte the? Tab hum kitna miss karte the school mein apne doston ke saath baithna, khelna, aur teacher se seedhe sawaal puchna — hai na? Chapter mein bhi Margie aur Tommy ko lagta hai ki kitna mazedaar raha hoga jab saare bachche ek saath school jaate the, bilkul waise hi jaise tum abhi jaate ho. Unke liye toh ye sab kitna alag tha na?",
+            "icon": "lightbulb"
+          },
+          {
+            "type": "misconception",
+            "heading": "गलतफहमी",
+            "wrong": "Kai bachche sochte hain ki kahaani mein jo bhawishya ka school dikhaya hai, woh bahut bura aur akela kar dene wala hai, aur iska matlab hai ki machines se padhna hamesha kharab hota hai.",
+            "correct": "Asal mein, kahaani ye nahi kehti ki future ki technology ya machine teachers kharab hote hain. Balki, ye humein dikhati hai ki padhne ka tareeka kitna badal sakta hai aur hum apne doston ke saath ek classroom mein baithkar jo social fun aur mil-jul kar seekhne ka mazaa lete hain — use kitna yaad kar sakte hain.",
+            "icon": "triangle-alert"
+          },
+          {
+            "type": "activity",
+            "heading": "गतिविधि",
+            "content": "Ek kaam karo — apne mummy-papa ya dada-dadi se poochho ki jab woh school jaate the, tab unke school aur tumhare school mein kya-kya alag tha. Unki kahaniyan suno aur socho ki tumhara school unke school se kaise behtar hai, aur kaise tum unke time ki kisi cheez ko apne school mein wapas lana chahoge.",
+            "cta": "ऐप में interactive experiment देखो →",
+            "icon": "flask-conical"
+          }
+        ],
+        "en": [
+          {
+            "type": "example",
+            "heading": "Example",
+            "content": "Remember how during the COVID lockdown, we all had online classes from home? We missed our friends so much, sitting together in class, playing, and asking questions directly to our teacher, didn't we? In the chapter, Margie and Tommy also think about how much fun it must have been when all children went to school together, just like you do now. For them, it was such a different world!",
+            "icon": "lightbulb"
+          },
+          {
+            "type": "misconception",
+            "heading": "Misconception",
+            "wrong": "Many students believe that the futuristic school depicted in the story is completely bad and isolating, implying that learning through machines is always inferior.",
+            "correct": "Actually, the story doesn't argue that future technology or mechanical teachers are inherently poor. Instead, it highlights how much the method of learning can transform and how we might yearn for the social enjoyment and collaborative spirit of learning with friends in a traditional classroom setting.",
+            "icon": "triangle-alert"
+          },
+          {
+            "type": "activity",
+            "heading": "Activity",
+            "content": "Ek kaam karo — ask your parents or grandparents about what was different between their school and your school when they were students. Listen to their stories and think about how your school is better than theirs, and also if there’s anything from their time that you would love to bring back into your school.",
+            "cta": "See interactive experiment in app →",
+            "icon": "flask-conical"
+          }
+        ]
+      }
+    },
+    {
+      "chapter_number": 2,
+      "blocks": {
+        "hi": [
+          {
+            "type": "example",
+            "heading": "उदाहरण",
+            "content": "Dekho — tumhe yaad hai jab tumhare gaon mein ya shahar mein koi bhi tyohar ya julus nikalta hai, aur dhol-nagada zor se bajta hai? Jab tum uske paas khade hote ho, toh sirf uski awaaz hi nahi sunte, balki apni chhati mein, zameen par uski 'dhamak' ko bhi mehsoos karte ho na — wohi toh asli mein vibrations (kampan) hain! Evelyn Glennie bhi aise hi sound ko 'feel' karti thi, apne sharir ke alag-alag hisson se, bina sune bhi. Socho, agar tum aankhein band karke sirf in vibrations par dhyan do, toh kya alag-alag awazon ko pehchan paoge?",
+            "icon": "lightbulb"
+          },
+          {
+            "type": "misconception",
+            "heading": "गलतफहमी",
+            "wrong": "Bahut logon ko lagta hai ki jo log sun nahi sakte ya jinhe sunne mein takleef hoti hai, woh kabhi gaana ya sangeet nahi samajh sakte ya use bajaa nahi sakte.",
+            "correct": "Lekin asal mein, Evelyn Glennie ki kahani humein sikhati hai ki aise log bhi apne sharir ke dusre hisson se vibrations (kampan) ko mehsoos karke sangeet ko poori tarah jee sakte hain aur usmein mahir bhi ban sakte hain, jaisa ki Evelyn ne kiya.",
+            "icon": "triangle-alert"
+          },
+          {
+            "type": "activity",
+            "heading": "गतिविधि",
+            "content": "Ek kaam karo — apne phone ko silent mode par rakh kar apni hatheli par rakho aur kisi se call lagane ko kaho. Tumhe woh 'vibration' mehsoos hogi na? Ab us phone ko apne gaal par rakh kar dekho — kya ab bhi waisi hi vibration feel hoti hai ya kuch alag?",
+            "cta": "ऐप में interactive experiment देखो →",
+            "icon": "flask-conical"
+          }
+        ],
+        "en": [
+          {
+            "type": "example",
+            "heading": "Example",
+            "content": "Hey, do you remember when you're sitting in a crowded bus in your town or during a ride to your dhaan ki kheti, and you can feel a low rumble or vibration through the seat or the floor? That's your body picking up the sound's energy even without listening with your ears! Evelyn Glennie, even though she couldn't hear with her ears, learnt to feel those kinds of vibrations from music with her whole body. Socho zara — if you close your eyes and focus, can you feel the vibrations of different sounds around you right now?",
+            "icon": "lightbulb"
+          },
+          {
+            "type": "misconception",
+            "heading": "Misconception",
+            "wrong": "A lot of students think that if someone is deaf or has severe hearing loss, they can't understand or enjoy music at all, let alone play an instrument.",
+            "correct": "But the truth is, as Evelyn Glennie's inspiring story shows, people who are deaf can perceive music through vibrations felt in different parts of their body, and can even become world-class musicians through determination and practice.",
+            "icon": "triangle-alert"
+          },
+          {
+            "type": "activity",
+            "heading": "Activity",
+            "content": "Ek kaam karo — place your hand lightly on a music system's speaker while some music is playing. Can you feel the 'thump-thump' or the 'tremble' of the music through your palm? That's the sound making the speaker vibrate, and you're feeling those vibrations!",
+            "cta": "See interactive experiment in app →",
+            "icon": "flask-conical"
+          }
+        ]
+      }
+    }
+  ]
+}

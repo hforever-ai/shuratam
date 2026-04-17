@@ -1,0 +1,105 @@
+{
+  "board": "cg",
+  "class": 7,
+  "subject": "hindi",
+  "samples": [
+    {
+      "chapter_number": 1,
+      "blocks": {
+        "hi": [
+          {
+            "type": "example",
+            "heading": "उदाहरण",
+            "content": "Ek kaam karo — socho zara — jab garmiyon ki chuttiyon mein tum Bastar ke jungle ya Indravati nadi ke paas apne gaon jaate ho — aur khule maidaan mein daudte ho, bore-basi khaate ho, kitna mazaa aata hai na? Aur agar tumhein poore din ek kamre mein band kar dein, bhale hi andar TV ho, khane ko achha khana ho — tab bhi mann ghabraata hai na, bahar jaane ka mann karta hai? Bas yahi azaadi ki chahat hai jo panchi mahsus karte hain.",
+            "icon": "lightbulb"
+          },
+          {
+            "type": "misconception",
+            "heading": "गलतफहमी",
+            "wrong": "Kuch bachhe sochte hain ki pinjre mein panchi ko daana-paani, achha ghar sab mil jaata hai, to woh khush hi honge.",
+            "correct": "Par aisa nahi hai. Dekho — panchi ko sone ki katori mein daana aur aaram se milne waala paani bhi pasand nahi aata, agar uske badle use khule aasmaan mein udne ki azaadi na mile. Unke liye apne pankh failakar udna, bhale hi chhoti-moti mushkilon ka saamna karna pade — yahi asli khushi hai.",
+            "icon": "triangle-alert"
+          },
+          {
+            "type": "activity",
+            "heading": "गतिविधि",
+            "content": "Ek chhoti si kagaz ki naav banao ya halka sa pankh lo. Usse pehle ek band dibbe ke andar udane ya girane ki koshish karo. Phir bahar khule aasmaan ke neeche hawa mein chhod kar dekho — kaun sa zyada achha lagta hai aur kahan woh zyada azaadi se ud sakta hai?",
+            "cta": "ऐप में interactive experiment देखो →",
+            "icon": "flask-conical"
+          }
+        ],
+        "en": [
+          {
+            "type": "example",
+            "heading": "Example",
+            "content": "Hey, tell me something — when you visit your village in Bastar or near the Indravati river during summer holidays — and you run freely in the open fields, eat bore-basi under the sky, doesn't that feel amazing? And what if you were kept inside a room all day, even if you had a TV and good food — don't you still feel restless, wanting to go outside? That yearning for freedom is exactly what the birds feel.",
+            "icon": "lightbulb"
+          },
+          {
+            "type": "misconception",
+            "heading": "Misconception",
+            "wrong": "Some students think that if a bird in a cage gets food, water, and a nice home easily, it must be happy.",
+            "correct": "But that's not true. See — even if a bird gets grains in a golden bowl and water effortlessly, it won't be happy if it doesn't have the freedom to fly in the open sky. For them, spreading their wings and flying, even if it means facing small challenges — that is the real joy.",
+            "icon": "triangle-alert"
+          },
+          {
+            "type": "activity",
+            "heading": "Activity",
+            "content": "Make a small paper bird or take a light feather. First, try to make it fly or drop it inside a closed box. Then, take it outside and let it go in the open air — which one feels better, and where can it move with more freedom?",
+            "cta": "See interactive experiment in app →",
+            "icon": "flask-conical"
+          }
+        ]
+      }
+    },
+    {
+      "chapter_number": 2,
+      "blocks": {
+        "hi": [
+          {
+            "type": "example",
+            "heading": "उदाहरण",
+            "content": "Dekho — jaise tumhein bhi yaad hoga jab tum chhote the aur gaon mein apni dadi ke ghar jaate the. Garmiyon ki chhuttiyon mein bore-basi khaate the, ya bhains ko nahate dekhte the — woh sab yaadein kitni pyaari hoti hain na? Is chapter mein bhi lekhak apni dadi ko aise hi yaad kar rahe hain, unki har baat, har aadat. Tumhari dadi ki sabse pyaari yaad kya hai, socho zara?",
+            "icon": "lightbulb"
+          },
+          {
+            "type": "misconception",
+            "heading": "गलतफहमी",
+            "wrong": "Kuchh bachche sochte hain ki lekhak ki dadi bahut kadak aur gussewali thi, bas sabko daantti rahti thi.",
+            "correct": "Par sach ye hai ki unki kadakpana unke pyaar aur zimmedari ka hi ek hissa tha. Woh andar se bahut narm dil aur sabka khayal rakhne wali thi, jaise beemar hone par lekhak ki dekhbhaal karti thi, ya gareebon ki madad karti thi. Tumhare ghar mein kaun sabse zyada kadak hai, aur kyun?",
+            "icon": "triangle-alert"
+          },
+          {
+            "type": "activity",
+            "heading": "गतिविधि",
+            "content": "Ek kaam karo — aaj apni dadi ya nani se unke bachpan ki koi ek mazedaar kahani suno. Unse poochna ki woh chhoti thi tab kya-kya karti thi, kaun se khel khelti thi. Socho — unki duniya tumhari duniya se kitni alag thi!",
+            "cta": "ऐप में interactive experiment देखो →",
+            "icon": "flask-conical"
+          }
+        ],
+        "en": [
+          {
+            "type": "example",
+            "heading": "Example",
+            "content": "Hey, remember when you went to your village during summer holidays and saw the vast dhaan ki kheti, or maybe explored the edge of Bastar ke jungle with your cousins? How those memories stay with you, right? This chapter, 'Daadi Maa', is exactly about that — the author remembering his grandmother and all the small, precious moments he shared with her. What’s one memory of your own Dadi that always makes you smile?",
+            "icon": "lightbulb"
+          },
+          {
+            "type": "misconception",
+            "heading": "Misconception",
+            "wrong": "Some students might think that the author's Dadi Maa was just a strict, grumpy old lady who only knew how to scold everyone.",
+            "correct": "But if you look closely, her strictness actually came from her immense love and sense of responsibility. She was incredibly kind-hearted and caring, especially when the author was sick, and always ready to help others, even when it meant lending money. Tumhare ghar mein, who do you think is the strictest, and why do you think they are that way?",
+            "icon": "triangle-alert"
+          },
+          {
+            "type": "activity",
+            "heading": "Activity",
+            "content": "Ek kaam karo — today, sit with your Dadi or Nani and ask them about their childhood. What games did they play? What was school like for them? You'll be surprised to hear how different their world was from yours! Socho — what's the most interesting thing you learned about their past?",
+            "cta": "See interactive experiment in app →",
+            "icon": "flask-conical"
+          }
+        ]
+      }
+    }
+  ]
+}

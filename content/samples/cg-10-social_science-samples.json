@@ -1,0 +1,105 @@
+{
+  "board": "cg",
+  "class": 10,
+  "subject": "social_science",
+  "samples": [
+    {
+      "chapter_number": 1,
+      "blocks": {
+        "hi": [
+          {
+            "type": "example",
+            "heading": "उदाहरण",
+            "content": "Dekho — jab tum Bastar ke jungle mein rehne wale kisi dost se milte ho, aur tumhe pata chalta hai ki woh bhi tumhari tarah 'bore-basi' khata hai, ya Indravati nadi ke baare mein jaanta hai — tab tumhe ek apnaapan sa lagta hai na? Yeh chhoti si feeling hai ki hum ek hain, ek jaisi cheezein karte hain. Socho zara — aise hi bade level par jab log ek desh ke liye sochte hain, woh kya hota hai?",
+            "icon": "lightbulb"
+          },
+          {
+            "type": "misconception",
+            "heading": "गलतफहमी",
+            "wrong": "बच्चों को अक्सर लगता है कि राष्ट्रवाद (Nationalism) मतलब सिर्फ़ अपनी सरकार बनाना या युद्ध लड़ना होता है।",
+            "correct": "नहीं रे बाबा, राष्ट्रवाद का मतलब सिर्फ़ लड़ाई-झगड़ा नहीं होता। इसका असली मतलब है एक समुदाय या लोगों के समूह का ये महसूस करना कि उनकी एक जैसी पहचान है — एक ही संस्कृति, भाषा, इतिहास, और वो एक साथ मिलकर रहना चाहते हैं, अपने नियमों से। ये एक गहरे अपनेपन का अहसास है।",
+            "icon": "triangle-alert"
+          },
+          {
+            "type": "activity",
+            "heading": "गतिविधि",
+            "content": "Ek kaam karo — apne ghar mein Mummy, Papa ya Dada-Dadi se poochho ki unki pasand ki koi ek Chhattisgarh ki kahaani ya gaana kaun sa hai। Dekho kitni baar unki pasand ek jaisi hoti hai, ya phir alag hone par bhi unme 'Chhattisgarhipan' ki jhalak dikhti hai।",
+            "cta": "ऐप में interactive experiment देखो →",
+            "icon": "flask-conical"
+          }
+        ],
+        "en": [
+          {
+            "type": "example",
+            "heading": "Example",
+            "content": "Dekho — imagine you meet someone from a different district in Chhattisgarh, maybe from Surguja, and you both talk about how much you love 'bore-basi' or how your families celebrate Hareli Tihar with 'gilli-danda' and 'phugdi'. Don't you feel a little connection, like you belong to the same family, the same state? Socho zara — what happens when this feeling expands to a whole country?",
+            "icon": "lightbulb"
+          },
+          {
+            "type": "misconception",
+            "heading": "Misconception",
+            "wrong": "Students often think that Nationalism simply means fighting wars or just wanting independence from a ruler.",
+            "correct": "Not at all, my dear! Nationalism is actually a deep feeling among a group of people that they share a common identity — maybe a common language, culture, history, or even economic life. It's the desire to live together under their own rules, as one collective unit, which *can* sometimes lead to independence movements or even wars, but it's fundamentally about that shared bond.",
+            "icon": "triangle-alert"
+          },
+          {
+            "type": "activity",
+            "heading": "Activity",
+            "content": "Ek kaam karo — ask your parents or grandparents to share their favourite local folk tale from Chhattisgarh, or a special song they remember from their childhood. See how discussing these shared cultural stories makes you all feel connected to your roots and to each other!",
+            "cta": "See interactive experiment in app →",
+            "icon": "flask-conical"
+          }
+        ]
+      }
+    },
+    {
+      "chapter_number": 2,
+      "blocks": {
+        "hi": [
+          {
+            "type": "example",
+            "heading": "उदाहरण",
+            "content": "Socho zara — tumhare gaon mein jo dhaan ki kheti karte hain na, unke liye 'azaadi' ka matlab kya ho sakta hai? Shayad fasal bechne ki azaadi, ya phir bore-basi aaram se khaane ki azaadi bina kisi chinta ke ki agle saal ka beej kaise aayega. Aur ek college jaane wale ladke ke liye — uske liye azaadi shayad apni baat kehne ki, ya phir apne sapne poore karne ki azaadi ho. Ek hi desh mein kitne alag alag sapne, kitni alag alag azaadi!",
+            "icon": "lightbulb"
+          },
+          {
+            "type": "misconception",
+            "heading": "गलतफहमी",
+            "wrong": "Bahut se bachche sochte hain ki Bharat mein rashtravad sirf Mahatma Gandhi ya Bhagat Singh jaise bade netaon aur Dandi March jaise mahatvapurna ghatnaon ke baare mein hi tha. Ve mante hain ki aam log bas unka pichha karte the.",
+            "correct": "Lekin asal mein — rashtravad ek bahut bada, grassroots (जमीनी स्तर का) aandolan tha! Chhattisgarh ke kisi gaon ke kisan se jo zyada lagan ke khilaaf lad raha tha, ya Bastar ke jungle mein apne jal-jangal-zameen ki raksha karne wale adivasiyon se, ya fir aandolanon mein hissa lene wali mahilaon se — har aam aadmi ne rashtra ke nirman mein yogdan diya. Unke sthaniya sangharsh, bhale hi kabhi-kabhi rashtriya netritva ke lakshyon se alag the, phir bhi ve 'rashtravad' ka hi hissa the.",
+            "icon": "triangle-alert"
+          },
+          {
+            "type": "activity",
+            "heading": "गतिविधि",
+            "content": "Ek kaam karo — apne dada-dadi ya nana-nani se poochho ki jab woh tumhari umar ke the, tab unhone apne gaon mein — jaise Indravati nadi ke kinare ya Bastar ke jungle mein — koi chhota-mota virodh ya aandolan dekha tha kya? Ya phir unse poocho ki unke liye aaj 'desh' aur 'azaadi' ka kya matlab hai. Dekhna, har umar aur har jagah ke logon ke desh ke prati alag-alag bhav hote hain.",
+            "cta": "ऐप में interactive experiment देखो →",
+            "icon": "flask-conical"
+          }
+        ],
+        "en": [
+          {
+            "type": "example",
+            "heading": "Example",
+            "content": "Socho zara — the farmers in your village who cultivate 'dhaan' (paddy), what might 'freedom' mean for them? Perhaps it's the freedom to sell their crops at a fair price, or the freedom to eat 'bore-basi' peacefully without worrying about how next year's seeds will come. And for a college-going student — for them, freedom might be the freedom to express their thoughts, or to fulfill their dreams. In one country, so many different dreams, so many different freedoms!",
+            "icon": "lightbulb"
+          },
+          {
+            "type": "misconception",
+            "heading": "Misconception",
+            "wrong": "Many students think that nationalism in India was only about a few big leaders like Mahatma Gandhi or Bhagat Singh, and major events like the Dandi March. They believe ordinary people just followed their lead.",
+            "correct": "But actually — nationalism was a huge, grassroots movement! From a farmer in a Chhattisgarh village fighting against high taxes, to tribal people in Bastar protecting their 'jal-jangal-zameen' (water, forest, land), to women participating in protests — every common person contributed to the feeling of nationhood. Their local struggles, though sometimes different from the national leadership's goals, were also a part of 'nationalism'.",
+            "icon": "triangle-alert"
+          },
+          {
+            "type": "activity",
+            "heading": "Activity",
+            "content": "Ek kaam karo — ask your grandparents what kind of small protest or movement they saw in their village — like near the Indravati river or in the Bastar jungles — when they were your age. Or ask them what 'country' and 'freedom' mean to them today. You'll see, people of every age and from every place have different feelings towards their nation.",
+            "cta": "See interactive experiment in app →",
+            "icon": "flask-conical"
+          }
+        ]
+      }
+    }
+  ]
+}

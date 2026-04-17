@@ -1,0 +1,105 @@
+{
+  "board": "cg",
+  "class": 6,
+  "subject": "mathematics",
+  "samples": [
+    {
+      "chapter_number": 1,
+      "blocks": {
+        "hi": [
+          {
+            "type": "example",
+            "heading": "उदाहरण",
+            "content": "Dekho — jab tumhare gaon mein dhaan ki kheti hoti hai, toh kisaan kitne saare katte (sacks) jama karte hain na? — Socho zara, agar ek kisaan ke paas 5345 katte hain aur doosre ke paas 4987 katte hain — toh kaun zyada dhaan ugate hai? — Tum kaise pata karoge ki kisne zyada mehnat ki hai aur kiski fasal zyada hui?",
+            "icon": "lightbulb"
+          },
+          {
+            "type": "misconception",
+            "heading": "गलतफहमी",
+            "wrong": "Bahut baar tum sochte ho ki agar kisi sankhya mein 'bade' digit (jaise 9) hain, toh woh hamesha 'chote' digit wale number se bada hoga, bhale hi digits kam hon — jaise, tum soch sakte ho ki 999, 1000 se bada hai.",
+            "correct": "Lekin asliyat mein, humen sabse pehle digits ki sankhya dekhni hoti hai — 1000 mein 4 digits hain aur 999 mein 3 — isliye 1000 hamesha 999 se bada hoga, kyunki uske paas 'hazaar' (thousands) ki jagah par bhi ek digit hai. Jagah (place value) bahut zaruri hai!",
+            "icon": "triangle-alert"
+          },
+          {
+            "type": "activity",
+            "heading": "गतिविधि",
+            "content": "Ek kaam karo — apne ghar mein kuchh alag-alag rang ki bindiyan ya chote patthar jama karo (jaise 3, 5, 8). Ab inn digits ka istemal karke alag-alag sankhyaayein banao — jaise 358, 853, 538. Dekho, tum sabse badi aur sabse chhoti sankhya kaun si bana sakte ho, aur inhein kaise compare karoge!",
+            "cta": "ऐप में interactive experiment देखो →",
+            "icon": "flask-conical"
+          }
+        ],
+        "en": [
+          {
+            "type": "example",
+            "heading": "Example",
+            "content": "You know how in Chhattisgarh, especially near the Indravati river, there are so many buffaloes (bhains) in the villages? — Imagine if you went to two different villages. In one village, there are 2,456 buffaloes, and in another, there are 1,987. — How would you figure out which village has more buffaloes? — What makes one number bigger than the other, just by looking at the digits?",
+            "icon": "lightbulb"
+          },
+          {
+            "type": "misconception",
+            "heading": "Misconception",
+            "wrong": "Often, students think that if a number has a 'big' digit in it, like 9, it automatically makes the whole number bigger. For example, some might think that 59 is bigger than 100 because 9 is the biggest digit.",
+            "correct": "But actually, the *place* of the digit is very important. In 100, even though it has a '0' in the tens and ones place, the '1' is in the hundreds place, giving it a much larger value than any two-digit number, like 59. So, 100 is always bigger than 59 because of its place value!",
+            "icon": "triangle-alert"
+          },
+          {
+            "type": "activity",
+            "heading": "Activity",
+            "content": "One thing you can do — collect a few small, distinct stones or beads from your house, maybe like the ones you find near the Bastar jungles. Let each stone represent a digit, say, one stone for '2', another for '5', and a third for '7'. Now, try to arrange them to form different numbers, like 257, 752, or 527. Can you tell which number is the biggest and which is the smallest just by looking at how you arranged them? How does the position change the value?",
+            "cta": "See interactive experiment in app →",
+            "icon": "flask-conical"
+          }
+        ]
+      }
+    },
+    {
+      "chapter_number": 2,
+      "blocks": {
+        "hi": [
+          {
+            "type": "example",
+            "heading": "उदाहरण",
+            "content": "Dekho — tum jab apni mummy ke saath haat bajaar jaate ho — aur sabziyaan ya dhaan ke bore ginte ho — toh ginti kahan se shuru karte ho? 1 se hi na? Par socho — agar kisi tokri mein kuch bhi na ho — ek bhi aam na ho — toh use kaise bataoge? Us 'kuch bhi nahi' ko hi hum 0 (शून्य) से darshate hain, beta.",
+            "icon": "lightbulb"
+          },
+          {
+            "type": "misconception",
+            "heading": "गलतफहमी",
+            "wrong": "बच्चे सोचते हैं कि सबसे छोटी पूर्ण संख्या (Whole Number) 1 होती है।",
+            "correct": "नहीं, beta, सबसे छोटी पूर्ण संख्या 0 (शून्य) होती है। Prakritik sankhyaen (Natural Numbers) 1 से शुरू होती हैं, पर पूर्ण संख्याएँ (Whole Numbers) 0 से शुरू होती हैं और इनमें 0 भी शामिल होता है।",
+            "icon": "triangle-alert"
+          },
+          {
+            "type": "activity",
+            "heading": "गतिविधि",
+            "content": "Ek kaam karo — apne ghar mein chawal ke daane ya chhote patthar ikatthe karo. Ab unko ek lambi line mein rakhte jao aur har daane ko ek sankhya do, jaise 0, 1, 2, 3... Socho zara — tum 5 number wale daane se ek daana hataoge toh kaun si sankhya banegi? Aur agar ek daana aur jodoge toh kya hoga?",
+            "cta": "ऐप में interactive experiment देखो →",
+            "icon": "flask-conical"
+          }
+        ],
+        "en": [
+          {
+            "type": "example",
+            "heading": "Example",
+            "content": "Dekho — when you go to the local haat bajaar with your mummy — and you start counting vegetables or bags of dhaan — where do you usually begin counting from? From 1, right? But imagine — if there's nothing at all in a basket — not a single mango — how would you describe that? That 'nothing at all' is what we represent with 0 (zero), beta.",
+            "icon": "lightbulb"
+          },
+          {
+            "type": "misconception",
+            "heading": "Misconception",
+            "wrong": "Students often believe that the smallest Whole Number is 1.",
+            "correct": "No, beta, the smallest Whole Number is 0 (zero). Natural Numbers start from 1, but Whole Numbers include 0, so they start from 0.",
+            "icon": "triangle-alert"
+          },
+          {
+            "type": "activity",
+            "heading": "Activity",
+            "content": "Ek kaam karo — collect some rice grains or small pebbles from your home. Now, arrange them in a long line and assign a number to each, like 0, 1, 2, 3... Socho zara — if you remove one pebble from the one representing number 5, what number will you get? And what if you add one more?",
+            "cta": "See interactive experiment in app →",
+            "icon": "flask-conical"
+          }
+        ]
+      }
+    }
+  ]
+}

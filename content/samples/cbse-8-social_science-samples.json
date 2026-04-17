@@ -1,0 +1,105 @@
+{
+  "board": "cbse",
+  "class": 8,
+  "subject": "social_science",
+  "samples": [
+    {
+      "chapter_number": 1,
+      "blocks": {
+        "hi": [
+          {
+            "type": "example",
+            "heading": "उदाहरण",
+            "content": "Dekho — tumhari family mein shaadi kab hui, tumhara birthday kab hai, ya Holi, Diwali kab aati hai — ye sab dates hum yaad rakhte hain na? Waise hi, history mein bhi dates hamein batati hain ki kaun si ghatna kab hui, jisse hum poori kahani ko theek se samajh paate hain. Socho zara, agar humein pata hi na chale ki Gandhiji ne Dandi March kab kiya tha, toh hum uski importance ko kaise samjhenge?",
+            "icon": "lightbulb"
+          },
+          {
+            "type": "misconception",
+            "heading": "गलतफहमी",
+            "wrong": "Bahut students ko lagta hai ki history matlab bas saal (dates) aur bade-bade naam yaad karna, jaise ek lambi list ratni hai.",
+            "correct": "Lekin asal mein, history sirf dates yaad karna nahi hai. History toh ye samjhna hai ki koi cheez *kaise* badli, *kyun* badli, aur uska *kya asar* hua samay ke saath. Yeh ek kahaani hai badlaav ki. Agar tumhe bas dates yaad ho aur ye na pata ho ki us date par kya hua aur uska kya impact hua, toh kya tum use history kahoge?",
+            "icon": "triangle-alert"
+          },
+          {
+            "type": "activity",
+            "heading": "गतिविधि",
+            "content": "Ek kaam karo — apne ghar mein koi puraana family album ya koi old certificate dhundo, jaise tumhare grandparents ki marriage certificate ya koi property papers. Unhe dekho aur socho ki yeh documents tumhe tumhare parivaar ke past ke baare mein kya batate hain, aur kis tarah yeh 'history' ban jaate hain.",
+            "cta": "ऐप में interactive experiment देखो →",
+            "icon": "flask-conical"
+          }
+        ],
+        "en": [
+          {
+            "type": "example",
+            "heading": "Example",
+            "content": "Hey! Just like you know when Diwali is, or when your birthday comes every year — those dates are important to celebrate and remember, right? In history too, dates are like signposts telling us 'when' things happened, which helps us understand the 'how' and 'why' better. Socho, if we didn't know *when* India got independence, would we truly grasp the significance of that event?",
+            "icon": "lightbulb"
+          },
+          {
+            "type": "misconception",
+            "heading": "Misconception",
+            "wrong": "Many students think History is just about rote-learning boring dates and names, like a huge list you have to memorize.",
+            "correct": "But really, History is like a big story, trying to understand *how* things changed, *why* they changed, and what impact those changes had over a period of time. It's about understanding the process, not just the points. If you just knew the dates of a war but not *why* it happened or *who* was affected, would you really know its history?",
+            "icon": "triangle-alert"
+          },
+          {
+            "type": "activity",
+            "heading": "Activity",
+            "content": "Ek kaam karo — find an old newspaper from a few years ago, or maybe even an old electricity bill or a ration card at home. Look at what information it contains, and think about how these everyday documents become important sources for understanding our past!",
+            "cta": "See interactive experiment in app →",
+            "icon": "flask-conical"
+          }
+        ]
+      }
+    },
+    {
+      "chapter_number": 2,
+      "blocks": {
+        "hi": [
+          {
+            "type": "example",
+            "heading": "उदाहरण",
+            "content": "Dekho — tumhare mohalle mein ek choti si dukaan hoti hai na, jo pehle bas kuch cheezein bechti hai. Phir dheere-dheere woh aas-pados ki aur choti dukaanon ko kharid leti hai, ya itni badi ho jaati hai ki sabko ussi se lena padta hai. Socho zara — kaise ek bas 'saamaan bechne waali' dukaan, poore area par control kar leti hai, bilkul East India Company ki tarah!",
+            "icon": "lightbulb"
+          },
+          {
+            "type": "misconception",
+            "heading": "गलतफहमी",
+            "wrong": "Bahut students ko lagta hai ki jab Britishers India aaye the, unka ek hi maksad tha — bas yahan aake ladai karke sab kuch kabza kar lena.",
+            "correct": "Lekin asal mein, unka pehla irada sirf trade karna tha, masalon aur kapde jaisi cheezein kharidna. Political control to unhone dheere-dheere, mauka dekh kar, aur yahan ke rajaon ki kamzoriyon ka faayda utha kar hasil kiya. Kaise ek vyapaari company poore desh ki hukoomat ban gayi, yeh sach mein sochne wali baat hai, hai na?",
+            "icon": "triangle-alert"
+          },
+          {
+            "type": "activity",
+            "heading": "गतिविधि",
+            "content": "Ek kaam karo — apne drawing paper par India ka rough map banao. Ab ek chota sa bindu (dot) banao jo unka pehla trading post dikhaye, aur phir dheere-dheere us bindu ko bade circles mein badhate jao jaise-jaise unhone territory kabza ki.",
+            "cta": "ऐप में interactive experiment देखो →",
+            "icon": "flask-conical"
+          }
+        ],
+        "en": [
+          {
+            "type": "example",
+            "heading": "Example",
+            "content": "Dekho — imagine tumhare school mein ek naya canteen khulta hai. Pehle toh woh bas snacks aur juice bechta hai, right? Phir dheere-dheere, woh itna popular ho jaata hai ki woh school ke saare events ki catering bhi karne lagta hai, aur shayad future mein school uniform tak bechne lagta hai. Socho zara — kaise ek simple 'trading' canteen ne school ke kitne saare areas par control kar liya, bilkul jaise East India Company ne kiya tha?",
+            "icon": "lightbulb"
+          },
+          {
+            "type": "misconception",
+            "heading": "Misconception",
+            "wrong": "A lot of students think that when the British first came to India, their only aim was to fight battles and conquer everything from day one.",
+            "correct": "But actually, their initial motive was purely trade — to buy spices, textiles, and other goods. Political control was something they gradually gained, taking advantage of local rivalries and the weaknesses of Indian rulers over a long period. Isn't it fascinating how a company focused on commerce ended up ruling an entire subcontinent?",
+            "icon": "triangle-alert"
+          },
+          {
+            "type": "activity",
+            "heading": "Activity",
+            "content": "Ek kaam karo — on a piece of paper, draw a simple outline map of India. Now, mark a small dot representing an initial trading post, like Surat or Bengal, and then draw expanding circles around it to show how their influence and territories grew over time.",
+            "cta": "See interactive experiment in app →",
+            "icon": "flask-conical"
+          }
+        ]
+      }
+    }
+  ]
+}

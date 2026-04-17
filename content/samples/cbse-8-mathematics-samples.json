@@ -1,0 +1,105 @@
+{
+  "board": "cbse",
+  "class": 8,
+  "subject": "mathematics",
+  "samples": [
+    {
+      "chapter_number": 1,
+      "blocks": {
+        "hi": [
+          {
+            "type": "example",
+            "heading": "उदाहरण",
+            "content": "Dekho — jab tum apni mummy ke saath kitchen mein rasoi banati ho, toh kabhi socha hai, 'aaj aadha cup doodh daalna hai, aur 1/4th cup cheeni?' Ya phir, jab hum pizza share karte hain, 'maine 2/8th khaaya, tumne 3/8th'. Yeh jo numbers hain na, aadha, 1/4th, 2/8th — yeh sabhi Rational Numbers hain. Socho zara — tumhare ghar mein aur kahan-kahan tum aise numbers dekhti ho?",
+            "icon": "lightbulb"
+          },
+          {
+            "type": "misconception",
+            "heading": "गलतफहमी",
+            "wrong": "Zero (0) ek Rational Number nahin hai.",
+            "correct": "Galat! Zero (0) bilkul ek Rational Number hai. Kyunki hum ise 0/1, 0/2 ya 0/kisi bhi non-zero integer (non-zero पूर्णांक) ke roop mein likh sakte hain. Bas yaad rakho, denominator (हर) zero nahin hona chahiye!",
+            "icon": "triangle-alert"
+          },
+          {
+            "type": "activity",
+            "heading": "गतिविधि",
+            "content": "Ek kaam karo — apne bhai-behan ya dost ke saath ek game khelo. Ek number line banao. Ab do alag-alag Rational Numbers lo, jaise 1/2 aur 3/4. Dekho, tum unke beech mein kitne aur Rational Numbers dhoondh sakti ho!",
+            "cta": "ऐप में interactive experiment देखो →",
+            "icon": "flask-conical"
+          }
+        ],
+        "en": [
+          {
+            "type": "example",
+            "heading": "Example",
+            "content": "Hey, remember when you help your mom in the kitchen and she says, 'Add half a cup of milk' or 'one-fourth spoon of turmeric'? Or when you divide a barfi into equal pieces for your family, like one-third for each? These numbers — half, one-fourth, one-third — these are all Rational Numbers! So, think about it — where else do you use such numbers in your daily life at home?",
+            "icon": "lightbulb"
+          },
+          {
+            "type": "misconception",
+            "heading": "Misconception",
+            "wrong": "Zero (0) is not a Rational Number.",
+            "correct": "Wrong! Zero (0) is absolutely a Rational Number. Because you can write it as 0/1, 0/2, or 0/any non-zero integer. Just remember, the denominator should never be zero!",
+            "icon": "triangle-alert"
+          },
+          {
+            "type": "activity",
+            "heading": "Activity",
+            "content": "Here's a fun little game you can play with your sibling or friend. Draw a number line. Now, pick any two different Rational Numbers, like 1/3 and 2/3. See how many more Rational Numbers you can find between them!",
+            "cta": "See interactive experiment in app →",
+            "icon": "flask-conical"
+          }
+        ]
+      }
+    },
+    {
+      "chapter_number": 2,
+      "blocks": {
+        "hi": [
+          {
+            "type": "example",
+            "heading": "उदाहरण",
+            "content": "Dekho — socho zara, tumhari mummy ne tumhe kuch paise diye dukaan se sabzi laane ke liye. Tumne ₹50 के आलू ख़रीदे और अब तुम्हारे पास ₹20 बचे हैं। तो बताओ, तुम्हारी mummy ने तुम्हें शुरुआत में कितने पैसे दिए थे?— Yahaan par, jo 'kitne paise' hain na — wahi toh humara 'variable' hai, ek anjaan value. Aur jab hum is situation ko aise likhte hain: 'x - 50 = 20', toh yeh ek Linear Equation in One Variable ban jaati hai. Socho zara — kya tum aise hi aur situations soch sakte ho jahan tumhe koi unknown value dhundni padti hai?",
+            "icon": "lightbulb"
+          },
+          {
+            "type": "misconception",
+            "heading": "गलतफहमी",
+            "wrong": "Students अक्सर सोचते हैं कि variable जैसे 'x' या 'y' बस कोई alphabet होते हैं, इनकी कोई असली number value नहीं होती.",
+            "correct": "Nahi re! Variable ek unknown quantity को represent करता है, जिसे हम समीकरण (equation) को हल करके ढूँढते हैं. यह उस सवाल में एक खास number होता है! और हाँ, जब भी तुम किसी term को समीकरण के एक side से दूसरे side ले जाते हो, उसका sign हमेशा बदलना पड़ता है – plus का minus, minus का plus. Bilkul ek tarazu ki tarah, jise har haal mein balance rakhna hota hai!",
+            "icon": "triangle-alert"
+          },
+          {
+            "type": "activity",
+            "heading": "गतिविधि",
+            "content": "Ek kaam karo — ghar mein ek kapde tangne wala hanger lo. Uski dono taraf do choti-choti baaltiyaan ya dibbiyaan latkao. Ab ek taraf kuch sikke aur ek patthar rakho, aur doosri taraf sirf utne hi sikke rakho jisse woh balance ho jaaye. Kya tumne dekha kaise humne 'patthar' ki value nikal li, sirf cheezon ko balance karke? Yahi toh magic hai equations ka!",
+            "cta": "ऐप में interactive experiment देखो →",
+            "icon": "flask-conical"
+          }
+        ],
+        "en": [
+          {
+            "type": "example",
+            "heading": "Example",
+            "content": "Dekho — imagine your mom gave you some money to buy vegetables from the market. You bought potatoes worth ₹50, and now you have ₹20 left. So, how much money did your mom give you initially?— Here, that 'how much money' is our 'variable', an unknown value we need to find. And when we write this situation as 'x - 50 = 20', it becomes a Linear Equation in One Variable. Socho zara — can you think of more situations in your daily life where you need to find an 'unknown' value?",
+            "icon": "lightbulb"
+          },
+          {
+            "type": "misconception",
+            "heading": "Misconception",
+            "wrong": "Students often think variables like 'x' or 'y' are just random letters and don't represent any real number or quantity.",
+            "correct": "Arey nahi re! A variable is actually a placeholder for a specific unknown value that we need to find in that particular problem. And yes, whenever you move a term across the equals sign, its operation *must* change — a plus becomes a minus, and a minus becomes a plus. Think of it like a balanced scale; any change on one side needs a specific adjustment on the other to stay balanced!",
+            "icon": "triangle-alert"
+          },
+          {
+            "type": "activity",
+            "heading": "Activity",
+            "content": "Ek kaam karo — grab a clothes hanger from home. Hang two small buckets or containers on either side. Now, put some coins and a small stone in one bucket, and just enough coins in the other to make the hanger perfectly level. Socho zara — what did you learn about 'balancing' an equation from this activity? How did you figure out the 'value' of the stone?",
+            "cta": "See interactive experiment in app →",
+            "icon": "flask-conical"
+          }
+        ]
+      }
+    }
+  ]
+}

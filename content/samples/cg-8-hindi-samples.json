@@ -1,0 +1,105 @@
+{
+  "board": "cg",
+  "class": 8,
+  "subject": "hindi",
+  "samples": [
+    {
+      "chapter_number": 1,
+      "blocks": {
+        "hi": [
+          {
+            "type": "example",
+            "heading": "उदाहरण",
+            "content": "Dekho beta — जब तुम अपने घर के पास किसी शादी या मेले में ढोल बजते सुनते हो, तो सिर्फ उसकी आवाज़ ही नहीं आती — अगर तुम ढोल के पास खड़े हो तो अपने सीने में हल्की 'धुक-धुक' भी महसूस करते हो, है ना? सोचो ज़रा — ये 'धुक-धुक' क्या है और इसका आवाज़ से क्या कनेक्शन है?",
+            "icon": "lightbulb"
+          },
+          {
+            "type": "misconception",
+            "heading": "गलतफहमी",
+            "wrong": "अरे यार, आवाज़ तो बस हवा में ही चलती है, पानी या दीवार के आर-पार थोड़ी न जाती है!",
+            "correct": "नहीं रे, ऐसा नहीं है। आवाज़ को चलने के लिए माध्यम (medium) की ज़रूरत ज़रूर होती है, लेकिन वो माध्यम ठोस (solid), तरल (liquid) या गैस (gas) — कुछ भी हो सकता है। जैसे, बस्तर के जंगलों में पेड़ों की लकड़ी में भी आवाज़ जाती है और इंद्रावती नदी के पानी में भी, तभी तो मछलियाँ पानी के अंदर एक-दूसरे की आवाज़ सुन पाती हैं! समझे?",
+            "icon": "triangle-alert"
+          },
+          {
+            "type": "activity",
+            "heading": "गतिविधि",
+            "content": "एक काम करो — अपने घर में दो खाली माचिस की डिब्बियाँ और एक लंबा धागा ले लो। धागे के दोनों सिरों को डिब्बियों के बीच से छेद करके बांध दो, और फिर एक दोस्त के साथ बातें करके देखो। तुम्हें क्या महसूस हुआ — क्या धागे के बिना भी उतनी ही अच्छे से बात हो पाती?",
+            "cta": "ऐप में interactive experiment देखो →",
+            "icon": "flask-conical"
+          }
+        ],
+        "en": [
+          {
+            "type": "example",
+            "heading": "Example",
+            "content": "Hey didi/bhaiya — when you hear the festive dhol beats during a 'Bastar Dussehra' or a local mela, you don't just hear the sound, right? If you stand close enough, you can actually feel a slight 'thump-thump' in your chest! Socho zara — what do you think that 'thump-thump' is, and how is it related to the sound you hear?",
+            "icon": "lightbulb"
+          },
+          {
+            "type": "misconception",
+            "heading": "Misconception",
+            "wrong": "Some students think that sound only travels through air, and can't go through things like water or walls!",
+            "correct": "But that's not true, didi! Sound definitely needs a medium to travel, but that medium can be a solid, a liquid, or a gas! Think about it — sound travels through the ground when a herd of bhains (buffaloes) walks by, and even through the Indravati river's water, which is how fish communicate! Clear?",
+            "icon": "triangle-alert"
+          },
+          {
+            "type": "activity",
+            "heading": "Activity",
+            "content": "Ek kaam karo — take two empty matchboxes and a long string. Make a small hole in the bottom of each matchbox, thread the string through, and tie knots. Now, stand far apart with a friend and talk using your 'matchbox phone'. What did you observe — could you hear your friend more clearly than without the string?",
+            "cta": "See interactive experiment in app →",
+            "icon": "flask-conical"
+          }
+        ]
+      }
+    },
+    {
+      "chapter_number": 2,
+      "blocks": {
+        "hi": [
+          {
+            "type": "example",
+            "heading": "उदाहरण",
+            "content": "Dekho — tumhare gaon mein ya Bastar ke haat-bazaar mein kabhi dekha hai kya? Koi dada ya didi jo baans ki tokriyan ya mitti ke diye banate hain, unka kaam ab pehle jaisa nahi raha. Kyunki ab plastic ki cheezein zyada chalti hain. 'Laakh ki Chudiyan' kahani bhi humein yahi batati hai — kaise nayi machine-made cheezon ke aane se purane dastkar aur unki khoobsurat kala mushkil mein aa jati hai.",
+            "icon": "lightbulb"
+          },
+          {
+            "type": "misconception",
+            "heading": "गलतफहमी",
+            "wrong": "कुछ बच्चों को लगता है कि बदलू (कहानी का चूड़ी बनाने वाला) बस ज़िद्दी था और नयी चीज़ें अपनाना नहीं चाहता था।",
+            "correct": "Ek baat socho — बदलू सिर्फ पुरानी सोच का नहीं था, बल्कि उसे अपनी कला और अपनी लाख की चूड़ियों पर बहुत गर्व था। मशीनों ने उसकी बरसों की मेहनत, उसकी पहचान और उसकी पूरी रोज़ी-रोटी छीन ली थी, इसलिए उसे मशीनी चूड़ियों से इतना दुख और शिकायत थी। यह उसकी कला और उसके अस्तित्व की लड़ाई थी।",
+            "icon": "triangle-alert"
+          },
+          {
+            "type": "activity",
+            "heading": "गतिविधि",
+            "content": "Ek kaam karo — apne ghar mein ya aas-paas ki dukaan mein dekho. Koi ek cheez chuno jo haath se bani ho (jaise koi mitti ka bartan ya baans ka khilona) aur ek waisi hi cheez chuno jo machine se bani ho (jaise plastic ka bartan ya khilona). Tumhe unki finish, unke material, aur unko banane mein lagi mehnat mein kya fark dikhta hai? Socho, in dono mein se kaun zyada samay tak chalega aur kis mein zyada kalakaari hai?",
+            "cta": "ऐप में interactive experiment देखो →",
+            "icon": "flask-conical"
+          }
+        ],
+        "en": [
+          {
+            "type": "example",
+            "heading": "Example",
+            "content": "Socho zara — have you ever seen someone in your village, or maybe at a haat-bazaar in Bastar? Someone like an elder brother or sister who makes beautiful bamboo baskets or clay diyas? Their work might not be as busy as it used to be. Because now, plastic items are more common. The story 'Lac Bangles' tells us something similar — how with the arrival of new machine-made things, old artisans and their beautiful craft face difficulties.",
+            "icon": "lightbulb"
+          },
+          {
+            "type": "misconception",
+            "heading": "Misconception",
+            "wrong": "Some students might think that Badlu (the bangle maker in the story) was just stubborn and didn't want to accept new things.",
+            "correct": "No, didi — Badlu wasn't just old-fashioned. He was incredibly proud of his craft and his beautiful lac bangles. Machines took away his years of hard work, his identity, and his entire livelihood. That's why he felt so sad and resentful towards machine-made bangles. It was a fight for his art and his existence.",
+            "icon": "triangle-alert"
+          },
+          {
+            "type": "activity",
+            "heading": "Activity",
+            "content": "Socho zara — look around your home or in a nearby shop. Choose one item that looks handmade (like a clay pot or a small bamboo craft from Bastar) and another similar item that is machine-made (like a plastic pot or toy). What differences do you notice in their finish, their feel, and the effort put into making them? Which one do you think will last longer, and which one shows more artistry?",
+            "cta": "See interactive experiment in app →",
+            "icon": "flask-conical"
+          }
+        ]
+      }
+    }
+  ]
+}

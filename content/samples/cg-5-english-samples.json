@@ -1,0 +1,105 @@
+{
+  "board": "cg",
+  "class": 5,
+  "subject": "english",
+  "samples": [
+    {
+      "chapter_number": 1,
+      "blocks": {
+        "hi": [
+          {
+            "type": "example",
+            "heading": "उदाहरण",
+            "content": "Dekho — tumko yaad hai, jab garmi mein school ki chutti hoti hai aur bahar khelte-khelte achanak— ghanti ki awaaz aati hai, 'ting-a-ling'? — Vo thele wale bhaiya jo aam ya kulfi bechne aate hain, unko dekhkar kitni khushi hoti hai na? — Bilkul waise hi, ice cream man ko dekhkar bhi bacche bahut khush ho jaate hain! — Tumko kaunsi cheez dekhkar itni hi khushi milti hai?",
+            "icon": "lightbulb"
+          },
+          {
+            "type": "misconception",
+            "heading": "गलतफहमी",
+            "wrong": "Bahut bacche sochte hain ki ice cream man sirf garmi mein din ke time bahut dhoop hoti hai tabhi aate hain.",
+            "correct": "Lekin asal mein, ice cream man sham ko bhi aate hain aur kabhi-kabhi thodi thandi mein bhi, jab logon ko meetha aur thanda khane ka mann karta hai. Vo sirf garmi ka intezaar nahi karte, tumhare liye har season mein thoda-bahut mil jaate hain.",
+            "icon": "triangle-alert"
+          },
+          {
+            "type": "activity",
+            "heading": "गतिविधि",
+            "content": "Ek kaam karo — ek chammach shakkar, thoda doodh, aur ek chhota sa phal ka tukda ek choti si katori mein milao. Phir us katori ko ek bade bartan mein rakho jismein barf aur namak ho, aur halke haathon se ghumate raho. — Dekhna, thodi der mein tumhari choti si 'ice cream' jaisi cheez ban jayegi! — Isse tum samjhogi ki cheezein kaise thandi ho kar jamti hain.",
+            "cta": "ऐप में interactive experiment देखो →",
+            "icon": "flask-conical"
+          }
+        ],
+        "en": [
+          {
+            "type": "example",
+            "heading": "Example",
+            "content": "Do you remember — when it's super hot after playing outside, maybe near the Bastar jungles, and suddenly you hear that familiar 'ding-a-ling' sound? — That's like our local fruit or ganna ras (sugarcane juice) bhaiya coming! — Seeing them makes you so happy, right? — It’s exactly like that with the Ice Cream Man in the poem! — What makes you feel that excited?",
+            "icon": "lightbulb"
+          },
+          {
+            "type": "misconception",
+            "heading": "Misconception",
+            "wrong": "Many students think that ice cream is only available in big shops or cities, and not in smaller towns or villages.",
+            "correct": "But actually, our ice cream man, just like the poem describes, brings his cart to many places, even smaller lanes and villages in Chhattisgarh, making sure everyone can enjoy a cold treat! — It’s not just for big shops.",
+            "icon": "triangle-alert"
+          },
+          {
+            "type": "activity",
+            "heading": "Activity",
+            "content": "Try this — take a small bowl and mix a spoonful of sugar, a little milk, and a tiny piece of fruit. — Now, place this small bowl inside a bigger bowl filled with ice and some salt, and gently stir your mixture. — You’ll see, after some time, your little 'ice cream' will start to get firm! — This shows you how things get cold and freeze.",
+            "cta": "See interactive experiment in app →",
+            "icon": "flask-conical"
+          }
+        ]
+      }
+    },
+    {
+      "chapter_number": 2,
+      "blocks": {
+        "hi": [
+          {
+            "type": "example",
+            "heading": "उदाहरण",
+            "content": "Tumhare ghar mein — jab mummy dhaan ki kheti ke baad — bore-basi banati hain, to kitna saara paani ya sabzi ke chilke nikalte hain, hai na? Aksar hum unhe kachre mein fenk dete hain. Par socho zara, agar un sabzi ke chilkon ko hum apne ped-paudhon mein daal dein, to wo unke liye khad ban jayega aur ped aur acche ho jayenge! Dekha — jo cheez kachra lag rahi thi, wo kitni kaam ki nikli! Aisa aur kya hai tumhare aas-paas, jise tum bekar samajhte ho, par wo asal mein bahut useful ho sakta hai?",
+            "icon": "lightbulb"
+          },
+          {
+            "type": "misconception",
+            "heading": "गलतफहमी",
+            "wrong": "Bohot se bachche sochte hain ki jo cheez ek baar kachra ban gayi, wo hamesha bekar hi rehti hai, uska koi fayda nahi.",
+            "correct": "Asal mein, kachra aksar 'wonderful waste' hota hai! Agar hum thoda dimag lagayein, to bekar cheezon ko bhi nayi aur bahut acchi cheezon mein badal sakte hain, jaise Maharaja ne sabzi ke chilkon se Avial banaya tha.",
+            "icon": "triangle-alert"
+          },
+          {
+            "type": "activity",
+            "heading": "गतिविधि",
+            "content": "Ek kaam karo — agle do din tak, apne ghar mein sabzi ya phal ke chilke (jaise kela, aalu, pyaaz ke chilke) ek alag dibbe mein jama karo. Phir unhe apne ghar ke gamlon ya bagiche ki mitti mein mila do. Dekhna, kuch dinon mein wo kaise mitti mein ghul-mil jayenge aur paudhon ko taakat denge!",
+            "cta": "ऐप में interactive experiment देखो →",
+            "icon": "flask-conical"
+          }
+        ],
+        "en": [
+          {
+            "type": "example",
+            "heading": "Example",
+            "content": "Hey didi, remember how after the rice harvest here in Chhattisgarh, we get a lot of rice husk (dhaan ki bhusi)? Most people might think it's just waste. But guess what? Farmers often use it to make fuel, or even mix it with cow dung (gobar) to make a really good natural fertilizer for their fields! So something that looked like waste, actually becomes super useful! Can you think of any other 'waste' material around your home or farm that people actually use in a smart way?",
+            "icon": "lightbulb"
+          },
+          {
+            "type": "misconception",
+            "heading": "Misconception",
+            "wrong": "Many students think that once something is considered 'waste', it's always useless and should just be thrown away.",
+            "correct": "Actually, 'waste' can be wonderful! With a little creativity and smart thinking, we can transform things that seem like trash into something new and very useful, just like the Maharaja in our story turned vegetable scraps into a delicious Avial.",
+            "icon": "triangle-alert"
+          },
+          {
+            "type": "activity",
+            "heading": "Activity",
+            "content": "Here's a fun thing to do — take an empty plastic water bottle or an old newspaper. Instead of throwing it away, try to think of one new useful thing you can make from it. Maybe a pen stand from the bottle, or a small paper bag from the newspaper? Let your imagination run wild!",
+            "cta": "See interactive experiment in app →",
+            "icon": "flask-conical"
+          }
+        ]
+      }
+    }
+  ]
+}

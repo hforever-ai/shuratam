@@ -1,0 +1,105 @@
+{
+  "board": "cbse",
+  "class": 10,
+  "subject": "english",
+  "samples": [
+    {
+      "chapter_number": 1,
+      "blocks": {
+        "hi": [
+          {
+            "type": "example",
+            "heading": "उदाहरण",
+            "content": "तुम्हें याद है — कभी-कभी गाँव में बिजली नहीं आती और खेतों में पानी नहीं पहुँच पाता? या फिर — बहुत बारिश से फसल खराब हो जाती है? ऐसे में किसान कितनी उम्मीद से भगवान की तरफ देखते हैं कि कुछ तो रास्ता निकलेगा — ठीक वैसे ही जैसे लेंचो ने किया था। सोचो जरा — ऐसी कौन सी चीज है जिस पर तुम भी इतना ही विश्वास रखते हो, चाहे कितनी भी मुश्किल आ जाए?",
+            "icon": "lightbulb"
+          },
+          {
+            "type": "misconception",
+            "heading": "गलतफहमी",
+            "wrong": "कई बच्चों को लगता है कि पोस्टमास्टर ने लेंचो के पैसे पूरे नहीं भेजे, तो वो एक खराब इंसान था।",
+            "correct": "Dekho — असल में पोस्टमास्टर तो लेंचो की मदद करना चाहता था और उसने अपने दोस्तों और स्टाफ से पैसे इकट्ठा किए थे। उसने सिर्फ उतना ही भेजा जितना वो इकट्ठा कर पाया — ये तो उसकी अच्छाई थी, उसने लेंचो का विश्वास नहीं टूटने दिया। उसने एक तरह से 'मानवीय मदद' (human help) की। तुम्हें क्या लगता है — अगर पोस्टमास्टर पैसे नहीं भेजता, तो क्या लेंचो का भगवान पर से विश्वास उठ जाता?",
+            "icon": "triangle-alert"
+          },
+          {
+            "type": "activity",
+            "heading": "गतिविधि",
+            "content": "एक काम करो — अपनी आँखें बंद करो और अपने सबसे भरोसेमंद दोस्त या परिवार के सदस्य को कहो कि वो तुम्हें कमरे के एक कोने से दूसरे कोने तक ले जाए। तुम्हें उन पर पूरा भरोसा करना होगा। ये तुम्हें विश्वास की शक्ति समझाएगा। जब तुम आँखें बंद करके चल रहे थे, तब तुम्हें कैसा महसूस हो रहा था — क्या तुम्हें डर लग रहा था या पूरा विश्वास था?",
+            "cta": "ऐप में interactive experiment देखो →",
+            "icon": "flask-conical"
+          }
+        ],
+        "en": [
+          {
+            "type": "example",
+            "heading": "Example",
+            "content": "You know how sometimes — a student might be really struggling with a difficult subject, like Maths, and feel like giving up? But then they remember their parents' encouraging words or a teacher's advice, and they just keep trying, believing they *will* understand it eventually. That's a bit like Lencho's unwavering faith. Can you think of a time when you had such strong belief in something, even when things looked really bleak?",
+            "icon": "lightbulb"
+          },
+          {
+            "type": "misconception",
+            "heading": "Misconception",
+            "wrong": "A common misconception is that Lencho was silly for writing a letter to God, or that his faith was unrealistic.",
+            "correct": "Dekho — the story uses Lencho's extreme faith to highlight deeper themes. It's not about whether writing to God is practical, but about the profound power of belief and hope in the face of adversity. His faith gave him the strength to act and seek help, even if it was in an unusual way. Do you think having such strong faith, even in something seemingly impossible, can actually help people in real life?",
+            "icon": "triangle-alert"
+          },
+          {
+            "type": "activity",
+            "heading": "Activity",
+            "content": "Ek kaam karo — take a small, delicate object that you value, maybe a favourite pen or a small toy. Now, without looking, ask a family member to hide it somewhere in your room, and then tell you if you are 'warm' or 'cold' as you search for it. You have to trust their directions completely. This will give you a small sense of what it means to place your trust in someone unseen. How did it feel to rely completely on someone else's guidance to find your hidden object?",
+            "cta": "See interactive experiment in app →",
+            "icon": "flask-conical"
+          }
+        ]
+      }
+    },
+    {
+      "chapter_number": 2,
+      "blocks": {
+        "hi": [
+          {
+            "type": "example",
+            "heading": "उदाहरण",
+            "content": "Dekho — tumne kabhi socha hai, jaise India ko angrezon se azaadi mili thi? Kitne saalon tak hum ghulaam the, aur phir ek din tiranga lehraaya gaya! Nelson Mandela ki kahani bhi kuch aisi hi hai, bas unki ladai rang-bhed (apartheid) ke khilaaf thi. Socho zara — jab tum ekdum free mehsoos karte ho, uska matlab kya hota hai?",
+            "icon": "lightbulb"
+          },
+          {
+            "type": "misconception",
+            "heading": "गलतफहमी",
+            "wrong": "Bahut students ko lagta hai ki Nelson Mandela ne sirf apne desh ke kaale logon ke liye azaadi maangi thi, aur azaadi ka matlab bas jail se nikal jaana tha.",
+            "correct": "Lekin, asliyat mein — Nelson Mandela sabke liye azaadi chahte the, goro aur kaalo dono ke liye. Unke liye azaadi ka matlab tha har insaan ka sammaan aur apne haq se jeena, sirf physical freedom nahi.",
+            "icon": "triangle-alert"
+          },
+          {
+            "type": "activity",
+            "heading": "गतिविधि",
+            "content": "Ek kaam karo — apne ek haath ko sirf 5-10 minute ke liye baandh lo ya use bilkul mat hilaao. Phir socho, us chote se waqt mein bhi tumhe kaisa mehsoos hua jab tum apni marzi se kuch nahi kar pa rahe the?",
+            "cta": "ऐप में interactive experiment देखो →",
+            "icon": "flask-conical"
+          }
+        ],
+        "en": [
+          {
+            "type": "example",
+            "heading": "Example",
+            "content": "Dekho — have you ever thought about India's own journey to freedom from British rule? How many years we fought, and then finally, our flag was hoisted! Nelson Mandela's story is quite similar, only his fight was against apartheid, a system of racial discrimination. Socho zara — what does it truly mean to feel completely free?",
+            "icon": "lightbulb"
+          },
+          {
+            "type": "misconception",
+            "heading": "Misconception",
+            "wrong": "Many students think Nelson Mandela only fought for the freedom of Black people in his country, and that 'freedom' just meant getting out of jail.",
+            "correct": "But, actually — Nelson Mandela wanted freedom for everyone, both Black and White. For him, true freedom was about dignity and living with self-respect for every individual, not just physical liberation.",
+            "icon": "triangle-alert"
+          },
+          {
+            "type": "activity",
+            "heading": "Activity",
+            "content": "Ek kaam karo — try tying one of your hands for just 5-10 minutes, or simply decide not to move it at all. Then, think about how you felt in that short time, when you couldn't do what you wished with that hand?",
+            "cta": "See interactive experiment in app →",
+            "icon": "flask-conical"
+          }
+        ]
+      }
+    }
+  ]
+}

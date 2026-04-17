@@ -1,0 +1,105 @@
+{
+  "board": "cbse",
+  "class": 7,
+  "subject": "english",
+  "samples": [
+    {
+      "chapter_number": 1,
+      "blocks": {
+        "hi": [
+          {
+            "type": "example",
+            "heading": "उदाहरण",
+            "content": "Dekho — Mausam badal raha hai aur tumhare mummy tumhe bolti hain ki apna sweater pehen lo. Theek usi samay tumhara dost call karke puchta hai ki kal cricket khelne chaloge? Socho zara — us pal, tumhare liye sabse zaroori kaun tha aur kya karna tha?",
+            "icon": "lightbulb"
+          },
+          {
+            "type": "misconception",
+            "heading": "गलतफहमी",
+            "wrong": "बहुत से बच्चे सोचते हैं कि हमेशा future के बारे में सोचना और बड़ी-बड़ी plans बनाना ही सबसे ज़रूरी है, या सिर्फ important लोग ही मायने रखते हैं।",
+            "correct": "पर यह कहानी हमें सिखाती है कि सबसे ज़रूरी है 'अभी का समय' (present moment), वो लोग जो 'अभी तुम्हारे साथ हैं' (most important people right now), और 'अभी उनके लिए अच्छा करना' (most important thing to do).",
+            "icon": "triangle-alert"
+          },
+          {
+            "type": "activity",
+            "heading": "गतिविधि",
+            "content": "Ek kaam karo — अगले 10 मिनट के लिए, घर का कोई एक छोटा सा काम उठाओ – jaise apni study table saaf karna ya mummy ki sabzi kaatne mein help karna. Use poore dhyaan se karo, bina kisi aur cheez ke baare mein soche. Isse tumne kya samjha? Kya 'abhi' par focus karne se kaam aur achha hua?",
+            "cta": "ऐप में interactive experiment देखो →",
+            "icon": "flask-conical"
+          }
+        ],
+        "en": [
+          {
+            "type": "example",
+            "heading": "Example",
+            "content": "Dekho — Imagine you're coming home from school and you see an old street vendor near your house struggling to hold onto their umbrella in a sudden downpour. At the exact same time, your friend messages you asking to plan for a movie next week. So, at that exact moment — who was the most important person and what was the most important thing to do for you?",
+            "icon": "lightbulb"
+          },
+          {
+            "type": "misconception",
+            "heading": "Misconception",
+            "wrong": "Many students believe that making big plans for the future or only interacting with powerful people is always the most crucial thing to do.",
+            "correct": "But this story teaches us that the most important time is 'now' (present moment), the most important people are 'those you are with at this moment', and the most important deed is 'to do them good'.",
+            "icon": "triangle-alert"
+          },
+          {
+            "type": "activity",
+            "heading": "Activity",
+            "content": "Here's something you can try — For the next 15 minutes, choose one simple task at home – like watering your plants, arranging your books, or helping your family with a small chore. Do it with full attention, without checking your phone or thinking about other things. How did it feel to give your complete attention to that one simple task? Did you notice anything new?",
+            "cta": "See interactive experiment in app →",
+            "icon": "flask-conical"
+          }
+        ]
+      }
+    },
+    {
+      "chapter_number": 2,
+      "blocks": {
+        "hi": [
+          {
+            "type": "example",
+            "heading": "उदाहरण",
+            "content": "सोचो ज़रा — जब तुम अपनी पुरानी किताबें या खिलौने किसी ज़रूरतमंद बच्चे को देते हो या फिर किसी भूखे जानवर को खाना खिलाते हो — तब तुम्हें अंदर से कितना अच्छा महसूस होता है, है ना? ऐसा लगता है जैसे तुमने कोई बहुत नेक काम किया है। लेकिन, कभी-कभी तुम्हारी यह अच्छाई किसी और के लिए छोटी-सी परेशानी भी खड़ी कर सकती है। क्या तुम्हें कभी लगा कि तुमने अच्छा काम किया पर घर पर थोड़ी डाँट पड़ गई?",
+            "icon": "lightbulb"
+          },
+          {
+            "type": "misconception",
+            "heading": "गलतफहमी",
+            "wrong": "बच्चे बहुत शरारती और ज़िम्मेदार नहीं थे, इसीलिए उन्होंने चप्पलें दे दीं।",
+            "correct": "देखो — असल में बच्चों की नीयत बहुत अच्छी थी! उन्हें उस संगीत मास्टर के लिए बहुत हमदर्दी हुई जिसके पास चप्पलें नहीं थीं। वे बस उनकी मदद करना चाहते थे। उन्होंने बस यह नहीं सोचा कि उनका यह कदम घरवालों के लिए क्या मुश्किल खड़ी कर सकता है। क्या तुम्हें लगता है कि अच्छी नीयत से किया गया काम भी कभी-कभी मुश्किल में डाल सकता है?",
+            "icon": "triangle-alert"
+          },
+          {
+            "type": "activity",
+            "heading": "गतिविधि",
+            "content": "एक काम करो — अपने आस-पास देखो। क्या तुम्हें कोई ऐसा इंसान दिखता है जिसे किसी छोटी-सी चीज़ की ज़रूरत है — जैसे एक गिलास पानी या किसी दुकान का रास्ता पूछना? सोचना कि तुम उसकी मदद कैसे करोगे, इस बात का भी ध्यान रखना कि तुम्हारा तरीका किसी और के लिए परेशानी न बने।",
+            "cta": "ऐप में interactive experiment देखो →",
+            "icon": "flask-conical"
+          }
+        ],
+        "en": [
+          {
+            "type": "example",
+            "heading": "Example",
+            "content": "Socho zara — You know how sometimes when you see a street dog looking hungry near your school, you just *want* to share your biscuit with it, even if you know Amma might scold you for touching it or for wasting food? That feeling of wanting to help someone in need, even if it means a little trouble for you later — that’s exactly what the children in this story felt. Have you ever done something kind for someone, and then faced a little trouble because of it?",
+            "icon": "lightbulb"
+          },
+          {
+            "type": "misconception",
+            "heading": "Misconception",
+            "wrong": "The children were very naughty and selfish for giving away the chappals without asking.",
+            "correct": "Dekho — Actually, their intentions were very kind! They felt deep empathy for the poor music master who had no chappals in the hot sun, and they genuinely wanted to help him. They just didn't think through the consequences or the \"right\" way to offer help in that situation. Do you think having good intentions always leads to good outcomes, or can it sometimes create problems?",
+            "icon": "triangle-alert"
+          },
+          {
+            "type": "activity",
+            "heading": "Activity",
+            "content": "Ek kaam karo — Today, try to observe a small act of kindness in your own home or neighbourhood. It could be someone sharing their food, helping an elderly person cross the road, or even just comforting someone who's sad. Then, think about *why* that person chose to be kind. What feelings do you think motivated them?",
+            "cta": "See interactive experiment in app →",
+            "icon": "flask-conical"
+          }
+        ]
+      }
+    }
+  ]
+}

@@ -5,49 +5,48 @@
   "samples": [
     {
       "chapter_number": 1,
-      "chapter_title": "Chemical Reactions and Equations",
       "blocks": {
         "hi": [
           {
             "type": "example",
-            "heading": "Bore-basi और Fermentation Reaction",
-            "content": "Bore-basi — रात का बचा हुआ भात जो पानी में भिगोया जाता है — यह सिर्फ खाना नहीं है, यह एक chemical reaction है! रात भर में bacteria rice के starch को ferment करते हैं, lactic acid बनती है। इसीलिए सुबह bore-basi थोड़ी खट्टी और ठंडी लगती है। यही fermentation reaction है।",
+            "heading": "उदाहरण",
+            "content": "Dekho — tumne bore-basi khayi hai kabhi? Chaawal ko pani mein bhigo kar rakhte hain na? Subah tak uska swaad thoda badal jata hai, halka khattam sa. Ya phir, tumhari mummy jab doodh ko dahi banati hain — doodh ka poora roop hi badal jata hai. Ye sab chemical reactions (रासायनिक अभिक्रियाओं) ke hi toh nateejey hain, jahan ek cheez doosri cheez mein badal jaati hai. Socho zara — aur kahan dekha hai tumne aisa kuch?",
             "icon": "lightbulb"
           },
           {
             "type": "misconception",
-            "heading": "गलतफहमी: Indravati का पानी साफ दिखता है — तो chemical-free है?",
-            "wrong": "नदी का साफ दिखने वाला पानी chemically pure होता है",
-            "correct": "नहीं! Indravati नदी का पानी भले transparent लगे, उसमें dissolved salts, minerals, और sometimes bacteria होते हैं। Physical appearance और chemical composition अलग होते हैं।",
+            "heading": "गलतफहमी",
+            "wrong": "Chemical equation (रासायनिक समीकरण) ko balance karne ka matlab bas ye hai ki dono taraf ke compounds (यौगिकों) ke numbers same dikhne chahiye.",
+            "correct": "Nahi, chemical equation ko balance karne ka matlab hai ki reaction ke pehle aur baad mein — har ek element (तत्व) ke atoms ki sankhya barabar honi chahiye. Ek atom bhi na kam ho, na zyada, kyunki Law of Conservation of Mass (द्रव्यमान संरक्षण का नियम) yahi kehta hai ki reaction mein mass (द्रव्यमान) banaya ya khatam nahi kiya ja sakta. Tumhe bas atoms ko ginna hai!",
             "icon": "triangle-alert"
           },
           {
             "type": "activity",
-            "heading": "Rusting — Bastar की Clay से Test करो",
-            "content": "एक iron nail को Bastar के junglon की नम मिट्टी में गाड़ो। दूसरी nail को सूखी जगह रखो। 3 दिन बाद तुलना करो। नम मिट्टी वाली nail ज़्यादा rust करेगी — क्योंकि moisture और oxygen dono मिलते हैं। यह corrosion reaction है।",
-            "cta": "ऐप में corrosion experiment देखो →",
+            "heading": "गतिविधि",
+            "content": "Ek kaam karo — apne kitchen se thoda sa baking soda (khane ka soda) lo aur use ek katori mein rakh do. Ab usme ek nimbu ke ras ki kuch boondein daal kar dekho — kya hota hai? Tumhe kuch naya banta hua dikhega, jaise gas ke chhote-chhote bulbulay! Kya tum soch sakte ho ki ye kis tarah ki chemical reaction hai?",
+            "cta": "ऐप में interactive experiment देखो →",
             "icon": "flask-conical"
           }
         ],
         "en": [
           {
             "type": "example",
-            "heading": "Bore-basi and Fermentation",
-            "content": "Bore-basi — leftover rice soaked in water overnight — isn't just food, it's a chemical reaction! Bacteria ferment the starch in the rice, producing lactic acid. That's why bore-basi tastes slightly sour and cool in the morning. This is fermentation — a real chemical change.",
+            "heading": "Example",
+            "content": "Dekho — have you ever had bore-basi, our Chhattisgarh special? When rice is soaked in water, by morning, its taste changes a little, right? It becomes slightly sour. Or when your mum turns milk into curd — the milk completely transforms. All these are results of chemical reactions, where one substance changes into another. Socho zara — where else have you seen something like this happen around you?",
             "icon": "lightbulb"
           },
           {
             "type": "misconception",
-            "heading": "Clear River Water = Chemically Pure?",
-            "wrong": "River water that looks clear is chemically pure",
-            "correct": "Not at all! The Indravati river may look transparent, but it contains dissolved salts, minerals, and sometimes bacteria. Physical appearance and chemical composition are different things.",
+            "heading": "Misconception",
+            "wrong": "Balancing a chemical equation simply means making the overall numbers of the compounds look the same on both sides.",
+            "correct": "No, balancing a chemical equation means that the number of atoms for *each* element must be equal before and after the reaction. Not a single atom should be lost or gained, because the Law of Conservation of Mass states that mass cannot be created or destroyed in a chemical reaction. You just need to count those atoms!",
             "icon": "triangle-alert"
           },
           {
             "type": "activity",
-            "heading": "Test Rusting with Local Soil",
-            "content": "Push an iron nail into moist soil (like you'd find near Bastar's forests). Leave another nail in a dry spot. Compare after 3 days. The nail in moist soil rusts more — because both moisture and oxygen are present. That's a corrosion reaction.",
-            "cta": "See corrosion experiment in app →",
+            "heading": "Activity",
+            "content": "Ek kaam karo — take a little baking soda from your kitchen and put it in a small bowl. Now, add a few drops of lemon juice into it — what happens? You’ll see something new forming, like tiny gas bubbles! Can you think about what kind of chemical reaction this is?",
+            "cta": "See interactive experiment in app →",
             "icon": "flask-conical"
           }
         ]
@@ -55,49 +54,48 @@
     },
     {
       "chapter_number": 2,
-      "chapter_title": "Acids, Bases and Salts",
       "blocks": {
         "hi": [
           {
             "type": "example",
-            "heading": "Imli और Acid — Chhattisgarh का Flavor",
-            "content": "Chhattisgarh में imli (इमली) का use दाल, chutney, हर जगह होता है। Imli खट्टी क्यों? क्योंकि उसमें tartaric acid और citric acid होते हैं। जब भी tum imli खाते हो — तुम actually एक weak acid consume कर रहे हो। Acids सिर्फ lab में नहीं होते!",
+            "heading": "उदाहरण",
+            "content": "Socho zara — jab garmiyon mein bore-basi ke saath nimbu nichod ke khaate ho — woh khattapan kahan se aata hai? Ya kabhi-kabhi kya hota hai, Bastar ke junglon mein chalte hue agar chapra (लाल चींटी) kaat le — toh kitni jalan hoti hai, hai na? Yeh jo khattapan aur jalan hai na, yeh acids (अम्लों) ki wajah se hoti hai! — Tumne kabhi socha hai, yeh jo alag-alag cheezein hum khaate hain, unka swaad itna alag kyun hota hai?",
             "icon": "lightbulb"
           },
           {
             "type": "misconception",
-            "heading": "गलतफहमी: Base हमेशा Soap जैसा Slippery होता है?",
-            "wrong": "सभी bases slippery और soapy feel देते हैं",
-            "correct": "Strong bases जैसे NaOH slippery लगते हैं क्योंकि वो skin के fats को saponify करते हैं — dangerous! Weak bases जैसे baking soda सुरक्षित है। Slipperiness ≠ all bases।",
+            "heading": "गलतफहमी",
+            "wrong": "Tumhe lagta hoga ki sabhi acid bohot khatarnak hote hain aur sab cheez jala dete hain, aur sabhi base hamesha halke aur surakshit hote hain.",
+            "correct": "Dekho — yeh galat hai. Kuch acid jaise nimbu ka ras (citric acid) ya sirka (acetic acid) toh hum roz khaate hain aur woh surakshit hote hain. Vaise hi, baking soda jaise base bhi hum use karte hain. Lekin kuch acid jaise sulfuric acid aur kuch base jaise sodium hydroxide (कॉस्टिक सोडा) bohot zyada khatarnak ho sakte hain aur tumhari skin ko bhi jala sakte hain. Ek acid ya base ki taqat uske 'strong' ya 'weak' hone par nirbhar karti hai, na ki sab ek jaise hote hain. Samjhi na tum? — Toh tum kaise pata lagaogi ki kaun sa acid ya base 'strong' hai aur kaun sa 'weak'?",
             "icon": "triangle-alert"
           },
           {
             "type": "activity",
-            "heading": "Haldi Indicator — घर पर pH Test",
-            "content": "हल्दी (turmeric) एक natural indicator है। हल्दी को थोड़े पानी में घोलो — yellow solution बनेगा। अब नींबू का रस डालो — yellow रहेगा (acid)। Soap का पानी डालो — लाल/orange हो जाएगा (base)। Chhattisgarh की kitchen ही science lab है!",
-            "cta": "ऐप में indicators comparison देखो →",
+            "heading": "गतिविधि",
+            "content": "Ek kaam karo — ghar mein jo haldi hai na, usko thode paani mein ghol kar ek paste banao. Ab us paste ko ek safed kagaz par lagao aur sukhne do. Yeh tumhara 'haldi indicator paper' ban gaya. Ab is par nimbu ka ras (acid) aur sabun ka ghol (base) dal kar dekho — rang badalta hai ya nahi?",
+            "cta": "ऐप में interactive experiment देखो →",
             "icon": "flask-conical"
           }
         ],
         "en": [
           {
             "type": "example",
-            "heading": "Imli and Acid — Chhattisgarh's Favourite Flavour",
-            "content": "In Chhattisgarh, imli is used everywhere — dal, chutney, snacks. Why is it sour? Because it contains tartaric and citric acids. Every time you eat imli, you're consuming a weak acid. Acids aren't just in labs!",
+            "heading": "Example",
+            "content": "Dekho, have you ever noticed — when you eat bore-basi with a squeeze of lemon during the hot summer, where does that tangy taste come from? Or sometimes, if you're walking in the Bastar jungles and a red ant (chapra) bites you — it stings so much, right? That sharp, sour taste and that stinging sensation are actually due to acids (अम्ल) found in nature! — Why do you think different substances have such distinct tastes, and how might we identify them without tasting?",
             "icon": "lightbulb"
           },
           {
             "type": "misconception",
-            "heading": "Are All Bases Slippery Like Soap?",
-            "wrong": "All bases feel slippery and soapy",
-            "correct": "Strong bases like NaOH feel slippery because they saponify skin fats — and they're dangerous. Weak bases like baking soda are safe. Slipperiness is a property of strong bases, not all bases.",
+            "heading": "Misconception",
+            "wrong": "Students often believe that all acids are extremely dangerous and corrosive, capable of burning everything, and all bases are always mild and safe.",
+            "correct": "Socho zara — this is a common misunderstanding. We consume some acids daily, like the citric acid in lemon juice or acetic acid in vinegar, and they are perfectly safe. Similarly, we use bases like baking soda. However, some acids, like sulfuric acid, and some bases, like sodium hydroxide (caustic soda), can be extremely dangerous and can even cause severe burns to your skin. The strength of an acid or a base depends on its nature, not that they are all the same. Understand, didi? — So, how would you determine if an acid or a base is 'strong' or 'weak'?",
             "icon": "triangle-alert"
           },
           {
             "type": "activity",
-            "heading": "Haldi as a pH Indicator",
-            "content": "Turmeric is a natural indicator. Dissolve a pinch in water — yellow solution. Add lemon juice — stays yellow (acid). Add soapy water — turns red/orange (base). The Chhattisgarh kitchen is a science lab!",
-            "cta": "See indicators comparison in app →",
+            "heading": "Activity",
+            "content": "Ek kaam karo — take some turmeric (haldi) from your kitchen and mix it with a little water to make a paste. Now, apply this paste evenly on a white paper and let it dry. This is your homemade 'turmeric indicator paper'. Now, try dropping some lemon juice (acid) and some soap solution (base) on it — do you observe any color change?",
+            "cta": "See interactive experiment in app →",
             "icon": "flask-conical"
           }
         ]

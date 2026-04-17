@@ -5,26 +5,25 @@
   "samples": [
     {
       "chapter_number": 1,
-      "chapter_title": "Chemical Reactions and Equations",
       "blocks": {
         "hi": [
           {
             "type": "example",
-            "heading": "रोज़मर्रा की Chemical Reaction",
-            "content": "सुबह रोटी सेंकते समय आटा भूरा और खुशबूदार हो जाता है — यह सिर्फ heat नहीं है, यह एक real chemical reaction है! आटे के molecules टूटते हैं, नये compounds बनते हैं, और इसीलिए raw dough से अलग smell आती है। जब भी नये substances बनें, समझ लो — chemical change हुआ।",
+            "heading": "उदाहरण",
+            "content": "Dekho, tumne apni mummy ko kitchen mein doodh se dahi banate dekha hoga — garam doodh mein thoda sa purana dahi ya nimbu daalte hain aur kuch ghanto baad woh dahi ban jaata hai. Kya tumne socha hai ki doodh dahi mein kaise badal jaata hai? Yeh ek chemical reaction ka hi kamaal hai, jismein doodh ki properties poori tarah badal jaati hain aur wapas doodh nahin ban sakta. Ismein kaun si nayi cheez ban rahi hai, aur ismein kya badlav aa rahe hain?",
             "icon": "lightbulb"
           },
           {
             "type": "misconception",
-            "heading": "गलतफहमी: Rust सिर्फ Iron पे?",
-            "wrong": "Rust सिर्फ iron पे ही होता है",
-            "correct": "नहीं! Copper पे भी corrosion होता है — वो green layer जो पुराने तांबे के बर्तनों पे दिखती है, उसे patina कहते हैं। Silver भी काला पड़ता है — dono chemical reactions हैं।",
+            "heading": "गलतफहमी",
+            "wrong": "Kuch students sochte hain ki har badlav, jaise paani ka bhaap banna ya baraf ka pighalna, ek chemical reaction hai.",
+            "correct": "Nahin, yeh galat hai. Chemical reaction tab hoti hai jab ek ya ek se zyada naye substances bante hain jinki properties pehle wale substances se poori tarah alag hoti hain. Paani ka bhaap banna ya baraf ka pighalna toh sirf physical change hain, jismein substance ki chemical identity (रासायनिक पहचान) wahi rehti hai. Tum kaise pata lagaoge ki koi badlav physical hai ya chemical?",
             "icon": "triangle-alert"
           },
           {
             "type": "activity",
-            "heading": "घर पे करो: Oxidation देखो",
-            "content": "एक iron nail लो। आधा नींबू काटो और nail उस पर रखो। 2 दिन बाद देखो — nail का रंग बदलेगा, लाल-भूरा होगा। यह oxidation है। Lemon का acid reaction को तेज़ करता है। Note करो: nail का mass थोड़ा बदला क्या?",
+            "heading": "गतिविधि",
+            "content": "Ek kaam karo — ek chammach baking soda (खाने वाला सोडा) ek khali bottle mein daalo. Ab usmein thoda sa sirka (vinegar) daal kar dekho kya hota hai. Tumhein fizzing (बुलबुले बनते हुए) dikhegi — woh gas evolution ka sign hai.",
             "cta": "ऐप में interactive experiment देखो →",
             "icon": "flask-conical"
           }
@@ -32,21 +31,21 @@
         "en": [
           {
             "type": "example",
-            "heading": "Everyday Chemical Reaction",
-            "content": "When you toast a roti on the tawa, the dough turns brown and fragrant — that's not just heat, it's a real chemical reaction! The molecules in the flour break apart and form new compounds, which is why it smells different from raw dough. Whenever new substances are formed, you know a chemical change has happened.",
+            "heading": "Example",
+            "content": "Dekho — have you ever lit an agarbatti (incense stick) at home for puja? When it burns, you see it change into ash and smoke, and a totally new fragrance fills the air — this means new things have formed! This change, where new substances are created with different properties, is what we call a chemical reaction. What are the indicators that tell you a chemical reaction is happening when an agarbatti burns?",
             "icon": "lightbulb"
           },
           {
             "type": "misconception",
-            "heading": "Rust Only on Iron?",
-            "wrong": "Rust only happens on iron",
-            "correct": "Not true! Copper also corrodes — that green layer on old copper vessels is called patina. Silver turns black too. Both are chemical reactions, just different metals.",
+            "heading": "Misconception",
+            "wrong": "Many students believe that any change they observe, like water boiling or ice melting, is a chemical reaction.",
+            "correct": "No, that's not quite right. A chemical reaction specifically involves the formation of new substances with completely different properties. Water boiling or ice melting are just physical changes, where the substance's chemical identity remains the same – it's still water, just in a different state. Can you think of another everyday example where a physical change is often confused with a chemical reaction?",
             "icon": "triangle-alert"
           },
           {
             "type": "activity",
-            "heading": "Try at Home: Watch Oxidation",
-            "content": "Take an iron nail. Cut half a lemon and place the nail on it. Check after 2 days — the nail will turn reddish-brown. That's oxidation. The acid in the lemon speeds up the reaction. Bonus: does the nail's mass change slightly?",
+            "heading": "Activity",
+            "content": "Ek kaam karo — take one spoon of baking soda in an empty bottle. Now, add a little vinegar to it and observe carefully. You'll see fizzing, which is a sign of gas evolution, showing a chemical reaction is taking place.",
             "cta": "See interactive experiment in app →",
             "icon": "flask-conical"
           }
@@ -55,49 +54,48 @@
     },
     {
       "chapter_number": 2,
-      "chapter_title": "Acids, Bases and Salts",
       "blocks": {
         "hi": [
           {
             "type": "example",
-            "heading": "इमली और Acid — एक ही बात!",
-            "content": "इमली खट्टी क्यों होती है? क्योंकि उसमें tartaric acid होता है। नींबू में citric acid है, दही में lactic acid है — इसीलिए वो खट्टे हैं। जो भी cheez tum खाते हो जो खट्टी लगे, उसमें कोई acid ज़रूर है। Acid का मतलब dangerous नहीं — kitchen मे रोज़ use होता है।",
+            "heading": "उदाहरण",
+            "content": "कभी-कभी जब तुम ज़्यादा तीखा या तला हुआ खा लेते हो, तो पेट में जलन सी होने लगती है, है ना? — उसे 'एसिडिटी' कहते हैं। तब तुम्हारी मम्मी तुम्हें कभी-कभी इनो या कोई 'एंटासिड' लेने को कहती हैं। ये एंटासिड असल में क्या करते हैं — जानते हो? सोचो ज़रा — ये एंटासिड हमारे पेट की जलन को कैसे शांत कर पाते होंगे?",
             "icon": "lightbulb"
           },
           {
             "type": "misconception",
-            "heading": "गलतफहमी: Acid हमेशा खतरनाक?",
-            "wrong": "सभी acids dangerous और corrosive होते हैं",
-            "correct": "नहीं! Weak acids जैसे citric acid, acetic acid (सिरका) रोज़ खाने में use होते हैं। Dangerous तो strong acids होते हैं जैसे H₂SO₄। Concentration और strength में फर्क है।",
+            "heading": "गलतफहमी",
+            "wrong": "अरे, एसिड मतलब ख़तरनाक, जलने वाला! और बेस? वो तो साबुन जैसा होता है, बिल्कुल सेफ़।",
+            "correct": "देखो बेटा — ये ठीक नहीं है। कुछ एसिड जैसे सिरका (विनेगर) या नींबू का रस, हम खाते भी हैं। और कुछ बेस जैसे सोडियम हाइड्रोक्साइड, वो भी बहुत ख़तरनाक हो सकते हैं और त्वचा जला सकते हैं। असली बात उनकी 'स्ट्रेंथ' पर निर्भर करती है — वो 'स्ट्रांग' हैं या 'वीक'। सोचो ज़रा — ऐसा क्यों होता है कि हम नींबू पानी पीते हैं पर एसिड बैटरी वाला नहीं?",
             "icon": "triangle-alert"
           },
           {
             "type": "activity",
-            "heading": "घर पे Natural Indicator बनाओ",
-            "content": "Red cabbage (बंद गोभी) के कुछ पत्ते उबालो। वो पानी purple होगा — यह natural indicator है। अब उसमें नींबू का रस डालो — pink/red हो जाएगा (acid)। फिर baking soda डालो — green/yellow हो जाएगा (base)। देखो science kitchen में है!",
-            "cta": "ऐप में pH scale visual देखो →",
+            "heading": "गतिविधि",
+            "content": "एक काम करो — अपनी रसोई से थोड़ी सी हल्दी लो और उसमें पानी मिलाकर पेस्ट बना लो। अब इसे एक कागज़ पर पतला-पतला फैलाओ और सूखने दो। फिर उस कागज़ के एक हिस्से पर नींबू का रस (एसिड) डालो और दूसरे पर साबुन का घोल (बेस) — फिर देखो क्या होता है! सोचो ज़रा — ऐसा क्यों हुआ होगा कि रंग बदल गया? और क्या तुम और भी ऐसी नेचुरल चीज़ें ढूँढ सकते हो जो इंडिकेटर का काम करें?",
+            "cta": "ऐप में interactive experiment देखो →",
             "icon": "flask-conical"
           }
         ],
         "en": [
           {
             "type": "example",
-            "heading": "Tamarind and Acid — Same Thing!",
-            "content": "Why is tamarind sour? Because it contains tartaric acid. Lemon has citric acid, curd has lactic acid — that's why they all taste sour. Every sour food you eat contains some kind of acid. Acid doesn't mean dangerous — it's used in your kitchen every day.",
+            "heading": "Example",
+            "content": "You know how sometimes, after eating too much spicy biryani or oily pakoras, you get that burning sensation in your stomach? — We call that 'acidity'. And then your mum might tell you to take some Eno or a 'Digene' tablet. Ever wondered what these antacids actually do? Socho zara — how do these antacids manage to calm down that burning feeling in your stomach?",
             "icon": "lightbulb"
           },
           {
             "type": "misconception",
-            "heading": "Are All Acids Dangerous?",
-            "wrong": "All acids are dangerous and corrosive",
-            "correct": "No! Weak acids like citric acid and acetic acid (vinegar) are used in food every day. Dangerous ones are strong acids like H₂SO₄. The key difference is concentration and strength.",
+            "heading": "Misconception",
+            "wrong": "Oh, acid means dangerous, burns everything! And bases? They're like soap, totally safe.",
+            "correct": "Dekho beta — that's not quite right. Some acids, like the citric acid in nimbu paani or the acetic acid in vinegar, we actually consume. And on the other hand, some bases, like concentrated sodium hydroxide used in drain cleaners, can be extremely dangerous and can cause severe skin burns. It's all about their 'strength' — whether they are 'strong' or 'weak'. So — how do you think scientists categorize acids and bases as 'strong' or 'weak'?",
             "icon": "triangle-alert"
           },
           {
             "type": "activity",
-            "heading": "Make a Natural Indicator at Home",
-            "content": "Boil a few leaves of red cabbage. The water turns purple — that's your natural indicator. Add lemon juice — it turns pink/red (acid). Add baking soda — it turns green/yellow (base). Science is right there in your kitchen!",
-            "cta": "See pH scale visual in app →",
+            "heading": "Activity",
+            "content": "Ek kaam karo — take a pinch of turmeric powder from your kitchen and mix it with a little water to make a paste. Now, spread this paste thinly on a piece of paper and let it dry. Then, put a drop of lemon juice (an acid) on one part of the paper, and a drop of soap solution (a base) on another part — and see what happens! Socho zara — why do you think the color changed? And can you find any other natural things around your home that could act as indicators?",
+            "cta": "See interactive experiment in app →",
             "icon": "flask-conical"
           }
         ]

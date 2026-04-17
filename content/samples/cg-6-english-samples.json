@@ -1,0 +1,105 @@
+{
+  "board": "cg",
+  "class": 6,
+  "subject": "english",
+  "samples": [
+    {
+      "chapter_number": 1,
+      "blocks": {
+        "hi": [
+          {
+            "type": "example",
+            "heading": "उदाहरण",
+            "content": "Dekho — tumhari mummy ya didi jab garmi mein thandi bore-basi banati hain, to tum unki madad karte ho na? Jaise— pyaaz kaatna, ya mirchi todna. Tum sochoge ki mummy ne banaya, par tumne bhi to kaam kiya na — unki madad karke seekha bhi! Waise hi, Patrick ko laga elf kaam kar raha tha, par asal mein Patrick khud hi seekh raha tha aur kaam kar raha tha.",
+            "icon": "lightbulb"
+          },
+          {
+            "type": "misconception",
+            "heading": "गलतफहमी",
+            "wrong": "Bachche sochte hain ki Patrick ne bilkul bhi mehnat nahi ki aur uska saara homework elf ne hi kar diya.",
+            "correct": "Sach to yeh hai ki Patrick ne hi saara kaam khud kiya! Elf ko to kuch bhi nahi pata tha. Patrick ne use kitaabein di, shabdon ke matlab dhundhe, aur raat-raat bhar jaag kar use guide kiya. Asal mein Patrick hi sabse zyada mehnat kar raha tha aur khud hi sab kuch seekh raha tha.",
+            "icon": "triangle-alert"
+          },
+          {
+            "type": "activity",
+            "heading": "गतिविधि",
+            "content": "Ek kaam karo — apne padhne wali table ko poori tarah se khud se saaf karo aur uski cheezein sahi jagah rakho. Dekho kaise tumhari table bilkul naye jaisi lagne lagegi aur tumhe kitna achha mehsoos hoga ki yeh sab tumne khud kiya.",
+            "cta": "ऐप में interactive experiment देखो →",
+            "icon": "flask-conical"
+          }
+        ],
+        "en": [
+          {
+            "type": "example",
+            "heading": "Example",
+            "content": "Think about it — when your mumma or didi cooks that delicious bore-basi for lunch, do you sometimes help them? Maybe you chop some onions or fetch the water. You might think, \"Mumma cooked it,\" but you also did some work, didn't you? And you learned a little too! Similarly, Patrick thought the elf was doing the homework, but he was actually learning and doing it himself by guiding the elf.",
+            "icon": "lightbulb"
+          },
+          {
+            "type": "misconception",
+            "heading": "Misconception",
+            "wrong": "Students often believe that Patrick didn't do any work at all, and the little elf completely finished his homework for him.",
+            "correct": "The truth is, Patrick did all the work himself! The elf knew nothing. Patrick had to bring books, look up meanings of words, and stay up late guiding him. In reality, Patrick was putting in all the effort and learning everything himself.",
+            "icon": "triangle-alert"
+          },
+          {
+            "type": "activity",
+            "heading": "Activity",
+            "content": "Here's something fun you can try — pick one small chore at home, like cleaning your study desk or arranging your books, and do it completely by yourself without any help. See how good it feels when you look at the neat result and know that *you* did it!",
+            "cta": "See interactive experiment in app →",
+            "icon": "flask-conical"
+          }
+        ]
+      }
+    },
+    {
+      "chapter_number": 2,
+      "blocks": {
+        "hi": [
+          {
+            "type": "example",
+            "heading": "उदाहरण",
+            "content": "याद है तुम्हें, जब हम कभी अपनी भैंसों को चराने जाते हैं जंगल में— तो वो हमेशा अपने सबसे तगड़े भैंसे के पीछे-पीछे चलती हैं? या फिर जब गाँव में कोई दिक्कत होती है, तो सब लोग अपने सबसे समझदार और शक्तिशाली सरपंच से मदद माँगते हैं, है ना? बस वैसे ही, इस कहानी में कुत्ता भी अपने लिए दुनिया का सबसे ताकतवर मालिक ढूंढ रहा था ताकि उसे कभी किसी से डर न लगे। सोचो तो सही — तुम क्यों चाहोगे कि तुम्हारा दोस्त या तुम्हारा समूह सबसे ताकतवर हो?",
+            "icon": "lightbulb"
+          },
+          {
+            "type": "misconception",
+            "heading": "गलतफहमी",
+            "wrong": "कुछ बच्चे सोचते हैं कि कुत्ता बस आलसी था और उसे मुफ्त में खाना चाहिए था, इसलिए उसने मालिक ढूँढ़ा।",
+            "correct": "लेकिन ऐसा नहीं है, दोस्त! कुत्ता तो सबसे ताकतवर को अपना मालिक बनाना चाहता था ताकि उसे किसी का डर न रहे और वो हमेशा सुरक्षित महसूस करे। उसकी सबसे बड़ी चिंता सुरक्षा थी, खाने से भी ज़्यादा!",
+            "icon": "triangle-alert"
+          },
+          {
+            "type": "activity",
+            "heading": "गतिविधि",
+            "content": "एक काम करो — अपने घर के पालतू जानवरों (जैसे कुत्ता, बिल्ली या कोई भी) को ध्यान से देखो। कौन है जो हमेशा बाकियों को रास्ता दिखाता है या जिसकी बात सब मानते हैं? या फिर अपने दोस्तों के समूह में देखो, खेल खेलते समय कौन सबसे ज्यादा फैसले लेता है?",
+            "cta": "ऐप में interactive experiment देखो →",
+            "icon": "flask-conical"
+          }
+        ],
+        "en": [
+          {
+            "type": "example",
+            "heading": "Example",
+            "content": "Hey Didi/Bhaiya, remember how sometimes when we go to the Bastar forests, we see a herd of elephants, and there's always one big, strong elephant leading the way? Or in our village, if there's a big problem, everyone looks to the wise and powerful Sarpanch for help, right? Just like that, in this story, the dog was searching for the strongest master in the world so it would never have to be afraid again. Socho zara — why would you want your team or your friend group to have the strongest leader?",
+            "icon": "lightbulb"
+          },
+          {
+            "type": "misconception",
+            "heading": "Misconception",
+            "wrong": "Some students think the dog was just lazy and wanted free food, which is why it looked for a master.",
+            "correct": "But that's not quite right, my dear! The dog actually wanted to find the *strongest* being as its master so it would never be afraid and would always feel safe. Its biggest concern was security, even more than food!",
+            "icon": "triangle-alert"
+          },
+          {
+            "type": "activity",
+            "heading": "Activity",
+            "content": "Ek kaam karo — carefully observe any pets you have at home (like a dog, cat, or even chickens). Who always seems to lead the others, or whose 'commands' everyone follows? Or, when you're playing with your friends, who makes the most decisions?",
+            "cta": "See interactive experiment in app →",
+            "icon": "flask-conical"
+          }
+        ]
+      }
+    }
+  ]
+}

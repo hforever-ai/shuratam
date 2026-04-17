@@ -1,0 +1,105 @@
+{
+  "board": "cg",
+  "class": 10,
+  "subject": "hindi",
+  "samples": [
+    {
+      "chapter_number": 1,
+      "blocks": {
+        "hi": [
+          {
+            "type": "example",
+            "heading": "उदाहरण",
+            "content": "Dekho — jaise kabhi-kabhi tumhara koi dost gusse mein tumhe kuch bol deta hai aur woh baat tumhare mann mein atak jaati hai na? Aur phir jab koi teacher ya bade didi-bhaiya pyaar se samjhate hain, toh woh gussa shaant ho jaata hai. Bilkul waise hi — Kabir Das ji ne apni saakhion mein sikhaya hai ki hamari vaani mein kitni shakti hoti hai. Ek hi baat ko agar hum kadve shabdon mein bolen, toh woh teer jaisa chubhti hai, aur agar pyaar se bolen, toh woh marham ban jaati hai. Socho zara — kaise hum sirf apni baaton se kisi ka din bana bhi sakte hain aur bigaad bhi sakte hain?",
+            "icon": "lightbulb"
+          },
+          {
+            "type": "misconception",
+            "heading": "गलतफहमी",
+            "wrong": "कबीर की साखियाँ सिर्फ पुराने जमाने की बातें हैं, उनका आज कोई मतलब नहीं है। ये तो सिर्फ साधु-संतों के लिए लिखी गई हैं।",
+            "correct": "अरे नहीं रे! कबीर जी की बातें तो आज भी उतनी ही सच्ची हैं जितनी पहले थीं। उन्होंने जो सदाचार और इंसानियत की बातें कही हैं, वो तो समय से परे हैं। चाहे तुम स्कूल में हो, या अपने दोस्तों के साथ हो, उनकी सीख हमें हर कदम पर सही रास्ता दिखाती है कि कैसे हमें विनम्र रहना चाहिए और अपनी वाणी पर संयम रखना चाहिए।",
+            "icon": "triangle-alert"
+          },
+          {
+            "type": "activity",
+            "heading": "गतिविधि",
+            "content": "Ek kaam karo — agle do din tak apne ghar mein ya school mein dhyaan do, jab koi tumse kuch kehta hai, toh uske bolne ke tareeke se tumhe kaisa lagta hai? Aur jab tum kisi se baat karte ho, toh apni vaani ko meetha rakhne ki koshish karo.",
+            "cta": "ऐप में interactive experiment देखो →",
+            "icon": "flask-conical"
+          }
+        ],
+        "en": [
+          {
+            "type": "example",
+            "heading": "Example",
+            "content": "You know, sometimes after a long day of playing or studying, when you're super tired, even a simple *bore-basi* tastes like the best thing ever, right? But imagine if someone offered it to you with an angry face and harsh words — would it still feel as good? Kabir Das ji, through his Sakhis, teaches us exactly this: our words have immense power. A loving word can turn a simple meal into a feast, and a harsh word can spoil even the best treat. So, think about it — how do your words make a difference in someone's day, just like the way *bore-basi* can taste different depending on how it's offered?",
+            "icon": "lightbulb"
+          },
+          {
+            "type": "misconception",
+            "heading": "Misconception",
+            "wrong": "Kabir's Sakhis are just old poems from a different era, they don't apply to my life today. They are only for religious people or saints.",
+            "correct": "Oh, no, not at all, sweetheart! Kabir's wisdom is timeless. He talks about human values, kindness, and self-reflection – things that are just as important today as they were hundreds of years ago. Whether you're dealing with friends, family, or your studies, his simple truths can guide you to be a better person by teaching you humility and the power of your speech.",
+            "icon": "triangle-alert"
+          },
+          {
+            "type": "activity",
+            "heading": "Activity",
+            "content": "Try this — for the next couple of days, pay close attention to how you feel when someone speaks to you. Do their words make you happy, sad, or calm? And when you speak to others, make a conscious effort to use kind and gentle words.",
+            "cta": "See interactive experiment in app →",
+            "icon": "flask-conical"
+          }
+        ]
+      }
+    },
+    {
+      "chapter_number": 2,
+      "blocks": {
+        "hi": [
+          {
+            "type": "example",
+            "heading": "उदाहरण",
+            "content": "Dekho — jab tum \"dhaan\" shabd bolte ho, to woh sirf ek naam hai, ek alag pehchaan. Par jab tum kehte ho \"Hum Bastar ke kheton mein dhaan ugaate hain,\" tab yahaan \"dhaan\" sirf shabd nahi rehta. Uska sambandh \"kheton\" se, \"ugaate hain\" kriya se jud jaata hai. Ab yeh \"dhaan\" ek 'पद' ban gaya hai — jiska apna ek grammatical roop aur kaam hai is waakya mein. Socho zara — kaise ek shabd poore waakya ka hissa ban kar apna kaam karta hai.",
+            "icon": "lightbulb"
+          },
+          {
+            "type": "misconception",
+            "heading": "गलतफहमी",
+            "wrong": "Bahut se bachche sochte hain ki \"शब्द\" aur \"पद\" ek hi cheez hai, bas alag-alag naam hain. Jaise \"paani\" bolo ya \"jal\" bolo — baat ek hi hai.",
+            "correct": "Nahi re, aisa nahi hai! Socho — \"शब्द\" ek akela ghoda hai jo kahin bhi ja sakta hai, us par koi bandhan nahi. Par jab woh \"शब्द\" kisi waakya mein aa jaata hai, tab us par grammar ke rules (ling, vachan, kaarak) lag jaate hain, aur tab woh ghoda nahi, balki ek \"पद\" ban jaata hai jo waakya mein apna ek khaas kaam karta hai. Woh ab sentence ka hissa ban gaya hai.",
+            "icon": "triangle-alert"
+          },
+          {
+            "type": "activity",
+            "heading": "गतिविधि",
+            "content": "Ek kaam karo — aaj raat dinner table par baithe hue, apne mummy-papa se ya bhai-bahan se koi bhi ek waakya suno. Phir us waakya ke har shabd ko dekho aur socho ki woh us waakya mein kya kaam kar raha hai — kya woh kisi cheez ka naam hai (संज्ञा), ya kisi kaam ko bata raha hai (क्रिया), ya kisi cheez ki khaasiyat (विशेषण)?",
+            "cta": "ऐप में interactive experiment देखो →",
+            "icon": "flask-conical"
+          }
+        ],
+        "en": [
+          {
+            "type": "example",
+            "heading": "Example",
+            "content": "Imagine you're admiring the beautiful Indravati river in Chhattisgarh. When you just say \"river,\" it's a simple word, standing alone. But when you say, \"The Indravati river flows through Bastar's dense forests,\" suddenly \"river\" isn't just a word anymore. It's connected to \"Indravati,\" \"flows,\" and \"forests,\" taking on a specific role within the sentence. Here, \"river\" acts as a 'pad' (grammatical unit) because it's part of a bigger structure with its own job. See how a word transforms when it joins a sentence?",
+            "icon": "lightbulb"
+          },
+          {
+            "type": "misconception",
+            "heading": "Misconception",
+            "wrong": "Students often think that a 'word' and a 'pad' are just different names for the same thing, like calling \"water\" 'paani' or 'jal' – it's all the same.",
+            "correct": "Nope, that's not quite right! Think of it this way — a 'word' (शब्द) is like a free-spirited person, independent. But when that 'word' enters a sentence, it becomes a 'pad' (पद). It gets a specific role, it has to follow grammar rules (like gender, number, case), and its meaning becomes linked to other words in the sentence. It's like becoming part of a team, where everyone has a job!",
+            "icon": "triangle-alert"
+          },
+          {
+            "type": "activity",
+            "heading": "Activity",
+            "content": "Pick any simple sentence from a Hindi newspaper or even a line from your textbook. Now, look at each word in that sentence individually. Try to figure out what grammatical 'job' each word is doing there — is it naming something (a noun/संज्ञा), describing an action (a verb/क्रिया), or telling us a quality (an adjective/विशेषण)?",
+            "cta": "See interactive experiment in app →",
+            "icon": "flask-conical"
+          }
+        ]
+      }
+    }
+  ]
+}

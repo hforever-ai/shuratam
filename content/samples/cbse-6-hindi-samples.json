@@ -1,0 +1,105 @@
+{
+  "board": "cbse",
+  "class": 6,
+  "subject": "hindi",
+  "samples": [
+    {
+      "chapter_number": 1,
+      "blocks": {
+        "hi": [
+          {
+            "type": "example",
+            "heading": "उदाहरण",
+            "content": "Dekho — tumhe yaad hai — jab garmiyon ki chuttiyon mein tum gaon jaate ho, aur Nani ke ghar ghar ka bana saada khaana milta hai? Garam roti, daal aur sabzi — kitna mazaa aata hai na khaane mein? Man bhar jaata hai aur dil ko shaanti milti hai. Waise hi, woh chhoti si chidiya bhi jungle mein milne waale chote-chote anaaj ke daanon ko bade pyaar aur संतोष से khati hai. Chahe thoda sa hi ho, par woh usmein hi poori tarah khush hai. Isse kehte hain 'संतोषी' hona. — Socho zara — tum kis cheez mein sabse zyada santosh paate ho?",
+            "icon": "lightbulb"
+          },
+          {
+            "type": "misconception",
+            "heading": "गलतफहमी",
+            "wrong": "Kabhi-kabhi bachchon ko lagta hai ki woh chidiya 'विजन' में है, yaani ghane jungle mein akeli hai, toh use shayad darr lagta hoga ya woh udaas hogi.",
+            "correct": "Par aisa nahi hai, didi. Poem mein toh bataya hai ki chidiya bahut साहसी (brave) hai. Woh jungle se pyaar karti hai aur uski awaaz itni meethi hai ki woh akeli hokar bhi khushi se gaati hai. Use na toh darr lagta hai, na hi woh akela mehsus karti hai. Woh toh apne aap mein मस्त और खुश है! — Socho — kya akela hona hamesha bura hota hai?",
+            "icon": "triangle-alert"
+          },
+          {
+            "type": "activity",
+            "heading": "गतिविधि",
+            "content": "Ek kaam karo — apne ghar ke paas ya khidki se bahar kisi ek chidiya ko dhyan se dekho. Dekho woh kaise ek daane ko chunti hai, kitni furti se udti hai, aur uski awaaz kaisi hai. Use dekhkar tumhein pata chalega ki kaise ek chota sa jeev bhi kitne maze se aur himmat se apni zindagi jeeta hai!",
+            "cta": "ऐप में interactive experiment देखो →",
+            "icon": "flask-conical"
+          }
+        ],
+        "en": [
+          {
+            "type": "example",
+            "heading": "Example",
+            "content": "Do you remember — when it's raining outside, and Mummy makes hot pakoras and chai for everyone? We all sit together and enjoy that simple meal so much, don't we? Even if it's not a big fancy feast, we feel so happy and satisfied. That's exactly how our little bird is — she eats tiny grains from the jungle with so much joy and contentment, finding happiness in what she has. — So, what simple things bring you that kind of satisfaction?",
+            "icon": "lightbulb"
+          },
+          {
+            "type": "misconception",
+            "heading": "Misconception",
+            "wrong": "Sometimes, students think that because the bird is 'in solitude' (विजन में) in a dense forest, it must be lonely or a bit scared.",
+            "correct": "But actually, didi, the bird isn't lonely at all! The poem tells us she is very courageous (साहसी). She loves the forest and her voice is so sweet that she sings happily even when she's alone. She isn't afraid, nor does she feel lonely. She's perfectly content and happy with herself in nature! — Do you think being alone always means being lonely?",
+            "icon": "triangle-alert"
+          },
+          {
+            "type": "activity",
+            "heading": "Activity",
+            "content": "Here's something you can try — for the next few days, find one small plant or a bird near your home and observe it carefully. Notice how it moves, what it eats, or how it faces the sunlight. You'll see how perfectly it lives its life, just like our little bird! — What new thing did you learn about nature from your observation?",
+            "cta": "See interactive experiment in app →",
+            "icon": "flask-conical"
+          }
+        ]
+      }
+    },
+    {
+      "chapter_number": 2,
+      "blocks": {
+        "hi": [
+          {
+            "type": "example",
+            "heading": "उदाहरण",
+            "content": "Dekho — tumhari nani ya dadi bhi tumhe apni bachpan ki kahaniyan sunati hongi na? Ki kaise woh pedon par chadhkar aam todti theen, ya kitni alag tarah ke khel khelti theen. Kitna mazaa aata hai na unki baatein sunkar? Ye chapter bhi kuch aisa hi hai — jo humein le jaata hai un yaadon mein jab sab kuch alag aur khaas tha. Socho zara — tumhare mummy-papa ke bachpan mein kya-kya cheezein tumhare bachpan se alag theen?",
+            "icon": "lightbulb"
+          },
+          {
+            "type": "misconception",
+            "heading": "गलतफहमी",
+            "wrong": "Aksar hum sochte hain ki bachpan matlab sirf khelna aur masti karna — koi tension nahi aur bas mauj hi mauj.",
+            "correct": "Par aisa nahi hai, tumhare mummy-papa bhi tumhe kabhi-kabhi chote-mote kaam dete honge na? Bachpan mein bhi hum bahut kuch seekhte hain, zimmedariyan uthate hain, aur nayi-nayi cheezon ka anubhav karte hain. Har bachpan apne tareeke se khaas aur thoda alag hota hai. Tumhe kya lagta hai — bachpan mein sabse mushkil kaam kya hota hai?",
+            "icon": "triangle-alert"
+          },
+          {
+            "type": "activity",
+            "heading": "गतिविधि",
+            "content": "Ek kaam karo — is chapter ko aur acche se samajhne ke liye apne dada-dadi ya nani-nana se unke bachpan ke baare mein poocho. Unse unke pasandeeda khel, khane ki cheezein, aur school ke kisse suno — aur likho ki woh tumhare bachpan se kitne alag the! Kya tumhari dadi ke bachpan ka koi aisa khel hai jo tum aaj bhi khel sakte ho?",
+            "cta": "ऐप में interactive experiment देखो →",
+            "icon": "flask-conical"
+          }
+        ],
+        "en": [
+          {
+            "type": "example",
+            "heading": "Example",
+            "content": "Remember how your nani or dadi tells you stories from their childhood? Like how they used to climb mango trees, or the different games they played in the gully? It's so much fun to listen to them, right? This chapter is a bit like that — it takes us on a journey back to those cherished memories when everything felt different and special. So, what do you think — what was very different in your parents' childhood compared to yours?",
+            "icon": "lightbulb"
+          },
+          {
+            "type": "misconception",
+            "heading": "Misconception",
+            "wrong": "Sometimes we think childhood is just about playing and having zero worries — only fun, no tension.",
+            "correct": "But that's not entirely true, is it? Your mom and dad also give you small chores sometimes, right? Even in childhood, we learn so much, take on little responsibilities, and experience new things. Every childhood is special and a little different in its own way. What do you think is the trickiest part of being a child?",
+            "icon": "triangle-alert"
+          },
+          {
+            "type": "activity",
+            "heading": "Activity",
+            "content": "Ek kaam karo — to understand this chapter even better, ask your grandparents or an elderly family member about their childhood. Listen to their favourite games, foods, and school stories — and write down how different they were from your own childhood! Is there any game your dadi played that you think you could still play today?",
+            "cta": "See interactive experiment in app →",
+            "icon": "flask-conical"
+          }
+        ]
+      }
+    }
+  ]
+}

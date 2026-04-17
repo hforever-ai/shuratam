@@ -5,49 +5,48 @@
   "samples": [
     {
       "chapter_number": 1,
-      "chapter_title": "Matter in Our Surroundings",
       "blocks": {
         "hi": [
           {
             "type": "example",
-            "heading": "Chai और States of Matter",
-            "content": "चाय बनाते समय तीनों states of matter देखते हो। पानी liquid है, steam जो उठती है वो gas है, और चायपत्ती solid। जब kettle गर्म होता है, water evaporate होता है — यह liquid से gas में change है। Cool होने पर steam वापस water बनती है — condensation। सारी chemistry तुम्हारी रसोई में है!",
+            "heading": "उदाहरण",
+            "content": "Tumne kabhi apni mummy ko chai banate dekha hai? Ya garmiyon mein nimbu pani? Jab hum cheeni paani mein milate hain, woh gayab ho jaati hai na? Aisa isliye hota hai kyunki paani ke particles ke beech mein khaali jagah hoti hai, jahan cheeni ke particles jaakar adjust ho jaate hain. Socho — kitni kamaal ki baat hai! Agar particles ke beech jagah na hoti toh kya hota?",
             "icon": "lightbulb"
           },
           {
             "type": "misconception",
-            "heading": "गलतफहमी: Ice ठंडा होता है इसलिए Contract करता है?",
-            "wrong": "Water freeze होने पर सिकुड़ता है",
-            "correct": "उल्टा! Water freeze होने पर expand करता है — इसीलिए water की ice density कम है और वो float करती है। यही वजह है कि सर्दियों में pipe फट जाते हैं — पानी जमता है और फैलता है।",
+            "heading": "गलतफहमी",
+            "wrong": "Kai baar students sochte hain ki solid cheezon mein ya bahut thandi cheezon mein particles bilkul ruk jaate hain, hilte nahi.",
+            "correct": "Lekin yeh galat hai! Particles hamesha move karte rehte hain, chahe woh solid hi kyun na ho. Solids mein woh apni jagah par vibrate karte hain. Temperature kam hone se unki speed bas thodi kam ho jaati hai, rukte nahi. Agar particles bilkul ruk jaate toh kya cheezein apna roop badal paati?",
             "icon": "triangle-alert"
           },
           {
             "type": "activity",
-            "heading": "Diffusion देखो — बिना देखे",
-            "content": "एक कमरे के एक कोने में अगरबत्ती जलाओ। दूसरे कोने में बैठो। कितनी देर में smell आती है? Note करो। अब fan चलाओ — smell कितनी जल्दी आती है? यह diffusion है — gas molecules high concentration से low concentration की तरफ move करते हैं।",
-            "cta": "ऐप में molecules का animation देखो →",
+            "heading": "गतिविधि",
+            "content": "Ek kaam karo — ek transparent glass mein saaf paani lo. Ab ek dropper se usme ink ki ek boond dalo aur use bilkul mat hilaana. Dekho — kya hota hai? Ink bina hilaye poore paani mein kaise fail gayi?",
+            "cta": "ऐप में interactive experiment देखो →",
             "icon": "flask-conical"
           }
         ],
         "en": [
           {
             "type": "example",
-            "heading": "Chai and the Three States of Matter",
-            "content": "When you make chai, you see all three states of matter. Water is liquid, the steam rising is gas, and the tea leaves are solid. When the kettle heats up, water evaporates — liquid to gas. When it cools, steam turns back to water — that's condensation. All of chemistry is right in your kitchen.",
+            "heading": "Example",
+            "content": "Have you ever seen your mom making chai, or maybe nimbu pani in summer? When we add sugar to water, it seems to disappear, right? This happens because there's empty space between the water particles, and the sugar particles fit right into those gaps. Socho zara — isn't that cool? What do you think would happen if there were no spaces between particles?",
             "icon": "lightbulb"
           },
           {
             "type": "misconception",
-            "heading": "Does Ice Contract When Water Freezes?",
-            "wrong": "Water shrinks when it freezes",
-            "correct": "Actually the opposite! Water expands when it freezes — that's why ice is less dense than water and floats. It's also why pipes burst in winter — the water inside freezes and expands, cracking the pipe.",
+            "heading": "Misconception",
+            "wrong": "Many students believe that particles in solids or very cold substances stop moving completely.",
+            "correct": "But that's not true! Particles are *always* in motion, even in solids (where they just vibrate in their fixed positions). Lower temperature only reduces their speed, they never completely stop. If particles completely stopped moving, would substances be able to change their state?",
             "icon": "triangle-alert"
           },
           {
             "type": "activity",
-            "heading": "Observe Diffusion — Without Seeing It",
-            "content": "Light an incense stick in one corner of a room. Sit in the opposite corner. Note how long it takes for the smell to reach you. Now turn on a fan — how much faster does it spread? That's diffusion — gas molecules moving from high concentration to low concentration.",
-            "cta": "See molecule animation in app →",
+            "heading": "Activity",
+            "content": "Ek kaam karo — grab a transparent glass and some clean water. Now, carefully drop a single drop of ink into it using a dropper and don't stir it at all. Dekho — what do you observe? How did the ink spread throughout the water without you mixing it?",
+            "cta": "See interactive experiment in app →",
             "icon": "flask-conical"
           }
         ]
@@ -55,49 +54,48 @@
     },
     {
       "chapter_number": 2,
-      "chapter_title": "Is Matter Around Us Pure?",
       "blocks": {
         "hi": [
           {
             "type": "example",
-            "heading": "Mixture और Pure Substance — आटे से समझो",
-            "content": "atta और नमक मिलाओ — यह mixture है। दोनों अपने properties retain करते हैं, tum उन्हें sieve से अलग कर सकते हो। लेकिन जब आटे में पानी मिलाओ और bread bake करो — एक नया substance बनता है। यह pure substance (compound) है जिसे आसानी से अलग नहीं कर सकते।",
+            "heading": "उदाहरण",
+            "content": "Dekho — jab hum market se ‘pure doodh’ khareedte hain, ya ghar par ‘shudh ghee’ ki baat karte hain — toh humare dimaag mein kya aata hai? Hum sochte hain ki usme koi milawat nahi hai, bilkul asli cheez hai. Lekin science ki nazar se dekho — kya tumhara doodh सच में एक शुद्ध पदार्थ (pure substance) है? Socho zara — doodh mein pani, fat, protein, sugar — kitni saari cheezein hoti hain! Toh science mein ‘pure’ ka matlab kuch aur hota hai, hai na? Ab socho, tumhare ghar mein aur kaun si cheez hai jo lagti toh pure hai par hoti mixture hai?",
             "icon": "lightbulb"
           },
           {
             "type": "misconception",
-            "heading": "गलतफहमी: Pure मतलब Safe?",
-            "wrong": "Pure substance हमेशा safe और clean होता है",
-            "correct": "नहीं! Pure substance का मतलब है single type of matter — जैसे pure HCl बहुत dangerous है। Pure का मतलब 'safe' नहीं है, बस 'unmixed' है।",
+            "heading": "गलतफहमी",
+            "wrong": "अगर कोई चीज़ देखने में एक जैसी लगे (जैसे दूध या चीनी का घोल), तो वह एक शुद्ध पदार्थ (pure substance) है।",
+            "correct": "नहीं, science में 'pure' का मतलब है कि उस चीज़ में केवल एक ही प्रकार के कण (particles) हों। दूध देखने में भले ही एक जैसा लगता है, पर वो पानी, फैट, प्रोटीन का एक मिश्रण (mixture) है। इसी तरह, चीनी का घोल भी एक मिश्रण (mixture) है, शुद्ध पदार्थ (pure substance) नहीं।",
             "icon": "triangle-alert"
           },
           {
             "type": "activity",
-            "heading": "Chromatography — Sketch pen से",
-            "content": "एक filter paper strip लो। एक black sketch pen से बीच में एक dot बनाओ। Strip का निचला सिरा थोड़े पानी में डुबोओ (dot पानी में न डूबे)। देखो — as water rises, ink अलग-अलग colors में बंट जाती है। Black ink कई colors का mixture है!",
-            "cta": "ऐप में separation techniques देखो →",
+            "heading": "गतिविधि",
+            "content": "Ek kaam karo — ek glass mein thoda pani lo aur usme ek chamach namak mila do. Dekhna, namak gayab ho jayega aur tumhe ek साफ घोल (clear solution) मिलेगा। Ab doosre glass mein pani lo aur usme thoda atta (flour) ya mitti mila kar dekho — क्या तुम्हें लगता है कि दोनों मिश्रण एक जैसे दिखेंगे?",
+            "cta": "ऐप में interactive experiment देखो →",
             "icon": "flask-conical"
           }
         ],
         "en": [
           {
             "type": "example",
-            "heading": "Mixture vs Pure Substance — Learn with Flour",
-            "content": "Mix flour and salt — that's a mixture. Both keep their own properties and you can separate them with a sieve. But when you mix flour with water and bake bread, a new substance is formed. That's a compound — you can't easily separate it back.",
+            "heading": "Example",
+            "content": "Dekho — when we go to buy milk from the dairy, we often ask for 'pure milk', right? Or when we talk about 'shudh ghee' at home, we mean it’s unadulterated, free from mixing. But think about it — from a science perspective, is that milk *really* a pure substance? Socho zara — milk has water, fat, proteins, sugars — so many things mixed together! So, pure in science means something completely different, doesn't it? Now, can you think of any other thing at home that looks pure but is actually a mixture?",
             "icon": "lightbulb"
           },
           {
             "type": "misconception",
-            "heading": "Does 'Pure' Mean Safe?",
-            "wrong": "A pure substance is always safe and clean",
-            "correct": "No! Pure just means a single type of matter. Pure HCl is extremely dangerous. 'Pure' means unmixed, not safe.",
+            "heading": "Misconception",
+            "wrong": "If something looks uniform or consistent, like milk or a sugar solution, then it's a pure substance.",
+            "correct": "No, in science, 'pure' means a substance made up of only one type of particle. Milk, even though it looks uniform, is a mixture of water, fat, and proteins. Similarly, a sugar solution is a mixture, not a pure substance, even if it looks perfectly clear.",
             "icon": "triangle-alert"
           },
           {
             "type": "activity",
-            "heading": "Chromatography with a Sketch Pen",
-            "content": "Take a strip of filter paper. Make a dot in the middle with a black sketch pen. Dip just the bottom edge in water (don't submerge the dot). Watch — as water rises, the ink separates into multiple colours. Black ink is a mixture of many colours!",
-            "cta": "See separation techniques in app →",
+            "heading": "Activity",
+            "content": "Ek kaam karo — take a glass of water and mix a spoon of salt in it. You'll see the salt disappear, giving you a clear solution. Now, in another glass of water, try mixing a little atta (flour) or soil. Do you think both mixtures will look the same?",
+            "cta": "See interactive experiment in app →",
             "icon": "flask-conical"
           }
         ]

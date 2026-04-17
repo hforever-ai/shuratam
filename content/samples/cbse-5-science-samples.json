@@ -1,0 +1,105 @@
+{
+  "board": "cbse",
+  "class": 5,
+  "subject": "science",
+  "samples": [
+    {
+      "chapter_number": 1,
+      "blocks": {
+        "hi": [
+          {
+            "type": "example",
+            "heading": "उदाहरण",
+            "content": "Dekho — tumhare ghar mein jo chhota sa तुलसी का पौधा है, क्या वो हर दिन थोड़ा-थोड़ा बड़ा होता है? — और तुम्हारी स्टडी टेबल वाली कुर्सी? क्या वो भी खुद-ब-खुद बड़ी होती है? — Socho zara, ऐसा क्यों होता है!",
+            "icon": "lightbulb"
+          },
+          {
+            "type": "misconception",
+            "heading": "गलतफहमी",
+            "wrong": "Kuch bachhe sochte hain ki jo cheez chalti ya hilati hai, wo zinda hoti hai — jaise ek train ya tumhari khilaune waali gaadi.",
+            "correct": "Lekin ye sach nahi hai — zinda cheezein bina kisi ki madad ke khud chalti hain aur aur bhi bahut kuch karti hain, jaise saans lena (breathe), khana khana (eat), aur badhna (grow). Tumhari khilaune waali gaadi ko chalne ke liye battery ya dhakke ki zaroorat hoti hai, wo khud se kuch nahi karti.",
+            "icon": "triangle-alert"
+          },
+          {
+            "type": "activity",
+            "heading": "गतिविधि",
+            "content": "Ek kaam karo — apne ghar mein ek chana ya rajma ka beej lo aur use mitti mein bo do. Har din usmein thoda paani dalo aur dekho, kya usmein koi badlav aata hai?",
+            "cta": "ऐप में interactive experiment देखो →",
+            "icon": "flask-conical"
+          }
+        ],
+        "en": [
+          {
+            "type": "example",
+            "heading": "Example",
+            "content": "Dekho — you have a little Tulsi plant in your house, right? Does it grow a little bigger every day? — And what about the chair on your study table? Does it also grow bigger on its own? — Socho zara, why do you think that happens!",
+            "icon": "lightbulb"
+          },
+          {
+            "type": "misconception",
+            "heading": "Misconception",
+            "wrong": "Some students think that anything that moves or wiggles is alive — like a train or your toy car.",
+            "correct": "But that's not true — living things move on their own, and they also do many other things, like breathe, eat, and grow, without anyone's help. Your toy car needs a battery or a push to move; it doesn't do anything on its own.",
+            "icon": "triangle-alert"
+          },
+          {
+            "type": "activity",
+            "heading": "Activity",
+            "content": "Ek kaam karo — take a chana (chickpea) or rajma (kidney bean) seed at home and plant it in some soil. Water it a little every day and observe — do you see any changes in it?",
+            "cta": "See interactive experiment in app →",
+            "icon": "flask-conical"
+          }
+        ]
+      }
+    },
+    {
+      "chapter_number": 2,
+      "blocks": {
+        "hi": [
+          {
+            "type": "example",
+            "heading": "उदाहरण",
+            "content": "Dekho — jaise tumhare ghar mein har kamre ka apna kaam hota hai na? Kitchen mein khaana banta hai, bedroom mein tum sote ho. Bilkul waise hi, hamaare shareer ke andar bhi bahut saare ang (organs) hote hain. Har ang ka apna ek khaas kaam hai, jaise dil (heart) blood pump karta hai, aur pet (stomach) khaana pachata hai. Socho zara — agar kitchen mein tum sona shuru kar do toh kya hoga? Waise hi, agar shareer ka koi ang apna kaam na kare toh kya hoga?",
+            "icon": "lightbulb"
+          },
+          {
+            "type": "misconception",
+            "heading": "गलतफहमी",
+            "wrong": "Kai baar humein lagta hai ki hamaare shareer ke andar saare ang (organs) ek hi jagah ikatthe hain aur shayad sabka kaam bhi ek jaisa hi hoga.",
+            "correct": "Nahi re, aisa nahi hai! Hamaare shareer mein har ang ki apni ek alag jagah hoti hai, jaise dil (heart) chhati mein hai, aur pet (stomach) thoda niche. Aur sabka kaam bilkul alag hai — dil blood pump karta hai, fefde (lungs) saans lete hain, dimaag (brain) sochta hai. Socho — agar dil bhi sochne lage toh kya hoga?",
+            "icon": "triangle-alert"
+          },
+          {
+            "type": "activity",
+            "heading": "गतिविधि",
+            "content": "Ek kaam karo — apna seedha haath apni chhati (chest) par rakho, thoda left side mein. Shaant baitho aur dhyaan se suno. Kya tumhein 'dhamak-dhamak' ki awaaz sunai de rahi hai ya mehsoos ho rahi hai? Ye tumhare dil (heart) ki dhadkan hai jo lagataar blood pump kar rahi hai!",
+            "cta": "ऐप में interactive experiment देखो →",
+            "icon": "flask-conical"
+          }
+        ],
+        "en": [
+          {
+            "type": "example",
+            "heading": "Example",
+            "content": "Dekho — just like your big joint family where Dadi tells stories, Papa goes to work, and Mummy cooks yummy food, everyone has a special job, right? Our body is exactly like that! Inside us, there are many different organs, like the heart, lungs, and stomach. Each one has a super important and unique job to do. Socho zara — what would happen if Mummy started telling stories instead of Dadi, and nobody cooked food?",
+            "icon": "lightbulb"
+          },
+          {
+            "type": "misconception",
+            "heading": "Misconception",
+            "wrong": "Some of us might think that all our internal organs are just a big blob inside us, or maybe we can see them if we look very closely from the outside!",
+            "correct": "Oh, no, beta, that's not quite right! Our internal organs are hidden deep inside our body and each one has its own special place, like the heart is in your chest and your stomach is a little lower. And they all have different jobs – the heart pumps blood, the lungs help us breathe, and the brain helps us think. Socho — if your heart started thinking instead of your brain, what a mess that would be?",
+            "icon": "triangle-alert"
+          },
+          {
+            "type": "activity",
+            "heading": "Activity",
+            "content": "Ek kaam karo — place your right hand on your chest, slightly to the left side. Sit quietly and listen carefully. Can you feel a 'thump-thump' sound or sensation? That's your heart beating, constantly pumping blood all over your body!",
+            "cta": "See interactive experiment in app →",
+            "icon": "flask-conical"
+          }
+        ]
+      }
+    }
+  ]
+}

@@ -1,0 +1,105 @@
+{
+  "board": "cbse",
+  "class": 5,
+  "subject": "social_science",
+  "samples": [
+    {
+      "chapter_number": 1,
+      "blocks": {
+        "hi": [
+          {
+            "type": "example",
+            "heading": "उदाहरण",
+            "content": "Dekho — tum kabhi train se bohot lambi yatra par gaye ho? Jaise Delhi se Kerala ya Mumbai se Kolkata? — Raste mein tumne dekha hoga kitne alag-alag nazare aate hain — kahin pahad, kahin khubsoorat khet, aur kahin samudra ka kinara! — Yehi toh hamare India ki khoobsurati hai, jo itna bada aur diverse hai. Socho zara — agar tum apne ghar se kisi doosre rajya mein jaate ho, toh kya-kya badlav dekhte ho raste mein?",
+            "icon": "lightbulb"
+          },
+          {
+            "type": "misconception",
+            "heading": "गलतफहमी",
+            "wrong": "Bahut bachche sochte hain ki Bharat mein sirf pahad (mountains) aur maidan (plains) hi hain.",
+            "correct": "Lekin didi — hamare desh mein toh regisaan (desert), pathar (plateau), aur samudra tat (coastal plains) bhi hain. Aur Lakshadweep-Andaman jaise dvip (islands) bhi hain!",
+            "icon": "triangle-alert"
+          },
+          {
+            "type": "activity",
+            "heading": "गतिविधि",
+            "content": "Ek kaam karo — ek bada sa paper lo. Ab us par apne India ka rough map banao. — Aur alag-alag rangon se ya thodi mitti se uske pahadon ko, maidano ko, aur samudra tat ko dikhao.",
+            "cta": "ऐप में interactive experiment देखो →",
+            "icon": "flask-conical"
+          }
+        ],
+        "en": [
+          {
+            "type": "example",
+            "heading": "Example",
+            "content": "Dekho — have you ever been on a really long train journey, like from Delhi to Kerala, or Mumbai to Kolkata? — You must have noticed how the scenery changes so much along the way — sometimes you see huge mountains, then lush green fields, and maybe even the ocean! — That's the beauty of our India, it's so big and has so many different kinds of land. Just think — if you travel from your home to another state, what kind of changes do you notice on the way?",
+            "icon": "lightbulb"
+          },
+          {
+            "type": "misconception",
+            "heading": "Misconception",
+            "wrong": "Many children think that India only has mountains and plains.",
+            "correct": "But didi — our country also has deserts, plateaus, and coastal plains. And don't forget islands like Lakshadweep and Andaman!",
+            "icon": "triangle-alert"
+          },
+          {
+            "type": "activity",
+            "heading": "Activity",
+            "content": "Here's something you can do — take a big sheet of paper. Now, draw a rough map of India on it. — And then, using different colours or even a little bit of play-dough, show its mountains, plains, and coastal areas.",
+            "cta": "See interactive experiment in app →",
+            "icon": "flask-conical"
+          }
+        ]
+      }
+    },
+    {
+      "chapter_number": 2,
+      "blocks": {
+        "hi": [
+          {
+            "type": "example",
+            "heading": "उदाहरण",
+            "content": "Dekho — garmiyon ki chuttiyon mein tum kabhi Shimla ya Ooty gaye ho kya? Wahan din mein bhi thodi thandak hoti hai, hai na? Aur wahin jab tum apne sheher mein June ki dopahar mein bahar jaate ho, toh kitna pasina aata hai! Yeh jo alag-alag jagahon par alag-alag tarah ka 'मौसम' (weather) lambe samay tak rehta hai — isi ko toh hum 'Climate' kehte hain.",
+            "icon": "lightbulb"
+          },
+          {
+            "type": "misconception",
+            "heading": "गलतफहमी",
+            "wrong": "Tum mein se kai sochte hoge ki 'मौसम' (weather) aur 'Climate' ek hi baat hai, hai na?",
+            "correct": "Par aisa nahi hai, NOMI didi batati hain. 'मौसम' toh subah dhoop, shaam baarish — din-bhar mein kai baar badal sakta hai. Lekin 'Climate' toh ek jagah ka lambe samay ka 'average weather pattern' hota hai, jaise Shimla ka 'thanda Climate' ya Rajasthan ka 'garam aur sookha Climate'.",
+            "icon": "triangle-alert"
+          },
+          {
+            "type": "activity",
+            "heading": "गतिविधि",
+            "content": "Ek kaam karo — agle ek hafte tak, har din subah aur shaam apne ghar ki khidki se bahar dekho. Dekho — kya baarish ho rahi hai ya dhoop hai? Hawa kaisi hai — tez ya dheemi? Aur tumhe kaisa lag raha hai — garmi ya thand? Isko ek diary mein likho. Phir socho — kya har din ka 'मौसम' ek jaisa hai ya badal raha hai?",
+            "cta": "ऐप में interactive experiment देखो →",
+            "icon": "flask-conical"
+          }
+        ],
+        "en": [
+          {
+            "type": "example",
+            "heading": "Example",
+            "content": "Dekho — jab tum garmiyon mein apne gaon jaate ho, tab shorts aur light t-shirts pehente ho, hai na? Aur jab December mein Himachal ya Uttarakhand jaate ho, toh moti sweaters aur jackets nikaalte ho. Yeh jo alag-alag jagahon par, lambe samay tak alag-alag tarah ka 'weather' rehta hai — usi ko toh hum 'Climate' bolte hain!",
+            "icon": "lightbulb"
+          },
+          {
+            "type": "misconception",
+            "heading": "Misconception",
+            "wrong": "Tum mein se kai sochte hoge ki 'weather' aur 'climate' ek hi baat hai, bas bolne ka tareeka alag hai, hai na?",
+            "correct": "Par aisa nahi hai, NOMI didi batati hain. 'Weather' toh ek din mein kai baar badal sakta hai — abhi dhoop, shaam ko baarish! Lekin 'climate' toh ek jagah ka 'average weather' hota hai jo saalon tak waisa hi rehta hai, jaise Chennai ka 'hot and humid climate' ya Leh ka 'cold and dry climate'.",
+            "icon": "triangle-alert"
+          },
+          {
+            "type": "activity",
+            "heading": "Activity",
+            "content": "Ek kaam karo — agle ek hafte tak, har din subah aur shaam apne ghar ki khidki se bahar dekho. Dekho — kya baarish ho rahi hai ya dhoop hai? Hawa kaisi hai — tez ya dheemi? Aur tumhe kaisa lag raha hai — garmi ya thand? Isko ek diary mein likho. Phir socho — kya har din ka 'weather' ek jaisa hai ya badal raha hai? Aur kya tumhare sheher ka 'climate' bhi itni jaldi badal jaata hai?",
+            "cta": "See interactive experiment in app →",
+            "icon": "flask-conical"
+          }
+        ]
+      }
+    }
+  ]
+}

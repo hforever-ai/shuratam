@@ -1,0 +1,105 @@
+{
+  "board": "cbse",
+  "class": 6,
+  "subject": "social_science",
+  "samples": [
+    {
+      "chapter_number": 1,
+      "blocks": {
+        "hi": [
+          {
+            "type": "example",
+            "heading": "उदाहरण",
+            "content": "देखो — तुमने कभी सोचा है जब तुम अपने दादा-दादी की पुरानी तस्वीरें देखते हो — या उनकी कोई पुरानी घड़ी — तो कितनी कहानियाँ छुपी होती हैं उनमें? किस तरह के कपड़े पहनते थे, कहाँ जाते थे, क्या करते थे — सब पता चलता है! बिलकुल ऐसे ही, इतिहास (history) भी पुरानी चीज़ों और जगहों से हमारे अतीत (past) को समझने की कोशिश करता है।",
+            "icon": "lightbulb"
+          },
+          {
+            "type": "misconception",
+            "heading": "गलतफहमी",
+            "wrong": "कई बच्चों को लगता है कि इतिहास (history) बस dates याद करने और राजा-महाराजाओं की लड़ाइयों के बारे में है।",
+            "correct": "लेकिन ऐसा नहीं है! इतिहास तो इस बारे में भी है कि आम लोग (common people) क्या खाते थे, कैसे कपड़े पहनते थे, क्या खेलते थे, और उनकी ज़िंदगी कैसी होती थी। यह हम सब की कहानी है!",
+            "icon": "triangle-alert"
+          },
+          {
+            "type": "activity",
+            "heading": "गतिविधि",
+            "content": "एक काम करो — अपने घर में कोई सबसे पुरानी चीज़ ढूंढो — जैसे कोई पुराना बर्तन, या कोई किताब। अब सोचो — यह चीज़ क्या कहानी बताती है उस समय की जब यह बनाई गई थी या इस्तेमाल होती थी?",
+            "cta": "ऐप में interactive experiment देखो →",
+            "icon": "flask-conical"
+          }
+        ],
+        "en": [
+          {
+            "type": "example",
+            "heading": "Example",
+            "content": "Dekho — have you ever thought, when you look at your grandparents' old photos — or maybe an old sari that belonged to your Nani — how many stories are hidden in them? What kind of clothes they wore, where they went, what they did — you can learn so much! History is exactly like that; it tries to understand *our* past by looking at old things and places.",
+            "icon": "lightbulb"
+          },
+          {
+            "type": "misconception",
+            "heading": "Misconception",
+            "wrong": "Many students think that history is just about memorizing dates and stories of kings and battles.",
+            "correct": "But that's not true! History is also about the daily lives of common people — what they ate, what clothes they wore, what games they played, and how their life was. It's everyone's story!",
+            "icon": "triangle-alert"
+          },
+          {
+            "type": "activity",
+            "heading": "Activity",
+            "content": "Ek kaam karo — find the oldest thing in your house — like an old utensil, or a book. Now think — what story does this object tell you about the time it was made or used?",
+            "cta": "See interactive experiment in app →",
+            "icon": "flask-conical"
+          }
+        ]
+      }
+    },
+    {
+      "chapter_number": 2,
+      "blocks": {
+        "hi": [
+          {
+            "type": "example",
+            "heading": "उदाहरण",
+            "content": "Dekho — tumne kabhi dekha hai ki garmiyon mein log pahadon par thandi jagah jaate hain, ya phir kuch dukaan wale ek jagah se doosri jagah jaate rehte hain? Ya jaise log ek shehar se doosre shehar kaam dhoondhne jaate hain? — Ye thoda-thoda humare earliest people jaisa hi tha, bas unki wajah alag thi. Socho, woh kyu apni jagah badalte rehte honge?",
+            "icon": "lightbulb"
+          },
+          {
+            "type": "misconception",
+            "heading": "गलतफहमी",
+            "wrong": "Bahut se bachchon ko lagta hai ki earliest people yaani shuruaati insaan bahut 'backward' aur kam samajhdaar the, jo bas aise hi ghoomte rehte the.",
+            "correct": "Nahi, nahi — aisa bilkul nahi hai! Woh bahut 'intelligent' aur 'skilled' the. Socho, bina machines ke pattharon se itne sharp tools banana, jungle mein khana dhoondhna, aur khatarnak jaanwaron se bachna — iske liye kitni samajhdari aur planning chahiye hoti hogi, hai na?",
+            "icon": "triangle-alert"
+          },
+          {
+            "type": "activity",
+            "heading": "गतिविधि",
+            "content": "Ek kaam karo — apne ghar ke aas-paas ya garden mein kuch alag-alag shapes ke patthar dhoondho. Socho, agar tumhein bina kisi modern tool ke koi cheez todni ya kaatni hoti, toh tum in pattharon mein se kaun sa patthar chunte aur kaise use karte?",
+            "cta": "ऐप में interactive experiment देखो →",
+            "icon": "flask-conical"
+          }
+        ],
+        "en": [
+          {
+            "type": "example",
+            "heading": "Example",
+            "content": "Hey, tumne kabhi dekha hai ki apne gaon ya shehar mein kuch log saal ke kuch khaas waqt mein ek jagah se doosri jagah jaate hain — jaise kisan fasal kaatne ke liye ya phir construction workers? — Socho, why do they do that? They move to find work, right? Our earliest people also moved, but for different reasons – mainly to find food, water, and shelter. What do you think were their main reasons to keep moving?",
+            "icon": "lightbulb"
+          },
+          {
+            "type": "misconception",
+            "heading": "Misconception",
+            "wrong": "Many students think that the earliest people always lived inside dark caves, all the time.",
+            "correct": "No, not always! While caves provided good shelter and safety, our ancestors lived in many different places. Dekho — they chose places near water sources, or where they could find plenty of food, or even under rocks or in open-air sites depending on the weather and season. They were smart to adapt to their surroundings!",
+            "icon": "triangle-alert"
+          },
+          {
+            "type": "activity",
+            "heading": "Activity",
+            "content": "Ek kaam karo — find a few small stones of different shapes and sizes from your garden or nearby. Now, imagine you need to peel a fruit or cut a soft twig without any modern tools. Which stone would you choose and how would you use it like an early human tool? Socho zara!",
+            "cta": "See interactive experiment in app →",
+            "icon": "flask-conical"
+          }
+        ]
+      }
+    }
+  ]
+}

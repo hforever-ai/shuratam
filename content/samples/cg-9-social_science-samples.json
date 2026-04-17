@@ -1,0 +1,105 @@
+{
+  "board": "cg",
+  "class": 9,
+  "subject": "social_science",
+  "samples": [
+    {
+      "chapter_number": 1,
+      "blocks": {
+        "hi": [
+          {
+            "type": "example",
+            "heading": "उदाहरण",
+            "content": "Dekho — tumne kabhi dekha hai ki Chhattisgarh mein dhaan ki kheti karne wale chhote kisan ko kitni mehnat karni padti hai, aur kai baar unhe apni fasal ka sahi daam bhi nahi milta — jabki kuch bade vyapari bahut paisa kama lete hain? — aise hi France mein bhi kuch log bahut ameer the aur zyaadatar logon ko do वक्त की रोटी के लिए संघर्ष karna padta tha. Socho zara — jab logo ko lagta hai ki unke sath na-insaafi ho rahi hai, toh kya hota hai?",
+            "icon": "lightbulb"
+          },
+          {
+            "type": "misconception",
+            "heading": "गलतफहमी",
+            "wrong": "फ्रांसीसी क्रांति सिर्फ एक राजा को हटाने की लड़ाई थी और यह बहुत जल्दी खत्म हो गई थी।",
+            "correct": "नहीं बेटा, यह सिर्फ एक राजा को हटाने से कहीं ज़्यादा था। यह समाज के हर तबके—किसान, मजदूर, कारीगर—की सालों की आर्थिक और सामाजिक असमानता के खिलाफ़ एक लंबी और जटिल लड़ाई थी, जिसने पूरे सिस्टम (system) को बदलने की कोशिश की, और इसमें कई साल लगे।",
+            "icon": "triangle-alert"
+          },
+          {
+            "type": "activity",
+            "heading": "गतिविधि",
+            "content": "Ek kaam karo — ghar par apne kuch dosto ya parivaar ke sadasyon ko bulao. Unmein se kuch ko 5-5 bore-basi (या कोई भी छोटी चीज़ जैसे कंचे या टॉफी) do, aur baakiyon ko sirf 1-1. Ab dekho ki jinhe kam mila hai, unhe kaisa lagta hai aur wo kya maang karte hain.",
+            "cta": "ऐप में interactive experiment देखो →",
+            "icon": "flask-conical"
+          }
+        ],
+        "en": [
+          {
+            "type": "example",
+            "heading": "Example",
+            "content": "Hey tum — have you ever noticed how in our villages, during dhaan ki kheti, some farmers work really hard but don't always get a fair price for their produce, while others, perhaps big traders, make a lot of money? — In France, it was quite similar. A small group had immense wealth and power, and most common people struggled for basic necessities. Socho zara — what happens when people feel such deep unfairness for a long time?",
+            "icon": "lightbulb"
+          },
+          {
+            "type": "misconception",
+            "heading": "Misconception",
+            "wrong": "The French Revolution was just a quick event where people got angry and simply removed the king.",
+            "correct": "Not at all, dear! It was much more than just removing one king. It was a very long and complex struggle against years of deep economic and social inequalities faced by every section of society—from farmers to city workers. It aimed to change the entire system, and it took many years to unfold.",
+            "icon": "triangle-alert"
+          },
+          {
+            "type": "activity",
+            "heading": "Activity",
+            "content": "Ek kaam karo — gather a few friends or family members at home. Give some of them 5-5 small items (like marbles or candies), and give the rest only 1-1. Now, observe how those who received less feel and what demands they make.",
+            "cta": "See interactive experiment in app →",
+            "icon": "flask-conical"
+          }
+        ]
+      }
+    },
+    {
+      "chapter_number": 2,
+      "blocks": {
+        "hi": [
+          {
+            "type": "example",
+            "heading": "उदाहरण",
+            "content": "Dekho — jab tumhare gaon mein ya aas-paas ke khet mein dhaan ki fasal hoti hai na — Socho zara, agar ek hi aadmi saare khet ka malik ho aur baaki sab uske liye mazdoori karein, ya fir, gaon ke sab log milkar kheti karein aur jo fasal ho use barabar baant lein — dono mein kya fark hai, aur tumhein kaun sa tareeka zyada sahi lagta hai?",
+            "icon": "lightbulb"
+          },
+          {
+            "type": "misconception",
+            "heading": "गलतफहमी",
+            "wrong": "Bahut se bachche sochte hain ki समाजवादी (socialists) matlab jo hamesha ladai-jhagda ya kranti karke hi badlav lana chahte hain.",
+            "correct": "Nahi, aisa nahi hai beta. Kai samajwadi toh sirf yeh chahte the ki sarkar aur samaj milkar sabke liye behtar suvidhaein dein, jaise achche school, aspataal, aur sabko kaam mile. Sabhi samajwadi turant kranti karne ke paksh mein nahi the; kuch log toh chunaav ladkar ya kanooni sudhar se dheere-dheere badlav lana chahte the.",
+            "icon": "triangle-alert"
+          },
+          {
+            "type": "activity",
+            "heading": "गतिविधि",
+            "content": "Ek kaam karo — apne ghar ke sab sadasyon ko ikatthha karo. Ab, kuch chocolates (ya chana-murra) lo aur unhein is tarah baanto ki sabko barabar mile. Socho, agar koi kam zor ho ya kam paisa kamata ho, toh kya usse bhi barabar hi milna chahiye, ya usse zyada?",
+            "cta": "ऐप में interactive experiment देखो →",
+            "icon": "flask-conical"
+          }
+        ],
+        "en": [
+          {
+            "type": "example",
+            "heading": "Example",
+            "content": "Dekho — imagine your village in Chhattisgarh, where everyone works on the paddy fields. Now, think about two situations: one, where one big landowner owns all the fields, and everyone else works for wages; and two, where the entire village collectively owns the land, and everyone works together, sharing the harvest equally. Which system feels fairer to you, and why?",
+            "icon": "lightbulb"
+          },
+          {
+            "type": "misconception",
+            "heading": "Misconception",
+            "wrong": "Many students think that 'socialism' means the government will take away *everything* you own, even your house, clothes, and personal toys.",
+            "correct": "Actually, NOMI wants to tell you that socialists were mainly concerned with collective ownership of the 'means of production' – things like big factories, large farms, or mines – so that their benefits could be shared by all workers, not just a few rich owners. They didn't usually mean taking away your personal belongings or the small plot of land you might own to grow vegetables for your family.",
+            "icon": "triangle-alert"
+          },
+          {
+            "type": "activity",
+            "heading": "Activity",
+            "content": "Ek kaam karo — Gather your family members at home. Now, take some pakoras or laddoos (or even just pens). Distribute them amongst everyone. After distributing, think: if someone is hungrier or needs more, should they get extra, or should everyone always get the exact same amount? Discuss this with your family.",
+            "cta": "See interactive experiment in app →",
+            "icon": "flask-conical"
+          }
+        ]
+      }
+    }
+  ]
+}

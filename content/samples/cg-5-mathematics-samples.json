@@ -1,0 +1,105 @@
+{
+  "board": "cg",
+  "class": 5,
+  "subject": "mathematics",
+  "samples": [
+    {
+      "chapter_number": 1,
+      "blocks": {
+        "hi": [
+          {
+            "type": "example",
+            "heading": "उदाहरण",
+            "content": "Dekho — jab tum apne ghar mein mithai ke dibbe dekhte ho ya bazaar mein sabzi wale bhaiya ke paas kitne saare aloo aur pyaaz dekhte ho — kabhi socha hai ki unki ginti kaise karte hain? Ek bore-basi ke liye kitne chawal ke daane lagte hain? Jab hum bahut saari cheezon ko ek saath ginte hain, tab badi-badi sankhyaein banti hain. Jaise Indravati nadi mein kitni boondein hongi — socho zara?",
+            "icon": "lightbulb"
+          },
+          {
+            "type": "misconception",
+            "heading": "गलतफहमी",
+            "wrong": "कुछ बच्चे सोचते हैं कि किसी भी संख्या में जो अंक दिख रहा है, उसकी कीमत हमेशा वही रहती है। जैसे, अगर 245 लिखा है, तो उसमें 2 का मतलब हमेशा सिर्फ 2 ही है।",
+            "correct": "अरे नहीं, ऐसा नहीं होता! किसी भी संख्या में एक अंक की कीमत इस बात पर निर्भर करती है कि वह किस 'जगह' पर है, यानि उसका स्थानीय मान (place value) क्या है। 245 में, 2 'सौ' के स्थान पर है, इसलिए उसकी कीमत 'दो सौ' है, सिर्फ 2 नहीं।",
+            "icon": "triangle-alert"
+          },
+          {
+            "type": "activity",
+            "heading": "गतिविधि",
+            "content": "Ek kaam karo — ghar mein chote-chote kaagaz ke tukde ya taash ke patte le lo. Har tukde par 0 se 9 tak ek-ek ank likho, phir un tukdon ko alag-alag tarike se jama kar badi-badi sankhyaein banao aur har ank ka sthan dekho.",
+            "cta": "ऐप में interactive experiment देखो →",
+            "icon": "flask-conical"
+          }
+        ],
+        "en": [
+          {
+            "type": "example",
+            "heading": "Example",
+            "content": "You know — when you go with your family to the market, and you see mountains of rice sacks, or stacks of fresh vegetables? Have you ever wondered how many are there in total? Like, how many fish does a fisherman catch from the Indravati river in a day — these are all numbers, big and small! Socho zara — how many grains of rice are there in a single plate of bore-basi?",
+            "icon": "lightbulb"
+          },
+          {
+            "type": "misconception",
+            "heading": "Misconception",
+            "wrong": "Some children think that the value of a digit in a number is always just what it looks like. For example, in the number 345, the digit 3 always means just three.",
+            "correct": "Not quite! The value of a digit in a number changes depending on its 'place' or position. In 345, the 3 is in the 'hundreds' place, so its value is three hundred, not just three.",
+            "icon": "triangle-alert"
+          },
+          {
+            "type": "activity",
+            "heading": "Activity",
+            "content": "Ek kaam karo — take some small slips of paper or even playing cards at home. Write a single digit (0 to 9) on each slip, then arrange them in different orders to make large numbers and observe how the value of each digit changes.",
+            "cta": "See interactive experiment in app →",
+            "icon": "flask-conical"
+          }
+        ]
+      }
+    },
+    {
+      "chapter_number": 2,
+      "blocks": {
+        "hi": [
+          {
+            "type": "example",
+            "heading": "उदाहरण",
+            "content": "नमस्ते छोटी! सोचना जरा — गर्मी की छुट्टी में जब तुम गाँव गए थे, याद है ना? मान लो, तुम्हारे दादाजी के पास 250 भैंसें थीं खेत में काम करने के लिए। फिर उन्होंने 125 भैंसें और खरीद लीं, तो अब उनके पास कुल कितनी भैंसें हो गईं? और फिर कुछ दिनों बाद, अगर 50 भैंसें दूसरे किसान को दे दीं, तो कितनी बचीं? ऐसे ही तो हम अपनी रोज़ की ज़िंदगी में जोड़ना और घटाना करते हैं, है ना?",
+            "icon": "lightbulb"
+          },
+          {
+            "type": "misconception",
+            "heading": "गलतफहमी",
+            "wrong": "कुछ बच्चे सोचते हैं कि संख्याओं को किसी भी तरफ से लिखना शुरू कर सकते हैं और फिर जोड़ या घटा सकते हैं, खासकर जब बड़ी संख्याएँ होती हैं।",
+            "correct": "नहीं, ऐसा नहीं है छोटी! हमें हमेशा संख्याओं को उनके स्थान (place value) के हिसाब से ही लिखना चाहिए। इकाई (units) के नीचे इकाई, दहाई (tens) के नीचे दहाई और सैकड़ा (hundreds) के नीचे सैकड़ा। अगर ऐसा नहीं करेंगे, तो जवाब गलत हो जाएगा, समझे?",
+            "icon": "triangle-alert"
+          },
+          {
+            "type": "activity",
+            "heading": "गतिविधि",
+            "content": "एक काम करो — अपने घर में कुछ कंकड़ या पुरानी बिंदी इकट्ठी करो। मान लो तुमने पहले 30 बिंदी इकट्ठी की। अब उसमें से 12 बिंदी अपनी दीदी को दे दो और देखो कितनी बचीं। फिर अपनी मम्मी से 8 बिंदी और ले लो और फिर से गिनो कि अब कुल कितनी हो गईं!",
+            "cta": "ऐप में interactive experiment देखो →",
+            "icon": "flask-conical"
+          }
+        ],
+        "en": [
+          {
+            "type": "example",
+            "heading": "Example",
+            "content": "Hey, little one! Socho zara — remember visiting your grandparents' home near the Indravati river? What if your Grandma had 150 chickens, and then 75 more little chicks hatched! How many chickens does she have now in total? And if she then sold 30 chickens at the weekly market, how many are left? That's exactly how addition and subtraction work in real life, isn't it?",
+            "icon": "lightbulb"
+          },
+          {
+            "type": "misconception",
+            "heading": "Misconception",
+            "wrong": "Many children think they can start writing numbers from any side or column when doing addition or subtraction, especially with bigger numbers.",
+            "correct": "But that's not correct, little sister! You MUST always align the numbers properly according to their place value—units below units, tens below tens, and so on. If you don't, your answer will be wrong, no matter how carefully you add!",
+            "icon": "triangle-alert"
+          },
+          {
+            "type": "activity",
+            "heading": "Activity",
+            "content": "Let's do one thing — collect some pebbles or seeds from your kitchen, like rajma or chana. First, count 30 of them. Then, give 12 to your younger brother or sister and see how many are left. After that, add 8 more and count the total again!",
+            "cta": "See interactive experiment in app →",
+            "icon": "flask-conical"
+          }
+        ]
+      }
+    }
+  ]
+}

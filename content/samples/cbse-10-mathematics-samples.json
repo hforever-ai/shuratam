@@ -5,49 +5,48 @@
   "samples": [
     {
       "chapter_number": 1,
-      "chapter_title": "Real Numbers",
       "blocks": {
         "hi": [
           {
             "type": "example",
-            "heading": "HCF और रोज़ का काम",
-            "content": "मान लो तुम्हारे पास 48 samosas हैं और 36 cups of chai। तुम्हें equal packets बनाने हैं — हर packet में same number of samosas और chai हो। Maximum कितने packets बन सकते हैं? HCF(48, 36) = 12। तो 12 packets — हर एक में 4 samosas और 3 chai। यही है HCF का real use।",
+            "heading": "उदाहरण",
+            "content": "Dekho — jab tum apni birthday par school mein toffees baantte ho — ya diwali par mummy boondi ke laddoo banati hain aur ghar ghar batate hain — tab tum sochte ho na ki sabko barabar milen? — Aur agar kuch bach jaayen toh unka kya karein? Yahi toh Euclid's Division Lemma hai! Ye batata hai ki kisi bade number (dividend) ko jab hum kisi chote number (divisor) se divide karte hain, toh humein ek quotient aur ek remainder milta hai, aur remainder hamesha divisor se chota hota hai. Bade numbers ke HCF nikalne mein ye kitna useful hai!",
             "icon": "lightbulb"
           },
           {
             "type": "misconception",
-            "heading": "गलतफहमी: √2 को fraction में लिख सकते हैं?",
-            "wrong": "√2 को किसी fraction p/q के रूप में लिख सकते हैं",
-            "correct": "नहीं! √2 irrational है — यह proof by contradiction से साबित होता है। अगर √2 = p/q (in lowest terms) मानो, तो p² even होगा, p भी even, फिर q भी even — contradiction! इसीलिए √2 rational नहीं है।",
+            "heading": "गलतफहमी",
+            "wrong": "Bohat se students sochte hain ki har number jiske upar 'root' ka sign laga ho (jaise √4, √9), woh irrational number hi hoga.",
+            "correct": "Lekin aisa nahi hai! Socho zara — √4 का मतलब क्या है? Woh toh 2 होता है na. Aur 2 ek rational number hai, kyunki tum use 2/1 की तरह लिख सकते हो. Irrational numbers woh hote hain jinhe p/q form mein nahi likha ja sakta, jahan p aur q integers hon aur q ≠ 0, aur jinka decimal expansion non-terminating non-repeating hota hai.",
             "icon": "triangle-alert"
           },
           {
             "type": "activity",
-            "heading": "Euclid's Algorithm — आज़माओ",
-            "content": "अपनी class के students की संख्या और rows की संख्या लो। Euclid's division algorithm से HCF निकालो। Step: divide करो, remainder लो, फिर remainder से divisor divide करो। Zero remainder आने तक। Last non-zero remainder = HCF। Fast और simple!",
-            "cta": "ऐप में step-by-step solver देखो →",
+            "heading": "गतिविधि",
+            "content": "Ek kaam karo — apne phone ke calculator par kuch fractions ko divide karke dekho. Pehle 1/2, 3/4, 7/8 jaise numbers ko divide karo. Phir 1/3, 2/7, 5/6 jaise numbers ko divide karo. Dono ke decimal expansions mein kya difference dikhta hai?",
+            "cta": "ऐप में interactive experiment देखो →",
             "icon": "flask-conical"
           }
         ],
         "en": [
           {
             "type": "example",
-            "heading": "HCF in Real Life",
-            "content": "Say you have 48 samosas and 36 cups of chai. You want to make equal packets — same samosas and chai in each. Max packets? HCF(48, 36) = 12. So 12 packets, each with 4 samosas and 3 chai. That's the real use of HCF — dividing things equally without waste.",
+            "heading": "Example",
+            "content": "Hey, remember how during Diwali, we decorate our homes with those beautiful fairy lights? — Sometimes you have a big string of lights, and you want to arrange them into smaller, equal groups for different parts of the house. Or when you have a big box of sweets, and you want to pack them into smaller, identical boxes for gifts. — The Fundamental Theorem of Arithmetic is just like that! It says that every composite number can be broken down into a unique set of prime factors. It's like finding the basic building blocks of any number, which helps us understand them better, like finding the HCF or LCM!",
             "icon": "lightbulb"
           },
           {
             "type": "misconception",
-            "heading": "Can √2 be Written as a Fraction?",
-            "wrong": "√2 can be written as some fraction p/q",
-            "correct": "No! √2 is irrational — proved by contradiction. If √2 = p/q in lowest terms, then p² is even, so p is even, so q must also be even — that contradicts 'lowest terms'. Hence √2 is irrational.",
+            "heading": "Misconception",
+            "wrong": "Many students think that all numbers they've learned about till now, like 2, -5, 1/2, 0.75, are all rational numbers, and that's it.",
+            "correct": "But no, tum! Real numbers are actually a *big family* that includes *both* rational numbers (like fractions and integers) *and* irrational numbers (like √2 or π). So, a number can't be both rational and irrational at the same time, but it definitely belongs to the bigger family of Real Numbers!",
             "icon": "triangle-alert"
           },
           {
             "type": "activity",
-            "heading": "Try Euclid's Algorithm",
-            "content": "Take the number of students in your class and the number of rows. Use Euclid's division algorithm to find HCF. Divide, take remainder, then divide the previous divisor by the remainder. Keep going till remainder is 0. Last non-zero remainder is your HCF.",
-            "cta": "See step-by-step solver in app →",
+            "heading": "Activity",
+            "content": "Ek kaam karo — take about 20-30 small objects like rajma beans, marbles, or even small erasers. Now, try to arrange them into groups of 3, then groups of 5, and then groups of 7. Each time, count how many full groups you made and how many objects were left over. — This simple game shows you exactly how Euclid's Division Lemma works with a dividend, divisor, quotient, and remainder!",
+            "cta": "See interactive experiment in app →",
             "icon": "flask-conical"
           }
         ]
@@ -55,49 +54,48 @@
     },
     {
       "chapter_number": 2,
-      "chapter_title": "Polynomials",
       "blocks": {
         "hi": [
           {
             "type": "example",
-            "heading": "Parabola — Cricket की Ball का रास्ता",
-            "content": "जब cricketer ball फेंकता है, तो ball एक curve में जाती है — ऊपर और फिर नीचे। यह curve एक quadratic polynomial का graph है। अगर ball की height h = -5t² + 20t है, तो highest point कब? जब t = 2 sec। Graph पे यह point vertex है — parabola का सबसे ऊपरी point।",
+            "heading": "उदाहरण",
+            "content": "Dekho — jab tum apni mummy ke saath ghar ke baahar chhota sa garden banate ho na? Kabhi uski lambaai (length) badhate ho toh kabhi chaudaai (width). Agar tum us garden ka area (क्षेत्रफल) calculate karna chaho, toh woh lambaai aur chaudaai par depend karega. Yahi toh hai polynomial ka ek simple roop — jahan ek value (variable) badalne se poore expression ki value badal jaati hai.",
             "icon": "lightbulb"
           },
           {
             "type": "misconception",
-            "heading": "गलतफहमी: Zeroes मतलब polynomial zero है?",
-            "wrong": "Polynomial का 'zero' मतलब पूरी polynomial = 0",
-            "correct": "नहीं! Zero of a polynomial वो value of x है जहाँ polynomial की value 0 होती है। जैसे p(x) = x² - 5x + 6 के zeroes हैं x = 2 और x = 3 — क्योंकि p(2) = 0 और p(3) = 0।",
+            "heading": "गलतफहमी",
+            "wrong": "Kabhi-kabhi bachchon ko lagta hai ki √x + 5 ya x + 1/x bhi polynomials hain, kyunki in mein 'x' hai.",
+            "correct": "Lekin — polynomial mein variable (चर) ki power (घात) hamesha poorn sankhya (whole number) honi chahiye (0, 1, 2, ...). Fraction ya negative powers wale expressions polynomials nahi hote.",
             "icon": "triangle-alert"
           },
           {
             "type": "activity",
-            "heading": "अपना Polynomial Graph बनाओ",
-            "content": "p(x) = x² - 4 लो। x = -3, -2, -1, 0, 1, 2, 3 के लिए values निकालो। Graph paper पर plot करो। देखो graph x-axis को कहाँ cross करता है — वहाँ zeroes हैं (x = 2 और x = -2)। यही graphical method है।",
-            "cta": "ऐप में interactive graph plotter देखो →",
+            "heading": "गतिविधि",
+            "content": "Ek graph paper lo. Koi bhi simple linear polynomial choose karo, jaise y = 2x + 4. Ab x ki alag-alag values daalkar y ki values nikaalo aur points plot karo. Dekho — tumhari line x-axis ko kahan touch karti hai?",
+            "cta": "ऐप में interactive experiment देखो →",
             "icon": "flask-conical"
           }
         ],
         "en": [
           {
             "type": "example",
-            "heading": "Parabola — The Path of a Cricket Ball",
-            "content": "When a cricketer throws the ball, it travels in a curve — up and then down. That curve is the graph of a quadratic polynomial. If the height is h = -5t² + 20t, when does it reach its highest point? At t = 2 sec. On the graph, that's the vertex — the topmost point of the parabola.",
+            "heading": "Example",
+            "content": "Dekho — remember when you help your mom make a square-shaped rangoli during Diwali? If you want to know how much space it covers (its area), it depends on the length of its side. If the side is 'x', the area is x². See? That's a polynomial — where changing one value changes the whole thing!",
             "icon": "lightbulb"
           },
           {
             "type": "misconception",
-            "heading": "Does 'Zero of Polynomial' Mean the Whole Thing is Zero?",
-            "wrong": "Zero of a polynomial means the entire polynomial equals zero",
-            "correct": "No! A zero of a polynomial is the value of x where the polynomial equals 0. For p(x) = x² - 5x + 6, the zeroes are x = 2 and x = 3 because p(2) = 0 and p(3) = 0.",
+            "heading": "Misconception",
+            "wrong": "Many students think that expressions like √x + 3 or x + 1/x are polynomials just because they have the variable 'x' in them.",
+            "correct": "But — for an expression to be a polynomial, the power (exponent) of the variable must always be a non-negative integer (like 0, 1, 2, etc.). So, fractional or negative powers mean it's not a polynomial.",
             "icon": "triangle-alert"
           },
           {
             "type": "activity",
-            "heading": "Draw Your Own Polynomial Graph",
-            "content": "Take p(x) = x² - 4. Find values for x = -3, -2, -1, 0, 1, 2, 3. Plot on graph paper. See where the graph crosses the x-axis — those are the zeroes (x = 2 and x = -2). That's the graphical method of finding zeroes.",
-            "cta": "See interactive graph plotter in app →",
+            "heading": "Activity",
+            "content": "Ek kaam karo — let's try something fun at home! Take a graph paper and a simple linear polynomial, say y = x - 3. Now, put different values for 'x' and find the corresponding 'y' values. Plot these points on the graph. Where does your line cross the x-axis? That's your polynomial's 'zero'!",
+            "cta": "See interactive experiment in app →",
             "icon": "flask-conical"
           }
         ]

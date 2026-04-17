@@ -1,0 +1,105 @@
+{
+  "board": "cbse",
+  "class": 8,
+  "subject": "hindi",
+  "samples": [
+    {
+      "chapter_number": 1,
+      "blocks": {
+        "hi": [
+          {
+            "type": "example",
+            "heading": "उदाहरण",
+            "content": "Dekho — jab tum subah mandir ki ghanti bajate ho, ya school ki bell sunte ho — kya kabhi socha hai awaaz kaise aati hai? Socho zara — ghanti bajane ke baad use chookar dekho, tumhe usmein 'कंपन' (vibration) mehsoos hoga na? Bas yahi कंपन ध्वनि पैदा करता है! अगली बार जब कोई आवाज़ सुनो, तो सोचना ज़रूर कि कौन सी चीज़ 'कंपन' कर रही होगी?",
+            "icon": "lightbulb"
+          },
+          {
+            "type": "misconception",
+            "heading": "गलतफहमी",
+            "wrong": "Bahut se bachchon ko lagta hai ki awaaz kahin bhi sunai de sakti hai, chahe wahan hawa ho ya na ho.",
+            "correct": "Par aisa nahi hai, didi. Tumhare school mein science lab mein ek 'वैक्यूम पंप' (vacuum pump) hota hai na? Agar usse ek bell jar ke andar ki saari hawa nikaal dein, aur phir andar ki ghanti bajayein, toh awaaz nahi aayegi. Kyunki ध्वनि को आगे बढ़ने के लिए किसी माध्यम (medium) — jaise hawa, paani ya kisi thos cheez — ki zaroorat hoti hai. Bina medium ke woh nahi chal sakti. Socho, agar chandrama par do log aapas mein baat karein, toh kya unko awaaz sunai degi?",
+            "icon": "triangle-alert"
+          },
+          {
+            "type": "activity",
+            "heading": "गतिविधि",
+            "content": "Ek kaam karo — do plastic ke glass lo aur unke beech mein ek mota dhaga bandho. Ab ek dost ko ek glass apne kaan par rakhne ko kaho aur tum doosre glass mein dheere se bolo. Dekhna — dhage se hokar awaaz kitni saaf sunai degi! Yeh dikhata hai ki ध्वनि ठोस चीजों से भी travel karti hai. Kya tum isi tarah ki koi aur cheez bana sakte ho jo awaaz ko ek jagah se doosri jagah le ja sake?",
+            "cta": "ऐप में interactive experiment देखो →",
+            "icon": "flask-conical"
+          }
+        ],
+        "en": [
+          {
+            "type": "example",
+            "heading": "Example",
+            "content": "Hey there! You know, when you ring the temple bell (ghanti) in the morning, or hear the school bell, have you ever wondered how that sound is actually made? Just try this — after ringing a bell, gently touch it. You'll feel it 'vibrating', right? That very vibration is what creates the sound! Next time you hear any sound, try to think about what must be 'vibrating' to make it?",
+            "icon": "lightbulb"
+          },
+          {
+            "type": "misconception",
+            "heading": "Misconception",
+            "wrong": "Many students often think that sound can be heard anywhere, whether there's air or not.",
+            "correct": "But that's not quite right, didi. Remember how in your school's science lab, you might have seen a 'vacuum pump'? If we remove all the air from inside a bell jar using it, and then ring a bell placed inside, you won't hear any sound. This is because sound needs a 'medium' — like air, water, or any solid object — to travel from one place to another. It cannot travel in empty space. Think about it, if two people tried to talk to each other on the moon, would they be able to hear each other's voices?",
+            "icon": "triangle-alert"
+          },
+          {
+            "type": "activity",
+            "heading": "Activity",
+            "content": "Here's something fun you can try at home — grab two plastic cups and tie a thick string between their bottoms. Now, ask a friend to hold one cup to their ear, and you speak softly into the other cup. You'll be surprised how clearly the sound travels through the string! This shows that sound can easily travel through solid objects too. Can you think of any other simple ways we can make sound travel using everyday things?",
+            "cta": "See interactive experiment in app →",
+            "icon": "flask-conical"
+          }
+        ]
+      }
+    },
+    {
+      "chapter_number": 2,
+      "blocks": {
+        "hi": [
+          {
+            "type": "example",
+            "heading": "उदाहरण",
+            "content": "देखो — तुम्हारे घर के आस-पास या गाँव में कभी देखा है — जो लोग हाथ से मिट्टी के बर्तन बनाते थे या चप्पल ठीक करते थे, उनका काम अब कैसा है? — आजकल सब लोग रेडीमेड या फैक्ट्री में बनी चीज़ें ज़्यादा खरीदते हैं, है ना? सोचो ज़रा — इससे उन कलाकारों का क्या होता होगा जिनकी रोज़ी-रोटी उनके हाथ के हुनर से चलती थी? — क्या उनका हुनर समय के साथ ख़त्म हो जाएगा या कोई नया तरीका मिल जाएगा उसे बचाने का?",
+            "icon": "lightbulb"
+          },
+          {
+            "type": "misconception",
+            "heading": "गलतफहमी",
+            "wrong": "बच्चे कभी-कभी सोचते हैं कि लाख की चूड़ियाँ बनाने वाले बदलू जैसे लोग सिर्फ़ पुराने ख्यालों के होते हैं, इसलिए वह मशीन से बनी चूड़ियाँ बेचना शुरू नहीं करते और उनका काम बंद हो जाता है।",
+            "correct": "पर सोचने वाली बात यह है कि बदलू के लिए लाख की चूड़ियाँ सिर्फ़ एक धंधा नहीं था — वह उसका हुनर था, उसकी पहचान थी, उसका सम्मान था। जब मशीन से बनी सस्ती चूड़ियाँ आईं, तो उसकी कला का मोल कम हो गया। — वह अपनी कला को सस्ते में बेचकर उसका अपमान नहीं करना चाहता था। यह उसकी ज़िद नहीं, बल्कि अपने हुनर और गरिमा को बचाने की कोशिश थी, भले ही उसे मुश्किलें आईं।",
+            "icon": "triangle-alert"
+          },
+          {
+            "type": "activity",
+            "heading": "गतिविधि",
+            "content": "एक काम करो — अपने घर में कोई एक हाथ से बनी चीज़ ढूँढो — जैसे कोई मिट्टी का दीया, हाथ से बना कोई सजावटी सामान या कोई पुराना हाथ से बुना कपड़ा। — अब उसकी तुलना किसी मशीन से बनी चीज़ से करो। सोचो — कौन सी चीज़ ज़्यादा 'अलग' और 'ख़ास' लगती है, और क्यों?",
+            "cta": "ऐप में interactive experiment देखो →",
+            "icon": "flask-conical"
+          }
+        ],
+        "en": [
+          {
+            "type": "example",
+            "heading": "Example",
+            "content": "You know, have you ever noticed around your home or even in your village — what happened to the local potter who made clay pots by hand, or the cobbler who repaired shoes? — Nowadays, most of us buy readymade or factory-made stuff, right? So think — what happens to those artisans whose livelihood depended purely on their craft and their hands? — Do you think their skill will just disappear, or will it find a new way to survive?",
+            "icon": "lightbulb"
+          },
+          {
+            "type": "misconception",
+            "heading": "Misconception",
+            "wrong": "Sometimes, students think that artisans like Badlu, who made lac bangles, were simply old-fashioned and stubborn, refusing to adapt to new times and sell machine-made bangles, which eventually led to their downfall.",
+            "correct": "But if you think about it, for Badlu, making lac bangles wasn't just a job — it was his skill, his identity, his honour, and his tradition. When cheap, machine-made bangles came along, the real value of his unique art seemed to fade. — He didn't want to 'disrespect' his craft by selling it cheaply. This wasn't stubbornness; it was his way of trying to protect his art and his pride, even if it meant facing challenges.",
+            "icon": "triangle-alert"
+          },
+          {
+            "type": "activity",
+            "heading": "Activity",
+            "content": "Here's an idea — try to find a handmade item in your home — maybe a clay diya, some hand-embroidered napkin, or even an old, hand-knitted sweater. — Now, compare it with a similar machine-made item. Socho zara — which one feels more 'unique' and 'special' to you, and what makes it so?",
+            "cta": "See interactive experiment in app →",
+            "icon": "flask-conical"
+          }
+        ]
+      }
+    }
+  ]
+}

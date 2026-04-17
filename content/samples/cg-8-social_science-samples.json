@@ -1,0 +1,105 @@
+{
+  "board": "cg",
+  "class": 8,
+  "subject": "social_science",
+  "samples": [
+    {
+      "chapter_number": 1,
+      "blocks": {
+        "hi": [
+          {
+            "type": "example",
+            "heading": "उदाहरण",
+            "content": "Dekho — tumhare gaon mein ya aas-paas — jaise pehle dhaan ki kheti sirf bhains aur hal se hoti thi, aur ab tractor aur nayi khaad (fertilizers) se. Yeh badlav kab hua, kaise hua aur kahan hua — yahi toh hum history mein samajhte hain. Socho zara — aise hi aur kya-kya badla hai tumhare ghar aur gaon mein?",
+            "icon": "lightbulb"
+          },
+          {
+            "type": "misconception",
+            "heading": "गलतफहमी",
+            "wrong": "Ek galatfami yeh hai ki history sirf raja-maharajaon ki tareekhein (dates) aur ladaiyan yaad karne ka naam hai.",
+            "correct": "Par sach toh yeh hai ki history tareekhon se kahin zyada hai — yeh humein batati hai ki samay ke saath cheezein *kaise* badli, *kyun* badli aur unka humari zindagi par kya asar pada. Socho — agar hum sirf dates yaad karein aur kahani na samjhein, toh kya hum sahi mein history seekh paayenge?",
+            "icon": "triangle-alert"
+          },
+          {
+            "type": "activity",
+            "heading": "गतिविधि",
+            "content": "Ek kaam karo — apne dada-dadi ya ghar ke kisi buzurga se poochho ki Indravati nadi par bridge kab bana tha, ya unke bachpan mein bore-basi kaise bante the. Phir dekho kitni alag-alag aur mazedaar baatein pata chalti hain.",
+            "cta": "ऐप में interactive experiment देखो →",
+            "icon": "flask-conical"
+          }
+        ],
+        "en": [
+          {
+            "type": "example",
+            "heading": "Example",
+            "content": "Look — in your village or around you — just like how rice cultivation was once done only with a buffalo and a plough, and now it's with tractors and new fertilizers. When did this change happen, how did it happen, and where did it happen — this is exactly what we understand in history. Think a bit — what else has changed like this in your home and village?",
+            "icon": "lightbulb"
+          },
+          {
+            "type": "misconception",
+            "heading": "Misconception",
+            "wrong": "One common wrong belief is that history is just about memorizing the dates of kings, battles, and big events.",
+            "correct": "But the truth is, history is much more than just dates — it tells us *how* things changed over time, *why* they changed, and what impact they had on our lives. Think — if we just remember dates and don't understand the story, will we truly learn history?",
+            "icon": "triangle-alert"
+          },
+          {
+            "type": "activity",
+            "heading": "Activity",
+            "content": "Here's something you can do — ask your grandparents or an elder at home about when the bridge over the Indravati river was built, or how bore-basi was made when they were kids. Then see how many different and interesting things you learn.",
+            "cta": "See interactive experiment in app →",
+            "icon": "flask-conical"
+          }
+        ]
+      }
+    },
+    {
+      "chapter_number": 2,
+      "blocks": {
+        "hi": [
+          {
+            "type": "example",
+            "heading": "उदाहरण",
+            "content": "Dekho — kabhi socha hai tumhare gaon mein koi naya vyapari (trader) aata hai? Pehle woh sirf dhaan ki kheti ke liye beej ya khad bechta hai. Uska samaan achha aur sasta hota hai, toh sab usse hi kharidne lagte hain. Dheere-dheere woh vyapari logon ko karz (loan) bhi dene lagta hai ya unki fasal seedhe kharidne lagta hai, aur dekhte hi dekhte uska asar sirf samaan bechne tak nahi, balki gaon ke faislon par bhi dikhne lagta hai. Socho zara — us vyapari ka asar sirf kharid-farokht tak hi simit rehta hai kya...?",
+            "icon": "lightbulb"
+          },
+          {
+            "type": "misconception",
+            "heading": "गलतफहमी",
+            "wrong": "अक्सर बच्चे सोचते हैं कि अंग्रेज (British) भारत को गुलाम बनाने और यहाँ राज करने के मकसद से ही आए थे, और उन्होंने शुरू से यही योजना बनाई थी।",
+            "correct": "असल में, अंग्रेज तो पहले सिर्फ भारत में व्यापार (trade) करने आए थे, खासकर मसालों और कपड़ों से ज्यादा से ज्यादा मुनाफा कमाने के लिए। उन्होंने यहां की रियासतों की कमजोरियों और आपसी झगड़ों का फायदा उठाया, और धीरे-धीरे ही यहाँ के इलाकों पर कब्जा कर अपनी सत्ता (territory) बनानी शुरू की।",
+            "icon": "triangle-alert"
+          },
+          {
+            "type": "activity",
+            "heading": "गतिविधि",
+            "content": "Ek kaam karo — apne ghar mein alag-alag rang ke 3-4 chhote patthar (जो छोटे-छोटे राज्यों को दर्शाते हैं) aur ek thoda bada patthar (जो ब्रिटिश ईस्ट इंडिया कंपनी को दर्शाता है) le lo. Ab chhote pattharon ko ek jagah rakho aur phir dheere-dheere bade patthar se ek-ek chhote patthar ko 'gherte' ya 'apne andar milate' jao. Dekho kaise ek bada patthar chhote pattharon par haavi ho jata hai.",
+            "cta": "ऐप में interactive experiment देखो →",
+            "icon": "flask-conical"
+          }
+        ],
+        "en": [
+          {
+            "type": "example",
+            "heading": "Example",
+            "content": "Hey, have you ever thought about it — imagine a new trader comes to a small market (haat bazaar) near Indravati nadi, initially just selling some special tools for dhaan ki kheti (paddy farming) or ingredients for bore-basi. Everyone likes their products because they're good and cheap. Slowly, this trader might start offering credit to farmers or buying their produce directly, and before you know it, their influence grows beyond just trading — they might even start affecting village decisions! Do you think their influence stays only with selling things, or does it grow bigger than that, perhaps even influencing decisions in the village?",
+            "icon": "lightbulb"
+          },
+          {
+            "type": "misconception",
+            "heading": "Misconception",
+            "wrong": "Students often believe that the British came to India with a clear plan to conquer and rule the entire country right from the start.",
+            "correct": "Actually, the British East India Company initially came to India only for trade, focusing on making profits from spices, textiles, and other goods. It was only later, by cleverly exploiting the political instability and rivalries among Indian rulers, that they gradually started to expand their control and establish their territory.",
+            "icon": "triangle-alert"
+          },
+          {
+            "type": "activity",
+            "heading": "Activity",
+            "content": "Ek kaam karo — gather 3-4 different colored crayons (representing smaller kingdoms or states) and one large eraser (representing the British East India Company). Arrange the crayons in a circle. Now, slowly move the eraser, 'covering' or 'absorbing' one crayon at a time, showing how the larger entity gradually took over smaller ones.",
+            "cta": "See interactive experiment in app →",
+            "icon": "flask-conical"
+          }
+        ]
+      }
+    }
+  ]
+}

@@ -1,0 +1,105 @@
+{
+  "board": "cg",
+  "class": 6,
+  "subject": "science",
+  "samples": [
+    {
+      "chapter_number": 1,
+      "blocks": {
+        "hi": [
+          {
+            "type": "example",
+            "heading": "उदाहरण",
+            "content": "Dekho — jab tum garmiyon mein bore-basi khate ho na, toh woh chawal kahan se aata hai? Woh Indravati nadi ke kinare dhaan ke kheton se aata hai! Aur kabhi socha hai, hum palak ki sabzi khate hain woh kya hai? Woh toh paudhe ke patte hain! Ek hi paudha humein kitni alag-alag cheezein deta hai — kabhi uski jad (carrot, mooli) khate hain, kabhi patta (palak), kabhi phal (aam)! Tumhare ghar mein aur kaun-kaun se paudhe ke hisse khaaye jaate hain?",
+            "icon": "lightbulb"
+          },
+          {
+            "type": "misconception",
+            "heading": "गलतफहमी",
+            "wrong": "Bahut bachchon ko lagta hai ki shahad ki makhiyan shahad sirf humare liye banati hain, jaise koi factory.",
+            "correct": "Asal mein, makhiyan phoolon se meetha ras (nectar) ikattha karti hain aur usse apne chhatte mein jama karti hain — yeh toh unka apna khana hota hai aur woh isse sardi ke liye bachati hain! Hum toh bas unse thoda sa le lete hain.",
+            "icon": "triangle-alert"
+          },
+          {
+            "type": "activity",
+            "heading": "गतिविधि",
+            "content": "Ek kaam karo — thode se moong ya chane ke daane lo. Unhe raat bhar paani mein bhigo kar rakh do. Agle din paani nikaal kar ek geele kapde mein lapet kar ya ek chhanne mein rakh kar dhak do. Har subah dekho, ek-do din mein unmein se chote-chote safed ankur nikalne lagenge — yeh tumhara 'sprout' ho jayega! Phir socho, ankurit hone ke baad ye khane mein kaise lagte hain?",
+            "cta": "ऐप में interactive experiment देखो →",
+            "icon": "flask-conical"
+          }
+        ],
+        "en": [
+          {
+            "type": "example",
+            "heading": "Example",
+            "content": "Hey didi/bhaiya — you know when we eat delicious bore-basi, where does that rice come from? It grows in the dhaan (paddy) fields, maybe near the Indravati river! And have you ever thought about how we eat spinach? That's actually the leaves of a plant! So many different parts of one plant give us food — sometimes its roots like carrots, sometimes its leaves like saag, sometimes its fruits like mangoes. Can you think of any other plant parts you eat at home?",
+            "icon": "lightbulb"
+          },
+          {
+            "type": "misconception",
+            "heading": "Misconception",
+            "wrong": "Some students think that all milk we get from a bhains (buffalo) or cow is directly ready to drink after milking.",
+            "correct": "Actually, milk directly from a bhains or cow must be boiled properly to kill any germs and make it safe to drink. It's not safe to drink it raw, you know!",
+            "icon": "triangle-alert"
+          },
+          {
+            "type": "activity",
+            "heading": "Activity",
+            "content": "Try this at home! Gather any three food items from your kitchen – like a potato, some dhaan (rice), and a glass of milk. Now, look closely and guess: does each item come from a plant or an animal? If it's from a plant, which part is it (root, stem, leaf, fruit, seed)? What did you discover about your food?",
+            "cta": "See interactive experiment in app →",
+            "icon": "flask-conical"
+          }
+        ]
+      }
+    },
+    {
+      "chapter_number": 2,
+      "blocks": {
+        "hi": [
+          {
+            "type": "example",
+            "heading": "उदाहरण",
+            "content": "Dekho — tumhare ghar mein, jab tumhare papa ya chacha khet par kaam karte hain na, dhaan ki kheti mein, unko kitni takat lagti hai! — Toh woh kya khate hain? Zyada tar chawal (rice), ya bore-basi, hai na? Kyunki chawal se unhein turant energy milti hai taaki woh kaam kar saken. Lekin sirf chawal se kaam chalega kya? Nahi na — unhein dal bhi chahiye hoti hai aur sabzi bhi — taaki unka shareer badhe aur mazboot bane. Socho zara — agar koi sirf chawal khata rahe aur sabzi-dal na khaye, toh uske shareer mein kya kami ho jayegi?",
+            "icon": "lightbulb"
+          },
+          {
+            "type": "misconception",
+            "heading": "गलतफहमी",
+            "wrong": "Kuch bachche sochte hain ki healthy khaana sirf wahi hota hai jo bade-bade shehron mein ya TV mein dikhate hain — jaise special wale oats ya imported fruits. Aur ye sab toh bahut mehenge hote hain, toh hum gareeb log kaise healthy rahenge?",
+            "correct": "Dekho — ye bilkul galat baat hai! Healthy khaana woh hota hai jismein sahi poshak tatva (nutrients) hon. Aur hamare Chhattisgarh mein hi kitni saari aisi cheezein hain jo sasti bhi hain aur bahut healthy bhi, jaise dal, hare patte wali sabziyan, chawal, aur dahi — in sab mein alag-alag poshak tatva bharpoor hote hain. Tumhari bore-basi bhi toh kitni taakat deti hai!",
+            "icon": "triangle-alert"
+          },
+          {
+            "type": "activity",
+            "heading": "गतिविधि",
+            "content": "Ek kaam karo — ghar mein jab Mummy aloo ya chawal bana rahi hon, toh unka ek chhota sa tukda ya dana le lena. Us par iodine solution ki ek-do boond daalo (tum chemistry box mein mil jaayega, ya doctor ki dukaan par puchhna). Dekhna — agar rang neela-kala ho jaaye, toh samajh lena ki usmein starch hai, jo humein energy deta hai. Socho — aise aur kaun-kaun se khaane ki cheezon par tum ye experiment karke dekh sakte ho?",
+            "cta": "ऐप में interactive experiment देखो →",
+            "icon": "flask-conical"
+          }
+        ],
+        "en": [
+          {
+            "type": "example",
+            "heading": "Example",
+            "content": "Look — when your parents or uncles work in the fields, in the dhaan ki kheti, they put in so much effort, right? Where do they get all that energy from? Mostly from rice, or what we call bore-basi! Rice gives them quick energy to work all day. But can they rely only on rice? No, right? They also need dal and vegetables so their bodies can grow strong and healthy. Think about it — if someone only ate rice and no dal or vegetables, what might be missing from their body's needs?",
+            "icon": "lightbulb"
+          },
+          {
+            "type": "misconception",
+            "heading": "Misconception",
+            "wrong": "Some children think that healthy food is only that fancy food shown on TV or in big cities — like special oats or imported fruits. And since these are very expensive, they wonder how common people can stay healthy.",
+            "correct": "Look — this is completely wrong! Healthy food is simply food that has the right nutrients. And right here in Chhattisgarh, we have so many things that are both affordable and very healthy! Like dal, green leafy vegetables, rice, and dahi — all of these are full of different nutrients. Even your simple bore-basi gives you so much strength!",
+            "icon": "triangle-alert"
+          },
+          {
+            "type": "activity",
+            "heading": "Activity",
+            "content": "Do one thing — when your Mummy is cooking potatoes or rice at home, take a small piece of potato or a few grains of rice. Put one or two drops of iodine solution on it (you can find it in a chemistry box, or ask at a medical store). Watch — if the colour changes to blue-black, you'll know it contains starch, which gives us energy. So, which other food items can you try this experiment on at home?",
+            "cta": "See interactive experiment in app →",
+            "icon": "flask-conical"
+          }
+        ]
+      }
+    }
+  ]
+}

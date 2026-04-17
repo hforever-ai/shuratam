@@ -1,0 +1,105 @@
+{
+  "board": "cbse",
+  "class": 5,
+  "subject": "mathematics",
+  "samples": [
+    {
+      "chapter_number": 1,
+      "blocks": {
+        "hi": [
+          {
+            "type": "example",
+            "heading": "उदाहरण",
+            "content": "NOMI: Arre, tumne kabhi cricket match dekha hai stadium mein? — Wahan kitne saare log hote hain na! Ya phir, jab hum ek naya TV ya washing machine khareedte hain, toh kitne saare Rupees dene padte hain! — Jab numbers itne bade ho jaate hain, jaise hazaron, lakhon mein, toh unhe padhna aur samajhna kitna mazedaar ho jaata hai, hai na? Socho, agar tumhare paas itne saare rang-birange moti hain, toh tum unhe kaise ginte ya batate?",
+            "icon": "lightbulb"
+          },
+          {
+            "type": "misconception",
+            "heading": "गलतफहमी",
+            "wrong": "NOMI: Dekho — kai bachhe sochte hain ki 550 mein, dono 5 की value एक जैसी है. Yaani, unhe lagta hai ki 5 तो बस 5 ही रहेगा, woh kahin भी हो.",
+            "correct": "NOMI: Lekin ye galat hai, didi/bhaiya! — Har number का अपना 'ghar' होता है. Pehle 5 का 'ghar' है 'hundreds' का, toh uski value है 500. Aur dusre 5 का 'ghar' है 'tens' का, toh uski value है 50. Dekha, uska 'place' बदलते ही 'value' भी बदल जाती है! Toh ab tum batao, 8080 में दोनों 8 की value अलग क्यों है?",
+            "icon": "triangle-alert"
+          },
+          {
+            "type": "activity",
+            "heading": "गतिविधि",
+            "content": "NOMI: Ek kaam karo — ghar par 0 से 9 तक के digits chhote-chhote kaagaz par likho. Ab unhe alag-alag tarah se rakh kar badi-badi sankhyaein (numbers) banane ki koshish karo aur unhe bol kar padho! Acha, agar tum apni sabse choti sankhya banao toh usmein zero kahan rakhte?",
+            "cta": "ऐप में interactive experiment देखो →",
+            "icon": "flask-conical"
+          }
+        ],
+        "en": [
+          {
+            "type": "example",
+            "heading": "Example",
+            "content": "NOMI: Hey, have you ever been to a big Indian wedding or a bustling market like Dilli Haat? — There are so many people, right? Or when you buy a brand new bicycle, you pay so many Rupees! — When numbers get really big, like in thousands, lakhs, or crores, it's super interesting to learn how to read and understand them, isn't it? Socho, if you had so many colourful beads, how would you count or tell someone how many you have?",
+            "icon": "lightbulb"
+          },
+          {
+            "type": "misconception",
+            "heading": "Misconception",
+            "wrong": "NOMI: Look — many children think that in a number like 550, both the 5s have the same value. They feel that 5 is just 5, no matter where it is placed.",
+            "correct": "NOMI: But that's not right, didi/bhaiya! — Every digit has its own 'place' or 'ghar' in a number. The first 5 is in the 'hundreds' place, so its value is 500. And the second 5 is in the 'tens' place, so its value is 50. See, its 'place' changes its 'value'! So tell me, why does the number 8 have a different value in 8080 than in 80?",
+            "icon": "triangle-alert"
+          },
+          {
+            "type": "activity",
+            "heading": "Activity",
+            "content": "NOMI: Ek kaam karo — at home, write digits from 0 to 9 on small slips of paper. Now, try arranging them in different ways to make big numbers and read them out loud! Accha, if you make the smallest number possible, where would you put the zero?",
+            "cta": "See interactive experiment in app →",
+            "icon": "flask-conical"
+          }
+        ]
+      }
+    },
+    {
+      "chapter_number": 2,
+      "blocks": {
+        "hi": [
+          {
+            "type": "example",
+            "heading": "उदाहरण",
+            "content": "तुम्हें याद है — जब दिवाली पर मम्मी ने लड्डू और बर्फी बनाई थी? सोचो ज़रा — अगर मम्मी ने 15 लड्डू और 12 बर्फी बनाई, तो कुल कितनी मिठाइयाँ बनीं? और अगर हमने उसमें से 10 मिठाइयाँ दोस्तों को दे दीं, तो अब कितनी बची होंगी? ये सब जानने के लिए हमने कौन से दो तरह के 'hisaab' (calculations) किए, पता है?",
+            "icon": "lightbulb"
+          },
+          {
+            "type": "misconception",
+            "heading": "गलतफहमी",
+            "wrong": "बच्चे कभी-कभी सोचते हैं कि जब numbers (संख्याओं) को जोड़ते या घटाते हैं, तो उन्हें बस ऐसे ही एक के नीचे एक लिख देना काफी है, चाहे उनकी place (स्थान) कुछ भी हो।",
+            "correct": "नहीं रे, ऐसे नहीं! हमेशा याद रखना कि ones (इकाई) को ones के नीचे, tens (दहाई) को tens के नीचे, और hundreds (सैकड़ा) को hundreds के नीचे ही लिखना है — बिलकुल सही जगह पर। वरना answer (उत्तर) गलत हो जाएगा। सोचो अगर तुम अपनी चप्पल उलटे पैर में पहन लो तो क्या होगा — कुछ ऐसा ही होता है गलत place पर number लिखने से!",
+            "icon": "triangle-alert"
+          },
+          {
+            "type": "activity",
+            "heading": "गतिविधि",
+            "content": "एक काम करो — अपने घर में पड़े राजमा या चने के दाने इक्कठे करो। पहले एक मुट्ठी दाने उठाओ और गिनो कितने हैं। फिर एक और मुट्ठी उठाओ और उन सभी को भी गिनो। अब बताओ — दोनों मुट्ठियों में कुल कितने दाने हुए? या फिर, पहली वाली मुट्ठी से कुछ दाने अलग कर दो और देखो कितने बचे।",
+            "cta": "ऐप में interactive experiment देखो →",
+            "icon": "flask-conical"
+          }
+        ],
+        "en": [
+          {
+            "type": "example",
+            "heading": "Example",
+            "content": "Hey there! Do you remember going to the market with your parents to buy groceries? Let's say your dad bought 250 grams of coriander leaves and then 150 grams of green chillies. Think — what was the total weight of the greens he bought? And if you used 100 grams of coriander for a dish, how much is left? How did thinking about these veggies help you figure out the total and the difference?",
+            "icon": "lightbulb"
+          },
+          {
+            "type": "misconception",
+            "heading": "Misconception",
+            "wrong": "Students sometimes think that when they add or subtract numbers, they can just write them one below the other without worrying about their 'place' or 'column'.",
+            "correct": "No, no, that’s not right! Always remember to place the ones digit under the ones digit, the tens under the tens, and the hundreds under the hundreds — exactly in their correct column. Otherwise, your answer will be completely wrong. Why do you think keeping numbers in their right columns is so super important?",
+            "icon": "triangle-alert"
+          },
+          {
+            "type": "activity",
+            "heading": "Activity",
+            "content": "Okay, here’s a fun thing to do! Grab some of your favourite marbles or even some rajma beans from the kitchen. First, count how many you have in one hand. Then, take some more in the other hand and count those too. Now, tell me — how many do you have in total? Or, take some out and see how many are left.",
+            "cta": "See interactive experiment in app →",
+            "icon": "flask-conical"
+          }
+        ]
+      }
+    }
+  ]
+}

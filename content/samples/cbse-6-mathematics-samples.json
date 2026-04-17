@@ -1,0 +1,105 @@
+{
+  "board": "cbse",
+  "class": 6,
+  "subject": "mathematics",
+  "samples": [
+    {
+      "chapter_number": 1,
+      "blocks": {
+        "hi": [
+          {
+            "type": "example",
+            "heading": "उदाहरण",
+            "content": "Dekho — tumhare school mein Sports Day hua. Tumhari team ne cricket mein 250 runs banaye aur basketball mein 185 points score kiye. Socho zara — kaun se game mein tumhari team ne zyada score kiya, aur tumhe kaise pata chala?",
+            "icon": "lightbulb"
+          },
+          {
+            "type": "misconception",
+            "heading": "गलतफहमी",
+            "wrong": "Bahut baar bachche sochte hain ki kisi number mein jo digit dikhta hai, bas wahi uski 'value' hoti hai. Jaise, 742 mein 7 ki value sirf 7 hai.",
+            "correct": "Lekin asal mein, 742 mein 7 ki 'value' 700 hai! Kyunki wo 'hundreds place' par hai. 7 to uski 'face value' hai, 'place value' to uski jagah ke hisaab se badalti hai.",
+            "icon": "triangle-alert"
+          },
+          {
+            "type": "activity",
+            "heading": "गतिविधि",
+            "content": "Ek kaam karo — ghar par purane akhbaar ya magazine se kuch alag-alag digits (0 se 9 tak) kaat lo. Ab unmein se koi bhi teen ya chaar digits chuno. Un digits ko use karke sabse bada number banao aur sabse chhota number banao. Tumne kya dekha ki numbers bade ya chhote kaise bante hain?",
+            "cta": "ऐप में interactive experiment देखो →",
+            "icon": "flask-conical"
+          }
+        ],
+        "en": [
+          {
+            "type": "example",
+            "heading": "Example",
+            "content": "Dekho — imagine you're helping your mother sort out old family photos. One album has 120 photos, and another has 95 photos. Socho zara — which album has more pictures, and how did you figure that out?",
+            "icon": "lightbulb"
+          },
+          {
+            "type": "misconception",
+            "heading": "Misconception",
+            "wrong": "Many students often think that the 'value' of a digit in a number is just the digit itself. For example, in the number 345, they might think the value of '3' is simply 3.",
+            "correct": "But wait — the value of '3' in 345 is actually 300! Why? Because it's sitting in the 'hundreds place'. '3' is its 'face value', but its 'place value' changes depending on where it is.",
+            "icon": "triangle-alert"
+          },
+          {
+            "type": "activity",
+            "heading": "Activity",
+            "content": "Ek kaam karo — get some old newspapers or magazines and cut out different digits (from 0 to 9). Now, pick any three or four of these digit slips. Try arranging them to make the largest possible number and then the smallest possible number. What did you observe about how the position of the digits affects the number's size?",
+            "cta": "See interactive experiment in app →",
+            "icon": "flask-conical"
+          }
+        ]
+      }
+    },
+    {
+      "chapter_number": 2,
+      "blocks": {
+        "hi": [
+          {
+            "type": "example",
+            "heading": "उदाहरण",
+            "content": "Dekho — jab tum apne school ki cricket team ka score board dekhti ho, toh game shuru hone se pehle kitne runs hote hain? Zero, hai na? Phir ek run bana, do run bane, teen run bane — yehi toh saare Whole Numbers (पूर्ण संख्याएँ) हैं! Ye zero se shuru hote hain aur aise hi aage badhte jaate hain, kabhi khatam nahi hote. Socho zara — agar zero na hota, toh kya tum cricket ka score theek se calculate kar paati ya apne bank account mein balance dekh paati?",
+            "icon": "lightbulb"
+          },
+          {
+            "type": "misconception",
+            "heading": "गलतफहमी",
+            "wrong": "Bahut se bachche sochte hain ki sabse chhota Whole Number 1 hai, jaise Natural Numbers (प्राकृतिक संख्याएँ) mein hota hai.",
+            "correct": "Nahi didi, sabse chhota Whole Number 0 (zero) hai. Natural Numbers 1 se shuru hote hain, par Whole Numbers mein 0 bhi shaamil hota hai. Yaad rakhna — 0 ko bhoolna nahi!",
+            "icon": "triangle-alert"
+          },
+          {
+            "type": "activity",
+            "heading": "गतिविधि",
+            "content": "Ek kaam karo — apne ghar mein 10 rajma ke daane ya chote kankar ikatthe karo. Ab unhe 0 se shuru karke ek line mein rakho — pehle kuchh nahi (0), phir ek, phir do, aise hi. Har daane ke baad wala number uska successor (अनुवर्ती) hai aur pehle wala uska predecessor (पूर्ववर्ती) hai.",
+            "cta": "ऐप में interactive experiment देखो →",
+            "icon": "flask-conical"
+          }
+        ],
+        "en": [
+          {
+            "type": "example",
+            "heading": "Example",
+            "content": "Hey didi, imagine you're watching your favourite cricket team play. Before the match starts, how many runs are on the scoreboard? Zero, right? Then they score 1 run, then 2, then 3 – these are all Whole Numbers! They start from zero and keep going forward, endlessly. Socho zara — if we didn't have zero, how would you calculate the cricket score or even check your bank balance?",
+            "icon": "lightbulb"
+          },
+          {
+            "type": "misconception",
+            "heading": "Misconception",
+            "wrong": "Many students think that the smallest Whole Number is 1, just like in Natural Numbers.",
+            "correct": "No didi, the smallest Whole Number is actually 0. Natural Numbers start from 1, but Whole Numbers include 0 too. Remember — don't forget the zero!",
+            "icon": "triangle-alert"
+          },
+          {
+            "type": "activity",
+            "heading": "Activity",
+            "content": "Ek kaam karo — gather about 10 rajma beans or small pebbles from home. Now, arrange them in a line starting from 0 – first nothing (0), then one, then two, and so on. The number right after each bean is its successor, and the one before it is its predecessor.",
+            "cta": "See interactive experiment in app →",
+            "icon": "flask-conical"
+          }
+        ]
+      }
+    }
+  ]
+}

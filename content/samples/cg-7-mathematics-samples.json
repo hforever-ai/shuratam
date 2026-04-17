@@ -1,0 +1,105 @@
+{
+  "board": "cg",
+  "class": 7,
+  "subject": "mathematics",
+  "samples": [
+    {
+      "chapter_number": 1,
+      "blocks": {
+        "hi": [
+          {
+            "type": "example",
+            "heading": "उदाहरण",
+            "content": "Dekho — tumhare Gaon mein Bilaspur ka temperature sardiyon mein kabhi-kabhi 5 degree Celsius tak gir jaata hai, aur garmiyon mein 45 degree tak badh jaata hai. Ab socho, agar kal temperature 10 degree tha aur aaj 3 degree gir gaya, toh use hum kaise dikhaenge? Ya phir Indravati nadi ka paani monsoon mein 5 feet badh gaya, aur garmiyon mein 2 feet kam ho gaya — in sabko hum numbers se kaise batayenge? Kya yeh sab sirf 'simple' numbers se dikhaya ja sakta hai ya kuch aur chahiye hoga?\n\nIn badhti aur ghat-ti cheezon ko dikhane ke liye hum kaun se khaas numbers ka istemal karte hain, socho toh?",
+            "icon": "lightbulb"
+          },
+          {
+            "type": "misconception",
+            "heading": "गलतफहमी",
+            "wrong": "Bahut baar bachche sochate hain ki agar koi number minus (-) mein hai, jaise ki -5, toh woh -2 se bada hoga, kyunki 5 toh 2 se bada hota hai na?",
+            "correct": "Lekin asal mein, Integers (पूर्णांक) mein aisa nahi hota. Jitna bada minus ka number hoga, woh utna hi chhota hota jayega — jaise thand mein temperature 0 se -5 होना मतलब और ज़्यादा ठंड लगना, जो 0 से -2 होने से भी ज़्यादा है. Number line par jo number left mein hota hai, woh chhota hota hai. Isliye, -5, -2 se chhota hai.",
+            "icon": "triangle-alert"
+          },
+          {
+            "type": "activity",
+            "heading": "गतिविधि",
+            "content": "Ek kaam karo — ghar ki seedhiyon par ek number line banao. Beech ki seedhi ko '0' maano. Upar ki seedhiyon ko +1, +2 aur neeche ki seedhiyon ko -1, -2 naam do. Ab, '0' se shuru karo aur alag-alag integers ko jodkar ya ghata kar dekho ki tum kahan pahunchte ho. Jaise, '0' se +3 kadam aage jaao, phir -5 kadam wapas aao — dekho kahan pahuche?",
+            "cta": "ऐप में interactive experiment देखो →",
+            "icon": "flask-conical"
+          }
+        ],
+        "en": [
+          {
+            "type": "example",
+            "heading": "Example",
+            "content": "Hey didi / bhaiya — have you ever seen your chacha's small kirana shop in the village? Sometimes he makes a profit, like earning ₹500 more than he spent. But sometimes, if an item doesn't sell, he might have a loss, like losing ₹100. How do we show this 'earning' and 'losing' using numbers? Or when the water level in the borewell in your village goes down 10 feet in summer, but rises 7 feet during the monsoon — how do we write these ups and downs?\n\nWhat special kind of numbers do we use to show these opposite situations of increasing and decreasing?",
+            "icon": "lightbulb"
+          },
+          {
+            "type": "misconception",
+            "heading": "Misconception",
+            "wrong": "A common misunderstanding is thinking that a negative number like -7 is bigger than -3, because 7 itself is bigger than 3.",
+            "correct": "But actually, on the number line, numbers to the left are always smaller. So, -7 is actually smaller than -3. Think of it like this: having a debt of ₹7 is worse (a smaller amount of money) than having a debt of ₹3!",
+            "icon": "triangle-alert"
+          },
+          {
+            "type": "activity",
+            "heading": "Activity",
+            "content": "Try this — create a number line on the steps of your house or draw one on the floor. Mark the middle step as '0'. Steps going up are +1, +2, and steps going down are -1, -2. Start at '0' and try adding or subtracting different integers by moving up or down. For example, start at '0', move +4 steps up, then -6 steps down — where do you land?",
+            "cta": "See interactive experiment in app →",
+            "icon": "flask-conical"
+          }
+        ]
+      }
+    },
+    {
+      "chapter_number": 2,
+      "blocks": {
+        "hi": [
+          {
+            "type": "example",
+            "heading": "उदाहरण",
+            "content": "Nomi here — Socho zara, tumhare ghar mein bore-basi bani hai aur mummy ne ek poora parat (plate) tumhare saamne rakh diya. Agar tum uska aadha hissa kha lo aur phir jo bacha uska aadha hissa apne chhote bhai ko de do — toh ab batao, tumne kitna khaaya aur tumhare bhai ko kitna mila, total bore-basi ka?",
+            "icon": "lightbulb"
+          },
+          {
+            "type": "misconception",
+            "heading": "गलतफहमी",
+            "wrong": "Bachche aksar sochte hain ki jis fraction ka denominator (नीचे वाला नंबर) बड़ा होता है, वो fraction बड़ा होता है. जैसे, unhe lagta hai 1/8 बड़ा है 1/4 से kyunki 8 बड़ा है 4 से.",
+            "correct": "Par aisa nahi hai! Socho zara — agar tumhare paas ek poori roti hai, use 8 tukdon mein baant kar ek tukda lo, ya use 4 tukdon mein baant kar ek tukda lo — kis tukde ka hissa bada hoga? Jitne zyada tukde karoge, utna hi ek tukda chhota ho jayega na?",
+            "icon": "triangle-alert"
+          },
+          {
+            "type": "activity",
+            "heading": "गतिविधि",
+            "content": "Ek kaam karo — apne ghar mein ek akhbaar (newspaper) ka poora panna (page) lo. Ab use barabar do hisson mein mod do. Yeh ho gaya 1/2. Ab is mod ko phir se barabar do hisson mein mod do — toh ab tumne paper ko kitne hisson mein baant diya? Har hissa kitna fraction represent karta hai?",
+            "cta": "ऐप में interactive experiment देखो →",
+            "icon": "flask-conical"
+          }
+        ],
+        "en": [
+          {
+            "type": "example",
+            "heading": "Example",
+            "content": "Hey there! Nomi here — Have you ever helped your mom make bore-basi? Imagine you have a big plate of it. If you eat half of it, and then your younger sister eats half of what's left — can you tell me in fractions, how much bore-basi did you eat, and how much did your sister eat from the original plate?",
+            "icon": "lightbulb"
+          },
+          {
+            "type": "misconception",
+            "heading": "Misconception",
+            "wrong": "Students often think that a fraction with a larger denominator is a larger fraction. For example, they might think 1/8 is bigger than 1/4 because 8 is bigger than 4.",
+            "correct": "But that's not right! Think about it — if you have one whole modak, and you divide it into 8 equal parts and take one part, or you divide it into 4 equal parts and take one part — which piece would be bigger? The more parts you divide something into, the smaller each individual part becomes, right?",
+            "icon": "triangle-alert"
+          },
+          {
+            "type": "activity",
+            "heading": "Activity",
+            "content": "Alright, Nomi has a fun idea for you! Take a full newspaper page at home. Now, fold it exactly in half. That's 1/2, right? Then, fold that folded part in half *again*. How many parts have you divided the original paper into now? What fraction does each part represent?",
+            "cta": "See interactive experiment in app →",
+            "icon": "flask-conical"
+          }
+        ]
+      }
+    }
+  ]
+}

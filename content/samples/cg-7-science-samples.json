@@ -1,0 +1,105 @@
+{
+  "board": "cg",
+  "class": 7,
+  "subject": "science",
+  "samples": [
+    {
+      "chapter_number": 1,
+      "blocks": {
+        "hi": [
+          {
+            "type": "example",
+            "heading": "उदाहरण",
+            "content": "तुम बोर-बासी खाकर, या गरम-गरम चावल-दाल खाकर ताकतवर बनते हो ना? ऐसे ही पेड़-पौधों को भी बढ़ने और फल देने के लिए खाना चाहिए होता है। लेकिन क्या तुमने कभी सोचा है कि बस्तर के घने जंगलों में या तुम्हारे घर के गमले में लगा पौधा — अपना ये खाना खुद कैसे बनाता है?",
+            "icon": "lightbulb"
+          },
+          {
+            "type": "misconception",
+            "heading": "गलतफहमी",
+            "wrong": "कुछ बच्चे सोचते हैं कि पेड़-पौधे मिट्टी से ही अपना पूरा खाना खा लेते हैं।",
+            "correct": "नहीं रे, मिट्टी से तो उन्हें पानी और कुछ मिनरल्स मिलते हैं। उनका असली खाना (sugar) तो वो सूरज की रोशनी, हवा (कार्बन डाइऑक्साइड) और पानी का इस्तेमाल करके अपनी पत्तियों में खुद बनाते हैं। इस जादू को 'प्रकाश संश्लेषण' (photosynthesis) कहते हैं!",
+            "icon": "triangle-alert"
+          },
+          {
+            "type": "activity",
+            "heading": "गतिविधि",
+            "content": "एक गमले वाले पौधे की किसी एक पत्ती के आधे हिस्से को काले कागज से अच्छे से ढक दो और दो दिन तक धूप में रखो। फिर कागज हटाकर पत्ती को ध्यान से देखो — तुम क्या फर्क देखते हो?",
+            "cta": "ऐप में interactive experiment देखो →",
+            "icon": "flask-conical"
+          }
+        ],
+        "en": [
+          {
+            "type": "example",
+            "heading": "Example",
+            "content": "You know how you become strong after eating delicious bore-basi or hot rice and dal, right? Plants also need food to grow big and give fruits. But have you ever wondered how the plants in the dense Bastar forests or the small plant in your home pot make their own food?",
+            "icon": "lightbulb"
+          },
+          {
+            "type": "misconception",
+            "heading": "Misconception",
+            "wrong": "Some students think that plants eat the soil to get all their food.",
+            "correct": "Not at all, didi! Soil gives them water and some important minerals. But their real food (sugar) is made by themselves in their leaves, using sunlight, air (carbon dioxide), and water. This amazing process is called 'photosynthesis'!",
+            "icon": "triangle-alert"
+          },
+          {
+            "type": "activity",
+            "heading": "Activity",
+            "content": "Take a potted plant and cover half of one leaf properly with black paper. Keep it in sunlight for two days. Then remove the paper and observe the leaf carefully — what difference do you see?",
+            "cta": "See interactive experiment in app →",
+            "icon": "flask-conical"
+          }
+        ]
+      }
+    },
+    {
+      "chapter_number": 2,
+      "blocks": {
+        "hi": [
+          {
+            "type": "example",
+            "heading": "उदाहरण",
+            "content": "Dekho — tumne kabhi apni mummy ya didi ko chawal ya dhaan ko bore-basi ke liye bhigo-te aur phir banane se pehle chote tukdon mein todte dekha hai na? — Bilkul aise hi, jab hum khana khate hain, toh hamara sharir bhi use chote-chote hisson mein todta hai taaki usmein se shakti nikal sake. Socho — agar khana toot-ta hi nahi, toh kya hota?",
+            "icon": "lightbulb"
+          },
+          {
+            "type": "misconception",
+            "heading": "गलतफहमी",
+            "wrong": "Bahut se bachche sochte hain ki gaay aur bhains (jaise hamare Bastar ke jungle mein bhi milti hain) ka pet sirf ek hota hai, jaise insaanon ka.",
+            "correct": "Lekin sach toh yeh hai ki unke pet ke chaar alag-alag hisse (chambers) hote hain! — Ek kaam karo, socho zara, yeh chaar chambers unke khaane ko kaise pachate honge?",
+            "icon": "triangle-alert"
+          },
+          {
+            "type": "activity",
+            "heading": "गतिविधि",
+            "content": "Ek chota sa roti ka tukda lo ya thoda sa paka hua chawal lo aur use achche se 5-7 minute tak chabate raho. — Tum dekhoge ki dheere-dheere uska swaad meetha lagne lagega. Socho — aisa kyun hua, kya muh mein koi 'jadoo' hai?",
+            "cta": "ऐप में interactive experiment देखो →",
+            "icon": "flask-conical"
+          }
+        ],
+        "en": [
+          {
+            "type": "example",
+            "heading": "Example",
+            "content": "Remember how your didi or mummy prepares rice (dhaan) for bore-basi? — They first soak it and then cook it into smaller, softer pieces, right? — Our body does something similar with the food we eat, breaking it down into tiny parts so we can use its energy. What if our food didn't get broken down like that?",
+            "icon": "lightbulb"
+          },
+          {
+            "type": "misconception",
+            "heading": "Misconception",
+            "wrong": "Many students think that animals like cows or buffaloes (which we see often in Chhattisgarh fields) have only one stomach, just like us.",
+            "correct": "But actually, their stomach has four different compartments or chambers! — Can you imagine why they need so many compartments for their food?",
+            "icon": "triangle-alert"
+          },
+          {
+            "type": "activity",
+            "heading": "Activity",
+            "content": "Take a small piece of roti or a pinch of cooked rice and chew it slowly for about 5-7 minutes. — You'll notice it starts to taste a little sweet after some time. Can you guess why this happens?",
+            "cta": "See interactive experiment in app →",
+            "icon": "flask-conical"
+          }
+        ]
+      }
+    }
+  ]
+}

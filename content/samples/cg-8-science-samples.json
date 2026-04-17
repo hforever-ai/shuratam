@@ -1,0 +1,105 @@
+{
+  "board": "cg",
+  "class": 8,
+  "subject": "science",
+  "samples": [
+    {
+      "chapter_number": 1,
+      "blocks": {
+        "hi": [
+          {
+            "type": "example",
+            "heading": "उदाहरण",
+            "content": "Dekho — tumne kabhi apni didi ya mummy ko ghar mein koi naya paudha lagate dekha hai? Wo pehle mitti ko thoda theek karti hain, usko dhila karti hain, takki paudha aaraam se badh sake. Bas, khet mein dhaan (paddy) lagane se pehle kisaan bhaiyya bhi apne tractor ya hal se mitti ko palat'te hain, usko dhila karte hain — isse 'soil aeration' achha hota hai aur 'weeds' bhi nikal jaate hain. Socho zara — mitti ko aise taiyaar karna fasal ke liye kyun itna zaroori hoga?",
+            "icon": "lightbulb"
+          },
+          {
+            "type": "misconception",
+            "heading": "गलतफहमी",
+            "wrong": "Ek galatfami ye hai ki kisaan har saal ek hi tarah ki fasal (crop) ugaate hain taaki unhe zyada paidaawar mile.",
+            "correct": "Asal mein — ek hi khet mein baar-baar ek hi fasal ugaane se mitti ke zaroori 'nutrients' (poshak tatva) kam ho jaate hain. Isliye kisaan alag-alag fasalon ko bari-bari se ugaate hain — jaise dhaan ke baad daal (pulses) ki fasal — jisse mitti ki urvarak shakti bani rahe. Ise 'crop rotation' kehte hain, aur yeh mitti ko 'healthy' rakhta hai.",
+            "icon": "triangle-alert"
+          },
+          {
+            "type": "activity",
+            "heading": "गतिविधि",
+            "content": "Ek kaam karo — ek katori mein chana ya moong ke kuch daane lo aur unhe ek raat paani mein bhigo do. Agle din, unhe paani se nikal kar ek gile kapde mein lapet kar kuch dinon ke liye rakh do — tum dekhoge ki unmein se chote-chote ankur nikalne lagenge, bilkul jaise hum 'seed sowing' karte hain.",
+            "cta": "ऐप में interactive experiment देखो →",
+            "icon": "flask-conical"
+          }
+        ],
+        "en": [
+          {
+            "type": "example",
+            "heading": "Example",
+            "content": "Look — have you ever seen how your family prepares the soil before planting a new sapling in your garden? They loosen it up so the roots can breathe and grow easily. It's just like that when farmers in Chhattisgarh prepare their fields for dhaan (paddy) cultivation. They use tractors or ploughs to turn the soil, making it loose and airy, which helps the tiny paddy seeds grow better. Think about it — why do you think this 'soil preparation' step is so vital for a good harvest?",
+            "icon": "lightbulb"
+          },
+          {
+            "type": "misconception",
+            "heading": "Misconception",
+            "wrong": "A common misconception is that farmers always grow the same type of crop in their fields year after year because they think it will give them the highest yield.",
+            "correct": "Actually — repeatedly growing the same crop in the same soil for a long time takes away specific nutrients, making the soil less fertile. That's why smart farmers in places like Chhattisgarh practice 'crop rotation' — where they grow different crops, like pulses (dals) after dhaan (paddy), to replenish the soil's nutrients and keep it healthy and productive for a longer time.",
+            "icon": "triangle-alert"
+          },
+          {
+            "type": "activity",
+            "heading": "Activity",
+            "content": "One thing you can do at home is a simple germination experiment! Take a handful of chana (chickpea) or moong (green gram) seeds and soak them in a bowl of water overnight. The next day, drain the water and wrap the soaked seeds in a moist cloth, keeping them aside for a few days — you'll see tiny sprouts starting to emerge, showing how seeds begin to grow!",
+            "cta": "See interactive experiment in app →",
+            "icon": "flask-conical"
+          }
+        ]
+      }
+    },
+    {
+      "chapter_number": 2,
+      "blocks": {
+        "hi": [
+          {
+            "type": "example",
+            "heading": "उदाहरण",
+            "content": "Dekho — jab tumari mummy garmiyon mein bore-basi banati hain, toh usme thoda sa purana basi daal deti hain taaki woh acchi tarah ferment ho jaaye na? Ya fir jab ghar mein dahi jamana hota hai, toh thode se garam doodh mein ek chammach purana dahi daal dete hain. Socho zara — woh chhota sa dahi ka tukda itne saare doodh ko kaise dahi bana deta hai? Yahan par Microorganisms ka kamaal hai, jo itne chote hote hain ki humein dikhte bhi nahin! Kya tumhe lagta hai ki ye saare Microorganisms hamesha acche hi hote hain ya kabhi bure bhi ho sakte hain?",
+            "icon": "lightbulb"
+          },
+          {
+            "type": "misconception",
+            "heading": "गलतफहमी",
+            "wrong": "Aksar bachche sochte hain ki Microorganisms matlab bas beemari failane waale jeev.",
+            "correct": "Nahin, aisa bilkul nahin hai! Hamare aas-paas bahut saare aise Microorganisms bhi hain jo hamaare liye acche hote hain — jaise dahi banane waale, ya mitti ko upjau banane waale. Kuch to dawaaiyan banane mein bhi kaam aate hain aur humaare dhaan ki kheti mein bhi madad karte hain!",
+            "icon": "triangle-alert"
+          },
+          {
+            "type": "activity",
+            "heading": "गतिविधि",
+            "content": "Ek kaam karo — ek double roti (bread) ka tukda lo, us par thoda sa paani chhidak do aur use ek dabbe mein band karke kuch dinon ke liye rakh do. Dekho — kuch dinon mein us par alag-alag rang ke daag dikhne lagenge. Ye Microorganisms hi hain jo wahan badh rahe hain! Socho zara — agar yeh Microorganisms khaane ki cheezon par aise hi badhte rahen, toh kya hoga?",
+            "cta": "ऐप में interactive experiment देखो →",
+            "icon": "flask-conical"
+          }
+        ],
+        "en": [
+          {
+            "type": "example",
+            "heading": "Example",
+            "content": "Dekho — when your mom makes dahi (curd) at home, she adds a small spoon of old curd to warm milk, right? Or when we want to ferment bore-basi, we add a little old bore-basi. Socho zara — how does that tiny bit of curd turn a whole bowl of milk into dahi? It's all because of amazing Microorganisms, which are so small that we can't even see them with our eyes! Do you think all these Microorganisms are always good for us, or can some also be harmful?",
+            "icon": "lightbulb"
+          },
+          {
+            "type": "misconception",
+            "heading": "Misconception",
+            "wrong": "Many students often think that Microorganisms are only tiny creatures that cause diseases.",
+            "correct": "Nahin, that's not true at all! There are so many beneficial Microorganisms around us — like the ones that help make dahi, or make the soil fertile for our dhaan ki kheti (paddy cultivation). Some are even used to make important medicines!",
+            "icon": "triangle-alert"
+          },
+          {
+            "type": "activity",
+            "heading": "Activity",
+            "content": "Ek kaam karo — try this simple experiment at home. Take a piece of bread, sprinkle a little water on it, and then keep it in a closed container for a few days. Dekho — after some days, you'll start seeing different coloured spots growing on it. These are actually Microorganisms growing and multiplying! Socho zara — what would happen if these Microorganisms kept growing unchecked on our food items?",
+            "cta": "See interactive experiment in app →",
+            "icon": "flask-conical"
+          }
+        ]
+      }
+    }
+  ]
+}

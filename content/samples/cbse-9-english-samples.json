@@ -1,0 +1,105 @@
+{
+  "board": "cbse",
+  "class": 9,
+  "subject": "english",
+  "samples": [
+    {
+      "chapter_number": 1,
+      "blocks": {
+        "hi": [
+          {
+            "type": "example",
+            "heading": "उदाहरण",
+            "content": "Socho zara — jab tum apne Dada-Dadi ya Nana-Nani ke ghar jaate ho, toh woh tumhe apni puraani photo albums dikhate hain ya apne school ke kisse sunate hain, hai na? Tumhari Mummy-Papa bhi toh batate honge ki unke zamane mein kitabon ki kaisi khushboo hoti thi, ya kitni masti hoti thi school mein ek-doosre ke saath khelne mein! Aaj toh sab kuch digital ho gaya hai, hai na? Toh tumhe kya lagta hai, kaun sa school experience zyada mazedaar hai — jo abhi tum enjoy karte ho, ya woh jiske baare mein tumhari mummy-papa batate hain?",
+            "icon": "lightbulb"
+          },
+          {
+            "type": "misconception",
+            "heading": "गलतफहमी",
+            "wrong": "स्टूडेंट्स अक्सर सोचते हैं कि 'The Fun They Had' कहानी में रोबोटिक टीचर्स और कंप्यूटर स्क्रीन्स को बुरा दिखाया गया है, जैसे भविष्य में स्कूल लाइफ बिल्कुल बेकार हो जाएगी।",
+            "correct": "Dekho — यह कहानी फ्यूचरिस्टिक स्कूलिंग के चैलेंजेस दिखाती है, खासकर तब जब इंसानी टच और दोस्तों के साथ मिलकर पढ़ने का मज़ा कम हो जाता है। लेकिन इसका मतलब यह नहीं कि टेक्नोलॉजी बुरी है। यह बस हमें सोचने पर मजबूर करती है कि हम टेक्नोलॉजी को कैसे इस्तेमाल करें ताकि हम अपनी लर्निंग का बेस्ट एक्सपीरियंस पा सकें।",
+            "icon": "triangle-alert"
+          },
+          {
+            "type": "activity",
+            "heading": "गतिविधि",
+            "content": "Ek kaam karo — एक पुरानी भौतिक किताब (physical book), जैसे कोई कहानी की किताब या अपनी मम्मी-पापा की स्कूल की किताब, उठाओ और उसकी खुशबू, उसके पन्नों को महसूस करो। फिर एक डिजिटल बुक या कोई ऑनलाइन लेसन खोलो और देखो दोनों में क्या फ़रक लगता है तुम्हें।",
+            "cta": "ऐप में interactive experiment देखो →",
+            "icon": "flask-conical"
+          }
+        ],
+        "en": [
+          {
+            "type": "example",
+            "heading": "Example",
+            "content": "So, think for a moment — when you visit your grandparents' home, they often show you old photo albums or tell stories about *their* school days, right? Your parents might also talk about the smell of old books or the fun of playing with friends in school! Everything's so digital now, isn't it? So, what do you think is more fun – the school experience you have now, or the one your parents talk about?",
+            "icon": "lightbulb"
+          },
+          {
+            "type": "misconception",
+            "heading": "Misconception",
+            "wrong": "Students often think 'The Fun They Had' is saying that robotic teachers and computer screens are bad, and that future school life will be completely awful.",
+            "correct": "Look — the story highlights the challenges of futuristic schooling, especially when the human touch and the joy of learning with friends are reduced. But it doesn't mean technology is inherently bad. It simply makes us think about how we should use technology to ensure we get the best possible learning experience.",
+            "icon": "triangle-alert"
+          },
+          {
+            "type": "activity",
+            "heading": "Activity",
+            "content": "Here’s something you can do — pick up an old physical book, like a storybook or one of your parents' old school textbooks, and feel its pages, even smell it. Then, open a digital book or an online lesson and notice the difference between the two experiences.",
+            "cta": "See interactive experiment in app →",
+            "icon": "flask-conical"
+          }
+        ]
+      }
+    },
+    {
+      "chapter_number": 2,
+      "blocks": {
+        "hi": [
+          {
+            "type": "example",
+            "heading": "उदाहरण",
+            "content": "Dekho — jab tum kisi shaadi mein band-baaje ki dhun sunte ho, toh sirf uski aawaaz hi nahi sunte, hai na? Tum usmein chhipi khushi aur josh ko mehsoos karte ho — bilkul jaise Evelyn Glennie music ki vibrations ko mehsoos karti thi. Socho — kya sirf sunna hi kaafi hai ya us dhun mein chhipi khushi ko mehsoos karna bhi zaroori hai?",
+            "icon": "lightbulb"
+          },
+          {
+            "type": "misconception",
+            "heading": "गलतफहमी",
+            "wrong": "Kai baar humein lagta hai ki music toh bas kaano se sunne ki cheez hai, aur bina achhi hearing ke koi musician ban hi nahi sakta.",
+            "correct": "Lekin Evelyn Glennie ki kahaani humein batati hai ki music sirf sunne tak seemit nahi hai; yeh vibrations ko mehsoos karne, unhein samajhne aur unse judne ke baare mein bhi hai. Kya tumhein lagta hai ki koi bhi kala sirf dikhne ya sunne se hi poori hoti hai?",
+            "icon": "triangle-alert"
+          },
+          {
+            "type": "activity",
+            "heading": "गतिविधि",
+            "content": "Ek kaam karo — ek rubber band lo aur use apni ungliyon se kheench kar bajaao. Ab use apne honthon par ya gaal par rakh kar phir se bajaao. Tumhein vibrations mehsoos hongi, jo batati hain ki aawaaz kaise banti hai.",
+            "cta": "ऐप में interactive experiment देखो →",
+            "icon": "flask-conical"
+          }
+        ],
+        "en": [
+          {
+            "type": "example",
+            "heading": "Example",
+            "content": "Socho zara — when you hear the familiar tunes of a street musician playing a flute near a market, or the rhythmic beats of a dhol at a festival, it's not just sound, is it? You feel the mood, the energy, the stories behind it — much like Evelyn Glennie felt the music through her body's vibrations. Do you think music is just what we hear, or is it also how it makes us feel deep inside?",
+            "icon": "lightbulb"
+          },
+          {
+            "type": "misconception",
+            "heading": "Misconception",
+            "wrong": "A common misconception is that you need perfect hearing to truly enjoy or create music, and that hearing loss makes you unable to be a musician.",
+            "correct": "But Evelyn Glennie's journey proves that music isn't just about 'listening' with ears; it's about feeling the vibrations, understanding their rhythm, and connecting with them on a deeper level. What other senses do you think help us experience the world, even if one sense isn't perfect?",
+            "icon": "triangle-alert"
+          },
+          {
+            "type": "activity",
+            "heading": "Activity",
+            "content": "Ek kaam karo — place your hand gently on your throat and speak or hum a tune. You'll feel vibrations. Now, if you have access to a speaker, gently touch its cone when music is playing. You'll feel the vibrations that create sound!",
+            "cta": "See interactive experiment in app →",
+            "icon": "flask-conical"
+          }
+        ]
+      }
+    }
+  ]
+}

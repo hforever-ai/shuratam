@@ -1,0 +1,105 @@
+{
+  "board": "cbse",
+  "class": 5,
+  "subject": "hindi",
+  "samples": [
+    {
+      "chapter_number": 1,
+      "blocks": {
+        "hi": [
+          {
+            "type": "example",
+            "heading": "उदाहरण",
+            "content": "Dekho — tumhe yaad hai — jab tum Diwali par patakhe lene ke liye paise jama karte ho — ya apni birthday ke liye koi nayi cheez kharidna chahte ho? Tab apni गुल्लक ही काम आती है, hai na? Is tarah hum seekhte hain ki apne sapno ke liye paise kaise bachate hain.",
+            "icon": "lightbulb"
+          },
+          {
+            "type": "misconception",
+            "heading": "गलतफहमी",
+            "wrong": "Bahut se bachche sochte hain ki गुल्लक में पैसे बस जादू से आ जाते हैं या वह सिर्फ बड़े-बड़े खर्चों के लिए होते हैं।",
+            "correct": "Lekin aisa nahi hai! गुल्लक में वह पैसे जाते हैं जो हम अपनी pocket money से बचाते हैं या छोटे-छोटे खर्चे कम करके इकट्ठे करते हैं। हर छोटा रुपया मिलकर ही तो बड़ा बनता है, didi कहती है!",
+            "icon": "triangle-alert"
+          },
+          {
+            "type": "activity",
+            "heading": "गतिविधि",
+            "content": "एक काम करो — इस हफ्ते जब भी तुम्हें pocket money मिले या कोई तुम्हें पैसे दे — तो एक छोटी कॉपी में लिखो कि तुमने कितने पैसे अपनी गुल्लक में डाले और कितने खर्च किए। देखो — एक हफ्ते में कितने पैसे जमा होते हैं! Socho — इससे तुम्हें क्या पता चलेगा अपनी बचतों और खर्च के बारे में?",
+            "cta": "ऐप में interactive experiment देखो →",
+            "icon": "flask-conical"
+          }
+        ],
+        "en": [
+          {
+            "type": "example",
+            "heading": "Example",
+            "content": "Hey there! Nomi didi here. Do you remember — when you save up money during Diwali for crackers or maybe you want a new storybook? That's when your piggy bank becomes your best friend, right? It teaches us how to save up for our dreams.",
+            "icon": "lightbulb"
+          },
+          {
+            "type": "misconception",
+            "heading": "Misconception",
+            "wrong": "Many children think that the money in their piggy bank just appears by magic — or that it's only meant for really big and expensive purchases.",
+            "correct": "But that's not quite right! The money in your piggy bank comes from all the small savings you make — like choosing not to buy a chocolate today, or putting aside some pocket money. Every little rupee adds up, Nomi didi says!",
+            "icon": "triangle-alert"
+          },
+          {
+            "type": "activity",
+            "heading": "Activity",
+            "content": "Here's what you can do — this week, try making a small saving goal. Maybe you want to save ₹50 for a new pencil box. Each time you get some pocket money or money as a gift — put a little bit into your piggy bank specifically for that goal. Try to reach your target! What do you think you'll learn about setting goals and reaching them with your savings?",
+            "cta": "See interactive experiment in app →",
+            "icon": "flask-conical"
+          }
+        ]
+      }
+    },
+    {
+      "chapter_number": 2,
+      "blocks": {
+        "hi": [
+          {
+            "type": "example",
+            "heading": "उदाहरण",
+            "content": "Dekho — tumhe yaad hai jab tum garmi ki chuttiyon mein Nani ke ghar train se jaate ho? — Khidki se bahar naye-naye gaon, bade-bade khet, aur kabhi-kabhi choti nadiyan bhi dikhti hain. Wo poori yatra hi ek सैर-सपाटा होती है, jahan hum bahut kuch naya dekhte aur seekhte hain.",
+            "icon": "lightbulb"
+          },
+          {
+            "type": "misconception",
+            "heading": "गलतफहमी",
+            "wrong": "Kuch bachche sochte hain ki सैर-सपाटा toh bas mauj-masti karne ke liye hota hai, usse kuch khaas seekhne ko nahin milta.",
+            "correct": "Aisa bilkul nahin hai! Socho zara — jab tum kahin ghoomne jaate ho, toh kya tum wahan ki nayi cheezein nahin dekhte? Naye log, naya khana, nayi jagah ka itihaas — yeh sab humein bahut kuch sikhate hain. Har सैर-सपाटा ek naya experience aur gyaan lekar aata hai.",
+            "icon": "triangle-alert"
+          },
+          {
+            "type": "activity",
+            "heading": "गतिविधि",
+            "content": "Ek kaam karo — aaj shaam apne ghar ki chhat par jao ya apne balcony mein khade ho jao. Wahan se dekho ki tumhe aas-paas kya-kya naya dikhta hai — kitne rang ke ghar hain, kaun se ped hain, aur kaun se pakshi ud rahe hain. Sirf dekhna nahin, un sab cheezon ko apne dimag mein ek 'mental map' banao.",
+            "cta": "ऐप में interactive experiment देखो →",
+            "icon": "flask-conical"
+          }
+        ],
+        "en": [
+          {
+            "type": "example",
+            "heading": "Example",
+            "content": "Hey, remember those exciting road trips we take to our grandparents' village during the summer holidays? — As you peek out of the car window, don't you see new fields, different kinds of houses, and maybe even a local market buzzing with people? That whole journey is like a mini adventure, where we discover so much without even realizing it!",
+            "icon": "lightbulb"
+          },
+          {
+            "type": "misconception",
+            "heading": "Misconception",
+            "wrong": "Some kids think that going on a trip is only for having fun, and you don't really learn anything important from it.",
+            "correct": "Oh, that's not true at all! Think about it — when you visit a new place, don't you learn about its history, taste new food, or see different clothes people wear? Every trip teaches us something new and exciting, making us smarter and more understanding of the world around us.",
+            "icon": "triangle-alert"
+          },
+          {
+            "type": "activity",
+            "heading": "Activity",
+            "content": "Here's a fun thing to do — tonight, after dinner, go to your balcony or stand by a window. Look carefully at all the things you can see outside — the different shapes of roofs, the streetlights glowing, or maybe even a bat flying past. Try to notice something you've never paid attention to before!",
+            "cta": "See interactive experiment in app →",
+            "icon": "flask-conical"
+          }
+        ]
+      }
+    }
+  ]
+}

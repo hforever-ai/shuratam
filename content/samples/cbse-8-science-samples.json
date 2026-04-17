@@ -1,0 +1,105 @@
+{
+  "board": "cbse",
+  "class": 8,
+  "subject": "science",
+  "samples": [
+    {
+      "chapter_number": 1,
+      "blocks": {
+        "hi": [
+          {
+            "type": "example",
+            "heading": "उदाहरण",
+            "content": "Dekho — जब गर्मियों की छुट्टी खत्म होती है और बारिश शुरू होती है, तब हमारे खेतों में किसान धान या मक्का लगाते हैं, है ना? लेकिन सर्दियों में इन्हीं खेतों में गेहूं या सरसों दिखती है। Socho zara — ऐसा क्यों होता है कि हर मौसम में एक जैसी फसल नहीं उगती? क्या उन्हें अलग-अलग चीज़ें चाहिए होती हैं?",
+            "icon": "lightbulb"
+          },
+          {
+            "type": "misconception",
+            "heading": "गलतफहमी",
+            "wrong": "कई बच्चों को लगता है कि खाद (manure) और उर्वरक (fertilizer) एक ही चीज़ हैं या दोनों पौधे उगाने के लिए सिर्फ एक ही तरह से इस्तेमाल होते हैं।",
+            "correct": "नहीं, बिल्कुल नहीं! खाद तो गोबर, पत्तों से बनी organic चीज़ है जो मिट्टी को भी सुधारती है, जबकि उर्वरक factory में बने chemical होते हैं जो specific nutrients देते हैं, पर मिट्टी को उतना फायदा नहीं पहुंचाते।",
+            "icon": "triangle-alert"
+          },
+          {
+            "type": "activity",
+            "heading": "गतिविधि",
+            "content": "Ek kaam karo — घर पर दो कटोरियों में कुछ चने के दाने लो। एक में पानी भरकर भिगो दो और दूसरी को ऐसे ही सूखा रहने दो। दो-तीन दिन बाद देखो — तुम्हें क्या फर्क दिखता है और क्यों?",
+            "cta": "ऐप में interactive experiment देखो →",
+            "icon": "flask-conical"
+          }
+        ],
+        "en": [
+          {
+            "type": "example",
+            "heading": "Example",
+            "content": "So, imagine this — when summer vacations are ending and the rains start, our farmers plant rice or maize in the fields, right? But in winter, you'll see wheat or mustard in those same fields. Socho zara — why do you think we don't grow the same crops in every season? Do they need different things to grow well?",
+            "icon": "lightbulb"
+          },
+          {
+            "type": "misconception",
+            "heading": "Misconception",
+            "wrong": "Some kids think that manure and fertilizer are the same thing, or that they're used in the same way to help plants grow.",
+            "correct": "Nope, not at all! Manure is an organic material made from cow dung and plant waste, which also improves soil health. Fertilizers, on the other hand, are factory-made chemicals that give specific nutrients but don't really help the soil structure much.",
+            "icon": "triangle-alert"
+          },
+          {
+            "type": "activity",
+            "heading": "Activity",
+            "content": "Here’s a fun thing you can try — take some chana (chickpea) seeds in two separate bowls at home. Fill one bowl with water and let the seeds soak, and leave the other bowl dry. After two or three days, what difference do you observe and why?",
+            "cta": "See interactive experiment in app →",
+            "icon": "flask-conical"
+          }
+        ]
+      }
+    },
+    {
+      "chapter_number": 2,
+      "blocks": {
+        "hi": [
+          {
+            "type": "example",
+            "heading": "उदाहरण",
+            "content": "तुम्हारी मम्मी जब दूध से दही जमाती हैं, तो क्या तुमने कभी सोचा है कि यह कैसे होता है? — बस थोड़ा सा दही गर्म दूध में डालने से ही, रातों-रात पूरा दूध गाढ़ा दही बन जाता है — यह सब एक नन्हे 'microorganism' का कमाल है जिसे लैक्टोबैसिलस (Lactobacillus) कहते हैं। सोचो ज़रा, ये कितने छोटे होते हुए भी कितना बड़ा काम करते हैं! — तुम्हें क्या लगता है, इस दही में ऐसा क्या होता है जो पूरे दूध को बदल देता है?",
+            "icon": "lightbulb"
+          },
+          {
+            "type": "misconception",
+            "heading": "गलतफहमी",
+            "wrong": "अरे, ये सारे 'microorganisms' तो बस बीमारियाँ फैलाने के लिए ही होते हैं! इनसे तो बस दूर ही रहना चाहिए।",
+            "correct": "नहीं, बिल्कुल नहीं! सच तो ये है कि जहाँ कुछ 'microorganisms' बीमारियाँ फैलाते हैं, वहीं बहुत सारे ऐसे भी हैं जो हमारे लिए बहुत ज़रूरी हैं — जैसे दही बनाने वाले, या खाद बनाने वाले। असल में, ये हमारी ज़िंदगी का एक बहुत बड़ा और फायदेमंद हिस्सा हैं! — अच्छा बताओ, तुम किसी ऐसे 'microorganism' का नाम जानते हो जो हमारे लिए दोस्त की तरह काम करता है?",
+            "icon": "triangle-alert"
+          },
+          {
+            "type": "activity",
+            "heading": "गतिविधि",
+            "content": "एक ब्रेड का टुकड़ा लो और उसे थोड़ा पानी छिड़ककर किसी डिब्बे में बंद कर दो। अब इसे दो-तीन दिनों के लिए गरम जगह पर रख दो और ध्यान से देखो कि इस पर क्या बदलाव आते हैं।",
+            "cta": "ऐप में interactive experiment देखो →",
+            "icon": "flask-conical"
+          }
+        ],
+        "en": [
+          {
+            "type": "example",
+            "heading": "Example",
+            "content": "When your mom sets curd from milk at home, have you ever wondered how that happens? — Just a tiny spoon of old curd mixed into warm milk can turn the whole thing into thick, delicious dahi overnight — this magic is all thanks to a tiny 'microorganism' called Lactobacillus. Isn't it amazing how something so small can do such a big job? — What do you think is present in that little bit of curd that makes the entire milk change?",
+            "icon": "lightbulb"
+          },
+          {
+            "type": "misconception",
+            "heading": "Misconception",
+            "wrong": "Oh, all these 'microorganisms' are just there to cause diseases! We should just stay away from them.",
+            "correct": "No, not at all! The truth is, while some 'microorganisms' do cause diseases, many others are super important for us — like the ones that make curd, or help in creating compost. In fact, they are a huge and beneficial part of our lives! — Can you think of any 'microorganism' that acts like a friend to us?",
+            "icon": "triangle-alert"
+          },
+          {
+            "type": "activity",
+            "heading": "Activity",
+            "content": "Take a slice of bread and sprinkle a little water on it. Now, put it in an airtight container and keep it in a warm place for two to three days. Observe carefully what changes you see on it.",
+            "cta": "See interactive experiment in app →",
+            "icon": "flask-conical"
+          }
+        ]
+      }
+    }
+  ]
+}

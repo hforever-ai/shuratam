@@ -1,0 +1,105 @@
+{
+  "board": "cbse",
+  "class": 10,
+  "subject": "hindi",
+  "samples": [
+    {
+      "chapter_number": 1,
+      "blocks": {
+        "hi": [
+          {
+            "type": "example",
+            "heading": "उदाहरण",
+            "content": "Dekho — कभी-कभी तुम अपने किसी दोस्त के साथ मूवी देखने जाते हो। एक दोस्त हर बात पर चिल्लाता है, जल्दी गुस्सा करता है और दूसरों को नीचा दिखाता है। दूसरा दोस्त वही बात प्यार से, आराम से बोलता है। तुम्हें बताओ, किसके साथ तुम्हें ज़्यादा अच्छा महसूस होता है? बस कबीरदास जी भी यही कहते हैं कि हमारी मीठी वाणी हमें और दूसरों को कैसे ठंडक पहुँचाती है।",
+            "icon": "lightbulb"
+          },
+          {
+            "type": "misconception",
+            "heading": "गलतफहमी",
+            "wrong": "कई बार बच्चे सोचते हैं कि अहंकार (ego) का मतलब सिर्फ पैसे या ताकत का घमंड दिखाना होता है।",
+            "correct": "नहीं रे! कबीरदास जी जिस अहंकार की बात कर रहे हैं, वो सिर्फ पैसे का घमंड नहीं है। वो 'मैं' का भाव है — जैसे, 'मैं ही सब जानता हूँ', 'मेरी बात ही सही है', 'मैं क्यों किसी की सुनूँ?'। यह सूक्ष्म अहंकार हमारे अंदर होता है और हमें सच्चाई से या ईश्वर से जुड़ने से रोकता है।",
+            "icon": "triangle-alert"
+          },
+          {
+            "type": "activity",
+            "heading": "गतिविधि",
+            "content": "एक काम करो — अगले एक दिन के लिए, तुम अपनी बातों पर ध्यान दो। देखो कि कितनी बार तुम गुस्से में या कठोर शब्द बोलते हो, और कितनी बार तुम प्यार और शांति से बात करते हो। बस observe करना, judge मत करना।",
+            "cta": "ऐप में interactive experiment देखो →",
+            "icon": "flask-conical"
+          }
+        ],
+        "en": [
+          {
+            "type": "example",
+            "heading": "Example",
+            "content": "You know — sometimes when you're at the local market, imagine two vendors selling the same vegetables. One is grumpy, speaks rudely, and rushes you. The other is cheerful, smiles, and speaks politely. Tell me, from whom would you prefer to buy? Kabir Das Ji is talking about exactly this — how our sweet words can make us and others feel cool and peaceful.",
+            "icon": "lightbulb"
+          },
+          {
+            "type": "misconception",
+            "heading": "Misconception",
+            "wrong": "Students often think that 'ego' in Kabir's dohas only refers to being proud of wealth or power and showing it off.",
+            "correct": "Socho zara — Kabir's 'ego' (अहंकार) isn't just about money or status. It's a much deeper 'I' feeling inside us – like 'I know everything', 'My way is the best', or 'Why should I listen to anyone else?'. This subtle ego fills our minds and prevents us from truly connecting with the truth or the divine (Hari). It's an internal barrier, not just an external display.",
+            "icon": "triangle-alert"
+          },
+          {
+            "type": "activity",
+            "heading": "Activity",
+            "content": "Ek kaam karo — For the next full day, try to consciously observe your own words. How many times did you use kind words, and how many times did you react with anger or frustration? Just observe, don't judge yourself.",
+            "cta": "See interactive experiment in app →",
+            "icon": "flask-conical"
+          }
+        ]
+      }
+    },
+    {
+      "chapter_number": 2,
+      "blocks": {
+        "hi": [
+          {
+            "type": "example",
+            "heading": "उदाहरण",
+            "content": "Dekho — tum kitchen mein ho. Tumhare paas ek alag se 'आलू' रखा है। ये बस एक शब्द है, एक अकेला नाम। लेकिन जब तुम कहते हो, 'मैंने आज आलू की सब्ज़ी बनाई है', तो वही 'आलू' अब 'सब्ज़ी' के साथ जुड़कर, उसके स्वाद में मिलकर एक sentence का हिस्सा बन गया। अब ये सिर्फ 'आलू' नहीं, बल्कि एक 'पद' है जो पूरे वाक्य को मतलब दे रहा है। Socho zara — tumhara naam bhi to ek 'शब्द' है, लेकिन जब तुम अपने दोस्तों से बात करते हो, तो तुम 'पद' बनकर कैसे interact करते हो?",
+            "icon": "lightbulb"
+          },
+          {
+            "type": "misconception",
+            "heading": "गलतफहमी",
+            "wrong": "बहुत से बच्चे सोचते हैं कि शब्द और पद एक ही बात है, बस 'पद' थोड़ा कठिन शब्द है।",
+            "correct": "नहीं बेटा, शब्द अकेला और आज़ाद होता है, उसका अपना अर्थ होता है। लेकिन जब वही शब्द किसी वाक्य में इस्तेमाल होता है, तो वो व्याकरण के नियमों (जैसे लिंग, वचन, कारक) में बंधकर 'पद' बन जाता है और वाक्य में अपना एक खास काम करता है।",
+            "icon": "triangle-alert"
+          },
+          {
+            "type": "activity",
+            "heading": "गतिविधि",
+            "content": "Ek kaam karo — ek purani kitaab ya akhbaar uthao. उसमें से कोई भी एक शब्द (जैसे 'पेड़' या 'पानी') ढूंढो और देखो कि वह अकेले क्या अर्थ दे रहा है। फिर उसी शब्द को किसी वाक्य में ढूंढो और समझने की कोशिश करो कि वाक्य में आने पर वो 'शब्द' कैसे 'पद' बन गया है, और उसका वाक्य से क्या रिश्ता बन गया है। तुम्हें क्या लगता है, वाक्य में 'पद' बनने के बाद शब्द ज़्यादा powerful हो जाता है या कम?",
+            "cta": "ऐप में interactive experiment देखो →",
+            "icon": "flask-conical"
+          }
+        ],
+        "en": [
+          {
+            "type": "example",
+            "heading": "Example",
+            "content": "Imagine you're watching a play — you see an actor standing backstage, just by themselves. That's like a 'word' — independent, with their own identity. But when that same actor steps onto the stage, gets into character, and starts interacting with other actors as part of a scene, suddenly they're not just an actor anymore; they're playing a specific 'role' within the story, bound by the script and the scene. That 'role' is exactly what a 'pad' is in grammar — a word that's joined a sentence and started playing a specific part, following grammatical rules. Can you think of other things in daily life that change their 'role' when they become part of something bigger?",
+            "icon": "lightbulb"
+          },
+          {
+            "type": "misconception",
+            "heading": "Misconception",
+            "wrong": "Many students think 'shabd' and 'pad' are just two different names for the same thing, or that 'pad' is just a fancier term for 'shabd'.",
+            "correct": "Not quite, beta. A 'shabd' is a free, independent word with its own meaning. But when that same word is used in a sentence, it gets bound by grammatical rules (like gender, number, case) and becomes a 'pad', taking on a specific function within that sentence.",
+            "icon": "triangle-alert"
+          },
+          {
+            "type": "activity",
+            "heading": "Activity",
+            "content": "Okay, here’s something fun — pick up any English newspaper or a storybook you have. Choose any single word you see (like 'run' or 'beautiful') and just think about its standalone meaning. Now, find that same word used in a sentence in the book. Observe how it connects with other words and what specific job it's doing in that sentence. How has it changed? Do you think a word's meaning always stays the same when it becomes a 'pad' in a sentence, or can it sometimes shift a little?",
+            "cta": "See interactive experiment in app →",
+            "icon": "flask-conical"
+          }
+        ]
+      }
+    }
+  ]
+}

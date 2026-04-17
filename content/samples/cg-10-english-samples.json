@@ -1,0 +1,105 @@
+{
+  "board": "cg",
+  "class": 10,
+  "subject": "english",
+  "samples": [
+    {
+      "chapter_number": 1,
+      "blocks": {
+        "hi": [
+          {
+            "type": "example",
+            "heading": "उदाहरण",
+            "content": "Dekho — jaise humare chhattisgarhi kisaan bhaiyya — jab dhaan ki fasal bo dete hain aur achhi baarish nahi hoti — toh bhi unhe poora vishwas hota hai na ki Bhagwan unki sunenge aur baarish zaroor aayegi? Waise hi Lencho ko bhi poora bharosa tha ki uski madad zaroor hogi.",
+            "icon": "lightbulb"
+          },
+          {
+            "type": "misconception",
+            "heading": "गलतफहमी",
+            "wrong": "Kuch bacche sochte hain ki Lencho ki tarah agar hum bhi poore vishwas se Bhagwan ko khat likhein, toh woh sach mein humari madad karenge ya humein seedhe paise bhej denge.",
+            "correct": "Asal mein, yeh kahaani humein batati hai ki jab kisi ka vishwas bahut gehra hota hai — toh uski madad ke liye insaan hi aage aate hain. Bhagwan aksar insaanon ke zariye hi apni madad bhejte hain, jaise postmaster ne ki.",
+            "icon": "triangle-alert"
+          },
+          {
+            "type": "activity",
+            "heading": "गतिविधि",
+            "content": "Ek kaam karo — ek kaagaz par apni koi aisi ichha ya samasya likho jiska hal tumhein filhal nahi dikh raha. Phir us kaagaz ko aisi jagah rakho jahan tum use roj dekho — aur dekho kaise tumhare mann mein ek nayi ummeed jagti hai ya koi raasta dikhai deta hai. Kya pata, tumhari madat ke liye koi Lencho ke postmaster ki tarah aa hi jaaye?",
+            "cta": "ऐप में interactive experiment देखो →",
+            "icon": "flask-conical"
+          }
+        ],
+        "en": [
+          {
+            "type": "example",
+            "heading": "Example",
+            "content": "See — just like our farmers in Chhattisgarh — when they sow paddy and there isn't enough rain, don't they still have immense faith that God will listen to them and the rains will definitely come? Lencho had a similar, unwavering belief that his help would surely arrive.",
+            "icon": "lightbulb"
+          },
+          {
+            "type": "misconception",
+            "heading": "Misconception",
+            "wrong": "Some students think that if we, like Lencho, write a letter to God with complete faith, then God will literally help us or send us money directly.",
+            "correct": "Actually, this story shows us that when someone's faith is so deep and pure — it often moves other humans to help. God often works through people's kindness and generosity, just like the postmaster did.",
+            "icon": "triangle-alert"
+          },
+          {
+            "type": "activity",
+            "heading": "Activity",
+            "content": "Here's something you can do — write down a wish or a problem on a piece of paper for which you currently see no solution. Then place that paper somewhere you'll see it every day — and notice how a new hope stirs within you or a path becomes clearer. Who knows, maybe someone like Lencho's postmaster might come forward to help you?",
+            "cta": "See interactive experiment in app →",
+            "icon": "flask-conical"
+          }
+        ]
+      }
+    },
+    {
+      "chapter_number": 2,
+      "blocks": {
+        "hi": [
+          {
+            "type": "example",
+            "heading": "उदाहरण",
+            "content": "Dekho — jaise humare Chhattisgarh mein kabhi-kabhi gaon waale apni dhaan ki kheti ke liye ya Indravati nadi ke paani ke liye sangharsh karte hain, jab unhe lagta hai unka haq cheena jaa raha hai. Nelson Mandela ka sangharsh bhi kuch aisa hi tha — apne desh ke logon ke liye, unki azaadi aur samman ke liye, bas woh sangharsh bahut bada aur lamba tha. Socho zara — kaise ek insaan itna lamba sangharsh kar sakta hai?",
+            "icon": "lightbulb"
+          },
+          {
+            "type": "misconception",
+            "heading": "गलतफहमी",
+            "wrong": "Kai baar students sochte hain ki Nelson Mandela ko bas jail se bahar aana tha, aur wahi asli azaadi thi. Unhe lagta hai ki azaadi sirf sharirik roop se mukt hona hai.",
+            "correct": "Magar azaadi sirf sharirik bandhan se mukti nahi hoti — yeh toh aatm-samman, samaanta aur apne desh ke liye kuchh karne ki azaadi bhi hai. Mandela ne ek aise samaj ka sapna dekha tha jahan har insaan ko barabar adhikar milen, chahe uski chamdi ka rang kuch bhi ho. Unka sangharsh sirf jail se nikalne ka nahi, balki ek naye, samtawadi desh ki sthapna ka tha.",
+            "icon": "triangle-alert"
+          },
+          {
+            "type": "activity",
+            "heading": "गतिविधि",
+            "content": "Ek kaam karo — ek ghante ke liye apni aankhon par patti baandh kar ya ek haath ko bandh kar ghar ke chhote-mote kaam karne ki koshish karo. Tumhe turant ehsaas hoga ki kitna mushkil hota hai jab hamari azaadi chhini jaati hai, chahe woh kitni bhi chhoti ho.",
+            "cta": "ऐप में interactive experiment देखो →",
+            "icon": "flask-conical"
+          }
+        ],
+        "en": [
+          {
+            "type": "example",
+            "heading": "Example",
+            "content": "Dekho — You know how sometimes in our Chhattisgarh villages, people might face challenges or discrimination just because of where they come from, or their community, and they have to fight for their basic rights or respect? Nelson Mandela's struggle was similar, but on a massive scale, against a system called Apartheid that segregated people based on their skin colour. Can you imagine a world where you couldn't go to certain schools or live in certain areas just because of your skin?",
+            "icon": "lightbulb"
+          },
+          {
+            "type": "misconception",
+            "heading": "Misconception",
+            "wrong": "Many students think that once Nelson Mandela was released from prison and Apartheid ended, South Africa immediately became a perfectly equal and harmonious country overnight.",
+            "correct": "But true freedom and equality are a long journey, not just a destination. Ending Apartheid was just the first step; the bigger challenge was building a new, just nation where everyone felt respected and had equal opportunities, which required a lot of healing and hard work even after his release. It was about transforming hearts and minds too.",
+            "icon": "triangle-alert"
+          },
+          {
+            "type": "activity",
+            "heading": "Activity",
+            "content": "Try this — for an hour, try doing everyday tasks around your house using only one hand, or by keeping your eyes closed for short periods (with supervision, please!). You’ll quickly understand how much we rely on our full freedom to navigate the world, and how even small restrictions can feel significant.",
+            "cta": "See interactive experiment in app →",
+            "icon": "flask-conical"
+          }
+        ]
+      }
+    }
+  ]
+}

@@ -1,0 +1,105 @@
+{
+  "board": "cg",
+  "class": 5,
+  "subject": "social_science",
+  "samples": [
+    {
+      "chapter_number": 1,
+      "blocks": {
+        "hi": [
+          {
+            "type": "example",
+            "heading": "उदाहरण",
+            "content": "Dekho — tum Bastar ke jungle mein ghane ped aur Indravati nadi dekhte ho na? Aur wahi dhaan ke khet bhi kitne bade-bade hote hain! Socho zara — hamare India mein kahi unche-unche pahad hain jahan barf padti hai, kahi bade-bade samudra hain, aur kahi hamare Chhattisgarh jaise hari-bhari zameen hai jahan kheti hoti hai. Kitni alag-alag tarah ki jagah hain ek hi desh mein! Tumhe kya lagta hai, in sabmein sabse alag kya hai?",
+            "icon": "lightbulb"
+          },
+          {
+            "type": "misconception",
+            "heading": "गलतफहमी",
+            "wrong": "Bahut se bachchon ko lagta hai ki hamara desh India bas hamare Chhattisgarh jitna hi chhota hai, ya usmein sirf ek hi tarah ke log rehte hain.",
+            "correct": "Lekin NOMI didi bata rahi hai — India bahut-bahut bada desh hai! Ismein hamare Chhattisgarh jaise aur bhi kayi bade-bade rajya hain — har rajya ka apna alag khana, pehnawa aur bol-chaal hai. Kahi pahad hain to kahi samudra, kahi jungle hain to kahi bade-bade shehar. Ye ek nahi, kayi alag-alag khubsurat jagahon ka desh hai!",
+            "icon": "triangle-alert"
+          },
+          {
+            "type": "activity",
+            "heading": "गतिविधि",
+            "content": "Ek kaam karo — apne ghar mein ek kagaz aur pencil lo. Kya tum India ka mota-mota naksha (map) bana sakte ho? Usmein Chhattisgarh ko ek alag rang se rang kar dikhao. Phir dekho, kya tum Indravati nadi ya Bastar ke jungle ko bhi us nakshe par dikha pa rahe ho? Jab tum apna naksha bana loge, to sochna — tumne India mein aur kaun-kaun se bade-bade pahad ya nadiyaan dekhi hain?",
+            "cta": "ऐप में interactive experiment देखो →",
+            "icon": "flask-conical"
+          }
+        ],
+        "en": [
+          {
+            "type": "example",
+            "heading": "Example",
+            "content": "You know — just like in our homes we cook different dishes every day — sometimes a sabzi, sometimes dal, sometimes rice — our country India is also full of variety! Look — you see the dense forests and the Indravati river in Bastar, right? And those big, green paddy fields for dhaan are so common here. But then, in India, there are also very tall mountains with snow, huge oceans, and even dry areas. So many different kinds of places in one single country! What do you think is the most interesting difference you've noticed?",
+            "icon": "lightbulb"
+          },
+          {
+            "type": "misconception",
+            "heading": "Misconception",
+            "wrong": "Many children think that our country India is just as small as our Chhattisgarh, or maybe only has one kind of people.",
+            "correct": "But NOMI didi wants you to know — India is a very, very big country! It has many large states like our Chhattisgarh — each with its own unique food, clothes, and way of talking. Some parts have mountains, some have oceans, some have forests, and some have big cities. It's not just one place, but a country of many beautiful and different places!",
+            "icon": "triangle-alert"
+          },
+          {
+            "type": "activity",
+            "heading": "Activity",
+            "content": "Okay, next time — grab a piece of paper and a pencil at home. Can you try to draw a simple outline map of India? Then, find Chhattisgarh on it and color it with a different color. See if you can also show the Indravati river or the Bastar forests on your map! Once you've drawn your map, think about it — what other big mountains or rivers in India have you seen in your book?",
+            "cta": "See interactive experiment in app →",
+            "icon": "flask-conical"
+          }
+        ]
+      }
+    },
+    {
+      "chapter_number": 2,
+      "blocks": {
+        "hi": [
+          {
+            "type": "example",
+            "heading": "उदाहरण",
+            "content": "अरे वाह! जब तुम्हें खूब गर्मी लगती है, तब अम्मा कैसे ठंडा-ठंडा बोर-बासी बनाती हैं — याद है? और सर्दियों में तुम गर्म स्वेटर और शॉल निकालते हो। तो सोचना — यह सब किस वजह से होता है कि हमें कब क्या खाना है और क्या पहनना है?",
+            "icon": "lightbulb"
+          },
+          {
+            "type": "misconception",
+            "heading": "गलतफहमी",
+            "wrong": "आज खूब बारिश हो रही है, मतलब यहाँ की जलवायु (climate) हमेशा बारिश वाली है।",
+            "correct": "नहीं बेटा, आज की बारिश तो मौसम (weather) है — मतलब किसी एक दिन का हाल। जलवायु तो कई सालों तक का औसत होता है, जैसे छत्तीसगढ़ में गर्मी ज्यादा पड़ती है और बारिश भी खूब होती है।",
+            "icon": "triangle-alert"
+          },
+          {
+            "type": "activity",
+            "heading": "गतिविधि",
+            "content": "एक काम करो — अगले एक हफ्ते तक, हर सुबह, दोपहर और शाम को देखो कि मौसम कैसा है। क्या धूप है, हवा चल रही है, या बादल हैं — अपनी एक छोटी डायरी में लिखते जाओ।",
+            "cta": "ऐप में interactive experiment देखो →",
+            "icon": "flask-conical"
+          }
+        ],
+        "en": [
+          {
+            "type": "example",
+            "heading": "Example",
+            "content": "Hey there! You know how during summer holidays, we all love eating cool bore-basi to beat the heat, right? And then in winter, we pull out our cozy sweaters and shawls. So, think about it — what makes us choose what to eat and wear at different times of the year?",
+            "icon": "lightbulb"
+          },
+          {
+            "type": "misconception",
+            "heading": "Misconception",
+            "wrong": "It's super hot today, so that means the climate here is always very, very hot!",
+            "correct": "Not quite, my dear. Today's heat is just the weather—how things are right now, on this one day. Climate is actually the average weather conditions over many, many years, like how Chhattisgarh generally has hot summers and lots of monsoon rain.",
+            "icon": "triangle-alert"
+          },
+          {
+            "type": "activity",
+            "heading": "Activity",
+            "content": "Here's an idea — for the next seven days, every morning, noon, and evening, observe what the weather is like outside your home. Is it sunny, windy, or cloudy? Make a note of it in a small diary.",
+            "cta": "See interactive experiment in app →",
+            "icon": "flask-conical"
+          }
+        ]
+      }
+    }
+  ]
+}

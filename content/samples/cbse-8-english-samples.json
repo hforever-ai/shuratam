@@ -1,0 +1,105 @@
+{
+  "board": "cbse",
+  "class": 8,
+  "subject": "english",
+  "samples": [
+    {
+      "chapter_number": 1,
+      "blocks": {
+        "hi": [
+          {
+            "type": "example",
+            "heading": "उदाहरण",
+            "content": "Dekho — kabhi socha hai ki cricket match mein jab do teams ek doosre ke khilaaf khel rahi hoti hain, aur agar kisi ek team ke player ko chot lag jaaye, toh aksar doosri team ke khiladi bhi madad ke liye daudte hain? Woh pal — jab rivalry bhool kar insaaniyat aage aa jaati hai — bilkul waisa hi tha jaisa Jim Macpherson ne Christmas ke din German soldiers ke saath mehsoos kiya. Socho zara, aise pal kyun itne khaas hote hain?",
+            "icon": "lightbulb"
+          },
+          {
+            "type": "misconception",
+            "heading": "गलतफहमी",
+            "wrong": "Socho zara — kuch bachchon ko lagta hai ki jang (war) mein soldiers hamesha sirf ek-doosre ke dushman hote hain aur unke beech koi achcha pal ho hi nahi sakta.",
+            "correct": "Lekin, 'The Best Christmas Present in the World' chapter mein humne dekha na — ki kaise British aur German soldiers bhi Christmas par apne-apne differences bhool kar saath mein football khelte hain aur peace ki baat karte hain. Woh bhi insaan hain jo peace aur ghar wapas lautne ki ichha rakhte hain.",
+            "icon": "triangle-alert"
+          },
+          {
+            "type": "activity",
+            "heading": "गतिविधि",
+            "content": "Ek kaam karo — apne kisi aise dost ya rishtedaar ko ek chhota sa letter likho jiske saath tumne koi bahut accha pal bitaya ho. Us pal ko yaad karo aur batao ki woh tumhare liye kyun khaas tha, bilkul waise hi jaise Jim Macpherson ne apni wife ko letter likha tha.",
+            "cta": "ऐप में interactive experiment देखो →",
+            "icon": "flask-conical"
+          }
+        ],
+        "en": [
+          {
+            "type": "example",
+            "heading": "Example",
+            "content": "Hey didi/bhaiya, ever noticed how during a big cricket match between two rival schools, if a player from one team gets hurt, often players from the other team also rush to help? That moment — when rivalry is forgotten and humanity steps in — is exactly what Jim Macpherson experienced on Christmas Day with the German soldiers. Why do you think these moments of putting aside differences feel so special?",
+            "icon": "lightbulb"
+          },
+          {
+            "type": "misconception",
+            "heading": "Misconception",
+            "wrong": "Some students might think that soldiers in a war are always just fighting machines, full of hatred for their enemies.",
+            "correct": "But 'The Best Christmas Present in the World' shows us that even on the battlefield, soldiers are human beings who yearn for peace and can find moments of camaraderie and shared humanity, even with the 'enemy', just like Jim and the German captain did.",
+            "icon": "triangle-alert"
+          },
+          {
+            "type": "activity",
+            "heading": "Activity",
+            "content": "Here’s a little something for you — find an old photograph that holds a special memory for you, maybe with family or friends. Now, try to write a short letter, just a few sentences, to one of the people in that photo, remembering that moment and why it was so special to you, just like Jim wrote to Connie.",
+            "cta": "See interactive experiment in app →",
+            "icon": "flask-conical"
+          }
+        ]
+      }
+    },
+    {
+      "chapter_number": 2,
+      "blocks": {
+        "hi": [
+          {
+            "type": "example",
+            "heading": "उदाहरण",
+            "content": "Dekho — tumne kabhi kisi bade talab ya samudra ke kinare dekha hai ki paani ekdum se peeche chala jaaye, jaise woh kuch andar kheench raha ho? Tsunami aane se pehle samudra ka paani aise hi — bade ilaake se — peeche hat jaata hai, aur fir wahi paani ek bohot badi lehar ban kar wapas aata hai. Socho zara, jab aisa ho, toh kya karna chahiye?",
+            "icon": "lightbulb"
+          },
+          {
+            "type": "misconception",
+            "heading": "गलतफहमी",
+            "wrong": "Kai bachche sochte hain ki tsunami bas samudra ki bohot oonchi lehre hoti hain, jaise jo hum beach par dekhte hain, bas thodi badi.",
+            "correct": "Lekin sach yeh hai ki tsunami ek alag hi cheez hai — yeh ek bohot badi deewar ki tarah aati hai, jo gehre samudra mein shuru hoti hai aur uski raftaar bohot tez hoti hai. Yeh sirf upar se oonchi nahi hoti, balki poore samudra ke paani ko aage dhakelti hai. Kya tum bata sakte ho ki ek normal badi lehar aur tsunami mein aur kya bada antar ho sakta hai?",
+            "icon": "triangle-alert"
+          },
+          {
+            "type": "activity",
+            "heading": "गतिविधि",
+            "content": "Ek kaam karo — ek bade tub ya bucket mein paani bharo. Ab uske beech mein aaram se apni mutthi se ek jhatka do, jaise koi cheez andar giri ho. Tum dekhoge kaise chhote chhote ripples banenge aur kinaron tak pahunchenge — yahi kuch had tak tsunami ke banne ka ek bohot hi chhota sa roop hai.",
+            "cta": "ऐप में interactive experiment देखो →",
+            "icon": "flask-conical"
+          }
+        ],
+        "en": [
+          {
+            "type": "example",
+            "heading": "Example",
+            "content": "You know how sometimes, during a really heavy monsoon, a small river or 'nala' near your village or town can suddenly swell up and overflow its banks in minutes? A tsunami is like that, but on a massive, massive ocean scale — it's not just a big wave, it's an entire body of water rushing in with incredible force, capable of changing the coastline in seconds. Can you imagine the sheer power needed for that?",
+            "icon": "lightbulb"
+          },
+          {
+            "type": "misconception",
+            "heading": "Misconception",
+            "wrong": "Many students think that a tsunami is just a really tall wave, like the giant ones you sometimes see surfers riding at beaches, only much bigger.",
+            "correct": "But actually, a tsunami is completely different — it’s like a massive wall of water, pushing the entire ocean from its depths, not just the surface. It travels incredibly fast and has tremendous destructive power because of the sheer volume of water it carries. So, if it’s not just a surface wave, what else makes a tsunami so much more dangerous than a regular big wave?",
+            "icon": "triangle-alert"
+          },
+          {
+            "type": "activity",
+            "heading": "Activity",
+            "content": "Here's what you can do — fill your bathtub or a large bucket with water. Now, gently but quickly push your hand down into the middle of the water and then pull it up. See how the water is displaced and creates ripples that travel to the edges? That's a tiny, tiny representation of how a massive underwater disturbance can create waves that travel across oceans!",
+            "cta": "See interactive experiment in app →",
+            "icon": "flask-conical"
+          }
+        ]
+      }
+    }
+  ]
+}

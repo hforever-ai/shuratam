@@ -1,0 +1,105 @@
+{
+  "board": "cbse",
+  "class": 6,
+  "subject": "english",
+  "samples": [
+    {
+      "chapter_number": 1,
+      "blocks": {
+        "hi": [
+          {
+            "type": "example",
+            "heading": "उदाहरण",
+            "content": "Dekho — jab tum apni cycle chalana seekhte ho na, toh shuru mein shayad tumhare papa ya didi peeche se pakadte hain. Tumhe lagta hai ki woh pakad rahe hain, isliye tum gir nahi rahe ho. Par ek din — woh haath hata lete hain, aur tum khud hi chala rahe hote ho! Socho, us din tumhe kaisa lagta hai jab pata chalta hai ki tum khud kar rahe the sab?",
+            "icon": "lightbulb"
+          },
+          {
+            "type": "misconception",
+            "heading": "गलतफहमी",
+            "wrong": "बच्चे सोचते हैं कि Patrick का सारा होमवर्क तो Elf ने किया था, Patrick को तो बस मजे करने थे और उसके grades अच्छे आ गए!",
+            "correct": "Par socho zara — Elf को तो कुछ भी नहीं आता था! वह तो Patrick से ही किताबें लाने को कहता था, और Patrick ही dictionaries से शब्द ढूंढता था, answers बताता था. असल में तो Patrick ही पूरी मेहनत कर रहा था! Toh ab tum batao — asal mein mehnat kisne ki thi aur seekha kisne tha?",
+            "icon": "triangle-alert"
+          },
+          {
+            "type": "activity",
+            "heading": "गतिविधि",
+            "content": "Ek kaam karo — apne ghar mein koi chhota sa kaam khud se karne ki koshish karo, jaise apni book shelf theek karna ya apni favourite storybook ke kuch naye words dhoondhna aur unke meaning likhna. Phir dekho, tumhe kitna achha lagta hai jab tum woh kaam poora kar lete ho?",
+            "cta": "ऐप में interactive experiment देखो →",
+            "icon": "flask-conical"
+          }
+        ],
+        "en": [
+          {
+            "type": "example",
+            "heading": "Example",
+            "content": "You know how sometimes, when you're learning to make a simple snack like a Maggi or a sandwich, your mum or elder sister might stand next to you, guiding you? You feel like they're helping you a lot, right? But actually, *you* are doing all the cutting, mixing, and cooking! So, who really cooks the tastiest Maggi then?",
+            "icon": "lightbulb"
+          },
+          {
+            "type": "misconception",
+            "heading": "Misconception",
+            "wrong": "Students often think that Patrick got all his homework done by the magical elf, so he didn't have to do anything at all and just got good grades easily!",
+            "correct": "But wait a minute — the tiny elf knew nothing, did he? He always asked Patrick for definitions, spellings, and facts. Patrick had to read books, go to the library, and guide the elf at every step. So, was the elf really a shortcut, or a very smart way for Patrick to learn?",
+            "icon": "triangle-alert"
+          },
+          {
+            "type": "activity",
+            "heading": "Activity",
+            "content": "Try this — pick one small thing you usually ask for help with, like organizing your study table or learning a few new words from your English textbook, and try to do it completely on your own. How does it feel when you finish it all by yourself?",
+            "cta": "See interactive experiment in app →",
+            "icon": "flask-conical"
+          }
+        ]
+      }
+    },
+    {
+      "chapter_number": 2,
+      "blocks": {
+        "hi": [
+          {
+            "type": "example",
+            "heading": "उदाहरण",
+            "content": "Dekho — jaise tum kabhi-kabhi school mein, agar koi tumhe pareshan karta hai na, toh tum fatafat apni badi didi ya bhaiya ke paas jaate ho. Kyun? Kyunki tumhe lagta hai woh zyada taqatwar hain, tumhe bacha sakte hain. Iss kahani ka dog bhi kuch aisa hi kar raha tha — woh kisi aise ko dhoondh raha tha jo sabse zyada powerful ho, jiske neeche woh surakshit mehsoos kar sake. Tumhe kya lagta hai, apni suraksha ke liye kisi aur par nirbhar hona kahan tak sahi hai?",
+            "icon": "lightbulb"
+          },
+          {
+            "type": "misconception",
+            "heading": "गलतफहमी",
+            "wrong": "Kai bachche sochte hain ki kutte toh hamesha se hi insaan ke dost the, aur unhone bas insaano ko hi apna malik banaya.",
+            "correct": "Socho zara — yeh galat hai. Kutte ne toh pehle ek-ek karke sabse taqatwar ko dhundha tha — pehle bhediye ko, phir bhaloo ko, uske baad sher ko. Jab use laga ki insaan hi sabse zyada shaktishaali hain, jo sher se bhi nahin darte, tab usne unka saath chuna. Woh sabse strong master chahta tha, sirf koi dost nahin.",
+            "icon": "triangle-alert"
+          },
+          {
+            "type": "activity",
+            "heading": "गतिविधि",
+            "content": "Ek kaam karo — apne ghar mein ya apne doston ke beech mein dekho. Tumhe kya lagta hai, sabse zyada baat kiski maani jaati hai ya kiski chalti hai, aur log uski baat kyun sunte hain? — Woh aisa kya karte hain jo unhein 'strong' ya 'leader' banata hai?",
+            "cta": "ऐप में interactive experiment देखो →",
+            "icon": "flask-conical"
+          }
+        ],
+        "en": [
+          {
+            "type": "example",
+            "heading": "Example",
+            "content": "Dekho — it's like when you're playing cricket with your friends, and a bigger, stronger kid comes along, suddenly everyone wants to be on their team, right? You feel safer, more powerful with them, don't you? The dog in our story was doing something similar — it was looking for the most powerful being it could find, so it could feel safe and protected. Why do you think we sometimes look for someone stronger than us?",
+            "icon": "lightbulb"
+          },
+          {
+            "type": "misconception",
+            "heading": "Misconception",
+            "wrong": "A common thought is that the dog chose humans because humans are kind or friendly.",
+            "correct": "Socho zara — that's not exactly why. The story tells us the dog chose humans because they seemed the strongest of all, not afraid of any other creature, not even the mighty lion! It wanted a master who was truly fearless and powerful, not just someone nice. What does that tell you about what the dog valued most in a master, initially?",
+            "icon": "triangle-alert"
+          },
+          {
+            "type": "activity",
+            "heading": "Activity",
+            "content": "Ek kaam karo — for a day, watch your family or your friends when you're playing. Who seems to be the 'leader' or the one whose decisions everyone usually follows? What qualities do you think make them the 'strongest' or most influential in that situation?",
+            "cta": "See interactive experiment in app →",
+            "icon": "flask-conical"
+          }
+        ]
+      }
+    }
+  ]
+}

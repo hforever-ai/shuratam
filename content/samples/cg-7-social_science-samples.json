@@ -1,0 +1,105 @@
+{
+  "board": "cg",
+  "class": 7,
+  "subject": "social_science",
+  "samples": [
+    {
+      "chapter_number": 1,
+      "blocks": {
+        "hi": [
+          {
+            "type": "example",
+            "heading": "उदाहरण",
+            "content": "Dekho — aaj hum 'हिंदुस्तान' bolte hain to tumhare dimag mein apna poora desh aata hai, hai na? Poora India! Lekin pata hai — purane zamane mein jab log ye shabd istemal karte the na — tab iska matlab sirf ek chhota sa ilaaka hota tha — jaise Punjab, Haryana ya Ganga-Yamuna ke beech ka hissa. Socho zara — ek hi shabd ka matlab itne saal mein kaise itna badal gaya hoga?",
+            "icon": "lightbulb"
+          },
+          {
+            "type": "misconception",
+            "heading": "गलतफहमी",
+            "wrong": "Students ko aksar lagta hai ki jab itihas mein 'विदेशी' (foreigner) shabd aata hai — to uska matlab hamesha koi aisa insaan hai jo doosre desh se aaya ho — jaise aaj hum samajhte hain.",
+            "correct": "Lekin asal mein — purane zamane mein 'विदेशी' ka matlab bas woh hota tha jo tumhare gaon ya 'समाज' (community) ka hissa nahi hai. Agar tum Bastar ke jungle mein rehte ho aur Indravati nadi ke paar se koi naya aadmi aaya hai — to woh tumhare liye 'विदेशी' tha — chahe woh Chhattisgarh ka hi kyun na ho! Socho — ye matlab ka badlav hamen kya sikhata hai?",
+            "icon": "triangle-alert"
+          },
+          {
+            "type": "activity",
+            "heading": "गतिविधि",
+            "content": "Ek kaam karo — apne ghar mein kisi bade se — jaise dadi ya nana se — unke bachpan ke samay ke Raipur ya Bilaspur ke bare mein poocho. Dekhna — unke bataye hue sheher aur aaj ke sheher mein kitna farak milta hai — jaise logon ke rehne ka tarika, dukanen, ya khel. Kya tum dekhoge ki kaise samay ke sath cheezein badalti hain?",
+            "cta": "ऐप में interactive experiment देखो →",
+            "icon": "flask-conical"
+          }
+        ],
+        "en": [
+          {
+            "type": "example",
+            "heading": "Example",
+            "content": "Hey there! You know, when we say 'Hindustan' today, what comes to your mind? Our entire country, India, right? But guess what — a long, long time ago, when people used that word, it often meant just a small area, like parts of Punjab, Haryana, or the land between the Ganga and Yamuna rivers. Isn't it fascinating how the meaning of a single word can change so much over hundreds of years?",
+            "icon": "lightbulb"
+          },
+          {
+            "type": "misconception",
+            "heading": "Misconception",
+            "wrong": "Many students often think that whenever the word 'foreigner' comes up in history, it always means someone from another country, just like how we understand it today.",
+            "correct": "But actually — in older times, a 'foreigner' simply meant someone who was not part of your village or 'community'. If you lived in the jungles of Bastar near the Indravati river and a new person came from across the river — they would be a 'foreigner' to you — even if they were from another part of Chhattisgarh! What do you think this change in meaning tells us about how societies looked at each other then?",
+            "icon": "triangle-alert"
+          },
+          {
+            "type": "activity",
+            "heading": "Activity",
+            "content": "Here's something fun you can try — ask an elder in your family, like your grandmother or grandfather, about their childhood memories of Raipur or Bilaspur (cities in Chhattisgarh). See how different the city they describe is from the city you know today — maybe in terms of transport, shops, or even the games children played! Can you spot some major changes and some things that might have stayed the same?",
+            "cta": "See interactive experiment in app →",
+            "icon": "flask-conical"
+          }
+        ]
+      }
+    },
+    {
+      "chapter_number": 2,
+      "blocks": {
+        "hi": [
+          {
+            "type": "example",
+            "heading": "उदाहरण",
+            "content": "Dekho — tumhare gaon mein ya aas-paas ek bada kisan hota hai na, jiski bohot zameen hoti hai aur woh logon ko kaam deta hai? Woh dheere-dheere itna powerful ho jaata hai ki gaon ke chhote-mote faisle bhi wahi karta hai. Socho zara — purane zamane mein bhi aise hi chhote-chhote sardar ya 'सामंत' bade rajaon ke neeche kaam karte the, aur mauka milte hi apni nayi rajdhani bana lete the aur khud ko naya raja ghoshit kar dete the. Kya tumhare gaon mein bhi koi aisa 'सामंत' jaisa neta hai?",
+            "icon": "lightbulb"
+          },
+          {
+            "type": "misconception",
+            "heading": "गलतफहमी",
+            "wrong": "Students often think that all kings in history were always completely independent rulers from the very beginning.",
+            "correct": "Nahi beta, aisa nahi tha. Kayi naye rajya aise shuru hue jinke raja pehle bade rajaon ke 'सामंत' (subordinate chiefs) ya chhote adheenasth the. Jab bade raja kamzor padte the, tab ye सामंत अपनी ताकत बढ़ाते और खुद को independent ghoshit kar dete the. Jaise Rashtrakoot pehle Chalukya ke neeche the. Socho — kya bina kisi bade sahare ke ekdum se itna bada rajya banana aasan hota hoga?",
+            "icon": "triangle-alert"
+          },
+          {
+            "type": "activity",
+            "heading": "गतिविधि",
+            "content": "Ek kaam karo — apne ghar mein khel-khel mein sab ko alag-alag kaam aur kuch 'resources' (jaise sikke ya kankar) do. Ab dekho kaun sabse zyada resources control karta hai aur uska asar baaki sab par kaise padta hai.",
+            "cta": "ऐप में interactive experiment देखो →",
+            "icon": "flask-conical"
+          }
+        ],
+        "en": [
+          {
+            "type": "example",
+            "heading": "Example",
+            "content": "You know how in your village, there's often a big farmer or a 'gautiya' (local headman) who owns a lot of land and employs many people? They become quite influential and sometimes even make small decisions for the community. Well — in ancient times, many 'new kings' started out just like that — as powerful local chiefs or 'samantas' under a bigger king, and when the time was right, they declared their own kingdom! Can you think of someone like a 'samanta' in your local area today?",
+            "icon": "lightbulb"
+          },
+          {
+            "type": "misconception",
+            "heading": "Misconception",
+            "wrong": "Students often think that all kings in history were always completely independent rulers from the very beginning.",
+            "correct": "But actually, many of these 'new' kings started as 'samantas' — important subordinate chiefs under powerful existing rulers. They would provide military support and pay tribute, and only when the main king's power weakened, they would declare themselves independent, just like the Rashtrakutas initially served the Chalukyas. Think about it — would it be easy to build a big kingdom from scratch without any prior support?",
+            "icon": "triangle-alert"
+          },
+          {
+            "type": "activity",
+            "heading": "Activity",
+            "content": "Try this at home — gather some small objects like pebbles or coins. Give different amounts to different family members, making some 'rich' and some 'poor' in this game. Now, observe how the 'richer' members might have more say or influence in the decision-making process.",
+            "cta": "See interactive experiment in app →",
+            "icon": "flask-conical"
+          }
+        ]
+      }
+    }
+  ]
+}

@@ -1,0 +1,105 @@
+{
+  "board": "cg",
+  "class": 5,
+  "subject": "hindi",
+  "samples": [
+    {
+      "chapter_number": 1,
+      "blocks": {
+        "hi": [
+          {
+            "type": "example",
+            "heading": "उदाहरण",
+            "content": "अरे वाह, गुल्लक! सोचे हो कभी — तुम्हारी मम्मी जब दिवाली के लिए या तुम्हारे नए स्कूल बैग के लिए थोड़े-थोड़े पैसे बचाती हैं, तो उन्हें कहाँ रखती हैं? कभी किसी डब्बे में, कभी अलमारी के अंदर — है ना? बस, गुल्लक भी वैसा ही एक प्यारा सा दोस्त है जहाँ हम अपने छोटे-छोटे पैसे संभालकर रखते हैं, ताकि बाद में जब हमें कुछ बड़ा खरीदना हो या किसी की मदद करनी हो, तो वे काम आ सकें.",
+            "icon": "lightbulb"
+          },
+          {
+            "type": "misconception",
+            "heading": "गलतफहमी",
+            "wrong": "कई बच्चों को लगता है कि गुल्लक सिर्फ छोटे बच्चों का खेल है, या उसमें रखे पैसे कभी निकालने ही नहीं चाहिए— बस जमा करते रहो!",
+            "correct": "अरे नहीं! गुल्लक सिखाता है कि कैसे थोड़ी-थोड़ी बचत करके तुम अपने बड़े सपनों को पूरा कर सकते हो. और हाँ, जब तुम्हारा सपना पूरा हो जाए, तो पैसे निकालने भी तो पड़ेंगे, तभी तो उसका फायदा मिलेगा! गुल्लक पैसे जमा करने और निकालने, दोनों के लिए है, पर एक सोच-समझकर किए गए फैसले के साथ.",
+            "icon": "triangle-alert"
+          },
+          {
+            "type": "activity",
+            "heading": "गतिविधि",
+            "content": "एक खाली प्लास्टिक की बोतल या कोई भी डब्बा ले लो. उसमें ऊपर से एक छोटा छेद बनाओ जहाँ से सिक्के और नोट अंदर जा सकें. अब हर दिन अपने पॉकेट मनी में से थोड़े-थोड़े पैसे उस 'गुल्लक' में डालो और देखो एक महीने बाद तुम्हारे पास कितने पैसे जमा होते हैं!",
+            "cta": "ऐप में interactive experiment देखो →",
+            "icon": "flask-conical"
+          }
+        ],
+        "en": [
+          {
+            "type": "example",
+            "heading": "Example",
+            "content": "Hey, have you ever noticed — when your Mummy saves money for Diwali or for your new school bag, where does she keep it? Maybe in a box, or hidden inside the cupboard — right? A 'Gullak' is just like that, a sweet little friend where we keep our small savings safe, so that later, when we want to buy something big or help someone, those savings come in handy.",
+            "icon": "lightbulb"
+          },
+          {
+            "type": "misconception",
+            "heading": "Misconception",
+            "wrong": "Many children think that a gullak is just a game for little kids, or that you should never take money out of it — just keep collecting!",
+            "correct": "Oh no! A gullak teaches you how by saving little by little, you can fulfill your big dreams. And yes, once your dream is fulfilled, you'll need to take the money out to use it, right? A gullak is for both saving and taking out money, but with a thoughtful decision.",
+            "icon": "triangle-alert"
+          },
+          {
+            "type": "activity",
+            "heading": "Activity",
+            "content": "Take an empty plastic bottle or any old box. Make a small slit on top where coins and notes can go in. Now, every day, put a little bit of your pocket money into this 'gullak' and see how much money you've collected after one month!",
+            "cta": "See interactive experiment in app →",
+            "icon": "flask-conical"
+          }
+        ]
+      }
+    },
+    {
+      "chapter_number": 2,
+      "blocks": {
+        "hi": [
+          {
+            "type": "example",
+            "heading": "उदाहरण",
+            "content": "सोनो — जब तुम अपनी नानी के घर जाते हो गर्मी की छुट्टियों में, तो वहां कितना मज़ा आता है ना? नए दोस्त, नई चीज़ें देखने को मिलती हैं — जैसे शायद नानी के गाँव में धान के खेत कितने बड़े होते हैं या इंद्रावती नदी कितनी शांत बहती है। बस, यही तो सैर-सपाटा है — नई जगहें देखना और बहुत कुछ सीखना!",
+            "icon": "lightbulb"
+          },
+          {
+            "type": "misconception",
+            "heading": "गलतफहमी",
+            "wrong": "तुम शायद सोचते हो कि सैर-सपाटा सिर्फ खेलने-कूदने और मजे करने के लिए होता है, जैसे मेला देखने जाना या बोर-बासी खाना।",
+            "correct": "पर ऐसा नहीं है — देखो, जब हम कहीं घूमने जाते हैं, तो बहुत कुछ सीखते भी हैं। हम देखते हैं कि दूसरी जगहों पर घर कैसे होते हैं, लोग क्या पहनते हैं, कौन से नए खेल खेलते हैं — जैसे शायद बस्तर के जंगल में रहने वाले बच्चे किन चीज़ों से खेलते होंगे? सैर-सपाटा हमारी किताबों से भी ज़्यादा सिखाता है!",
+            "icon": "triangle-alert"
+          },
+          {
+            "type": "activity",
+            "heading": "गतिविधि",
+            "content": "एक काम करो — अपनी खिड़की से बाहर देखो। तुम्हें क्या-क्या दिख रहा है — पेड़, घर, शायद भैंस या धान के खेत? अब सोचना ज़रा, अगर तुम वहाँ सैर-सपाटे पर जाते, तो क्या-क्या करते?",
+            "cta": "ऐप में interactive experiment देखो →",
+            "icon": "flask-conical"
+          }
+        ],
+        "en": [
+          {
+            "type": "example",
+            "heading": "Example",
+            "content": "So, little sister — when you go to your Nani's house during summer holidays, isn't it so much fun? You meet new friends, see new things — like maybe how big the 'dhaan ke khet' (paddy fields) are in Nani's village, or how peaceful the Indravati river flows. That's exactly what 'sair-sapata' is — seeing new places and learning so much!",
+            "icon": "lightbulb"
+          },
+          {
+            "type": "misconception",
+            "heading": "Misconception",
+            "wrong": "You might think that 'sair-sapata' is just for playing and having fun, like going to a fair or eating bore-basi.",
+            "correct": "But that's not true — see, when we go traveling, we learn so much! We see what houses are like in other places, what people wear, what new games they play — like maybe what kind of games children play in the Bastar forests? 'Sair-sapata' teaches us even more than our books!",
+            "icon": "triangle-alert"
+          },
+          {
+            "type": "activity",
+            "heading": "Activity",
+            "content": "Here's an idea — look out your window right now. What all can you see — trees, houses, maybe a buffalo or some paddy fields? Now, imagine if you were going on a 'sair-sapata' there, what would you do?",
+            "cta": "See interactive experiment in app →",
+            "icon": "flask-conical"
+          }
+        ]
+      }
+    }
+  ]
+}

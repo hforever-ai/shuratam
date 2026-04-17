@@ -1,0 +1,105 @@
+{
+  "board": "cbse",
+  "class": 5,
+  "subject": "english",
+  "samples": [
+    {
+      "chapter_number": 1,
+      "blocks": {
+        "hi": [
+          {
+            "type": "example",
+            "heading": "उदाहरण",
+            "content": "Dekho — tumhe yaad hai garmiyon ki chuttiyan, jab tum bahar gully mein cricket khelte the ya patang udate the? Poora din dhoop mein rehkar itni garmi lagti thi na! Aur phir achanak doorbell ki aawaz aati thi ya ghanti bajti thi — Tring Tring — aur saamne Ice Cream wala bhaiya apni colorful cart ke saath khade hote the. Socho zara — uss thandi-thandi ice cream ko dekh kar kaisa lagta hai?",
+            "icon": "lightbulb"
+          },
+          {
+            "type": "misconception",
+            "heading": "गलतफहमी",
+            "wrong": "Kai bachche sochte hain ki ice cream wala bhaiya sirf ice cream hi bechte hain, jaisa poem mein likha hai.",
+            "correct": "Par nahi, dekho — hamare yahan ice cream wala bhaiya aksar kulfi, chuski, aur thandi-thandi drinks bhi rakhte hain, hai na? Woh toh poora 'cold treat' ka mela leke aate hain!",
+            "icon": "triangle-alert"
+          },
+          {
+            "type": "activity",
+            "heading": "गतिविधि",
+            "content": "Ek kaam karo — ghar par ek fun activity karte hain. Koi bhi juice ya sharbat lo, usme thoda paani milao, aur use ek chhoti katori ya glass mein daal kar freezer mein rakh do. Bich mein ek chhoti chamach ya ice cream stick laga dena. Jab woh jam jaye toh dekhna — tumne apni khud ki chuski bana li!",
+            "cta": "ऐप में interactive experiment देखो →",
+            "icon": "flask-conical"
+          }
+        ],
+        "en": [
+          {
+            "type": "example",
+            "heading": "Example",
+            "content": "Hey, remember those super-hot summer afternoons when you’d be playing outside — maybe gully cricket or flying kites? You’d be so tired and sweaty, feeling like a little ice cube would be a blessing! And then, suddenly, you'd hear that familiar jingle or bell — Tring Tring — and there he is, the Ice Cream Man with his colourful cart! Don't you just feel like running to him for a yummy, cold treat?",
+            "icon": "lightbulb"
+          },
+          {
+            "type": "misconception",
+            "heading": "Misconception",
+            "wrong": "Some kids think that the Ice Cream Man only sells *ice cream*, just like it says in the poem.",
+            "correct": "But wait — in real life, our ice cream bhaiya often has kulfi, chuskis, and even cold drinks too! He brings a whole cart of yummy, cold things, not just one kind of ice cream, right?",
+            "icon": "triangle-alert"
+          },
+          {
+            "type": "activity",
+            "heading": "Activity",
+            "content": "Let's try a fun little experiment at home. Take any juice or squash, mix a little water in it, and pour it into a small cup or bowl. Put a spoon or an ice cream stick in the middle and keep it in the freezer. Once it's frozen, you've made your very own cold treat, just like a mini chuski!",
+            "cta": "See interactive experiment in app →",
+            "icon": "flask-conical"
+          }
+        ]
+      }
+    },
+    {
+      "chapter_number": 2,
+      "blocks": {
+        "hi": [
+          {
+            "type": "example",
+            "heading": "उदाहरण",
+            "content": "Dekho — tumne dekha hai — jab tumhari mummy sabzi banati hain, toh uske chhilke dustbin mein daal deti hain? Lekin socho — agar un chhilkon se hi koi mazedaar dish ban jaaye, toh kitna mazaa aayega, hai na? Jaise Wonderful Waste wali kahani mein sabzi ke tukdon se 'Avial' bana! Socho zara — tumhare ghar mein aur kya-kya cheezein hain jinhe tum waste samajhte ho?",
+            "icon": "lightbulb"
+          },
+          {
+            "type": "misconception",
+            "heading": "गलतफहमी",
+            "wrong": "Bahut bachchon ko lagta hai ki jo cheez waste hai, woh toh bas kachra hai, aur use fek dena chahiye.",
+            "correct": "Lekin asal mein — agar hum thodi akal lagayein aur creative sochen, toh waste bhi bahut kaam ki cheez ban sakti hai, jaise Avial mein sabzi ke chhilke ek nayi dish ban gaye!",
+            "icon": "triangle-alert"
+          },
+          {
+            "type": "activity",
+            "heading": "गतिविधि",
+            "content": "Ek kaam karo — apne ghar mein koi khaali plastic ki bottle ya dabba dhoondo. Use rang-birange kaagaz, purane motiyon ya kapde ke tukdon se sajao, aur use pen stand ya choti cheezein rakhne ke liye istemal karo. Socho zara — tum aur kaun si purani cheez ko naya roop de sakte ho?",
+            "cta": "ऐप में interactive experiment देखो →",
+            "icon": "flask-conical"
+          }
+        ],
+        "en": [
+          {
+            "type": "example",
+            "heading": "Example",
+            "content": "Dekho — have you ever seen your mom make yummy pakoras or a quick snack from leftover rice or some vegetable scraps? It’s like magic, right? Something you thought might be thrown away becomes a delicious treat! Just like in our 'Wonderful Waste' story, where vegetable scraps turned into 'Avial'. Socho zara — what other things do we usually throw away that could be made into something new and interesting?",
+            "icon": "lightbulb"
+          },
+          {
+            "type": "misconception",
+            "heading": "Misconception",
+            "wrong": "Many children think that 'waste' is just garbage and it's always useless, so we should just throw it away.",
+            "correct": "But actually — if we use our smart brains and think creatively, even things we call waste can become very useful and wonderful, just like the vegetable scraps in the story became the delicious dish, Avial!",
+            "icon": "triangle-alert"
+          },
+          {
+            "type": "activity",
+            "heading": "Activity",
+            "content": "Ek kaam karo — find an old shoebox or a plastic bottle at home. Decorate it with colours, old buttons, or scraps of fabric, and turn it into a tiny storage box for your crayons or small toys. Socho zara — what else could you make from things you usually throw away?",
+            "cta": "See interactive experiment in app →",
+            "icon": "flask-conical"
+          }
+        ]
+      }
+    }
+  ]
+}

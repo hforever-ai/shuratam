@@ -5,49 +5,48 @@
   "samples": [
     {
       "chapter_number": 1,
-      "chapter_title": "Matter in Our Surroundings",
       "blocks": {
         "hi": [
           {
             "type": "example",
-            "heading": "Indravati का पानी और States of Matter",
-            "content": "Indravati नदी के किनारे बैठो। पानी liquid है। धूप में नदी की surface से water vapour उठती है — वो gas (water vapour) है। सर्दियों में किनारे की मिट्टी freeze हो जाती है — वो solid। एक ही substance (H₂O) तीनों states में! States matter की property हैं, molecule नहीं बदलता।",
+            "heading": "उदाहरण",
+            "content": "अरे दीदी — तुमने कभी सोचा है — जब तुम सुबह-सुबह उठकर अपनी मम्मी के हाथ की बनी bore-basi खाती हो, या तुम्हारे खेत में दहन (dhaan) की खेती होती है, या इंद्रावती नदी का ठंडा पानी देखती हो — तो ये सब क्या हैं? ये सब ‘पदार्थ’ (matter) ही तो हैं! तुम्हारे हाथ में जो किताब है, हवा जिसमें तुम साँस लेती हो, सब पदार्थ हैं। सोचना ज़रा — क्या तुम अपनी स्कूल की यूनिफॉर्म और अपने दोस्तों की हँसी में से बता सकती हो कि कौन सा ‘पदार्थ’ है और कौन सा नहीं?",
             "icon": "lightbulb"
           },
           {
             "type": "misconception",
-            "heading": "गलतफहमी: Bhains का दूध उबलने पर Chemically Change होता है?",
-            "wrong": "Bhains का दूध उबालने पर chemical change होता है",
-            "correct": "नहीं! Boiling एक physical change है — दूध का composition नहीं बदलता, बस temperature बढ़ती है और bacteria मरते हैं (pasteurization effect)। Chemical change तब होता जब नये substances बनें।",
+            "heading": "गलतफहमी",
+            "wrong": "कई बार हमें लगता है कि ‘हवा’ (air) तो बस खाली जगह है, कुछ नहीं।",
+            "correct": "अरे नहीं! हवा भी ‘पदार्थ’ है, पता है? तुम अपनी साइकिल के टायर में हवा भरवाती हो ना, या गुब्बारे फुलाती हो — तो वो फूलते क्यों हैं? क्योंकि हवा जगह घेरती है और उसका वज़न भी होता है। हवा तो बहुत सारे गैसों का मिश्रण है। तो अब तुम बताओ, क्या खाली दिखने वाली पानी की बोतल सच में खाली होती है?",
             "icon": "triangle-alert"
           },
           {
             "type": "activity",
-            "heading": "Evaporation — Bastar की गर्मी में",
-            "content": "एक wet cloth को धूप में रखो और एक छांव में। Note करो कौन पहले सूखता है। फिर try करो: एक wet cloth पर fan चलाओ। Surface area, temperature, और wind speed — तीनों evaporation को affect करते हैं। Bastar की गर्मी science का experiment है!",
-            "cta": "ऐप में evaporation factors देखो →",
+            "heading": "गतिविधि",
+            "content": "एक काम करो — घर में जब कोई अगरबत्ती जलाए तो एक कोने में जाकर खड़ी हो जाओ। थोड़ी देर बाद तुम्हें उसकी खुशबू आने लगेगी ना? या फिर जब तुम्हारी मम्मी रसोई में स्वादिष्ट खाना बनाती हैं, तो उसकी खुशबू पूरे घर में फैल जाती है। सोचना ज़रा — ऐसा क्यों होता है कि ठंडे पानी में शक्कर घुलने में ज़्यादा समय लेती है, लेकिन गरम चाय में झट से घुल जाती है?",
+            "cta": "ऐप में interactive experiment देखो →",
             "icon": "flask-conical"
           }
         ],
         "en": [
           {
             "type": "example",
-            "heading": "Indravati River and the Three States",
-            "content": "Sit by the Indravati river. The water is liquid. In sunlight, water vapour rises from the surface — that's gas. In winter, the mud on the banks freezes — that's solid. The same substance (H₂O) in three states! States are properties of matter; the molecule itself doesn't change.",
+            "heading": "Example",
+            "content": "Hey didi — did you ever stop to think about your morning bore-basi or the lush green dhaan (paddy) fields around your village? Or even the cool water of the Indravati river? All these are ‘matter’! Your school bag, the air you breathe, the chair you're sitting on — everything is matter. So, tell me, can you spot the matter in your classroom right now, and what about the ideas buzzing in your head?",
             "icon": "lightbulb"
           },
           {
             "type": "misconception",
-            "heading": "Does Boiling Bhains Milk Cause a Chemical Change?",
-            "wrong": "Boiling buffalo milk causes a chemical change",
-            "correct": "No! Boiling is a physical change — the composition of the milk doesn't change, just the temperature rises and bacteria are killed. A chemical change would create entirely new substances.",
+            "heading": "Misconception",
+            "wrong": "Sometimes we mistakenly think that things like heat, light, or sound are also 'matter'.",
+            "correct": "Actually, they are not! Matter is anything that has mass and occupies space. Heat, light, and sound are forms of 'energy'. They don't have mass or take up space in the same way your textbook or a glass of water does. So, if a bright light bulb isn't matter, then what do you think about the light rays coming from it?",
             "icon": "triangle-alert"
           },
           {
             "type": "activity",
-            "heading": "Evaporation in Bastar's Heat",
-            "content": "Place one wet cloth in sunlight and another in shade. Note which dries first. Then try: fan a wet cloth. Surface area, temperature, and wind speed all affect evaporation rate. Bastar's summer heat is a free science experiment!",
-            "cta": "See evaporation factors in app →",
+            "heading": "Activity",
+            "content": "Here’s a simple experiment you can try at home — take a glass of water and add a spoon of sugar or salt to it. Stir it well. You’ll notice the sugar or salt seems to disappear, right? But the water level doesn't really go up! What do you think happens to the tiny particles of sugar or salt when they seem to vanish in the water?",
+            "cta": "See interactive experiment in app →",
             "icon": "flask-conical"
           }
         ]
@@ -55,49 +54,48 @@
     },
     {
       "chapter_number": 2,
-      "chapter_title": "Is Matter Around Us Pure?",
       "blocks": {
         "hi": [
           {
             "type": "example",
-            "heading": "Bore-basi — Mixture या Pure Substance?",
-            "content": "Bore-basi में चावल, पानी, नमक — यह एक mixture है। हर component अपनी identity रखता है। लेकिन जब bore-basi ferment होती है और lactic acid बनती है — अब chemical change हुआ, नया substance बना। Mixture physical है, compound chemical।",
+            "heading": "उदाहरण",
+            "content": "Dekho — jab tum subah-subah apne kheton mein jaati ho aur Indravati nadi ka saaf paani dekhti ho — toh tumhe lagta hai ki ye kitna \"pure\" hai, hai na? Lekin vigyan ki bhasha mein — woh nadi ka paani 'pure' nahi hota — usmein kayi tarah ke minerals, mitti ke kan aur ghuli hui hawa bhi hoti hai. Toh soch kar batao — vigyan kis cheez ko \"pure\" kehta hai?",
             "icon": "lightbulb"
           },
           {
             "type": "misconception",
-            "heading": "गलतफहमी: Filtered Water = Pure Water?",
-            "wrong": "Filter किया हुआ पानी chemically pure होता है",
-            "correct": "नहीं! Filtration सिर्फ suspended particles हटाता है — dissolved salts और minerals रहते हैं। Chemically pure water के लिए distillation चाहिए। Filtered ≠ Pure।",
+            "heading": "गलतफहमी",
+            "wrong": "Dekho — hum apni rozmarra ki zindagi mein \"pure\" shabd ko bahut use karte hain, jaise \"pure doodh\" ya \"pure ghee\" — aur humein lagta hai ki iska matlab bahut achhi quality ka ya bilkul saaf cheez hai.",
+            "correct": "Nahi — science mein \"pure\" ka matlab thoda alag hota hai. Yahan \"pure substance\" ka matlab hai ek aisa padarth jismein sirf ek hi tarah ke कण (particles) hon aur unka composition har jagah ek jaisa ho. Jaise paani (H₂O) — usmein sirf H₂O ke hi molecules honge, tabhi woh \"pure substance\" hai, bhale hi woh nadi ka paani ho ya borewell ka — quality se matlab nahi. Toh ab tum batao — kya tumhare ghar ka peene ka paani \"pure substance\" hai scientific tareeke se?",
             "icon": "triangle-alert"
           },
           {
             "type": "activity",
-            "heading": "Crystallization — नमक से घर पर",
-            "content": "Saturated salt solution बनाओ (बहुत सारा नमक पानी में मिलाओ जब तक और न घुले)। एक string उसमें डुबोओ। 2-3 दिन बाद देखो — string पर salt crystals बनेंगे। यह crystallization है — pure salt को mixture से अलग करने का तरीका।",
-            "cta": "ऐप में purification methods देखो →",
+            "heading": "गतिविधि",
+            "content": "Ek kaam karo — apne ghar mein ek glass paani lo aur usmein thodi mitti ya ret (sand) mila do. Dekho — kya mitti usmein ghul jaati hai ya neeche baith jaati hai? Ab ek doosre glass mein paani lo aur usmein thodi cheeni mila kar gholne ki koshish karo. Socho zara — kya dono mixtures ek jaise dikhte hain ya unmein kuch fark hai?",
+            "cta": "ऐप में interactive experiment देखो →",
             "icon": "flask-conical"
           }
         ],
         "en": [
           {
             "type": "example",
-            "heading": "Bore-basi — Mixture or Pure Substance?",
-            "content": "Bore-basi contains rice, water, salt — it's a mixture. Each component keeps its own identity. But when it ferments and lactic acid is formed — now a new substance has been created through a chemical change. Mixture is physical; compound is chemical.",
+            "heading": "Example",
+            "content": "Dekho — when you visit the farms where dhaan ki kheti (paddy cultivation) is happening in Chhattisgarh — you see the soil, the water, and the rice plants, right? All of these together form a big picture. Now, if you look at a drop of water from the Indravati river, it looks 'pure' to our eyes. But scientifically speaking — is that river water truly a \"pure substance\"? Think about it — what makes something 'pure' in science?",
             "icon": "lightbulb"
           },
           {
             "type": "misconception",
-            "heading": "Is Filtered Water Chemically Pure?",
-            "wrong": "Filtered water is chemically pure",
-            "correct": "No! Filtration only removes suspended particles — dissolved salts and minerals remain. For chemically pure water, you need distillation. Filtered ≠ Pure.",
+            "heading": "Misconception",
+            "wrong": "Socho zara — when we say \"pure gold\" or \"pure ghee\" in our everyday language, we usually mean it's of very good quality, or it's not mixed with anything bad, right?",
+            "correct": "But NOMI wants you to remember — in science, a \"pure substance\" means it's made up of only one kind of particle, and its composition is exactly the same everywhere. So, even the freshest milk from a bhains (buffalo) is a mixture of water, fat, and proteins — it's not a 'pure substance' in a scientific sense. Can you think of something around you that would be a \"pure substance\" according to science?",
             "icon": "triangle-alert"
           },
           {
             "type": "activity",
-            "heading": "Crystallisation with Salt at Home",
-            "content": "Make a saturated salt solution — keep adding salt until no more dissolves. Dip a string into it. After 2-3 days, salt crystals will form on the string. That's crystallisation — a way to separate a pure solid from a mixture.",
-            "cta": "See purification methods in app →",
+            "heading": "Activity",
+            "content": "Ek kaam karo — take two clear glasses at home. In one glass, add some water and a spoonful of sugar, then stir well. In the second glass, add water and a small amount of mitti (soil) from your garden. Observe both carefully — do both mixtures look the same after stirring, or can you spot some differences?",
+            "cta": "See interactive experiment in app →",
             "icon": "flask-conical"
           }
         ]

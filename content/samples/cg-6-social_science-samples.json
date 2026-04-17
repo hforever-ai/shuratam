@@ -1,0 +1,105 @@
+{
+  "board": "cg",
+  "class": 6,
+  "subject": "social_science",
+  "samples": [
+    {
+      "chapter_number": 1,
+      "blocks": {
+        "hi": [
+          {
+            "type": "example",
+            "heading": "उदाहरण",
+            "content": "Dekho — jab tum subah bore-basi khate ho, toh kabhi socha hai ki tumhare dada-dadi ya unke dada-dadi bhi aise hi khate the? Ya phir, aaj se sau saal pehle Indravati nadi ke kinare log kaise rehte the? Yeh sab jaanna hi toh itihaas hai, ki pehle kya hua, kahan hua aur kaise hua! Socho zara — tumhe kya lagta hai, us waqt unki zindagi aaj se kitni alag rahi hogi?",
+            "icon": "lightbulb"
+          },
+          {
+            "type": "misconception",
+            "heading": "गलतफहमी",
+            "wrong": "Bahut bachche sochte hain ki itihaas sirf raja-maharajaon ki kahani aur unki ladaiyon ki tarikh yaad karna hai.",
+            "correct": "Par asli mein, itihaas toh yeh samjhna hai ki Indravati nadi ke kinare rehne wale log pehle kya khate the, kaise kapde pehente the, aur unki zindagi mein kya badlav aaye. Socho zara — yeh toh sabki kahani hai!",
+            "icon": "triangle-alert"
+          },
+          {
+            "type": "activity",
+            "heading": "गतिविधि",
+            "content": "Ek kaam karo — apne ghar mein ya gaon mein koi purani cheez dekho, jaise tumhare dada-dadi ka koi bartan ya purani bhains gaadi. Usko chho kar mehsoos karo aur apne bade buzurgo se uski kahani poocho — ki yeh kab bani, kisne banai aur us waqt yeh kis kaam aati thi.",
+            "cta": "ऐप में interactive experiment देखो →",
+            "icon": "flask-conical"
+          }
+        ],
+        "en": [
+          {
+            "type": "example",
+            "heading": "Example",
+            "content": "Dekho — when you eat bore-basi in the morning, have you ever thought if your grandparents, or their grandparents, ate the same way? Or, how people lived along the Indravati river a hundred years ago? Learning all this — what happened before, where it happened, and how it happened — that's exactly what history is! What do you think, how different would their lives have been from ours today?",
+            "icon": "lightbulb"
+          },
+          {
+            "type": "misconception",
+            "heading": "Misconception",
+            "wrong": "Many students think history is only about memorizing dates of battles and names of kings and queens.",
+            "correct": "But actually, history is about understanding what people living along the Indravati river ate, what clothes they wore, and how their lives changed over time. Socho zara — it's everyone's story!",
+            "icon": "triangle-alert"
+          },
+          {
+            "type": "activity",
+            "heading": "Activity",
+            "content": "Ek kaam karo — find an old object in your house or village, like an old utensil of your grandparents or an old bullock cart. Touch it, feel it, and ask your elders its story — when it was made, who made it, and what it was used for back then.",
+            "cta": "See interactive experiment in app →",
+            "icon": "flask-conical"
+          }
+        ]
+      }
+    },
+    {
+      "chapter_number": 2,
+      "blocks": {
+        "hi": [
+          {
+            "type": "example",
+            "heading": "उदाहरण",
+            "content": "Dekho — jaise garmiyon mein Indravati nadi ka pani kam ho jaata hai aur humein doosri jagah jana padta hai pani ki talaash mein — bilkul waise hi tumhare sabse pehle log bhi pani aur khaane ki khoj mein ek jagah se doosri jagah ghoomte rehte the. Kabhi Bastar ke jungle mein phool-phal dhoondhne, toh kabhi jaanwaron ka peecha karte hue.",
+            "icon": "lightbulb"
+          },
+          {
+            "type": "misconception",
+            "heading": "गलतफहमी",
+            "wrong": "Tumhe lagta hoga ki sabse pehle log bade seedhe-saade aur kam akalmand the, hai na?",
+            "correct": "Aisa bilkul nahi tha, didi! Woh toh bahut samajhdar the. Unhone patharon se aise auzaar banaye jo unke kaam aate the, jungle mein khane layak cheezon ko pehchante the, aur jaanwaron ki aadaton ko bhi khoob samajhte the — jiska matlab hai woh bahut buddhiman the!",
+            "icon": "triangle-alert"
+          },
+          {
+            "type": "activity",
+            "heading": "गतिविधि",
+            "content": "Ek kaam karo — apne ghar ke aas-paas ya garden mein jao. Wahan kisi naram mitti par kisi jaanwar ke pairon ke nishan dhoondhne ki koshish karo. Socho zara — yeh kis jaanwar ke pair ho sakte hain aur woh yahan kya karne aaya hoga?",
+            "cta": "ऐप में interactive experiment देखो →",
+            "icon": "flask-conical"
+          }
+        ],
+        "en": [
+          {
+            "type": "example",
+            "heading": "Example",
+            "content": "Dekho — you know how in the summers, sometimes the Indravati river water level goes down, and we have to find water somewhere else? Or how we move our buffaloes to find fresh grass? Our earliest people also moved from place to place, looking for food like fruits and roots in Bastar's jungles, or following animals they hunted.",
+            "icon": "lightbulb"
+          },
+          {
+            "type": "misconception",
+            "heading": "Misconception",
+            "wrong": "Tumhe lagta hoga ki earliest people bahut simple aur not-so-smart the, right?",
+            "correct": "That's a big no-no, didi! They were actually super intelligent. They made complex tools from stones, understood the jungle like the back of their hand, knew which plants were good to eat, and even figured out animal migration patterns — all showing how sharp their minds were!",
+            "icon": "triangle-alert"
+          },
+          {
+            "type": "activity",
+            "heading": "Activity",
+            "content": "Ek kaam karo — go to your garden or a nearby field. Try to find some animal footprints on soft mud or sand. Now, think a little — whose footprints could these be, and what might that animal have come here to do?",
+            "cta": "See interactive experiment in app →",
+            "icon": "flask-conical"
+          }
+        ]
+      }
+    }
+  ]
+}

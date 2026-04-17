@@ -1,0 +1,105 @@
+{
+  "board": "cg",
+  "class": 8,
+  "subject": "mathematics",
+  "samples": [
+    {
+      "chapter_number": 1,
+      "blocks": {
+        "hi": [
+          {
+            "type": "example",
+            "heading": "उदाहरण",
+            "content": "Dekho — tumhare ghar mein aaj bore-basi bani hai aur ghar par 4 log hain. Ek poori roti ko 4 barabar hisson mein kaise bantoge, taki sabko barabar mile? Har ek ko ek-chauthai (1/4) hissa milega na — yahi toh rational number ka ek simple sa roop hai, jo humein bataata hai ki cheezon ko parts mein kaise dekhte hain!",
+            "icon": "lightbulb"
+          },
+          {
+            "type": "misconception",
+            "heading": "गलतफहमी",
+            "wrong": "कई बार बच्चों को लगता है कि rational number का मतलब सिर्फ fraction वाले नंबर ही होते हैं, जैसे 1/2 या 3/4।",
+            "correct": "सच तो ये है कि 5, -3, या 0 जैसे सीधे-सादे numbers भी rational numbers ही हैं! क्योंकि हम इन्हें 5/1, -3/1 या 0/1 के रूप में लिख सकते हैं ना? Socho zara — एक rational number को a/b के रूप में लिखा जा सकता है, जहाँ b कभी भी zero नहीं होता।",
+            "icon": "triangle-alert"
+          },
+          {
+            "type": "activity",
+            "heading": "गतिविधि",
+            "content": "Ek kaam karo — ek lambi dori lo ya ek patli patti. Us par beech mein ek chhoti si gath lagao aur usse '0' maan lo. Ab iske daayein taraf 1/2 aur 3/4 kahan aayega, aur baayein taraf -1/2 kahan aayega, nishaan lagakar dekho. Kya tum 1.5 ko bhi mark kar paoge?",
+            "cta": "ऐप में interactive experiment देखो →",
+            "icon": "flask-conical"
+          }
+        ],
+        "en": [
+          {
+            "type": "example",
+            "heading": "Example",
+            "content": "Socho zara — imagine your family owns a small field for 'dhaan ki kheti'. If you have 3 such small fields and you need to divide them equally among 4 family members for the year's harvest, how much share would each person get? Exactly — 3/4th of a field! That 3/4 is a rational number, showing how we can express parts of a whole.",
+            "icon": "lightbulb"
+          },
+          {
+            "type": "misconception",
+            "heading": "Misconception",
+            "wrong": "Some students think rational numbers are only those that look like fractions, such as 1/2 or 3/4.",
+            "correct": "The truth is, whole numbers like 5, negative numbers like -3, and even 0 are also rational numbers! Dekho — we can write them as 5/1, -3/1, or 0/1, right? As long as a number can be written as a/b (where 'a' and 'b' are integers, and 'b' is not zero), it's a rational number.",
+            "icon": "triangle-alert"
+          },
+          {
+            "type": "activity",
+            "heading": "Activity",
+            "content": "Ek kaam karo — take a long string or a strip of paper. Mark a point in the middle as '0'. Now, try to mark where rational numbers like 1/2, -1/2, and 3/4 would fall on this line. Socho zara — where would 1.5 (which is 3/2) come?",
+            "cta": "See interactive experiment in app →",
+            "icon": "flask-conical"
+          }
+        ]
+      }
+    },
+    {
+      "chapter_number": 2,
+      "blocks": {
+        "hi": [
+          {
+            "type": "example",
+            "heading": "उदाहरण",
+            "content": "Dekho — tumhare paas bore-basi banane ke liye kuch chawal the. Tumhari didi ne tumhe 50 gram chawal aur diye, aur ab tumhare paas kul 200 gram chawal ho gaye hain. Ab socho zara — shuru mein tumhare paas kitne chawal the? Ek tarah se tum yahan ek \"anjaani sankhya\" (unknown number) dhoondh rahe ho, hai na? Socho zara — aise aur kaun si situations hain jahan tumhe ek anjaani cheez (variable) dhoondhni padti hai?",
+            "icon": "lightbulb"
+          },
+          {
+            "type": "misconception",
+            "heading": "गलतफहमी",
+            "wrong": "Kai baar bacche sochte hain ki equation mein 'x' hamesha left side mein hi hona chahiye, ya woh koi khaas chhote number jaisa hi hoga.",
+            "correct": "Yeh galatfami hai, didi! 'x' ya koi bhi char (variable) toh bas ek anjaani sankhya ka naam hai, jo equation ko sahi karne ke liye koi bhi value le sakti hai — chahe woh left side mein ho ya right side mein, aur woh koi bhi sankhya ho sakti hai (fraction, decimal bhi!). Ek kaam karo — agar equation mein do 'x' hote, jaise 2x + 5 = x + 10, toh tum kaise sochte ki 'x' ko kahan le jaana sahi rahega?",
+            "icon": "triangle-alert"
+          },
+          {
+            "type": "activity",
+            "heading": "गतिविधि",
+            "content": "Ek kaam karo — apne ghar mein ek hanger lo, aur uske dono taraf do chhote thailiyaan (ya koi bhi halki cheez) latkao. Ek taraf kuch patthar rakho, aur doosri taraf ek anjaani cheez (jaise ek pencil) ke saath kuch aur patthar rakho, aur dekho ki balance kaise banaate hain.",
+            "cta": "ऐप में interactive experiment देखो →",
+            "icon": "flask-conical"
+          }
+        ],
+        "en": [
+          {
+            "type": "example",
+            "heading": "Example",
+            "content": "Look — imagine you collected some beautiful stones from the banks of the Indravati river. You gave 5 stones to your friend, and now you have 12 stones left. So, tell me — how many stones did you have initially? You're essentially trying to find an \"unknown number\" here, aren't you? So, tell me — can you think of another everyday situation where you have to find an 'unknown' value like this?",
+            "icon": "lightbulb"
+          },
+          {
+            "type": "misconception",
+            "heading": "Misconception",
+            "wrong": "Often, students think that the variable 'x' (or any other letter) must always be on the left side of the equation, or that it always represents a small, whole number.",
+            "correct": "That's a common misunderstanding, my dear! The variable (चर) is just a placeholder for an unknown number that can be any value that makes the equation true — it can be on either side of the equation, and it can be a fraction, a decimal, or even a negative number! Think about it — what if an equation had variables on both sides, like 3x + 2 = x + 8? How would you decide where to move the 'x' terms?",
+            "icon": "triangle-alert"
+          },
+          {
+            "type": "activity",
+            "heading": "Activity",
+            "content": "Here's what you can do at home — take a clothes hanger and two small, identical bags. Hang one bag on each side of the hanger. Put some known objects (like small pebbles or coins) in one bag. In the other bag, put one \"mystery object\" (like a pen or a small toy) and some more pebbles until the hanger balances.",
+            "cta": "See interactive experiment in app →",
+            "icon": "flask-conical"
+          }
+        ]
+      }
+    }
+  ]
+}

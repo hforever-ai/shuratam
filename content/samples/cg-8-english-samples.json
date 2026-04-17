@@ -1,0 +1,105 @@
+{
+  "board": "cg",
+  "class": 8,
+  "subject": "english",
+  "samples": [
+    {
+      "chapter_number": 1,
+      "blocks": {
+        "hi": [
+          {
+            "type": "example",
+            "heading": "उदाहरण",
+            "content": "Socho zara — kabhi tumhari dadi ya nani ki purani peti ya almaari mein — koi bahut purani photo mili hai? — Jis mein unke bachpan ki ya tumhare mummy-papa ki shaadi ki tasveer ho. Dekhte hi tumhari aankhon mein kitni saari kahaniyan ghoomne lagti hain na? Is chapter mein bhi — ek ladke ko aisi hi ek bahut purani chithhi milti hai — jo use seedha ek aise zamane aur yadon ki duniya mein le jaati hai — jiske baare mein usne kabhi socha bhi nahi tha.",
+            "icon": "lightbulb"
+          },
+          {
+            "type": "misconception",
+            "heading": "गलतफहमी",
+            "wrong": "Kai baar bachchon ko lagta hai ki yuddh (war) mein bas dushman aur nafrat hi hoti hai aur dono taraf ke log ek doosre ko hamesha nafrat karte hain. Aur toh aur, 'best present' toh hamesha koi mehnga tohfa hi hota hai.",
+            "correct": "Lekin is kahani mein hum dekhte hain ki yuddh ke beech bhi — insaaniyat aur dosti ki bhaavna zinda rehti hai. Soldiers bhi — ek doosre ke saath Christmas mana sakte hain aur achhe pal baant sakte hain. Aur sachcha 'best present' toh rishton, jazbaaton aur anmol yadon mein chupa hota hai, jise hum paise se kharid nahi sakte. Kya tum aisa koi tohfa soch sakte ho?",
+            "icon": "triangle-alert"
+          },
+          {
+            "type": "activity",
+            "heading": "गतिविधि",
+            "content": "Ek kaam karo — apne ghar mein koi bhi ek bahut purani cheez dhoondo — jaise tumhare nana-nani ka koi purana patra, ek photo album, ya ek purani khilone. Ab us cheez ko dhyan se dekho aur sochne ki koshish karo — ki uski kya kahani ho sakti hai. Phir — apne gharwalon se us cheez ke baare mein poocho — uski kahani suno aur use apne shabdon mein likho. Tumhe kitni anmol yaadein milengi!",
+            "cta": "ऐप में interactive experiment देखो →",
+            "icon": "flask-conical"
+          }
+        ],
+        "en": [
+          {
+            "type": "example",
+            "heading": "Example",
+            "content": "Socho zara — have you ever opened an old trunk or an antique cupboard at your grandmother's house and found something really old inside? — Like a faded photograph from her childhood or a letter from your great-grandparents? Just looking at it fills your mind with so many stories, doesn't it? This chapter begins similarly — with a boy finding an old letter that doesn't just tell a story, but opens a whole world of forgotten memories and emotions, like finding a hidden treasure in the Bastar jungles.",
+            "icon": "lightbulb"
+          },
+          {
+            "type": "misconception",
+            "heading": "Misconception",
+            "wrong": "Many students often think that war is only about enemies fighting and hating each other, and that a 'present' must always be something you can hold or buy, like a new toy or a new phone.",
+            "correct": "But this story beautifully shows us that even during a war, humanity, friendship, and kindness can blossom. Soldiers from opposing sides can share a moment of peace and joy, proving that the 'best present' is often an emotional connection, a precious memory, or a feeling of hope and love, not just a physical gift. What do you think is the best non-material present you've ever received?",
+            "icon": "triangle-alert"
+          },
+          {
+            "type": "activity",
+            "heading": "Activity",
+            "content": "Ek kaam karo — find any old item in your house, something that looks like it has a long story. It could be an old school bag, a cooking utensil your grandmother used for bore-basi, or even a faded drawing you made long ago. Now, ask your parents or grandparents about that item — what's its history? Who used it? What memories are attached to it? Write down what you learn. You'll discover how ordinary things can hold extraordinary stories, just like the letter in the chapter!",
+            "cta": "See interactive experiment in app →",
+            "icon": "flask-conical"
+          }
+        ]
+      }
+    },
+    {
+      "chapter_number": 2,
+      "blocks": {
+        "hi": [
+          {
+            "type": "example",
+            "heading": "उदाहरण",
+            "content": "Dekho Nanu — jaise kabhi baarish mein Indravati nadi mein achaanak bahut tez paani aa jaata hai na — ya phir hamare dhaan ke kheton mein jab bahut zyada baarish hoti hai toh sab kuchh jaldi se doob jaata hai. Kitni tez hoti hai paani ki taaqat, hai na? Socho zara — agar yahi paani — poore samudra se ek bade pahaad ki tarah itni tez raftaar se shahar mein ghusne lage toh kya hoga?",
+            "icon": "lightbulb"
+          },
+          {
+            "type": "misconception",
+            "heading": "गलतफहमी",
+            "wrong": "Bohot bachche sochte hain ki tsunami bas ek bohot badi lehri (wave) hoti hai — jaise samudra mein normal waves aati hain na — bas thodi badi. Ya phir, yeh 'tidal waves' hoti hain jo chandrama (moon) ke gravity se banti hain.",
+            "correct": "Nahi beta, tsunami sirf ek badi wave nahi hoti, yeh toh underwater earthquake, volcano ya landslides ke wajah se samudra ke andar se uthne waali 'waves ki ek series' hoti hai. Normal waves toh hawa se banti hain, par tsunami ki shakti gehrayi se aati hai aur yeh tidal waves nahi hoti.",
+            "icon": "triangle-alert"
+          },
+          {
+            "type": "activity",
+            "heading": "गतिविधि",
+            "content": "Ek kaam karo — ek badi si tray mein paani bharo. Ab uske ek kone se apni ungli se tez dhakka do ya koi chhota patthar gira do. Dekho, kaise ek wave banti hai aur poori tray mein phail jaati hai?",
+            "cta": "ऐप में interactive experiment देखो →",
+            "icon": "flask-conical"
+          }
+        ],
+        "en": [
+          {
+            "type": "example",
+            "heading": "Example",
+            "content": "Hey Nanu — remember during the monsoon how sometimes the Indravati river can swell up so much — almost overflowing its banks, or how heavy rain can suddenly flood an entire dhaan khet? Everything gets submerged so fast! That's the power of water, right? Now, imagine if water from the whole ocean — not just a river — came rushing onto land like that, in a massive wall of water. How scary would that be?",
+            "icon": "lightbulb"
+          },
+          {
+            "type": "misconception",
+            "heading": "Misconception",
+            "wrong": "A common mistake many students make is thinking a tsunami is just like a really tall ocean wave — maybe like the ones surfers ride, just bigger. Or that they are 'tidal waves' caused by the tides.",
+            "correct": "But actually, a tsunami is not just one big wave, and it's definitely not a 'tidal wave'! It's a whole 'series of powerful ocean waves' mostly caused by huge underwater earthquakes, volcanic eruptions, or landslides that displace a massive amount of water. Regular waves are mostly made by wind, but tsunamis get their power from deep within the earth!",
+            "icon": "triangle-alert"
+          },
+          {
+            "type": "activity",
+            "heading": "Activity",
+            "content": "Here's a fun little thing you can try at home — take a large, shallow tray and fill it with water. Now, push a small object or your finger quickly into one end of the water, or drop a small pebble. See how the ripples and waves spread out across the water?",
+            "cta": "See interactive experiment in app →",
+            "icon": "flask-conical"
+          }
+        ]
+      }
+    }
+  ]
+}

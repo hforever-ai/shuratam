@@ -1,0 +1,105 @@
+{
+  "board": "cbse",
+  "class": 10,
+  "subject": "social_science",
+  "samples": [
+    {
+      "chapter_number": 1,
+      "blocks": {
+        "hi": [
+          {
+            "type": "example",
+            "heading": "उदाहरण",
+            "content": "सोचना ज़रा — जब भारत-पाकिस्तान का क्रिकेट मैच होता है, तो क्या होता है? चाहे तुम दिल्ली से हो या चेन्नई, बंगाली हो या गुजराती, सब एक ही तरफ से चिल्लाते हैं, \"इंडिया, इंडिया!\" — है ना? यही जो एक साथ मिलकर महसूस करने की भावना है, कि 'हम सब एक हैं', यही राष्ट्रवाद (nationalism) की शुरुआत थी यूरोप में भी, जहाँ लोग अपनी भाषा, संस्कृति या इतिहास के आधार पर खुद को एक 'राष्ट्र' मानने लगे थे।",
+            "icon": "lightbulb"
+          },
+          {
+            "type": "misconception",
+            "heading": "गलतफहमी",
+            "wrong": "तुम्हें लगता होगा कि राष्ट्रवाद (nationalism) बस अपने देश से प्यार करने जैसा है।",
+            "correct": "Dekho — यूरोप में राष्ट्रवाद का मतलब सिर्फ अपने देश से प्यार करना नहीं था, बल्कि अक्सर अपनी एक जैसी पहचान (भाषा, संस्कृति) वाले लोगों का एक होकर अपना नया देश बनाने की चाहत थी। इसमें कई बार बड़े संघर्ष और लड़ाइयाँ भी हुई थीं, और कई बार दूसरों की पहचान को नज़रअंदाज़ भी किया गया था।",
+            "icon": "triangle-alert"
+          },
+          {
+            "type": "activity",
+            "heading": "गतिविधि",
+            "content": "Ek kaam karo — अपने घर में ऐसी 3-4 चीजें ढूंढो जो तुम्हें किसी बड़ी पहचान (जैसे भारतीय या तुम्हारी राज्य की पहचान) से जोड़ती हों। अब सोचो कि इन चीजों में ऐसा क्या है जो तुम्हें दूसरों से जोड़ता है?",
+            "cta": "ऐप में interactive experiment देखो →",
+            "icon": "flask-conical"
+          }
+        ],
+        "en": [
+          {
+            "type": "example",
+            "heading": "Example",
+            "content": "Socho zara — when India was fighting for independence, people from so many different states and cultures, speaking so many languages, all came together under one idea – 'India'. That feeling of 'we are one, and we deserve to be a free nation' is very similar to how people in different parts of Europe started feeling connected by a shared language, history, or culture, and wanted their own unified country.",
+            "icon": "lightbulb"
+          },
+          {
+            "type": "misconception",
+            "heading": "Misconception",
+            "wrong": "You might think that nationalism simply means being patriotic and loving your country.",
+            "correct": "Dekho — in Europe, nationalism wasn't just about loving your existing country. It was often about groups of people who felt they shared a common language, culture, or history wanting to create their *own* unified nation-state, often through revolutions, wars, and sometimes by suppressing other identities.",
+            "icon": "triangle-alert"
+          },
+          {
+            "type": "activity",
+            "heading": "Activity",
+            "content": "Ek kaam karo — look around your house or even your neighbourhood for 3-4 things that represent a larger shared identity – maybe India, or your state, or a specific cultural group. For example, a coin with a national symbol, a specific type of clothing, or a local festival poster. How do these seemingly small things connect you to millions of other people across the country?",
+            "cta": "See interactive experiment in app →",
+            "icon": "flask-conical"
+          }
+        ]
+      }
+    },
+    {
+      "chapter_number": 2,
+      "blocks": {
+        "hi": [
+          {
+            "type": "example",
+            "heading": "उदाहरण",
+            "content": "Dekho — तुमने देखा है जब तुम्हारे स्कूल की क्रिकेट टीम कोई मैच जीतती है, तो भले ही तुम न खेले हो, तुम्हें भी कितनी ख़ुशी और गर्व महसूस होता है? तुम अपने दोस्तों, अपने स्कूल से एक 'हम' वाली भावना से जुड़ जाते हो। इसी तरह, nationalism की भावना ने भारत के अलग-अलग लोगों को— अलग भाषाएं बोलने वालों को, अलग धर्मों के लोगों को— एक 'राष्ट्र' के रूप में एकजुट किया, ताकि वे सब मिलकर ब्रिटिश शासन के खिलाफ़ लड़ सकें। है ना कमाल?",
+            "icon": "lightbulb"
+          },
+          {
+            "type": "misconception",
+            "heading": "गलतफहमी",
+            "wrong": "कुछ बच्चे सोचते हैं कि भारत में Nationalism सिर्फ महात्मा गांधी के अहिंसक आंदोलन से आया था, और सब लोग बिल्कुल एक जैसे ही सोचते थे।",
+            "correct": "नहीं रे, ऐसा नहीं है। Nationalism एक बहुत कॉम्प्लेक्स (complex) विचार है। इसमें किसानों, आदिवासियों, व्यापारियों, और यहां तक कि कुछ क्रांतिकारी समूहों जैसे अनेक अलग-अलग समुदायों और उनके संघर्षों की भी बड़ी भूमिका थी। हर समूह की अपनी माँगें और 'स्वराज' की अपनी कल्पना थी, जिसे महात्मा गांधी ने एकजुट करने की कोशिश की।",
+            "icon": "triangle-alert"
+          },
+          {
+            "type": "activity",
+            "heading": "गतिविधि",
+            "content": "Ek kaam karo — अपने परिवार में किसी एक ऐसी चीज़ या परंपरा के बारे में पता लगाओ, जो तुम सबको एक साथ जोड़ती है और तुम्हारी 'पहचान' बनती है — जैसे कोई ख़ास कहानी, एक त्योहार, या कोई पुरानी चीज़। Socho, ये चीज़ें हमें 'हम' की भावना कैसे देती हैं?",
+            "cta": "ऐप में interactive experiment देखो →",
+            "icon": "flask-conical"
+          }
+        ],
+        "en": [
+          {
+            "type": "example",
+            "heading": "Example",
+            "content": "Dekho — have you ever seen how, during a big cricket match, people from different states, speaking different languages, all cheer for Team India with the same passion? They feel a shared sense of pride and identity. That's a bit like how the idea of nationalism brought together diverse people across India, making them feel like 'one nation' against British rule. Pretty cool, right?",
+            "icon": "lightbulb"
+          },
+          {
+            "type": "misconception",
+            "heading": "Misconception",
+            "wrong": "Some students believe that Nationalism in India was solely about Mahatma Gandhi's non-violent movements, and everyone had the exact same idea of 'Swaraj' or freedom.",
+            "correct": "Not at all! While Gandhi Ji was undeniably central, 'Nationalism in India' was a much broader and more complex phenomenon. Different social groups like peasants, tribals, industrialists, and even various revolutionary groups had their own distinct grievances and interpretations of 'Swaraj'. Gandhi Ji's genius was in trying to bring these varied aspirations under a common umbrella of the freedom struggle.",
+            "icon": "triangle-alert"
+          },
+          {
+            "type": "activity",
+            "heading": "Activity",
+            "content": "Ek kaam karo — look around your home or talk to your grandparents. Can you find an old item – maybe a saree, a utensil, or a photo – that has been passed down through generations and holds a special meaning for your family? Socho zara, how do these objects and the stories behind them connect you to your past and to your family's identity?",
+            "cta": "See interactive experiment in app →",
+            "icon": "flask-conical"
+          }
+        ]
+      }
+    }
+  ]
+}

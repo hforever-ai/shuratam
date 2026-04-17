@@ -1,0 +1,105 @@
+{
+  "board": "cg",
+  "class": 6,
+  "subject": "hindi",
+  "samples": [
+    {
+      "chapter_number": 1,
+      "blocks": {
+        "hi": [
+          {
+            "type": "example",
+            "heading": "उदाहरण",
+            "content": "Dekho — jaise tum kabhi-kabhi bore-basi khaate ho, aur bhale hi woh kitna simple khana hota hai, par tumhe usmein kitna swaad aur santosh milta hai na? Bas waise hi, 'वह चिड़िया जो' कविता की चिड़िया को भी थोड़े से दूध-भरे जुंडी के दाने मिल जाते हैं तो वह बहुत खुश और संतुष्ट हो जाती है. Socho zara — chhoti-chhoti cheezon mein khushi dhoondhna kitna achha hota hai, hai na?",
+            "icon": "lightbulb"
+          },
+          {
+            "type": "misconception",
+            "heading": "गलतफहमी",
+            "wrong": "कुछ बच्चे सोचते हैं कि इंद्रावती नदी के किनारे, बस्तर के घने जंगल में akeli (अकेली) वो चिड़िया और उसे सिर्फ दूध-भरे जुंडी के दाने मिलते हैं, तो उसे शायद डर लगता होगा या वह दुखी होगी.",
+            "correct": "Nahi re didi, woh चिड़िया तो बिल्कुल भी दुखी नहीं है और ना ही उसे डर लगता है! कविता बताती है कि वह बहुत 'संतोषी' और 'निडर' है. उसे अपने जंगल से, नदी से और अपने छोटे से भोजन से बहुत प्यार है, और वह हमेशा खुश होकर गाना गाती है.",
+            "icon": "triangle-alert"
+          },
+          {
+            "type": "activity",
+            "heading": "गतिविधि",
+            "content": "Ek kaam karo — ek chhota sa katori mein thode chawal ke daane ya roti ke tukde rakhkar apne ghar ki khidki ya chhat par rakh do. Phir chhupkar dekho ki kaun si chidiya aati hai, kaise khaati hai aur kya woh akele aati hai ya jhund mein.",
+            "cta": "ऐप में interactive experiment देखो →",
+            "icon": "flask-conical"
+          }
+        ],
+        "en": [
+          {
+            "type": "example",
+            "heading": "Example",
+            "content": "You know how sometimes in Chhattisgarh, after a long day of playing, a simple meal of bore-basi with chutney feels so delicious and satisfying? Even though it's not fancy, it makes you happy. That's exactly how the little bird in the poem feels — content with just a few grains. So, can you think of something simple that brings you a lot of joy?",
+            "icon": "lightbulb"
+          },
+          {
+            "type": "misconception",
+            "heading": "Misconception",
+            "wrong": "Some students might think the little bird is sad or lonely because it's by itself in the big jungle near the Indravati river and only has a few simple grains to eat, so it might be scared.",
+            "correct": "No, tum! The poem tells us that this bird is actually very content and brave! It loves its forest, the river, and finds happiness in its small meal and its freedom to sing, even when it's all alone.",
+            "icon": "triangle-alert"
+          },
+          {
+            "type": "activity",
+            "heading": "Activity",
+            "content": "Try this — find an empty bowl and put a few rice grains or small bread pieces in it. Place it outside your window or on your roof. Then, quietly observe which birds come, how they eat, and if they come alone or in a group.",
+            "cta": "See interactive experiment in app →",
+            "icon": "flask-conical"
+          }
+        ]
+      }
+    },
+    {
+      "chapter_number": 2,
+      "blocks": {
+        "hi": [
+          {
+            "type": "example",
+            "heading": "उदाहरण",
+            "content": "Dekho — jaise tum apne dosto ke saath Indravati nadi ke kinare kancha khelte ho ya bore-basi kha kar dhaan ke khet mein daudte ho — wohi toh hai bachpan ki asli masti! Jab koi badi chinta nahi hoti, bas khel aur khushi hoti hai. Socho zara — tumhara sabse pyara bachpan ka khel kaun sa hai aur kyun?",
+            "icon": "lightbulb"
+          },
+          {
+            "type": "misconception",
+            "heading": "गलतफहमी",
+            "wrong": "Bahut log sochte hain ki bachpan bas khelne-koodne ka samay hai, jahan kuch khaas seekha nahi jaata.",
+            "correct": "Lekin asal mein, bachpan hi woh neev hai jahan tum dosti, daya, aur zindagi ke sabse bade sabak seekhte ho. Bachpan mein bani yaadein aur seekhi baatein hi tumhe bada banati hain, jaise Bastar ke jungle ke ped dheere-dheere mazboot hote hain.",
+            "icon": "triangle-alert"
+          },
+          {
+            "type": "activity",
+            "heading": "गतिविधि",
+            "content": "Ek kaam karo — aaj raat sone se pehle apne bachpan ki koi sabse khushi wali yaad socho. Yaad karo tum kahan the, tumhare saath kaun tha, aur tumhe kaisa lag raha tha. Agli subah uthkar dekho — kya us yaad ne tumhe thoda aur khush kiya?",
+            "cta": "ऐप में interactive experiment देखो →",
+            "icon": "flask-conical"
+          }
+        ],
+        "en": [
+          {
+            "type": "example",
+            "heading": "Example",
+            "content": "Look — just like you play marbles with your friends by the Indravati river or run in the paddy fields after eating bore-basi — that's the real fun of childhood! When there are no big worries, just play and happiness. Think about it — what's your most cherished childhood game and why?",
+            "icon": "lightbulb"
+          },
+          {
+            "type": "misconception",
+            "heading": "Misconception",
+            "wrong": "Many people think that childhood is just a time for playing and having fun, where nothing important is learned.",
+            "correct": "But actually, childhood is the foundation where you learn about friendship, kindness, and life's biggest lessons. The memories and lessons from childhood are what make you grow, just like the trees in the Bastar jungle slowly become strong.",
+            "icon": "triangle-alert"
+          },
+          {
+            "type": "activity",
+            "heading": "Activity",
+            "content": "Here's something you can do — tonight, before sleeping, think of your happiest childhood memory. Remember where you were, who was with you, and how you felt. When you wake up tomorrow, see — did that memory make you a little happier?",
+            "cta": "See interactive experiment in app →",
+            "icon": "flask-conical"
+          }
+        ]
+      }
+    }
+  ]
+}
