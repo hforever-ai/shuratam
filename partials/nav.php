@@ -9,16 +9,17 @@
 
     <!-- Desktop nav links -->
     <div class="hidden lg:flex items-center gap-6 text-sm">
-      <a href="/features/" class="hover:text-[var(--accent)]" style="color: var(--text-body);">Features</a>
-      <a href="/blind-mode/" class="hover:text-[var(--accent)]" style="color: var(--text-body);">Blind Mode ♿</a>
+      <a href="/features/" class="hover:text-[var(--accent)]" style="color: var(--text-body);"><?= isset($t) ? ($t['nav']['features'] ?? 'Features') : 'Features' ?></a>
+      <a href="/blind-mode/" class="hover:text-[var(--accent)]" style="color: var(--text-body);"><?= isset($t) ? ($t['nav']['blind_mode'] ?? 'Blind Mode ♿') : 'Blind Mode ♿' ?></a>
 
       <!-- Classes dropdown -->
       <div class="relative group">
         <button class="flex items-center gap-1 hover:text-[var(--accent)]" style="color: var(--text-body);" aria-expanded="false" aria-haspopup="true">
-          Classes <span aria-hidden="true">▾</span>
+          <?= isset($t) ? ($t['nav']['classes'] ?? 'Classes') : 'Classes' ?> <span aria-hidden="true">▾</span>
         </button>
         <div class="absolute top-full left-0 mt-2 py-2 min-w-[160px] rounded-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200"
              style="background: var(--bg-surface); border: 1px solid var(--border-subtle); box-shadow: var(--shadow);">
+          <a href="/classes/class-5/" class="block px-4 py-2 text-sm hover:bg-[var(--bg-elevated)]" style="color: var(--text-body);">Class 5</a>
           <a href="/classes/class-6/" class="block px-4 py-2 text-sm hover:bg-[var(--bg-elevated)]" style="color: var(--text-body);">Class 6</a>
           <a href="/classes/class-7/" class="block px-4 py-2 text-sm hover:bg-[var(--bg-elevated)]" style="color: var(--text-body);">Class 7</a>
           <a href="/classes/class-8/" class="block px-4 py-2 text-sm hover:bg-[var(--bg-elevated)]" style="color: var(--text-body);">Class 8</a>
@@ -30,7 +31,7 @@
       <!-- Boards dropdown -->
       <div class="relative group">
         <button class="flex items-center gap-1 hover:text-[var(--accent)]" style="color: var(--text-body);" aria-expanded="false" aria-haspopup="true">
-          Boards <span aria-hidden="true">▾</span>
+          <?= isset($t) ? ($t['nav']['boards'] ?? 'Boards') : 'Boards' ?> <span aria-hidden="true">▾</span>
         </button>
         <div class="absolute top-full left-0 mt-2 py-2 min-w-[160px] rounded-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200"
              style="background: var(--bg-surface); border: 1px solid var(--border-subtle); box-shadow: var(--shadow);">
@@ -40,13 +41,18 @@
         </div>
       </div>
 
-      <a href="/pricing/" class="hover:text-[var(--accent)]" style="color: var(--text-body);">Pricing</a>
-      <a href="/blog/" class="hover:text-[var(--accent)]" style="color: var(--text-body);">Blog</a>
-      <a href="/schools/" class="hover:text-[var(--accent)]" style="color: var(--text-body);">For Schools</a>
+      <a href="/pricing/" class="hover:text-[var(--accent)]" style="color: var(--text-body);"><?= isset($t) ? ($t['nav']['pricing'] ?? 'Pricing') : 'Pricing' ?></a>
+      <a href="/blog/" class="hover:text-[var(--accent)]" style="color: var(--text-body);"><?= isset($t) ? ($t['nav']['blog'] ?? 'Blog') : 'Blog' ?></a>
+      <a href="/schools/" class="hover:text-[var(--accent)]" style="color: var(--text-body);"><?= isset($t) ? ($t['nav']['for_schools'] ?? 'For Schools') : 'For Schools' ?></a>
     </div>
 
     <!-- Right side: theme switcher + CTA + hamburger -->
     <div class="flex items-center gap-3">
+      <!-- Language switcher (only on routed pages) -->
+      <?php if (isset($lang) && isset($availableLangs)): ?>
+      <?php include __DIR__ . '/lang-switcher.php'; ?>
+      <?php endif; ?>
+
       <!-- Theme switcher -->
       <div class="flex items-center gap-1" role="radiogroup" aria-label="Theme switcher">
         <button onclick="setTheme('navy')" class="theme-btn p-2 rounded-lg hover:bg-[var(--bg-elevated)]" aria-label="Navy theme" title="Navy + Saffron">🌙</button>
@@ -80,6 +86,7 @@
       </button>
       <a href="/features/" class="py-3 text-lg font-heading" style="color: var(--text-body); border-bottom: 1px solid var(--border-subtle);">Features</a>
       <a href="/blind-mode/" class="py-3 text-lg font-heading" style="color: var(--text-body); border-bottom: 1px solid var(--border-subtle);">Blind Mode ♿</a>
+      <a href="/classes/class-5/" class="py-2 pl-4" style="color: var(--text-secondary);">Class 5</a>
       <a href="/classes/class-6/" class="py-2 pl-4" style="color: var(--text-secondary);">Class 6</a>
       <a href="/classes/class-7/" class="py-2 pl-4" style="color: var(--text-secondary);">Class 7</a>
       <a href="/classes/class-8/" class="py-2 pl-4" style="color: var(--text-secondary);">Class 8</a>

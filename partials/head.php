@@ -3,7 +3,7 @@ $og_image = $og_image ?? 'https://shrutam.ai/assets/og/default.png';
 $schema = $schema ?? '';
 ?>
 <!DOCTYPE html>
-<html lang="hi-IN" data-theme="navy">
+<html lang="<?= $htmlLang ?? 'hi-IN' ?>" data-theme="navy">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -25,6 +25,11 @@ $schema = $schema ?? '';
   <meta name="twitter:title" content="<?= htmlspecialchars($title) ?>">
   <meta name="twitter:description" content="<?= htmlspecialchars($description) ?>">
   <meta name="twitter:image" content="<?= htmlspecialchars($og_image) ?>">
+
+  <!-- Hreflang -->
+  <?php if (isset($availableLangs)): ?>
+  <?php include __DIR__ . '/hreflang.php'; ?>
+  <?php endif; ?>
 
   <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">

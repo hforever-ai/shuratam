@@ -6,8 +6,8 @@
         <a href="/" class="text-2xl font-heading font-bold" style="color: var(--text-primary);">
           <span lang="hi" class="font-devanagari-heading">शृतम्</span> Shrutam
         </a>
-        <p lang="hi" class="mt-2 font-devanagari" style="color: var(--text-secondary);">"सुनते हो, सीखते हो।"</p>
-        <p class="mt-2 text-sm" style="color: var(--accent);">♿ Blind Mode — FREE Forever</p>
+        <p lang="hi" class="mt-2 font-devanagari" style="color: var(--text-secondary);"><?= isset($t) ? ($t['footer']['tagline'] ?? '"सुनते हो, सीखते हो।"') : '"सुनते हो, सीखते हो।"' ?></p>
+        <p class="mt-2 text-sm" style="color: var(--accent);"><?= isset($t) ? ($t['footer']['blind_mode_badge'] ?? '♿ Blind Mode — FREE Forever') : '♿ Blind Mode — FREE Forever' ?></p>
       </div>
       <div>
         <h3 class="text-sm font-bold uppercase tracking-wide mb-3" style="color: var(--text-secondary);">Product</h3>
@@ -60,8 +60,8 @@
     </div>
     <div class="pt-6 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs" style="border-top: 1px solid var(--border-subtle); color: var(--text-muted);">
       <p>Accessibility: <a href="mailto:accessibility@shrutam.ai" style="color: var(--primary-light);">accessibility@shrutam.ai</a></p>
-      <p>A proud product of <strong>Aarambha (आरम्भ)</strong> · <a href="https://aarambhax.ai" target="_blank" rel="noopener" style="color: var(--primary-light);">aarambhax.ai</a></p>
-      <p>© 2026 Aarambha · Kishyam AI Pvt Ltd · shrutam.ai</p>
+      <p><?= isset($t) ? ($t['footer']['product_of'] ?? 'A proud product of') : 'A proud product of' ?> <strong>Aarambha (आरम्भ)</strong> · <a href="https://aarambhax.ai" target="_blank" rel="noopener" style="color: var(--primary-light);">aarambhax.ai</a></p>
+      <p><?= isset($t) ? ($t['footer']['copyright'] ?? '© 2026 Aarambha · Kishyam AI Pvt Ltd · shrutam.ai') : '© 2026 Aarambha · Kishyam AI Pvt Ltd · shrutam.ai' ?></p>
     </div>
   </div>
 </footer>
