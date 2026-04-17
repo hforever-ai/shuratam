@@ -6,6 +6,7 @@
     "dev": "npx @tailwindcss/cli -i assets/css/input.css -o assets/css/main.css --watch",
     "build": "npx @tailwindcss/cli -i assets/css/input.css -o assets/css/main.css --minify"
   },
+  "type": "module",
   "devDependencies": {
     "@tailwindcss/cli": "^4.1.4"
   }
