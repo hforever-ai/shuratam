@@ -1,0 +1,12 @@
+{
+  "name": "shrutam-website",
+  "version": "1.0.0",
+  "description": "Shrutam.ai marketing website",
+  "scripts": {
+    "dev": "npx @tailwindcss/cli -i assets/css/input.css -o assets/css/main.css --watch",
+    "build": "npx @tailwindcss/cli -i assets/css/input.css -o assets/css/main.css --minify"
+  },
+  "devDependencies": {
+    "@tailwindcss/cli": "^4.1.4"
+  }
+}

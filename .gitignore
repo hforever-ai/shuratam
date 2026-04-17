@@ -1,0 +1,16 @@
+# Dependencies
+node_modules/
+
+# DB credentials
+config/db.php
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
+
+# Tailwind build cache
+.cache/
