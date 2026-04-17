@@ -74,7 +74,7 @@ include '../../partials/nav.php';
        ===================================================== -->
   <section class="section" style="padding-top: 1.5rem; background: linear-gradient(160deg, var(--bg-base) 60%, var(--bg-elevated) 100%);">
     <div class="container">
-      <div class="max-w-5xl mx-auto">
+      
 
         <!-- Breadcrumb -->
         <nav aria-label="Breadcrumb" class="text-sm mb-2" style="color: var(--text-muted);">
@@ -119,7 +119,6 @@ include '../../partials/nav.php';
         </div>
 
       </div>
-    </div>
   </section>
 
   <!-- =====================================================
@@ -127,7 +126,7 @@ include '../../partials/nav.php';
        ===================================================== -->
   <section class="section section-dark">
     <div class="container">
-      <div class="max-w-5xl mx-auto">
+      
 
         <!-- ─── Section 1: Kitchen Analogy ───────────────── -->
         <div class="mb-12">
@@ -520,7 +519,6 @@ include '../../partials/nav.php';
         </div>
 
       </div>
-    </div>
   </section>
 
   <!-- =====================================================
@@ -528,7 +526,7 @@ include '../../partials/nav.php';
        ===================================================== -->
   <section class="section" aria-labelledby="faq-heading">
     <div class="container">
-      <div class="max-w-5xl mx-auto">
+      
 
         <h2 id="faq-heading" class="text-3xl font-heading font-bold mb-8" style="color: var(--text-primary);">
           ❓ Aksar Poochhe Jaane Wale Sawaal
@@ -601,7 +599,6 @@ include '../../partials/nav.php';
 
         </div>
       </div>
-    </div>
   </section>
 
   <!-- =====================================================
@@ -609,7 +606,7 @@ include '../../partials/nav.php';
        ===================================================== -->
   <section class="section section-dark">
     <div class="container">
-      <div class="max-w-5xl mx-auto">
+      
 
         <h2 class="text-2xl font-heading font-bold mb-6" style="color: var(--text-primary);">
           Aur Padhho
@@ -634,7 +631,6 @@ include '../../partials/nav.php';
         </div>
 
       </div>
-    </div>
   </section>
 
 </main>
