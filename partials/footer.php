@@ -1,0 +1,71 @@
+<!-- Footer -->
+<footer class="section border-t" style="background: var(--bg-surface); border-color: var(--border-subtle);">
+  <div class="container">
+    <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-8 mb-12">
+      <div class="col-span-2 md:col-span-3 lg:col-span-2">
+        <a href="/" class="text-2xl font-heading font-bold" style="color: var(--text-primary);">
+          <span lang="hi" class="font-devanagari-heading">शृतम्</span> Shrutam
+        </a>
+        <p lang="hi" class="mt-2 font-devanagari" style="color: var(--text-secondary);">"सुनते हो, सीखते हो।"</p>
+        <p class="mt-2 text-sm" style="color: var(--accent);">♿ Blind Mode — FREE Forever</p>
+      </div>
+      <div>
+        <h3 class="text-sm font-bold uppercase tracking-wide mb-3" style="color: var(--text-secondary);">Product</h3>
+        <ul class="space-y-2 text-sm">
+          <li><a href="/features/" style="color: var(--text-muted);">Features</a></li>
+          <li><a href="/saavi/" style="color: var(--text-muted);">SAAVI</a></li>
+          <li><a href="/blind-mode/" style="color: var(--text-muted);">Blind Mode</a></li>
+          <li><a href="/pricing/" style="color: var(--text-muted);">Pricing</a></li>
+          <li><a href="/waitlist/" style="color: var(--text-muted);">Waitlist</a></li>
+          <li><a href="/schools/" style="color: var(--text-muted);">For Schools</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3 class="text-sm font-bold uppercase tracking-wide mb-3" style="color: var(--text-secondary);">Classes</h3>
+        <ul class="space-y-2 text-sm">
+          <li><a href="/classes/class-6/" style="color: var(--text-muted);">Class 6</a></li>
+          <li><a href="/classes/class-7/" style="color: var(--text-muted);">Class 7</a></li>
+          <li><a href="/classes/class-8/" style="color: var(--text-muted);">Class 8</a></li>
+          <li><a href="/classes/class-9/" style="color: var(--text-muted);">Class 9</a></li>
+          <li><a href="/classes/class-10/" style="color: var(--text-muted);">Class 10</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3 class="text-sm font-bold uppercase tracking-wide mb-3" style="color: var(--text-secondary);">Boards</h3>
+        <ul class="space-y-2 text-sm mb-6">
+          <li><a href="/boards/cg-board/" style="color: var(--text-muted);">CG Board</a></li>
+          <li><a href="/boards/cbse/" style="color: var(--text-muted);">CBSE</a></li>
+          <li><a href="/boards/mp-board/" style="color: var(--text-muted);">MP Board</a></li>
+        </ul>
+        <h3 class="text-sm font-bold uppercase tracking-wide mb-3" style="color: var(--text-secondary);">Subjects</h3>
+        <ul class="space-y-2 text-sm">
+          <li><a href="/subjects/science/" style="color: var(--text-muted);">Science</a></li>
+          <li><a href="/subjects/mathematics/" style="color: var(--text-muted);">Mathematics</a></li>
+          <li><a href="/subjects/hindi/" style="color: var(--text-muted);">Hindi</a></li>
+          <li><a href="/subjects/social-science/" style="color: var(--text-muted);">Social Science</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3 class="text-sm font-bold uppercase tracking-wide mb-3" style="color: var(--text-secondary);">Company</h3>
+        <ul class="space-y-2 text-sm">
+          <li><a href="/about/" style="color: var(--text-muted);">About</a></li>
+          <li><a href="/blog/" style="color: var(--text-muted);">Blog</a></li>
+          <li><a href="/faq/" style="color: var(--text-muted);">FAQ</a></li>
+          <li><a href="/contact/" style="color: var(--text-muted);">Contact</a></li>
+          <li><a href="https://aarambhax.ai" target="_blank" rel="noopener" style="color: var(--text-muted);">Aarambha ↗</a></li>
+          <li><a href="/privacy/" style="color: var(--text-muted);">Privacy</a></li>
+          <li><a href="/terms/" style="color: var(--text-muted);">Terms</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="pt-6 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs" style="border-top: 1px solid var(--border-subtle); color: var(--text-muted);">
+      <p>Accessibility: <a href="mailto:accessibility@shrutam.ai" style="color: var(--primary-light);">accessibility@shrutam.ai</a></p>
+      <p>A proud product of <strong>Aarambha (आरम्भ)</strong> · <a href="https://aarambhax.ai" target="_blank" rel="noopener" style="color: var(--primary-light);">aarambhax.ai</a></p>
+      <p>© 2026 Aarambha · Kishyam AI Pvt Ltd · shrutam.ai</p>
+    </div>
+  </div>
+</footer>
+
+  <script src="/assets/js/main.js" defer></script>
+</body>
+</html>
