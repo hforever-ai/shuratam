@@ -8,7 +8,7 @@
     </a>
 
     <!-- Desktop nav links -->
-    <div class="hidden lg:flex items-center gap-6 text-sm">
+    <div class="hidden lg:flex items-center gap-6 text-base">
       <a href="/features/" class="hover:text-[var(--accent)]" style="color: var(--text-body);"><?= isset($t) ? ($t['nav']['features'] ?? 'Features') : 'Features' ?></a>
       <a href="/blind-mode/" class="hover:text-[var(--accent)]" style="color: var(--text-body);"><?= isset($t) ? ($t['nav']['blind_mode'] ?? 'Blind Mode ♿') : 'Blind Mode ♿' ?></a>
 
