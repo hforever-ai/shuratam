@@ -38,7 +38,7 @@ include 'partials/nav.php';
        ======================================================== -->
   <section class="section" aria-labelledby="hero-heading" style="background: linear-gradient(160deg, var(--bg-base) 60%, var(--bg-elevated) 100%);">
     <div class="container">
-      <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-6 items-center">
 
         <!-- Left: Copy -->
         <div>
@@ -97,15 +97,15 @@ include 'partials/nav.php';
           </p>
         </div>
 
-        <!-- Right: SAAVI chat demo -->
-        <div class="flex flex-col gap-4 max-w-xs mx-auto">
+        <!-- Right: SAAVI + chat demo -->
+        <div class="flex flex-col gap-0 max-w-[300px] ml-auto">
           <!-- SAAVI avatar -->
-          <div class="chalkboard mx-auto">
-            <img src="/assets/images/hero/saavi-teaching.png" alt="SAAVI didi teaching students" loading="lazy" class="w-full max-w-[180px] rounded-xl">
+          <div class="chalkboard w-full" style="border-radius: var(--radius-lg) var(--radius-lg) 0 0; border-bottom: none;">
+            <img src="/assets/images/hero/saavi-teaching.png" alt="SAAVI didi teaching students" loading="lazy" class="w-full rounded-t-lg">
           </div>
 
-          <!-- Chat demo -->
-          <div id="saavi-chat-demo" class="flex flex-col gap-2 p-4 rounded-xl" style="background: var(--bg-surface); border: 1px solid var(--border-subtle);" aria-label="SAAVI chat demonstration">
+          <!-- Chat demo — connected to image above -->
+          <div id="saavi-chat-demo" class="flex flex-col gap-2 p-4 rounded-b-xl" style="background: var(--bg-elevated); border: 1px solid var(--border-subtle); border-top: none;" aria-label="SAAVI chat demonstration">
             <div class="flex items-center gap-2 pb-2 mb-1" style="border-bottom: 1px solid var(--border-subtle);">
               <div class="w-8 h-8 rounded-full flex items-center justify-center text-sm" style="background: var(--primary-glow);">🤖</div>
               <div>
