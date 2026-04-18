@@ -134,7 +134,7 @@ include '../partials/nav.php';
           <div class="mt-8 p-4 rounded-2xl" style="background: var(--bg-surface); border: 1px solid var(--border-subtle);">
             <div class="text-xs font-heading font-bold mb-1" style="color: var(--text-muted);">Parent Company</div>
             <div class="font-heading font-bold" style="color: var(--text-primary);">Aarambha</div>
-            <div class="text-sm" style="color: var(--text-secondary);">Kishyam AI Pvt Ltd</div>
+            <div class="text-sm" style="color: var(--text-secondary);">Aarambha</div>
           </div>
         </div>
 

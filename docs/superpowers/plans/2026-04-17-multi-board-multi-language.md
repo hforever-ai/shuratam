@@ -211,7 +211,7 @@ Full English UI strings file — same structure as hi.json with English values:
   "footer": {
     "tagline": "\"Listen and Learn.\"",
     "blind_mode_free": "♿ Blind Mode — FREE Forever",
-    "copyright": "© 2026 Aarambha · Kishyam AI Pvt Ltd · shrutam.ai",
+    "copyright": "© 2026 Aarambha · shrutam.ai",
     "product_of": "A product of Aarambha (आरम्भ)"
   }
 }

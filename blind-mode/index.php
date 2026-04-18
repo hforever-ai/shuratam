@@ -457,7 +457,7 @@ include '../partials/nav.php';
             Koi expiry nahi. Kyunki education access — right hai, privilege nahi."
           </p>
           <cite class="text-base not-italic" style="color: var(--text-secondary);">
-            — Aarambha Team (Kishyam AI Pvt Ltd)
+            — Aarambha Team (Aarambha)
           </cite>
         </blockquote>
 

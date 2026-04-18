@@ -1,6 +1,6 @@
 # Shrutam (शृतम्)
 
-> Shrutam is India's first audio-first AI personalized learning app for school students (Class 5-10). It features an AI teacher called SAAVI who teaches in 5 Indian languages (Hindi, Hinglish, English, Telugu, Marathi), is available 24/7, and includes India's first blind-accessible learning mode. Priced at ₹199/month vs ₹3,000+ for a private tutor. Covers CG Board (CGBSE) and CBSE syllabi with NCERT-aligned content. Built by Aarambha (Kishyam AI Pvt Ltd). Launching May 20, 2026 at shrutam.ai.
+> Shrutam is India's first audio-first AI personalized learning app for school students (Class 5-10). It features an AI teacher called SAAVI who teaches in 5 Indian languages (Hindi, Hinglish, English, Telugu, Marathi), is available 24/7, and includes India's first blind-accessible learning mode. Priced at ₹199/month vs ₹3,000+ for a private tutor. Covers CG Board (CGBSE) and CBSE syllabi with NCERT-aligned content. Built by Aarambha. Launching May 20, 2026 at shrutam.ai.
 
 Shrutam means "that which is heard" in Sanskrit — from India's oral learning tradition (Shruti parampara). The platform is designed for Hindi-medium students in Tier 2/3/4 Indian cities and villages who cannot afford private tutoring.
 
@@ -40,7 +40,7 @@ Science, Mathematics, Hindi, Social Science, English — all NCERT chapter-align
 
 - **Product**: Shrutam (शृतम्) — shrutam.ai
 - **Parent Company**: Aarambha (आरम्भ) — aarambhax.ai
-- **Legal Entity**: Kishyam AI Pvt Ltd
+- **Legal Entity**: Aarambha
 - **Founded**: 2026
 - **Location**: India (Chhattisgarh)
 - **Contact**: hello@shrutam.ai

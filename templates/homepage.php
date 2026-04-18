@@ -18,7 +18,7 @@ $schema      = json_encode([
     [
       "@type"     => "Organization",
       "name"      => "Aarambha",
-      "legalName" => "Kishyam AI Pvt Ltd",
+      "legalName" => "Aarambha",
       "url"       => "https://aarambhax.ai",
       "brand"     => ["@type" => "Brand", "name" => "Shrutam", "url" => "https://shrutam.ai"],
     ],

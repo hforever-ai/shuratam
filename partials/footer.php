@@ -62,7 +62,7 @@
     <div class="pt-6 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs" style="border-top: 1px solid var(--border-subtle); color: var(--text-muted);">
       <p>Accessibility: <a href="mailto:accessibility@shrutam.ai" style="color: var(--primary-light);">accessibility@shrutam.ai</a></p>
       <p><?= isset($t) ? ($t['footer']['product_of'] ?? 'A proud product of') : 'A proud product of' ?> <strong>Aarambha (आरम्भ)</strong> · <a href="https://aarambhax.ai" target="_blank" rel="noopener" style="color: var(--primary-light);">aarambhax.ai</a></p>
-      <p><?= isset($t) ? ($t['footer']['copyright'] ?? '© 2026 Aarambha · Kishyam AI Pvt Ltd · shrutam.ai') : '© 2026 Aarambha · Kishyam AI Pvt Ltd · shrutam.ai' ?></p>
+      <p><?= isset($t) ? ($t['footer']['copyright'] ?? '© 2026 Aarambha · shrutam.ai') : '© 2026 Aarambha · shrutam.ai' ?></p>
     </div>
   </div>
 </footer>

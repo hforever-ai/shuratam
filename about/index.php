@@ -209,7 +209,7 @@ include '../partials/nav.php';
         <div class="card animate-on-scroll" style="border: 1px solid var(--border-default); background: var(--bg-surface);">
           <div class="text-5xl mb-4">🌱</div>
           <div class="font-heading font-bold text-2xl mb-2" style="color: var(--text-primary);">Aarambha</div>
-          <div class="text-sm mb-2" style="color: var(--text-muted);">Kishyam AI Pvt Ltd</div>
+          <div class="text-sm mb-2" style="color: var(--text-muted);">Aarambha</div>
 
           <div class="my-6 py-6" style="border-top: 1px solid var(--border-subtle); border-bottom: 1px solid var(--border-subtle);">
             <p class="text-base leading-relaxed" style="color: var(--text-body);">
@@ -236,7 +236,7 @@ include '../partials/nav.php';
         </div>
 
         <p class="text-sm mt-6" style="color: var(--text-muted);">
-          Registered as <strong style="color: var(--text-secondary);">Kishyam AI Pvt Ltd</strong>, India
+          Registered as <strong style="color: var(--text-secondary);">Aarambha</strong>, India
         </p>
       </div>
     </div>
@@ -257,7 +257,7 @@ include '../partials/nav.php';
           <a href="/faq/" class="btn btn-outline">FAQ Dekho →</a>
         </div>
         <p class="text-sm mt-6" style="color: var(--text-muted);">
-          A product by <a href="https://aarambhax.ai" target="_blank" rel="noopener" style="color: var(--primary-light);">Aarambha (Kishyam AI Pvt Ltd)</a>
+          A product by <a href="https://aarambhax.ai" target="_blank" rel="noopener" style="color: var(--primary-light);">Aarambha</a>
         </p>
       </div>
     </div>

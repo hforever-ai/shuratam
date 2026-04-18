@@ -183,7 +183,7 @@ include '../partials/nav.php';
           Contact For School Partnership → schools@shrutam.ai
         </a>
         <p class="text-sm mt-4" style="color: var(--text-muted);">
-          Aarambha (Kishyam AI Pvt Ltd) — India-first education mission.
+          Aarambha — India-first education mission.
         </p>
       </div>
     </div>

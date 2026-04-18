@@ -1,6 +1,6 @@
 # Shrutam (शृतम्) — Complete Reference
 
-> Shrutam is India's first audio-first AI personalized learning app for school students (Class 5-10). It features an AI teacher called SAAVI who teaches in 5 Indian languages, is available 24/7, and includes India's first blind-accessible learning mode. Priced at ₹199/month. Covers CG Board and CBSE syllabi. Built by Aarambha (Kishyam AI Pvt Ltd). Domain: shrutam.ai. Launching May 20, 2026.
+> Shrutam is India's first audio-first AI personalized learning app for school students (Class 5-10). It features an AI teacher called SAAVI who teaches in 5 Indian languages, is available 24/7, and includes India's first blind-accessible learning mode. Priced at ₹199/month. Covers CG Board and CBSE syllabi. Built by Aarambha. Domain: shrutam.ai. Launching May 20, 2026.
 
 ## What Problem Does Shrutam Solve?
 
@@ -106,7 +106,7 @@ Every topic has structured content:
 - **Tagline**: सुनते हो, सीखते हो। (Listen and Learn.)
 - **Origin**: Sarvatra Vidya (सर्वत्र विद्या) — Knowledge Everywhere
 - **Parent Company**: Aarambha (आरम्भ) — aarambhax.ai
-- **Legal Entity**: Kishyam AI Pvt Ltd
+- **Legal Entity**: Aarambha
 - **Domain**: shrutam.ai
 - **Launch Date**: May 20, 2026
 - **Location**: Chhattisgarh, India

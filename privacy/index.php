@@ -1,5 +1,5 @@
 <?php
-$title       = "Privacy Policy | Shrutam — Kishyam AI Pvt Ltd";
+$title       = "Privacy Policy | Shrutam — Aarambha";
 $description = "Shrutam privacy policy. How we handle student data, parent data, and accessibility data.";
 $canonical   = "https://shrutam.ai/privacy/";
 $schema      = '';
@@ -21,7 +21,7 @@ include '../partials/nav.php';
           Privacy Policy
         </h1>
         <p class="text-lg" style="color: var(--text-secondary);">
-          Last updated: April 2026 &mdash; Kishyam AI Pvt Ltd
+          Last updated: April 2026 &mdash; Aarambha
         </p>
       </div>
     </div>
@@ -118,7 +118,7 @@ include '../partials/nav.php';
         <!-- Entity + Contact -->
         <div class="p-6 rounded-2xl text-center" style="background: var(--bg-elevated); border: 1px solid var(--border-default);">
           <p class="text-sm" style="color: var(--text-secondary);">
-            This policy applies to Shrutam, a product of <strong style="color: var(--text-primary);">Kishyam AI Pvt Ltd</strong> (Aarambha), India.<br>
+            This policy applies to Shrutam, a product of <strong style="color: var(--text-primary);">Aarambha</strong> (Aarambha), India.<br>
             Privacy questions: <a href="mailto:privacy@shrutam.ai" style="color: var(--primary-light);">privacy@shrutam.ai</a>
           </p>
         </div>

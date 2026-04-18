@@ -18,7 +18,7 @@ $schema      = json_encode([
         "priceValidUntil" => "2027-12-31",
         "seller"          => [
           "@type" => "Organization",
-          "name"  => "Aarambha (Kishyam AI Pvt Ltd)",
+          "name"  => "Aarambha",
           "url"   => "https://aarambhax.ai",
         ],
         "hasMerchantReturnPolicy" => [
