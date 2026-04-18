@@ -1,0 +1,95 @@
+{
+  "hero": {
+    "h1_line1": "Every Child Will Get",
+    "h1_line2": "Their Own AI Teacher Didi",
+    "saavi_intro": "SAAVI — who explains in your language, even at 2 AM, without ever judging you.",
+    "journey": [
+      "Listen",
+      "Watch",
+      "Practice",
+      "🎮 Play games",
+      "Learn!"
+    ]
+  },
+  "value_props": [
+    {
+      "icon": "💰",
+      "title": "₹199/month",
+      "body": "Private tutors charge ₹3,000+ per month. SAAVI is available 24/7 — for just ₹199."
+    },
+    {
+      "icon": "🗣️",
+      "title": "Your language",
+      "body": "Hindi · Hinglish · English · Telugu · Marathi. No boring textbook English!"
+    },
+    {
+      "icon": "🧠",
+      "title": "10 ways to explain",
+      "body": "Didn't understand? No worries! SAAVI explains one concept from 10 different angles."
+    },
+    {
+      "icon": "🚀",
+      "title": "Zero to Hero",
+      "body": "Basics weak? SAAVI will first strengthen your foundation. Then the chapter. Then board exam ready."
+    },
+    {
+      "icon": "📖",
+      "title": "Revision + Doubt Clear",
+      "body": "Chapter over? Quick revision mode. Got a doubt at 11 PM? SAAVI is awake."
+    },
+    {
+      "icon": "👨‍👩‍👧",
+      "title": "Parent App — FREE",
+      "body": "Daily progress report on WhatsApp. Bedtime lock — auto-off after 10 PM."
+    }
+  ],
+  "problem_section": {
+    "headline": "The Struggles of India's 25 Crore Students",
+    "stats": [
+      {
+        "number": "68%",
+        "label": "Students resort to rote learning",
+        "desc": "Didn't understand — just memorised. Forgot everything after the exam."
+      },
+      {
+        "number": "₹3,000+",
+        "label": "Private tutor's cost — per month",
+        "desc": "Unaffordable for 90% families. Unavailable in villages."
+      },
+      {
+        "number": "50 Lakh",
+        "label": "Blind students — ZERO edtech serves them",
+        "desc": "BYJU's, Vedantu, Unacademy — none of them thought about it."
+      }
+    ],
+    "bottom_line": "We are here — to change all this.",
+    "saavi_line": "SAAVI — for everyone, truly for everyone."
+  },
+  "comparison": {
+    "headline": "Other Apps Teach — SAAVI Explains",
+    "rows": [
+      {
+        "normal": "Photosynthesis is the process by which plants convert light energy...",
+        "saavi": "Dude, a tree has its own kitchen — it makes food from sunlight!"
+      },
+      {
+        "normal": "Available till 10 PM, then shuts down",
+        "saavi": "Doubt at 2 AM? SAAVI is awake. Always."
+      },
+      {
+        "normal": "See the diagram below",
+        "saavi": "Imagine a circle — with 'O' in the middle. The line from 'O' to the edge — that's the radius."
+      },
+      {
+        "normal": "Same content for all students",
+        "saavi": "No, Ravi, your fractions were weak — today I'll show you the same in percentages."
+      }
+    ]
+  },
+  "chat_demo": {
+    "student1": "I didn't understand photosynthesis...",
+    "saavi1": "Oh dear! Think of it as the tree's kitchen 🌱",
+    "saavi2": "Sunlight = gas, CO₂ = ingredients, output = glucose + O₂",
+    "student2": "Oh! Now it's crystal clear! 🎯"
+  }
+}
