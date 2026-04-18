@@ -63,7 +63,6 @@ $langPrefix = isset($lang) && $lang ? "/{$lang}" : '';
 
       <a href="<?= $langPrefix ?>/pricing/" class="hover:text-[var(--accent)]"<?= isActive('/pricing/') ?> style="<?= navStyle('/pricing/') ?>"><?= isset($t) ? ($t['nav']['pricing'] ?? 'Pricing') : 'Pricing' ?></a>
       <a href="<?= $langPrefix ?>/blog/" class="hover:text-[var(--accent)]"<?= isActive('/blog/') ?> style="<?= navStyle('/blog/') ?>"><?= isset($t) ? ($t['nav']['blog'] ?? 'Blog') : 'Blog' ?></a>
-      <a href="<?= $langPrefix ?>/schools/" class="hover:text-[var(--accent)]"<?= isActive('/schools/') ?> style="<?= navStyle('/schools/') ?>"><?= isset($t) ? ($t['nav']['for_schools'] ?? 'For Schools') : 'For Schools' ?></a>
     </div>
 
     <!-- Right side: theme switcher + CTA + hamburger -->
@@ -120,7 +119,6 @@ $langPrefix = isset($lang) && $lang ? "/{$lang}" : '';
       <a href="<?= $langPrefix ?>/boards/mp-board/" class="py-2 pl-4" style="color: var(--text-secondary); border-bottom: 1px solid var(--border-subtle);">MP Board (Soon)</a>
       <a href="<?= $langPrefix ?>/pricing/" class="py-3 text-lg font-heading" style="color: var(--text-body); border-bottom: 1px solid var(--border-subtle);">Pricing</a>
       <a href="<?= $langPrefix ?>/blog/" class="py-3 text-lg font-heading" style="color: var(--text-body); border-bottom: 1px solid var(--border-subtle);">Blog</a>
-      <a href="<?= $langPrefix ?>/schools/" class="py-3 text-lg font-heading" style="color: var(--text-body); border-bottom: 1px solid var(--border-subtle);">For Schools</a>
       <a href="<?= $langPrefix ?>/waitlist/" class="btn btn-primary mt-4 justify-center">Join Waitlist Free →</a>
     </div>
   </div>
