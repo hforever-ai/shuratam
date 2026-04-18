@@ -150,6 +150,11 @@ $sharedPages = [
 ];
 
 if (isset($sharedPages[$segments[0]])) {
+    // Blog posts: /hi/blog/{slug}/ → redirect to Hinglish /blog/{slug}/ (no translated posts yet)
+    if ($segments[0] === 'blog' && isset($segments[1]) && $segments[1] !== '') {
+        header('Location: /blog/' . $segments[1] . '/', true, 302);
+        exit;
+    }
     $pageType = $sharedPages[$segments[0]];
     $currentPath = $segments[0] . '/';
     $availableLangs = ['hi', 'en'];
