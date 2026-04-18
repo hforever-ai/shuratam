@@ -55,10 +55,8 @@ function isActive($path) {
 
     <!-- Right side: theme switcher + CTA + hamburger -->
     <div class="flex items-center gap-3">
-      <!-- Language switcher (only on routed pages) -->
-      <?php if (isset($lang) && isset($availableLangs)): ?>
+      <!-- Language switcher (all pages) -->
       <?php include __DIR__ . '/lang-switcher.php'; ?>
-      <?php endif; ?>
 
       <!-- Theme switcher -->
       <div class="flex items-center gap-1" role="radiogroup" aria-label="Theme switcher">
