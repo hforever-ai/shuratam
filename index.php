@@ -98,44 +98,33 @@ include 'partials/nav.php';
         </div>
 
         <!-- Right: SAAVI chat demo -->
-        <div id="saavi-chat-demo" class="flex flex-col gap-4 p-6 rounded-2xl" style="background: var(--bg-surface); border: 1px solid var(--border-subtle);" aria-label="SAAVI chat demonstration">
-
-          <div class="chalkboard mx-auto mb-4">
-            <img src="/assets/images/hero/saavi-teaching.png" alt="SAAVI didi teaching students on blackboard" loading="lazy" class="w-full max-w-[200px] md:max-w-[240px] lg:max-w-[280px] rounded-xl">
+        <div class="flex flex-col gap-4">
+          <!-- SAAVI avatar -->
+          <div class="chalkboard mx-auto">
+            <img src="/assets/images/hero/saavi-teaching.png" alt="SAAVI didi teaching students" loading="lazy" class="w-full max-w-[180px] rounded-xl">
           </div>
 
-          <!-- Header -->
-          <div class="flex items-center gap-3 pb-4" style="border-bottom: 1px solid var(--border-subtle);">
-            <div class="w-10 h-10 rounded-full flex items-center justify-center text-xl" style="background: var(--primary-glow);">🤖</div>
-            <div>
-              <div class="font-heading font-bold text-sm" style="color: var(--text-primary);">SAAVI Didi</div>
-              <div class="text-xs" style="color: var(--success);">● Online — Tumhari Teacher</div>
+          <!-- Chat demo -->
+          <div id="saavi-chat-demo" class="flex flex-col gap-2 p-4 rounded-xl" style="background: var(--bg-surface); border: 1px solid var(--border-subtle);" aria-label="SAAVI chat demonstration">
+            <div class="flex items-center gap-2 pb-2 mb-1" style="border-bottom: 1px solid var(--border-subtle);">
+              <div class="w-8 h-8 rounded-full flex items-center justify-center text-sm" style="background: var(--primary-glow);">🤖</div>
+              <div>
+                <div class="font-heading font-bold text-xs" style="color: var(--text-primary);">SAAVI Didi</div>
+                <div class="text-xs" style="color: var(--success);">● Online</div>
+              </div>
             </div>
-          </div>
-
-          <!-- Bubble 1: Student -->
-          <div class="chat-bubble chat-bubble-student" style="animation-delay: 0s;">
-            <p class="text-sm">Didi, photosynthesis kya hoti hai? Samajh nahi aata.</p>
-          </div>
-
-          <!-- Bubble 2: SAAVI -->
-          <div class="chat-bubble chat-bubble-saavi" style="animation-delay: 0.8s;">
-            <p class="text-sm mb-1"><strong style="color: var(--accent);">SAAVI:</strong> Arre, bilkul simple hai! Socho tumhara kitchen — mummy khana banati hain na?</p>
-          </div>
-
-          <!-- Bubble 3: SAAVI continues -->
-          <div class="chat-bubble chat-bubble-saavi" style="animation-delay: 1.6s;">
-            <p class="text-sm">Waise hi paudhe apna khana sunlight aur paani se banate hain. Ye process hai <strong style="color: var(--accent);">photosynthesis</strong> 🌿</p>
-          </div>
-
-          <!-- Bubble 4: Student -->
-          <div class="chat-bubble chat-bubble-student" style="animation-delay: 2.4s;">
-            <p class="text-sm">Oh! Toh chlorophyll kya karta hai isme?</p>
-          </div>
-
-          <!-- Bubble 5: SAAVI -->
-          <div class="chat-bubble chat-bubble-saavi" style="animation-delay: 3.2s;">
-            <p class="text-sm"><strong style="color: var(--accent);">SAAVI:</strong> Chlorophyll ek <em>green catcher</em> hai — sunlight ko pakadta hai, exactly jaise solar panel bijli pakadta hai! ☀️⚡</p>
+            <div class="chat-bubble chat-bubble-student" style="animation-delay: 0s;">
+              <p class="text-xs">Photosynthesis samajh nahi aaya...</p>
+            </div>
+            <div class="chat-bubble chat-bubble-saavi" style="animation-delay: 0.8s;">
+              <p class="text-xs"><strong style="color: var(--accent);">SAAVI:</strong> Arre yaar! Ped ka kitchen samjho 🌱</p>
+            </div>
+            <div class="chat-bubble chat-bubble-saavi" style="animation-delay: 1.6s;">
+              <p class="text-xs">Sunlight = gas, CO₂ = ingredients, output = glucose + O₂</p>
+            </div>
+            <div class="chat-bubble chat-bubble-student" style="animation-delay: 2.4s;">
+              <p class="text-xs">Oh! Ab crystal clear! 🎯</p>
+            </div>
           </div>
         </div>
 
