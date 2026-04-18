@@ -59,7 +59,6 @@ include 'partials/nav.php';
                 <strong style="color: var(--accent);">SAAVI</strong> — jo tumhari bhasha mein samjhati hai,
                 raat 2 baje bhi, kabhi judge kiye bina।
               </p>
-              <p class="text-sm mt-1" style="color: var(--text-secondary);">CG Board + CBSE · Class 6–10 · ₹199/month</p>
             </div>
             <!-- CTAs right-aligned on desktop -->
             <div class="flex flex-col gap-2">
@@ -110,14 +109,6 @@ include 'partials/nav.php';
             </div>
           </div>
 
-          <!-- Blind Mode callout -->
-          <div class="p-3 rounded-lg flex items-start gap-3" style="background: var(--accent-glow); border: 1px solid rgba(245,158,11,0.2);">
-            <span class="text-2xl mt-0.5">♿</span>
-            <div>
-              <p class="text-sm font-bold" style="color: var(--accent);">Blind Mode — India mein pehli baar · FREE forever</p>
-              <p class="text-xs" style="color: var(--text-secondary);">50 lakh blind students hain India mein। SAAVI unke liye bhi bani hai।</p>
-            </div>
-          </div>
         </div>
 
         <!-- Right: SAAVI + chat demo -->
