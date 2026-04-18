@@ -6,7 +6,12 @@ if (preg_match('#^/(hi|en|mr|te)(/.*)$#', $currentUri, $m)) {
 }
 function isActive($path) {
     global $currentUri;
-    return $path !== '/' && strpos($currentUri, $path) === 0 ? ' aria-current="page" style="color: var(--accent);"' : '';
+    return $path !== '/' && strpos($currentUri, $path) === 0 ? ' aria-current="page"' : '';
+}
+function navStyle($path) {
+    global $currentUri;
+    $isActive = $path !== '/' && strpos($currentUri, $path) === 0;
+    return $isActive ? 'color: var(--accent);' : 'color: var(--text-body);';
 }
 $langPrefix = isset($lang) && $lang ? "/{$lang}" : '';
 ?>
@@ -21,8 +26,8 @@ $langPrefix = isset($lang) && $lang ? "/{$lang}" : '';
 
     <!-- Desktop nav links -->
     <div class="hidden lg:flex items-center gap-6 text-base">
-      <a href="<?= $langPrefix ?>/features/" class="hover:text-[var(--accent)]"<?= isActive('/features/') ?> style="color: var(--text-body);"><?= isset($t) ? ($t['nav']['features'] ?? 'Features') : 'Features' ?></a>
-      <a href="<?= $langPrefix ?>/blind-mode/" class="hover:text-[var(--accent)]"<?= isActive('/blind-mode/') ?> style="color: var(--text-body);"><?= isset($t) ? ($t['nav']['blind_mode'] ?? 'Blind Mode ♿') : 'Blind Mode ♿' ?></a>
+      <a href="<?= $langPrefix ?>/features/" class="hover:text-[var(--accent)]"<?= isActive('/features/') ?> style="<?= navStyle('/features/') ?>"><?= isset($t) ? ($t['nav']['features'] ?? 'Features') : 'Features' ?></a>
+      <a href="<?= $langPrefix ?>/blind-mode/" class="hover:text-[var(--accent)]"<?= isActive('/blind-mode/') ?> style="<?= navStyle('/blind-mode/') ?>"><?= isset($t) ? ($t['nav']['blind_mode'] ?? 'Blind Mode ♿') : 'Blind Mode ♿' ?></a>
 
       <!-- Classes dropdown -->
       <div class="relative group">
@@ -53,9 +58,9 @@ $langPrefix = isset($lang) && $lang ? "/{$lang}" : '';
         </div>
       </div>
 
-      <a href="<?= $langPrefix ?>/pricing/" class="hover:text-[var(--accent)]"<?= isActive('/pricing/') ?> style="color: var(--text-body);"><?= isset($t) ? ($t['nav']['pricing'] ?? 'Pricing') : 'Pricing' ?></a>
-      <a href="<?= $langPrefix ?>/blog/" class="hover:text-[var(--accent)]"<?= isActive('/blog/') ?> style="color: var(--text-body);"><?= isset($t) ? ($t['nav']['blog'] ?? 'Blog') : 'Blog' ?></a>
-      <a href="<?= $langPrefix ?>/schools/" class="hover:text-[var(--accent)]"<?= isActive('/schools/') ?> style="color: var(--text-body);"><?= isset($t) ? ($t['nav']['for_schools'] ?? 'For Schools') : 'For Schools' ?></a>
+      <a href="<?= $langPrefix ?>/pricing/" class="hover:text-[var(--accent)]"<?= isActive('/pricing/') ?> style="<?= navStyle('/pricing/') ?>"><?= isset($t) ? ($t['nav']['pricing'] ?? 'Pricing') : 'Pricing' ?></a>
+      <a href="<?= $langPrefix ?>/blog/" class="hover:text-[var(--accent)]"<?= isActive('/blog/') ?> style="<?= navStyle('/blog/') ?>"><?= isset($t) ? ($t['nav']['blog'] ?? 'Blog') : 'Blog' ?></a>
+      <a href="<?= $langPrefix ?>/schools/" class="hover:text-[var(--accent)]"<?= isActive('/schools/') ?> style="<?= navStyle('/schools/') ?>"><?= isset($t) ? ($t['nav']['for_schools'] ?? 'For Schools') : 'For Schools' ?></a>
     </div>
 
     <!-- Right side: theme switcher + CTA + hamburger -->
