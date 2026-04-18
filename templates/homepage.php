@@ -263,7 +263,7 @@ include __DIR__ . '/../partials/nav.php';
               <div class="font-heading font-bold text-lg" style="color: var(--text-primary);"><?= htmlspecialchars($f['name_' . $lang]) ?></div>
               <p class="text-sm mt-1" style="color: var(--text-secondary);"><?= htmlspecialchars($f['sub_' . $lang]) ?></p>
             </div>
-            <a href="<?= htmlspecialchars($f['link']) ?>" class="btn btn-outline text-sm self-start">
+            <a href="/<?= $lang ?><?= htmlspecialchars($f['link']) ?>" class="btn btn-outline text-sm self-start">
               <?= $lang === 'hi' ? 'जानो →' : 'Learn more →' ?>
             </a>
           </div>
@@ -275,7 +275,7 @@ include __DIR__ . '/../partials/nav.php';
             <div class="font-heading font-bold text-lg" style="color: var(--text-primary);"><?= htmlspecialchars($f['name_' . $lang]) ?></div>
             <p class="text-sm mt-1" style="color: var(--text-secondary);"><?= htmlspecialchars($f['sub_' . $lang]) ?></p>
           </div>
-          <a href="<?= htmlspecialchars($f['link']) ?>" class="text-sm font-heading font-bold mt-auto" style="color: var(--primary-light);">
+          <a href="/<?= $lang ?><?= htmlspecialchars($f['link']) ?>" class="text-sm font-heading font-bold mt-auto" style="color: var(--primary-light);">
             <?= $lang === 'hi' ? 'जानो →' : 'Learn more →' ?>
           </a>
         </div>

@@ -694,12 +694,12 @@ switch ($pageType) {
                   <span class="text-xs" style="color: var(--text-muted);">Apr 2026</span>
                 </div>
                 <h2 class="font-heading font-bold text-xl" style="color: var(--text-primary);">
-                  <a href="/blog/<?= htmlspecialchars($post['slug']) ?>/" style="color: inherit; text-decoration: none;">
+                  <a href="/<?= $lang ?>/blog/<?= htmlspecialchars($post['slug']) ?>/" style="color: inherit; text-decoration: none;">
                     <?= htmlspecialchars($post['title']) ?>
                   </a>
                 </h2>
                 <p class="text-sm flex-1" style="color: var(--text-secondary);"><?= htmlspecialchars($post['excerpt']) ?></p>
-                <a href="/blog/<?= htmlspecialchars($post['slug']) ?>/" class="text-sm font-heading font-bold" style="color: var(--primary-light);">
+                <a href="/<?= $lang ?>/blog/<?= htmlspecialchars($post['slug']) ?>/" class="text-sm font-heading font-bold" style="color: var(--primary-light);">
                   <?= $lang === 'hi' ? 'पढ़ो →' : 'Read More →' ?>
                 </a>
               </article>
