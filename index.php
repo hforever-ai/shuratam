@@ -120,24 +120,53 @@ include 'partials/nav.php';
 
           <!-- Chat demo — connected to image above -->
           <div id="saavi-chat-demo" class="flex flex-col gap-2 p-4 rounded-b-xl" style="background: var(--bg-elevated); border: 1px solid var(--border-subtle); border-top: none;" aria-label="SAAVI chat demonstration">
-            <div class="flex items-center gap-2 pb-2 mb-1" style="border-bottom: 1px solid var(--border-subtle);">
-              <div class="w-8 h-8 rounded-full flex items-center justify-center text-sm" style="background: var(--primary-glow);">🤖</div>
-              <div>
-                <div class="font-heading font-bold text-xs" style="color: var(--text-primary);">SAAVI Didi</div>
-                <div class="text-xs" style="color: var(--success);">● Online</div>
+            <!-- Header -->
+            <div class="flex items-center justify-between pb-2 mb-1" style="border-bottom: 1px solid var(--border-subtle);">
+              <div class="flex items-center gap-2">
+                <div class="w-8 h-8 rounded-full flex items-center justify-center text-sm" style="background: var(--primary-glow);">S</div>
+                <div>
+                  <div class="font-heading font-bold text-xs" style="color: var(--text-primary);">SAAVI</div>
+                  <div class="text-xs" style="color: var(--success);">● Online — raat 2 baje bhi</div>
+                </div>
               </div>
+              <span class="text-xs" style="color: var(--text-muted);">11:04 PM</span>
             </div>
+
+            <!-- Student asks -->
             <div class="chat-bubble chat-bubble-student" style="animation-delay: 0s;">
-              <p class="text-xs">Photosynthesis samajh nahi aaya...</p>
+              <p class="text-xs">Photosynthesis samajh nahi aaya... 😕</p>
             </div>
-            <div class="chat-bubble chat-bubble-saavi" style="animation-delay: 0.8s;">
-              <p class="text-xs"><strong style="color: var(--accent);">SAAVI:</strong> Arre yaar! Ped ka kitchen samjho 🌱</p>
+
+            <!-- SAAVI intro -->
+            <div class="chat-bubble chat-bubble-saavi" style="animation-delay: 0.6s;">
+              <p class="text-xs">Arre yaar! Koi baat nahi — ek simple analogy se samjhao! 🌱</p>
             </div>
-            <div class="chat-bubble chat-bubble-saavi" style="animation-delay: 1.6s;">
-              <p class="text-xs">Sunlight = gas, CO₂ = ingredients, output = glucose + O₂</p>
+
+            <!-- SAAVI explanation card -->
+            <div class="chat-bubble chat-bubble-saavi" style="animation-delay: 1.2s; max-width: 280px;">
+              <p class="text-xs font-bold mb-1" style="color: var(--accent);">🍳 Ped ka Kitchen</p>
+              <p class="text-xs mb-2" style="color: var(--text-secondary);">Socho — ped ka apna kitchen hota hai!</p>
+              <div class="text-xs space-y-0.5" style="color: var(--text-body);">
+                <p>☀️ Sunlight = light energy</p>
+                <p>💨 CO₂ = haawa se</p>
+                <p>💧 H₂O = paani (roots se)</p>
+              </div>
+              <div class="mt-2 p-2 rounded text-xs text-center" style="background: var(--bg-surface); color: var(--accent); font-family: monospace;">
+                6CO₂ + 6H₂O + Light<br>
+                ↓ chlorophyll<br>
+                Glucose + 6O₂
+              </div>
+              <p class="text-xs mt-1" style="color: var(--text-muted);">Khana bana + oxygen bahar! 🌿</p>
             </div>
-            <div class="chat-bubble chat-bubble-student" style="animation-delay: 2.4s;">
-              <p class="text-xs">Oh! Ab crystal clear! 🎯</p>
+
+            <!-- Student response -->
+            <div class="chat-bubble chat-bubble-student" style="animation-delay: 2s;">
+              <p class="text-xs">Oh! Ab crystal clear! 🎯 Thank you!</p>
+            </div>
+
+            <!-- SAAVI follow-up -->
+            <div class="chat-bubble chat-bubble-saavi" style="animation-delay: 2.6s;">
+              <p class="text-xs"><span style="color: var(--success);">✓ Sahi samjha!</span> Ab ek quick quiz try karo? 🎮</p>
             </div>
           </div>
         </div>
