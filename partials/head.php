@@ -44,6 +44,15 @@ $schema = $schema ?? '';
   <?php if ($schema): ?>
   <script type="application/ld+json"><?= $schema ?></script>
   <?php endif; ?>
+
+  <!-- Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-R4NKQ8R15T"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-R4NKQ8R15T');
+  </script>
 </head>
 <body>
   <a href="#main" class="skip-link">Skip to main content</a>
