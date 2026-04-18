@@ -38,7 +38,7 @@ include 'partials/nav.php';
        ======================================================== -->
   <section class="section" aria-labelledby="hero-heading" style="background: linear-gradient(160deg, var(--bg-base) 60%, var(--bg-elevated) 100%);">
     <div class="container">
-      <div class="grid grid-cols-1 lg:grid-cols-2 gap-6 items-center">
+      <div class="grid grid-cols-1 lg:grid-cols-[1fr_300px] gap-6 items-start">
 
         <!-- Left: Copy -->
         <div>
@@ -98,7 +98,7 @@ include 'partials/nav.php';
         </div>
 
         <!-- Right: SAAVI + chat demo -->
-        <div class="flex flex-col gap-0 max-w-[300px] ml-auto">
+        <div class="flex flex-col gap-0 w-full">
           <!-- SAAVI avatar -->
           <div class="chalkboard w-full" style="border-radius: var(--radius-lg) var(--radius-lg) 0 0; border-bottom: none;">
             <img src="/assets/images/hero/saavi-teaching.png" alt="SAAVI didi teaching students" loading="lazy" class="w-full rounded-t-lg">
