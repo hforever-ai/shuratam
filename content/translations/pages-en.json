@@ -91,5 +91,156 @@
     "saavi1": "Oh dear! Think of it as the tree's kitchen 🌱",
     "saavi2": "Sunlight = gas, CO₂ = ingredients, output = glucose + O₂",
     "student2": "Oh! Now it's crystal clear! 🎯"
+  },
+  "features": {
+    "headline": "SAAVI's 13 Superpowers: Your Learning Unlocked!",
+    "subtext": "These unique features aren't just tools; they're the magic that makes learning fun, personal, and super effective, just for you."
+  },
+  "pricing": {
+    "headline": "Smart Learning, Smart Pricing: Your Best Investment!",
+    "free_trial_title": "Shrutam.ai Free Trial",
+    "free_trial_features": [
+      "Access to 2 chapters of any subject.",
+      "Experience SAAVI's teaching style.",
+      "Basic practice questions.",
+      "Get a taste of audio-first learning.",
+      "No credit card required."
+    ],
+    "pro_title": "Shrutam.ai Pro",
+    "pro_price": "₹199/month",
+    "pro_features": [
+      "Full access to all subjects, Class 5-10.",
+      "Comprehensive CG Board & CBSE syllabus.",
+      "Unlimited, personalized SAAVI sessions.",
+      "Interactive voice-based quizzes.",
+      "Detailed progress tracking & insights.",
+      "Doubt clarification for every topic.",
+      "Access to special Blind Mode features.",
+      "Regular updates with new content.",
+      "Community support & peer learning.",
+      "Ad-free, uninterrupted learning experience."
+    ],
+    "comparison_note": "A private tutor costs ₹500-₹1000 per hour, but SAAVI offers unlimited learning for just ₹199/month!"
+  },
+  "faq": {
+    "headline": "Your Questions, Our Answers: Let's Clear Things Up!",
+    "questions": [
+      {
+        "q": "What is Shrutam.ai?",
+        "a": "Shrutam.ai is India's first audio-first AI personalized learning app. We make learning engaging and accessible through our AI teacher, SAAVI, helping students from Class 5-10 with CG Board and CBSE syllabi."
+      },
+      {
+        "q": "Who is SAAVI?",
+        "a": "SAAVI is your friendly AI teacher, like an elder sister, who guides you through your studies. She's patient, smart, and makes learning fun, always encouraging you to do your best!"
+      },
+      {
+        "q": "How does SAAVI teach?",
+        "a": "SAAVI teaches using clear, engaging audio lessons. You can ask her questions, discuss concepts, and even take voice-based quizzes. It's like having a personal tutor available 24/7."
+      },
+      {
+        "q": "What is \"Blind Mode\"?",
+        "a": "Blind Mode is a special feature designed to make learning fully accessible for visually impaired students. It includes voice-guided navigation, spoken math, and braille support, ensuring everyone can learn independently."
+      },
+      {
+        "q": "Which boards does Shrutam.ai cover?",
+        "a": "We currently cover the full syllabus for both Chhattisgarh (CG) Board and CBSE for Classes 5 to 10. We're always working to expand to more boards!"
+      },
+      {
+        "q": "How much does Shrutam.ai cost?",
+        "a": "You can access all features of Shrutam.ai Pro for just ₹199 per month. We also offer a free trial to explore a few chapters!"
+      },
+      {
+        "q": "Is Shrutam.ai suitable for students who prefer visual learning?",
+        "a": "While Shrutam.ai is audio-first, our lessons are designed to create vivid mental images. For those who prefer visual aids, SAAVI will guide you to supplementary material or describe concepts in detail. It's about empowering your way of learning!"
+      },
+      {
+        "q": "Can I really ask SAAVI anything?",
+        "a": "Yes, absolutely! SAAVI is designed to clarify all your doubts related to your syllabus. Feel free to ask her to explain concepts, solve problems, or discuss topics until you fully understand."
+      },
+      {
+        "q": "What if I don't have internet access all the time?",
+        "a": "Shrutam.ai is an online app, so an internet connection is needed for SAAVI to function. However, we're exploring offline capabilities for future updates to make learning even more accessible."
+      },
+      {
+        "q": "How can I get started with Shrutam.ai?",
+        "a": "Simply download the Shrutam.ai app from the Play Store (or App Store, coming soon!), sign up, and start your free trial. SAAVI will be there to welcome you!"
+      }
+    ]
+  },
+  "blind_mode": {
+    "headline": "Learning Without Limits: Empowering Every Voice!",
+    "intro": "Imagine a world where every student, regardless of their vision, can learn independently and excel. In India, over 50 lakh blind students deserve this opportunity. Shrutam.ai's Blind Mode is built with this dream, opening doors to knowledge for all.",
+    "features": [
+      {
+        "name": "No Diagrams, Only Words",
+        "desc": "Complex concepts are explained purely through detailed verbal descriptions, eliminating the need for visual aids."
+      },
+      {
+        "name": "Math Spoken Out Loud",
+        "desc": "Mathematical equations and problems are read aloud clearly, step-by-step, making numbers and formulas accessible."
+      },
+      {
+        "name": "Tables as Clear Lists",
+        "desc": "Data presented in tables is converted into easy-to-understand spoken lists, ensuring no information is missed."
+      },
+      {
+        "name": "Scribe Cues",
+        "desc": "SAAVI provides clear instructions and cues for scribes, guiding them efficiently during exams or study sessions."
+      },
+      {
+        "name": "Voice-Powered Quizzes",
+        "desc": "Engage with quizzes entirely through voice commands and spoken answers, making assessments interactive and fair."
+      },
+      {
+        "name": "Seamless Screen Reader Support",
+        "desc": "Fully compatible with popular screen readers like TalkBack, ensuring smooth navigation and interaction with the app."
+      },
+      {
+        "name": "Braille-Friendly Content",
+        "desc": "Content is structured to be easily convertible into braille, supporting students who use braille displays."
+      }
+    ],
+    "commitment": "Aarambha's Promise: We believe education is a fundamental right. Blind Mode is our commitment to breaking down barriers and fostering an inclusive learning environment for every child."
+  },
+  "saavi": {
+    "headline": "Meet SAAVI: Your Friend, Your Guide, Your AI Teacher!",
+    "intro": "SAAVI isn't just an app feature; she's your personalized learning companion. Think of her as your elder sister, always ready to help you understand tough topics, celebrate your wins, and gently guide you forward, making every study session a joyous adventure.",
+    "traits": [
+      {
+        "name": "Patient",
+        "desc": "SAAVI will explain concepts as many times as you need, in as many ways as it takes, until you truly understand. No rush, no judgment."
+      },
+      {
+        "name": "Super Smart",
+        "desc": "With a vast knowledge base covering your entire syllabus, SAAVI can simplify complex ideas, answer tricky questions, and offer clear explanations for everything."
+      },
+      {
+        "name": "Always Cheerful",
+        "desc": "Learning with SAAVI is always a positive experience. Her encouraging words and friendly tone make even the toughest subjects feel manageable and fun."
+      },
+      {
+        "name": "Honest & Clear",
+        "desc": "She's straightforward and clear in her explanations, making sure you grasp the core concepts without any confusion. She helps you identify areas to improve, gently."
+      },
+      {
+        "name": "Celebrates Your Efforts",
+        "desc": "SAAVI believes in celebrating every step of your learning journey. She'll cheer for your progress, no matter how big or small, making you feel proud and motivated!"
+      }
+    ]
+  },
+  "about": {
+    "headline": "Our Story: Shaping the Future of Learning",
+    "founder_note": "As educators, we saw the incredible potential of AI to revolutionize learning, especially for students in India. We founded Shrutam.ai with a vision: to create an app where every child, regardless of their background or ability, can access high-quality, personalized education. We believe in the power of the human voice and technology to connect and inspire.",
+    "name_meaning": "\"Shrutam\" comes from Sanskrit, meaning \"that which has been heard.\" It perfectly encapsulates our audio-first approach to learning, emphasizing the power of listening and understanding through sound.",
+    "mission": "To make high-quality, personalized, and accessible education a reality for every Indian student, empowering them to learn, grow, and shine."
+  },
+  "waitlist": {
+    "headline": "Be Among the First: Join Our Shrutam.ai Waitlist!",
+    "subtext": "The future of learning is almost here! Sign up for our waitlist to get exclusive early access and stay updated on our launch.",
+    "benefits": [
+      "Early Bird Access: Be one of the first to experience SAAVI's magic before anyone else.",
+      "Exclusive Discounts: Unlock special launch offers and subscription deals just for our waitlist members.",
+      "Direct Feedback Channel: Help shape Shrutam.ai's future by sharing your thoughts directly with our team."
+    ]
   }
 }
