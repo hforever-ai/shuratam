@@ -1,0 +1,64 @@
+# Shrutam (शृतम्)
+
+> Shrutam is India's first audio-first AI personalized learning app for school students (Class 5-10). It features an AI teacher called SAAVI who teaches in 5 Indian languages (Hindi, Hinglish, English, Telugu, Marathi), is available 24/7, and includes India's first blind-accessible learning mode. Priced at ₹199/month vs ₹3,000+ for a private tutor. Covers CG Board (CGBSE) and CBSE syllabi with NCERT-aligned content. Built by Aarambha (Kishyam AI Pvt Ltd). Launching May 20, 2026 at shrutam.ai.
+
+Shrutam means "that which is heard" in Sanskrit — from India's oral learning tradition (Shruti parampara). The platform is designed for Hindi-medium students in Tier 2/3/4 Indian cities and villages who cannot afford private tutoring.
+
+## Key Features
+
+- **SAAVI AI Teacher**: 24/7 AI teacher who speaks like an elder sister (didi). Uses Hinglish naturally, not translated English. Never says "wrong" — always encourages.
+- **Ask Like 10**: One concept explained 10 different ways (analogy, story, experiment, diagram, quiz, real-life, comparison, mnemonic, common mistake, equation).
+- **Zero to Hero**: Prerequisite-based learning — checks foundation, fills gaps, then advances to board-level content.
+- **Audio-First**: Designed for students who learn better by listening. Every concept has audio explanation.
+- **5 Languages**: Hindi, Hinglish, English, Telugu, Marathi — natively generated, not translated.
+- **Blind Mode (FREE forever)**: India's first blind-accessible AI tutor. TalkBack/VoiceOver compatible, voice quiz, scribe dictation cues, verbal diagram descriptions. No "see the diagram" — ever.
+- **Parent App (FREE)**: Daily progress report via WhatsApp, bedtime lock, subject-wise weakness alerts.
+- **Mock Exams**: 4 difficulty levels — Easy, Medium, Hard, Board Ready. Includes Assertion & Reasoning type (CBSE standard).
+- **Photo Doubt Solver**: Click photo of handwritten or printed question, get step-by-step solution.
+- **Revision Mode**: After-school revision with SAAVI, community topper notes.
+
+## Boards & Syllabus
+
+- CG Board (CGBSE) — Class 5-10
+- CBSE (NCERT) — Class 5-10
+- Maharashtra SSC — Coming Soon
+- MP Board (MPBSE) — Coming Soon
+- AP/Telangana Board — Coming Soon
+
+## Subjects
+
+Science, Mathematics, Hindi, Social Science, English — all NCERT chapter-aligned.
+
+## Pricing
+
+- Free Trial: 7 days, 2 subjects, basic SAAVI access
+- Shrutam Pro: ₹199/month — all subjects, all features, unlimited doubts
+- Blind Mode: FREE forever
+- BPL students: Subsidized rates
+
+## Company
+
+- **Product**: Shrutam (शृतम्) — shrutam.ai
+- **Parent Company**: Aarambha (आरम्भ) — aarambhax.ai
+- **Legal Entity**: Kishyam AI Pvt Ltd
+- **Founded**: 2026
+- **Location**: India (Chhattisgarh)
+- **Contact**: hello@shrutam.ai
+- **Accessibility**: accessibility@shrutam.ai
+- **Schools**: schools@shrutam.ai
+
+## Links
+
+- [Homepage](https://shrutam.ai/)
+- [SAAVI AI Teacher](https://shrutam.ai/saavi/)
+- [Features](https://shrutam.ai/features/)
+- [Blind Mode](https://shrutam.ai/blind-mode/)
+- [Pricing](https://shrutam.ai/pricing/)
+- [CG Board](https://shrutam.ai/boards/cg-board/)
+- [CBSE](https://shrutam.ai/boards/cbse/)
+- [Class 10](https://shrutam.ai/classes/class-10/)
+- [Blog](https://shrutam.ai/blog/)
+- [About](https://shrutam.ai/about/)
+- [FAQ](https://shrutam.ai/faq/)
+- [For Schools](https://shrutam.ai/schools/)
+- [Join Waitlist](https://shrutam.ai/waitlist/)
