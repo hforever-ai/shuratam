@@ -45,7 +45,7 @@ include 'partials/nav.php';
           <!-- Brand -->
           <div class="flex items-center gap-2 mb-3">
             <span lang="hi" class="font-devanagari-heading text-2xl font-bold" style="color: var(--accent);">शृतम्</span>
-            <span class="text-xs font-heading px-2 py-1 rounded-full" style="color: var(--primary-light); background: var(--primary-glow); border: 1px solid var(--border-subtle);">Audio-First AI Learning</span>
+            <span class="text-xs font-heading px-2 py-1 rounded-full" style="color: var(--primary-light); background: var(--primary-glow); border: 1px solid var(--border-subtle);">Audio-First AI Personalized Learning App</span>
           </div>
 
           <!-- H1 — the core promise -->
@@ -54,9 +54,14 @@ include 'partials/nav.php';
             <span class="text-gradient">Apni AI Teacher — SAAVI</span>
           </h1>
 
-          <!-- Tagline -->
-          <p lang="hi" class="font-devanagari text-lg mb-4" style="color: var(--accent);">
-            सुनते हो, सीखते हो। <span class="text-sm" style="color: var(--text-muted);">— सर्वत्र विद्या</span>
+          <!-- Tagline — the learning journey -->
+          <p lang="hi" class="font-devanagari text-base mb-4" style="color: var(--text-body);">
+            <span style="color: var(--accent);">सुनते हो</span> ·
+            <span style="color: var(--primary-light);">देखते हो</span> ·
+            <span style="color: var(--success);">Practical करते हो</span> ·
+            <span style="color: var(--accent);">🎮 Game Mode</span> ·
+            <span style="color: var(--text-primary); font-weight: 700;">सीखते हो!</span>
+            <span class="text-xs ml-1" style="color: var(--text-muted);">— सर्वत्र विद्या</span>
           </p>
 
           <!-- Value prop — what makes Shrutam different -->
