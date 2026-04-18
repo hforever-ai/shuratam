@@ -113,9 +113,9 @@ include 'partials/nav.php';
 
         <!-- Right: SAAVI + chat demo -->
         <div class="flex flex-col gap-0 w-full">
-          <!-- SAAVI avatar -->
-          <div class="chalkboard w-full" style="border-radius: var(--radius-lg) var(--radius-lg) 0 0; border-bottom: none;">
-            <img src="/assets/images/hero/saavi-teaching.png" alt="SAAVI didi teaching students" loading="lazy" class="w-full rounded-t-lg">
+          <!-- SAAVI avatar — compact -->
+          <div class="chalkboard w-full" style="border-radius: var(--radius-lg) var(--radius-lg) 0 0; border-bottom: none; padding: 0.25rem;">
+            <img src="/assets/images/hero/saavi-teaching.png" alt="SAAVI didi teaching students" loading="lazy" class="w-full rounded-t-lg" style="max-height: 160px; object-fit: cover; object-position: top;">
           </div>
 
           <!-- Chat demo — connected to image above -->
@@ -142,21 +142,10 @@ include 'partials/nav.php';
               <p class="text-xs">Arre yaar! Koi baat nahi — ek simple analogy se samjhao! 🌱</p>
             </div>
 
-            <!-- SAAVI explanation card -->
-            <div class="chat-bubble chat-bubble-saavi" style="animation-delay: 1.2s; max-width: 280px;">
-              <p class="text-xs font-bold mb-1" style="color: var(--accent);">🍳 Ped ka Kitchen</p>
-              <p class="text-xs mb-2" style="color: var(--text-secondary);">Socho — ped ka apna kitchen hota hai!</p>
-              <div class="text-xs space-y-0.5" style="color: var(--text-body);">
-                <p>☀️ Sunlight = light energy</p>
-                <p>💨 CO₂ = haawa se</p>
-                <p>💧 H₂O = paani (roots se)</p>
-              </div>
-              <div class="mt-2 p-2 rounded text-xs text-center" style="background: var(--bg-surface); color: var(--accent); font-family: monospace;">
-                6CO₂ + 6H₂O + Light<br>
-                ↓ chlorophyll<br>
-                Glucose + 6O₂
-              </div>
-              <p class="text-xs mt-1" style="color: var(--text-muted);">Khana bana + oxygen bahar! 🌿</p>
+            <!-- SAAVI explanation -->
+            <div class="chat-bubble chat-bubble-saavi" style="animation-delay: 1.2s;">
+              <p class="text-xs"><span style="color: var(--accent);">🍳 Ped ka Kitchen:</span> Sunlight + CO₂ + H₂O → Glucose + O₂</p>
+              <p class="text-xs" style="color: var(--text-muted);">Khana bana + oxygen bahar! 🌿</p>
             </div>
 
             <!-- Student response -->
