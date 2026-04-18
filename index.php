@@ -142,20 +142,24 @@ include 'partials/nav.php';
               <p class="text-xs">Arre yaar! Koi baat nahi — ek simple analogy se samjhao! 🌱</p>
             </div>
 
-            <!-- SAAVI explanation -->
-            <div class="chat-bubble chat-bubble-saavi" style="animation-delay: 1.2s;">
-              <p class="text-xs"><span style="color: var(--accent);">🍳 Ped ka Kitchen:</span> Sunlight + CO₂ + H₂O → Glucose + O₂</p>
-              <p class="text-xs" style="color: var(--text-muted);">Khana bana + oxygen bahar! 🌿</p>
+            <!-- SAAVI explanation card -->
+            <div class="chat-bubble chat-bubble-saavi" style="animation-delay: 1.2s; max-width: 280px;">
+              <p class="text-xs font-bold mb-1" style="color: var(--accent);">🍳 Ped ka Kitchen</p>
+              <p class="text-xs mb-2" style="color: var(--text-body);">Socho — ped ka apna kitchen hota hai!</p>
+              <div class="text-xs space-y-0.5" style="color: var(--text-body);">
+                <p>☀️ Sunlight = light energy</p>
+                <p>💨 CO₂ = haawa se aata hai</p>
+                <p>💧 H₂O = paani roots se aata hai</p>
+              </div>
+              <div class="mt-2 p-2 rounded text-xs text-center" style="background: var(--bg-surface); color: var(--accent); font-family: monospace;">
+                6CO₂ + 6H₂O + Light<br>↓ chlorophyll ke zariye<br>Glucose (C₆H₁₂O₆) + 6O₂
+              </div>
+              <p class="text-xs mt-1" style="color: var(--text-muted);">Khana bana + oxygen bahar! 🌿</p>
             </div>
 
             <!-- Student response -->
-            <div class="chat-bubble chat-bubble-student" style="animation-delay: 2s;">
-              <p class="text-xs">Oh! Ab crystal clear! 🎯 Thank you!</p>
-            </div>
-
-            <!-- SAAVI follow-up -->
-            <div class="chat-bubble chat-bubble-saavi" style="animation-delay: 2.6s;">
-              <p class="text-xs"><span style="color: var(--success);">✓ Sahi samjha!</span> Ab ek quick quiz try karo? 🎮</p>
+            <div class="chat-bubble chat-bubble-student" style="animation-delay: 2.2s;">
+              <p class="text-xs">Oh! Ab crystal clear! 🎯</p>
             </div>
           </div>
         </div>
