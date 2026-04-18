@@ -1,27 +1,28 @@
 <?php
 /**
- * Language Switcher — pill-style toggle in nav
+ * Language Switcher — compact inline toggle
  * Expects: $lang (current), $availableLangs (array), $currentPath
  */
 $langLabels = [
-    'hi' => 'हिंदी',
-    'en' => 'English',
-    'mr' => 'मराठी',
-    'te' => 'తెలుగు',
+    'hi' => 'हि',
+    'en' => 'EN',
+    'mr' => 'मर',
+    'te' => 'తె',
 ];
+$currentPath = $currentPath ?? '';
 ?>
-<div class="flex items-center gap-1" role="navigation" aria-label="Language switcher">
+<div class="flex items-center rounded-full" style="background: var(--bg-surface); border: 1px solid var(--border-subtle); padding: 2px;" role="navigation" aria-label="Language switcher">
   <a href="/<?= htmlspecialchars($currentPath) ?>"
-     class="pill text-xs <?= empty($lang) ? 'active' : '' ?>"
-     style="min-height: 36px; padding: 0.25rem 0.75rem;">
-    Hinglish
+     class="text-xs font-bold px-2 py-1 rounded-full whitespace-nowrap"
+     style="<?= empty($lang) ? 'background: var(--accent); color: var(--text-inverse);' : 'color: var(--text-secondary);' ?>">
+    HI
   </a>
   <?php foreach ($availableLangs as $l): ?>
     <a href="/<?= $l ?>/<?= htmlspecialchars($currentPath) ?>"
-       class="pill text-xs <?= ($lang ?? '') === $l ? 'active' : '' ?>"
-       style="min-height: 36px; padding: 0.25rem 0.75rem;"
+       class="text-xs font-bold px-2 py-1 rounded-full whitespace-nowrap"
+       style="<?= ($lang ?? '') === $l ? 'background: var(--accent); color: var(--text-inverse);' : 'color: var(--text-secondary);' ?>"
        hreflang="<?= $l ?>">
-      <?= $langLabels[$l] ?? $l ?>
+      <?= $langLabels[$l] ?? strtoupper($l) ?>
     </a>
   <?php endforeach; ?>
 </div>
