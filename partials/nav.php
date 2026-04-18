@@ -89,7 +89,9 @@ $langPrefix = isset($lang) && $lang ? "/{$lang}" : '';
       <a href="<?= $langPrefix ?>/waitlist/" class="btn btn-primary hidden sm:inline-flex">Join Waitlist Free →</a>
 
       <!-- Hamburger (mobile) -->
-      <button id="hamburger" class="lg:hidden p-2 min-w-[44px] min-h-[44px] flex items-center justify-center" aria-label="Open menu" aria-expanded="false">
+      <button id="hamburger" class="lg:hidden p-2 min-w-[44px] min-h-[44px] flex items-center justify-center"
+              aria-label="Open menu" aria-expanded="false"
+              onclick="document.getElementById('mobile-menu').classList.remove('hidden'); document.body.style.overflow='hidden';">
         <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="color: var(--text-primary);">
           <line x1="3" y1="6" x2="21" y2="6"/>
           <line x1="3" y1="12" x2="21" y2="12"/>
@@ -101,9 +103,11 @@ $langPrefix = isset($lang) && $lang ? "/{$lang}" : '';
 
   <!-- Mobile menu overlay -->
   <div id="mobile-menu" class="fixed inset-0 z-50 hidden" role="dialog" aria-modal="true" aria-label="Mobile navigation">
-    <div class="absolute inset-0 bg-black/50" id="mobile-menu-backdrop"></div>
+    <div class="absolute inset-0 bg-black/50" id="mobile-menu-backdrop"
+         onclick="document.getElementById('mobile-menu').classList.add('hidden'); document.body.style.overflow='';"></div>
     <div class="absolute right-0 top-0 h-full w-[280px] p-6 flex flex-col gap-4 overflow-y-auto" style="background: var(--bg-surface);">
-      <button id="mobile-menu-close" class="self-end p-2 min-w-[44px] min-h-[44px]" aria-label="Close menu">
+      <button id="mobile-menu-close" class="self-end p-2 min-w-[44px] min-h-[44px]" aria-label="Close menu"
+              onclick="document.getElementById('mobile-menu').classList.add('hidden'); document.body.style.overflow='';">
         <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="color: var(--text-primary);">
           <line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/>
         </svg>
