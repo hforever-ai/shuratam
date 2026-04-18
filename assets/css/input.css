@@ -306,7 +306,7 @@
 @layer components {
   .container {
     width: 100%;
-    max-width: 1080px !important;
+    max-width: 1140px !important;
     margin: 0 auto;
     padding-left: clamp(1rem, 4vw, 2rem);
     padding-right: clamp(1rem, 4vw, 2rem);
