@@ -19,11 +19,11 @@ $langPrefix = isset($lang) && $lang ? "/{$lang}" : '';
 <header class="nav">
   <nav class="container flex items-center justify-between h-full" aria-label="Main navigation">
     <!-- Logo -->
-    <a href="<?= $langPrefix ?>/" class="flex items-center gap-2">
-      <img src="/assets/images/logo/shrutam-logo.png" alt="Shrutam" style="height: 52px;">
-      <span class="hidden sm:flex flex-col leading-none">
-        <span class="font-heading font-bold text-lg" style="color: var(--text-primary);">Shrutam</span>
-        <span class="text-xs" style="color: var(--accent);">सुनो · सीखो · बढ़ो</span>
+    <a href="<?= $langPrefix ?>/" class="flex items-center gap-3">
+      <img src="/assets/images/logo/shrutam-logo.png" alt="Shrutam" style="height: 64px;">
+      <span class="hidden sm:flex flex-col leading-tight">
+        <span class="font-heading font-bold text-2xl" style="color: var(--text-primary);">Shrutam</span>
+        <span class="text-sm font-bold" style="color: var(--accent);">सुनो · सीखो · बढ़ो</span>
       </span>
     </a>
 
