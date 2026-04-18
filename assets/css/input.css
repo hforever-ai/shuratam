@@ -245,11 +245,6 @@
     outline-offset: 2px;
   }
 
-  /* Blog / article pages — narrower container */
-  .article-content {
-    max-width: 1024px !important;
-  }
-
   /* Article / blog / content pages — larger readable text */
   .article-content p,
   .article-content li,
@@ -310,6 +305,11 @@
     margin: 0 auto;
     padding-left: clamp(1rem, 4vw, 2rem);
     padding-right: clamp(1rem, 4vw, 2rem);
+  }
+
+  /* Blog pages — narrower than main container */
+  .container.article-content {
+    max-width: 1024px;
   }
 
   .section {
