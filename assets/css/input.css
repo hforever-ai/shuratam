@@ -314,7 +314,7 @@
 
   /* Blog pages — narrower than main container */
   .container.article-content {
-    max-width: 1024px;
+    max-width: 1024px !important;
   }
 
   .section {
