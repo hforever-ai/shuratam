@@ -245,6 +245,11 @@
     outline-offset: 2px;
   }
 
+  /* Blog / article pages — narrower than global container */
+  .article-content.container {
+    max-width: 1024px;
+  }
+
   /* Article / blog / content pages — larger readable text */
   .article-content p,
   .article-content li,
