@@ -32,6 +32,12 @@ $schema = $schema ?? '';
   <?php include __DIR__ . '/hreflang.php'; ?>
   <?php endif; ?>
 
+  <!-- Favicon -->
+  <link rel="icon" href="/favicon.ico" sizes="any">
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/images/logo/favicon-32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/assets/images/logo/favicon-16.png">
+  <link rel="apple-touch-icon" href="/assets/images/logo/apple-touch-icon.png">
+
   <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>

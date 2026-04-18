@@ -19,9 +19,8 @@ $langPrefix = isset($lang) && $lang ? "/{$lang}" : '';
 <header class="nav">
   <nav class="container flex items-center justify-between h-full" aria-label="Main navigation">
     <!-- Logo -->
-    <a href="<?= $langPrefix ?>/" class="flex items-center gap-2 text-xl font-heading font-bold" style="color: var(--text-primary);">
-      <span lang="hi" class="font-devanagari-heading">शृतम्</span>
-      <span class="hidden sm:inline">Shrutam</span>
+    <a href="<?= $langPrefix ?>/" class="flex items-center">
+      <img src="/assets/images/logo/shrutam-logo.png" alt="Shrutam" class="h-10" style="height: 40px;">
     </a>
 
     <!-- Desktop nav links -->
