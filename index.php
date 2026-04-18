@@ -43,26 +43,34 @@ include 'partials/nav.php';
         <!-- Left: Copy -->
         <div>
           <!-- Brand -->
-          <div class="flex items-center gap-2 mb-3">
-            <span lang="hi" class="font-devanagari-heading text-2xl font-bold" style="color: var(--accent);">शृतम्</span>
-            <span class="text-xs font-heading" style="color: var(--text-secondary);">— Audio-First AI Personalized Learning App</span>
+          <div class="flex items-center gap-3 mb-4">
+            <span lang="hi" class="font-devanagari-heading text-3xl font-bold" style="color: var(--accent);">शृतम्</span>
+            <span class="text-sm font-heading" style="color: var(--text-secondary);">— Audio-First AI Personalized Learning App</span>
           </div>
 
-          <!-- H1 -->
-          <h1 id="hero-heading" class="text-3xl lg:text-4xl font-heading font-bold mb-3" style="color: var(--text-primary);">
-            Har Bachche Ko Milegi<br>
-            <span class="text-gradient">Apni AI Teacher Didi</span>
-          </h1>
-
-          <!-- Sub — SAAVI intro -->
-          <p class="text-base mb-4" style="color: var(--text-body);">
-            <strong style="color: var(--accent);">SAAVI</strong> — jo tumhari bhasha mein samjhati hai,<br>
-            raat 2 baje bhi, kabhi judge kiye bina।<br>
-            <span class="text-sm" style="color: var(--text-secondary);">CG Board + CBSE · Class 6–10 · ₹199/month</span>
-          </p>
+          <!-- H1 + SAAVI intro — 2 col on desktop to prevent wrapping -->
+          <div class="grid grid-cols-1 md:grid-cols-[1fr_auto] gap-4 items-start mb-4">
+            <div>
+              <h1 id="hero-heading" class="text-3xl lg:text-4xl font-heading font-bold mb-2" style="color: var(--text-primary);">
+                Har Bachche Ko Milegi<br>
+                <span class="text-gradient">Apni AI Teacher Didi</span>
+              </h1>
+              <p class="text-lg" style="color: var(--text-body);">
+                <strong style="color: var(--accent);">SAAVI</strong> — jo tumhari bhasha mein samjhati hai,
+                raat 2 baje bhi, kabhi judge kiye bina।
+              </p>
+              <p class="text-sm mt-1" style="color: var(--text-secondary);">CG Board + CBSE · Class 6–10 · ₹199/month</p>
+            </div>
+            <!-- CTAs right-aligned on desktop -->
+            <div class="flex flex-col gap-2">
+              <a href="/waitlist/" class="btn btn-primary whitespace-nowrap">Free Mein Shuru Karo →</a>
+              <a href="/saavi/" class="btn btn-outline whitespace-nowrap">SAAVI se milo →</a>
+              <p class="text-xs text-center" style="color: var(--text-muted);">May 20, 2026 · No credit card</p>
+            </div>
+          </div>
 
           <!-- How it works — learning journey -->
-          <div class="flex flex-wrap items-center gap-1 mb-5 text-sm font-heading font-bold">
+          <div class="flex flex-wrap items-center gap-2 mb-5 text-base font-heading font-bold">
             <span style="color: var(--accent);">सुनते हो</span>
             <span style="color: var(--text-muted);">→</span>
             <span style="color: var(--primary-light);">देखते हो</span>
@@ -74,31 +82,31 @@ include 'partials/nav.php';
             <span style="color: var(--text-primary);">सीखते हो!</span>
           </div>
 
-          <!-- 6 Value Props — 2x3 grid -->
+          <!-- 6 Value Props — 2x3 grid, bigger text -->
           <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 mb-5">
-            <div class="p-3 rounded-lg" style="background: var(--bg-surface); border: 1px solid var(--border-subtle);">
-              <p class="text-sm font-bold mb-1" style="color: var(--accent);">💰 ₹199/month</p>
-              <p class="text-xs" style="color: var(--text-secondary);">Private tutor ₹3,000+ leta hai।<br>SAAVI 24/7 available hai — sirf ₹199 mein।</p>
+            <div class="p-4 rounded-lg" style="background: var(--bg-surface); border: 1px solid var(--border-subtle);">
+              <p class="text-base font-bold mb-1" style="color: var(--accent);">💰 ₹199/month</p>
+              <p class="text-sm" style="color: var(--text-body);">Private tutor ₹3,000+ leta hai।<br>SAAVI 24/7 available hai — sirf ₹199 mein।</p>
             </div>
-            <div class="p-3 rounded-lg" style="background: var(--bg-surface); border: 1px solid var(--border-subtle);">
-              <p class="text-sm font-bold mb-1" style="color: var(--primary-light);">🗣️ Tumhari bhasha</p>
-              <p class="text-xs" style="color: var(--text-secondary);">Hindi · Hinglish · English · Telugu · Marathi।<br>Textbook wali boring English nahi।</p>
+            <div class="p-4 rounded-lg" style="background: var(--bg-surface); border: 1px solid var(--border-subtle);">
+              <p class="text-base font-bold mb-1" style="color: var(--primary-light);">🗣️ Tumhari bhasha</p>
+              <p class="text-sm" style="color: var(--text-body);">Hindi · Hinglish · English · Telugu · Marathi।<br>Textbook wali boring English nahi।</p>
             </div>
-            <div class="p-3 rounded-lg" style="background: var(--bg-surface); border: 1px solid var(--border-subtle);">
-              <p class="text-sm font-bold mb-1" style="color: var(--accent);">🧠 10 tarike</p>
-              <p class="text-xs" style="color: var(--text-secondary);">Samajh nahi aaya? Koi baat nahi।<br>SAAVI ek concept 10 alag angles se samjhati hai।</p>
+            <div class="p-4 rounded-lg" style="background: var(--bg-surface); border: 1px solid var(--border-subtle);">
+              <p class="text-base font-bold mb-1" style="color: var(--accent);">🧠 10 tarike</p>
+              <p class="text-sm" style="color: var(--text-body);">Samajh nahi aaya? Koi baat nahi।<br>SAAVI ek concept 10 alag angles se samjhati hai।</p>
             </div>
-            <div class="p-3 rounded-lg" style="background: var(--bg-surface); border: 1px solid var(--border-subtle);">
-              <p class="text-sm font-bold mb-1" style="color: var(--primary-light);">🚀 Zero to Hero</p>
-              <p class="text-xs" style="color: var(--text-secondary);">Basics weak hain? SAAVI pehle foundation pakki karegi।<br>Phir chapter। Phir board ready।</p>
+            <div class="p-4 rounded-lg" style="background: var(--bg-surface); border: 1px solid var(--border-subtle);">
+              <p class="text-base font-bold mb-1" style="color: var(--primary-light);">🚀 Zero to Hero</p>
+              <p class="text-sm" style="color: var(--text-body);">Basics weak hain? SAAVI pehle foundation pakki karegi।<br>Phir chapter। Phir board ready।</p>
             </div>
-            <div class="p-3 rounded-lg" style="background: var(--bg-surface); border: 1px solid var(--border-subtle);">
-              <p class="text-sm font-bold mb-1" style="color: var(--accent);">📖 Revision + Doubt Clear</p>
-              <p class="text-xs" style="color: var(--text-secondary);">Chapter khatam? Quick revision mode।<br>Doubt aaya raat 11 baje? SAAVI jaag rahi hai।</p>
+            <div class="p-4 rounded-lg" style="background: var(--bg-surface); border: 1px solid var(--border-subtle);">
+              <p class="text-base font-bold mb-1" style="color: var(--accent);">📖 Revision + Doubt Clear</p>
+              <p class="text-sm" style="color: var(--text-body);">Chapter khatam? Quick revision mode।<br>Doubt aaya raat 11 baje? SAAVI jaag rahi hai।</p>
             </div>
-            <div class="p-3 rounded-lg" style="background: var(--bg-surface); border: 1px solid var(--border-subtle);">
-              <p class="text-sm font-bold mb-1" style="color: var(--primary-light);">👨‍👩‍👧 Parent App — FREE</p>
-              <p class="text-xs" style="color: var(--text-secondary);">Daily progress report WhatsApp pe।<br>Bedtime lock — 10 PM ke baad auto-off।</p>
+            <div class="p-4 rounded-lg" style="background: var(--bg-surface); border: 1px solid var(--border-subtle);">
+              <p class="text-base font-bold mb-1" style="color: var(--primary-light);">👨‍👩‍👧 Parent App — FREE</p>
+              <p class="text-sm" style="color: var(--text-body);">Daily progress report WhatsApp pe।<br>Bedtime lock — 10 PM ke baad auto-off।</p>
             </div>
           </div>
 
