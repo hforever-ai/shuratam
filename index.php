@@ -111,33 +111,12 @@ include 'partials/nav.php';
           </div>
 
           <!-- Blind Mode callout -->
-          <div class="p-3 rounded-lg flex items-start gap-3 mb-5" style="background: var(--accent-glow); border: 1px solid rgba(245,158,11,0.2);">
+          <div class="p-3 rounded-lg flex items-start gap-3" style="background: var(--accent-glow); border: 1px solid rgba(245,158,11,0.2);">
             <span class="text-2xl mt-0.5">♿</span>
             <div>
               <p class="text-sm font-bold" style="color: var(--accent);">Blind Mode — India mein pehli baar · FREE forever</p>
               <p class="text-xs" style="color: var(--text-secondary);">50 lakh blind students hain India mein। SAAVI unke liye bhi bani hai।</p>
             </div>
-          </div>
-
-          <!-- CTAs -->
-          <div class="flex flex-wrap items-center gap-3 mb-3">
-            <a href="/waitlist/" class="btn btn-primary">Free Mein Shuru Karo — May 20 →</a>
-            <a href="/saavi/" class="btn btn-outline">SAAVI se milo →</a>
-          </div>
-
-          <!-- Micro copy -->
-          <p class="text-xs mb-5" style="color: var(--text-muted);">
-            No credit card · 7 din free · 500+ families joined · Kabhi bhi cancel
-          </p>
-
-          <!-- Trust strip -->
-          <div class="flex flex-wrap gap-x-4 gap-y-1 text-xs" style="color: var(--text-secondary);">
-            <span>🗣️ 5 Languages</span>
-            <span>♿ Blind Mode FREE</span>
-            <span>📚 CG+CBSE</span>
-            <span>🚀 Zero to Hero</span>
-            <span>👨‍👩‍👧 Parent App FREE</span>
-            <span>⭐ ₹199/month</span>
           </div>
         </div>
 
