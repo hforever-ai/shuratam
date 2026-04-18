@@ -42,58 +42,43 @@ include 'partials/nav.php';
 
         <!-- Left: Copy -->
         <div>
-          <!-- Badges -->
-          <div class="flex flex-wrap gap-3 mb-6">
-            <span class="badge badge-accent">🟢 Launching May 20, 2026 — Join Free</span>
-            <span class="badge badge-primary">♿ India Ka Pehla Blind-Accessible AI Tutor</span>
-          </div>
+          <!-- Badge -->
+          <span class="badge badge-accent mb-4">🟢 May 20, 2026 — Free Early Access</span>
 
           <!-- H1 -->
-          <h1 id="hero-heading" class="text-5xl font-heading font-bold mb-3 text-gradient">
-            Padhna Ab Sunne Jaisa Aasaan Hai
+          <h1 id="hero-heading" class="text-4xl lg:text-5xl font-heading font-bold mb-2 text-gradient">
+            Tumhari Apni AI Teacher Didi
           </h1>
 
           <!-- Hindi tagline -->
-          <p lang="hi" class="font-devanagari-heading text-2xl mb-5" style="color: var(--accent);">
+          <p lang="hi" class="font-devanagari-heading text-xl mb-4" style="color: var(--accent);">
             सुनते हो, सीखते हो।
           </p>
 
-          <!-- Body text -->
-          <p class="text-lg mb-8" style="color: var(--text-body);">
-            SAAVI didi tumhari apni AI teacher hai — Hindi, Hinglish, Telugu mein. Rote learning ki jagah
-            <strong style="color: var(--text-primary);">samajh ke saath padhao</strong>. CG Board aur CBSE
-            Class 6–10. Blind students ke liye 100% free — hamesha.
-          </p>
+          <!-- Body — 3 punchy lines -->
+          <div class="text-base mb-6 space-y-2" style="color: var(--text-body);">
+            <p>🗣️ <strong style="color: var(--text-primary);">Hinglish mein padhati hai</strong> — raat 2 baje bhi</p>
+            <p>♿ <strong style="color: var(--text-primary);">Blind students ke liye FREE</strong> — India mein pehli baar</p>
+            <p>📚 <strong style="color: var(--text-primary);">CG Board + CBSE</strong> — Class 5 se 10 tak — ₹199/month</p>
+          </div>
 
-          <!-- Stats row -->
-          <div class="grid grid-cols-2 sm:grid-cols-4 gap-4 mb-8">
-            <div class="text-center animate-on-scroll">
-              <div class="stat-number" data-count="500" data-suffix="+">500+</div>
-              <div class="text-xs mt-1" style="color: var(--text-muted);">Waitlist</div>
-            </div>
-            <div class="text-center animate-on-scroll">
-              <div class="stat-number" data-count="5" data-suffix="">5</div>
-              <div class="text-xs mt-1" style="color: var(--text-muted);">Languages</div>
-            </div>
-            <div class="text-center animate-on-scroll">
-              <div class="stat-number">6–10</div>
-              <div class="text-xs mt-1" style="color: var(--text-muted);">Class</div>
-            </div>
-            <div class="text-center animate-on-scroll">
-              <div class="stat-number">₹199</div>
-              <div class="text-xs mt-1" style="color: var(--text-muted);">/Month</div>
-            </div>
+          <!-- Stats — compact inline -->
+          <div class="flex flex-wrap gap-4 mb-6 text-sm" style="color: var(--text-secondary);">
+            <span><strong class="stat-number text-xl" data-count="500" data-suffix="+">500+</strong> families</span>
+            <span>·</span>
+            <span><strong style="color: var(--accent);">5</strong> languages</span>
+            <span>·</span>
+            <span><strong style="color: var(--accent);">₹199</strong>/month</span>
           </div>
 
           <!-- CTAs -->
-          <div class="flex flex-wrap gap-4 mb-6">
-            <a href="/waitlist/" class="btn btn-primary">Join Waitlist Free →</a>
-            <a href="/saavi/" class="btn btn-outline">Meet SAAVI ↓</a>
+          <div class="flex flex-wrap gap-3 mb-4">
+            <a href="/waitlist/" class="btn btn-primary">Join Free Waitlist →</a>
+            <a href="/saavi/" class="btn btn-outline">Meet SAAVI</a>
           </div>
 
-          <!-- Aarambha credit -->
           <p class="text-xs" style="color: var(--text-muted);">
-            A product by <a href="https://aarambhax.ai" target="_blank" rel="noopener" style="color: var(--primary-light);">Aarambha (Kishyam AI Pvt Ltd)</a>
+            by <a href="https://aarambhax.ai" target="_blank" rel="noopener" style="color: var(--primary-light);">Aarambha</a> · No credit card needed
           </p>
         </div>
 
