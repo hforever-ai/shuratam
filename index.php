@@ -45,53 +45,91 @@ include 'partials/nav.php';
           <!-- Brand -->
           <div class="flex items-center gap-2 mb-3">
             <span lang="hi" class="font-devanagari-heading text-2xl font-bold" style="color: var(--accent);">शृतम्</span>
-            <span class="text-xs font-heading px-2 py-1 rounded-full" style="color: var(--primary-light); background: var(--primary-glow); border: 1px solid var(--border-subtle);">Audio-First AI Personalized Learning App</span>
+            <span class="text-xs font-heading" style="color: var(--text-secondary);">— Audio-First AI Personalized Learning App</span>
           </div>
 
-          <!-- H1 — the core promise -->
-          <h1 id="hero-heading" class="text-3xl lg:text-4xl font-heading font-bold mb-2" style="color: var(--text-primary);">
+          <!-- H1 -->
+          <h1 id="hero-heading" class="text-3xl lg:text-4xl font-heading font-bold mb-3" style="color: var(--text-primary);">
             Har Bachche Ko Milegi<br>
-            <span class="text-gradient">Apni AI Teacher — SAAVI</span>
+            <span class="text-gradient">Apni AI Teacher Didi</span>
           </h1>
 
-          <!-- Tagline — the learning journey -->
-          <p lang="hi" class="font-devanagari text-base mb-4" style="color: var(--text-body);">
-            <span style="color: var(--accent);">सुनते हो</span> ·
-            <span style="color: var(--primary-light);">देखते हो</span> ·
-            <span style="color: var(--success);">Practical करते हो</span> ·
-            <span style="color: var(--accent);">🎮 Game Mode</span> ·
-            <span style="color: var(--text-primary); font-weight: 700;">सीखते हो!</span>
-            <span class="text-xs ml-1" style="color: var(--text-muted);">— सर्वत्र विद्या</span>
+          <!-- Sub — SAAVI intro -->
+          <p class="text-base mb-4" style="color: var(--text-body);">
+            <strong style="color: var(--accent);">SAAVI</strong> — jo tumhari bhasha mein samjhati hai,<br>
+            raat 2 baje bhi, kabhi judge kiye bina।<br>
+            <span class="text-sm" style="color: var(--text-secondary);">CG Board + CBSE · Class 6–10 · ₹199/month</span>
           </p>
 
-          <!-- Value prop — what makes Shrutam different -->
-          <div class="mb-5 space-y-2 text-base" style="color: var(--text-body);">
-            <p>📱 <strong style="color: var(--text-primary);">₹199/month</strong> — private tutor ₹3,000+ leta hai, SAAVI sirf ₹199 mein 24/7 padhati hai</p>
-            <p>🗣️ <strong style="color: var(--text-primary);">Tumhari bhasha mein</strong> — Hindi, Hinglish, English, Telugu, Marathi — textbook English nahi</p>
-            <p>🧠 <strong style="color: var(--text-primary);">Samajh nahi aaya?</strong> — SAAVI ke paas ek concept ke 10 alag tarike hain</p>
+          <!-- How it works — learning journey -->
+          <div class="flex flex-wrap items-center gap-1 mb-5 text-sm font-heading font-bold">
+            <span style="color: var(--accent);">सुनते हो</span>
+            <span style="color: var(--text-muted);">→</span>
+            <span style="color: var(--primary-light);">देखते हो</span>
+            <span style="color: var(--text-muted);">→</span>
+            <span style="color: var(--success);">Practice करते हो</span>
+            <span style="color: var(--text-muted);">→</span>
+            <span style="color: var(--accent);">🎮 Game खेलते हो</span>
+            <span style="color: var(--text-muted);">→</span>
+            <span style="color: var(--text-primary);">सीखते हो!</span>
           </div>
 
-          <!-- CTA row -->
-          <div class="flex flex-wrap items-center gap-4 mb-5">
-            <a href="/waitlist/" class="btn btn-primary text-base">7-Din FREE Trial →</a>
-            <div class="text-sm" style="color: var(--text-secondary);">
-              <div>⭐ <strong data-count="500" data-suffix="+" style="color: var(--accent);">500+</strong> families joined</div>
-              <div class="text-xs" style="color: var(--text-muted);">No credit card · Cancel anytime</div>
+          <!-- 6 Value Props — 2x3 grid -->
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 mb-5">
+            <div class="p-3 rounded-lg" style="background: var(--bg-surface); border: 1px solid var(--border-subtle);">
+              <p class="text-sm font-bold mb-1" style="color: var(--accent);">💰 ₹199/month</p>
+              <p class="text-xs" style="color: var(--text-secondary);">Private tutor ₹3,000+ leta hai।<br>SAAVI 24/7 available hai — sirf ₹199 mein।</p>
+            </div>
+            <div class="p-3 rounded-lg" style="background: var(--bg-surface); border: 1px solid var(--border-subtle);">
+              <p class="text-sm font-bold mb-1" style="color: var(--primary-light);">🗣️ Tumhari bhasha</p>
+              <p class="text-xs" style="color: var(--text-secondary);">Hindi · Hinglish · English · Telugu · Marathi।<br>Textbook wali boring English nahi।</p>
+            </div>
+            <div class="p-3 rounded-lg" style="background: var(--bg-surface); border: 1px solid var(--border-subtle);">
+              <p class="text-sm font-bold mb-1" style="color: var(--accent);">🧠 10 tarike</p>
+              <p class="text-xs" style="color: var(--text-secondary);">Samajh nahi aaya? Koi baat nahi।<br>SAAVI ek concept 10 alag angles se samjhati hai।</p>
+            </div>
+            <div class="p-3 rounded-lg" style="background: var(--bg-surface); border: 1px solid var(--border-subtle);">
+              <p class="text-sm font-bold mb-1" style="color: var(--primary-light);">🚀 Zero to Hero</p>
+              <p class="text-xs" style="color: var(--text-secondary);">Basics weak hain? SAAVI pehle foundation pakki karegi।<br>Phir chapter। Phir board ready।</p>
+            </div>
+            <div class="p-3 rounded-lg" style="background: var(--bg-surface); border: 1px solid var(--border-subtle);">
+              <p class="text-sm font-bold mb-1" style="color: var(--accent);">📖 Revision + Doubt Clear</p>
+              <p class="text-xs" style="color: var(--text-secondary);">Chapter khatam? Quick revision mode।<br>Doubt aaya raat 11 baje? SAAVI jaag rahi hai।</p>
+            </div>
+            <div class="p-3 rounded-lg" style="background: var(--bg-surface); border: 1px solid var(--border-subtle);">
+              <p class="text-sm font-bold mb-1" style="color: var(--primary-light);">👨‍👩‍👧 Parent App — FREE</p>
+              <p class="text-xs" style="color: var(--text-secondary);">Daily progress report WhatsApp pe।<br>Bedtime lock — 10 PM ke baad auto-off।</p>
             </div>
           </div>
 
-          <!-- Two trust blocks side by side -->
-          <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
-            <!-- Board alignment -->
-            <div class="p-3 rounded-lg" style="background: var(--primary-glow); border: 1px solid var(--border-subtle);">
-              <p class="text-sm font-bold mb-1" style="color: var(--primary-light);">📚 Board Aligned</p>
-              <p class="text-xs" style="color: var(--text-secondary);">CG Board + CBSE · Class 5–10 · NCERT Exact Chapters · 5 Subjects</p>
+          <!-- Blind Mode callout -->
+          <div class="p-3 rounded-lg flex items-start gap-3 mb-5" style="background: var(--accent-glow); border: 1px solid rgba(245,158,11,0.2);">
+            <span class="text-2xl mt-0.5">♿</span>
+            <div>
+              <p class="text-sm font-bold" style="color: var(--accent);">Blind Mode — India mein pehli baar · FREE forever</p>
+              <p class="text-xs" style="color: var(--text-secondary);">50 lakh blind students hain India mein। SAAVI unke liye bhi bani hai।</p>
             </div>
-            <!-- Social impact -->
-            <div class="p-3 rounded-lg" style="background: var(--accent-glow); border: 1px solid rgba(245,158,11,0.2);">
-              <p class="text-sm font-bold mb-1" style="color: var(--accent);">♿ Accessible Education</p>
-              <p class="text-xs" style="color: var(--text-secondary);">Blind mode with TalkBack/VoiceOver · BPL students ke liye subsidized rates</p>
-            </div>
+          </div>
+
+          <!-- CTAs -->
+          <div class="flex flex-wrap items-center gap-3 mb-3">
+            <a href="/waitlist/" class="btn btn-primary">Free Mein Shuru Karo — May 20 →</a>
+            <a href="/saavi/" class="btn btn-outline">SAAVI se milo →</a>
+          </div>
+
+          <!-- Micro copy -->
+          <p class="text-xs mb-5" style="color: var(--text-muted);">
+            No credit card · 7 din free · 500+ families joined · Kabhi bhi cancel
+          </p>
+
+          <!-- Trust strip -->
+          <div class="flex flex-wrap gap-x-4 gap-y-1 text-xs" style="color: var(--text-secondary);">
+            <span>🗣️ 5 Languages</span>
+            <span>♿ Blind Mode FREE</span>
+            <span>📚 CG+CBSE</span>
+            <span>🚀 Zero to Hero</span>
+            <span>👨‍👩‍👧 Parent App FREE</span>
+            <span>⭐ ₹199/month</span>
           </div>
         </div>
 
