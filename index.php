@@ -43,9 +43,9 @@ include 'partials/nav.php';
         <!-- Left: Copy -->
         <div>
           <!-- Brand -->
-          <div class="flex items-center gap-3 mb-4">
+          <div class="flex items-baseline gap-3 mb-4">
             <span lang="hi" class="font-devanagari-heading text-3xl font-bold" style="color: var(--accent);">शृतम्</span>
-            <span class="text-sm font-heading" style="color: var(--text-secondary);">— Audio-First AI Personalized Learning App</span>
+            <span class="text-lg font-heading font-bold" style="color: var(--accent);">— Audio-First AI Personalized Learning App</span>
           </div>
 
           <!-- H1 + SAAVI intro — 2 col on desktop to prevent wrapping -->
