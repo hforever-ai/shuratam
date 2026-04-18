@@ -40,12 +40,14 @@ if (preg_match('#^/(hi|en|mr|te)(/(.*))?$#', $path, $m)) {
 // Directory index: /some-path/ → /some-path/index.php
 $indexFile = __DIR__ . rtrim($path, '/') . '/index.php';
 if (is_file($indexFile)) {
+    chdir(dirname($indexFile));
     include $indexFile;
     return;
 }
 
 // Root
 if ($path === '/') {
+    chdir(__DIR__);
     include __DIR__ . '/index.php';
     return;
 }
@@ -53,10 +55,12 @@ if ($path === '/') {
 // Clean URLs: /some-path → /some-path.php
 $phpFile = __DIR__ . $path . '.php';
 if (is_file($phpFile)) {
+    chdir(dirname($phpFile));
     include $phpFile;
     return;
 }
 
 // 404
 http_response_code(404);
+chdir(__DIR__);
 include __DIR__ . '/index.php';
