@@ -1,13 +1,13 @@
 {
   "nav": {
-    "features": "विशेषताएँ",
-    "blind_mode": "ब्लाइंड मोड",
-    "classes": "कक्षाएँ",
-    "boards": "बोर्ड",
-    "pricing": "मूल्य",
-    "blog": "ब्लॉग",
-    "for_schools": "स्कूलों के लिए",
-    "join_waitlist": "वेटलिस्ट जॉइन करो →"
+    "features": "Features",
+    "blind_mode": "Blind Mode ♿",
+    "classes": "Classes",
+    "boards": "Boards",
+    "pricing": "Pricing",
+    "blog": "Blog",
+    "for_schools": "For Schools",
+    "join_waitlist": "Join Waitlist Free →"
   },
   "hero": {
     "tagline": "सुनते हो, सीखते हो।",
