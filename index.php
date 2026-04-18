@@ -42,44 +42,32 @@ include 'partials/nav.php';
 
         <!-- Left: Copy -->
         <div>
-          <!-- Badge -->
-          <span class="badge badge-accent mb-4">🟢 May 20, 2026 — Free Early Access</span>
-
-          <!-- H1 -->
-          <h1 id="hero-heading" class="text-4xl lg:text-5xl font-heading font-bold mb-2 text-gradient">
-            Tumhari Apni AI Teacher Didi
+          <!-- H1 — the emotional hook -->
+          <h1 id="hero-heading" class="text-3xl lg:text-4xl font-heading font-bold mb-1" style="color: var(--text-primary);">
+            Raat 2 baje doubt aaya?
+          </h1>
+          <h1 class="text-3xl lg:text-4xl font-heading font-bold mb-3 text-gradient">
+            SAAVI hai na.
           </h1>
 
-          <!-- Hindi tagline -->
-          <p lang="hi" class="font-devanagari-heading text-xl mb-4" style="color: var(--accent);">
-            सुनते हो, सीखते हो।
+          <!-- One line value prop -->
+          <p class="text-lg mb-5" style="color: var(--text-body);">
+            Hindi mein. ₹199/month. <span style="color: var(--accent);">Blind ke liye free.</span>
           </p>
 
-          <!-- Body — 3 punchy lines -->
-          <div class="text-base mb-6 space-y-2" style="color: var(--text-body);">
-            <p>🗣️ <strong style="color: var(--text-primary);">Hinglish mein padhati hai</strong> — raat 2 baje bhi</p>
-            <p>♿ <strong style="color: var(--text-primary);">Blind students ke liye FREE</strong> — India mein pehli baar</p>
-            <p>📚 <strong style="color: var(--text-primary);">CG Board + CBSE</strong> — Class 5 se 10 tak — ₹199/month</p>
-          </div>
-
-          <!-- Stats — compact inline -->
-          <div class="flex flex-wrap gap-4 mb-6 text-sm" style="color: var(--text-secondary);">
-            <span><strong class="stat-number text-xl" data-count="500" data-suffix="+">500+</strong> families</span>
-            <span>·</span>
-            <span><strong style="color: var(--accent);">5</strong> languages</span>
-            <span>·</span>
-            <span><strong style="color: var(--accent);">₹199</strong>/month</span>
-          </div>
-
-          <!-- CTAs -->
-          <div class="flex flex-wrap gap-3 mb-4">
+          <!-- CTA + social proof together -->
+          <div class="flex flex-wrap items-center gap-4 mb-6">
             <a href="/waitlist/" class="btn btn-primary">Join Free Waitlist →</a>
-            <a href="/saavi/" class="btn btn-outline">Meet SAAVI</a>
+            <span class="text-sm" style="color: var(--text-secondary);">⭐ <strong data-count="500" data-suffix="+" style="color: var(--accent);">500+</strong> families waiting</span>
           </div>
 
-          <p class="text-xs" style="color: var(--text-muted);">
-            by <a href="https://aarambhax.ai" target="_blank" rel="noopener" style="color: var(--primary-light);">Aarambha</a> · No credit card needed
-          </p>
+          <!-- Trust pills — compact -->
+          <div class="flex flex-wrap gap-2">
+            <span class="badge badge-primary">CG Board + CBSE</span>
+            <span class="badge badge-accent">Class 5–10</span>
+            <span class="badge badge-primary">♿ Blind Mode Free</span>
+            <span class="badge badge-accent">5 Languages</span>
+          </div>
         </div>
 
         <!-- Right: SAAVI + chat demo -->
