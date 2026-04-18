@@ -98,7 +98,7 @@ include 'partials/nav.php';
         </div>
 
         <!-- Right: SAAVI chat demo -->
-        <div class="flex flex-col gap-4">
+        <div class="flex flex-col gap-4 max-w-xs mx-auto">
           <!-- SAAVI avatar -->
           <div class="chalkboard mx-auto">
             <img src="/assets/images/hero/saavi-teaching.png" alt="SAAVI didi teaching students" loading="lazy" class="w-full max-w-[180px] rounded-xl">
