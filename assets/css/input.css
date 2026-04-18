@@ -264,6 +264,12 @@
     outline-offset: 2px;
   }
 
+  /* Fix: iOS Safari needs cursor:pointer on buttons for touch to register */
+  button {
+    cursor: pointer;
+    -webkit-tap-highlight-color: rgba(255, 255, 255, 0.1);
+  }
+
   /* Fix: invisible dropdowns must not block touch/click */
   .group > .invisible,
   .group > [class*="opacity-0"] {

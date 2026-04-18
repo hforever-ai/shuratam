@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Hamburger Test</title>
+<style>
+body { background: #070e1c; color: white; font-family: sans-serif; margin: 0; }
+.nav { height: 60px; display: flex; align-items: center; justify-content: space-between; padding: 0 16px; border-bottom: 1px solid #333; }
+#menu { display: none; position: fixed; top: 0; left: 0; right: 0; bottom: 0; background: rgba(0,0,0,0.8); z-index: 999; }
+#menu.open { display: block; }
+#menu-panel { position: absolute; right: 0; top: 0; width: 280px; height: 100%; background: #0d1a2e; padding: 20px; }
+button { background: none; border: 2px solid white; color: white; padding: 10px 15px; font-size: 18px; cursor: pointer; -webkit-tap-highlight-color: rgba(255,255,0,0.3); }
+.close { position: absolute; top: 10px; right: 10px; }
+a { color: #60a5fa; display: block; padding: 15px 0; border-bottom: 1px solid #333; font-size: 18px; text-decoration: none; }
+</style>
+</head>
+<body>
+<div class="nav">
+  <span style="font-size: 20px; font-weight: bold;">Shrutam Test</span>
+  <button id="open-btn" onclick="openMenu()">☰ MENU</button>
+</div>
+
+<div id="menu">
+  <div id="menu-panel">
+    <button class="close" onclick="closeMenu()">✕ CLOSE</button>
+    <br><br>
+    <a href="#">Features</a>
+    <a href="#">Blind Mode</a>
+    <a href="#">Pricing</a>
+    <a href="#">Blog</a>
+  </div>
+</div>
+
+<div style="padding: 20px;">
+  <h1>Mobile Hamburger Test</h1>
+  <p>Tap the ☰ MENU button above.</p>
+  <p>If it works here but NOT on shrutam.ai, the issue is CSS/Tailwind.</p>
+  <p>If it doesn't work here either, the issue is your browser.</p>
+  <p id="log" style="color: #f59e0b;"></p>
+</div>
+
+<script>
+function log(msg) {
+  document.getElementById('log').textContent += msg + '\n';
+}
+
+function openMenu() {
+  log('openMenu called!');
+  document.getElementById('menu').classList.add('open');
+}
+
+function closeMenu() {
+  log('closeMenu called!');
+  document.getElementById('menu').classList.remove('open');
+}
+
+// Also log ALL touch/click events on the nav area
+document.querySelector('.nav').addEventListener('click', function(e) {
+  log('Nav clicked: ' + e.target.tagName + ' ' + (e.target.id || e.target.textContent.trim().substring(0, 20)));
+});
+
+document.querySelector('.nav').addEventListener('touchstart', function(e) {
+  log('Nav touched: ' + e.target.tagName + ' ' + (e.target.id || ''));
+}, { passive: true });
+
+log('Page loaded. JS working.');
+</script>
+</body>
+</html>
