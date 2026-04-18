@@ -34,6 +34,8 @@ include '../partials/nav.php';
     style="background: linear-gradient(160deg, var(--bg-base) 60%, var(--bg-elevated) 100%);">
     <div class="container article-content">
 
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8 items-center">
+        <div class="md:col-span-2">
       <!-- Breadcrumb -->
       <nav aria-label="Breadcrumb" class="mb-8">
         <ol class="flex items-center gap-2 text-base" style="color: var(--text-muted);">
@@ -60,11 +62,6 @@ include '../partials/nav.php';
         <p lang="hi" class="font-devanagari-heading text-2xl mb-8" style="color: var(--accent);">
           सुनो, सीखो, आगे बढ़ो।
         </p>
-
-        <div class="chalkboard mx-auto my-3">
-            <img src="/assets/images/features/blind-mode.png" alt="Blind Mode — TalkBack, VoiceOver, headphones, braille compatible" loading="lazy" class="w-full max-w-[200px] md:max-w-[240px] lg:max-w-[280px] mx-auto my-3 rounded-xl">
-          </div>
-
         <!-- Emotional problem statement -->
         <div class="rounded-2xl p-8 mb-10 text-left animate-on-scroll"
           style="background: var(--bg-surface); border: 1px solid var(--border-subtle);">
@@ -100,6 +97,14 @@ include '../partials/nav.php';
           <a href="#features" class="btn btn-outline">7 Features Dekho ↓</a>
         </div>
 
+      </div>
+
+        <!-- Right: Illustration -->
+        <div class="hidden md:flex items-center justify-center">
+          <div class="chalkboard">
+            <img src="/assets/images/features/blind-mode.png" alt="Blind Mode — TalkBack, VoiceOver, headphones, braille compatible" loading="lazy" class="w-full max-w-[280px] rounded-xl">
+          </div>
+        </div>
       </div>
     </div>
   </section>

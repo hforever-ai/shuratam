@@ -93,18 +93,22 @@ include '../../partials/nav.php';
           <span class="text-base" style="color: var(--text-muted);">Apr 17, 2026 · SAAVI Didi</span>
         </div>
 
-        <h1 class="text-3xl sm:text-4xl font-heading font-bold mb-3 text-gradient">
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6 items-center mb-6">
+          <div class="md:col-span-2">
+            <h1 class="text-3xl sm:text-4xl font-heading font-bold mb-3 text-gradient">
           Zero to Hero<br>
           <span class="text-2xl sm:text-3xl">Kuch Nahi Se Board Ready Tak</span>
         </h1>
-
-        <div class="chalkboard mx-auto my-3">
-            <img src="/assets/images/blog/zero-to-hero.png" alt="Zero to Hero — learning journey from basics to board ready" loading="lazy" class="w-full max-w-xs md:max-w-sm lg:max-w-md mx-auto my-4 rounded-xl">
-          </div>
-
-        <p class="text-xl mb-6" style="color: var(--text-body);">
+            <p class="text-xl mb-6" style="color: var(--text-body);">
           Kabhi aisa laga hai ki Class 10 ka topic tab se samajh nahi aaya jab se Class 7 mein woh chapter miss hua tha? Ya ki maths mein equations samajh nahi aati kyunki algebra ka concept hi shayad kabhi clear nahi hua? <strong style="color: var(--accent);">Yeh tumhari galti nahi hai — yeh ek gap hai. Aur gaps fill ho sakte hain.</strong>
         </p>
+          </div>
+          <div class="flex justify-center">
+            <div class="chalkboard">
+              <img src="/assets/images/blog/zero-to-hero.png" alt="Zero to Hero learning journey" loading="lazy" class="w-full max-w-[280px] rounded-xl">
+            </div>
+          </div>
+        </div>
 
         <!-- Quick summary box -->
         <div class="card mb-8" style="border-left: 4px solid var(--accent); background: var(--bg-surface);">

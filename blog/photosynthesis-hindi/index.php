@@ -93,17 +93,21 @@ include '../../partials/nav.php';
           <span class="text-base" style="color: var(--text-muted);">Apr 17, 2026 · SAAVI Didi</span>
         </div>
 
-        <h1 class="text-4xl sm:text-5xl font-heading font-bold mb-3 text-gradient">
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6 items-center mb-6">
+          <div class="md:col-span-2">
+            <h1 class="text-4xl sm:text-5xl font-heading font-bold mb-3 text-gradient">
           Photosynthesis — Ped Ka Apna Kitchen
         </h1>
-
-        <div class="chalkboard mx-auto my-3">
-            <img src="/assets/images/blog/photosynthesis.png" alt="Photosynthesis — ped ka kitchen, sunlight se khana banata hai" loading="lazy" class="w-full max-w-xs md:max-w-sm lg:max-w-md mx-auto my-4 rounded-xl">
-          </div>
-
-        <p class="text-xl mb-6" style="color: var(--text-body);">
+            <p class="text-xl mb-6" style="color: var(--text-body);">
           Socho ek sawaal: <strong style="color: var(--accent);">Ped ko khaana kaun deta hai?</strong> Hum log market se khaana lete hain. Ped? Woh khud banata hai! Yeh magic process hai — photosynthesis.
         </p>
+          </div>
+          <div class="flex justify-center">
+            <div class="chalkboard">
+              <img src="/assets/images/blog/photosynthesis.png" alt="Photosynthesis — ped ka kitchen" loading="lazy" class="w-full max-w-[280px] rounded-xl">
+            </div>
+          </div>
+        </div>
 
         <!-- Quick summary box -->
         <div class="card mb-8" style="border-left: 4px solid var(--accent); background: var(--bg-surface);">

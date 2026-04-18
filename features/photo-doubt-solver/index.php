@@ -39,6 +39,8 @@ include '../../partials/nav.php';
   <section class="section" aria-labelledby="hero-heading" style="background: linear-gradient(160deg, var(--bg-base) 60%, var(--bg-elevated) 100%);">
     <div class="container article-content">
 
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8 items-center">
+        <div class="md:col-span-2">
       <!-- Breadcrumb -->
       <nav aria-label="Breadcrumb" class="mb-8">
         <ol class="flex flex-wrap items-center gap-2 text-base" style="color: var(--text-muted);">
@@ -66,11 +68,6 @@ include '../../partials/nav.php';
           <p lang="hi" class="font-devanagari-heading text-2xl mb-5" style="color: var(--accent);">
             सवाल की फोटो — जवाब तुरंत।
           </p>
-
-          <div class="chalkboard mx-auto my-3">
-            <img src="/assets/images/features/photo-doubt.png" alt="Photo doubt solver — snap and get step-by-step solution" loading="lazy" class="w-full max-w-[200px] md:max-w-[240px] lg:max-w-[280px] mx-auto my-3 rounded-xl">
-          </div>
-
           <p class="text-lg mb-8" style="color: var(--text-body);">
             Homework mein koi question samajh nahi aaya? NCERT exercise ka koi problem? Typing mat karo —
             <strong style="color: var(--text-primary);">sirf photo kheecho</strong>.
@@ -115,6 +112,14 @@ include '../../partials/nav.php';
           </div>
         </div>
 
+      </div>
+
+        <!-- Right: Illustration -->
+        <div class="hidden md:flex items-center justify-center">
+          <div class="chalkboard">
+            <img src="/assets/images/features/photo-doubt.png" alt="Photo doubt solver — snap and get step-by-step solution" loading="lazy" class="w-full max-w-[280px] rounded-xl">
+          </div>
+        </div>
       </div>
     </div>
   </section>

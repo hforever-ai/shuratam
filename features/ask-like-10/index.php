@@ -39,6 +39,8 @@ include '../../partials/nav.php';
   <section class="section" aria-labelledby="hero-heading" style="background: linear-gradient(160deg, var(--bg-base) 60%, var(--bg-elevated) 100%);">
     <div class="container article-content">
 
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8 items-center">
+        <div class="md:col-span-2">
       <!-- Breadcrumb -->
       <nav aria-label="Breadcrumb" class="mb-8">
         <ol class="flex flex-wrap items-center gap-2 text-base" style="color: var(--text-muted);">
@@ -66,11 +68,6 @@ include '../../partials/nav.php';
           <p lang="hi" class="font-devanagari-heading text-2xl mb-5" style="color: var(--accent);">
             हर बच्चे का समझने का तरीका अलग होता है।
           </p>
-
-          <div class="chalkboard mx-auto my-3">
-            <img src="/assets/images/features/ask-like-10.png" alt="Ask Like 10 — one concept explained 10 different ways" loading="lazy" class="w-full max-w-[200px] md:max-w-[240px] lg:max-w-[280px] mx-auto my-3 rounded-xl">
-          </div>
-
           <p class="text-lg mb-8" style="color: var(--text-body);">
             Normal app mein ek hi explanation hoti hai — samjho ya mat samjho.
             SAAVI ke paas <strong style="color: var(--text-primary);">ek concept ke 10 alag tarike</strong> hain.
@@ -98,6 +95,14 @@ include '../../partials/nav.php';
           </div>
         </div>
 
+      </div>
+
+        <!-- Right: Illustration -->
+        <div class="hidden md:flex items-center justify-center">
+          <div class="chalkboard">
+            <img src="/assets/images/features/ask-like-10.png" alt="Ask Like 10 — one concept explained 10 different ways" loading="lazy" class="w-full max-w-[280px] rounded-xl">
+          </div>
+        </div>
       </div>
     </div>
   </section>

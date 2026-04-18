@@ -93,17 +93,21 @@ include '../../partials/nav.php';
           <span class="text-base" style="color: var(--text-muted);">Apr 17, 2026 · SAAVI Didi</span>
         </div>
 
-        <h1 class="text-4xl sm:text-5xl font-heading font-bold mb-3 text-gradient">
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6 items-center mb-6">
+          <div class="md:col-span-2">
+            <h1 class="text-4xl sm:text-5xl font-heading font-bold mb-3 text-gradient">
           CG Board Class 10 Taiyaari 2026 — Complete Guide
         </h1>
-
-        <div class="chalkboard mx-auto my-3">
-            <img src="/assets/images/blog/cg-board-preparation.png" alt="CG Board Class 10 exam preparation — student studying" loading="lazy" class="w-full max-w-xs md:max-w-sm lg:max-w-md mx-auto my-4 rounded-xl">
-          </div>
-
-        <p class="text-xl mb-6" style="color: var(--text-body);">
+            <p class="text-xl mb-6" style="color: var(--text-body);">
           Board exam sun ke dil mein thodi si ghabrahat aati hai — bilkul normal baat hai! Par sahi strategy aur regular practice se <strong style="color: var(--accent);">CG Board Class 10 mein ache marks laana bilkul possible hai</strong>. SAAVI didi ke saath aaj se hi shuru karte hain.
         </p>
+          </div>
+          <div class="flex justify-center">
+            <div class="chalkboard">
+              <img src="/assets/images/blog/cg-board-preparation.png" alt="CG Board Class 10 preparation" loading="lazy" class="w-full max-w-[280px] rounded-xl">
+            </div>
+          </div>
+        </div>
 
         <!-- Quick summary box -->
         <div class="card mb-8" style="border-left: 4px solid var(--accent); background: var(--bg-surface);">
