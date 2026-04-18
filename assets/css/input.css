@@ -264,6 +264,16 @@
     outline-offset: 2px;
   }
 
+  /* Fix: invisible dropdowns must not block touch/click */
+  .group > .invisible,
+  .group > [class*="opacity-0"] {
+    pointer-events: none;
+  }
+  .group:hover > .group-hover\:visible,
+  .group:hover > .group-hover\:opacity-100 {
+    pointer-events: auto;
+  }
+
   /* Blog / article pages — narrower than global container */
   .article-content.container {
     max-width: 1024px;
