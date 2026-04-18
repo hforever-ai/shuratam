@@ -3,24 +3,38 @@ $title       = "Shrutam Pricing — ₹199/Month | Free 7 Day Trial | No Credit 
 $description = "Private tutor ₹3000+/month vs Shrutam ₹199/month. 7 din free trial. No credit card. Cancel anytime. Blind mode always free.";
 $canonical   = "https://shrutam.ai/pricing/";
 $schema      = json_encode([
-  "@context"    => "https://schema.org",
-  "@type"       => "Offer",
-  "name"        => "Shrutam Pro",
-  "description" => "AI tutor SAAVI — all 5 subjects, CG Board & CBSE, Hindi/Hinglish/Telugu/Marathi, photo doubt solver, parent portal, blind mode free forever.",
-  "price"       => "199",
-  "priceCurrency" => "INR",
-  "availability"  => "https://schema.org/PreOrder",
-  "url"           => "https://shrutam.ai/pricing/",
-  "seller"        => [
-    "@type" => "Organization",
-    "name"  => "Aarambha (Kishyam AI Pvt Ltd)",
-    "url"   => "https://aarambhax.ai",
-  ],
-  "priceValidUntil" => "2027-12-31",
-  "hasMerchantReturnPolicy" => [
-    "@type"                 => "MerchantReturnPolicy",
-    "returnPolicyCategory"  => "https://schema.org/MerchantReturnFiniteReturnWindow",
-    "merchantReturnDays"    => 7,
+  "@context" => "https://schema.org",
+  "@graph"   => [
+    [
+      "@type"       => "Product",
+      "name"        => "Shrutam Pro",
+      "description" => "AI tutor SAAVI — all 5 subjects, CG Board & CBSE, Hindi/Hinglish/Telugu/Marathi, photo doubt solver, parent portal, blind mode free forever.",
+      "offers"      => [
+        "@type"           => "Offer",
+        "price"           => "199",
+        "priceCurrency"   => "INR",
+        "availability"    => "https://schema.org/PreOrder",
+        "url"             => "https://shrutam.ai/pricing/",
+        "priceValidUntil" => "2027-12-31",
+        "seller"          => [
+          "@type" => "Organization",
+          "name"  => "Aarambha (Kishyam AI Pvt Ltd)",
+          "url"   => "https://aarambhax.ai",
+        ],
+        "hasMerchantReturnPolicy" => [
+          "@type"                => "MerchantReturnPolicy",
+          "returnPolicyCategory" => "https://schema.org/MerchantReturnFiniteReturnWindow",
+          "merchantReturnDays"   => 7,
+        ],
+      ],
+    ],
+    [
+      "@type"           => "BreadcrumbList",
+      "itemListElement" => [
+        ["@type" => "ListItem", "position" => 1, "name" => "Home",    "item" => "https://shrutam.ai/"],
+        ["@type" => "ListItem", "position" => 2, "name" => "Pricing", "item" => "https://shrutam.ai/pricing/"],
+      ],
+    ],
   ],
 ], JSON_UNESCAPED_SLASHES | JSON_UNESCAPED_UNICODE);
 

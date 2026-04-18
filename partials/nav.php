@@ -1,3 +1,10 @@
+<?php
+$currentUri = $_SERVER['REQUEST_URI'] ?? '/';
+function isActive($path) {
+    global $currentUri;
+    return $path !== '/' && strpos($currentUri, $path) === 0 ? ' aria-current="page" style="color: var(--accent);"' : '';
+}
+?>
 <!-- Navigation -->
 <header class="nav">
   <nav class="container flex items-center justify-between h-full" aria-label="Main navigation">
@@ -9,8 +16,8 @@
 
     <!-- Desktop nav links -->
     <div class="hidden lg:flex items-center gap-6 text-base">
-      <a href="/features/" class="hover:text-[var(--accent)]" style="color: var(--text-body);"><?= isset($t) ? ($t['nav']['features'] ?? 'Features') : 'Features' ?></a>
-      <a href="/blind-mode/" class="hover:text-[var(--accent)]" style="color: var(--text-body);"><?= isset($t) ? ($t['nav']['blind_mode'] ?? 'Blind Mode ♿') : 'Blind Mode ♿' ?></a>
+      <a href="/features/" class="hover:text-[var(--accent)]"<?= isActive('/features/') ?> style="color: var(--text-body);"><?= isset($t) ? ($t['nav']['features'] ?? 'Features') : 'Features' ?></a>
+      <a href="/blind-mode/" class="hover:text-[var(--accent)]"<?= isActive('/blind-mode/') ?> style="color: var(--text-body);"><?= isset($t) ? ($t['nav']['blind_mode'] ?? 'Blind Mode ♿') : 'Blind Mode ♿' ?></a>
 
       <!-- Classes dropdown -->
       <div class="relative group">
@@ -41,9 +48,9 @@
         </div>
       </div>
 
-      <a href="/pricing/" class="hover:text-[var(--accent)]" style="color: var(--text-body);"><?= isset($t) ? ($t['nav']['pricing'] ?? 'Pricing') : 'Pricing' ?></a>
-      <a href="/blog/" class="hover:text-[var(--accent)]" style="color: var(--text-body);"><?= isset($t) ? ($t['nav']['blog'] ?? 'Blog') : 'Blog' ?></a>
-      <a href="/schools/" class="hover:text-[var(--accent)]" style="color: var(--text-body);"><?= isset($t) ? ($t['nav']['for_schools'] ?? 'For Schools') : 'For Schools' ?></a>
+      <a href="/pricing/" class="hover:text-[var(--accent)]"<?= isActive('/pricing/') ?> style="color: var(--text-body);"><?= isset($t) ? ($t['nav']['pricing'] ?? 'Pricing') : 'Pricing' ?></a>
+      <a href="/blog/" class="hover:text-[var(--accent)]"<?= isActive('/blog/') ?> style="color: var(--text-body);"><?= isset($t) ? ($t['nav']['blog'] ?? 'Blog') : 'Blog' ?></a>
+      <a href="/schools/" class="hover:text-[var(--accent)]"<?= isActive('/schools/') ?> style="color: var(--text-body);"><?= isset($t) ? ($t['nav']['for_schools'] ?? 'For Schools') : 'For Schools' ?></a>
     </div>
 
     <!-- Right side: theme switcher + CTA + hamburger -->

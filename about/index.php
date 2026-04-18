@@ -2,7 +2,14 @@
 $title       = "Shrutam Ke Baare Mein — India Ka AI Education Mission | Aarambha";
 $description = "Shrutam kyun bana? Gaon ke students ke liye. Blind students ke liye. ₹3000 tutor afford nahi kar paate ke liye. Aarambha ka pehla product.";
 $canonical   = "https://shrutam.ai/about/";
-$schema      = '';
+$schema      = json_encode([
+    "@context" => "https://schema.org",
+    "@type" => "BreadcrumbList",
+    "itemListElement" => [
+        ["@type" => "ListItem", "position" => 1, "name" => "Home",  "item" => "https://shrutam.ai/"],
+        ["@type" => "ListItem", "position" => 2, "name" => "About", "item" => "https://shrutam.ai/about/"],
+    ]
+], JSON_UNESCAPED_SLASHES | JSON_UNESCAPED_UNICODE);
 
 include '../partials/head.php';
 include '../partials/nav.php';

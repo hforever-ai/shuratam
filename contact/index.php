@@ -2,7 +2,14 @@
 $title       = "Contact Shrutam — Humse Baat Karo | Shrutam";
 $description = "Shrutam se contact karo. Questions, feedback, partnerships. accessibility@shrutam.ai for blind mode.";
 $canonical   = "https://shrutam.ai/contact/";
-$schema      = '';
+$schema      = json_encode([
+    "@context" => "https://schema.org",
+    "@type" => "BreadcrumbList",
+    "itemListElement" => [
+        ["@type" => "ListItem", "position" => 1, "name" => "Home",    "item" => "https://shrutam.ai/"],
+        ["@type" => "ListItem", "position" => 2, "name" => "Contact", "item" => "https://shrutam.ai/contact/"],
+    ]
+], JSON_UNESCAPED_SLASHES | JSON_UNESCAPED_UNICODE);
 
 include '../partials/head.php';
 include '../partials/nav.php';

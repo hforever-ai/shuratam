@@ -2,7 +2,14 @@
 $title       = "SAAVI Ki 13 Super Powers — All Features | Shrutam";
 $description = "Shrutam ke 13 features: Mother Tongue Learning, Adaptive AI, Blind Mode, Ask Like 10, Zero to Hero, Photo Doubt Solver, Mock Exams, aur bahut kuch.";
 $canonical   = "https://shrutam.ai/features/";
-$schema      = '';
+$schema      = json_encode([
+    "@context" => "https://schema.org",
+    "@type" => "BreadcrumbList",
+    "itemListElement" => [
+        ["@type" => "ListItem", "position" => 1, "name" => "Home", "item" => "https://shrutam.ai/"],
+        ["@type" => "ListItem", "position" => 2, "name" => "Features", "item" => "https://shrutam.ai/features/"],
+    ]
+], JSON_UNESCAPED_SLASHES | JSON_UNESCAPED_UNICODE);
 
 include '../partials/head.php';
 include '../partials/nav.php';
