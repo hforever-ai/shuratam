@@ -4,7 +4,6 @@
  * Works on ALL pages — routed and non-routed
  */
 $langLabels = [
-    'hinglish' => 'Hinglish',
     'hi' => 'हिंदी',
     'en' => 'English',
     'mr' => 'मराठी',
@@ -12,7 +11,7 @@ $langLabels = [
 ];
 
 $currentLang = $lang ?? '';
-$currentLabel = $currentLang ? ($langLabels[$currentLang] ?? 'Language') : 'Hinglish';
+$currentLabel = $currentLang ? ($langLabels[$currentLang] ?? 'Language') : 'हिंदी';
 $currentPath = $currentPath ?? '';
 $availableLangs = $availableLangs ?? ['hi', 'en'];
 ?>
@@ -22,11 +21,11 @@ $availableLangs = $availableLangs ?? ['hi', 'en'];
   </button>
   <div class="absolute top-full right-0 mt-2 py-2 min-w-[120px] rounded-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200"
        style="background: var(--bg-surface); border: 1px solid var(--border-subtle); box-shadow: var(--shadow); z-index: 50;">
-    <!-- Hinglish (root) -->
+    <!-- Hindi-English (root) -->
     <a href="/<?= htmlspecialchars($currentPath) ?>"
        class="block px-4 py-2 text-sm hover:bg-[var(--bg-elevated)]"
        style="color: <?= empty($currentLang) ? 'var(--accent)' : 'var(--text-body)' ?>;">
-      <?= empty($currentLang) ? '✓ ' : '' ?>Hinglish
+      <?= empty($currentLang) ? '✓ ' : '' ?>हिंदी-English
     </a>
     <?php foreach ($availableLangs as $l): ?>
       <a href="/<?= $l ?>/<?= htmlspecialchars($currentPath) ?>"

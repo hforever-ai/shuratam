@@ -58,13 +58,17 @@ function isActive($path) {
       <!-- Language switcher (all pages) -->
       <?php include __DIR__ . '/lang-switcher.php'; ?>
 
-      <!-- Theme switcher -->
-      <div class="flex items-center gap-1" role="radiogroup" aria-label="Theme switcher">
-        <button onclick="setTheme('navy')" class="theme-btn p-2 rounded-lg hover:bg-[var(--bg-elevated)]" aria-label="Navy theme" title="Navy + Saffron">🌙</button>
-        <button onclick="setTheme('forest')" class="theme-btn p-2 rounded-lg hover:bg-[var(--bg-elevated)] hidden sm:block" aria-label="Forest theme" title="Forest Focus">🌿</button>
-        <!-- Bright theme hidden for now -->
-        <!-- <button onclick="setTheme('bright')" class="theme-btn p-2 rounded-lg hover:bg-[var(--bg-elevated)]" aria-label="Bright theme" title="Bright Day">☀️</button> -->
-        <button onclick="setTheme('gaming')" class="theme-btn p-2 rounded-lg hover:bg-[var(--bg-elevated)]" aria-label="Gaming theme" title="Gaming">🎮</button>
+      <!-- Theme switcher — dropdown -->
+      <div class="relative group">
+        <button class="flex items-center gap-1 text-sm hover:text-[var(--accent)]" style="color: var(--text-body);" aria-label="Theme switcher" aria-haspopup="true">
+          🎨 <span aria-hidden="true">▾</span>
+        </button>
+        <div class="absolute top-full right-0 mt-2 py-2 min-w-[140px] rounded-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200"
+             style="background: var(--bg-surface); border: 1px solid var(--border-subtle); box-shadow: var(--shadow); z-index: 50;">
+          <button onclick="setTheme('navy')" class="theme-btn block w-full text-left px-4 py-2 text-sm hover:bg-[var(--bg-elevated)]" style="color: var(--text-body);">🌙 Navy + Saffron</button>
+          <button onclick="setTheme('forest')" class="theme-btn block w-full text-left px-4 py-2 text-sm hover:bg-[var(--bg-elevated)]" style="color: var(--text-body);">🌿 Forest Focus</button>
+          <button onclick="setTheme('gaming')" class="theme-btn block w-full text-left px-4 py-2 text-sm hover:bg-[var(--bg-elevated)]" style="color: var(--text-body);">🎮 Gaming</button>
+        </div>
       </div>
 
       <!-- CTA -->
