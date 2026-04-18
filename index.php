@@ -42,31 +42,38 @@ include 'partials/nav.php';
 
         <!-- Left: Copy -->
         <div>
-          <!-- H1 — the emotional hook -->
-          <h1 id="hero-heading" class="text-3xl lg:text-4xl font-heading font-bold mb-1" style="color: var(--text-primary);">
-            Raat 2 baje doubt aaya?
-          </h1>
-          <h1 class="text-3xl lg:text-4xl font-heading font-bold mb-3 text-gradient">
-            SAAVI hai na.
-          </h1>
-
-          <!-- One line value prop -->
-          <p class="text-lg mb-5" style="color: var(--text-body);">
-            Hindi mein. ₹199/month. <span style="color: var(--accent);">Blind ke liye free.</span>
-          </p>
-
-          <!-- CTA + social proof together -->
-          <div class="flex flex-wrap items-center gap-4 mb-6">
-            <a href="/waitlist/" class="btn btn-primary">Join Free Waitlist →</a>
-            <span class="text-sm" style="color: var(--text-secondary);">⭐ <strong data-count="500" data-suffix="+" style="color: var(--accent);">500+</strong> families waiting</span>
+          <!-- Brand identity -->
+          <div class="flex items-center gap-3 mb-4">
+            <span lang="hi" class="font-devanagari-heading text-3xl font-bold" style="color: var(--accent);">शृतम्</span>
+            <span class="text-sm font-heading" style="color: var(--text-secondary);">India's First Audio-First AI Learning Platform</span>
           </div>
 
-          <!-- Trust pills — compact -->
-          <div class="flex flex-wrap gap-2">
-            <span class="badge badge-primary">CG Board + CBSE</span>
-            <span class="badge badge-accent">Class 5–10</span>
-            <span class="badge badge-primary">♿ Blind Mode Free</span>
-            <span class="badge badge-accent">5 Languages</span>
+          <!-- H1 — what is Shrutam -->
+          <h1 id="hero-heading" class="text-3xl lg:text-4xl font-heading font-bold mb-4" style="color: var(--text-primary);">
+            ₹3,000 ka tutor nahi afford kar sakte?<br>
+            <span class="text-gradient">SAAVI Didi sikhayegi sirf ₹199 mein.</span>
+          </h1>
+
+          <!-- What SAAVI does — 3 quick facts -->
+          <div class="mb-5 space-y-1" style="color: var(--text-body);">
+            <p>🕐 <strong style="color: var(--text-primary);">24/7 available</strong> — raat 2 baje bhi</p>
+            <p>🗣️ <strong style="color: var(--text-primary);">Tumhari bhasha mein</strong> — Hindi, Hinglish, English, Telugu, Marathi</p>
+            <p>📚 <strong style="color: var(--text-primary);">CG Board + CBSE</strong> — Class 5 se 10 tak</p>
+          </div>
+
+          <!-- CTA + social proof -->
+          <div class="flex flex-wrap items-center gap-4 mb-5">
+            <a href="/waitlist/" class="btn btn-primary">FREE Trial शुरू करो →</a>
+            <span class="text-sm" style="color: var(--text-secondary);">⭐ <strong data-count="500" data-suffix="+" style="color: var(--accent);">500+</strong> families joined</span>
+          </div>
+
+          <!-- Blind mode — distinct trust block -->
+          <div class="p-3 rounded-lg flex items-center gap-3" style="background: var(--accent-glow); border: 1px solid rgba(245,158,11,0.2);">
+            <span class="text-2xl">♿</span>
+            <div>
+              <p class="text-sm font-bold" style="color: var(--accent);">भारत में पहली बार — Blind students के लिए हमेशा FREE</p>
+              <p class="text-xs" style="color: var(--text-secondary);">TalkBack, VoiceOver compatible · Voice quiz · Scribe mode</p>
+            </div>
           </div>
         </div>
 
