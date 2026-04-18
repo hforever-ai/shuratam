@@ -67,11 +67,13 @@ $langPrefix = isset($lang) && $lang ? "/{$lang}" : '';
 
     <!-- Right side: theme switcher + CTA + hamburger -->
     <div class="flex items-center gap-3">
-      <!-- Language switcher (all pages) -->
-      <?php include __DIR__ . '/lang-switcher.php'; ?>
+      <!-- Language switcher (desktop only — mobile uses hamburger menu) -->
+      <div class="hidden lg:block">
+        <?php include __DIR__ . '/lang-switcher.php'; ?>
+      </div>
 
-      <!-- Theme switcher — dropdown -->
-      <div class="relative group">
+      <!-- Theme switcher — dropdown (desktop only) -->
+      <div class="relative group hidden lg:block">
         <button class="flex items-center gap-1 text-sm hover:text-[var(--accent)]" style="color: var(--text-body);" aria-label="Theme switcher" aria-haspopup="true">
           🎨 <span aria-hidden="true">▾</span>
         </button>
@@ -120,6 +122,22 @@ $langPrefix = isset($lang) && $lang ? "/{$lang}" : '';
       <a href="<?= $langPrefix ?>/pricing/" class="py-3 text-lg font-heading" style="color: var(--text-body); border-bottom: 1px solid var(--border-subtle);">Pricing</a>
       <a href="<?= $langPrefix ?>/blog/" class="py-3 text-lg font-heading" style="color: var(--text-body); border-bottom: 1px solid var(--border-subtle);">Blog</a>
       <a href="<?= $langPrefix ?>/waitlist/" class="btn btn-primary mt-4 justify-center">Join Waitlist Free →</a>
+
+      <!-- Language + Theme in mobile menu -->
+      <div class="mt-4 pt-4" style="border-top: 1px solid var(--border-subtle);">
+        <p class="text-xs font-bold uppercase tracking-wide mb-2" style="color: var(--text-muted);">Language</p>
+        <div class="flex gap-2 mb-4">
+          <a href="/" class="pill text-xs <?= empty($currentLang) ? 'active' : '' ?>">हिंदी-EN</a>
+          <a href="/hi/" class="pill text-xs <?= ($lang ?? '') === 'hi' ? 'active' : '' ?>">हिंदी</a>
+          <a href="/en/" class="pill text-xs <?= ($lang ?? '') === 'en' ? 'active' : '' ?>">English</a>
+        </div>
+        <p class="text-xs font-bold uppercase tracking-wide mb-2" style="color: var(--text-muted);">Theme</p>
+        <div class="flex gap-2">
+          <button onclick="setTheme('navy')" class="pill text-xs">🌙 Navy</button>
+          <button onclick="setTheme('forest')" class="pill text-xs">🌿 Forest</button>
+          <button onclick="setTheme('gaming')" class="pill text-xs">🎮 Gaming</button>
+        </div>
+      </div>
     </div>
   </div>
 </header>
