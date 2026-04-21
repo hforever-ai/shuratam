@@ -178,6 +178,7 @@ $fullAudioFile = "{$audioCdn}/english-50/{$lang}/day-{$dayNum}/day{$dayNum}_full
                 <audio id="main-audio" controls preload="metadata" style="width:100%; max-width: 400px; height:44px; margin: 0 auto;" class="rounded">
                     <source src="<?= htmlspecialchars($fullAudioFile) ?>" type="audio/mpeg">
                 </audio>
+                <p id="now-playing" class="text-xs mt-2" style="color: var(--text-muted);">Full Lesson</p>
             </div>
 
             <!-- Block audio list -->
@@ -185,6 +186,7 @@ $fullAudioFile = "{$audioCdn}/english-50/{$lang}/day-{$dayNum}/day{$dayNum}_full
                 <p class="text-xs font-bold uppercase tracking-wide mb-2" style="color: var(--text-muted);">Lesson Sections</p>
                 <?php
                 $sectionAudios = [
+                    ['label' => 'Full Lesson', 'file' => 'day1_full.mp3'],
                     ['label' => 'Introduction', 'file' => 'block_1_intro.mp3'],
                     ['label' => 'Teaching — Words', 'file' => 'block_2_teaching.mp3'],
                     ['label' => 'Listen & Repeat', 'file' => 'block_3_listen_repeat.mp3'],
@@ -192,7 +194,7 @@ $fullAudioFile = "{$audioCdn}/english-50/{$lang}/day-{$dayNum}/day{$dayNum}_full
                     ['label' => 'Summary', 'file' => 'block_5_summary.mp3'],
                 ];
                 foreach ($sectionAudios as $sa): ?>
-                <button onclick="document.getElementById('main-audio').src='<?= $audioCdn ?>/english-50/<?= $lang ?>/day-<?= $dayNum ?>/<?= $sa['file'] ?>';document.getElementById('main-audio').play();"
+                <button onclick="var a=document.getElementById('main-audio');a.src='<?= $audioCdn ?>/english-50/<?= $lang ?>/day-<?= $dayNum ?>/<?= $sa['file'] ?>';a.play();document.getElementById('now-playing').textContent='<?= $sa['label'] ?>';"
                     class="flex items-center gap-2 w-full text-left px-3 py-2 rounded-lg mb-1 hover:bg-[var(--bg-elevated)]"
                     style="color: var(--text-body); border: none; background: none; cursor: pointer; font-size: 0.9rem;">
                     <span style="color: var(--accent);">&#9654;</span> <?= $sa['label'] ?>
