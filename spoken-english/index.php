@@ -73,6 +73,12 @@ include __DIR__ . '/../partials/nav.php';
 
 <main id="main" class="section" style="min-height: 80vh;">
 <div class="container">
+<?php if ($dbError): ?>
+<!-- DEBUG: remove after fixing -->
+<div style="background:#fee;color:#c00;padding:12px;margin-bottom:16px;border-radius:8px;font-size:14px;">
+DB Error: <?= htmlspecialchars($dbError) ?> | File exists: <?= file_exists($dbFile) ? 'YES' : 'NO' ?> | Path: <?= htmlspecialchars($dbFile) ?>
+</div>
+<?php endif; ?>
 
 <?php if ($dayNum > 0 && isset($day)): ?>
 <!-- ═══════════ DAY PLAYER ═══════════ -->
@@ -119,9 +125,12 @@ $tabLabels = [
     'summary' => '✅ Summary',
 ];
 
+// Audio CDN base URL (Cloudflare R2)
+$audioCdn = 'https://pub-30714c8b5f2045c2a156051d3ade4a77.r2.dev';
+
 // Check if full video exists
-$videoFile = "/audio/english-50/{$lang}/day-{$dayNum}/day{$dayNum}_video.mp4";
-$fullAudioFile = "/audio/english-50/{$lang}/day-{$dayNum}/day{$dayNum}_full.mp3";
+$videoFile = "{$audioCdn}/english-50/{$lang}/day-{$dayNum}/day{$dayNum}_video.mp4";
+$fullAudioFile = "{$audioCdn}/english-50/{$lang}/day-{$dayNum}/day{$dayNum}_full.mp3";
 ?>
 
 <div class="mb-12">
@@ -221,7 +230,7 @@ $fullAudioFile = "/audio/english-50/{$lang}/day-{$dayNum}/day{$dayNum}_full.mp3"
                     <?php
                         $word = $card['word'] ?? $card['pattern'] ?? '';
                         $safe = strtolower(preg_replace('/[^a-z0-9]+/i', '_', $word));
-                        $wordAudioFile = "/audio/english-50/{$lang}/day-{$dayNum}/word_" . sprintf('%02d', $ci+1) . "_{$safe}.mp3";
+                        $wordAudioFile = "{$audioCdn}/english-50/{$lang}/day-{$dayNum}/word_" . sprintf('%02d', $ci+1) . "_{$safe}.mp3";
                     ?>
                     <div class="word-card rounded-lg" data-index="<?= $ci ?>" data-audio="<?= $wordAudioFile ?>"
                          style="background: var(--bg-elevated); transition: all 0.3s; border-left: 3px solid transparent; overflow:hidden; max-height: 52px;">
