@@ -25,16 +25,26 @@ $currentLang = $langLabels[$lang] ?? $langLabels['hi'];
 $htmlLang = $currentLang['htmlLang'];
 
 // DB connection
-$dbConfig = require __DIR__ . '/../config/db.php';
-$dsn = "mysql:host={$dbConfig['host']};dbname={$dbConfig['dbname']};charset={$dbConfig['charset']}";
-$pdo = new PDO($dsn, $dbConfig['username'], $dbConfig['password'], [
-    PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION,
-]);
-
-// Get course based on language
-$stmt = $pdo->prepare("SELECT * FROM courses WHERE course_code = ? LIMIT 1");
-$stmt->execute([$courseCode]);
-$course = $stmt->fetch(PDO::FETCH_ASSOC);
+$dbFile = __DIR__ . '/../config/db.php';
+$pdo = null;
+$course = null;
+$dbError = '';
+if (file_exists($dbFile)) {
+    try {
+        $dbConfig = require $dbFile;
+        $dsn = "mysql:host={$dbConfig['host']};dbname={$dbConfig['dbname']};charset={$dbConfig['charset']}";
+        $pdo = new PDO($dsn, $dbConfig['username'], $dbConfig['password'], [
+            PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION,
+        ]);
+        $stmt = $pdo->prepare("SELECT * FROM courses WHERE course_code = ? LIMIT 1");
+        $stmt->execute([$courseCode]);
+        $course = $stmt->fetch(PDO::FETCH_ASSOC);
+    } catch (Exception $e) {
+        $dbError = $e->getMessage();
+    }
+} else {
+    $dbError = 'config/db.php not found';
+}
 
 if ($dayNum > 0 && $course) {
     // Get specific day
