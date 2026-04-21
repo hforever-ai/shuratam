@@ -163,30 +163,38 @@ $fullAudioFile = "{$audioCdn}/english-50/{$lang}/day-{$dayNum}/day{$dayNum}_full
     <!-- Tab panels -->
 
     <!-- 🎬 VIDEO / AUDIO Panel (default active) -->
+    <?php $videoUrl = "{$audioCdn}/english-50/{$lang}/day-{$dayNum}/day{$dayNum}_video.mp4"; ?>
     <div class="content-panel" id="video-section">
         <div class="card" style="border-left: 3px solid var(--accent); padding: 0; overflow: hidden;">
-            <!-- SAAVI visual player -->
-            <div style="background: linear-gradient(135deg, var(--bg-elevated) 0%, var(--bg-surface) 100%); padding: 2rem; text-align: center;">
-                <img src="/assets/images/courses/saavi-avatar.png" alt="SAAVI Teacher"
-                     style="width: 120px; height: 120px; border-radius: 50%; border: 3px solid var(--accent); margin: 0 auto 1rem; display: block; object-fit: cover;">
-                <h3 class="text-xl font-heading mb-1" style="color: var(--accent);">
-                    SAAVI ke saath seekhein
-                </h3>
-                <p class="text-sm mb-4" style="color: var(--text-muted);">Day <?= $dayNum ?> — Full Lesson Audio</p>
 
-                <!-- Audio player -->
-                <audio id="main-audio" controls preload="metadata" style="width:100%; max-width: 400px; height:44px; margin: 0 auto;" class="rounded">
-                    <source src="<?= htmlspecialchars($fullAudioFile) ?>" type="audio/mpeg">
-                </audio>
-                <p id="now-playing" class="text-xs mt-2" style="color: var(--text-muted);">Full Lesson</p>
+            <!-- Video player -->
+            <div style="background: #000; border-radius: var(--radius-lg) var(--radius-lg) 0 0; overflow: hidden;">
+                <video id="main-video" controls preload="metadata" poster="/assets/images/courses/saavi-avatar.png"
+                       style="width: 100%; max-height: 450px; display: block; margin: 0 auto;">
+                    <source src="<?= htmlspecialchars($videoUrl) ?>" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
             </div>
 
-            <!-- Block audio list -->
-            <div style="padding: 1rem 1.5rem; border-top: 1px solid var(--border-subtle);">
-                <p class="text-xs font-bold uppercase tracking-wide mb-2" style="color: var(--text-muted);">Lesson Sections</p>
+            <!-- Audio fallback + section list -->
+            <div style="padding: 1rem 1.5rem;">
+                <h3 class="text-lg font-heading mb-2" style="color: var(--accent);">
+                    Day <?= $dayNum ?> — SAAVI ke saath seekhein
+                </h3>
+
+                <!-- Audio player (for audio-only sections) -->
+                <div class="mb-3">
+                    <audio id="main-audio" controls preload="metadata" style="width:100%; height:40px;" class="rounded">
+                        <source src="<?= htmlspecialchars($fullAudioFile) ?>" type="audio/mpeg">
+                    </audio>
+                    <p id="now-playing" class="text-xs mt-1" style="color: var(--text-muted);">Full Lesson Audio</p>
+                </div>
+
+                <!-- Section buttons -->
+                <p class="text-xs font-bold uppercase tracking-wide mb-2" style="color: var(--text-muted);">Sections</p>
                 <?php
                 $sectionAudios = [
-                    ['label' => 'Full Lesson', 'file' => 'day1_full.mp3'],
+                    ['label' => 'Full Lesson', 'file' => "day{$dayNum}_full.mp3"],
                     ['label' => 'Introduction', 'file' => 'block_1_intro.mp3'],
                     ['label' => 'Teaching — Words', 'file' => 'block_2_teaching.mp3'],
                     ['label' => 'Listen & Repeat', 'file' => 'block_3_listen_repeat.mp3'],
