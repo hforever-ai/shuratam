@@ -63,7 +63,8 @@ if ($dayNum > 0 && $course) {
         $stmt->execute([$day['id']]);
         $quizItems = $stmt->fetchAll(PDO::FETCH_ASSOC);
 
-        $title = "Day {$dayNum}: {$day['title_source']} | Shrutam English";
+        $titleSrc = preg_replace('/^Day\s*\d+:\s*/i', '', $day['title_source']);
+        $title = "Day {$dayNum}: {$titleSrc} | Shrutam English";
     }
 }
 
@@ -73,12 +74,6 @@ include __DIR__ . '/../partials/nav.php';
 
 <main id="main" class="section" style="min-height: 80vh;">
 <div class="container">
-<?php if ($dbError): ?>
-<!-- DEBUG: remove after fixing -->
-<div style="background:#fee;color:#c00;padding:12px;margin-bottom:16px;border-radius:8px;font-size:14px;">
-DB Error: <?= htmlspecialchars($dbError) ?> | File exists: <?= file_exists($dbFile) ? 'YES' : 'NO' ?> | Path: <?= htmlspecialchars($dbFile) ?>
-</div>
-<?php endif; ?>
 
 <?php if ($dayNum > 0 && isset($day)): ?>
 <!-- ═══════════ DAY PLAYER ═══════════ -->
@@ -98,7 +93,7 @@ DB Error: <?= htmlspecialchars($dbError) ?> | File exists: <?= file_exists($dbFi
 
     <!-- Day title -->
     <h1 class="text-3xl font-heading mb-2" style="color: var(--text-primary);">
-        Day <?= $dayNum ?>: <?= htmlspecialchars($day['title_source']) ?>
+        Day <?= $dayNum ?>: <?= htmlspecialchars(preg_replace('/^Day\s*\d+:\s*/i', '', $day['title_source'])) ?>
     </h1>
     <p style="color: var(--text-secondary);"><?= htmlspecialchars($day['title_target']) ?></p>
 </div>
@@ -208,15 +203,15 @@ $fullAudioFile = "{$audioCdn}/english-50/{$lang}/day-{$dayNum}/day{$dayNum}_full
         <div>
             <!-- Audio (skip for teaching — words have individual audio) -->
             <?php
-            // Use DB audio_url or fall back to R2 CDN path
+            // Always use R2 CDN for block audio
             $blockAudioMap = [
                 'listen_repeat' => 'block_3_listen_repeat.mp3',
                 'situation' => 'block_4_situation.mp3',
                 'summary' => 'block_5_summary.mp3',
             ];
-            $blockAudioUrl = $block['audio_url'] ?: (isset($blockAudioMap[$block['block_type']])
+            $blockAudioUrl = isset($blockAudioMap[$block['block_type']])
                 ? "{$audioCdn}/english-50/{$lang}/day-{$dayNum}/" . $blockAudioMap[$block['block_type']]
-                : '');
+                : '';
             ?>
             <?php if ($blockAudioUrl && $block['block_type'] !== 'teaching'): ?>
             <div class="mb-4 flex items-center gap-3">
