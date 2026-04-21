@@ -207,18 +207,13 @@ $fullAudioFile = "{$audioCdn}/english-50/{$lang}/day-{$dayNum}/day{$dayNum}_full
         <div>
             <!-- Audio (skip for teaching — words have individual audio) -->
             <?php
-            // Known audio files per language (only show player if file exists on R2)
-            $audioAvailable = [
-                'hi' => ['listen_repeat' => true, 'situation' => true, 'summary' => true],
-                'mr' => ['listen_repeat' => true, 'situation' => true, 'summary' => false],
-            ];
+            // R2 CDN audio for each block type
             $blockAudioMap = [
                 'listen_repeat' => 'block_3_listen_repeat.mp3',
                 'situation' => 'block_4_situation.mp3',
                 'summary' => 'block_5_summary.mp3',
             ];
-            $hasAudio = ($audioAvailable[$lang][$block['block_type']] ?? false);
-            $blockAudioUrl = ($hasAudio && isset($blockAudioMap[$block['block_type']]))
+            $blockAudioUrl = isset($blockAudioMap[$block['block_type']])
                 ? "{$audioCdn}/english-50/{$lang}/day-{$dayNum}/" . $blockAudioMap[$block['block_type']]
                 : '';
             ?>
