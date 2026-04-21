@@ -401,13 +401,15 @@ $fullAudioFile = "{$audioCdn}/english-50/{$lang}/day-{$dayNum}/day{$dayNum}_full
 
     <!-- Flashcards -->
     <div class="quiz-panel" id="quiz-flashcard" style="display:none;">
+        <p class="mb-3 text-sm" style="color: var(--text-muted);">Click card to flip</p>
         <div class="grid grid-cols-2 sm:grid-cols-3 gap-3">
-        <?php foreach (($grouped['flashcard'] ?? []) as $card): ?>
-            <div class="card p-4 text-center cursor-pointer" onclick="this.classList.toggle('flipped')" style="min-height:100px;">
-                <div class="flashcard-front font-bold" style="color: var(--primary-light);">
+        <?php foreach (($grouped['flashcard'] ?? []) as $ci => $card): ?>
+            <div class="flashcard-item card p-4 text-center cursor-pointer" style="min-height:100px;" data-flipped="false"
+                 onclick="var f=this.dataset.flipped==='true';this.dataset.flipped=f?'false':'true';this.querySelector('.fc-front').style.display=f?'block':'none';this.querySelector('.fc-back').style.display=f?'none':'block';">
+                <div class="fc-front font-bold" style="color: var(--primary-light); font-size: 1.1rem;">
                     <?= htmlspecialchars($card['front']) ?>
                 </div>
-                <div class="flashcard-back hidden" style="color: var(--accent);">
+                <div class="fc-back" style="color: var(--accent); font-size: 1.1rem; display: none;">
                     <?= htmlspecialchars($card['back']) ?>
                 </div>
             </div>
@@ -625,13 +627,9 @@ document.querySelectorAll('[data-quiz-tab]').forEach(btn => {
     });
 });
 
-// Flashcard flip
-document.querySelectorAll('.flashcard-front, .flashcard-back').forEach(el => {
-    el.closest('.card')?.addEventListener('click', function() {
-        this.querySelector('.flashcard-front').classList.toggle('hidden');
-        this.querySelector('.flashcard-back').classList.toggle('hidden');
-        trackEvent('flashcard_flip', 'quiz', 'flashcard');
-    });
+// Flashcard flip tracking
+document.querySelectorAll('.flashcard-item').forEach(el => {
+    el.addEventListener('click', () => trackEvent('flashcard_flip', 'quiz', 'flashcard'));
 });
 
 // Track quiz answer clicks
