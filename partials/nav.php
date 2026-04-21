@@ -89,37 +89,54 @@ $langPrefix = isset($lang) && $lang ? "/{$lang}" : '';
       <a href="<?= $langPrefix ?>/waitlist/" class="btn btn-primary hidden sm:inline-flex">Join Waitlist Free →</a>
 
       <!-- Hamburger (mobile) -->
-      <a href="javascript:void(0)" id="hamburger" class="lg:hidden flex items-center justify-center"
-         aria-label="Open menu"
-         style="font-size: 28px; width: 48px; height: 48px; color: var(--text-primary); text-decoration: none; -webkit-tap-highlight-color: rgba(255,255,255,0.2);"
-         onclick="document.getElementById('mobile-menu').classList.remove('hidden'); document.body.style.overflow='hidden';">
+      <button type="button" id="hamburger" class="lg:hidden flex items-center justify-center"
+         aria-label="Open menu" aria-expanded="false"
+         style="font-size: 28px; width: 48px; height: 48px; color: var(--text-primary); background: none; border: none; -webkit-tap-highlight-color: rgba(255,255,255,0.2); touch-action: manipulation;">
         ☰
-      </a>
+      </button>
     </div>
   </nav>
 
-  <!-- Mobile menu overlay -->
-  <div id="mobile-menu" class="fixed inset-0 z-50 hidden" role="dialog" aria-modal="true" aria-label="Mobile navigation">
-    <div class="absolute inset-0 bg-black/50" id="mobile-menu-backdrop"
-         onclick="document.getElementById('mobile-menu').classList.add('hidden'); document.body.style.overflow='';"></div>
+  <!-- Mobile menu overlay — z-[200] to sit above nav (z-100) -->
+  <div id="mobile-menu" class="fixed inset-0 hidden" role="dialog" aria-modal="true" aria-label="Mobile navigation" style="z-index: 200;">
+    <div class="absolute inset-0 bg-black/50" id="mobile-menu-backdrop"></div>
     <div class="absolute right-0 top-0 h-full w-[280px] p-6 flex flex-col gap-4 overflow-y-auto" style="background: var(--bg-surface);">
-      <a href="javascript:void(0)" id="mobile-menu-close" class="self-end flex items-center justify-center"
+      <button type="button" id="mobile-menu-close" class="self-end flex items-center justify-center"
          aria-label="Close menu"
-         style="font-size: 28px; width: 48px; height: 48px; color: var(--text-primary); text-decoration: none;"
-         onclick="document.getElementById('mobile-menu').classList.add('hidden'); document.body.style.overflow='';">
+         style="font-size: 28px; width: 48px; height: 48px; color: var(--text-primary); background: none; border: none; touch-action: manipulation;">
         ✕
-      </a>
+      </button>
+      <a href="/spoken-english/" class="py-3 text-lg font-heading font-bold" style="color: var(--accent); border-bottom: 1px solid var(--border-subtle);">🆓 English Course — FREE</a>
       <a href="<?= $langPrefix ?>/features/" class="py-3 text-lg font-heading" style="color: var(--text-body); border-bottom: 1px solid var(--border-subtle);">Features</a>
       <a href="<?= $langPrefix ?>/blind-mode/" class="py-3 text-lg font-heading" style="color: var(--text-body); border-bottom: 1px solid var(--border-subtle);">Blind Mode ♿</a>
-      <a href="<?= $langPrefix ?>/classes/class-5/" class="py-2 pl-4" style="color: var(--text-secondary);">Class 5</a>
-      <a href="<?= $langPrefix ?>/classes/class-6/" class="py-2 pl-4" style="color: var(--text-secondary);">Class 6</a>
-      <a href="<?= $langPrefix ?>/classes/class-7/" class="py-2 pl-4" style="color: var(--text-secondary);">Class 7</a>
-      <a href="<?= $langPrefix ?>/classes/class-8/" class="py-2 pl-4" style="color: var(--text-secondary);">Class 8</a>
-      <a href="<?= $langPrefix ?>/classes/class-9/" class="py-2 pl-4" style="color: var(--text-secondary);">Class 9</a>
-      <a href="<?= $langPrefix ?>/classes/class-10/" class="py-2 pl-4" style="color: var(--text-secondary); border-bottom: 1px solid var(--border-subtle);">Class 10</a>
-      <a href="<?= $langPrefix ?>/boards/cg-board/" class="py-2 pl-4" style="color: var(--text-secondary);">CG Board</a>
-      <a href="<?= $langPrefix ?>/boards/cbse/" class="py-2 pl-4" style="color: var(--text-secondary);">CBSE</a>
-      <a href="<?= $langPrefix ?>/boards/mp-board/" class="py-2 pl-4" style="color: var(--text-secondary); border-bottom: 1px solid var(--border-subtle);">MP Board (Soon)</a>
+
+      <!-- Classes accordion -->
+      <div style="border-bottom: 1px solid var(--border-subtle);">
+        <button type="button" class="mobile-accordion-toggle flex items-center justify-between w-full py-3 text-lg font-heading" style="color: var(--text-body); background: none; border: none; touch-action: manipulation;">
+          Classes <span class="mobile-accordion-arrow" style="transition: transform 0.2s;">▾</span>
+        </button>
+        <div class="mobile-accordion-panel hidden" style="padding-bottom: 0.5rem;">
+          <a href="<?= $langPrefix ?>/classes/class-5/" class="block py-2 pl-4 text-sm" style="color: var(--text-secondary);">Class 5</a>
+          <a href="<?= $langPrefix ?>/classes/class-6/" class="block py-2 pl-4 text-sm" style="color: var(--text-secondary);">Class 6</a>
+          <a href="<?= $langPrefix ?>/classes/class-7/" class="block py-2 pl-4 text-sm" style="color: var(--text-secondary);">Class 7</a>
+          <a href="<?= $langPrefix ?>/classes/class-8/" class="block py-2 pl-4 text-sm" style="color: var(--text-secondary);">Class 8</a>
+          <a href="<?= $langPrefix ?>/classes/class-9/" class="block py-2 pl-4 text-sm" style="color: var(--text-secondary);">Class 9</a>
+          <a href="<?= $langPrefix ?>/classes/class-10/" class="block py-2 pl-4 text-sm" style="color: var(--text-secondary);">Class 10</a>
+        </div>
+      </div>
+
+      <!-- Boards accordion -->
+      <div style="border-bottom: 1px solid var(--border-subtle);">
+        <button type="button" class="mobile-accordion-toggle flex items-center justify-between w-full py-3 text-lg font-heading" style="color: var(--text-body); background: none; border: none; touch-action: manipulation;">
+          Boards <span class="mobile-accordion-arrow" style="transition: transform 0.2s;">▾</span>
+        </button>
+        <div class="mobile-accordion-panel hidden" style="padding-bottom: 0.5rem;">
+          <a href="<?= $langPrefix ?>/boards/cg-board/" class="block py-2 pl-4 text-sm" style="color: var(--text-secondary);">CG Board</a>
+          <a href="<?= $langPrefix ?>/boards/cbse/" class="block py-2 pl-4 text-sm" style="color: var(--text-secondary);">CBSE</a>
+          <a href="<?= $langPrefix ?>/boards/mp-board/" class="block py-2 pl-4 text-sm" style="color: var(--text-secondary);">MP Board (Soon)</a>
+        </div>
+      </div>
+
       <a href="<?= $langPrefix ?>/pricing/" class="py-3 text-lg font-heading" style="color: var(--text-body); border-bottom: 1px solid var(--border-subtle);">Pricing</a>
       <a href="<?= $langPrefix ?>/blog/" class="py-3 text-lg font-heading" style="color: var(--text-body); border-bottom: 1px solid var(--border-subtle);">Blog</a>
       <a href="<?= $langPrefix ?>/waitlist/" class="btn btn-primary mt-4 justify-center">Join Waitlist Free →</a>

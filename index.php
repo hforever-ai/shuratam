@@ -32,6 +32,13 @@ include 'partials/nav.php';
 ?>
 
 <main id="main">
+<!-- Announcement Banner -->
+<div style="background: linear-gradient(90deg, var(--accent), var(--primary)); padding: 10px 0; text-align: center;">
+    <a href="/spoken-english/" class="flex items-center justify-center gap-2" style="color: var(--text-inverse); text-decoration: none; font-weight: 600; font-size: 0.95rem;">
+        🆓 NEW: Free English Speaking Course — 50 Days with AI Teacher SAAVI
+        <span style="background: rgba(255,255,255,0.2); padding: 2px 10px; border-radius: 12px; font-size: 0.8rem;">Start Free →</span>
+    </a>
+</div>
 
   <!-- ========================================================
        SECTION 1: HERO
@@ -469,15 +476,18 @@ include 'partials/nav.php';
           <a href="/features/mock-exams/" class="text-sm font-heading font-bold mt-auto" style="color: var(--primary-light);">Jaano →</a>
         </div>
 
-        <!-- 9: Spoken English -->
-        <div class="card animate-on-scroll flex flex-col gap-3">
-          <div class="text-4xl">🗣️</div>
-          <div>
-            <div class="font-heading font-bold text-lg" style="color: var(--text-primary);">Spoken English</div>
-            <div class="text-xs mb-2" style="color: var(--accent);">अंग्रेजी बोलना सीखो</div>
-            <p class="text-sm" style="color: var(--text-secondary);">Hindi medium se Spoken English — SAAVI ke saath daily practice karo.</p>
+        <!-- 9: Spoken English — NOW LIVE -->
+        <div class="card animate-on-scroll flex flex-col gap-3" style="border: 2px solid var(--accent);">
+          <div class="flex items-center gap-2">
+            <span class="text-4xl">🗣️</span>
+            <span class="badge badge-accent text-xs">🆓 FREE COURSE LIVE!</span>
           </div>
-          <a href="/features/spoken-english/" class="text-sm font-heading font-bold mt-auto" style="color: var(--primary-light);">Jaano →</a>
+          <div>
+            <div class="font-heading font-bold text-lg" style="color: var(--text-primary);">English Speaking Course</div>
+            <div class="text-xs mb-2" style="color: var(--accent);">50 दिन में English बोलो — Hindi & Marathi</div>
+            <p class="text-sm" style="color: var(--text-secondary);">SAAVI AI teacher ke saath — Audio, Video, Quiz, Live Chat. Bilkul FREE.</p>
+          </div>
+          <a href="/spoken-english/" class="btn btn-primary mt-auto" style="font-size: 0.85rem;">Start Free Course →</a>
         </div>
 
         <!-- 10: Exam Notes -->

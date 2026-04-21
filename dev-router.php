@@ -29,6 +29,14 @@ if ($path !== '/' && is_file($file)) {
     return false; // Let PHP serve the file
 }
 
+// English course: /spoken-english/day/N/ → spoken-english/index.php?day=N
+if (preg_match('#^/spoken-english/day/(\d+)/?$#', $path, $m)) {
+    $_GET['day'] = intval($m[1]);
+    chdir(__DIR__ . '/english');
+    include __DIR__ . '/spoken-english/index.php';
+    return;
+}
+
 // Multi-language routes: /{lang}/... → router.php
 if (preg_match('#^/(hi|en|mr|te)(/(.*))?$#', $path, $m)) {
     $_GET['lang'] = $m[1];

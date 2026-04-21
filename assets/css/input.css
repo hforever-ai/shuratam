@@ -275,9 +275,12 @@
   .group > [class*="opacity-0"] {
     pointer-events: none;
   }
-  .group:hover > .group-hover\:visible,
-  .group:hover > .group-hover\:opacity-100 {
-    pointer-events: auto;
+  /* Restore pointer-events ONLY on devices that support hover (not touch) */
+  @media (hover: hover) {
+    .group:hover > .group-hover\:visible,
+    .group:hover > .group-hover\:opacity-100 {
+      pointer-events: auto;
+    }
   }
 
   /* Blog / article pages — narrower than global container */
@@ -456,7 +459,8 @@
     background: var(--bg-base);
     border-bottom: 1px solid var(--border-subtle);
     height: var(--nav-h);
-    backdrop-filter: blur(12px);
+    /* backdrop-filter removed: bg-base is opaque, blur was invisible
+       AND it created a compositing layer that breaks iOS touch events */
   }
 
   .pill {

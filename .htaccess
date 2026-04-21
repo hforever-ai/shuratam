@@ -8,6 +8,9 @@ RewriteEngine On
 RewriteCond %{HTTPS} off
 RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
 
+# English course — /spoken-english/day/N/ → spoken-english/index.php?day=N
+RewriteRule ^spoken-english/day/(\d+)/?$ spoken-english/index.php?day=$1 [L,QSA]
+
 # Multi-language router — route /{lang}/... to router.php
 RewriteCond %{REQUEST_URI} ^/(hi|en|mr|te)(/.*)?$
 RewriteCond %{REQUEST_FILENAME} !-f

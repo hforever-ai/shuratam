@@ -111,26 +111,61 @@ function initMobileMenu() {
 
   if (!hamburger || !menu) return;
 
-  function openMenu() {
+  function openMenu(e) {
+    if (e) e.preventDefault();
     menu.classList.remove('hidden');
     document.body.style.overflow = 'hidden';
     hamburger.setAttribute('aria-expanded', 'true');
   }
 
-  function closeMenu() {
+  function closeMenu(e) {
+    if (e) e.preventDefault();
     menu.classList.add('hidden');
     document.body.style.overflow = '';
     hamburger.setAttribute('aria-expanded', 'false');
   }
 
+  // Both click and touchstart for maximum iOS/Android compatibility
   hamburger.addEventListener('click', openMenu);
-  if (close) close.addEventListener('click', closeMenu);
-  if (backdrop) backdrop.addEventListener('click', closeMenu);
+  hamburger.addEventListener('touchstart', openMenu, { passive: false });
 
+  if (close) {
+    close.addEventListener('click', closeMenu);
+    close.addEventListener('touchstart', closeMenu, { passive: false });
+  }
+  if (backdrop) {
+    backdrop.addEventListener('click', closeMenu);
+    backdrop.addEventListener('touchstart', closeMenu, { passive: false });
+  }
+
+  // Close on Escape key
   document.addEventListener('keydown', (e) => {
     if (e.key === 'Escape' && !menu.classList.contains('hidden')) {
       closeMenu();
     }
+  });
+
+  // Close menu when a nav link inside is tapped
+  menu.querySelectorAll('a[href]').forEach(link => {
+    link.addEventListener('click', () => closeMenu());
+  });
+
+  // Accordion toggles for Classes / Boards
+  menu.querySelectorAll('.mobile-accordion-toggle').forEach(btn => {
+    btn.addEventListener('click', function() {
+      const panel = this.nextElementSibling;
+      const arrow = this.querySelector('.mobile-accordion-arrow');
+      const isOpen = !panel.classList.contains('hidden');
+
+      // Close all other panels first
+      menu.querySelectorAll('.mobile-accordion-panel').forEach(p => p.classList.add('hidden'));
+      menu.querySelectorAll('.mobile-accordion-arrow').forEach(a => a.style.transform = '');
+
+      if (!isOpen) {
+        panel.classList.remove('hidden');
+        arrow.style.transform = 'rotate(180deg)';
+      }
+    });
   });
 }
 

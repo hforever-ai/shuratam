@@ -14,3 +14,11 @@ Thumbs.db
 
 # Tailwind build cache
 .cache/
+
+# API keys (safety layer)
+safety/keys.json
+safety/.rate_limits.json
+
+# Audio files (deploy separately — 28MB)
+audio/
+audio_output/
