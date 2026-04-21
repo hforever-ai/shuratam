@@ -1,0 +1,102 @@
+── SHRUTAM MASTER PLAN v1 ──
+"Tu kar sakta hai."
+
+── FOUNDER'S STORY ──
+2003: Engineering graduate. First HR round. English failed him. Ran home to village.
+2003-2004: Age 22, selling CDs door-to-door. Engineering degree useless because English blocked him.
+2004 (Holi): Father forced him to Delhi. Then Bangalore. Two Tamil roommates. One grammar book.
+Memorized all uses of HAVE, GET at once. Taught them Java. They corrected his English.
+2004: Cleared Patni Computers interview. First job. Rs 10,000/month.
+Father distributed sweets in village — never told son. 4 Peter England shirts from first salary.
+2005: Father passed away. Son was 24. Didn't know father was proud.
+2012: Moved to USA. 2026: AI Engineer at Fortune 500.
+"Difference was only timing, luck, 2 Tamil friends, and a book. Nobody tells this. I'll fix it."
+
+── TEACHING METHODOLOGY ──
+Core: "Pehle chalao, phir samjho." (Ride first, understand later)
+Bicycle Analogy: Don't teach physics before letting them ride. Don't teach grammar before letting them speak.
+
+3 Phases:
+1. ICEBREAKER: Experience first, no explanation. "Say: Hello, My name is..."
+2. BUILDING BLOCKS: Show patterns, not rules. "I + verb = I go, I eat"
+3. CONNECTING IDEAS: Grammar when user asks why. "Why does 'he goes' have 's'?"
+
+60-30-10 Rule:
+- RIDE (60%): User speaks, repeats, practices. No explanation.
+- PATTERN (30%): Formula in Hinglish. No technical grammar.
+- WHY (10%): Optional grammar for curious learners (skippable).
+
+Mega-Word Approach: Teach TOP 10-12 high-frequency verbs (HAVE, GET, GOT, BE, DO, GO) ALL uses AT ONCE:
+HAVE: possession (I have a car), obligation (I have to go), perfect (I have eaten), activity (Let's have tea)
+
+── INDIAN CONFUSION LIBRARY (20+ mistakes) ──
+Hindi Thought → Wrong English → Correct English:
+- "Main jaana hoon" → "I am going" → "I have to go"
+- "Khaa liya" → "I ate" → "I have eaten"
+- "Kya time hai?" → "You have time?" → "Do you have time?"
+- "Kal aaunga" → "I come tomorrow" → "I will come tomorrow"
+- "Chai pasand hai" → "I like to tea" → "I like tea"
+- "Myself Rahul" → WRONG → "My name is Rahul"
+- "What is your good name?" → Indian English → "What is your name?"
+
+── CAN vs COULD = "Tu vs Aap" Rule ──
+CAN (Tu wala): Casual, friends, "Can you help me?" — Dost ke saath
+COULD (Aap wala): Polite, formal, "Could you help me?" — Boss ke saath
+
+── TRIPLE LANGUAGE BRIDGE ──
+Every screen: 1. Devanagari/Telugu script → 2. Hinglish pronunciation → 3. English → 4. Audio
+
+── HINDI GRAMMAR TERMS BRIDGE ──
+Sangya = Noun, Sarvanam = Pronoun, Kriya = Verb, Visheshan = Adjective
+Vartman Kaal = Present Tense, Bhootkaal = Past Tense, Bhavishya Kaal = Future Tense
+
+── VOICE & TONE: BHAI STYLE ──
+The "Bhai Test": Before writing ANY message — "Kya main yeh apne bhai ko bolunga?"
+Correct answer: "Shabash bhai!" (not "Amazing!")
+Wrong answer: "Koi baat nahi — chal dobara" (not "Oops! Try again")
+User absent: "Wapas aaja — main yahan hoon" (not "Duo is sad")
+
+NEVER: Guilt trip, streak pressure, aggressive ads, fear, public leaderboards, timed stress, comparison.
+ALWAYS: Warm bhai-style, celebrates small wins, respects pace, zero shame, "Tu kar sakta hai" daily.
+
+── CURRICULUM: 30-DAY ARC ──
+Week 1 (Day 1-7): Foundation + Jaadu — Pronouns, Nouns, Verbs, BE, HAVE
+Week 2 (Day 8-14): Core Mega-Verbs — GET (10+ uses), GOT, GO, modals
+Week 3 (Day 15-21): Tenses via Situations — Present, Past, Future through real use
+Week 4 (Day 22-30): Real Life Application — Office, shopping, doctor, interview
+
+Progressive Difficulty:
+Jaadu (Magic) Day 1-7: 10% difficulty, 95% win rate — "Yeh toh easy hai!"
+Maza (Fun) Day 8-15: 30% difficulty, 80% win rate — "Maza aa raha"
+Mehnat (Work) Day 16-23: 60% difficulty, 65% win rate — "Thoda tough — kar sakta"
+Master Day 24-30: 80% difficulty, 50% win rate — "Main bol sakta hoon!"
+
+── VOCABULARY: 245+ WORDS ──
+Home 30, Food 30, Family 20, Study/Work 25, Travel 20, Shopping 15,
+Health 15, Time/Days 20, Clothes 15, Weather/Colors 20, Numbers 20, Emotions 15
+
+── CHAPTER STRUCTURE (15 min) ──
+1. Lesson (10 min): Daily message + concept + 10 situations + pattern + practice
+2. Summary (1 min): Visual recap, 3 key points
+3. Flashcards (2 min): 6-8 cards, triple language, spaced repetition
+4. Speaking (2 min): 5-6 prompts, AI feedback
+5. Celebration (30 sec): Badge, progress, tomorrow preview
+
+── TEACHING EACH WORD: 10 SITUATIONS ──
+Example: "BOOK"
+1. Ghar: "Meri kitab kahan hai?" → "Where is my book?"
+2. School: "Teacher ne kitab dekhne ko bola" → "Teacher asked me to show the book"
+3. Dost: "Mujhe teri kitab chahiye" → "I need your book"
+4. Mummy: "Mummy kitab padh rahi hai" → "Mummy is reading a book"
+5. Past: "Maine kal kitab khareedi" → "I bought this book yesterday"
+6. Future: "Kal main nayi kitab lunga" → "I will buy a new book tomorrow"
+7. Favorite: "Yeh meri favorite kitab hai" → "This is my favorite book"
+8. Questions: "Kya yeh teri kitab hai?" → "Is this your book?"
+9. Bollywood: "Yaar kitab de de!" → "Dude, give me the book!"
+10. Amazon: "Nayi kitab aayi" → "My new book has arrived"
+
+── KEY RESEARCH ──
+1,000 words = 75% everyday English. 3,000 words = 95%.
+5 tenses = 96% of spoken English (Present 57%, Past 20%, Future 8.5%, Perfect 6%, Continuous 5%)
+Top 10 verbs: be, have, do, say, go, can, get, would, make, know = 80% of verb usage
+Target: 350 words + 50 mega-verbs + 5 tenses = 96% daily English
