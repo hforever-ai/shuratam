@@ -268,11 +268,11 @@ $fullAudioFile = "{$audioCdn}/english-50/{$lang}/day-{$dayNum}/day{$dayNum}_full
                         <div class="word-card-detail p-3 pt-0" style="display:none;">
                             <div class="p-3 rounded-lg" style="background: var(--bg-surface); border: 1px solid var(--border-subtle);">
                                 <div style="color: var(--accent); font-size: 1.15rem; font-weight: 600;">"<?= htmlspecialchars($card['example']['english'] ?? $card['example']['en'] ?? '') ?>"</div>
-                                <?php $pron = $card['example']['hindi_pronunciation'] ?? $card['example']['marathi_pronunciation'] ?? ''; ?>
+                                <?php $pron = $card['example']['pronunciation'] ?? $card['example']['hindi_pronunciation'] ?? $card['example']['marathi_pronunciation'] ?? ''; ?>
                                 <?php if ($pron): ?>
                                 <div class="mt-1" style="color: var(--text-muted); font-size: 0.95rem;">(<?= htmlspecialchars($pron) ?>)</div>
                                 <?php endif; ?>
-                                <div class="mt-1" style="color: var(--text-secondary); font-size: 0.95rem;">"<?= htmlspecialchars($card['example']['hindi_translation'] ?? $card['example']['marathi_translation'] ?? $card['example']['hi'] ?? '') ?>"</div>
+                                <div class="mt-1" style="color: var(--text-secondary); font-size: 0.95rem;">"<?= htmlspecialchars($card['example']['translation'] ?? $card['example']['hindi_translation'] ?? $card['example']['marathi_translation'] ?? '') ?>"</div>
                             </div>
                         </div>
                         <?php endif; ?>
@@ -300,8 +300,8 @@ $fullAudioFile = "{$audioCdn}/english-50/{$lang}/day-{$dayNum}/day{$dayNum}_full
                     <div class="p-3 rounded-lg" style="background: var(--bg-surface); border: 1px solid var(--border-subtle);">
                         <?php if (is_array($sent)): ?>
                             <div style="color: var(--text-primary); font-size: 1.15rem; font-weight: 600;"><?= ($si+1) ?>. <?= htmlspecialchars($sent['english'] ?? $sent['en'] ?? '') ?></div>
-                            <div class="mt-1" style="color: var(--accent); font-size: 1rem;">(<?= htmlspecialchars($sent['hindi_pronunciation'] ?? $sent['marathi_pronunciation'] ?? '') ?>)</div>
-                            <div class="mt-1" style="color: var(--text-primary); font-size: 1rem; opacity: 0.8;"><?= htmlspecialchars($sent['hindi_translation'] ?? $sent['marathi_translation'] ?? $sent['hi'] ?? '') ?></div>
+                            <div class="mt-1" style="color: var(--accent); font-size: 1rem;">(<?= htmlspecialchars($sent['pronunciation'] ?? $sent['hindi_pronunciation'] ?? $sent['marathi_pronunciation'] ?? '') ?>)</div>
+                            <div class="mt-1" style="color: var(--text-primary); font-size: 1rem; opacity: 0.8;"><?= htmlspecialchars($sent['translation'] ?? $sent['hindi_translation'] ?? $sent['marathi_translation'] ?? '') ?></div>
                         <?php else: ?>
                             <div style="color: var(--text-primary); font-size: 1.05rem;"><?= ($si+1) ?>. <?= htmlspecialchars($sent) ?></div>
                         <?php endif; ?>
@@ -314,8 +314,8 @@ $fullAudioFile = "{$audioCdn}/english-50/{$lang}/day-{$dayNum}/day{$dayNum}_full
                         <span class="badge badge-primary text-xs mt-1"><?= htmlspecialchars($line['character'] ?? $line['speaker'] ?? 'A') ?></span>
                         <div>
                             <div style="color: var(--text-primary); font-size: 1.15rem; font-weight: 600;"><?= htmlspecialchars($line['english'] ?? $line['en'] ?? '') ?></div>
-                            <div class="mt-1" style="color: var(--text-muted); font-size: 1rem;">(<?= htmlspecialchars($line['hindi_pronunciation'] ?? $line['marathi_pronunciation'] ?? '') ?>)</div>
-                            <div class="mt-1" style="color: var(--text-secondary); font-size: 1rem;"><?= htmlspecialchars($line['hindi_translation'] ?? $line['marathi_translation'] ?? $line['hi'] ?? '') ?></div>
+                            <div class="mt-1" style="color: var(--text-muted); font-size: 1rem;">(<?= htmlspecialchars($line['pronunciation'] ?? $line['hindi_pronunciation'] ?? $line['marathi_pronunciation'] ?? '') ?>)</div>
+                            <div class="mt-1" style="color: var(--text-secondary); font-size: 1rem;"><?= htmlspecialchars($line['translation'] ?? $line['hindi_translation'] ?? $line['marathi_translation'] ?? '') ?></div>
                         </div>
                     </div>
                     <?php endforeach; ?>
@@ -423,13 +423,13 @@ $fullAudioFile = "{$audioCdn}/english-50/{$lang}/day-{$dayNum}/day{$dayNum}_full
         <div class="grid grid-cols-2 gap-4">
             <div class="space-y-2">
             <?php foreach (($grouped['matching'] ?? []) as $pair): ?>
-                <div class="pill text-sm w-full justify-center"><?= htmlspecialchars($pair['english'] ?? $pair['english_phrase'] ?? $pair['left'] ?? '') ?></div>
+                <div class="pill text-sm w-full justify-center"><?= htmlspecialchars($pair['english'] ?? $pair['english_phrase'] ?? '') ?></div>
             <?php endforeach; ?>
             </div>
             <div class="space-y-2">
             <?php $shuffled = $grouped['matching'] ?? []; shuffle($shuffled); ?>
             <?php foreach ($shuffled as $pair): ?>
-                <div class="pill text-sm w-full justify-center"><?= htmlspecialchars($pair['hindi'] ?? $pair['marathi_translation'] ?? $pair['right'] ?? '') ?></div>
+                <div class="pill text-sm w-full justify-center"><?= htmlspecialchars($pair['translation'] ?? $pair['hindi'] ?? $pair['marathi_translation'] ?? '') ?></div>
             <?php endforeach; ?>
             </div>
         </div>
