@@ -116,6 +116,23 @@ foreach ($blocks as $block) {
 }
 ?>
 
+<?php if ($introBlock):
+    $introContent = json_decode($introBlock['display_content'], true);
+?>
+<div class="card mb-6" style="border-left: 3px solid var(--accent);">
+    <h2 class="text-xl font-heading mb-3" style="color: var(--accent);">
+        <?= htmlspecialchars($introContent['heading'] ?? 'Introduction') ?>
+    </h2>
+    <?php foreach (($introContent['points'] ?? []) as $point): ?>
+        <?php if (!empty($point['text'])): ?>
+        <p class="mb-3" style="color: var(--text-body); line-height: 1.8;">
+            <?= htmlspecialchars($point['text']) ?>
+        </p>
+        <?php endif; ?>
+    <?php endforeach; ?>
+</div>
+<?php endif; ?>
+
 <!-- ═══════════ CONTENT TABS ═══════════ -->
 <?php
 $tabLabels = [
@@ -157,24 +174,13 @@ $fullAudioFile = "{$audioCdn}/english-50/{$lang}/day-{$dayNum}/day{$dayNum}_full
                 🎬 SAAVI ke saath seekhein — Day <?= $dayNum ?>
             </h3>
 
-            <!-- Video player (if video exists) -->
-            <?php if (file_exists(__DIR__ . '/..' . $videoFile)): ?>
-            <div class="mb-4" style="border-radius: var(--radius-lg); overflow: hidden; background: #000;">
-                <video controls preload="metadata" style="width:100%; max-height: 450px;" poster="">
-                    <source src="<?= $videoFile ?>" type="video/mp4">
-                </video>
-            </div>
-            <?php endif; ?>
-
-            <!-- Audio-only fallback (shown only if no video) -->
-            <?php if (!file_exists(__DIR__ . '/..' . $videoFile)): ?>
+            <!-- Full lesson audio player -->
             <div class="mb-2">
-                <p class="text-sm mb-2" style="color: var(--text-muted);">🎧 Full lesson audio</p>
+                <p class="text-sm mb-2" style="color: var(--text-muted);">🎧 Full lesson audio — SAAVI ke saath poora din ka lesson suniye</p>
                 <audio controls preload="metadata" style="width:100%; height:44px;" class="rounded">
-                    <source src="<?= $fullAudioFile ?>" type="audio/mpeg">
+                    <source src="<?= htmlspecialchars($fullAudioFile) ?>" type="audio/mpeg">
                 </audio>
             </div>
-            <?php endif; ?>
         </div>
     </div>
 
@@ -201,14 +207,22 @@ $fullAudioFile = "{$audioCdn}/english-50/{$lang}/day-{$dayNum}/day{$dayNum}_full
 
         <div>
             <!-- Audio (skip for teaching — words have individual audio) -->
-            <?php if ($block['audio_url'] && $block['block_type'] !== 'teaching'): ?>
+            <?php
+            // Use DB audio_url or fall back to R2 CDN path
+            $blockAudioMap = [
+                'listen_repeat' => 'block_3_listen_repeat.mp3',
+                'situation' => 'block_4_situation.mp3',
+                'summary' => 'block_5_summary.mp3',
+            ];
+            $blockAudioUrl = $block['audio_url'] ?: (isset($blockAudioMap[$block['block_type']])
+                ? "{$audioCdn}/english-50/{$lang}/day-{$dayNum}/" . $blockAudioMap[$block['block_type']]
+                : '');
+            ?>
+            <?php if ($blockAudioUrl && $block['block_type'] !== 'teaching'): ?>
             <div class="mb-4 flex items-center gap-3">
                 <audio controls preload="metadata" style="flex:1; height:40px;" class="rounded">
-                    <source src="<?= htmlspecialchars($block['audio_url']) ?>" type="audio/mpeg">
+                    <source src="<?= htmlspecialchars($blockAudioUrl) ?>" type="audio/mpeg">
                 </audio>
-                <span class="text-xs" style="color: var(--text-muted);">
-                    <?= $block['audio_duration_sec'] ? gmdate('i:s', $block['audio_duration_sec']) : '' ?>
-                </span>
             </div>
             <?php endif; ?>
 
