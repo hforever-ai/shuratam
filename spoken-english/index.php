@@ -111,22 +111,6 @@ foreach ($blocks as $block) {
 }
 ?>
 
-<?php if ($introBlock):
-    $introContent = json_decode($introBlock['display_content'], true);
-?>
-<div class="card mb-6" style="border-left: 3px solid var(--accent);">
-    <h2 class="text-xl font-heading mb-3" style="color: var(--accent);">
-        <?= htmlspecialchars($introContent['heading'] ?? 'Introduction') ?>
-    </h2>
-    <?php foreach (($introContent['points'] ?? []) as $point): ?>
-        <?php if (!empty($point['text'])): ?>
-        <p class="mb-3" style="color: var(--text-body); line-height: 1.8;">
-            <?= htmlspecialchars($point['text']) ?>
-        </p>
-        <?php endif; ?>
-    <?php endforeach; ?>
-</div>
-<?php endif; ?>
 
 <!-- ═══════════ CONTENT TABS ═══════════ -->
 <?php
