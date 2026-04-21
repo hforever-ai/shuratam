@@ -15,11 +15,14 @@ $htmlLang = 'hi-IN';
 // Get day number + language from URL
 $dayNum = isset($_GET['day']) ? intval($_GET['day']) : 0;
 $lang = isset($_GET['lang']) ? $_GET['lang'] : 'hi';
-$courseCode = 'english-speaking-50-' . ($lang === 'mr' ? 'mr' : 'hi');
+$validLangs = ['hi', 'mr', 'te'];
+$lang = in_array($lang, $validLangs) ? $lang : 'hi';
+$courseCode = 'english-speaking-50-' . $lang;
 
 $langLabels = [
     'hi' => ['name' => 'Hindi-English', 'flag' => '🇮🇳', 'htmlLang' => 'hi-IN'],
     'mr' => ['name' => 'Marathi-English', 'flag' => '🏛️', 'htmlLang' => 'mr'],
+    'te' => ['name' => 'Telugu-English', 'flag' => '🌾', 'htmlLang' => 'te'],
 ];
 $currentLang = $langLabels[$lang] ?? $langLabels['hi'];
 $htmlLang = $currentLang['htmlLang'];
@@ -83,6 +86,7 @@ include __DIR__ . '/../partials/nav.php';
         <div class="flex gap-1">
             <a href="/spoken-english/?day=<?= $dayNum ?>&lang=hi" class="pill text-xs <?= $lang === 'hi' ? 'active' : '' ?>">🇮🇳 Hindi</a>
             <a href="/spoken-english/?day=<?= $dayNum ?>&lang=mr" class="pill text-xs <?= $lang === 'mr' ? 'active' : '' ?>">🏛️ Marathi</a>
+            <a href="/spoken-english/?day=<?= $dayNum ?>&lang=te" class="pill text-xs <?= $lang === 'te' ? 'active' : '' ?>">🌾 Telugu</a>
         </div>
         <span class="text-sm" style="color: var(--text-muted);">Day <?= $dayNum ?>/<?= $course['total_days'] ?></span>
         <div style="flex:1; height:4px; background:var(--bg-elevated); border-radius:2px;">
@@ -511,17 +515,23 @@ $fullAudioFile = "{$audioCdn}/english-50/{$lang}/day-{$dayNum}/day{$dayNum}_full
 <h2 class="text-2xl font-heading text-center mb-6" style="color: var(--text-primary);">
     अपनी भाषा चुनें — Choose your language
 </h2>
-<div class="grid grid-cols-1 sm:grid-cols-2 gap-6 mb-12" style="max-width: 700px; margin: 0 auto;">
-    <a href="/spoken-english/hindi-english/" class="card p-6 text-center" style="border: 2px solid var(--accent);">
+<div class="grid grid-cols-1 sm:grid-cols-3 gap-6 mb-12" style="max-width: 900px; margin: 0 auto;">
+    <a href="/spoken-english/?day=1&lang=hi" class="card p-6 text-center" style="border: 2px solid var(--accent);">
         <div class="text-4xl mb-3">🇮🇳</div>
         <h3 class="text-xl font-heading mb-2" style="color: var(--text-primary);">Hindi → English</h3>
         <p class="text-sm mb-3" style="color: var(--text-secondary);">हिंदी बोलने वालों के लिए English Speaking Course</p>
         <span class="badge badge-accent">50 Days • Free</span>
     </a>
-    <a href="/spoken-english/marathi-english/" class="card p-6 text-center" style="border: 2px solid var(--primary);">
+    <a href="/spoken-english/?day=1&lang=mr" class="card p-6 text-center" style="border: 2px solid var(--primary);">
         <div class="text-4xl mb-3">🏛️</div>
         <h3 class="text-xl font-heading mb-2" style="color: var(--text-primary);">Marathi → English</h3>
         <p class="text-sm mb-3" style="color: var(--text-secondary);">मराठी भाषिकांसाठी English Speaking Course</p>
+        <span class="badge badge-primary">50 Days • Free</span>
+    </a>
+    <a href="/spoken-english/?day=1&lang=te" class="card p-6 text-center" style="border: 2px solid var(--primary);">
+        <div class="text-4xl mb-3">🌾</div>
+        <h3 class="text-xl font-heading mb-2" style="color: var(--text-primary);">Telugu → English</h3>
+        <p class="text-sm mb-3" style="color: var(--text-secondary);">తెలుగు వారి కోసం English Speaking Course</p>
         <span class="badge badge-primary">50 Days • Free</span>
     </a>
 </div>

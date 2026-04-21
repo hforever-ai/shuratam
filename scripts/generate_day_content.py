@@ -33,6 +33,14 @@ LANG_CONFIG = {
         'saavi_style': 'Marathish (Marathi + English mix), using respectful tumhi',
         'example_city': 'Pune',
     },
+    'te': {
+        'name': 'Telugu',
+        'native_name': 'తెలుగు',
+        'script': 'Telugu',
+        'speaker_desc': 'Telugu speakers from Andhra Pradesh and Telangana',
+        'saavi_style': 'Tenglish (Telugu + English mix), using respectful meeru',
+        'example_city': 'Hyderabad',
+    },
 }
 
 # Day topics (extend for Days 2-50)
