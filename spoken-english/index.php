@@ -164,17 +164,40 @@ $fullAudioFile = "{$audioCdn}/english-50/{$lang}/day-{$dayNum}/day{$dayNum}_full
 
     <!-- 🎬 VIDEO / AUDIO Panel (default active) -->
     <div class="content-panel" id="video-section">
-        <div class="card" style="border-left: 3px solid var(--accent);">
-            <h3 class="text-lg font-heading mb-4" style="color: var(--accent);">
-                🎬 SAAVI ke saath seekhein — Day <?= $dayNum ?>
-            </h3>
+        <div class="card" style="border-left: 3px solid var(--accent); padding: 0; overflow: hidden;">
+            <!-- SAAVI visual player -->
+            <div style="background: linear-gradient(135deg, var(--bg-elevated) 0%, var(--bg-surface) 100%); padding: 2rem; text-align: center;">
+                <img src="/assets/images/courses/saavi-avatar.png" alt="SAAVI Teacher"
+                     style="width: 120px; height: 120px; border-radius: 50%; border: 3px solid var(--accent); margin: 0 auto 1rem; display: block; object-fit: cover;">
+                <h3 class="text-xl font-heading mb-1" style="color: var(--accent);">
+                    SAAVI ke saath seekhein
+                </h3>
+                <p class="text-sm mb-4" style="color: var(--text-muted);">Day <?= $dayNum ?> — Full Lesson Audio</p>
 
-            <!-- Full lesson audio player -->
-            <div class="mb-2">
-                <p class="text-sm mb-2" style="color: var(--text-muted);">🎧 Full lesson audio — SAAVI ke saath poora din ka lesson suniye</p>
-                <audio controls preload="metadata" style="width:100%; height:44px;" class="rounded">
+                <!-- Audio player -->
+                <audio id="main-audio" controls preload="metadata" style="width:100%; max-width: 400px; height:44px; margin: 0 auto;" class="rounded">
                     <source src="<?= htmlspecialchars($fullAudioFile) ?>" type="audio/mpeg">
                 </audio>
+            </div>
+
+            <!-- Block audio list -->
+            <div style="padding: 1rem 1.5rem; border-top: 1px solid var(--border-subtle);">
+                <p class="text-xs font-bold uppercase tracking-wide mb-2" style="color: var(--text-muted);">Lesson Sections</p>
+                <?php
+                $sectionAudios = [
+                    ['label' => 'Introduction', 'file' => 'block_1_intro.mp3'],
+                    ['label' => 'Teaching — Words', 'file' => 'block_2_teaching.mp3'],
+                    ['label' => 'Listen & Repeat', 'file' => 'block_3_listen_repeat.mp3'],
+                    ['label' => 'Situation Practice', 'file' => 'block_4_situation.mp3'],
+                    ['label' => 'Summary', 'file' => 'block_5_summary.mp3'],
+                ];
+                foreach ($sectionAudios as $sa): ?>
+                <button onclick="document.getElementById('main-audio').src='<?= $audioCdn ?>/english-50/<?= $lang ?>/day-<?= $dayNum ?>/<?= $sa['file'] ?>';document.getElementById('main-audio').play();"
+                    class="flex items-center gap-2 w-full text-left px-3 py-2 rounded-lg mb-1 hover:bg-[var(--bg-elevated)]"
+                    style="color: var(--text-body); border: none; background: none; cursor: pointer; font-size: 0.9rem;">
+                    <span style="color: var(--accent);">&#9654;</span> <?= $sa['label'] ?>
+                </button>
+                <?php endforeach; ?>
             </div>
         </div>
     </div>
