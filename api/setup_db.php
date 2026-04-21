@@ -17,7 +17,14 @@ if ($key !== 'shrutam_setup_2026') {
 }
 
 try {
-    $c = require __DIR__ . '/../config/db.php';
+    // Inline credentials (config/db.php not yet visible after FTP upload)
+    $c = ['host'=>'srv939.hstgr.io','dbname'=>'u243364518_aarambha_v1','username'=>'u243364518_devlopment','password'=>'Aarambha@1982','charset'=>'utf8mb4'];
+    // Also write config/db.php so other pages can use it
+    $dbDir = __DIR__ . '/../config';
+    if (!file_exists($dbDir . '/db.php')) {
+        @mkdir($dbDir, 0755, true);
+        file_put_contents($dbDir . '/db.php', "<?php\nreturn " . var_export($c, true) . ";\n");
+    }
     $pdo = new PDO("mysql:host={$c['host']};dbname={$c['dbname']};charset={$c['charset']}", $c['username'], $c['password'], [
         PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION,
     ]);
