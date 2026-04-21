@@ -555,6 +555,25 @@ $fullAudioFile = "{$audioCdn}/english-50/{$lang}/day-{$dayNum}/day{$dayNum}_full
 
 <!-- Tab switching JS -->
 <script>
+// ── GA Event Tracking ──
+const courseLang = '<?= $lang ?>';
+const courseDay = <?= $dayNum ?>;
+function trackEvent(action, category, label, value) {
+    if (typeof gtag === 'function') {
+        gtag('event', action, {
+            event_category: category,
+            event_label: label,
+            value: value || 0,
+            course_lang: courseLang,
+            course_day: courseDay,
+        });
+    }
+}
+
+// Track time spent on each tab
+let tabStartTime = Date.now();
+let currentTab = 'video-section';
+
 // Stop all audio/video on the page
 function pauseAllMedia() {
     document.querySelectorAll('audio, video').forEach(el => {
@@ -567,22 +586,38 @@ document.addEventListener('play', function(e) {
     document.querySelectorAll('audio, video').forEach(el => {
         if (el !== e.target) el.pause();
     });
+    trackEvent('media_play', 'audio', e.target.closest('.content-panel')?.id || 'video');
+}, true);
+
+// Track audio completion
+document.addEventListener('ended', function(e) {
+    trackEvent('media_complete', 'audio', e.target.closest('.content-panel')?.id || 'video');
 }, true);
 
 // Content tabs (Words, Situation, Summary, Quiz)
 document.querySelectorAll('[data-content-tab]').forEach(btn => {
     btn.addEventListener('click', () => {
+        // Track time on previous tab
+        const timeSpent = Math.round((Date.now() - tabStartTime) / 1000);
+        trackEvent('tab_time', 'engagement', currentTab, timeSpent);
+
         pauseAllMedia();
+        const newTab = btn.dataset.contentTab;
+        trackEvent('tab_switch', 'navigation', newTab);
+        currentTab = newTab;
+        tabStartTime = Date.now();
+
         document.querySelectorAll('[data-content-tab]').forEach(b => b.classList.remove('active'));
         document.querySelectorAll('.content-panel').forEach(p => p.style.display = 'none');
         btn.classList.add('active');
-        document.getElementById(btn.dataset.contentTab).style.display = 'block';
+        document.getElementById(newTab).style.display = 'block';
     });
 });
 
 // Quiz sub-tabs (MCQ, Fill, T/F, Flashcards, Matching)
 document.querySelectorAll('[data-quiz-tab]').forEach(btn => {
     btn.addEventListener('click', () => {
+        trackEvent('quiz_tab', 'quiz', btn.dataset.quizTab);
         document.querySelectorAll('[data-quiz-tab]').forEach(b => b.classList.remove('active'));
         document.querySelectorAll('.quiz-panel').forEach(p => p.style.display = 'none');
         btn.classList.add('active');
@@ -595,7 +630,23 @@ document.querySelectorAll('.flashcard-front, .flashcard-back').forEach(el => {
     el.closest('.card')?.addEventListener('click', function() {
         this.querySelector('.flashcard-front').classList.toggle('hidden');
         this.querySelector('.flashcard-back').classList.toggle('hidden');
+        trackEvent('flashcard_flip', 'quiz', 'flashcard');
     });
+});
+
+// Track quiz answer clicks
+document.querySelectorAll('[data-answer]').forEach(btn => {
+    btn.addEventListener('click', () => {
+        const correct = btn.dataset.correct === 'true';
+        trackEvent('quiz_answer', 'quiz', correct ? 'correct' : 'incorrect');
+    });
+});
+
+// Track page leave — send final tab time
+window.addEventListener('beforeunload', () => {
+    const timeSpent = Math.round((Date.now() - tabStartTime) / 1000);
+    trackEvent('tab_time', 'engagement', currentTab, timeSpent);
+    trackEvent('session_end', 'engagement', 'day_' + courseDay, Math.round((Date.now() - performance.timing.navigationStart) / 1000));
 });
 
 // Per-word audio playback
@@ -608,8 +659,10 @@ function playWord(index) {
     if (index < 0 || index >= wordCards.length) {
         isPlayingAll = false;
         document.getElementById('word-progress').textContent = 'Complete!';
+        trackEvent('words_complete', 'engagement', 'all_words_played');
         return;
     }
+    trackEvent('word_play', 'words', 'word_' + (index + 1), index + 1);
 
     // Pause all other media before playing this word
     document.querySelectorAll('audio, video').forEach(el => {
