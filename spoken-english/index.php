@@ -173,7 +173,7 @@ $fullAudioFile = "{$audioCdn}/english-50/{$lang}/day-{$dayNum}/day{$dayNum}_full
                     ['label' => 'Summary', 'file' => 'block_5_summary.mp3'],
                 ];
                 foreach ($sectionAudios as $sa): ?>
-                <button onclick="var v=document.getElementById('main-video');v.src='<?= $audioCdn ?>/english-50/<?= $lang ?>/day-<?= $dayNum ?>/<?= $sa['file'] ?>';v.play();"
+                <button onclick="pauseAllMedia();var v=document.getElementById('main-video');v.src='<?= $audioCdn ?>/english-50/<?= $lang ?>/day-<?= $dayNum ?>/<?= $sa['file'] ?>';v.play();"
                     class="flex items-center gap-2 w-full text-left px-3 py-2 rounded-lg mb-1 hover:bg-[var(--bg-elevated)]"
                     style="color: var(--text-body); border: none; background: none; cursor: pointer; font-size: 0.9rem;">
                     <span style="color: var(--accent);">&#9654;</span> <?= $sa['label'] ?>
@@ -555,9 +555,24 @@ $fullAudioFile = "{$audioCdn}/english-50/{$lang}/day-{$dayNum}/day{$dayNum}_full
 
 <!-- Tab switching JS -->
 <script>
+// Stop all audio/video on the page
+function pauseAllMedia() {
+    document.querySelectorAll('audio, video').forEach(el => {
+        el.pause();
+    });
+}
+
+// When any audio/video starts playing, pause all others
+document.addEventListener('play', function(e) {
+    document.querySelectorAll('audio, video').forEach(el => {
+        if (el !== e.target) el.pause();
+    });
+}, true);
+
 // Content tabs (Words, Situation, Summary, Quiz)
 document.querySelectorAll('[data-content-tab]').forEach(btn => {
     btn.addEventListener('click', () => {
+        pauseAllMedia();
         document.querySelectorAll('[data-content-tab]').forEach(b => b.classList.remove('active'));
         document.querySelectorAll('.content-panel').forEach(p => p.style.display = 'none');
         btn.classList.add('active');
@@ -595,6 +610,11 @@ function playWord(index) {
         document.getElementById('word-progress').textContent = 'Complete!';
         return;
     }
+
+    // Pause all other media before playing this word
+    document.querySelectorAll('audio, video').forEach(el => {
+        if (el !== wordPlayer) { el.pause(); }
+    });
 
     currentWordIndex = index;
     const card = wordCards[index];
