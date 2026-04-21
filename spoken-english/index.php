@@ -153,8 +153,8 @@ $fullAudioFile = "{$audioCdn}/english-50/{$lang}/day-{$dayNum}/day{$dayNum}_full
 
             <!-- Video player -->
             <div style="background: #000; border-radius: var(--radius-lg) var(--radius-lg) 0 0; overflow: hidden;">
-                <video id="main-video" controls preload="metadata" poster="/assets/images/courses/saavi-avatar.png"
-                       style="width: 100%; max-height: 450px; display: block; margin: 0 auto;">
+                <video id="main-video" controls preload="metadata"
+                       style="width: 100%; max-height: 450px; display: block; margin: 0 auto; background: #000;">
                     <source src="<?= htmlspecialchars($videoUrl) ?>" type="video/mp4">
                     Your browser does not support the video tag.
                 </video>
@@ -207,13 +207,18 @@ $fullAudioFile = "{$audioCdn}/english-50/{$lang}/day-{$dayNum}/day{$dayNum}_full
         <div>
             <!-- Audio (skip for teaching — words have individual audio) -->
             <?php
-            // Always use R2 CDN for block audio
+            // Known audio files per language (only show player if file exists on R2)
+            $audioAvailable = [
+                'hi' => ['listen_repeat' => true, 'situation' => true, 'summary' => true],
+                'mr' => ['listen_repeat' => true, 'situation' => true, 'summary' => false],
+            ];
             $blockAudioMap = [
                 'listen_repeat' => 'block_3_listen_repeat.mp3',
                 'situation' => 'block_4_situation.mp3',
                 'summary' => 'block_5_summary.mp3',
             ];
-            $blockAudioUrl = isset($blockAudioMap[$block['block_type']])
+            $hasAudio = ($audioAvailable[$lang][$block['block_type']] ?? false);
+            $blockAudioUrl = ($hasAudio && isset($blockAudioMap[$block['block_type']]))
                 ? "{$audioCdn}/english-50/{$lang}/day-{$dayNum}/" . $blockAudioMap[$block['block_type']]
                 : '';
             ?>
