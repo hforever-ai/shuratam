@@ -417,17 +417,17 @@ $fullAudioFile = "{$audioCdn}/english-50/{$lang}/day-{$dayNum}/day{$dayNum}_full
 
     <!-- Matching -->
     <div class="quiz-panel" id="quiz-matching" style="display:none;">
-        <p class="mb-4" style="color: var(--text-secondary);">Match English with Hindi:</p>
+        <p class="mb-4" style="color: var(--text-secondary);">Match English with <?= $lang === 'mr' ? 'Marathi' : 'Hindi' ?>:</p>
         <div class="grid grid-cols-2 gap-4">
             <div class="space-y-2">
             <?php foreach (($grouped['matching'] ?? []) as $pair): ?>
-                <div class="pill text-sm w-full justify-center"><?= htmlspecialchars($pair['english'] ?? $pair['left'] ?? '') ?></div>
+                <div class="pill text-sm w-full justify-center"><?= htmlspecialchars($pair['english'] ?? $pair['english_phrase'] ?? $pair['left'] ?? '') ?></div>
             <?php endforeach; ?>
             </div>
             <div class="space-y-2">
             <?php $shuffled = $grouped['matching'] ?? []; shuffle($shuffled); ?>
             <?php foreach ($shuffled as $pair): ?>
-                <div class="pill text-sm w-full justify-center"><?= htmlspecialchars($pair['hindi'] ?? $pair['right'] ?? '') ?></div>
+                <div class="pill text-sm w-full justify-center"><?= htmlspecialchars($pair['hindi'] ?? $pair['marathi_translation'] ?? $pair['right'] ?? '') ?></div>
             <?php endforeach; ?>
             </div>
         </div>
