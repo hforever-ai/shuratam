@@ -1,422 +1,1635 @@
 #!/usr/bin/env python3
 """
-Generate English Speaking Course day content using Gemini.
-System prompt: SAAVI character + teaching methodology + Rapidex book data + JSON structure
-User prompt: Day number + language + topic
+Shrutam English Speaking Course — Content Generator v4
+System prompt: scripts/system_prompt_v4.md (FINAL tested version)
+User prompt:   built per-day from DAY_TOPICS dict (all 50 days)
 
 Usage:
-  python3 generate_day_content.py --lang hi --day 1 --output /tmp/day1_hi.json
-  python3 generate_day_content.py --lang hi --day 2 --dry-run          # show prompts only
+  python3 scripts/generate_day_content.py --lang hi --day 1 --output /tmp/day1_hi.json
+  python3 scripts/generate_day_content.py --lang hi --day 1 --dry-run
 """
+
 import argparse, json, os, sys, urllib.request
 from pathlib import Path
 
+# ── API Key ─────────────────────────────────────────────────────────────────
 GEMINI_KEY = os.environ.get('GOOGLE_AI_API_KEY', '')
 if not GEMINI_KEY:
     keys_file = Path(__file__).resolve().parent.parent / 'safety' / 'keys.json'
     if keys_file.exists():
         GEMINI_KEY = json.loads(keys_file.read_text()).get('GOOGLE_AI_API_KEY', '')
 
-# ── Language configs ──
+# ── Language configs ─────────────────────────────────────────────────────────
 LANG_CONFIG = {
-    'hi': {
-        'name': 'Hindi',
-        'native_name': 'हिंदी',
-        'script': 'Devanagari',
-        'speaker_desc': 'Hindi speakers from India',
-        'saavi_style': 'Hinglish (Hindi + English mix), using respectful aap',
-        'example_city': 'Delhi',
-    },
-    'mr': {
-        'name': 'Marathi',
-        'native_name': 'मराठी',
-        'script': 'Devanagari',
-        'speaker_desc': 'Marathi speakers from Maharashtra',
-        'saavi_style': 'Marathish (Marathi + English mix), using respectful tumhi',
-        'example_city': 'Pune',
-    },
-    'te': {
-        'name': 'Telugu',
-        'native_name': 'తెలుగు',
-        'script': 'Telugu',
-        'speaker_desc': 'Telugu speakers from Andhra Pradesh and Telangana',
-        'saavi_style': 'Tenglish (Telugu + English mix), using respectful meeru',
-        'example_city': 'Hyderabad',
-    },
+    'hi': {'name': 'Hindi', 'native_name': 'हिंदी', 'address': 'aap',   'saavi_alias': 'Didi'},
+    'mr': {'name': 'Marathi','native_name': 'मराठी', 'address': 'tumhi', 'saavi_alias': 'Tai'},
+    'te': {'name': 'Telugu', 'native_name': 'తెలుగు','address': 'meeru', 'saavi_alias': 'Akka'},
 }
 
-# ── Day topics (50 days) ──
+# ── System prompt (loaded from file once) ────────────────────────────────────
+_SYSTEM_PROMPT_CACHE = None
+
+def get_system_prompt() -> str:
+    global _SYSTEM_PROMPT_CACHE
+    if _SYSTEM_PROMPT_CACHE:
+        return _SYSTEM_PROMPT_CACHE
+    # Primary: scripts/system_prompt_v4.md (checked into repo)
+    primary = Path(__file__).resolve().parent / 'system_prompt_v4.md'
+    if primary.exists():
+        _SYSTEM_PROMPT_CACHE = primary.read_text(encoding='utf-8')
+        return _SYSTEM_PROMPT_CACHE
+    # Fallback: Downloads folder
+    fallback = Path.home() / 'Downloads' / 'spoken english' / 'shrutam_system_prompt_v4_FINAL.md'
+    if fallback.exists():
+        _SYSTEM_PROMPT_CACHE = fallback.read_text(encoding='utf-8')
+        return _SYSTEM_PROMPT_CACHE
+    raise FileNotFoundError(
+        f"System prompt not found.\n"
+        f"Expected: {primary}\n"
+        f"Copy shrutam_system_prompt_v4_FINAL.md to scripts/system_prompt_v4.md"
+    )
+
+# ── 50-Day Topics ────────────────────────────────────────────────────────────
+# Each entry matches the tested batch prompts from shrutam_week*_batch_prompts.md
+# Fields: theme, words, scenario, struggles, connections
+# Optional: special (extra per-day instructions), repeat (spiral scenario info)
 DAY_TOPICS = {
-    1:  {'theme': 'Basic Greetings & Self-Introduction',
-         'words': ['Hello', 'Hi', 'Good morning', 'Good afternoon', 'Good evening',
-                   'Good night', 'Thank you', 'Please', 'Sorry', 'Excuse me',
-                   'My name is...', 'I am from...', 'I am a...', 'How are you?', 'Nice to meet you'],
-         'student_struggles': 'Students confuse Good night (farewell only) with Good evening (greeting). They say "myself Rahul" instead of "My name is Rahul". They forget Please/Thank you in daily use.',
-         'connections': 'Day 1 builds the foundation — every future day will use these greetings. Emphasize muscle memory through repetition.'},
-    2:  {'theme': 'Numbers, Days & Asking Simple Questions',
-         'words': ['One', 'Two', 'Three', 'Four', 'Five',
-                   'Today', 'Tomorrow', 'Yesterday', 'What', 'Where',
-                   'When', 'Why', 'How much', 'How many', 'Which one'],
-         'student_struggles': 'In Hindi/Marathi "kal" means both yesterday AND tomorrow — students confuse these. "How much" vs "How many" — much=uncountable (water/money), many=countable (books/people). Students say "what is your good name" (Indian English) — teach the natural form.',
-         'connections': 'Connect to Day 1: "How are you?" was a question — today we learn more question words. Numbers connect to Day 4 (ordering food, prices).'},
-    3:  {'theme': 'Family Members & Relationships',
-         'words': ['Mother', 'Father', 'Brother', 'Sister', 'Son',
-                   'Daughter', 'Husband', 'Wife', 'Friend', 'Uncle',
-                   'Aunt', 'Grandfather', 'Grandmother', 'Family', 'Children'],
-         'student_struggles': 'Indian languages have specific words for paternal uncle (chacha/kaka) vs maternal uncle (mama) — English just has "uncle". Same for aunt, grandfather. Students struggle because English has FEWER relationship words. Also elder brother vs younger brother — English does not differentiate.',
-         'connections': 'Connect to Day 1: "I am from..." + now "My father is from...". Use Day 2 numbers: "I have two brothers."'},
-    4:  {'theme': 'Food, Water & Ordering at a Restaurant',
-         'words': ['Water', 'Food', 'Rice', 'Bread', 'Tea',
-                   'Coffee', 'Milk', 'Sugar', 'I want...', 'I need...',
-                   'Can I have...', 'How much is this?', 'The bill please', 'Delicious', 'Spicy'],
-         'student_struggles': '"I want" sounds rude in English — teach "Can I have..." and "I would like..." as polite alternatives. Students directly translate "khana khana" as "eat food eat" — teach proper structure. "Bread" in India means "pav/toast" but in English it includes roti/chapati context.',
-         'connections': 'Use Day 2: "How much is this?" uses numbers. Use Day 1: "Please", "Thank you" when ordering. Practical scenario every student faces daily.'},
-    5:  {'theme': 'Directions & Getting Around',
-         'words': ['Left', 'Right', 'Straight', 'Stop', 'Go',
-                   'Near', 'Far', 'Here', 'There', 'Where is...?',
-                   'How do I get to...?', 'Bus', 'Train', 'Auto/Taxi', 'Market'],
-         'student_struggles': 'Students confuse "here" and "there" because in Hindi "yahan/wahan" usage is different. "How do I get to..." is a complex structure — break it down. Left/Right confusion is universal — use body anchors (writing hand = right).',
-         'connections': 'Use Day 2: "Where is...?" question word. Use Day 1: "Excuse me, where is the market?" combines greetings + directions.'},
-    6:  {'theme': 'Time, Clock & Daily Routine',
-         'words': ['Time', 'Clock', 'Morning', 'Afternoon', 'Evening',
-                   'Night', 'Early', 'Late', 'What time is it?', 'I wake up at...',
-                   'I go to...', 'I eat...', 'I sleep at...', 'Always', 'Never'],
-         'student_struggles': 'AM/PM concept confuses students. "I go to office" vs "I go to the office" — article usage. Present simple for routines vs present continuous for right now.',
-         'connections': 'Day 1 greetings are time-based. Day 4 food connects to "I eat breakfast at 8." Daily routine is the most practical English they will use.'},
-    7:  {'theme': 'Weather, Seasons & Small Talk',
-         'words': ['Hot', 'Cold', 'Rain', 'Sun', 'Wind',
-                   'Summer', 'Winter', 'Monsoon', 'How is the weather?', 'It is very...',
-                   'I like...', 'I don\'t like...', 'Beautiful', 'Terrible', 'Comfortable'],
-         'student_struggles': 'Weather small talk is crucial in English but alien to Indian students — we don\'t discuss weather casually. "It is raining" — why "it"? There is no subject! This is a key English pattern. Like/don\'t like — teach opinion expressing.',
-         'connections': 'Small talk combines Day 1 greetings + weather: "Good morning! Nice weather today." Builds social English beyond transactional.'},
+
+    # ══ WEEK 1: JAADU — Foundation + Grammar Bridge ══════════════════════════
+    1: {
+        'theme': 'Greetings & Self-Introduction — Pehla Kadam',
+        'words': [
+            'Hello', 'Hi', 'Good morning', 'Good afternoon', 'Good evening',
+            'Good night', 'Thank you', 'Please', 'Sorry', 'Excuse me',
+            'My name is', 'I am from', 'Nice to meet you', 'How are you', 'Fine',
+        ],
+        'scenario': '🏠 Home - Meeting a neighbor at door',
+        'struggles': (
+            '- "Myself Raj" instead of "I am Raj" / "My name is Raj"\n'
+            '- "What is your good name?" (Indian English) instead of "What is your name?"\n'
+            '- "Thanks" vs "Thank you" in formal settings\n'
+            '- Confusion between "Hi" (casual) and "Hello" (slightly formal)\n'
+            '- "Excuse me" vs "Sorry" confusion\n'
+            '- Saying "Welcome" instead of "You\'re welcome"'
+        ),
+        'connections': (
+            '- Previous Day: None (this is Day 1!)\n'
+            '- Next Day (Day 2): Present Tense / वर्तमान काल\n'
+            '- Foundation for all future lessons'
+        ),
+        'special': (
+            '- Previous day recap: Since Day 1, make it a WELCOME message from SAAVI '
+            'introducing herself and the 50-day journey\n'
+            '- Concept section (2-3 min): In Hindi we say "नमस्ते" for all times, '
+            'in English we have different greetings for different times\n'
+            '- Tab 3: Home scenario — someone visiting neighbor\'s house first time, '
+            '2 characters meeting at door, SAAVI explains each line\n'
+            '- CRITICAL PRONUNCIATION FIX: Use "आई" (AAI) for "I" pronunciation, NOT "माय" (MAY)\n'
+            '- Write SAAVI\'s TTS text in Devanagari script, NOT Hinglish'
+        ),
+    },
+
+    2: {
+        'theme': 'वर्तमान काल / Present Tense (curiosity jagana)',
+        'words': [
+            'am', 'is', 'are', 'eat', 'drink',
+            'go', 'come', 'sleep', 'work', 'study',
+            'read', 'write', 'speak', 'listen', 'play',
+        ],
+        'scenario': '🏠 Home - Daily activities discussion',
+        'struggles': (
+            '- Forgetting "is/are/am" between subject and verb\n'
+            '- "I am go" vs "I go" (Indian common mistake)\n'
+            '- "I am knowing" vs "I know"\n'
+            '- Confusion between present simple and continuous\n'
+            '- "He go" vs "He goes" (forgetting -s for he/she/it)'
+        ),
+        'connections': (
+            '- Previous Day (Day 1): Greetings & Self-Introduction (Hello, My name is, Thank you)\n'
+            '- Next Day (Day 3): संज्ञा/Noun with Family members'
+        ),
+        'special': (
+            '- Use "आई" for "I", SAAVI in Devanagari script\n'
+            '- Third person: "He goes" not "He go"'
+        ),
+    },
+
+    3: {
+        'theme': 'संज्ञा / Noun with Family Members',
+        'words': [
+            'Mother', 'Father', 'Brother', 'Sister', 'Son',
+            'Daughter', 'Uncle', 'Aunt', 'Grandfather', 'Grandmother',
+            'Friend', 'Cousin', 'Family', 'Parents', 'Wife',
+        ],
+        'scenario': '👨‍👩‍👧‍👦 Family gathering - Introducing family to visiting friend',
+        'struggles': (
+            '- "Cousin brother/sister" (Indian English) → just "cousin"\n'
+            '- "Real brother/sister" → "brother/sister" (blood relation)\n'
+            '- All Hindi uncles (chacha/mama/fufa) → "uncle" in English\n'
+            '- "Mother-father" → "parents" or "mom and dad"\n'
+            '- "Myself" instead of "my family"'
+        ),
+        'connections': (
+            '- Previous Day (Day 2): Present Tense (is/am/are + verbs)\n'
+            '- Next Day (Day 4): सर्वनाम / Pronoun (I, You, He, She)\n'
+            '- Use Day 2\'s is/are: "She IS my sister"'
+        ),
+        'special': (
+            '- Bridge Hindi grammar: "संज्ञा का मतलब Noun — वह शब्द जो किसी व्यक्ति, वस्तु, जगह या भाव का नाम बताए"\n'
+            '- Tab 3: Scene where friend visits, host introduces family, 3 characters\n'
+            '- Include "My family has..." pattern\n'
+            '- Use "आई" for "I", SAAVI in Devanagari script'
+        ),
+    },
+
+    4: {
+        'theme': 'सर्वनाम / Pronoun',
+        'words': [
+            'I', 'You', 'He', 'She', 'It',
+            'We', 'They', 'My', 'Your', 'His',
+            'Her', 'Our', 'Their', 'This', 'That',
+        ],
+        'scenario': '💬 Two friends talking about another friend (uses many pronouns)',
+        'struggles': (
+            '- He/She confusion (Hindi "woh" is gender-neutral, English is gendered)\n'
+            '- "Me and my friend" → "My friend and I"\n'
+            '- Using "She" for things instead of "It"\n'
+            '- "Their" vs "Them" vs "They" confusion\n'
+            '- "He bike" instead of "His bike"\n'
+            '- "This" vs "That" — pointing at distance'
+        ),
+        'connections': (
+            '- Previous Day (Day 3): Family members (Nouns)\n'
+            '- Next Day (Day 5): क्रिया / Verb\n'
+            '- Use pronouns with family: "She is my sister"'
+        ),
+        'special': (
+            '- Bridge: "सर्वनाम का मतलब Pronoun — वह शब्द जो संज्ञा की जगह आए"\n'
+            '- Critical: He (male) vs She (female) — Hindi mein dono "woh", English mein alag-alag\n'
+            '- "It" for objects/animals (not a person)\n'
+            '- Tab 3: 2-3 friends talking about other people, SAAVI explains He/She logic\n'
+            '- Use "आई" for "I"'
+        ),
+    },
+
+    5: {
+        'theme': 'क्रिया / Verb + Daily Actions',
+        'words': [
+            'Run', 'Walk', 'Sit', 'Stand', 'Open',
+            'Close', 'Give', 'Take', 'Make', 'Do',
+            'Help', 'Tell', 'Ask', 'Answer', 'Wait',
+        ],
+        'scenario': '🌅 Morning routine - Describing daily activities',
+        'struggles': (
+            '- "I am sit" instead of "I sit" or "I am sitting"\n'
+            '- Confusing "Give" and "Take" (dena/lena)\n'
+            '- "Make" vs "Do" — Hindi "karna" for both\n'
+            '- "Ask" vs "Tell" — "You tell me" vs "Tell me"\n'
+            '- "Answer me" vs "Reply me"\n'
+            '- "Wait for" — forgetting "for"'
+        ),
+        'connections': (
+            '- Previous Day (Day 4): Pronouns\n'
+            '- Next Day (Day 6): विशेषण / Adjective\n'
+            '- Combine: "I run", "She walks", "They help"'
+        ),
+        'special': (
+            '- Bridge: "क्रिया का मतलब Verb — वह शब्द जो काम (action) बताए"\n'
+            '- Third person singular adds \'s\': I run → He runs\n'
+            '- MAKE = create (make food, make a plan)\n'
+            '- DO = general (do work, do homework)\n'
+            '- Common: ❌ "Give me a pen" vs ✅ "Please give me a pen"\n'
+            '- Tab 3: Morning routine, 2 family members, one describes, other asks\n'
+            '- Each verb shown with "I ___" and "He/She ___s"\n'
+            '- Use "आई" for "I"'
+        ),
+    },
+
+    6: {
+        'theme': 'विशेषण / Adjective',
+        'words': [
+            'Big', 'Small', 'Good', 'Bad', 'New',
+            'Old', 'Hot', 'Cold', 'Happy', 'Sad',
+            'Beautiful', 'Ugly', 'Fast', 'Slow', 'Easy',
+        ],
+        'scenario': '🏠 Describing home to a friend visiting first time',
+        'struggles': (
+            '- "House big" (wrong) vs "Big house" (right)\n'
+            '- "More better" — should just be "better"\n'
+            '- "Very much good" — should be "very good"\n'
+            '- Beautiful/Pretty/Handsome confusion\n'
+            '- "Sad" vs "Bad" pronunciation'
+        ),
+        'connections': (
+            '- Previous Day (Day 5): Verbs\n'
+            '- Next Day (Day 7): Practice + Weather\n'
+            '- Combine with Day 3 nouns: "Big family"'
+        ),
+        'special': (
+            '- Bridge: "विशेषण का मतलब Adjective — वह शब्द जो किसी के बारे में बताए"\n'
+            '- Critical rule: Adjective + Noun (Big house, NOT House big)\n'
+            '- Opposites pairing: Big-Small, Good-Bad, New-Old, Hot-Cold, Happy-Sad\n'
+            '- ❌ "My house very big" vs ✅ "My house is very big"\n'
+            '- Tab 3: Friend visits home, host shows around, 2-3 characters\n'
+            '- Use "आई" for "I"'
+        ),
+    },
+
+    7: {
+        'theme': 'Week 1 Practice + Weather & Small Talk (Revision Day)',
+        'words': [
+            'Sunny', 'Rainy', 'Cloudy', 'Windy', 'Hot',
+            'Cold', 'Pleasant', 'Humid', 'Stormy', 'Cool',
+            'Warm', 'Foggy', 'Snowy', 'Breezy', 'Clear',
+        ],
+        'scenario': '☕ Meeting friend at park/cafe - Small talk & weather',
+        'struggles': (
+            '- "It is raining" vs "It rains"\n'
+            '- "Too hot" vs "Very hot" (Indians overuse "too")\n'
+            '- "Weather is" vs "The weather is"\n'
+            '- "In summer" not "On summer"\n'
+            '- Small talk phrases'
+        ),
+        'connections': (
+            '- Previous Days: Complete Week 1 review\n'
+            '- Next Day (Day 8): BE Verb + Office scenario\n'
+            '- This is REVISION day — combine everything!'
+        ),
+        'special': (
+            '- SPECIAL: Week 1 REVIEW day\n'
+            '- SAAVI intro celebrates Week 1 completion\n'
+            '- Concept: "Small talk — casual conversations to start with strangers"\n'
+            '- Use ALL Week 1 learnings: Pronouns "It is hot today", Adjectives "Beautiful weather", '
+            'Verbs "I feel cold", Present tense "The sun shines"\n'
+            '- ❌ "Weather is very too hot" vs ✅ "The weather is very hot"\n'
+            '- Tab 3: Two friends at park/cafe casual chat, start with "Hi" (Day 1), '
+            'ask family (Day 3), weather (today), describe (Day 6), 2 friends + maybe waiter\n'
+            '- Summary celebrates Week 1 achievement\n'
+            '- Preview Week 2 (Mega-verbs)\n'
+            '- Use "आई" for "I"'
+        ),
+    },
+
+    # ══ WEEK 2: MAZA — Essential Mega-Verbs ══════════════════════════════════
+    8: {
+        'theme': 'BE Verb (am/is/are/was/were/be/been/being) — Complete Mastery',
+        'words': [
+            'am', 'is', 'are', 'was', 'were',
+            'be', 'been', 'being', 'am not', "isn't",
+            "aren't", "wasn't", "weren't", 'to be', 'been (past perfect)',
+        ],
+        'scenario': '💼 Office first day - Self-introduction to team',
+        'struggles': (
+            '- "I am going" vs "I go" (overusing BE verb)\n'
+            '- Past tense: "was" vs "were" confusion\n'
+            '- "I am engineer" vs "I am AN engineer" (articles)\n'
+            '- Contractions: I\'m, You\'re, He\'s\n'
+            '- Questions: "Am I?", "Is he?", "Are they?"'
+        ),
+        'connections': (
+            '- Previous Day (Day 7): Week 1 Review + Weather\n'
+            '- Next Day (Day 9): HAVE - Possessions\n'
+            '- First day of Week 2 (MAZA theme)'
+        ),
+        'special': (
+            '- Mega-word approach: ALL forms of BE at once\n'
+            '- Present: I am, You are, He/She/It is, We/They are\n'
+            '- Past: I was, You were, He/She/It was, We/They were\n'
+            '- Contractions table: I\'m, You\'re, He\'s, She\'s, It\'s, We\'re, They\'re\n'
+            '- ❌ "I am engineer" vs ✅ "I am AN engineer"\n'
+            '- ❌ "They is my friends" vs ✅ "They ARE my friends"\n'
+            '- Tab 3: New employee + HR + Team member'
+        ),
+    },
+
+    9: {
+        'theme': 'HAVE (have/has/had) — All Uses',
+        'words': [
+            'have', 'has', 'had', 'having', "haven't",
+            "hasn't", "hadn't", 'have got', 'has got', 'had got',
+            'I have', 'you have', 'he has', 'she has', 'we have',
+        ],
+        'scenario': '💰 Talking about belongings and daily possessions',
+        'struggles': (
+            '- "I have car" vs "I have A car" (articles missing)\n'
+            '- "He have" vs "He HAS" (third person)\n'
+            '- "I am having" for permanent possession (wrong)\n'
+            '- "I have headache" vs "I have A headache"\n'
+            '- HAVE GOT (British English) usage'
+        ),
+        'connections': (
+            '- Previous Day (Day 8): BE Verb\n'
+            '- Next Day (Day 10): HAVE TO - Obligations\n'
+            '- Use BE + HAVE: "I am tall and I have black hair"'
+        ),
+        'special': (
+            '- HAVE = Possession (I have a car)\n'
+            '- HAVE = Experience (I have a headache)\n'
+            '- HAVE = Family (I have 2 brothers)\n'
+            '- HAVE + past participle = Perfect tense (brief intro)\n'
+            '- Critical: He/She/It = HAS (not have)\n'
+            '- ❌ "I am having 2 brothers" vs ✅ "I have 2 brothers"\n'
+            '- ❌ "She have a bike" vs ✅ "She HAS a bike"\n'
+            '- Tab 3: 2-3 friends discussing what they own'
+        ),
+    },
+
+    10: {
+        'theme': 'HAVE TO (Obligation) — Indian Confusion Fix',
+        'words': [
+            'have to', 'has to', 'had to', "don't have to", "doesn't have to",
+            "didn't have to", 'must', 'need to', 'should', 'I have to go',
+            'I have to do', 'I have to work', 'have to eat', 'have to sleep', 'have to study',
+        ],
+        'scenario': '📝 Busy schedule - Explaining what one must do today',
+        'struggles': (
+            '- BIGGEST Indian mistake: "Main jaana hoon" → "I have to go" (not "I am going")\n'
+            '- "I have to go" vs "I must go" (different intensity)\n'
+            '- "Don\'t have to" vs "Must not" (big difference!)\n'
+            '- "Should" vs "Must" vs "Have to" confusion'
+        ),
+        'connections': (
+            '- Previous Day (Day 9): HAVE (Possession)\n'
+            '- Next Day (Day 11): DO/DOES/DID\n'
+            '- This day fixes THE BIGGEST Indian English mistake'
+        ),
+        'special': (
+            '- THIS DAY IS CRITICAL — Fixes Hindi direct translation mistakes\n'
+            '- "Main [kaam] karna hai" = "I have to [work]"\n'
+            '- Have to vs Must: HAVE TO = External obligation, MUST = Personal strong need\n'
+            '- Tab 3: Person explaining busy day to friend, SAAVI emphasizes Hindi-English bridge'
+        ),
+    },
+
+    11: {
+        'theme': 'DO / DOES / DID (Questions & Negations)',
+        'words': [
+            'do', 'does', 'did', "don't", "doesn't",
+            "didn't", 'Do you', 'Does he', 'Does she', 'Did you',
+            'I do', 'you do', 'he does', 'she does', 'we do',
+        ],
+        'scenario': '🤔 Friends asking each other questions',
+        'struggles': (
+            '- "I not go" instead of "I DON\'T go"\n'
+            '- "He no eat" instead of "He DOESN\'T eat"\n'
+            '- Asking questions: "You go office?" vs "DO you go to office?"\n'
+            '- "Did you went?" (double past — WRONG) vs "Did you GO?"\n'
+            '- Confusing DO (action verb) vs DO (helper verb)'
+        ),
+        'connections': (
+            '- Previous Day (Day 10): HAVE TO\n'
+            '- Next Day (Day 12): GO + Hospital BASIC\n'
+            '- Critical for questions and negations'
+        ),
+        'special': (
+            '- QUESTIONS: Do + subject + verb?\n'
+            '- NEGATIVE: Subject + don\'t/doesn\'t/didn\'t + verb\n'
+            '- IMPORTANT: After do/does/did → verb stays BASE form\n'
+            '- ✅ "Did he GO?" (not "Did he went?")\n'
+            '- ❌ "You are going office?" vs ✅ "Do you go to office?"\n'
+            '- Tab 3: Friends mix of Do/Does/Did questions'
+        ),
+    },
+
+    12: {
+        'theme': 'GO / WENT / GONE (all forms) + Hospital BASIC',
+        'words': [
+            'go', 'goes', 'went', 'gone', 'going',
+            'go to', 'go for', 'go with', 'go home', "Let's go",
+            'I go', 'he goes', 'she goes', 'they go', 'we go',
+        ],
+        'scenario': '🏥 First Hospital Visit (BASIC) - Feeling sick',
+        'struggles': (
+            '- Past tense: "went" not "goed" (irregular verb!)\n'
+            '- "Gone" (past participle) vs "Went" (simple past)\n'
+            '- "He go" vs "He goes" (third person s)\n'
+            '- "Go to market" vs "Go market" (preposition)\n'
+            '- "Let\'s go home" (no "to" with home)'
+        ),
+        'connections': (
+            '- Previous Day (Day 11): DO/DOES/DID (for questions)\n'
+            '- Next Day (Day 13): CAN/COULD + Restaurant\n'
+            '- FIRST SCENARIO REPEAT: Hospital (will come again Day 17, 24, 30)'
+        ),
+        'special': (
+            '- Mega-verb approach: All forms of GO\n'
+            '- Irregular past: GO → WENT → GONE (memorize!)\n'
+            '- "Go TO [place]" (most places), "Go HOME" (no preposition)\n'
+            '- SCENARIO REPEAT — difficulty_level: "basic"\n'
+            '- upcoming_advanced_versions: ["Day 17 - Intermediate", "Day 24 - Advanced", "Day 30 - Master"]\n'
+            '- Tab 3: BASIC hospital — Patient + Doctor + Receptionist\n'
+            '- Simple phrases: "I am sick", "I have a headache", "Please help me"\n'
+            '- Don\'t use complex medical terms (save for later days)'
+        ),
+    },
+
+    13: {
+        'theme': 'CAN vs COULD (Politeness Modal) + Restaurant BASIC',
+        'words': [
+            'can', 'could', "can't", "couldn't", 'Can I',
+            'Could I', 'Can you', 'Could you', "Can't do", 'Could do',
+            'Cannot', 'able to', 'Yes I can', "No I can't", 'Maybe',
+        ],
+        'scenario': '🍛 Restaurant - Ordering food for first time (BASIC)',
+        'struggles': (
+            '- "Can I" (casual) vs "Could I" (polite) — Tu vs Aap\n'
+            '- "Can you help" vs "Could you help" — familiarity\n'
+            '- Using "Can\'t" in written formal (should be "cannot")\n'
+            '- "I am can" (wrong) vs "I can" (right)'
+        ),
+        'connections': (
+            '- Previous Day (Day 12): GO + Hospital\n'
+            '- Next Day (Day 14): Practice + Auto\n'
+            '- FIRST RESTAURANT SCENARIO: Will repeat Day 18, 26'
+        ),
+        'special': (
+            '- "Tu vs Aap" test: CAN = Informal/familiar, COULD = Polite/respectful\n'
+            '- CAN = Ability, CAN = Permission casual, COULD = Polite request, COULD = Past ability\n'
+            '- SCENARIO REPEAT — difficulty_level: "basic"\n'
+            '- upcoming_advanced_versions: ["Day 18 - Intermediate", "Day 26 - Advanced"]\n'
+            '- Tab 3: Customer + Waiter + Manager, simple phrases\n'
+            '- "Can I have the menu please?", "Could you bring water?", "I would like tea"'
+        ),
+    },
+
+    14: {
+        'theme': 'Week 2 Practice Day + Auto/Taxi Scenario',
+        'words': [
+            'Stop', 'Go', 'Left', 'Right', 'Straight',
+            'Here', 'There', 'Near', 'Far', 'Wait',
+            'Hurry', 'Slow down', 'Please stop', 'How much', 'Thank you',
+        ],
+        'scenario': '🚕 In an Auto - Giving directions (BASIC)',
+        'struggles': (
+            '- "Straight go" vs "Go straight" (word order)\n'
+            '- "Left side" vs just "Left"\n'
+            '- "How much rupees?" vs "How much?"\n'
+            '- "Hurry up" vs "Hurry"'
+        ),
+        'connections': (
+            '- Week 2 complete: BE, HAVE, HAVE TO, DO, GO, CAN/COULD\n'
+            '- Next Day (Day 15): GET Part 1\n'
+            '- FIRST AUTO SCENARIO: Will repeat Day 20'
+        ),
+        'special': (
+            '- Week 2 Review focus, SAAVI celebrates Week 2 completion\n'
+            '- Combine BE: "It is far", HAVE: "I have to go to market", '
+            'DO: "Do you know the way?", GO: "Go straight", CAN: "Can you stop here?"\n'
+            '- SCENARIO REPEAT — difficulty_level: "basic"\n'
+            '- upcoming_advanced_versions: ["Day 20 - Intermediate"]\n'
+            '- Tab 3: Passenger + Auto Driver, simple: "Please go straight", "Turn left", "How much?"\n'
+            '- Preview Week 3 (More Mega-verbs)'
+        ),
+    },
+
+    # ══ WEEK 3: MEHNAT — More Mega-Verbs ═════════════════════════════════════
+    15: {
+        'theme': 'GET — Part 1 (Receive, Buy, Become, Fetch)',
+        'words': [
+            'get', 'gets', 'got', 'getting', 'get a',
+            'get it', 'get this', 'get that', 'I get', 'he gets',
+            'they get', 'we get', 'get ready', 'get up', 'get home',
+        ],
+        'scenario': '🏪 Market shopping for daily needs',
+        'struggles': (
+            '- GET has 50+ meanings — overwhelming\n'
+            '- "Get" vs "Bring" vs "Take" confusion\n'
+            '- "Get up" (wake up) vs "Stand up"\n'
+            '- "I get the bus" (catch/board) — not obvious\n'
+            '- "Get it?" (understand) — idiomatic'
+        ),
+        'connections': (
+            '- Previous Day (Day 14): Week 2 Practice\n'
+            '- Next Day (Day 16): GET Part 2 + Bus\n'
+            '- First day of Week 3 (MEHNAT)'
+        ),
+        'special': (
+            '- Part 1: RECEIVE "I got a gift", BUY/FETCH "Get bread from shop", '
+            'BECOME "Getting angry", ARRIVE "Get home by 8", UNDERSTAND "Got it?" (casual)\n'
+            '- Tab 3: Customer + Shopkeeper + Helper\n'
+            '- "Can I GET 2 kg potatoes?", "GET me some onions please"'
+        ),
+    },
+
+    16: {
+        'theme': 'GET — Part 2 (Advanced uses) + Bus Travel',
+        'words': [
+            'get on', 'get off', 'get in', 'get out', 'get better',
+            'get worse', 'get tired', 'get along', 'get together', 'get back',
+            'get lost', 'get done', 'get hurt', 'get sick', 'get well',
+        ],
+        'scenario': '🚍 City Bus - Asking about route (BASIC)',
+        'struggles': (
+            '- "Get on the bus" (board) vs "Get in the car" (different prepositions)\n'
+            '- "Get off" (disembark) vs "Get down" (wrong)\n'
+            '- "Getting tired" vs "Being tired"\n'
+            '- "Get better" (health) vs "Become better"'
+        ),
+        'connections': (
+            '- Previous Day (Day 15): GET Part 1\n'
+            '- Next Day (Day 17): GOT + HAVE GOT + Hospital INTER\n'
+            '- FIRST BUS SCENARIO: Will repeat Day 34'
+        ),
+        'special': (
+            '- Phrasal: GET ON/OFF (bus, train, plane), GET IN/OUT (car, taxi)\n'
+            '- Health: "Get better" / "Get worse"\n'
+            '- SCENARIO REPEAT — difficulty_level: "basic"\n'
+            '- upcoming_advanced_versions: ["Day 34 - Advanced"]\n'
+            '- Tab 3: Passenger + Conductor + Fellow passenger\n'
+            '- "Does this bus GO to station?", "I want to GET OFF at next stop"'
+        ),
+    },
+
+    17: {
+        'theme': 'GOT + HAVE GOT (British/American difference)',
+        'words': [
+            'got', 'have got', 'has got', 'had got', "I've got",
+            "she's got", "he's got", "they've got", 'got a', 'have got a',
+            'got the', 'have got to', 'I got it', 'she got', 'we got',
+        ],
+        'scenario': '🏥 Hospital - Detailed Doctor Consultation (INTERMEDIATE)',
+        'struggles': (
+            '- HAVE GOT vs HAVE (same meaning, different feel)\n'
+            '- "I have got" (British) vs "I have" (American)\n'
+            '- Contractions: I\'ve got, She\'s got\n'
+            '- "Got to" = "Have to" (informal)'
+        ),
+        'connections': (
+            '- Previous Day (Day 16): GET Part 2 + Bus\n'
+            '- Next Day (Day 18): MAKE/TAKE + Restaurant INTER\n'
+            '- HOSPITAL REPEAT: Was BASIC on Day 12, now INTERMEDIATE'
+        ),
+        'special': (
+            '- HAVE GOT = HAVE (same meaning), "I have got a headache" = "I have a headache"\n'
+            '- Contractions: I\'ve, You\'ve, He\'s, She\'s, They\'ve, We\'ve\n'
+            '- SCENARIO REPEAT: is_repeat: true\n'
+            '- previous_encounters: ["Day 12 - Basic"]\n'
+            '- upcoming_advanced_versions: ["Day 24 - Advanced", "Day 30 - Master"]\n'
+            '- difficulty_level: "intermediate"\n'
+            '- "Doctor, I\'ve got a headache since yesterday", "Have you got any allergies?"\n'
+            '- SAAVI references Day 12: "Remember Day 12? Hum basic seekhe the — aaj thoda aur deep jaenge"'
+        ),
+    },
+
+    18: {
+        'theme': 'MAKE vs TAKE (Most confusing pair for Indians)',
+        'words': [
+            'make', 'makes', 'made', 'making', 'take',
+            'takes', 'took', 'taking', 'make food', 'make plans',
+            'make time', 'take bus', 'take time', 'take care', 'take away',
+        ],
+        'scenario': '🍛 Restaurant - Full meal experience (INTERMEDIATE)',
+        'struggles': (
+            '- MAJOR confusion: Hindi "karna" = both Make AND Do\n'
+            '- "Make photo" vs "Take a photo" (Indians say "make")\n'
+            '- "Take food" vs "Eat food" (wrong direct translation)\n'
+            '- "Make bath" vs "Take a bath"\n'
+            '- "Make time for me" (idiomatic)'
+        ),
+        'connections': (
+            '- Previous Day (Day 17): GOT + Hospital INTER\n'
+            '- Next Day (Day 19): COME/SEE + Cinema\n'
+            '- RESTAURANT REPEAT: Was BASIC on Day 13, now INTERMEDIATE'
+        ),
+        'special': (
+            '- MAKE = Create/Produce (make food, make plans, make noise)\n'
+            '- TAKE = Receive/Remove (take a photo, take medicine, take bus)\n'
+            '- ❌ "Make photo" → ✅ "Take a photo"\n'
+            '- ❌ "Make bath" → ✅ "Take a bath"\n'
+            '- SCENARIO REPEAT: is_repeat: true\n'
+            '- previous_encounters: ["Day 13 - Basic"]\n'
+            '- upcoming_advanced_versions: ["Day 26 - Advanced"]\n'
+            '- difficulty_level: "intermediate"\n'
+            '- Tab 3: "Can you MAKE it less spicy?", "I\'ll TAKE the chicken curry"'
+        ),
+    },
+
+    19: {
+        'theme': 'COME / SEE (Motion & Perception)',
+        'words': [
+            'come', 'comes', 'came', 'coming', 'see',
+            'sees', 'saw', 'seen', 'come to', 'come with',
+            'come back', 'see you', 'see movie', 'I see', 'come here',
+        ],
+        'scenario': '🎬 At cinema hall - Meeting friends for a movie',
+        'struggles': (
+            '- COME (irregular): come → came → come\n'
+            '- SEE (irregular): see → saw → seen\n'
+            '- "I saw him yesterday" vs "I have seen him"\n'
+            '- "Come here" vs "Come to here" (wrong)\n'
+            '- "I see" = "I understand" (idiomatic)'
+        ),
+        'connections': (
+            '- Previous Day (Day 18): MAKE/TAKE\n'
+            '- Next Day (Day 20): WILL/WOULD + Auto INTER\n'
+            '- Cinema scenario (light topic before grammar)'
+        ),
+        'special': (
+            '- COME back = return, COME with = join, SEE you = meet later, I see = I understand\n'
+            '- Tab 3: 2 friends + ticket counter person\n'
+            '- "Did you COME by bus?", "Have you SEEN this movie before?", "I SAW the trailer yesterday"'
+        ),
+    },
+
+    20: {
+        'theme': 'WILL vs WOULD (Future + Politeness)',
+        'words': [
+            'will', 'would', "won't", "wouldn't", 'I will',
+            'you will', 'he will', 'she will', 'I would', 'you would',
+            'Would you', 'Will you', "I'll", "you'll", "we'll",
+        ],
+        'scenario': '🚕 Auto - Complex negotiation (INTERMEDIATE)',
+        'struggles': (
+            '- WILL (future) vs WOULD (polite/hypothetical)\n'
+            '- "Will you help?" vs "Would you help?" (polite level)\n'
+            '- "I would like" (polite want) vs "I want" (direct)\n'
+            '- Contractions: I\'ll, you\'ll, he\'ll'
+        ),
+        'connections': (
+            '- Previous Day (Day 19): COME/SEE\n'
+            '- Next Day (Day 21): Shopping Practice\n'
+            '- AUTO REPEAT: Was BASIC on Day 14, now INTERMEDIATE'
+        ),
+        'special': (
+            '- WILL = Future action, WILL = Strong intention\n'
+            '- WOULD = Polite request, WOULD = Hypothetical, "Would like" = Polite want\n'
+            '- SCENARIO REPEAT: is_repeat: true\n'
+            '- previous_encounters: ["Day 14 - Basic"]\n'
+            '- difficulty_level: "intermediate"\n'
+            '- Tab 3: Passenger + Auto Driver + Another passenger\n'
+            '- "Would you go to airport?", "I WOULD like to go by highway", "Will you wait 5 minutes?"'
+        ),
+    },
+
+    21: {
+        'theme': 'Week 3 Practice - Shopping Mall Experience',
+        'words': [
+            'price', 'cost', 'cheap', 'expensive', 'discount',
+            'sale', 'pay', 'buy', 'sell', 'size',
+            'color', 'trial room', 'bill', 'receipt', 'exchange',
+        ],
+        'scenario': '🛒 Shopping mall - Multiple interactions',
+        'struggles': (
+            '- "How much is the cost?" (redundant) vs "How much?"\n'
+            '- "Discount kardo" → "Can you give a discount?"\n'
+            '- "Price kya hai?" → "What\'s the price?"\n'
+            '- "Trial karna" → "Try it on" / "Use trial room"'
+        ),
+        'connections': (
+            '- Week 3 complete: GET, MAKE/TAKE, COME/SEE, WILL/WOULD\n'
+            '- Next Day (Day 22): Simple Past + Phone BASIC'
+        ),
+        'special': (
+            '- Week 3 Review celebration\n'
+            '- Combine all Week 3 verbs: GET "Can I get this shirt?", MAKE/TAKE "I\'ll take this", '
+            'COME/SEE "Come see this sale", WILL/WOULD "Would you give discount?"\n'
+            '- Tab 3: Customer + Sales person + Cashier, full shopping flow\n'
+            '- Preview Week 4 (Tenses Deep)'
+        ),
+    },
+
+    # ══ WEEK 4: MASTER — Tenses Deep ══════════════════════════════════════════
+    22: {
+        'theme': 'Simple Past Tense (भूतकाल) - Yesterday & Before',
+        'words': [
+            'was', 'were', 'went', 'came', 'did',
+            'ate', 'drank', 'slept', 'worked', 'played',
+            'saw', 'got', 'made', 'took', 'had',
+        ],
+        'scenario': '📱 Phone - Customer Service Call (BASIC)',
+        'struggles': (
+            '- Irregular past forms: go→went, eat→ate, see→saw\n'
+            '- "I eated" (wrong) vs "I ate"\n'
+            '- "Yesterday I go" (wrong) vs "Yesterday I went"\n'
+            '- Double past: "I did went" (wrong)'
+        ),
+        'connections': (
+            '- Previous: Week 3 Practice\n'
+            '- Next Day (Day 23): Past Continuous + Bank\n'
+            '- FIRST PHONE SCENARIO: Will repeat Day 29'
+        ),
+        'special': (
+            '- Bridge: "भूतकाल = Past Tense — kal jo hua woh"\n'
+            '- Irregular verbs: go→went, eat→ate, drink→drank, see→saw, come→came, do→did\n'
+            '- Regular verbs: add -ed (work→worked, play→played)\n'
+            '- SCENARIO REPEAT — difficulty_level: "basic"\n'
+            '- upcoming_advanced_versions: ["Day 29 - Advanced"]\n'
+            '- Tab 3: Customer + Customer Service Rep\n'
+            '- "I ordered a product yesterday", "It didn\'t arrive", "Did you receive my complaint?"'
+        ),
+    },
+
+    23: {
+        'theme': 'Past Continuous (was/were + verb-ing)',
+        'words': [
+            'was going', 'was eating', 'was sleeping', 'were working', 'were playing',
+            'were talking', 'was coming', 'was making', 'was writing', 'was reading',
+            'was speaking', 'was listening', 'was watching', 'was studying', 'was waiting',
+        ],
+        'scenario': '🏦 Bank - Opening account (BASIC)',
+        'struggles': (
+            '- was vs were selection\n'
+            '- "I was go" vs "I was going"\n'
+            '- When to use Past Simple vs Past Continuous\n'
+            '- "While I was ___, he ___" structure'
+        ),
+        'connections': (
+            '- Previous Day (Day 22): Simple Past\n'
+            '- Next Day (Day 24): Past Perfect + Hospital ADV\n'
+            '- FIRST BANK SCENARIO: Will repeat Day 27'
+        ),
+        'special': (
+            '- Structure: was/were + verb+ing\n'
+            '- "At 8 PM, I was eating dinner", "While I was sleeping, the phone rang"\n'
+            '- Past Simple vs Past Continuous: "I ate" = completed, "I was eating" = in progress\n'
+            '- SCENARIO REPEAT — difficulty_level: "basic"\n'
+            '- upcoming_advanced_versions: ["Day 27 - Advanced"]\n'
+            '- Tab 3: Customer + Bank officer + Manager\n'
+            '- "I was thinking to open an account", "I was waiting for 30 minutes"'
+        ),
+    },
+
+    24: {
+        'theme': 'Past Perfect (had + past participle)',
+        'words': [
+            'had gone', 'had eaten', 'had seen', 'had come', 'had done',
+            'had made', 'had taken', 'had given', 'had started', 'had finished',
+            'had arrived', 'had left', 'had worked', 'had lived', 'had forgotten',
+        ],
+        'scenario': '🏥 Hospital - Emergency/Complex case (ADVANCED)',
+        'struggles': (
+            '- When to use Past Perfect vs Simple Past\n'
+            '- "Had + V3" structure (V3 = past participle)\n'
+            '- "I had went" (wrong) vs "I had gone"\n'
+            '- Sequence of past events'
+        ),
+        'connections': (
+            '- Previous Day (Day 23): Past Continuous\n'
+            '- Next Day (Day 25): Future + Airport BASIC\n'
+            '- HOSPITAL REPEAT: Basic Day 12, Inter Day 17, now ADVANCED'
+        ),
+        'special': (
+            '- Past Perfect = Past before Past\n'
+            '- "When I arrived, she had already left"\n'
+            '- Irregular V3: go→gone, eat→eaten, see→seen, do→done\n'
+            '- SCENARIO REPEAT: is_repeat: true\n'
+            '- previous_encounters: ["Day 12 - Basic", "Day 17 - Intermediate"]\n'
+            '- upcoming_advanced_versions: ["Day 30 - Master"]\n'
+            '- difficulty_level: "advanced"\n'
+            '- Tab 3: Patient + Specialist Doctor + Nurse\n'
+            '- SAAVI references previous hospital visits'
+        ),
+    },
+
+    25: {
+        'theme': 'Simple Future (will + verb, going to + verb)',
+        'words': [
+            'will go', 'will eat', 'will come', 'going to go', 'going to eat',
+            'will be', 'will have', 'will do', "I'll", "you'll",
+            "he'll", "won't", 'shall', 'tomorrow', 'next week',
+        ],
+        'scenario': '✈️ Airport - Check-in for domestic flight (BASIC)',
+        'struggles': (
+            '- "Will" vs "Going to" (nuance difference)\n'
+            '- "I am going" (present continuous) vs "I will go"\n'
+            '- "Will" for decisions made NOW\n'
+            '- "Going to" for pre-planned actions'
+        ),
+        'connections': (
+            '- Previous Day (Day 24): Past Perfect + Hospital ADV\n'
+            '- Next Day (Day 26): Future Continuous + Restaurant ADV\n'
+            '- FIRST AIRPORT SCENARIO: Will repeat Day 32, 46'
+        ),
+        'special': (
+            '- Bridge: "भविष्यत् काल = Future Tense"\n'
+            '- WILL: "I will go" (decision now), GOING TO: "I am going to go" (planned)\n'
+            '- Contractions: I\'ll, you\'ll, he\'ll, she\'ll, we\'ll, they\'ll\n'
+            '- SCENARIO REPEAT — difficulty_level: "basic"\n'
+            '- upcoming_advanced_versions: ["Day 32 - Advanced", "Day 46 - Master"]\n'
+            '- Tab 3: Passenger + Airline staff + Security, simple future usage'
+        ),
+    },
+
+    26: {
+        'theme': 'Future Continuous (will be + verb-ing)',
+        'words': [
+            'will be going', 'will be eating', 'will be waiting', 'will be coming', 'will be working',
+            'will be staying', 'will be meeting', 'will be doing', 'will be having', 'will be watching',
+            'will be traveling', 'will be studying', 'will be calling', 'will be arriving', 'will be leaving',
+        ],
+        'scenario': '🍛 Restaurant - Complaint about order (ADVANCED)',
+        'struggles': (
+            '- "Will be + V-ing" structure\n'
+            '- When to use Simple Future vs Future Continuous\n'
+            '- Polite future with continuous'
+        ),
+        'connections': (
+            '- Previous Day (Day 25): Simple Future\n'
+            '- Next Day (Day 27): SHOULD/MUST + Bank ADV\n'
+            '- RESTAURANT REPEAT: Basic Day 13, Inter Day 18, now ADVANCED'
+        ),
+        'special': (
+            '- Future Continuous = Ongoing future action\n'
+            '- "This time tomorrow, I will be flying to Delhi"\n'
+            '- SCENARIO REPEAT: is_repeat: true\n'
+            '- previous_encounters: ["Day 13 - Basic", "Day 18 - Intermediate"]\n'
+            '- difficulty_level: "advanced"\n'
+            '- Tab 3: Customer + Waiter + Manager + Chef\n'
+            '- "We will be leaving if the food doesn\'t come", "Will you be taking this off the bill?"'
+        ),
+    },
+
+    27: {
+        'theme': 'SHOULD vs MUST vs HAVE TO (Modals comparison)',
+        'words': [
+            'should', "shouldn't", 'must', "mustn't", 'have to',
+            "don't have to", 'ought to', 'had better', 'need to', 'need not',
+            'You should', 'I must', 'We have to', 'It must be', 'She should',
+        ],
+        'scenario': '🏦 Bank - Loan discussion (ADVANCED)',
+        'struggles': (
+            '- SHOULD = advice/recommendation\n'
+            '- MUST = strong obligation\n'
+            '- HAVE TO = external obligation\n'
+            '- "Must not" (prohibition) vs "Don\'t have to" (no obligation) — CRITICAL'
+        ),
+        'connections': (
+            '- Previous Day (Day 26): Future Continuous\n'
+            '- Next Day (Day 28): Storytelling\n'
+            '- BANK REPEAT: Basic Day 23, now ADVANCED'
+        ),
+        'special': (
+            '- Modal scale: Can/Could < Should < Ought to < Have to < Must\n'
+            '- CRITICAL: "You must not smoke" = prohibited, "You don\'t have to smoke" = optional\n'
+            '- SCENARIO REPEAT: is_repeat: true\n'
+            '- previous_encounters: ["Day 23 - Basic"]\n'
+            '- difficulty_level: "advanced"\n'
+            '- Tab 3: Customer + Loan officer + Manager'
+        ),
+    },
+
+    28: {
+        'theme': 'Week 4 Practice - Telling a Story (Using All Tenses)',
+        'words': [
+            'once', 'suddenly', 'then', 'after', 'before',
+            'while', 'during', 'meanwhile', 'finally', 'eventually',
+            'yesterday', 'last week', 'next', 'first', 'at last',
+        ],
+        'scenario': '🎉 Family gathering - Narrating a funny incident',
+        'struggles': (
+            '- Sequencing words (first, then, finally)\n'
+            '- Mixing past tenses correctly\n'
+            '- Time markers\n'
+            '- "Suddenly" placement in sentence'
+        ),
+        'connections': (
+            '- Week 4 complete: Past Simple, Continuous, Perfect, Future, Modals\n'
+            '- Next Day (Day 29): Office + Phone ADV'
+        ),
+        'special': (
+            '- Week 4 celebration\n'
+            '- Focus: Using all tenses together in narrative\n'
+            '- Connect words for storytelling\n'
+            '- Story: "Yesterday I WAS GOING to market", "Suddenly it STARTED raining", '
+            '"I HAD forgotten my umbrella", "I WILL buy a new one tomorrow"\n'
+            '- Preview Week 5 (Confidence building)'
+        ),
+    },
+
+    # ══ WEEK 5: CONFIDENCE — Real Situations ══════════════════════════════════
+    29: {
+        'theme': 'Office Communication + Phone Mastery',
+        'words': [
+            'meeting', 'deadline', 'project', 'report', 'presentation',
+            'schedule', 'appointment', 'colleague', 'manager', 'team',
+            'follow up', 'update', 'approve', 'discuss', 'decide',
+        ],
+        'scenario': '📱 Business Phone Call (ADVANCED)',
+        'struggles': (
+            '- Formal vs informal office language\n'
+            '- Phone etiquette (Hold on, I\'ll transfer, etc.)\n'
+            '- Email subject matter conversations\n'
+            '- Professional interruption phrases'
+        ),
+        'connections': (
+            '- Previous Day (Day 28): Week 4 Practice\n'
+            '- Next Day (Day 30): Hospital MASTER\n'
+            '- PHONE REPEAT: Was BASIC on Day 22, now ADVANCED'
+        ),
+        'special': (
+            '- First day of Week 5 (CONFIDENCE)\n'
+            '- SCENARIO REPEAT: is_repeat: true\n'
+            '- previous_encounters: ["Day 22 - Basic"]\n'
+            '- difficulty_level: "advanced"\n'
+            '- Tab 3: Employee + Client + Manager (3-way call)\n'
+            '- "I\'m calling regarding the contract", "Could you hold for a moment?", '
+            '"I\'ll follow up via email"'
+        ),
+    },
+
+    30: {
+        'theme': 'Hospital Master - Complete Healthcare Scenarios',
+        'words': [
+            'symptom', 'diagnosis', 'prescription', 'appointment', 'consultation',
+            'insurance', 'treatment', 'medicine', 'side effects', 'allergy',
+            'emergency', 'follow-up', 'specialist', 'surgery', 'recovery',
+        ],
+        'scenario': '🏥 Full hospital visit with insurance, prescription',
+        'struggles': (
+            '- Medical vocabulary in English\n'
+            '- Describing symptoms accurately\n'
+            '- Understanding doctor\'s instructions\n'
+            '- Insurance/billing conversations'
+        ),
+        'connections': (
+            '- Previous Day (Day 29): Office + Phone ADV\n'
+            '- Next Day (Day 31): Complaints\n'
+            '- HOSPITAL FINAL MASTERY: Day 12 (Basic) → Day 17 (Inter) → Day 24 (Advanced) → TODAY (Master)'
+        ),
+        'special': (
+            '- MASTER level hospital scenarios\n'
+            '- SAAVI celebrates hospital journey completion\n'
+            '- SCENARIO REPEAT: is_repeat: true\n'
+            '- previous_encounters: ["Day 12 - Basic", "Day 17 - Intermediate", "Day 24 - Advanced"]\n'
+            '- difficulty_level: "master"\n'
+            '- Tab 3: Patient + Doctor + Nurse + Insurance officer\n'
+            '- Full journey: Reception → Consultation → Tests → Diagnosis → Prescription → Insurance → Follow-up\n'
+            '- "Will my insurance cover this?", "Here\'s your prescription. Take it with food"'
+        ),
+    },
+
+    31: {
+        'theme': 'Complaints, Issues & Problem Solving',
+        'words': [
+            'complaint', 'issue', 'problem', 'defective', 'faulty',
+            'refund', 'replacement', 'repair', 'warranty', 'receipt',
+            'solution', 'resolve', 'apologize', 'understand', 'satisfied',
+        ],
+        'scenario': '⚠️ Service center - Product complaint',
+        'struggles': (
+            '- Polite complaint language\n'
+            '- Being assertive without being rude\n'
+            '- Describing the problem clearly\n'
+            '- Requesting resolution'
+        ),
+        'connections': (
+            '- Previous Day (Day 30): Hospital Master\n'
+            '- Next Day (Day 32): Travel + Airport ADV'
+        ),
+        'special': (
+            '- Key phrases: "I\'d like to report an issue...", '
+            '"Unfortunately, the product is...", "Could you please resolve this..."\n'
+            '- Tab 3: Customer + Service rep + Manager\n'
+            '- "I purchased this product yesterday but...", "Can you escalate this matter?"'
+        ),
+    },
+
+    32: {
+        'theme': 'Travel English + Airport Immigration (ADVANCED)',
+        'words': [
+            'passport', 'visa', 'immigration', 'customs', 'boarding pass',
+            'luggage', 'baggage', 'declare', 'duration', 'purpose',
+            'transit', 'layover', 'departure', 'arrival', 'jet lag',
+        ],
+        'scenario': '✈️ International airport - Immigration & Customs',
+        'struggles': (
+            '- Immigration officer questions\n'
+            '- Customs declaration\n'
+            '- Travel duration/purpose phrases\n'
+            '- International vocabulary'
+        ),
+        'connections': (
+            '- Previous Day (Day 31): Complaints\n'
+            '- Next Day (Day 33): Bank/Documents\n'
+            '- AIRPORT REPEAT: Basic Day 25, now ADVANCED'
+        ),
+        'special': (
+            '- SCENARIO REPEAT: is_repeat: true\n'
+            '- previous_encounters: ["Day 25 - Basic"]\n'
+            '- upcoming_advanced_versions: ["Day 46 - Master"]\n'
+            '- difficulty_level: "advanced"\n'
+            '- "What\'s the purpose of your visit?", "How long will you stay?", '
+            '"Do you have anything to declare?"\n'
+            '- Tab 3: Passenger + Immigration officer + Customs officer'
+        ),
+    },
+
+    33: {
+        'theme': 'Bank & Document-heavy Conversations',
+        'words': [
+            'document', 'verify', 'identity', 'proof', 'signature',
+            'application', 'form', 'submit', 'reject', 'approve',
+            'pending', 'processed', 'review', 'confirm', 'authorize',
+        ],
+        'scenario': '🏦 Bank - Document verification & account issues',
+        'struggles': (
+            '- Document-related vocabulary\n'
+            '- Passive voice in formal contexts\n'
+            '- Following document procedures\n'
+            '- Bank-specific terms'
+        ),
+        'connections': (
+            '- Previous Day (Day 32): Travel + Airport ADV\n'
+            '- Next Day (Day 34): Shopping + Bus ADV'
+        ),
+        'special': (
+            '- Formal passive constructions: "Your application is being processed", '
+            '"Documents will be verified"\n'
+            '- Tab 3: Customer + Clerk + Manager, formal dialogue about documents'
+        ),
+    },
+
+    34: {
+        'theme': 'Shopping Negotiation + Long Bus Journey',
+        'words': [
+            'bargain', 'negotiate', 'offer', 'reasonable', 'affordable',
+            'quality', 'brand', 'original', 'duplicate', 'warranty',
+            'exchange', 'return', 'preferred', 'suitable', 'recommend',
+        ],
+        'scenario': '🚍 Long-distance bus journey (ADVANCED)',
+        'struggles': (
+            '- Bargaining in English\n'
+            '- Quality comparisons\n'
+            '- Travel complications\n'
+            '- Long conversation maintenance'
+        ),
+        'connections': (
+            '- Previous Day (Day 33): Bank Documents\n'
+            '- Next Day (Day 35): Multi-scenario practice\n'
+            '- BUS REPEAT: Was BASIC on Day 16, now ADVANCED'
+        ),
+        'special': (
+            '- SCENARIO REPEAT: is_repeat: true\n'
+            '- previous_encounters: ["Day 16 - Basic"]\n'
+            '- difficulty_level: "advanced"\n'
+            '- Tab 3: Passenger + Conductor + Fellow passenger + Helper\n'
+            '- Complex dialogue during long trip, small talk with co-passengers'
+        ),
+    },
+
+    35: {
+        'theme': 'Week 5 Practice - Multiple Scenarios in One Day',
+        'words': [
+            'meanwhile', 'afterward', 'later', 'early', 'soon',
+            'eventually', 'briefly', 'quickly', 'immediately', 'gradually',
+            'suddenly', 'finally', 'at once', 'in the end', 'all day',
+        ],
+        'scenario': '🎭 Full day: Office → Lunch → Bank → Evening',
+        'struggles': (
+            '- Switching between contexts\n'
+            '- Transitioning smoothly\n'
+            '- Maintaining tone across situations'
+        ),
+        'connections': (
+            '- Week 5 complete: Office, Hospital, Complaints, Travel, Bank, Shopping\n'
+            '- Next Day (Day 36): Connectors'
+        ),
+        'special': (
+            '- Week 5 celebration\n'
+            '- Multi-scenario confidence\n'
+            '- Tab 3: Day-long narrative, Office meeting → Lunch break → Bank visit → Evening plan'
+        ),
+    },
+
+    # ══ WEEK 6: FLUENCY — Advanced ════════════════════════════════════════════
+    36: {
+        'theme': 'Sentence Connectors - Linking Ideas',
+        'words': [
+            'and', 'but', 'because', 'so', 'or',
+            'however', 'therefore', 'although', 'moreover', 'nevertheless',
+            'besides', 'furthermore', 'also', 'too', 'either',
+        ],
+        'scenario': '📖 Explaining a detailed situation',
+        'struggles': (
+            '- Overusing "and" for everything\n'
+            '- "But" vs "However" (formal level)\n'
+            '- Causal connection: because, so, therefore\n'
+            '- Contrast: but, however, although'
+        ),
+        'connections': (
+            '- Previous Day (Day 35): Week 5 Practice\n'
+            '- Next Day (Day 37): Questions Mastery\n'
+            '- First day of Week 6 (FLUENCY)'
+        ),
+        'special': (
+            '- Bridge to native: "और = and, लेकिन = but, क्योंकि = because"\n'
+            '- AND: addition, BUT: contrast, BECAUSE: reason, SO: result\n'
+            '- Tab 3: 2 friends in serious conversation using connectors throughout'
+        ),
+    },
+
+    37: {
+        'theme': 'All Wh-Questions - Complete Mastery',
+        'words': [
+            'What', 'Where', 'When', 'Who', 'Why',
+            'How', 'Which', 'Whose', 'How many', 'How much',
+            'What if', 'How long', 'How often', 'How far', 'How come',
+        ],
+        'scenario': '❓ Interview - Asking and answering questions',
+        'struggles': (
+            '- Question word order in English\n'
+            '- "How much" (uncountable) vs "How many" (countable)\n'
+            '- "Which" vs "What" for choices\n'
+            '- Indirect questions in polite form'
+        ),
+        'connections': (
+            '- Previous Day (Day 36): Connectors\n'
+            '- Next Day (Day 38): Prepositions'
+        ),
+        'special': (
+            '- Direct: "What is your name?", Indirect: "Can you tell me what your name is?"\n'
+            '- Tab 3: Interviewer asking variety of questions, Candidate answering professionally'
+        ),
+    },
+
+    38: {
+        'theme': 'Prepositions (in, on, at, to, from, with, by)',
+        'words': [
+            'in', 'on', 'at', 'to', 'from',
+            'with', 'by', 'for', 'of', 'about',
+            'under', 'over', 'between', 'beside', 'behind',
+        ],
+        'scenario': '📍 Giving directions to someone',
+        'struggles': (
+            '- "In" Monday vs "On" Monday (on for days)\n'
+            '- "At" 5 PM vs "In" 5 PM (at for time)\n'
+            '- Time prepositions (at, on, in) confusion\n'
+            '- "By bus" vs "With bus"'
+        ),
+        'connections': (
+            '- Previous Day (Day 37): Questions\n'
+            '- Next Day (Day 39): Comparisons'
+        ),
+        'special': (
+            '- Time: AT specific time "at 5 PM", ON specific day "on Monday", IN period "in March"\n'
+            '- Place: IN (inside) "in the room", ON (surface) "on the table", AT (point) "at the door"\n'
+            '- Tab 3: Local + Tourist + Friend, lots of preposition usage'
+        ),
+    },
+
+    39: {
+        'theme': 'Comparative & Superlative (Better, Worse, Best, Worst)',
+        'words': [
+            'better', 'worse', 'best', 'worst', 'bigger',
+            'smaller', 'faster', 'slower', 'more', 'less',
+            'most', 'least', 'taller', 'shorter', 'richer',
+        ],
+        'scenario': '⚖️ Product comparison at shop',
+        'struggles': (
+            '- Adding -er for comparatives (not "more big")\n'
+            '- "More better" (wrong — double comparative)\n'
+            '- Irregular: good→better→best, bad→worse→worst\n'
+            '- "Than" usage in comparisons'
+        ),
+        'connections': (
+            '- Previous Day (Day 38): Prepositions\n'
+            '- Next Day (Day 40): Phrasal Verbs'
+        ),
+        'special': (
+            '- Short adjectives: +er (bigger), Long: more + adjective (more beautiful)\n'
+            '- Irregular: good-better-best, bad-worse-worst\n'
+            '- "Than" for comparison: "Bigger than"\n'
+            '- Tab 3: Customer comparing two products, Sales person explaining differences'
+        ),
+    },
+
+    40: {
+        'theme': 'Common Phrasal Verbs (pick up, drop off, get along)',
+        'words': [
+            'pick up', 'drop off', 'get along', 'look after', 'look for',
+            'look up', 'turn on', 'turn off', 'turn up', 'put on',
+            'put off', 'put up with', 'work out', 'give up', 'take over',
+        ],
+        'scenario': '🏋️ Gym - Fitness conversation',
+        'struggles': (
+            '- Idiomatic meaning not literal\n'
+            '- Separable vs inseparable phrasals\n'
+            '- Multiple meanings of same phrasal'
+        ),
+        'connections': (
+            '- Previous Day (Day 39): Comparisons\n'
+            '- Next Day (Day 41): Conditionals'
+        ),
+        'special': (
+            '- Literal vs idiomatic: "Pick up" = lift / learn / collect\n'
+            '- Tab 3: Friends working out at gym, natural phrasal use\n'
+            '- "I work out every day", "Turn on the music", "Don\'t give up"'
+        ),
+    },
+
+    41: {
+        'theme': 'Conditional Sentences (First & Second Conditional)',
+        'words': [
+            'if', 'then', 'unless', 'provided', 'I will',
+            'I would', 'I can', 'I could', 'suppose', 'what if',
+            'in case', 'otherwise', 'as long as', 'assuming', 'given that',
+        ],
+        'scenario': '🌧️ Planning based on weather',
+        'struggles': (
+            '- "If I will" (wrong) vs "If I am" (right)\n'
+            '- First conditional (real future) vs Second (hypothetical)\n'
+            '- "Unless" = "If not"'
+        ),
+        'connections': (
+            '- Previous Day (Day 40): Phrasal Verbs\n'
+            '- Next Day (Day 42): Full Conversation'
+        ),
+        'special': (
+            '- First: If + present, will + verb: "If it rains, I will stay home"\n'
+            '- Second: If + past, would + verb: "If I were rich, I would buy a car"\n'
+            '- Tab 3: Family deciding weekend plans, if-then structures throughout'
+        ),
+    },
+
+    42: {
+        'theme': 'Week 6 Review - Full Conversation Fluency',
+        'words': [
+            'I think', 'I believe', 'in my opinion', 'I agree', 'I disagree',
+            "You're right", 'However', 'On the other hand', 'Actually', 'Moreover',
+            'In contrast', 'Besides', "That's true", 'Exactly', 'Absolutely',
+        ],
+        'scenario': '🎤 Debate/Discussion - Expressing opinions',
+        'struggles': (
+            '- Opinion expression politely\n'
+            '- Agreement/disagreement nuance\n'
+            '- Maintaining long conversation'
+        ),
+        'connections': (
+            '- Week 6 complete: Connectors, Questions, Prepositions, Comparisons, Phrasal, Conditionals\n'
+            '- Next Day (Day 43): Social Media'
+        ),
+        'special': (
+            '- Week 6 celebration\n'
+            '- Polite disagreement phrases\n'
+            '- Tab 3: 2-3 people discussing a topic, using all Week 6 skills\n'
+            '- Preview Week 7 (Real World)'
+        ),
+    },
+
+    # ══ WEEK 7: REAL WORLD — Confidence ══════════════════════════════════════
+    43: {
+        'theme': 'Social Media & Digital Communication',
+        'words': [
+            'post', 'share', 'comment', 'like', 'follow',
+            'message', 'chat', 'video call', 'online', 'offline',
+            'notification', 'subscribe', 'unfollow', 'block', 'report',
+        ],
+        'scenario': '📱 WhatsApp/Instagram conversations',
+        'struggles': (
+            '- Social media English differs from spoken\n'
+            '- Abbreviations (BRB, TTYL, IMO)\n'
+            '- Emoji descriptions\n'
+            '- Online etiquette'
+        ),
+        'connections': (
+            '- Previous Day (Day 42): Week 6 Practice\n'
+            '- Next Day (Day 44): Parent-Teacher\n'
+            '- First day of Week 7 (REAL WORLD)'
+        ),
+        'special': (
+            '- Digital vocabulary + WhatsApp conversation patterns\n'
+            '- Common abbreviations: BRB, TTYL, IMO, LOL\n'
+            '- Tab 3: Friends on WhatsApp + group chat, modern English usage'
+        ),
+    },
+
+    44: {
+        'theme': 'Parent-Teacher Meetings & School Communication',
+        'words': [
+            'progress', 'performance', 'attendance', 'behavior', 'discipline',
+            'improvement', 'weakness', 'strength', 'report card', 'grade',
+            'homework', 'extra class', 'tuition', 'encourage', 'motivate',
+        ],
+        'scenario': '👨‍🏫 PTM - Discussing child\'s progress',
+        'struggles': (
+            '- School-specific vocabulary\n'
+            '- Discussing academic issues politely\n'
+            '- Understanding teacher feedback\n'
+            '- Asking for improvements'
+        ),
+        'connections': (
+            '- Previous Day (Day 43): Social Media\n'
+            '- Next Day (Day 45): Government Office'
+        ),
+        'special': (
+            '- Tab 3: Parent + Teacher + Principal (3 characters)\n'
+            '- Detailed discussion about child\'s performance'
+        ),
+    },
+
+    45: {
+        'theme': 'Government Office Interactions',
+        'words': [
+            'application', 'form', 'document', 'ID proof', 'address proof',
+            'fee', 'stamp', 'signature', 'counter', 'queue',
+            'receipt', 'acknowledgment', 'original', 'photocopy', 'verified',
+        ],
+        'scenario': '🛂 Passport office - Application process',
+        'struggles': (
+            '- Formal government English\n'
+            '- Procedural language\n'
+            '- Asking clarifications\n'
+            '- Understanding instructions'
+        ),
+        'connections': (
+            '- Previous Day (Day 44): Parent-Teacher\n'
+            '- Next Day (Day 46): Airport MASTER'
+        ),
+        'special': (
+            '- Formal request patterns\n'
+            '- Tab 3: Applicant + Officer + Helper, full procedural conversation'
+        ),
+    },
+
+    46: {
+        'theme': 'Airport Complete Mastery - Full Journey',
+        'words': [
+            'itinerary', 'booking', 'confirmation', 'terminal', 'gate',
+            'check-in', 'baggage claim', 'transit', 'connecting flight', 'delay',
+            'cancellation', 'upgrade', 'seat selection', 'frequent flyer', 'boarding',
+        ],
+        'scenario': '✈️ International flight - Complete journey',
+        'struggles': (
+            '- Complex airport situations\n'
+            '- Flight-related problems\n'
+            '- International travel English\n'
+            '- Complete journey vocabulary'
+        ),
+        'connections': (
+            '- Previous Day (Day 45): Government Office\n'
+            '- Next Day (Day 47): Small Talk\n'
+            '- AIRPORT FINAL: Basic Day 25 → Advanced Day 32 → Master TODAY'
+        ),
+        'special': (
+            '- MASTER level airport scenarios\n'
+            '- SCENARIO REPEAT: is_repeat: true\n'
+            '- previous_encounters: ["Day 25 - Basic", "Day 32 - Advanced"]\n'
+            '- difficulty_level: "master"\n'
+            '- Tab 3: Passenger + Check-in + Security + Boarding + Flight attendant\n'
+            '- Full airport experience from arrival to boarding'
+        ),
+    },
+
+    47: {
+        'theme': 'Small Talk - Networking & Strangers',
+        'words': [
+            'introduce', 'acquaintance', 'network', 'connect', 'mingle',
+            'business card', 'exchange', 'follow up', 'profession', 'industry',
+            'conference', 'event', 'gathering', 'colleague', 'contact',
+        ],
+        'scenario': '🤝 Networking event - Meeting new people',
+        'struggles': (
+            '- Starting conversations with strangers\n'
+            '- Maintaining light conversation\n'
+            '- Knowing when to exit conversation\n'
+            '- Professional networking'
+        ),
+        'connections': (
+            '- Previous Day (Day 46): Airport Master\n'
+            '- Next Day (Day 48): Presentation'
+        ),
+        'special': (
+            '- Small talk starters, safe topics: weather, travel, hobbies\n'
+            '- Tab 3: Multiple people (3-4 characters), natural networking flow'
+        ),
+    },
+
+    48: {
+        'theme': 'Public Speaking & Presentations',
+        'words': [
+            'introduce', 'overview', 'agenda', 'summary', 'conclude',
+            'explain', 'elaborate', 'clarify', 'emphasize', 'highlight',
+            'statistics', 'data', 'evidence', 'example', 'illustrate',
+        ],
+        'scenario': '🎤 Team meeting presentation',
+        'struggles': (
+            '- Public speaking nervousness\n'
+            '- Structuring a presentation\n'
+            '- Engaging audience\n'
+            '- Handling questions'
+        ),
+        'connections': (
+            '- Previous Day (Day 47): Small Talk\n'
+            '- Next Day (Day 49): Mock Interview'
+        ),
+        'special': (
+            '- Presentation structure + transition phrases + confidence building\n'
+            '- Tab 3: Presenter + Audience + Question asker, full presentation flow'
+        ),
+    },
+
+    49: {
+        'theme': 'Full Job Interview - Mock Practice',
+        'words': [
+            'experience', 'skills', 'qualification', 'strength', 'weakness',
+            'achievement', 'challenge', 'opportunity', 'salary', 'expectation',
+            'position', 'role', 'responsibility', 'teamwork', 'leadership',
+        ],
+        'scenario': '👔 Complete job interview simulation',
+        'struggles': (
+            '- Common interview questions\n'
+            '- Selling yourself professionally\n'
+            '- Salary negotiation\n'
+            '- Answering tricky questions'
+        ),
+        'connections': (
+            '- Previous Day (Day 48): Presentation\n'
+            '- Next Day (Day 50): GRADUATION!'
+        ),
+        'special': (
+            '- Interview templates: "Tell me about yourself", "Why do you want this job?", '
+            '"Where do you see yourself in 5 years?"\n'
+            '- STAR method introduction\n'
+            '- Tab 3: Interviewer + Candidate + HR, complete interview flow\n'
+            '- SAAVI: "Kal aap graduate ho jaayenge!"'
+        ),
+    },
+
+    50: {
+        'theme': 'Graduation - Celebration & Certificate + Forward Looking',
+        'words': [
+            'achievement', 'accomplish', 'journey', 'milestone', 'transformation',
+            'proud', 'confident', 'capable', 'fluent', 'mastery',
+            'grateful', 'celebrate', 'graduation', 'certificate', 'future',
+        ],
+        'scenario': '🎓 SAAVI\'s farewell message + Self-reflection',
+        'struggles': (
+            '- Closing/Farewell conversations\n'
+            '- Expressing gratitude\n'
+            '- Future planning language\n'
+            '- Self-reflection vocabulary'
+        ),
+        'connections': (
+            '- Previous Day (Day 49): Mock Interview\n'
+            '- THIS IS THE FINAL DAY — celebrate journey!'
+        ),
+        'special': (
+            '- SPECIAL: This is the GRADUATION DAY — emotional, inspiring tone\n'
+            '- SAAVI celebrates the 50-day journey\n'
+            '- Recap: Week 1 Foundation, Week 2-3 Mega-verbs, Week 4 Tenses, Week 5-7 Real world\n'
+            '- SAAVI\'s final message: "50 din pehle aap confuse the. Aaj aap confident hain. '
+            'Yeh sirf English nahi, yeh transformation hai. Aap kar chuke hain!"\n'
+            '- Tab 3: SAAVI speaking directly to learner + one friend/mentor voice\n'
+            '- Challenge: "Ab agla kadam — sikhao kisi aur ko"\n'
+            '- Tomorrow preview: "Ab aap khud ke shikshak hain"\n'
+            '- Certificate design hint in thumbnail prompt\n'
+            '- Total duration can be longer than 20 min for this finale day'
+        ),
+    },
 }
 
-# ── Load Rapidex book ──
-RAPIDEX_PATH = Path(__file__).resolve().parent.parent.parent / 'Downloads' / 'rapid.docx'
-_rapidex_cache = None
 
-def load_rapidex():
-    global _rapidex_cache
-    if _rapidex_cache is not None:
-        return _rapidex_cache
-    rpath = RAPIDEX_PATH
-    if not rpath.exists():
-        rpath = Path.home() / 'Downloads' / 'rapid.docx'
-        if not rpath.exists():
-            print("WARNING: Rapidex book not found. Generating without reference.", file=sys.stderr)
-            _rapidex_cache = ""
-            return ""
-    try:
-        from docx import Document
-        doc = Document(str(rpath))
-        text = '\n'.join([p.text for p in doc.paragraphs if p.text.strip()])
-        _rapidex_cache = text
-        return text
-    except Exception as e:
-        print(f"WARNING: Could not read Rapidex: {e}", file=sys.stderr)
-        _rapidex_cache = ""
-        return ""
-
-
-# ── System Prompt (stays same across all days/languages) ──
-def build_system_prompt(lang: str) -> str:
-    cfg = LANG_CONFIG[lang]
-    book_text = load_rapidex()
-    book_section = f"""
-
-── REFERENCE BOOK: Rapidex English Speaking Course ──
-Below is the full text of the Rapidex English Speaking Course book (Hindi).
-Use this as SOURCE MATERIAL — extract relevant vocabulary, phrases, conversation patterns,
-and teaching approaches. But DO NOT copy the book's dry textbook style.
-Transform the content into SAAVI's warm, practical, story-driven teaching style.
-
-{book_text}
-
-── END OF REFERENCE BOOK ──
-""" if book_text else ""
-
-    return f"""You are the content engine for Shrutam — a FREE 30-day English Speaking Course app.
-"Tu kar sakta hai."
-
-── SAAVI'S BACKSTORY (USE FOR AUTHENTIC TEACHING) ──
-SAAVI was an engineering student who couldn't speak English. Failed her first interview.
-Felt humiliated. Went home thinking "main duffer hoon." Then she made friends who only spoke English.
-One grammar book + those friends changed everything. She memorized ALL uses of HAVE, GET at once.
-Dheere-dheere darr nikal gaya. She cleared her next interview. Got her first job.
-Now she teaches others because — "Difference was only timing, luck, and a few good friends.
-Nobody tells you this. Main bataungi."
-SAAVI is the friend everyone deserves but never had. She knows the pain of being called "duffer"
-because she lived it.
-
-── WHO IS SAAVI ──
-SAAVI is the AI teacher — a 26-year-old Indian woman (didi/akka):
-- She speaks in {cfg['saavi_style']} — warm, natural, like a friend explaining over chai
-- She was an engineering student terrified of speaking English — overcame it through practice
-- She is NOT a textbook teacher — she makes learning fun with real stories and humor
-- She uses Bollywood references, cricket analogies, and daily Indian life examples
-- She NEVER says "Good question", "Namaste", or uses brackets in speech
-- She addresses students respectfully (aap/tumhi/meeru)
-- The "Bhai Test": Before writing ANY message — "Kya main yeh apne bhai ko bolunga?"
-  Correct answer: "Shabash!" (not "Amazing!"). Wrong: "Koi baat nahi — chal dobara" (not "Oops!")
-- NEVER: guilt trips, streak pressure, shame, comparison. ALWAYS: warm, zero shame, "Tu kar sakta hai"
-
-── TEACHING METHODOLOGY: "PEHLE CHALAO, PHIR SAMJHO" ──
-(Ride first, understand later — like riding a bicycle, don't teach physics first)
-
-3 Phases per concept:
-1. ICEBREAKER: Experience first, no explanation. "Say: Hello, My name is..."
-2. BUILDING BLOCKS: Show patterns, not rules. "I + verb = I go, I eat, I want"
-3. CONNECTING IDEAS: Grammar only when user asks why. "Why does 'he goes' have 's'?"
-
-60-30-10 Rule:
-- RIDE (60%): User speaks, repeats, practices. No explanation needed.
-- PATTERN (30%): Formula shown in {cfg['saavi_style']}. No technical grammar terms.
-- WHY (10%): Optional grammar explanation for curious learners (skippable).
-
-── THE MEGA-WORD APPROACH (SIGNATURE FEATURE) ──
-Traditional courses waste 30 days on tense-by-tense teaching.
-Shrutam teaches TOP 10-12 high-frequency verbs with ALL their uses AT ONCE:
-HAVE: possession "I have a car" + obligation "I have to go" + perfect "I have eaten" + activity "Let's have tea"
-GET: receive "I got a gift" + become "I got angry" + arrive "Get home" + understand "I get it" + buy "Get milk"
-This is how SAAVI learned — memorized all uses of HAVE/GET in one sitting with her friends.
-
-── INDIAN CONFUSION LIBRARY (USE IN EVERY DAY) ──
-20+ specific mistakes Indians make. Address at least 2-3 per day:
-- "Main jaana hoon" → WRONG: "I am going" → RIGHT: "I have to go"
-- "Khaa liya" → WRONG: "I ate" → RIGHT: "I have eaten"
-- "Kya time hai?" → WRONG: "You have time?" → RIGHT: "Do you have time?"
-- "Kal aaunga" → WRONG: "I come tomorrow" → RIGHT: "I will come tomorrow"
-- "Chai pasand hai" → WRONG: "I like to tea" → RIGHT: "I like tea"
-- "Myself Rahul" → WRONG → RIGHT: "My name is Rahul"
-- "What is your good name?" → Indian English → RIGHT: "What is your name?"
-CAN vs COULD = "Tu vs Aap" Rule:
-CAN (Tu wala): casual, friends. COULD (Aap wala): polite, formal, boss.
-
-── TRIPLE LANGUAGE BRIDGE ──
-Every teaching element must show 3 layers:
-1. Native script ({cfg['script']}): Familiar, school-learned
-2. Transliteration: Pronunciation bridge in Roman/mixed script
-3. English: The real goal
-4. Audio: Correct pronunciation (will be TTS generated)
-
-── HINDI GRAMMAR TERMS BRIDGE ──
-Indians already learned grammar in Hindi/school. Connect it to English:
-Sangya = Noun (cheez, vyakti, jagah), Sarvanam = Pronoun (mein, tu, vo),
-Kriya = Verb (kaam/action), Visheshan = Adjective (kaisa — bada, chhota)
-Vartman Kaal = Present, Bhootkaal = Past, Bhavishya Kaal = Future
-
-── TEACHING EACH WORD: 10 REAL-LIFE SITUATIONS ──
-Each word MUST be taught through situations, not definitions:
-1. Ghar mein (at home), 2. School/Office mein, 3. Dost se (with friend),
-4. Family ke saath, 5. Past tense situation, 6. Future tense situation,
-7. Favorite/opinion, 8. Question form, 9. Bollywood/pop culture reference,
-10. Modern context (Amazon/WhatsApp/Zomato)
-
-── CURRICULUM ARC (30 DAYS) ──
-Week 1 (Day 1-7): Foundation + Jaadu — Pronouns, Nouns, Verbs, BE, HAVE
-  Difficulty 10%, Win Rate 95% — "Yeh toh easy hai!"
-Week 2 (Day 8-14): Core Mega-Verbs — GET (10+ uses), GOT, GO, modals
-  Difficulty 30%, Win Rate 80% — "Maza aa raha"
-Week 3 (Day 15-21): Tenses via Situations — Present, Past, Future through real use
-  Difficulty 60%, Win Rate 65% — "Thoda tough — kar sakta"
-Week 4 (Day 22-30): Real Life Application — Office, shopping, doctor, interview
-  Difficulty 80%, Win Rate 50% — "Main bol sakta hoon!"
-
-── KEY RESEARCH DATA ──
-1,000 words = 75% everyday English. 3,000 words = 95%.
-5 tenses = 96% of spoken English (Present 57%, Past 20%, Future 8.5%, Perfect 6%, Continuous 5%)
-Top 10 verbs: be, have, do, say, go, can, get, would, make, know = 80% verb usage
-Target: 350 words + 50 mega-verbs + 5 tenses = 96% daily English coverage
-
-── CHAPTER STRUCTURE (15 min core) ──
-1. Lesson (10 min): SAAVI message + concept + situations + pattern + practice
-2. Summary (1 min): Visual recap, 3 key points
-3. Flashcards (2 min): 6-8 cards, triple language
-4. Speaking (2 min): 5-6 prompts, repeat after SAAVI
-5. Celebration (30 sec): Badge, progress, tomorrow preview
-
-── TARGET AUDIENCE ──
-- {cfg['speaker_desc']}
-- Age 15-45, students and working professionals
-- Can read {cfg['native_name']} fluently
-- Know some English words but can't form sentences confidently
-- Fear of speaking English in public is their BIGGEST barrier
-- Called "duffer" by school system — Shrutam is their redemption
-
-── OUTPUT FORMAT ──
-Return ONLY valid JSON. No markdown, no explanation, no preamble.
-The JSON structure is specified in the user prompt for each day.
-
-── QUALITY RULES ──
-1. ALL keys must be language-neutral: question, options, answer, statement, front, back, english, pronunciation, translation — NO language suffix (no question_marathi, no hindi_pronunciation)
-2. Flashcard "back" MUST have format: "meaning (pronunciation)" — e.g. "नमस्कार (हॅलो)"
-3. Teaching examples use keys: english, pronunciation, translation
-4. Use {cfg['name']} examples from Indian context ({cfg['example_city']}, Indian names, Indian food, Indian scenarios)
-5. SAAVI speaks in {cfg['saavi_style']}
-6. Pronunciation in {cfg['script']} script
-7. Minimum 15 words taught, 10 listen-repeat sentences, 5-6 dialogue lines, 5 MCQ, 5 T/F, 8 flashcards, 5 matching pairs
-8. Every example must be something an Indian student would actually say in real life
-{book_section}"""
-
-
-# ── User Prompt (changes per day) ──
+# ── Build user prompt ─────────────────────────────────────────────────────────
 def build_user_prompt(lang: str, day: int) -> str:
-    cfg = LANG_CONFIG[lang]
+    cfg  = LANG_CONFIG[lang]
     topic = DAY_TOPICS[day]
+
+    words_str = ', '.join(topic['words'])
+    special_section = ''
+    if topic.get('special'):
+        special_section = f'\nSPECIAL INSTRUCTIONS FOR THIS DAY:\n{topic["special"]}\n'
 
     return f"""Generate Day {day} of 50.
 
+LANGUAGE: {cfg['name']}
+
 TOPIC: {topic['theme']}
-LANGUAGE: {cfg['name']} ({cfg['native_name']})
-WORDS TO TEACH: {', '.join(topic['words'])}
+
+SCENARIO FOR TAB 3: {topic['scenario']}
+
+WORDS TO TEACH (15 words):
+{words_str}
 
 WHERE STUDENTS STRUGGLE:
-{topic['student_struggles']}
+{topic['struggles']}
 
 CONNECTIONS TO OTHER DAYS:
 {topic['connections']}
+{special_section}
+TOTAL DURATION: 20 minutes core
 
-Return this EXACT JSON structure:
+MANDATORY REQUIREMENTS:
+- Follow ALL format rules from system prompt
+- EXACTLY 15 words taught
+- EACH word has 5 examples
+- EACH word has its own common_mistake section
+- EACH example has SAAVI\'s explanation (varied, 3-5 sentences, using "{cfg['address']}")
+- 5 tabs with correct structure
+- Tab 3 has multi-voice dialogue with line-by-line SAAVI explanations
+- Tab 5 has EXACTLY: 8 flashcards + 5 T/F + 5 Match + 5 MCQ
+- SAAVI uses "{cfg['address']}" respectfully (no founder details, no specific cities/companies/years)
+- Include complete SEO data block
+- Include Nano Banana thumbnail prompt
+- Include tab-specific visuals/graphics/emojis
 
-{{
-  "saavi_intro": {{
-    "title": "Day {day}: [catchy title in {cfg['name']}]",
-    "story": "[SAAVI's personal story related to today's topic, in {cfg['saavi_style']}, 4-5 lines, relatable, encouraging, mention a specific incident from her life]",
-    "goal": "[Today's learning goal in {cfg['saavi_style']}, 2 lines, mention how many words they'll learn and what they'll be able to do after this lesson]"
-  }},
-  "teaching": [
-    {{
-      "word": "[English word/phrase]",
-      "pronunciation": "[{cfg['script']} pronunciation]",
-      "meaning": "[{cfg['name']} meaning]",
-      "usage": "[When/how to use — in {cfg['saavi_style']}, 2-3 lines, include a common mistake students make with this word]",
-      "example": {{
-        "english": "[Natural example sentence an Indian would actually say]",
-        "pronunciation": "[Full sentence in {cfg['script']}]",
-        "translation": "[{cfg['name']} translation]"
-      }}
-    }}
-    // ... for ALL {len(topic['words'])} words
-  ],
-  "listen_repeat": [
-    {{
-      "english": "[Practice sentence combining today's words with previous days' words]",
-      "pronunciation": "[{cfg['script']} pronunciation]",
-      "translation": "[{cfg['name']} translation]"
-    }}
-    // ... 10 sentences, progressively harder
-  ],
-  "situation": {{
-    "title": "[Real-life situation title in {cfg['name']}]",
-    "dialogue": [
-      {{
-        "character": "[Indian name]",
-        "english": "[Dialogue line]",
-        "pronunciation": "[{cfg['script']} pronunciation]",
-        "translation": "[{cfg['name']} translation]"
-      }}
-      // ... 5-6 lines, a realistic conversation an Indian student might have
-    ]
-  }},
-  "summary": [
-    "[Key point 1 — what they learned, in {cfg['name']}]",
-    "[Key point 2 — a common mistake to avoid]",
-    "[Key point 3 — connection to previous/next day]",
-    "[Key point 4 — practical tip for daily use]",
-    "[Key point 5 — encouragement from SAAVI]"
-  ],
-  "quiz": {{
-    "mcq": [
-      {{"question": "[in {cfg['name']}]", "options": ["A","B","C","D"], "answer": "B"}}
-      // ... 5 questions testing understanding, not just memorization
-    ],
-    "true_false": [
-      {{"statement": "[in {cfg['name']}]", "answer": true}}
-      // ... 5 statements, include tricky ones that test common mistakes
-    ],
-    "flashcard": [
-      {{"front": "[English]", "back": "[{cfg['name']} meaning] ([{cfg['script']} pronunciation])"}}
-      // ... 8 cards
-    ],
-    "matching": [
-      {{"english": "[phrase]", "translation": "[{cfg['name']}]"}}
-      // ... 5 pairs
-    ]
-  }}
-}}"""
+Return COMPLETE valid JSON only. No preamble, no markdown."""
 
 
+# ── Gemini API call ───────────────────────────────────────────────────────────
 def generate(lang: str, day: int) -> dict:
-    system = build_system_prompt(lang)
-    user = build_user_prompt(lang, day)
+    system = get_system_prompt()
+    user   = build_user_prompt(lang, day)
 
     payload = json.dumps({
         'contents': [{'role': 'user', 'parts': [{'text': user}]}],
         'systemInstruction': {'parts': [{'text': system}]},
         'generationConfig': {
             'temperature': 0.7,
-            'maxOutputTokens': 8192,
+            'maxOutputTokens': 32768,
             'responseMimeType': 'application/json',
         },
     }).encode()
 
-    url = f'https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key={GEMINI_KEY}'
-    req = urllib.request.Request(url, data=payload, headers={'Content-Type': 'application/json'})
+    url = (
+        'https://generativelanguage.googleapis.com/v1beta/models/'
+        f'gemini-2.5-flash:generateContent?key={GEMINI_KEY}'
+    )
+    req = urllib.request.Request(
+        url, data=payload, headers={'Content-Type': 'application/json'}
+    )
 
-    print(f"Generating {LANG_CONFIG[lang]['name']} Day {day}...")
-    print(f"  System prompt: {len(system)} chars (incl. book: {'yes' if 'Rapidex' in system else 'no'})")
-    print(f"  User prompt: {len(user)} chars")
+    lang_name = LANG_CONFIG[lang]['name']
+    print(f"Generating {lang_name} Day {day}...")
+    print(f"  System prompt: {len(system)} chars")
+    print(f"  User prompt:   {len(user)} chars")
 
-    with urllib.request.urlopen(req, timeout=180) as resp:
+    with urllib.request.urlopen(req, timeout=300) as resp:
         data = json.loads(resp.read())
 
-    text = data['candidates'][0]['content']['parts'][0]['text']
+    text    = data['candidates'][0]['content']['parts'][0]['text']
     content = json.loads(text)
-
-    # Validate
-    assert 'teaching' in content, "Missing teaching"
-    assert 'quiz' in content, "Missing quiz"
-    assert len(content['teaching']) >= 10, f"Only {len(content['teaching'])} words"
-    assert 'flashcard' in content['quiz'], "Missing flashcard in quiz"
-
-    for fc in content['quiz']['flashcard']:
-        if '(' not in fc['back']:
-            print(f"  WARNING: Flashcard '{fc['front']}' missing pronunciation: {fc['back']}")
-
     return content
 
 
-def validate_keys(content: dict, lang: str):
+# ── Basic v4 validation ───────────────────────────────────────────────────────
+def validate_response(content: dict) -> list[str]:
+    """Returns list of validation issues (empty = all good)."""
     issues = []
-    for q in content['quiz'].get('mcq', []):
-        for bad_key in ['question_marathi', 'question_hindi', 'question_telugu', 'options_marathi', 'answer_marathi']:
-            if bad_key in q:
-                issues.append(f"MCQ has '{bad_key}'")
-    for q in content['quiz'].get('true_false', []):
-        for bad_key in ['statement_marathi', 'statement_hindi', 'statement_telugu']:
-            if bad_key in q:
-                issues.append(f"True/False has '{bad_key}'")
-    for q in content['quiz'].get('matching', []):
-        if 'english_phrase' in q:
-            issues.append("Matching has 'english_phrase'")
-        for bad_key in ['marathi_translation', 'hindi_translation', 'telugu_translation']:
-            if bad_key in q:
-                issues.append(f"Matching has '{bad_key}'")
-    for w in content.get('teaching', []):
-        ex = w.get('example', {})
-        for bad_key in ['hindi_pronunciation', 'marathi_pronunciation', 'telugu_pronunciation',
-                        'hindi_translation', 'marathi_translation', 'telugu_translation']:
-            if bad_key in ex:
-                issues.append(f"Teaching example has '{bad_key}'")
+
+    # 5-tab structure
+    for tab in ('tab_1_video', 'tab_2_listen_repeat', 'tab_3_dialogue',
+                'tab_4_summary', 'tab_5_quiz'):
+        if tab not in content:
+            issues.append(f'Missing top-level key: {tab}')
+
+    # Tab 1: word_teaching
+    word_teaching = (content.get('tab_1_video', {})
+                             .get('content', {})
+                             .get('word_teaching', []))
+    if len(word_teaching) != 15:
+        issues.append(f'tab_1_video.content.word_teaching has {len(word_teaching)} words (expected 15)')
+    for entry in word_teaching:
+        word = entry.get('word', '?')
+        examples = entry.get('examples', [])
+        if len(examples) != 5:
+            issues.append(f'Word "{word}" has {len(examples)} examples (expected 5)')
+        if 'common_mistake' not in entry:
+            issues.append(f'Word "{word}" missing common_mistake')
+
+    # Tab 2: listen_repeat sentences
+    sentences = (content.get('tab_2_listen_repeat', {})
+                        .get('content', {})
+                        .get('sentences', []))
+    if len(sentences) != 10:
+        issues.append(f'tab_2_listen_repeat has {len(sentences)} sentences (expected 10)')
+
+    # Tab 3: dialogue
+    dialogue = (content.get('tab_3_dialogue', {})
+                       .get('content', {})
+                       .get('dialogue', []))
+    if len(dialogue) < 5:
+        issues.append(f'tab_3_dialogue has {len(dialogue)} lines (expected >= 5)')
+
+    # Tab 5: quiz counts
+    quiz = content.get('tab_5_quiz', {}).get('content', {})
+    for key, expected in [('flashcards', 8), ('true_false', 5), ('mcq', 5)]:
+        items = quiz.get(key, [])
+        if len(items) != expected:
+            issues.append(f'tab_5_quiz.{key} has {len(items)} items (expected {expected})')
+    match_pairs = quiz.get('match_the_column', {}).get('pairs', [])
+    if len(match_pairs) != 5:
+        issues.append(f'tab_5_quiz.match_the_column.pairs has {len(match_pairs)} items (expected 5)')
+
+    # SEO
+    if 'seo' not in content:
+        issues.append('Missing seo block')
+
+    # Thumbnail
+    if 'video_thumbnail' not in content:
+        issues.append('Missing video_thumbnail block')
+
     return issues
 
 
+# ── CLI ───────────────────────────────────────────────────────────────────────
 if __name__ == '__main__':
-    parser = argparse.ArgumentParser()
-    parser.add_argument('--lang', required=True, choices=list(LANG_CONFIG.keys()))
-    parser.add_argument('--day', required=True, type=int)
-    parser.add_argument('--output', required=True)
-    parser.add_argument('--dry-run', action='store_true', help='Show prompts only')
+    parser = argparse.ArgumentParser(
+        description='Generate Shrutam English Course day content (v4)'
+    )
+    parser.add_argument('--lang',    required=True, choices=list(LANG_CONFIG.keys()))
+    parser.add_argument('--day',     required=True, type=int)
+    parser.add_argument('--output',  required=True)
+    parser.add_argument('--dry-run', action='store_true', help='Show prompts only, no API call')
     args = parser.parse_args()
 
     if args.day not in DAY_TOPICS:
@@ -424,42 +1637,45 @@ if __name__ == '__main__':
         sys.exit(1)
 
     if args.dry_run:
-        print("=" * 60)
-        print("SYSTEM PROMPT")
-        print("=" * 60)
-        sys_prompt = build_system_prompt(args.lang)
-        # Don't print the full book — just show the structure
-        if 'REFERENCE BOOK' in sys_prompt:
-            before_book = sys_prompt.split('── REFERENCE BOOK')[0]
-            after_book = sys_prompt.split('── END OF REFERENCE BOOK ──')[1] if '── END OF REFERENCE BOOK ──' in sys_prompt else ''
-            print(before_book)
-            print(f"── REFERENCE BOOK: [{len(load_rapidex())} chars of Rapidex content] ──")
-            print(after_book)
-        else:
-            print(sys_prompt)
+        print('=' * 60)
+        print('SYSTEM PROMPT (first 300 chars)')
+        print('=' * 60)
+        print(get_system_prompt()[:300])
+        print('...')
         print()
-        print("=" * 60)
-        print("USER PROMPT")
-        print("=" * 60)
+        print('=' * 60)
+        print('USER PROMPT')
+        print('=' * 60)
         print(build_user_prompt(args.lang, args.day))
         sys.exit(0)
 
+    if not GEMINI_KEY:
+        print('ERROR: GOOGLE_AI_API_KEY not set. '
+              'Export it or add to safety/keys.json as {"GOOGLE_AI_API_KEY": "..."}')
+        sys.exit(1)
+
     content = generate(args.lang, args.day)
 
-    issues = validate_keys(content, args.lang)
+    issues = validate_response(content)
     if issues:
-        print(f"\n⚠ Key issues found ({len(issues)}):")
+        print(f'\n⚠  Validation issues ({len(issues)}):')
         for issue in issues:
-            print(f"  - {issue}")
+            print(f'  - {issue}')
+    else:
+        print('\n✓  Validation passed')
 
-    with open(args.output, 'w') as f:
+    with open(args.output, 'w', encoding='utf-8') as f:
         json.dump(content, f, ensure_ascii=False, indent=2)
 
-    print(f"\n✓ Saved to {args.output}")
-    print(f"  Words: {len(content['teaching'])}")
-    print(f"  Listen: {len(content['listen_repeat'])}")
-    print(f"  Dialogue: {len(content['situation']['dialogue'])}")
-    print(f"  Quiz MCQ: {len(content['quiz']['mcq'])}")
-    print(f"  Quiz T/F: {len(content['quiz']['true_false'])}")
-    print(f"  Flashcards: {len(content['quiz']['flashcard'])}")
-    print(f"  Matching: {len(content['quiz']['matching'])}")
+    print(f'✓  Saved to {args.output}')
+
+    # Summary stats
+    tab1 = content.get('tab_1_video', {}).get('content', {})
+    tab5 = content.get('tab_5_quiz', {}).get('content', {})
+    print(f'   Words:       {len(tab1.get("word_teaching", []))}')
+    print(f'   Listen:      {len(content.get("tab_2_listen_repeat", {}).get("content", {}).get("sentences", []))}')
+    print(f'   Dialogue:    {len(content.get("tab_3_dialogue", {}).get("content", {}).get("dialogue", []))}')
+    print(f'   Flashcards:  {len(tab5.get("flashcards", []))}')
+    print(f'   MCQ:         {len(tab5.get("mcq", []))}')
+    print(f'   True/False:  {len(tab5.get("true_false", []))}')
+    print(f'   Match pairs: {len(tab5.get("match_the_column", {}).get("pairs", []))}')
