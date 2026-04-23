@@ -45,8 +45,14 @@ if (!empty($_GET['lang_word']) && !empty($_GET['slug'])) {
     $lang      = $lang_word_map[$lang_word] ?? '';
 
     if ($lang && $slug) {
-        $s = $pdo->prepare("SELECT day_number FROM seo_pages WHERE lang = ? AND player_slug = ? LIMIT 1");
-        $s->execute([$lang, $slug]);
+        // Match either player_slug (preferred) or url_slug (fallback — matches
+        // how generate_landing_pages_php.py builds links: player_slug OR url_slug).
+        $s = $pdo->prepare(
+            "SELECT day_number FROM seo_pages
+             WHERE lang = ? AND (player_slug = ? OR url_slug = ?)
+             ORDER BY (player_slug = ?) DESC LIMIT 1"
+        );
+        $s->execute([$lang, $slug, $slug, $slug]);
         $found = $s->fetch();
         if ($found) {
             $day = (int)$found['day_number'];
@@ -123,34 +129,30 @@ function scene_div(int $idx, string $stype, array $audios, string $inner, bool $
     return "<div {$attrs}>{$inner}</div>\n";
 }
 
-// ── SAAVI SVG ─────────────────────────────────────────────────────────────────
-$SAAVI_SVG = <<<'SVG'
-<svg viewBox="0 0 200 200" width="120" height="120" class="saavi-svg" aria-hidden="true">
-  <circle cx="100" cy="100" r="95" fill="#1A0A04" stroke="#F5A623" stroke-width="2"/>
-  <ellipse cx="100" cy="90" rx="52" ry="48" fill="#2C1810"/>
-  <ellipse cx="100" cy="106" rx="40" ry="46" fill="#C8845A"/>
-  <path d="M62,78 Q100,55 138,78 Q132,90 118,85 Q100,80 82,85 Q68,90 62,78" fill="#1A0E0A"/>
-  <ellipse cx="84"  cy="98" rx="5" ry="4" fill="white"/>
-  <circle  cx="84"  cy="99" r="2.5" fill="#1a6bb5"/>
-  <ellipse cx="116" cy="98" rx="5" ry="4" fill="white"/>
-  <circle  cx="116" cy="99" r="2.5" fill="#1a6bb5"/>
-  <circle cx="100" cy="81" r="3" fill="#C0392B"/>
-  <path d="M86,122 Q100,133 114,122" stroke="#8B3A3A" stroke-width="2.5" fill="none" stroke-linecap="round"/>
-  <circle cx="74"  cy="116" r="7" fill="#E8917A" opacity="0.35"/>
-  <circle cx="126" cy="116" r="7" fill="#E8917A" opacity="0.35"/>
-  <path d="M68,158 L132,158 L138,200 L62,200 Z" fill="#3B82F6"/>
-  <path d="M88,158 Q100,168 112,158" stroke="#93C5FD" stroke-width="2" fill="none"/>
-  <animate attributeName="opacity" values="1;0.92;1" dur="3s" repeatCount="indefinite"/>
-</svg>
-SVG;
+// ── SAAVI Avatar ─────────────────────────────────────────────────────────────
+function saavi_avatar(string $lang, int $day): string {
+    $thumb_url = "https://images.shrutam.ai/thumbnails/{$lang}/day_" . sprintf('%02d', $day) . ".png";
+    return <<<HTML
+<div class="saavi-avatar">
+  <img src="{$thumb_url}" alt="SAAVI - Day {$day}" class="saavi-img" loading="lazy">
+  <div class="saavi-pulse"></div>
+</div>
+HTML;
+}
+$SAAVI_SVG = saavi_avatar($lang ?? 'hi', $day ?? 1);
 
 // ── scene renderers ───────────────────────────────────────────────────────────
-function render_intro(int $idx, int $day, string $title, string $saavi_svg): string {
+function render_intro(int $idx, int $day, string $title, string $saavi_svg, string $badge = ''): string {
+    $title_e = esc($title);
+    $badge_html = $badge
+        ? '<div class="intro-badge">🏆 ' . esc($badge) . '</div>'
+        : '';
     $inner = <<<HTML
 <div class="si-wrap">
   {$saavi_svg}
   <div class="si-day">Day {$day}</div>
-  <h1 class="si-title">{esc($title)}</h1>
+  <h1 class="si-title">{$title_e}</h1>
+  {$badge_html}
   <div class="si-hint">▶ Play करें</div>
 </div>
 HTML;
@@ -159,11 +161,13 @@ HTML;
 
 function render_section_header(int $idx, string $title, string $subtitle): string {
     global $SAAVI_SVG;
+    $title_e = esc($title);
+    $subtitle_e = esc($subtitle);
     $inner = <<<HTML
 <div class="si-wrap">
   {$SAAVI_SVG}
-  <h2 class="si-title">{esc($title)}</h2>
-  <p class="si-sub">{esc($subtitle)}</p>
+  <h2 class="si-title">{$title_e}</h2>
+  <p class="si-sub">{$subtitle_e}</p>
 </div>
 HTML;
     return scene_div($idx, 'section', [], $inner);
@@ -174,6 +178,7 @@ function render_word(int $idx, int $wi, array $word_obj, string $lang, int $day,
     $word = esc(ex_field($word_obj, 'word', 'english'));
     $pron = esc(ex_field($word_obj, 'pronunciation', 'hindi_pronunciation'));
     $mean = esc(ex_field($word_obj, 'meaning', 'hindi_meaning', 'source_meaning'));
+    $wicon = esc($word_obj['word_icon'] ?? '');
     $exs  = array_slice($word_obj['examples'] ?? [], 0, 5);
 
     $ex_items = '';
@@ -190,9 +195,11 @@ function render_word(int $idx, int $wi, array $word_obj, string $lang, int $day,
         au($lang, $day, "t1_w{$ww}_ex01_en",    $secret),
         au($lang, $day, "t1_w{$ww}_ex01_saavi", $secret),
     ];
+    $icon_html = $wicon ? "<div class=\"w-icon\">{$wicon}</div>" : '';
     $inner = <<<HTML
 <div class="word-wrap">
   <div class="word-main">
+    {$icon_html}
     <div class="w-word">{$word}</div>
     <div class="w-pron">({$pron})</div>
     <div class="w-mean">{$mean}</div>
@@ -249,9 +256,21 @@ HTML;
     return scene_div($idx, 'listen', $audios, $inner);
 }
 
-function render_dialogue(int $idx, int $li, array $line, string $lang, int $day, string $secret): string {
+function render_dialogue(int $idx, int $li, array $line, string $lang, int $day, string $secret, array $char_map = []): string {
     $ll      = sprintf('%02d', $li);
-    $speaker = esc(str_replace('char_', 'Person ', ex_field($line, 'character_id', 'speaker', 'character')));
+    $char_id = ex_field($line, 'character_id', 'speaker', 'character');
+    $ch      = $char_map[$char_id] ?? [];
+    $cname   = ex_field($ch, 'character_name', 'name');
+    $cicon   = ex_field($ch, 'character_icon', 'icon');
+    $crole   = ex_field($ch, 'character_role', 'role');
+
+    // fallback when char_map missing: humanize "char_1" → "Person 1"
+    if (!$cname) $cname = str_replace('char_', 'Person ', (string)$char_id);
+
+    $chip_icon = $cicon ? "<span class=\"dlg-char-icon\">" . esc($cicon) . "</span>" : '';
+    $chip      = '<div class="dlg-char-chip">' . $chip_icon . esc($cname) . '</div>';
+    $role_html = $crole ? '<div class="dlg-char-role">' . esc($crole) . '</div>' : '';
+
     $en      = esc(ex_field($line, 'english', 'en'));
     $pron    = esc(ex_field($line, 'pronunciation', 'hindi_pronunciation'));
     $tr      = esc(ex_field($line, 'translation', 'hindi_translation', 'source_translation'));
@@ -261,7 +280,8 @@ function render_dialogue(int $idx, int $li, array $line, string $lang, int $day,
     ];
     $inner = <<<HTML
 <div class="dlg-wrap">
-  <div class="dlg-speaker">{$speaker}</div>
+  {$chip}
+  {$role_html}
   <div class="dlg-en">"{$en}"</div>
   <div class="dlg-pron">({$pron})</div>
   <div class="dlg-tr">{$tr}</div>
@@ -289,6 +309,106 @@ function render_summary(int $idx, array $tab4, string $lang, int $day, string $s
 </div>
 HTML;
     return scene_div($idx, 'summary', $audios, $inner);
+}
+
+function render_recap(int $idx, array $recap, string $lang, int $day, string $secret): string {
+    $icon   = esc(($recap['visuals']['intro_icon'] ?? '') ?: '🔄');
+    $title  = esc($recap['title'] ?? 'कल का रीकैप');
+    $points = $recap['recap_points'] ?? [];
+    $narr   = esc($recap['saavi_recap'] ?? '');
+
+    if (!$points && !$narr) return '';
+
+    $pts_html = '';
+    foreach (array_slice($points, 0, 5) as $pt) {
+        $t = esc(is_string($pt) ? $pt : ex_field($pt, 'text', 'point', 'en'));
+        if ($t !== '') $pts_html .= "<div class=\"recap-point\">{$t}</div>";
+    }
+    $pts_block  = $pts_html ? "<div class=\"recap-points\">{$pts_html}</div>" : '';
+    $narr_block = $narr     ? "<div class=\"recap-narration\">{$narr}</div>"   : '';
+
+    $audios = [au($lang, $day, 't1_recap_saavi', $secret)];
+    $inner = <<<HTML
+<div class="recap-wrap">
+  <div class="recap-icon">{$icon}</div>
+  <div class="recap-title">{$title}</div>
+  {$pts_block}
+  {$narr_block}
+</div>
+HTML;
+    return scene_div($idx, 'recap', $audios, $inner);
+}
+
+function render_concept(int $idx, array $concept, string $lang_label_native, string $lang, int $day, string $secret): string {
+    $icon   = esc(($concept['visuals']['concept_icon'] ?? '') ?: '💡');
+    $title  = esc($concept['concept_title'] ?? '');
+    $intro  = esc($concept['saavi_intro'] ?? '');
+    $main   = esc($concept['main_explanation'] ?? '');
+    $bridge = $concept['visuals']['hindi_english_bridge'] ?? [];
+    $h_side = esc($bridge['hindi_side'] ?? $bridge['native_side'] ?? '');
+    $e_side = esc($bridge['english_side'] ?? '');
+    $arrow  = esc(($bridge['arrow'] ?? '') ?: '➡️');
+
+    if (!$title && !$main && !$h_side) return '';
+
+    $native_label = esc($lang_label_native);
+    $bridge_html = ($h_side && $e_side) ? <<<HTML
+<div class="concept-bridge">
+  <div class="bridge-side bridge-hindi">
+    <div class="bridge-label">{$native_label}</div>
+    <div class="bridge-text">{$h_side}</div>
+  </div>
+  <div class="bridge-arrow">{$arrow}</div>
+  <div class="bridge-side bridge-english">
+    <div class="bridge-label">English</div>
+    <div class="bridge-text">{$e_side}</div>
+  </div>
+</div>
+HTML : '';
+
+    $intro_html = $intro ? "<div class=\"concept-text\">{$intro}</div>" : '';
+    $main_html  = $main  ? "<div class=\"concept-text\">{$main}</div>"  : '';
+
+    $audios = [
+        au($lang, $day, 't1_concept_saavi', $secret),
+        au($lang, $day, 't1_concept_main',  $secret),
+    ];
+    $inner = <<<HTML
+<div class="concept-wrap">
+  <div class="concept-head">
+    <span class="concept-icon">{$icon}</span>
+    <div class="concept-title">{$title}</div>
+  </div>
+  {$bridge_html}
+  {$intro_html}
+  {$main_html}
+</div>
+HTML;
+    return scene_div($idx, 'concept', $audios, $inner);
+}
+
+function render_closing(int $idx, int $day, array $tab4, string $badge, string $lang, string $secret): string {
+    $tomorrow = $tab4['tomorrow_preview'] ?? [];
+    $t_icon   = esc($tomorrow['icon'] ?? '🎯');
+    $t_text   = esc($tomorrow['text'] ?? '');
+    $closing  = esc($tab4['saavi_closing'] ?? '');
+
+    $tomorrow_html = $t_text ? "<div class=\"closing-tomorrow\">{$t_icon} {$t_text}</div>" : '';
+    $badge_html    = $badge  ? '<div class="closing-badge">🏆 ' . esc($badge) . '</div>' : '';
+    $closing_html  = $closing ? "<div class=\"recap-narration\">{$closing}</div>" : '';
+
+    $audios = [au($lang, $day, 't4_closing_saavi', $secret)];
+    $inner = <<<HTML
+<div class="closing-wrap">
+  <div class="closing-big">🎉</div>
+  <div class="closing-shaabash">शाबाश!</div>
+  <div class="closing-done">Day {$day} Complete!</div>
+  {$badge_html}
+  {$tomorrow_html}
+  {$closing_html}
+</div>
+HTML;
+    return scene_div($idx, 'closing', $audios, $inner);
 }
 
 function render_quiz(int $idx, array $t5c, string $lang_name): string {
@@ -400,12 +520,20 @@ $sections    = [];
 $quiz_html   = '';
 $idx         = 0;
 
-// Scene 0: Day intro card
-$scenes_html[] = render_intro($idx, $day, $title, $SAAVI_SVG);
+// Scene 0: Day intro card (with badge if present)
+$day_badge = $data['badge'] ?? '';
+$scenes_html[] = render_intro($idx, $day, $title, $SAAVI_SVG, $day_badge);
 $sec_start_intro = $idx;
 $idx++;
 
-// Scene 1: SAAVI intro story
+// Scene 1 (optional): Previous Day Recap
+$recap = $t1c['previous_day_recap'] ?? [];
+if ($recap) {
+    $r_html = render_recap($idx, $recap, $lang, $day, $AUDIO_SECRET);
+    if ($r_html) { $scenes_html[] = $r_html; $idx++; }
+}
+
+// Scene 2: SAAVI intro story
 $saavi_intro = $t1c['saavi_intro'] ?? [];
 $si_story    = $saavi_intro['story'] ?? '';
 $si_goal     = esc($saavi_intro['goal']  ?? '');
@@ -426,6 +554,14 @@ HTML;
     $scenes_html[] = scene_div($idx, 'saavi_intro', [au($lang, $day, 't1_saavi_intro', $AUDIO_SECRET)], $inner);
     $idx++;
 }
+
+// Scene 3 (optional): Concept bridge — native ↔ English
+$concept = $t1c['concept'] ?? [];
+if ($concept) {
+    $c_html = render_concept($idx, $concept, $lm['label'], $lang, $day, $AUDIO_SECRET);
+    if ($c_html) { $scenes_html[] = $c_html; $idx++; }
+}
+
 $sections[] = ['name' => 'Start', 'icon' => '🏁', 'start' => $sec_start_intro, 'end' => $idx - 1];
 
 // Words section
@@ -461,8 +597,14 @@ if ($lines) {
     $situation = esc($t3c['scenario'] ?? $t3c['situation'] ?? '');
     $scenes_html[] = render_section_header($idx, '🎭 Dialogue', $situation);
     $idx++;
+    // Build character_id → character map for real names/icons instead of "Person 1"
+    $char_map = [];
+    foreach ($t3c['characters'] ?? [] as $ch) {
+        $cid = $ch['character_id'] ?? ($ch['id'] ?? '');
+        if ($cid) $char_map[$cid] = $ch;
+    }
     foreach ($lines as $li => $line) {
-        $scenes_html[] = render_dialogue($idx, $li + 1, $line, $lang, $day, $AUDIO_SECRET);
+        $scenes_html[] = render_dialogue($idx, $li + 1, $line, $lang, $day, $AUDIO_SECRET, $char_map);
         $idx++;
     }
     $sections[] = ['name' => 'Dialogue', 'icon' => '🎭', 'start' => $sec_start, 'end' => $idx - 1];
@@ -488,32 +630,41 @@ if ($t5c) {
     $sections[] = ['name' => 'Quiz', 'icon' => '📝', 'start' => $sec_start, 'end' => $idx - 1];
 }
 
+// Closing celebration scene (uses summary closing + tomorrow + root badge)
+if ($t4c) {
+    $sec_start = $idx;
+    $scenes_html[] = render_closing($idx, $day, $t4c, $data['badge'] ?? '', $lang, $AUDIO_SECRET);
+    $idx++;
+    $sections[] = ['name' => 'Done', 'icon' => '🎉', 'start' => $sec_start, 'end' => $idx - 1];
+}
+
 $total       = $idx;
 $all_scenes  = implode('', $scenes_html);
 $sections_js = json_encode($sections, JSON_UNESCAPED_UNICODE);
 
 // ── canonical URL for this page ──────────────────────────────────────────────
-$player_slug   = $row['player_slug'] ?? null;
-$lang_word_rev = array_flip($lang_word_map);  // hi → hindi, mr → marathi, te → telugu
-$lang_word     = $lang_word_rev[$lang] ?? $lang;
-$canonical_player = $player_slug
-    ? "https://shrutam.ai/learn-english/{$lang_word}/{$player_slug}/play/"
+// Prefer player_slug; fall back to url_slug so every day has a pretty canonical.
+$canonical_slug = $row['player_slug'] ?? $row['url_slug'] ?? null;
+$lang_word_rev  = array_flip($lang_word_map);  // hi → hindi, mr → marathi, te → telugu
+$lang_word      = $lang_word_rev[$lang] ?? $lang;
+$canonical_player = $canonical_slug
+    ? "https://shrutam.ai/learn-english/{$lang_word}/{$canonical_slug}/play/"
     : "https://shrutam.ai/player.php?lang={$lang}&day={$day}";
 
 // ── lang pills (use pretty URLs when slugs exist) ─────────────────────────────
-// Pre-fetch player_slugs for the same day in all 3 languages
+// Pre-fetch both slug types for the same day in all 3 languages
 $slugs_by_lang = [];
-$ps = $pdo->prepare("SELECT lang, player_slug FROM seo_pages WHERE day_number = ?");
+$ps = $pdo->prepare("SELECT lang, player_slug, url_slug FROM seo_pages WHERE day_number = ?");
 $ps->execute([$day]);
 foreach ($ps->fetchAll() as $sr) {
-    $slugs_by_lang[$sr['lang']] = $sr['player_slug'];
+    $slugs_by_lang[$sr['lang']] = $sr['player_slug'] ?: $sr['url_slug'];
 }
 
 $lang_pills = '';
 foreach ($lang_meta as $lc => $lm2) {
     $active = $lc === $lang ? 'active' : '';
     $lw     = $lang_word_rev[$lc] ?? $lc;
-    $href   = isset($slugs_by_lang[$lc])
+    $href   = !empty($slugs_by_lang[$lc])
         ? "/learn-english/{$lw}/{$slugs_by_lang[$lc]}/play/"
         : "/player.php?lang={$lc}&day={$day}";
     $lang_pills .= "<a href=\"{$href}\" class=\"lang-pill {$active}\">{$lm2['flag']} {$lm2['label']}</a>";
@@ -568,12 +719,17 @@ a{color:var(--acc);text-decoration:none}
 .lang-pill{padding:4px 10px;border-radius:20px;font-size:0.75rem;font-weight:700;
            background:var(--bg3);color:var(--txt2);cursor:pointer;border:1px solid var(--border)}
 .lang-pill.active,.lang-pill:hover{background:var(--acc);color:#000;border-color:var(--acc)}
-.player-area{padding:12px 12px 0}
-.player-wrap{position:relative;aspect-ratio:16/9;background:#000;
-             border-radius:var(--radius);overflow:hidden;border:1px solid var(--border)}
-.scene{position:absolute;inset:0;display:none;align-items:center;justify-content:center;
-       padding:20px;overflow-y:auto;animation:fadeIn 0.35s ease}
+.player-area{padding:10px 12px 0;max-width:1200px;margin:0 auto}
+.player-wrap{position:relative;background:#000;
+             border-radius:var(--radius);overflow:hidden;border:1px solid var(--border);
+             aspect-ratio:16/9;max-height:calc(100vh - 210px);
+             max-width:min(100%, calc((100vh - 210px) * 16 / 9));margin:0 auto}
+.scene{position:absolute;inset:0;display:none;flex-direction:column;
+       align-items:safe center;justify-content:safe center;
+       padding:18px 20px;overflow-y:auto;animation:fadeIn 0.35s ease;scrollbar-width:thin}
 .scene.active{display:flex}
+.scene::-webkit-scrollbar{width:6px}
+.scene::-webkit-scrollbar-thumb{background:var(--bg4);border-radius:3px}
 @keyframes fadeIn{from{opacity:0;transform:scale(0.97)}to{opacity:1;transform:scale(1)}}
 .si-wrap{display:flex;flex-direction:column;align-items:center;text-align:center;gap:10px}
 .si-day{font-size:0.8rem;font-weight:700;color:var(--acc);text-transform:uppercase;letter-spacing:.1em}
@@ -587,6 +743,11 @@ a{color:var(--acc);text-decoration:none}
   font-family:'Noto Sans Devanagari',var(--font)}
 .saavi-goal-text{font-size:clamp(0.75rem,1.8vw,0.88rem);color:var(--acc);margin-top:10px;
   font-weight:700;line-height:1.6}
+.saavi-avatar{position:relative;display:inline-block;margin-bottom:8px}
+.saavi-img{width:160px;height:160px;border-radius:50%;object-fit:cover;border:3px solid var(--acc);box-shadow:0 0 20px rgba(245,166,35,0.3)}
+.saavi-pulse{position:absolute;inset:-6px;border-radius:50%;border:2px solid var(--acc);opacity:0}
+.scene.playing .saavi-pulse{opacity:1;animation:saavi-speak 1.5s ease-in-out infinite}
+@keyframes saavi-speak{0%{transform:scale(1);opacity:0.6}50%{transform:scale(1.08);opacity:0.2}100%{transform:scale(1);opacity:0.6}}
 @keyframes float{0%,100%{transform:translateY(0)}50%{transform:translateY(-8px)}}
 .word-wrap{display:flex;flex-direction:column;align-items:center;gap:14px;width:100%;max-width:680px}
 .word-main{text-align:center;background:var(--bg3);padding:18px 28px;border-radius:var(--radius);
@@ -692,7 +853,75 @@ a{color:var(--acc);text-decoration:none}
 .match-right:hover{border-color:var(--acc)}
 .match-right.correct{background:rgba(74,222,128,0.2);color:var(--acc2);border-color:var(--acc2)}
 .match-right.wrong{background:rgba(248,113,113,0.2);color:var(--danger);border-color:var(--danger)}
-@media(max-width:480px){.mis-pair{flex-direction:column}.hdr-title{font-size:0.85rem}}
+/* ── new scene styles: recap / concept / closing / word-icon / dialogue chars ── */
+.recap-wrap{display:flex;flex-direction:column;align-items:center;gap:12px;width:100%;max-width:600px;text-align:center}
+.recap-icon{font-size:2.8rem;animation:rotate 4s linear infinite;display:inline-block}
+@keyframes rotate{from{transform:rotate(0)}to{transform:rotate(360deg)}}
+.recap-title{font-size:clamp(1rem,2.8vw,1.4rem);font-weight:900;color:var(--acc)}
+.recap-points{display:flex;flex-direction:column;gap:6px;width:100%}
+.recap-point{background:var(--bg3);border:1px solid var(--border);border-radius:10px;
+             padding:8px 14px;font-size:clamp(0.82rem,2vw,0.95rem);color:var(--txt);text-align:left;
+             display:flex;gap:10px;align-items:flex-start}
+.recap-point::before{content:'✓';color:var(--acc2);font-weight:900;flex-shrink:0}
+.recap-narration{background:var(--bg3);border:1px solid var(--border);border-radius:var(--radius);
+                 padding:10px 14px;font-size:clamp(0.78rem,1.8vw,0.9rem);color:var(--txt2);
+                 font-style:italic;max-width:520px;line-height:1.6}
+.concept-wrap{display:flex;flex-direction:column;align-items:center;gap:14px;width:100%;max-width:780px}
+.concept-head{display:flex;align-items:center;gap:10px;justify-content:center;flex-wrap:wrap}
+.concept-icon{font-size:1.8rem}
+.concept-title{font-size:clamp(1rem,2.8vw,1.4rem);font-weight:900;color:var(--acc);text-align:center}
+.concept-bridge{display:grid;grid-template-columns:1fr auto 1fr;gap:14px;align-items:center;width:100%}
+.bridge-side{padding:16px 12px;border-radius:var(--radius);text-align:center;color:#fff;font-weight:700}
+.bridge-hindi{background:linear-gradient(135deg,#4A90E2,#2E6BB8)}
+.bridge-english{background:linear-gradient(135deg,#06A77D,#048060)}
+.bridge-label{font-size:0.72rem;opacity:.85;text-transform:uppercase;letter-spacing:.1em;margin-bottom:6px}
+.bridge-text{font-size:clamp(0.95rem,2.3vw,1.2rem);line-height:1.3}
+.bridge-arrow{font-size:clamp(1.2rem,3vw,1.8rem);color:var(--acc)}
+.concept-text{background:var(--bg3);border:1px solid var(--border);border-radius:var(--radius);
+              padding:10px 14px;font-size:clamp(0.8rem,1.9vw,0.92rem);color:var(--txt);line-height:1.65;max-width:620px}
+.closing-wrap{display:flex;flex-direction:column;align-items:center;text-align:center;gap:12px;max-width:540px}
+.closing-big{font-size:clamp(3rem,8vw,4.5rem);animation:celebrate 1.2s ease-in-out infinite alternate}
+@keyframes celebrate{from{transform:scale(1) rotate(-5deg)}to{transform:scale(1.08) rotate(5deg)}}
+.closing-shaabash{font-size:clamp(1.4rem,4vw,2.2rem);font-weight:900;color:var(--acc)}
+.closing-done{font-size:clamp(0.9rem,2.2vw,1.1rem);font-weight:700;color:var(--txt2)}
+.closing-tomorrow{background:var(--bg3);border:1px solid var(--border);border-radius:var(--radius);
+                  padding:10px 14px;font-size:clamp(0.8rem,1.9vw,0.95rem);color:var(--txt);max-width:420px}
+.closing-badge{display:inline-block;padding:6px 14px;border-radius:20px;font-size:0.85rem;font-weight:800;
+               background:linear-gradient(135deg,#F5A623,#F0C060);color:#000;box-shadow:0 0 18px rgba(245,166,35,0.45)}
+.w-icon{font-size:2.2rem;margin-bottom:4px}
+.intro-badge{display:inline-block;padding:4px 12px;border-radius:20px;font-size:0.72rem;font-weight:800;
+             background:linear-gradient(135deg,#F5A623,#F0C060);color:#000;margin-top:6px;
+             text-transform:uppercase;letter-spacing:.08em}
+.dlg-char-chip{display:inline-flex;align-items:center;gap:6px;padding:4px 14px;border-radius:20px;
+               font-size:0.78rem;font-weight:800;background:var(--acc);color:#000;letter-spacing:.02em}
+.dlg-char-icon{font-size:1rem}
+.dlg-char-role{font-size:0.7rem;color:var(--txt3);font-weight:600;margin-top:2px}
+/* ── responsive: desktop vs mobile ───────────────────────────────────────────── */
+@media(min-width:1024px){
+  .si-wrap{gap:14px}
+  .word-wrap,.mis-wrap,.sum-wrap,.concept-wrap{gap:18px}
+  .word-exs{max-width:580px;margin:0 auto}
+}
+@media(max-width:640px){
+  .player-area{padding:6px 8px 0;max-width:none}
+  .player-wrap{aspect-ratio:auto;height:calc(100vh - 150px);min-height:340px;max-height:none;max-width:100%}
+  .scene{padding:14px 14px}
+  .hdr{padding:10px 12px;gap:8px}
+  .hdr-title{font-size:0.8rem;line-height:1.2}
+  .hdr-langs{gap:4px}
+  .lang-pill{padding:3px 8px;font-size:0.68rem}
+  .controls{padding:8px 10px;gap:6px}
+  .ctrl-btn{padding:7px 10px;font-size:0.85rem}
+  .sec-tabs{padding:8px 10px;gap:4px}
+  .sec-tab{padding:5px 10px;font-size:0.72rem}
+  .concept-bridge{grid-template-columns:1fr;gap:8px}
+  .bridge-arrow{transform:rotate(90deg)}
+  .saavi-img{width:110px;height:110px}
+}
+@media(max-width:480px){
+  .mis-pair{flex-direction:column}
+  .fc-grid{grid-template-columns:repeat(2,1fr)}
+}
 </style>
 </head>
 <body>
