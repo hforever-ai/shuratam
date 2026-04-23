@@ -9,15 +9,48 @@ Usage:
   python3 scripts/generate_day_content.py --lang hi --day 1 --dry-run
 """
 
-import argparse, json, os, sys, urllib.request
+import argparse, json, os, sys, time, urllib.request, urllib.error
 from pathlib import Path
 
-# ── API Key ─────────────────────────────────────────────────────────────────
-GEMINI_KEY = os.environ.get('GOOGLE_AI_API_KEY', '')
-if not GEMINI_KEY:
-    keys_file = Path(__file__).resolve().parent.parent / 'safety' / 'keys.json'
-    if keys_file.exists():
-        GEMINI_KEY = json.loads(keys_file.read_text()).get('GOOGLE_AI_API_KEY', '')
+# ── API Keys (multi-key rotation) ────────────────────────────────────────────
+_KEYS_FILE = Path(__file__).resolve().parent.parent / 'safety' / 'keys.json'
+
+def _load_gemini_keys() -> list[str]:
+    """Load all Google AI keys from env + keys.json. Returns deduped list."""
+    keys = []
+    # 1. Env var (can be comma-separated for multiple)
+    env_keys = os.environ.get('GOOGLE_AI_API_KEYS', os.environ.get('GOOGLE_AI_API_KEY', ''))
+    for k in env_keys.split(','):
+        k = k.strip()
+        if k: keys.append(k)
+    # 2. keys.json
+    if _KEYS_FILE.exists():
+        data = json.loads(_KEYS_FILE.read_text())
+        for k in data.get('GOOGLE_AI_API_KEYS', []):
+            if k and k not in keys: keys.append(k)
+        single = data.get('GOOGLE_AI_API_KEY', '')
+        if single and single not in keys: keys.append(single)
+    return keys
+
+GEMINI_KEYS: list[str] = _load_gemini_keys()
+_current_key_idx = 0
+
+def _next_key() -> str:
+    global _current_key_idx
+    if not GEMINI_KEYS:
+        return ''
+    key = GEMINI_KEYS[_current_key_idx % len(GEMINI_KEYS)]
+    _current_key_idx += 1
+    return key
+
+def _rotate_key() -> str:
+    """Force rotation to next key (call on rate-limit)."""
+    global _current_key_idx
+    _current_key_idx += 1
+    return _next_key()
+
+# Backward-compat alias
+GEMINI_KEY = GEMINI_KEYS[0] if GEMINI_KEYS else ''
 
 # ── Language configs ─────────────────────────────────────────────────────────
 LANG_CONFIG = {
@@ -1535,30 +1568,73 @@ def generate(lang: str, day: int) -> dict:
         'systemInstruction': {'parts': [{'text': system}]},
         'generationConfig': {
             'temperature': 0.7,
-            'maxOutputTokens': 32768,
+            'maxOutputTokens': 65536,
             'responseMimeType': 'application/json',
         },
     }).encode()
-
-    url = (
-        'https://generativelanguage.googleapis.com/v1beta/models/'
-        f'gemini-2.5-flash:generateContent?key={GEMINI_KEY}'
-    )
-    req = urllib.request.Request(
-        url, data=payload, headers={'Content-Type': 'application/json'}
-    )
 
     lang_name = LANG_CONFIG[lang]['name']
     print(f"Generating {lang_name} Day {day}...")
     print(f"  System prompt: {len(system)} chars")
     print(f"  User prompt:   {len(user)} chars")
+    print(f"  Keys available: {len(GEMINI_KEYS)}")
 
-    with urllib.request.urlopen(req, timeout=300) as resp:
-        data = json.loads(resp.read())
+    n = len(GEMINI_KEYS)
+    for attempt in range(n):
+        key = GEMINI_KEYS[(_current_key_idx + attempt) % n]
+        print(f"  Using key ...{key[-6:]} (attempt {attempt + 1}/{n})")
+        url = (
+            'https://generativelanguage.googleapis.com/v1beta/models/'
+            f'{os.environ.get("CONTENT_MODEL", "gemini-3-flash-preview")}:generateContent?key={key}'
+        )
+        req = urllib.request.Request(
+            url, data=payload, headers={'Content-Type': 'application/json'}
+        )
+        try:
+            with urllib.request.urlopen(req, timeout=300) as resp:
+                data = json.loads(resp.read())
+            _next_key()  # advance round-robin for next generate() call
+            candidate = data['candidates'][0]
+            finish = candidate.get('finishReason', 'STOP')
+            if finish == 'MAX_TOKENS':
+                print(f"  WARNING: Response truncated (MAX_TOKENS hit). Retrying with next key...")
+                continue  # try next key — might produce a slightly different (shorter) response
+            text    = candidate['content']['parts'][0]['text']
+            # Strip markdown code fences and extra data after closing brace
+            text = text.strip()
+            if text.startswith('```'):
+                text = text.split('\n', 1)[1] if '\n' in text else text[3:]
+            if text.endswith('```'):
+                text = text[:-3]
+            text = text.strip()
+            # Find the outermost JSON object/array
+            depth = 0
+            end_idx = 0
+            start_char = text[0] if text else ''
+            end_char = '}' if start_char == '{' else (']' if start_char == '[' else '')
+            if end_char:
+                for i, c in enumerate(text):
+                    if c == start_char: depth += 1
+                    elif c == end_char: depth -= 1
+                    if depth == 0:
+                        end_idx = i + 1
+                        break
+                text = text[:end_idx]
+            content = json.loads(text)
+            # Model sometimes wraps response in a list — unwrap it
+            if isinstance(content, list) and len(content) == 1 and isinstance(content[0], dict):
+                content = content[0]
+            return content
+        except urllib.error.HTTPError as e:
+            if e.code == 429:
+                print(f"  Rate-limited on key ...{key[-6:]}. Rotating to next key...")
+                continue
+            raise
 
-    text    = data['candidates'][0]['content']['parts'][0]['text']
-    content = json.loads(text)
-    return content
+    raise RuntimeError(
+        f"Response keeps hitting MAX_TOKENS or all keys are rate-limited. "
+        f"Try reducing content or wait before retrying."
+    )
 
 
 # ── Basic v4 validation ───────────────────────────────────────────────────────
@@ -1649,10 +1725,11 @@ if __name__ == '__main__':
         print(build_user_prompt(args.lang, args.day))
         sys.exit(0)
 
-    if not GEMINI_KEY:
-        print('ERROR: GOOGLE_AI_API_KEY not set. '
-              'Export it or add to safety/keys.json as {"GOOGLE_AI_API_KEY": "..."}')
+    if not GEMINI_KEYS:
+        print('ERROR: No Gemini API keys found. '
+              'Export GOOGLE_AI_API_KEY or add keys to safety/keys.json')
         sys.exit(1)
+    print(f'Using {len(GEMINI_KEYS)} API key(s) with rotation on rate-limit')
 
     content = generate(args.lang, args.day)
 

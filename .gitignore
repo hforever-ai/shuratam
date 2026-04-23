@@ -19,6 +19,17 @@ Thumbs.db
 safety/keys.json
 safety/.rate_limits.json
 
-# Audio files (deploy separately — 28MB)
+# Audio files (deploy separately)
 audio/
 audio_output/
+
+# Generated outputs (deploy separately via rsync)
+outputs/
+training/
+learn-english/
+player_static/
+logs/
+
+# Temp
+*.log
+nohup.out

@@ -8,8 +8,29 @@ RewriteEngine On
 RewriteCond %{HTTPS} off
 RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
 
-# English course — /spoken-english/day/N/ → spoken-english/index.php?day=N
+# SEO pages — pre-generated static HTML, Cloudflare caches these automatically
+# Files live at: learn-english/{lang}/{slug}/index.html
+# Cloudflare: no Page Rules needed — static HTML cached by default (edge TTL: CF default)
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^learn-english/([a-z]+)/([a-z0-9-]+)/?$ learn-english/$1/$2/index.html [L]
+RewriteRule ^learn-english/([a-z]+)/?$ learn-english/$1/index.html [L]
+
+# Dynamic player — topic-based pretty URLs → player.php
+# Format: /learn-english/{lang-word}/{player-slug}/play/
+# e.g.   /learn-english/hindi/day-1-greetings-self-introduction/play/
+# Real R2 audio URLs never in page source; HMAC tokens minted per request.
+# Must come BEFORE the static learn-english rules below.
+RewriteRule ^learn-english/(hindi|marathi|telugu)/([a-z0-9-]+)/play/?$ player.php?lang_word=$1&slug=$2 [L,QSA]
+
+# Fallback: numeric URL → player.php (internal / legacy)
+RewriteRule ^learn-english/play/([a-z]{2})/(\d+)/?$ player.php?lang=$1&day=$2 [L,QSA]
+
+# English course — serve directory index explicitly
+RewriteRule ^spoken-english/?$ spoken-english/index.php [L,QSA]
 RewriteRule ^spoken-english/day/(\d+)/?$ spoken-english/index.php?day=$1 [L,QSA]
+RewriteRule ^spoken-english/login/?$ spoken-english/login.php [L,QSA]
+RewriteRule ^spoken-english/hindi-english/?$ spoken-english/hindi-english/index.php [L,QSA]
+RewriteRule ^spoken-english/marathi-english/?$ spoken-english/marathi-english/index.php [L,QSA]
 
 # Multi-language router — route /{lang}/... to router.php
 RewriteCond %{REQUEST_URI} ^/(hi|en|mr|te)(/.*)?$

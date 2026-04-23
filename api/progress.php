@@ -1,66 +1,98 @@
 <?php
 /**
- * Save/get student progress.
- * POST: save quiz score, block completion
- * GET: get progress for current user
+ * /api/progress.php — User progress for v4 static player pages.
+ *
+ * Cloudflare: does NOT cache /api/* routes (no Cache-Control: public).
+ * User identity: UUID from localStorage (no login needed — free course).
+ *
+ * POST  {uid, lang, day, tabs, words, sents, quiz_score, quiz_total}
+ * GET   ?uid=xxx&lang=hi&day=1
  */
-error_reporting(0);
 header('Content-Type: application/json');
-session_start();
+header('Cache-Control: no-store, no-cache');
+header('Access-Control-Allow-Origin: https://shrutam.ai');
+header('Access-Control-Allow-Methods: GET, POST, OPTIONS');
+header('Access-Control-Allow-Headers: Content-Type');
 
-$uid = $_SESSION['user']['uid'] ?? '';
-if (!$uid) {
-    echo json_encode(['error' => 'Not logged in']);
+if ($_SERVER['REQUEST_METHOD'] === 'OPTIONS') { http_response_code(204); exit; }
+
+$cfg = require __DIR__ . '/../config/db.php';
+try {
+    $pdo = new PDO(
+        "mysql:host={$cfg['host']};dbname={$cfg['dbname']};charset={$cfg['charset']}",
+        $cfg['username'], $cfg['password'],
+        [PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION]
+    );
+} catch (Exception $e) {
+    http_response_code(503);
+    echo json_encode(['error' => 'db_unavailable']);
     exit;
 }
 
-$dbConfig = require __DIR__ . '/../config/db.php';
-$pdo = new PDO("mysql:host={$dbConfig['host']};dbname={$dbConfig['dbname']};charset={$dbConfig['charset']}",
-               $dbConfig['username'], $dbConfig['password']);
+function clean_uid(string $v): string {
+    return preg_match('/^u[a-z0-9]{8,30}$/i', $v) ? $v : '';
+}
+function clean_lang(string $v): string {
+    return in_array($v, ['hi', 'mr', 'te']) ? $v : '';
+}
 
-$courseId = $pdo->query("SELECT id FROM courses WHERE course_code = 'english-speaking-50-hi'")->fetchColumn();
+// ── GET ─────────────────────────────────────────────────────────────────────
+if ($_SERVER['REQUEST_METHOD'] === 'GET') {
+    $uid  = clean_uid($_GET['uid']  ?? '');
+    $lang = clean_lang($_GET['lang'] ?? '');
+    $day  = intval($_GET['day'] ?? 0);
+    if (!$uid || !$lang || $day < 1 || $day > 50) { echo json_encode(['progress' => null]); exit; }
 
+    $stmt = $pdo->prepare("
+        SELECT progress_json, quiz_score, quiz_total, completed_at, last_accessed
+        FROM   course_progress_v4
+        WHERE  user_uid = ? AND lang = ? AND day_number = ?
+    ");
+    $stmt->execute([$uid, $lang, $day]);
+    $row = $stmt->fetch(PDO::FETCH_ASSOC);
+    echo json_encode(['progress' => $row ?: null]);
+    exit;
+}
+
+// ── POST ────────────────────────────────────────────────────────────────────
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
-    $input = json_decode(file_get_contents('php://input'), true);
-    $dayNum = intval($input['day'] ?? 0);
-    $quizScore = intval($input['quiz_score'] ?? 0);
-    $quizTotal = intval($input['quiz_total'] ?? 0);
-    $blocksCompleted = intval($input['blocks_completed'] ?? 0);
-    $completed = !empty($input['completed']);
+    $body = json_decode(file_get_contents('php://input'), true) ?? [];
+    $uid  = clean_uid($body['uid']  ?? '');
+    $lang = clean_lang($body['lang'] ?? '');
+    $day  = intval($body['day'] ?? 0);
 
-    $stmt = $pdo->prepare("INSERT INTO course_progress (user_id, course_id, day_number, quiz_score, quiz_total, blocks_completed, completed_at, last_accessed)
-        VALUES (?, ?, ?, ?, ?, ?, ?, NOW())
-        ON DUPLICATE KEY UPDATE
-            quiz_score = GREATEST(quiz_score, VALUES(quiz_score)),
-            quiz_total = VALUES(quiz_total),
-            blocks_completed = GREATEST(blocks_completed, VALUES(blocks_completed)),
-            completed_at = IF(VALUES(completed_at) IS NOT NULL, VALUES(completed_at), completed_at),
-            last_accessed = NOW()");
-    $stmt->execute([$uid, $courseId, $dayNum, $quizScore, $quizTotal, $blocksCompleted,
-                    $completed ? date('Y-m-d H:i:s') : null]);
-
-    echo json_encode(['success' => true]);
-
-} elseif ($_SERVER['REQUEST_METHOD'] === 'GET') {
-    // Get all progress for this user
-    $stmt = $pdo->prepare("SELECT day_number, quiz_score, quiz_total, blocks_completed, completed_at, last_accessed
-        FROM course_progress WHERE user_id = ? AND course_id = ? ORDER BY day_number");
-    $stmt->execute([$uid, $courseId]);
-    $progress = $stmt->fetchAll(PDO::FETCH_ASSOC);
-
-    // Get chat count per day
-    $stmt = $pdo->prepare("SELECT day_number, COUNT(*) as chats FROM chat_history WHERE uid = ? GROUP BY day_number");
-    $stmt->execute([$uid]);
-    $chats = [];
-    while ($row = $stmt->fetch(PDO::FETCH_ASSOC)) {
-        $chats[$row['day_number']] = $row['chats'];
+    if (!$uid || !$lang || $day < 1 || $day > 50) {
+        http_response_code(400);
+        echo json_encode(['error' => 'invalid_params']);
+        exit;
     }
 
-    echo json_encode([
-        'uid' => $uid,
-        'name' => $_SESSION['user']['name'] ?? '',
-        'progress' => $progress,
-        'chat_counts' => $chats,
-        'total_days_accessed' => count($progress),
+    $progress = json_encode([
+        'tabs'  => array_values(array_filter($body['tabs']  ?? [], 'is_numeric')),
+        'words' => is_array($body['words'] ?? null) ? $body['words'] : [],
+        'sents' => array_values(array_filter($body['sents'] ?? [], 'is_numeric')),
     ], JSON_UNESCAPED_UNICODE);
+
+    $quiz_score = min(intval($body['quiz_score'] ?? 0), 100);
+    $quiz_total = min(intval($body['quiz_total'] ?? 0), 100);
+    $tabs_done  = count($body['tabs'] ?? []);
+    $completed  = $tabs_done >= 5 ? date('Y-m-d H:i:s') : null;
+
+    $pdo->prepare("
+        INSERT INTO course_progress_v4
+            (user_uid, lang, day_number, progress_json, quiz_score, quiz_total, completed_at)
+        VALUES (?, ?, ?, ?, ?, ?, ?)
+        ON DUPLICATE KEY UPDATE
+            progress_json = VALUES(progress_json),
+            quiz_score    = GREATEST(quiz_score, VALUES(quiz_score)),
+            quiz_total    = GREATEST(quiz_total, VALUES(quiz_total)),
+            completed_at  = COALESCE(completed_at, VALUES(completed_at)),
+            last_accessed = CURRENT_TIMESTAMP
+    ")->execute([$uid, $lang, $day, $progress, $quiz_score, $quiz_total, $completed]);
+
+    echo json_encode(['ok' => true]);
+    exit;
 }
+
+http_response_code(405);
+echo json_encode(['error' => 'method_not_allowed']);

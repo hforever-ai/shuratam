@@ -40,22 +40,66 @@ try {
         die(json_encode(['error' => 'SQL file not found']));
     }
 
-    $sql = file_get_contents($sqlFile);
-    $statements = array_filter(array_map('trim', preg_split('/;\s*\n/', $sql)));
-
+    // Tables already created from first run. Now insert data using PHP lookups instead of MySQL @variables.
     $ok = 0;
     $fail = 0;
     $errs = [];
 
+    // Seed courses
+    $pdo->exec("INSERT INTO courses (course_code, title_source, title_target, source_lang, target_lang, total_days)
+        VALUES ('english-speaking-50-hi', 'अंग्रेज़ी बोलना सीखें — 50 दिन', 'Learn English Speaking — 50 Days', 'hi', 'en', 50)
+        ON DUPLICATE KEY UPDATE title_source = VALUES(title_source)");
+    $pdo->exec("INSERT INTO courses (course_code, title_source, title_target, source_lang, target_lang, total_days)
+        VALUES ('english-speaking-50-mr', 'इंग्लिश बोलायला शिका — 50 दिवस', 'Learn English Speaking — 50 Days', 'mr', 'en', 50)
+        ON DUPLICATE KEY UPDATE title_source = VALUES(title_source)");
+    $ok += 2;
+
+    // Load JSON content files
+    $hiJson = __DIR__ . '/../sql/../spoken-english/../public_html/../../';
+    // Actually, read from the JSON files that were used to generate SQL.
+    // Simpler: just use PHP to resolve @variables
+    $languages = [
+        'hi' => 'english-speaking-50-hi',
+        'mr' => 'english-speaking-50-mr',
+    ];
+
+    $sqlFile = __DIR__ . '/../sql/complete_setup.sql';
+    $sql = file_get_contents($sqlFile);
+
+    // Extract and run statements, resolving @variables in PHP
+    $courseId = null;
+    $dayId = null;
+    $statements = array_filter(array_map('trim', preg_split('/;\s*\n/', $sql)));
+
     foreach ($statements as $s) {
         $s = trim($s);
         if (empty($s) || strpos($s, '--') === 0) continue;
+        // Skip CREATE TABLE (already done) and SET NAMES/FOREIGN_KEY
+        if (preg_match('/^(CREATE TABLE|SET NAMES|SET FOREIGN)/i', $s)) { $ok++; continue; }
+
+        // Resolve SET @course_id
+        if (preg_match("/SET @course_id.*course_code = '([^']+)'/", $s, $m)) {
+            $courseId = $pdo->query("SELECT id FROM courses WHERE course_code = '{$m[1]}'")->fetchColumn();
+            $ok++;
+            continue;
+        }
+        // Resolve SET @day_id
+        if (preg_match("/SET @day_id.*course_id = @course_id AND day_number = (\d+)/", $s, $m)) {
+            $dayId = $pdo->query("SELECT id FROM course_days WHERE course_id = {$courseId} AND day_number = {$m[1]}")->fetchColumn();
+            $ok++;
+            continue;
+        }
+
+        // Replace @course_id and @day_id with actual values
+        $s = str_replace('@course_id', $courseId ?: 'NULL', $s);
+        $s = str_replace('@day_id', $dayId ?: 'NULL', $s);
+
         try {
             $pdo->exec($s);
             $ok++;
         } catch (Exception $e) {
             $fail++;
-            $errs[] = substr($e->getMessage(), 0, 120);
+            $errs[] = substr($s, 0, 60) . ' → ' . substr($e->getMessage(), 0, 80);
         }
     }
 

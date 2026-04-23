@@ -1,0 +1,602 @@
+[
+  {
+    "day": 1,
+    "pose": "SAAVI stands tall with a wide, friendly smile, waving one hand warmly toward the viewer in a welcoming gesture.",
+    "background": "A bright, minimalist studio with soft studio lights, a modern white desk, and a potted succulent on the side.",
+    "icons": [
+      "Hand waving",
+      "Speech bubble",
+      "Sun",
+      "Smiling face"
+    ],
+    "bg_color": "Soft sky blue and white"
+  },
+  {
+    "day": 2,
+    "pose": "SAAVI checks a glowing wristwatch while holding a steaming cup of coffee, looking ready to start the busy day.",
+    "background": "A cozy, sunlit bedroom with an unmade bed, a large window showing a morning sunrise, and a wall clock.",
+    "icons": [
+      "Coffee mug",
+      "Alarm clock",
+      "Toothbrush",
+      "Sunrise"
+    ],
+    "bg_color": "Warm orange and pale yellow"
+  },
+  {
+    "day": 3,
+    "pose": "SAAVI points enthusiastically toward an open family photo album resting on a wooden table, showing various small portrait frames.",
+    "background": "A comfortable living room featuring a stone fireplace, a plush patterned rug, and several framed pictures on the mantle.",
+    "icons": [
+      "Family tree",
+      "House silhouette",
+      "Heart symbol",
+      "Baby stroller"
+    ],
+    "bg_color": "Earthy brown and cream"
+  },
+  {
+    "day": 4,
+    "pose": "SAAVI points one finger to herself and the other toward the viewer, demonstrating the concept of personal identity clearly.",
+    "background": "A vibrant neighborhood playground with colorful slides, wooden swings, and children playing in the distant green grassy field.",
+    "icons": [
+      "Male silhouette",
+      "Female silhouette",
+      "Group of people",
+      "Pointing finger"
+    ],
+    "bg_color": "Grass green and bright blue"
+  },
+  {
+    "day": 5,
+    "pose": "SAAVI is captured mid-stride, jogging in place with determined eyes and arms bent at the elbows for athletic movement.",
+    "background": "A modern fitness gym with treadmills, heavy dumbbells on racks, and large mirrors reflecting the bright overhead neon lights.",
+    "icons": [
+      "Running shoe",
+      "Bicycle",
+      "Swimming person",
+      "Lifting weight"
+    ],
+    "bg_color": "Electric blue and charcoal gray"
+  },
+  {
+    "day": 6,
+    "pose": "SAAVI holds a sparkling glass prism that catches the light, reflecting various colors onto her curious and excited face.",
+    "background": "A sophisticated art gallery with white walls, colorful abstract paintings, and spotlights directed at various modern marble sculptures.",
+    "icons": [
+      "Rainbow",
+      "Magnifying glass",
+      "Paint palette",
+      "Sparkles"
+    ],
+    "bg_color": "Lavender and soft violet"
+  },
+  {
+    "day": 7,
+    "pose": "SAAVI holds a bright yellow umbrella over her head while looking up at the sky with a calm expression.",
+    "background": "A rainy city sidewalk with puddles reflecting neon signs, tall buildings, and people walking by with colorful raincoats.",
+    "icons": [
+      "Umbrella",
+      "Cloud with rain",
+      "Thermometer",
+      "Snowflake"
+    ],
+    "bg_color": "Slate gray and misty teal"
+  },
+  {
+    "day": 8,
+    "pose": "SAAVI balances two glowing spheres in her hands, representing the equilibrium and importance of the fundamental helper verbs.",
+    "background": "A quiet, grand library with floor-to-ceiling wooden bookshelves, rolling ladders, and long study tables with green shaded lamps.",
+    "icons": [
+      "Balance scale",
+      "Open book",
+      "Lightbulb",
+      "Pencil"
+    ],
+    "bg_color": "Deep burgundy and gold"
+  },
+  {
+    "day": 9,
+    "pose": "SAAVI holds a small, ornate treasure chest open, looking inside with a look of possession and happy discovery.",
+    "background": "A dusty but charming attic filled with cardboard boxes, an old rocking chair, and light streaming through a circular window.",
+    "icons": [
+      "Treasure chest",
+      "Key",
+      "Gift box",
+      "Diamond"
+    ],
+    "bg_color": "Dusty rose and beige"
+  },
+  {
+    "day": 10,
+    "pose": "SAAVI holds a long paper checklist and a pen, looking focused as she ticks off a very important task.",
+    "background": "A busy professional kitchen with stainless steel counters, hanging copper pots, and a stove with steam rising from pans.",
+    "icons": [
+      "Checkmark",
+      "Clipboard",
+      "Exclamation mark",
+      "Wristwatch"
+    ],
+    "bg_color": "Sage green and silver"
+  },
+  {
+    "day": 11,
+    "pose": "SAAVI performs a strong bicep curl with a small weight, demonstrating the active power of doing and performing actions.",
+    "background": "A sunny backyard garden with a wooden fence, blooming flower beds, a watering can, and a small vegetable patch.",
+    "icons": [
+      "Hammer",
+      "Wrench",
+      "Gears",
+      "Flexing arm"
+    ],
+    "bg_color": "Olive green and terracotta"
+  },
+  {
+    "day": 12,
+    "pose": "SAAVI points toward a large directional signpost with multiple arrows, looking helpful and ready to guide the way forward.",
+    "background": "A clean hospital reception area with a curved desk, blue chairs, and a hallway leading to various medical wings.",
+    "icons": [
+      "Red cross",
+      "Ambulance",
+      "Directional arrow",
+      "Stethoscope"
+    ],
+    "bg_color": "Sterile white and navy"
+  },
+  {
+    "day": 13,
+    "pose": "SAAVI holds a leather-bound menu in one hand while gesturing toward a table, acting as a polite, welcoming host.",
+    "background": "A high-end restaurant with white tablecloths, glowing candles, wine glasses, and a large window overlooking the city lights.",
+    "icons": [
+      "Fork and knife",
+      "Chef hat",
+      "Menu",
+      "Glass of water"
+    ],
+    "bg_color": "Champagne and dark chocolate"
+  },
+  {
+    "day": 14,
+    "pose": "SAAVI holds a folded paper map open, pointing to a specific route while looking out at the busy street.",
+    "background": "A bustling city intersection with yellow taxis, traffic lights, tall skyscrapers, and people crossing the black and white stripes.",
+    "icons": [
+      "Taxi car",
+      "Map pin",
+      "Traffic light",
+      "Steering wheel"
+    ],
+    "bg_color": "Traffic yellow and asphalt gray"
+  },
+  {
+    "day": 15,
+    "pose": "SAAVI reaches up high to grab a box from a tall shelf, stretching her arm to demonstrate reaching movement.",
+    "background": "A local general store with shelves full of canned goods, cereal boxes, and a wooden counter with a register.",
+    "icons": [
+      "Shopping basket",
+      "Paper bag",
+      "Price tag",
+      "Hand reaching"
+    ],
+    "bg_color": "Peach and mint green"
+  },
+  {
+    "day": 16,
+    "pose": "SAAVI stands at a bus stop, holding a travel card and looking down the road for the approaching vehicle.",
+    "background": "A city bus stop with a glass shelter, a route map, and a large blue bus pulling into the curb.",
+    "icons": [
+      "Bus",
+      "Ticket",
+      "Stop sign",
+      "Backpack"
+    ],
+    "bg_color": "Royal blue and concrete gray"
+  },
+  {
+    "day": 17,
+    "pose": "SAAVI clutches a shiny golden trophy close to her chest, looking proud and triumphant about her recent big achievement.",
+    "background": "A school auditorium stage with heavy red velvet curtains, a wooden floor, and bright spotlights shining from the ceiling.",
+    "icons": [
+      "Trophy",
+      "Gold medal",
+      "Star",
+      "Thumbs up"
+    ],
+    "bg_color": "Crimson and metallic gold"
+  },
+  {
+    "day": 18,
+    "pose": "SAAVI holds a wooden spoon and a mixing bowl, looking like she is carefully preparing a brand new recipe.",
+    "background": "A modern kitchen island with a marble top, a bowl of fresh fruit, and a digital oven in the background.",
+    "icons": [
+      "Mixing bowl",
+      "Camera",
+      "Cake",
+      "Hand holding"
+    ],
+    "bg_color": "Turquoise and white"
+  },
+  {
+    "day": 19,
+    "pose": "SAAVI peers through a pair of black binoculars, looking intently at something far away with a look of curiosity.",
+    "background": "A grassy hilltop in a public park with a single large oak tree and a view of the valley.",
+    "icons": [
+      "Binoculars",
+      "Eye",
+      "Mountain",
+      "Footprints"
+    ],
+    "bg_color": "Sky blue and forest green"
+  },
+  {
+    "day": 20,
+    "pose": "SAAVI gazes thoughtfully into a glowing crystal ball held between her hands, contemplating various possibilities for the upcoming future.",
+    "background": "A mystical fortune teller's tent with purple drapes, hanging lanterns, and a table covered in a star-patterned velvet cloth.",
+    "icons": [
+      "Crystal ball",
+      "Magic wand",
+      "Hourglass",
+      "Cloudy thought"
+    ],
+    "bg_color": "Deep purple and indigo"
+  },
+  {
+    "day": 21,
+    "pose": "SAAVI carries several colorful shopping bags on both arms, looking exhausted but very happy with her many new purchases.",
+    "background": "A brightly lit shopping mall atrium with glass elevators, escalators, and various storefronts with glowing neon brand signs.",
+    "icons": [
+      "Shopping bag",
+      "Credit card",
+      "Dress",
+      "Escalator"
+    ],
+    "bg_color": "Magenta and bright white"
+  },
+  {
+    "day": 22,
+    "pose": "SAAVI holds an old black-and-white polaroid photograph, looking at it with a nostalgic and gentle smile on her face.",
+    "background": "A dusty antique shop filled with old clocks, wooden trunks, vintage cameras, and stacks of yellowed hardcover history books.",
+    "icons": [
+      "Old camera",
+      "Polaroid photo",
+      "Sand timer",
+      "Anchor"
+    ],
+    "bg_color": "Sepia and dark oak"
+  },
+  {
+    "day": 23,
+    "pose": "SAAVI is walking while simultaneously eating an apple, demonstrating two actions happening at the exact same time in sequence.",
+    "background": "A beach boardwalk at sunset with wooden planks, a distant ferris wheel, and the orange sun hitting the ocean.",
+    "icons": [
+      "Walking person",
+      "Apple",
+      "Waves",
+      "Sunset"
+    ],
+    "bg_color": "Coral and ocean blue"
+  },
+  {
+    "day": 24,
+    "pose": "SAAVI carefully adjusts the hands of a large mechanical wall clock, ensuring the time is set perfectly and accurately.",
+    "background": "A clockmaker's workshop with hundreds of ticking clocks, hanging pendulums, small metal tools, and magnifying glasses on the bench.",
+    "icons": [
+      "Wall clock",
+      "Gear",
+      "Finished flag",
+      "Lock"
+    ],
+    "bg_color": "Bronze and charcoal"
+  },
+  {
+    "day": 25,
+    "pose": "SAAVI looks up at a massive digital departure board, holding a rolling suitcase handle firmly in her right hand.",
+    "background": "A vast, modern airport terminal with high vaulted ceilings, large glass windows, and people walking with luggage everywhere.",
+    "icons": [
+      "Airplane",
+      "Suitcase",
+      "Passport",
+      "Globe"
+    ],
+    "bg_color": "Steel blue and silver"
+  },
+  {
+    "day": 26,
+    "pose": "SAAVI points to a specific date on a floating holographic calendar, looking forward to a planned event in time.",
+    "background": "A high-tech control room with glowing blue screens, data charts, and a sleek metallic desk with no visible wires.",
+    "icons": [
+      "Calendar",
+      "Rocket",
+      "Satellite",
+      "Digital watch"
+    ],
+    "bg_color": "Neon blue and black"
+  },
+  {
+    "day": 27,
+    "pose": "SAAVI stands with her arms crossed firmly, looking serious and authoritative as she explains necessary rules and important obligations.",
+    "background": "A formal office setting with a large mahogany desk, a leather chair, and a tall bookshelf filled with law books.",
+    "icons": [
+      "Shield",
+      "Stop sign",
+      "Gavel",
+      "Exclamation bubble"
+    ],
+    "bg_color": "Navy blue and dark grey"
+  },
+  {
+    "day": 28,
+    "pose": "SAAVI sits on a log with her hands open wide, telling a story with a dramatic and expressive face.",
+    "background": "A cozy campfire at night under a starry sky, with pine trees surrounding the glowing orange and yellow flames.",
+    "icons": [
+      "Campfire",
+      "Moon",
+      "Open book",
+      "Acoustic guitar"
+    ],
+    "bg_color": "Midnight blue and fire orange"
+  },
+  {
+    "day": 29,
+    "pose": "SAAVI sits at a desk typing quickly on a laptop, with a headset on, looking like a professional employee.",
+    "background": "A sleek corporate office with glass walls, a coffee machine in the corner, and a view of city skyscrapers.",
+    "icons": [
+      "Laptop",
+      "Headset",
+      "Paperclip",
+      "Briefcase"
+    ],
+    "bg_color": "Cool grey and white"
+  },
+  {
+    "day": 30,
+    "pose": "SAAVI wears a white lab coat and a stethoscope around her neck, holding a medical chart and looking professional.",
+    "background": "A brightly lit hospital corridor with linoleum floors, a gurney against the wall, and signs for the pharmacy.",
+    "icons": [
+      "Stethoscope",
+      "Pill bottle",
+      "Heart rate",
+      "Band-aid"
+    ],
+    "bg_color": "Light blue and sterile white"
+  },
+  {
+    "day": 31,
+    "pose": "SAAVI shrugs her shoulders with her palms facing up, looking concerned and ready to help solve a customer's problem.",
+    "background": "A customer service desk with a 'Help' sign, a telephone, and a stack of feedback forms on the counter.",
+    "icons": [
+      "Sad face",
+      "Gear",
+      "Phone",
+      "Checkmark box"
+    ],
+    "bg_color": "Pale yellow and grey"
+  },
+  {
+    "day": 32,
+    "pose": "SAAVI holds out a passport and a boarding pass, smiling as she prepares to go through the security gate.",
+    "background": "A duty-free shopping area in an international airport with perfume bottles, luxury watches, and signs in multiple languages.",
+    "icons": [
+      "Passport",
+      "Boarding pass",
+      "Globe",
+      "Suitcase"
+    ],
+    "bg_color": "Gold and royal purple"
+  },
+  {
+    "day": 33,
+    "pose": "SAAVI holds a thick stack of documents and a gold coin, looking serious about her financial and banking tasks.",
+    "background": "The interior of a grand bank with marble pillars, teller windows with brass bars, and a heavy vault door.",
+    "icons": [
+      "Dollar sign",
+      "Bank building",
+      "Safe box",
+      "Ink pen"
+    ],
+    "bg_color": "Emerald green and brass"
+  },
+  {
+    "day": 34,
+    "pose": "SAAVI shakes hands with a vendor across a table, looking satisfied after reaching a fair price for an item.",
+    "background": "A vibrant outdoor street market with stalls selling colorful rugs, spices in bowls, and hanging lanterns under the sun.",
+    "icons": [
+      "Handshake",
+      "Price tag",
+      "Coins",
+      "Market stall"
+    ],
+    "bg_color": "Sienna and dusty orange"
+  },
+  {
+    "day": 35,
+    "pose": "SAAVI spins a large desktop globe with one finger, looking excited about the many different places she could visit.",
+    "background": "A collage-style background featuring a city skyline, a quiet forest, a busy beach, and a snowy mountain peak.",
+    "icons": [
+      "Globe",
+      "Compass",
+      "Camera",
+      "Backpack"
+    ],
+    "bg_color": "Rainbow pastel"
+  },
+  {
+    "day": 36,
+    "pose": "SAAVI holds two ends of a thick rope, pulling them together to demonstrate how words and ideas are connected.",
+    "background": "A long suspension bridge stretching over a deep canyon with a river flowing far below under a cloudy sky.",
+    "icons": [
+      "Link chain",
+      "Bridge",
+      "Puzzle piece",
+      "Plus sign"
+    ],
+    "bg_color": "Mist grey and soft blue"
+  },
+  {
+    "day": 37,
+    "pose": "SAAVI scratches her chin thoughtfully while looking at a wall covered in clues and photos connected by red string.",
+    "background": "A classic detective's office with a wooden desk, a magnifying glass, a trench coat on a rack, and shadows.",
+    "icons": [
+      "Question mark",
+      "Magnifying glass",
+      "Footprints",
+      "Keyhole"
+    ],
+    "bg_color": "Dark sepia and charcoal"
+  },
+  {
+    "day": 38,
+    "pose": "SAAVI is sitting inside a large cardboard box with only her head peeking out, demonstrating the concept of position.",
+    "background": "A warehouse filled with wooden crates of various sizes, a forklift in the distance, and high metal shelving units.",
+    "icons": [
+      "Box",
+      "Arrow pointing in",
+      "Ball on table",
+      "Chair"
+    ],
+    "bg_color": "Cardboard brown and grey"
+  },
+  {
+    "day": 39,
+    "pose": "SAAVI holds a giant red apple in one hand and a tiny green apple in the other, comparing their sizes.",
+    "background": "A sun-drenched apple orchard with rows of trees heavy with fruit and a wooden ladder leaning against a branch.",
+    "icons": [
+      "Scale",
+      "Tall building",
+      "Short building",
+      "Mountain peak"
+    ],
+    "bg_color": "Apple red and leaf green"
+  },
+  {
+    "day": 40,
+    "pose": "SAAVI bends down to tie her shoelaces tightly, preparing to 'take off' on a run around the athletic track.",
+    "background": "A professional running track with white lanes painted on red rubber, stadium seating, and a clear blue sky above.",
+    "icons": [
+      "Running shoe",
+      "Arrow up",
+      "Arrow down",
+      "Light switch"
+    ],
+    "bg_color": "Track red and sky blue"
+  },
+  {
+    "day": 41,
+    "pose": "SAAVI stands at a fork in a forest path, looking left and right while considering which way to go.",
+    "background": "A misty, magical forest with tall ancient trees, glowing mushrooms, and two distinct paths leading into the deep woods.",
+    "icons": [
+      "Fork in road",
+      "Cloudy thought",
+      "Rain cloud",
+      "Sun behind cloud"
+    ],
+    "bg_color": "Moss green and foggy white"
+  },
+  {
+    "day": 42,
+    "pose": "SAAVI gives a confident thumbs up while sitting in a studio chair, looking like she is sharing her perspective.",
+    "background": "A television talk show set with a city skyline backdrop, a sofa, a coffee table, and professional studio cameras.",
+    "icons": [
+      "Thumbs up",
+      "Thumbs down",
+      "Speech bubble",
+      "Microphone"
+    ],
+    "bg_color": "Vibrant red and dark blue"
+  },
+  {
+    "day": 43,
+    "pose": "SAAVI swipes her hand through the air as if interacting with an invisible digital screen or a futuristic interface.",
+    "background": "A high-tech server room with rows of glowing green and blue lights, cooling fans, and bundles of fiber cables.",
+    "icons": [
+      "Smartphone",
+      "Wi-Fi symbol",
+      "Envelope",
+      "Computer mouse"
+    ],
+    "bg_color": "Cyber green and black"
+  },
+  {
+    "day": 44,
+    "pose": "SAAVI holds a student's graded paper with a gold star, looking kindly at an invisible parent across the desk.",
+    "background": "A colorful elementary school classroom with alphabet posters, a chalkboard, small wooden desks, and a bin of plastic toys.",
+    "icons": [
+      "Gold star",
+      "Pencil",
+      "School bus",
+      "Apple on desk"
+    ],
+    "bg_color": "Bright yellow and primary blue"
+  },
+  {
+    "day": 45,
+    "pose": "SAAVI presses a heavy ink stamp onto a formal document, looking official and very serious about her administrative duties.",
+    "background": "A grand government office with high ceilings, national flags, a large seal on the wall, and marble floors.",
+    "icons": [
+      "Ink stamp",
+      "Document",
+      "National flag",
+      "Scales of justice"
+    ],
+    "bg_color": "Cream and dark mahogany"
+  },
+  {
+    "day": 46,
+    "pose": "SAAVI walks down the narrow aisle of an airplane, pulling a small carry-on bag and looking for her seat number.",
+    "background": "The interior of an airplane cabin with rows of blue seats, overhead bins, and small windows showing white clouds.",
+    "icons": [
+      "Airplane seat",
+      "Window",
+      "Fasten seatbelt",
+      "Drink tray"
+    ],
+    "bg_color": "Sky blue and plastic white"
+  },
+  {
+    "day": 47,
+    "pose": "SAAVI holds a small business card out with both hands, smiling politely at a new acquaintance at a professional event.",
+    "background": "A busy conference hotel lobby with people in suits, name tags, a coffee station, and large decorative plants.",
+    "icons": [
+      "Business card",
+      "Coffee cup",
+      "Name tag",
+      "Handshake"
+    ],
+    "bg_color": "Professional teal and beige"
+  },
+  {
+    "day": 48,
+    "pose": "SAAVI stands confidently behind a wooden podium, gesturing with her hands while speaking to a large, silent audience.",
+    "background": "A large university lecture hall with rows of tiered seating, a massive projector screen, and a wooden stage floor.",
+    "icons": [
+      "Microphone",
+      "Podium",
+      "Lightbulb",
+      "People silhouettes"
+    ],
+    "bg_color": "Deep wood and soft amber"
+  },
+  {
+    "day": 49,
+    "pose": "SAAVI sits upright in a professional blazer, her hands folded neatly on the table, looking confident and well-prepared.",
+    "background": "A modern glass-walled meeting room with a long table, ergonomic chairs, and a view of the city's financial district.",
+    "icons": [
+      "Resume",
+      "Briefcase",
+      "Tie",
+      "Clock"
+    ],
+    "bg_color": "Steel grey and crisp white"
+  },
+  {
+    "day": 50,
+    "pose": "SAAVI throws a black mortarboard graduation cap high into the air, her face filled with pure joy and accomplishment.",
+    "background": "A sunny university campus courtyard with historic brick buildings, green lawns, and trees with blossoming spring flowers.",
+    "icons": [
+      "Graduation cap",
+      "Diploma",
+      "Confetti",
+      "Champagne glass"
+    ],
+    "bg_color": "Festive gold and sky blue"
+  }
+]
