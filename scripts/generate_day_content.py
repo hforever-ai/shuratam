@@ -54,9 +54,9 @@ GEMINI_KEY = GEMINI_KEYS[0] if GEMINI_KEYS else ''
 
 # ── Language configs ─────────────────────────────────────────────────────────
 LANG_CONFIG = {
-    'hi': {'name': 'Hindi', 'native_name': 'हिंदी', 'address': 'aap',   'saavi_alias': 'Didi'},
-    'mr': {'name': 'Marathi','native_name': 'मराठी', 'address': 'tumhi', 'saavi_alias': 'Tai'},
-    'te': {'name': 'Telugu', 'native_name': 'తెలుగు','address': 'meeru', 'saavi_alias': 'Akka'},
+    'hi': {'name': 'Hindi', 'native_name': 'हिंदी', 'script': 'Devanagari', 'address': 'aap',   'saavi_alias': 'Didi'},
+    'mr': {'name': 'Marathi','native_name': 'मराठी', 'script': 'Devanagari', 'address': 'tumhi', 'saavi_alias': 'Tai'},
+    'te': {'name': 'Telugu', 'native_name': 'తెలుగు','script': 'Telugu',     'address': 'meeru', 'saavi_alias': 'Akka'},
 }
 
 # ── System prompt (loaded from file once) ────────────────────────────────────
@@ -123,27 +123,60 @@ DAY_TOPICS = {
     },
 
     2: {
-        'theme': 'वर्तमान काल / Present Tense (curiosity jagana)',
+        'theme': 'वर्तमान काल (Present Tense) — Hindi se English tak',
+        'concept_first': (
+            'TEACH THE CONCEPT FIRST — not just words.\n'
+            'वर्तमान काल = Present Tense. Hindi mein 4 forms hain — English mein bhi 4 hain:\n'
+            '\n'
+            '1. साधारण वर्तमान काल (Simple Present) — रोज़ की आदत\n'
+            '   Hindi: "मैं रोज़ खाता हूँ" → English: "I eat daily"\n'
+            '   Pattern: I/We/You/They + verb (मैं/हम/तुम/वे + verb)\n'
+            '   Pattern: He/She/It + verb+s (वो + verb+s) — THIRD PERSON RULE\n'
+            '\n'
+            '2. वर्तमान निरंतर काल (Present Continuous) — अभी हो रहा है\n'
+            '   Hindi: "मैं अभी खा रहा हूँ" → English: "I am eating now"\n'
+            '   Pattern: am/is/are + verb+ing\n'
+            '\n'
+            '3. वर्तमान पूर्ण काल (Present Perfect) — अभी-अभी हुआ\n'
+            '   Hindi: "मैंने खाना खा लिया है" → English: "I have eaten"\n'
+            '   Pattern: have/has + 3rd form of verb (eaten, gone, done)\n'
+            '\n'
+            '4. वर्तमान पूर्ण निरंतर काल (Present Perfect Continuous) — कब से हो रहा है\n'
+            '   Hindi: "मैं 2 घंटे से पढ़ रहा हूँ" → English: "I have been studying for 2 hours"\n'
+            '   Pattern: have/has been + verb+ing\n'
+            '\n'
+            'Ek hi verb (खाना/eat) ke चारों रूप दिखाओ — eat, am eating, have eaten, have been eating\n'
+            'Verb 3 forms zaroori: eat-ate-eaten, go-went-gone, do-did-done\n'
+            'Indian student ko "kaun sa form kab use karna hai" yeh confuse karta hai — yeh CLEAR karo'
+        ),
         'words': [
-            'am', 'is', 'are', 'eat', 'drink',
-            'go', 'come', 'sleep', 'work', 'study',
-            'read', 'write', 'speak', 'listen', 'play',
+            # Cover all 4 present tense forms with the same verb to show the pattern
+            'I eat', 'He eats', 'I am eating', 'I have eaten', 'I have been eating',
+            'I go', 'She goes', 'I am going', 'I have gone', 'I have been going',
+            'I work', 'I am working', 'I have worked', 'I study', 'I have studied',
         ],
-        'scenario': '🏠 Home - Daily activities discussion',
+        'scenario': '🏠 Daily routine ke through — कब क्या use karte hain Present Tense ke 4 forms',
         'struggles': (
-            '- Forgetting "is/are/am" between subject and verb\n'
-            '- "I am go" vs "I go" (Indian common mistake)\n'
-            '- "I am knowing" vs "I know"\n'
-            '- Confusion between present simple and continuous\n'
-            '- "He go" vs "He goes" (forgetting -s for he/she/it)'
+            '- "Main jaa raha hoon" → WRONG: "I am go" → RIGHT: "I am going" (-ing missing)\n'
+            '- "Mujhe pata hai" → WRONG: "I am knowing" → RIGHT: "I know" (KNOW continuous nahi hota)\n'
+            '- "Vo jaata hai" → WRONG: "He go" → RIGHT: "He goes" (third person -s)\n'
+            '- "Maine khaa liya" → WRONG: "I ate" → RIGHT: "I have eaten" (perfect tense)\n'
+            '- "Main 2 ghante se padh raha hoon" → WRONG: "I am studying since 2 hours" → RIGHT: "I have been studying for 2 hours"\n'
+            '- Hindi mein "हूँ/है/हैं" hamesha "am/is/are" nahi banta — yeh CRITICAL hai\n'
+            '- Simple Present vs Continuous — kab kya use karein'
         ),
         'connections': (
-            '- Previous Day (Day 1): Greetings & Self-Introduction (Hello, My name is, Thank you)\n'
-            '- Next Day (Day 3): संज्ञा/Noun with Family members'
+            '- Previous (Day 1): Greetings, "My name IS Saavi" — yahan IS = Simple Present BE form\n'
+            '- Next (Day 3): Family + Verbs — "My father WORKS in office" (third person -s)\n'
+            '- Future days: Past tense (Day 17) aur Future tense (Day 18) usi pattern par'
         ),
         'special': (
-            '- Use "आई" for "I", SAAVI in Devanagari script\n'
-            '- Third person: "He goes" not "He go"'
+            '- HINDI SE START KARO — pehle Vartman Kaal ka concept Hindi grammar mein samjhao\n'
+            '- 4 forms ko ek hi verb (eat/खाना) se dikhao — pattern clear ho\n'
+            '- Verb ke 3 forms ka chart do: V1-V2-V3 (eat-ate-eaten)\n'
+            '- Third Person Rule (HE/SHE/IT + verb+s) ko BIG point banao\n'
+            '- Tab 1: Concept teaching screens (Hindi pattern → English pattern → comparison)\n'
+            '- Tab 3: Dialogue mein roz ki Indian routine — chai banana, office jaana, padhna'
         ),
     },
 
@@ -1522,6 +1555,25 @@ def build_user_prompt(lang: str, day: int) -> str:
     if topic.get('special'):
         special_section = f'\nSPECIAL INSTRUCTIONS FOR THIS DAY:\n{topic["special"]}\n'
 
+    # Day-specific concept teaching (if defined)
+    concept_section = ''
+    if topic.get('concept_first'):
+        concept_section = f"""
+═══════════════════════════════════════════════════════════
+🎯 CONCEPT-FIRST TEACHING (THIS IS THE MOST IMPORTANT PART)
+═══════════════════════════════════════════════════════════
+{topic['concept_first']}
+
+Tab 1 ka pehla section yeh CONCEPT teach karega — words baad mein.
+Concept screens mein:
+1. Hindi grammar terminology pehle ({cfg['native_name']} mein)
+2. Hindi pattern dikhao (jo student already jaanta hai)
+3. English pattern dikhao (mapping kaise hota hai)
+4. Side-by-side comparison table
+5. Golden Rule card
+═══════════════════════════════════════════════════════════
+"""
+
     return f"""Generate Day {day} of 50.
 
 LANGUAGE: {cfg['name']}
@@ -1530,7 +1582,7 @@ TOPIC: {topic['theme']}
 
 SCENARIO FOR TAB 3: {topic['scenario']}
 
-WORDS TO TEACH (15 words):
+WORDS/PHRASES TO TEACH (15 items):
 {words_str}
 
 WHERE STUDENTS STRUGGLE:
@@ -1538,22 +1590,249 @@ WHERE STUDENTS STRUGGLE:
 
 CONNECTIONS TO OTHER DAYS:
 {topic['connections']}
-{special_section}
+{special_section}{concept_section}
 TOTAL DURATION: 20 minutes core
 
-MANDATORY REQUIREMENTS:
+═══════════════════════════════════════════════════════════
+⚠️ NON-NEGOTIABLE RULES (Reading these carefully = pass)
+═══════════════════════════════════════════════════════════
+
+🔴 RULE 1 — LANGUAGE RATIO: 90% Hindi/Hinglish, 10% English (STRICT)
+   • SAAVI's voice (saavi_explanation, situation, intro, all teaching prose): 90%+ Hindi
+   • English ONLY when it's the actual word/phrase being taught (always with pronunciation)
+   • BAD: "When you introduce yourself, use 'I am'"
+   • GOOD: "जब आप अपना परिचय दे रहे होते हैं, तब 'I am' (आई ऐम) का उपयोग करते हैं"
+   • Even technical terms — prefer Hindi: "क्रिया" not "verb", "संज्ञा" not "noun"
+   • Acceptable English mid-sentence: technical terms with no Hindi equivalent (computer, mobile)
+   • Quiz questions, T/F statements, MCQ options: MUST be in Hindi
+   • Match column: English phrase → Hindi translation (NOT English-to-English)
+
+🔴 RULE 2 — PRONUNCIATION FOR EVERY ENGLISH WORD (NO EXCEPTIONS)
+   • EVERY English word in the JSON MUST be followed by ({cfg['script']} pronunciation)
+   • Format: English_word (देवनागरी_उच्चारण)
+   • Examples:
+     ✓ "Hello (हेलो)"
+     ✓ "breakfast (ब्रेकफ़ास्ट)"
+     ✓ "I am eating (आई ऐम ईटिंग)"
+   • This includes ALL English words anywhere — examples, dialogue, MCQ options, flashcards, summary
+   • SCAN your output: any standalone English word without (pronunciation) is a FAIL
+
+🔴 RULE 3 — VOCABULARY INDEX (शब्दकोश) — MANDATORY NEW SECTION
+   • Add a top-level field: "vocabulary_index"
+   • This MUST list EVERY English word that appears anywhere in this day's content
+   • Each entry has 4 fields:
+     {{
+       "english": "eat",
+       "pronunciation": "ईट",
+       "hindi_meaning": "खाना",
+       "part_of_speech": "क्रिया (Verb)",
+       "category": "Daily Action",
+       "example_in_sentence": "I eat breakfast"
+     }}
+   • Part-of-speech values (use Hindi term first, English in brackets):
+     - संज्ञा (Noun) — चीज़, व्यक्ति, जगह
+     - सर्वनाम (Pronoun) — I, you, he, she
+     - क्रिया (Verb) — action words
+     - विशेषण (Adjective) — describing words
+     - क्रिया विशेषण (Adverb) — how, when, where
+     - पूर्वसर्ग (Preposition) — in, on, at
+     - संयोजक (Conjunction) — and, but, or
+     - विस्मयादिबोधक (Interjection) — wow, oh
+     - सहायक क्रिया (Helping Verb) — am/is/are/have/has
+   • Group by category at the end so reader can scan
+   • Minimum 25-40 entries (covering all words across teaching + examples + dialogues + quiz)
+
+🔴 RULE 4 — DEEP CONCEPT MAPPING (MULTI-SCREEN, EXHAUSTIVE)
+   For Day 2 Present Tense (and any concept day), generate MULTIPLE concept screens:
+
+   concept_first.screens MUST have AT LEAST 6 screens (and up to 8):
+
+   📺 SCREEN 1: OVERVIEW
+     - Hindi definition: वर्तमान काल kya hai (3-4 sentences)
+     - Hindi mein iske 4 roop hain — name them:
+       1. साधारण वर्तमान काल (Simple Present)
+       2. वर्तमान निरंतर / सततवर्तमान काल (Present Continuous)
+       3. वर्तमान पूर्ण काल (Present Perfect)
+       4. वर्तमान पूर्ण निरंतर काल (Present Perfect Continuous)
+     - 4 Hindi examples (one per form) — same verb (खाना) showing transformation:
+       • मैं रोज़ खाता हूँ → I eat (आई ईट)
+       • मैं अभी खा रहा हूँ → I am eating (आई ऐम ईटिंग)
+       • मैंने खाया हुआ है → I have eaten (आई हैव ईटन)
+       • मैं 2 घंटे से खा रहा हूँ → I have been eating for 2 hours (आई हैव बीन ईटिंग)
+
+   📺 SCREEN 2: साधारण वर्तमान काल (Simple Present) — DETAIL
+     - Hindi name + English name + meaning
+     - When to use (Hindi): रोज़ की आदत, सच्चाई, आम बात, schedule
+     - Structure formula:
+       Subject + Verb (base) — for I/We/You/They
+       Subject + Verb+s — for He/She/It (THIRD PERSON RULE)
+     - 5 Hindi → English example pairs with full pronunciation:
+       मैं चाय पीता हूँ → I drink tea (आई ड्रिंक टी)
+       वह स्कूल जाता है → He goes (ही गोज़) to school
+       सूरज पूरब से उगता है → The sun rises (राइज़ेज़) in the east
+       वे क्रिकेट खेलते हैं → They play (प्ले) cricket
+       मैं उसे जानता हूँ → I know (नो) him
+     - Common mistake (with Chatur): ❌ "He go" → ✅ "He goes"
+     - Visual icon: 🔄 (repeat / habit)
+
+   📺 SCREEN 3: वर्तमान निरंतर काल (Present Continuous) — DETAIL
+     - Same structure: name, when to use, formula, 5 examples, mistake
+     - When: अभी हो रहा है, इस वक्त, आजकल
+     - Formula: am/is/are + verb+ing
+       I am + ing | He/She/It is + ing | We/You/They are + ing
+     - 5 examples: मैं खा रहा हूँ → I am eating, etc.
+     - Common mistake (Chatur): ❌ "I am knowing" → ✅ "I know"
+       (KNOW, LIKE, LOVE, WANT — these don't take continuous form)
+     - Visual: ⏳ (happening now)
+
+   📺 SCREEN 4: वर्तमान पूर्ण काल (Present Perfect) — DETAIL
+     - Hindi name, English name, when to use
+     - Hindi: काम पूरा हो गया है (just completed action with present relevance)
+     - Formula: have/has + V3 (third form of verb)
+       I/We/You/They + have + V3
+       He/She/It + has + V3
+     - Verb forms table (V1 - V2 - V3):
+       eat - ate - eaten (खाना - खाया - खाया हुआ)
+       go - went - gone (जाना - गया - गया हुआ)
+       do - did - done | see - saw - seen | come - came - come | etc.
+     - 5 examples in Hindi & English with pronunciation
+     - Indian common mistake: ❌ "I ate" instead of ✅ "I have eaten"
+       (Hindi "मैंने खाया है" = "I have eaten" not "I ate")
+     - Visual: ✅ (completed)
+
+   📺 SCREEN 5: वर्तमान पूर्ण निरंतर काल (Present Perfect Continuous) — DETAIL
+     - Hindi: कब से हो रहा है (action started in past, still continuing)
+     - Formula: have/has been + verb+ing
+     - "since" vs "for": since 2 baje = since 2 o'clock (specific point), for 2 ghante = for 2 hours (duration)
+     - 5 examples
+     - Common mistake: ❌ "I am studying since 2 hours" → ✅ "I have been studying for 2 hours"
+     - Visual: ⏰ (continuing)
+
+   📺 SCREEN 6: COMPARISON TABLE — All 4 forms side by side
+     - Same verb (खाना/eat) shown in all 4 forms
+     - Columns: Hindi rule | Hindi example | English structure | English example
+     - Highlights when to use which form
+     - Decision tree: "अगर आप ___ कहना चाहते हैं → use ___ form"
+
+   📺 SCREEN 7: GOLDEN RULES (Top 5)
+     - 5 numbered rules, each with example:
+       1. Third person + s (He/She/It + verb+s)
+       2. KNOW/LIKE/WANT — Simple Present always (no -ing)
+       3. "since" + point in time, "for" + duration
+       4. V1-V2-V3 forms must be memorized for Perfect
+       5. Helping verbs: am/is/are (continuous), have/has (perfect)
+     - Mnemonic: "TIPS — Third person, ING blocked verbs, Past form for Perfect, Since vs For"
+
+   📺 SCREEN 8 (OPTIONAL): TIMELINE VISUAL
+     - Visual representation: <----PAST----|----PRESENT----|----FUTURE---->
+     - Show where each tense form lives on the timeline
+     - Indian student examples: roz की chai (Simple), abhi chai (Continuous), chai pi li (Perfect)
+
+   STRUCTURE FOR EACH SCREEN:
+   {{
+     "screen_number": N,
+     "screen_name": "...",
+     "hindi_grammar_term": "वर्तमान काल",
+     "english_grammar_term": "Present Tense",
+     "hindi_definition": "Detailed definition in Hindi (3-5 sentences)",
+     "when_to_use": "List in Hindi",
+     "structure_formula": {{
+       "I/We/You/They": "...",
+       "He/She/It": "..."
+     }},
+     "examples": [
+       {{"hindi": "...", "english": "...", "pronunciation": "..."}}
+     ],
+     "common_mistake_chatur": {{"wrong": "...", "right": "...", "explanation": "..."}},
+     "visual_icon": "🔄",
+     "saavi_explanation": "..."
+   }}
+
+🔴 RULE 5 — INDIAN CONFUSION LIBRARY (Address Mistakes Explicitly)
+   • At least 3 common_mistake fields MUST address the day's specific struggles
+   • Format: ❌ Wrong + ✅ Right + Hindi explanation of WHY
+   • Have Chatur (overconfident) make wrong, SAAVI correct with Hindi pattern
+
+🔴 RULE 6A — HOOK SECTION (STORY OPENING)
+   • Tab 1 MUST start with a "hook" section BEFORE the saavi_intro/concept
+   • Hook = 2-3 short dramatic screens setting up the day's problem
+   • Format:
+     "hook": {{
+       "duration_seconds": 45,
+       "screens": [
+         {{
+           "screen_number": 1,
+           "scene_description": "Raju office mein hai, boss ne English mein puchha — Raju freeze",
+           "dialogue": [
+             {{"character_id": "cha_raju", "english": "Uh... I am go to meeting?", "pronunciation": "अह... आई ऐम गो टू मीटिंग?", "emotion": "😰 nervous"}},
+             {{"character_id": "cha_chatur", "english": "Main batata hoon — I am knowing the answer!", "pronunciation": "मैं बताता हूँ — आई ऐम नोइंग द आन्सर!", "emotion": "🤓 overconfident"}},
+             {{"character_id": "cha_farhaan", "english": "Koi baat nahi Raju, sab seekhte hain.", "pronunciation": "—", "emotion": "🤝 supportive"}},
+             {{"character_id": "cha_rancho", "english": "Saavi Didi! Yeh tense kya hota hai? Kab use karte hain?", "pronunciation": "—", "emotion": "🤔 curious"}},
+             {{"character_id": "cha_saavi", "english": "Aaj main bataungi — वर्तमान काल kya hai aur kab use karna hai!", "pronunciation": "—", "emotion": "😊 warm"}}
+           ]
+         }},
+         {{ ... 1-2 more hook screens ... }}
+       ]
+     }}
+   • Each hook screen: 15-20 seconds
+   • Hook MUST feature multiple characters (Raju struggling, Chatur wrong, Farhaan supportive, Rancho asking why)
+   • Hook ends with Saavi entering and promising to teach today's concept
+
+🔴 RULE 6 — 6-CHARACTER CAST (USE ALL OF THEM)
+   The lesson MUST feature these 6 characters with their distinct personalities:
+
+   1. **Saavi Didi** (मेंटर, 26F) — Warm elder sister teacher. Uses "{cfg['address']}".
+      Always patient, encouraging. Present in: tab_1 intro, concept screens,
+      every saavi_explanation, summary.
+
+   2. **Raju** (हीरो/लर्नर, 22M) — The student-hero. Nervous, makes beginner mistakes,
+      tries earnestly. Represents the user. Use in: dialogue (tab_3), example
+      situations, "Raju ne galti ki — Saavi ne sikhaya" pattern.
+
+   3. **Farhaan** (दोस्त, 22M) — Supportive friend. Encourages Raju when he stumbles.
+      "Koi baat nahi Raju, sab seekhte hain". Use in: dialogue (tab_3), encouraging
+      example contexts.
+
+   4. **Rancho** (जिज्ञासु, 23M) — Curious friend who keeps asking "Kyun? Kaise?".
+      Quick learner who probes deeper. Use in: concept screens (asks the doubt
+      that triggers Saavi's deeper explanation), some dialogue lines.
+
+   5. **Chatur** (अति-आत्मविश्वासी, 24M) — Overconfident friend who confidently makes
+      WRONG English mistakes. "Main batata hoon — I am knowing!". Use in:
+      common_mistake sections (he says wrong, Saavi corrects), some dialogue lines.
+
+   6. **Dadaji** (कॉमिक राहत, 70M) — Wise elder who makes iconic Hinglish mistakes
+      ("Myself Dadaji", "I am eating now since 2 hours") and learns with a smile.
+      Use in: a dedicated "dadaji_moment" within tab_1 OR tab_4_summary closing.
+
+   COMPULSORY:
+   • Tab 3 dialogue MUST include at least 2 of: Raju, Farhaan, Rancho, Chatur (plus Saavi)
+   • At least 1 common_mistake MUST be attributed to Chatur with quote
+   • At least 1 example or summary section should feature Dadaji's mistake + correction
+   • Use character names in Hindi/Devanagari script in all narration:
+     "रंचो ने पूछा — Kyun ji?" / "चतुर बोला — I am knowing!" / "दादाजी ने कहा — Myself Dadaji!"
+
+═══════════════════════════════════════════════════════════
+
+OTHER MANDATORY REQUIREMENTS:
 - Follow ALL format rules from system prompt
-- EXACTLY 15 words taught
-- EACH word has 5 examples
+- EXACTLY 15 words/phrases taught (or pattern variations like "I eat / He eats / I am eating")
+- EACH word/phrase has 5 examples
 - EACH word has its own common_mistake section
-- EACH example has SAAVI\'s explanation (varied, 3-5 sentences, using "{cfg['address']}")
+- EACH example has SAAVI\'s explanation (3-5 sentences, MOSTLY Hindi, using "{cfg['address']}")
 - 5 tabs with correct structure
-- Tab 3 has multi-voice dialogue with line-by-line SAAVI explanations
+- Tab 3 has multi-voice dialogue with line-by-line SAAVI explanations (in Hindi)
 - Tab 5 has EXACTLY: 8 flashcards + 5 T/F + 5 Match + 5 MCQ
 - SAAVI uses "{cfg['address']}" respectfully (no founder details, no specific cities/companies/years)
 - Include complete SEO data block
 - Include Nano Banana thumbnail prompt
 - Include tab-specific visuals/graphics/emojis
+
+VERIFY BEFORE OUTPUT:
+✓ Did I write 70-80% in Hindi/Hinglish? (Count: SAAVI explanations should be majority Hindi)
+✓ Does every English word have ({cfg['script']} pronunciation) right after it?
+✓ Did I teach the CONCEPT first (if applicable) before listing words?
+✓ Did I address common Indian mistakes explicitly with ❌→✅?
 
 Return COMPLETE valid JSON only. No preamble, no markdown."""
 
