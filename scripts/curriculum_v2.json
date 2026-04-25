@@ -1,0 +1,1198 @@
+{
+  "_meta": {
+    "version": "2.0",
+    "source": "Rapidex master prompt + Shrutam structure",
+    "total_days": 49,
+    "philosophy": "Pehle chalao, phir samjho — RIDE 60% / PATTERN 30% / WHY 10%",
+    "_note": "Each day is concentrated and gives DeepSeek explicit content to expand into our 5-tab JSON. No improvisation."
+  },
+
+  "1": {
+    "theme": "Greetings & Farewells",
+    "duration_min": 25,
+    "phase": "RIDE",
+    "core_concepts": [
+      "Time-based greetings: Good morning (6 AM-12 PM), Good afternoon (12-5 PM), Good evening (5-9 PM)",
+      "Good night (farewell/bedtime — NOT a greeting)",
+      "Informal greetings: Hello, Hi",
+      "Polite words: Thank you, Please, Sorry",
+      "Farewells: Goodbye, Bye, See you later, See you tomorrow"
+    ],
+    "words": ["Good morning", "Good afternoon", "Good evening", "Good night", "Hello", "Hi", "Thank you", "Please", "Sorry", "Goodbye", "Bye", "See you later", "See you tomorrow", "How are you", "Excuse me"],
+    "hook": "Raju meets his new boss at 10 am and says 'Good night'. Chatur says 'Good noon'. Saavi corrects them.",
+    "sample_examples": [
+      "Good morning, sir. (गुड मॉर्निंग, सर) — शुभ प्रभात",
+      "Sorry, I am late. (सॉरी, आई ऐम लेट) — माफ़ कीजिए, देर हो गई",
+      "Thank you, didi. (थैंक यू, दीदी) — धन्यवाद",
+      "See you later. (सी यू लेटर) — बाद में मिलेंगे"
+    ],
+    "common_mistake": "Using 'Good night' as a greeting when meeting someone after dark. Saavi: 'Good night is used when LEAVING after dark or going to sleep, NOT when you meet someone. After 5 PM use Good evening.'",
+    "visual_idea": "Clock with 4 coloured zones: morning (yellow), afternoon (orange), evening (blue), night (dark blue). Each zone shows correct greeting.",
+    "animation_idea": "Sun rises → 'Good morning', sun high → 'Good afternoon', sun sets → 'Good evening', moon & stars → character sleeping and waving 'Good night'.",
+    "struggles": "- 'Good night' as greeting (most common Indian mistake)\n- Saying 'Bye' to seniors (use 'Goodbye, sir')\n- Forgetting Please/Thank you in daily use\n- 'Hello' vs 'Hi' formality confusion",
+    "connections": "Foundation for all 49 days. Day 2 builds: 'Hello, my name is...'"
+  },
+
+  "2": {
+    "theme": "Self-introduction + Numbers 1-20",
+    "duration_min": 25,
+    "phase": "RIDE",
+    "core_concepts": [
+      "Self-introduction pattern: 'My name is X', 'I am from Y', 'I am a [profession/student]', 'I am X years old'",
+      "Correction of Indian error: 'Myself Raju' → 'My name is Raju'",
+      "Numbers 1-20: one, two, three ... twenty (pronunciation and use in age, phone numbers)"
+    ],
+    "words": ["My name is", "I am from", "I am a", "I am years old", "Nice to meet you", "one", "two", "three", "four", "five", "ten", "fifteen", "sixteen", "seventeen", "twenty"],
+    "hook": "Raju says 'Myself Raju. Myself 22 years.' Chatur laughs. Saavi teaches correct introduction.",
+    "sample_examples": [
+      "My name is Raju. (माय नेम इज़ राजू) — मेरा नाम राजू है",
+      "I am from Delhi. (आई ऐम फ्रॉम दिल्ली) — मैं दिल्ली से हूँ",
+      "I am a student. (आई ऐम अ स्टूडेंट) — मैं विद्यार्थी हूँ",
+      "I am 22 years old. (आई ऐम ट्वेंटी टू ईयर्स ओल्ड) — मेरी उम्र 22 साल है"
+    ],
+    "common_mistake": "'Myself Raju' or 'Myself student'. Saavi: 'Say My name is Raju. Myself is used after I — I did it myself.'",
+    "visual_idea": "Profile card with fields: Name, City, Job, Age. Number line 1-20 with images.",
+    "animation_idea": "Hand writes 'My name is...', then numbers pop like balloons.",
+    "struggles": "- 'Myself Raju' Indian error\n- 'I have 22 years' (Hindi-influenced — should be 'I am 22 years old')\n- Mixing 'a/an' before profession (a student, an engineer)\n- Forgetting capital letter in name",
+    "connections": "Day 1 greetings + Day 2 introduction = first conversation. Day 14 builds bigger numbers (21-100)."
+  },
+
+  "3": {
+    "theme": "Family Members + Telling Time (o'clock, half past)",
+    "duration_min": 25,
+    "phase": "RIDE + PATTERN",
+    "core_concepts": [
+      "Family member nouns (संज्ञा): mother, father, brother, sister, son, daughter, husband, wife, friend, grandfather, grandmother",
+      "Possessive with family: 'my mother', 'his father' (correction: not 'I mother')",
+      "Telling time: 'It is X o'clock', 'half past X'"
+    ],
+    "words": ["mother", "father", "brother", "sister", "son", "daughter", "husband", "wife", "friend", "grandfather", "grandmother", "uncle", "aunt", "o'clock", "half past"],
+    "hook": "Raju shows family photo but says 'I father is doctor. She mother is teacher.' Saavi corrects.",
+    "sample_examples": [
+      "My mother is a teacher. (माय मदर इज़ अ टीचर) — मेरी माँ टीचर हैं",
+      "My father is a doctor. (माय फ़ादर इज़ अ डॉक्टर) — मेरे पिता डॉक्टर हैं",
+      "It is 3 o'clock. (इट इज़ थ्री ओ-क्लॉक) — तीन बजे हैं",
+      "Half past four. (हाफ़ पास्ट फ़ोर) — साढ़े चार बजे"
+    ],
+    "common_mistake": "'I father' instead of 'My father'. Saavi: 'My shows possession (मेरा/मेरी). I is for subject only — I am, I have. I father is wrong.'",
+    "visual_idea": "Family tree with labelled members. Clock face with hour/minute hands.",
+    "animation_idea": "Click on family member → English word appears. Clock hands move → time spoken.",
+    "struggles": "- 'I father/she mother' missing possessive\n- 'Cousin brother/sister' Indian English (just 'cousin')\n- 'Real brother' (use 'own brother' or just 'brother')\n- 'Half past' confusion with 'thirty minutes'",
+    "connections": "Day 4 (Pronouns) deepens 'my/his/her'. Day 34 (Travel) extends time-telling."
+  },
+
+  "4": {
+    "theme": "Pronouns + Possessive Adjectives",
+    "duration_min": 30,
+    "phase": "PATTERN",
+    "core_concepts": [
+      "Subject pronouns (सर्वनाम): I, you, he, she, it, we, they — replace noun as subject",
+      "Possessive adjectives (स्वामित्व बोधक विशेषण): my, your, his, her, its, our, their — show ownership, always before noun",
+      "Difference: 'I' vs 'my', 'he' vs 'his', 'she' vs 'her'"
+    ],
+    "words": ["I", "you", "he", "she", "it", "we", "they", "my", "your", "his", "her", "its", "our", "their", "this is"],
+    "hook": "Chatur says 'I father is coming. She mother is cooking.' Rancho asks 'Why not my father?' Saavi explains.",
+    "sample_examples": [
+      "I am Raju. (आई ऐम राजू) — मैं राजू हूँ",
+      "You are my friend. (यू आर माय फ़्रेंड) — तुम मेरे दोस्त हो",
+      "He is my brother. (ही इज़ माय ब्रदर) — वह मेरा भाई है",
+      "This is her pen. (दिस इज़ हर पेन) — यह उसकी कलम है",
+      "Our school is big. (आवर स्कूल इज़ बिग) — हमारा स्कूल बड़ा है"
+    ],
+    "common_mistake": "'He father' instead of 'His father'. Saavi: 'He = subject (वह), His = possession (उसका). He is doing vs His name. Different roles.'",
+    "visual_idea": "Table: Subject Pronoun → Possessive Adjective → Example with icon. Two columns side-by-side.",
+    "animation_idea": "Arrow points from person to object → possessive adjective appears. He → His, She → Her.",
+    "struggles": "- 'I father / She mother / He sister' (missing possessive form)\n- 'Its' vs 'It's' confusion (its = possessive, it's = it is)\n- Using 'he/she' for objects (English uses 'it')\n- Forgetting 'their' for plural possession",
+    "connections": "Day 3 (Family) used 'my' loosely. Day 4 makes it systematic. Day 9 adds possessive PRONOUNS (mine, yours)."
+  },
+
+  "5": {
+    "theme": "Simple Present (I/You/We/They) + Negative (don't)",
+    "duration_min": 25,
+    "phase": "PATTERN + WHY",
+    "core_concepts": [
+      "Simple Present for habitual actions: subject + base verb (I eat, you drink, we play, they work)",
+      "Negative form: subject + do not / don't + base verb (I don't eat)",
+      "Usage: daily routines, habits, universal truths"
+    ],
+    "words": ["I eat", "I drink", "I go", "I come", "I work", "I study", "I read", "I write", "I play", "I sleep", "I don't eat", "I don't like", "I don't know", "you eat", "we play"],
+    "hook": "Raju says 'I eat rice everyday.' Chatur says 'I don't eating rice.' Saavi corrects 'I don't eat rice.'",
+    "sample_examples": [
+      "I eat breakfast at 7 am. (आई ईट ब्रेकफ़ास्ट ऐट सेवन ए एम) — मैं सुबह 7 बजे नाश्ता करता हूँ",
+      "We play cricket on Sunday. (वी प्ले क्रिकेट ऑन सन्डे) — हम रविवार को क्रिकेट खेलते हैं",
+      "I don't like tea. (आई डोंट लाइक टी) — मुझे चाय पसंद नहीं",
+      "They work in office. (दे वर्क इन ऑफ़िस) — वे ऑफिस में काम करते हैं"
+    ],
+    "common_mistake": "'I don't liking tea' (using -ing after don't). Saavi: 'After don't, use base form of verb. Don't + eat/like/go — never don't + eating.'",
+    "visual_idea": "Daily routine icons with tick (positive) and cross (negative). Repeat icon = habit.",
+    "animation_idea": "Character performs action → 'I eat'. Character shakes head → 'I don't eat'.",
+    "struggles": "- 'I am eat' (mixing BE with simple present)\n- 'I don't liking' (incorrect after don't)\n- Forgetting that simple present = HABIT (not now)\n- Confusing with present continuous",
+    "connections": "Day 6 adds He/She/It (+s). Day 12 adds Present Continuous (I am eating). Foundation for ALL future tense days."
+  },
+
+  "6": {
+    "theme": "Simple Present (He/She/It + s/es) + Yes/No Questions",
+    "duration_min": 25,
+    "phase": "PATTERN",
+    "core_concepts": [
+      "Simple Present for 3rd person singular: he/she/it + verb+s/es (he eats, she drinks, it rains)",
+      "Yes/No questions: Does + he/she/it + base verb? Answer: Yes, he does. / No, he doesn't.",
+      "Spelling rules for +s/+es: eat→eats, go→goes, study→studies"
+    ],
+    "words": ["he eats", "she drinks", "it rains", "he goes", "she studies", "he works", "she lives", "Does he eat", "Does she go", "Yes he does", "No she doesn't", "he watches", "he washes", "she has", "he has"],
+    "hook": "Raju says 'He go to school. She play cricket.' Chatur says 'He goes? Why s?' Saavi explains the third person -s rule.",
+    "sample_examples": [
+      "He eats rice. (ही ईट्स राइस) — वह चावल खाता है",
+      "She drinks tea. (शी ड्रिंक्स टी) — वह चाय पीती है",
+      "Does he work here? (डज़ ही वर्क हियर?) — क्या वह यहाँ काम करता है?",
+      "Yes, he does. / No, she doesn't.  — हाँ / नहीं"
+    ],
+    "common_mistake": "'He go' (missing -s). Saavi: 'He/She/It ke saath verb mein s lagta hai — yeh THIRD PERSON -S rule hai. He goes, She works, It rains. Sirf I/You/We/They ke saath bina -s.'",
+    "visual_idea": "3rd person singular icon (he/she/it) + verb+s in green. Question mark icon with 'Does'.",
+    "animation_idea": "Character appears; verb gets red '+s'. Question bubble pops up with 'Does'.",
+    "struggles": "- 'He go' missing -s (most common Indian mistake)\n- 'Do he go?' instead of 'Does he go?'\n- Spelling: study → studys (wrong, should be 'studies')\n- 'Does he goes?' (double mistake — does + base verb)",
+    "connections": "Builds on Day 5 (I/You/We/They simple present). Day 16 expands questions with Wh-words."
+  },
+
+  "7": {
+    "theme": "Review + There is / There are",
+    "duration_min": 30,
+    "phase": "WHY (review)",
+    "core_concepts": [
+      "Review of Days 1-6 (greetings, self-intro, family, pronouns, simple present)",
+      "'There is' for singular existence: There is + a/an + singular noun",
+      "'There are' for plural existence: There are + plural noun",
+      "Question form: Is there...? Are there...?"
+    ],
+    "words": ["There is", "There are", "Is there", "Are there", "There is a book", "There are 10 students", "There is no", "There are no", "Yes there is", "No there isn't", "Yes there are", "No there aren't", "There is some", "There are many", "There is nothing"],
+    "hook": "Dadaji asks 'Ek kitab hai. English mein kaise kahein?' Raju says 'Book is there.' Saavi corrects 'There is a book.'",
+    "sample_examples": [
+      "There is a pen on the desk. (देयर इज़ अ पेन ऑन द डेस्क) — मेज़ पर कलम है",
+      "There are 10 students in the class. (देयर आर टेन स्टूडेंट्स इन द क्लास) — कक्षा में 10 छात्र हैं",
+      "Is there a hospital near here? (इज़ देयर अ हॉस्पिटल नियर हियर?) — पास में अस्पताल है क्या?",
+      "There are no chairs. (देयर आर नो चेयर्स) — कोई कुर्सी नहीं है"
+    ],
+    "common_mistake": "'Book is there' (Indian English, wrong order). Saavi: 'Existence batane ke liye sentence ko THERE IS / THERE ARE se SHURU karte hain — book is there NAHI, There is a book.'",
+    "visual_idea": "Empty room. Objects appear one by one. Singular → 'There is', plural → 'There are'.",
+    "animation_idea": "Objects fly into a room; single object → 'There is', multiple → 'There are'. Question mark when asking.",
+    "struggles": "- 'Book is there' (wrong order)\n- 'There is many books' (singular form with plural)\n- 'It is a book' vs 'There is a book' confusion\n- Forgetting 'a/an' after 'There is'",
+    "connections": "Foundation existence pattern used in every day from now. Day 29 (Office) reuses 'There is a meeting'."
+  },
+
+  "8": {
+    "theme": "BE Verb (am/is/are) — Affirmative",
+    "duration_min": 25,
+    "phase": "RIDE + PATTERN",
+    "core_concepts": [
+      "BE verb forms: I am, You are, He/She/It is, We are, They are",
+      "Use: to describe state, identity, location (I am happy, She is a doctor, It is here)",
+      "Pattern: Subject + am/is/are + complement"
+    ],
+    "words": ["I am", "you are", "he is", "she is", "it is", "we are", "they are", "I am happy", "I am tired", "she is a teacher", "we are friends", "they are at home", "it is hot", "he is busy", "I am here"],
+    "hook": "Raju says 'I happy. She doctor.' Saavi says 'You missed am and is. English mein har sentence mein verb chahiye.'",
+    "sample_examples": [
+      "I am Raju. (आई ऐम राजू) — मैं राजू हूँ",
+      "She is a teacher. (शी इज़ अ टीचर) — वह टीचर है",
+      "We are friends. (वी आर फ़्रेंड्स) — हम दोस्त हैं",
+      "It is hot today. (इट इज़ हॉट टुडे) — आज गर्मी है"
+    ],
+    "common_mistake": "'I happy' (missing am). Saavi: 'Hindi mein हूँ/है/हैं verb chhupa hota hai par English mein am/is/are bolna ZAROORI hai. Bina is/am/are sentence galat hai.'",
+    "visual_idea": "3 boxes: I → am, He/She/It → is, You/We/They → are. Color-coded.",
+    "animation_idea": "Character with emotion → 'am/is/are' appears before the adjective. 'I' + 'am' + 'happy'.",
+    "struggles": "- 'I happy / He doctor' missing BE verb\n- 'I is' (wrong pairing)\n- 'They is' (singular with plural)\n- Confusion with possession 'I have' vs identity 'I am'",
+    "connections": "Day 9 adds negative + questions. Day 12 uses 'am/is/are' + verb+ing for continuous tense."
+  },
+
+  "9": {
+    "theme": "BE negative & questions + Possessive Pronouns",
+    "duration_min": 30,
+    "phase": "PATTERN",
+    "core_concepts": [
+      "BE negative: I am not, You are not / aren't, He/She/It is not / isn't, We/They are not / aren't",
+      "BE questions: Am I? Are you? Is he? (invert subject and verb)",
+      "Possessive pronouns (without noun): mine, yours, his, hers, ours, theirs"
+    ],
+    "words": ["I am not", "isn't", "aren't", "Am I", "Are you", "Is he", "Is she", "Are we", "Are they", "mine", "yours", "his", "hers", "ours", "theirs"],
+    "hook": "Chatur says 'I am not a student? No, I am not student.' Saavi corrects 'I am not a student.' Then Dadaji says 'This book is my.' Saavi: 'This book is mine.'",
+    "sample_examples": [
+      "I am not tired. (आई ऐम नॉट टायर्ड) — मैं थका नहीं हूँ",
+      "Are you ready? (आर यू रेडी?) — क्या आप तैयार हैं?",
+      "This book is mine. (दिस बुक इज़ माइन) — यह किताब मेरी है",
+      "That pen is yours. (दैट पेन इज़ योर्स) — वह कलम तुम्हारी है"
+    ],
+    "common_mistake": "'This book is my' (using possessive adjective alone). Saavi: 'My ke baad NOUN chahiye — my book. Akele use karna hai toh MINE bolo. Same: your → yours, his → his, her → hers.'",
+    "visual_idea": "Two columns table: Possessive Adjective (with noun) → Possessive Pronoun (alone). Question mark icon with inverted Are/Is/Am.",
+    "animation_idea": "Object moves from person to person; correct possessive pronoun appears. Question forms swap subject ↔ verb.",
+    "struggles": "- 'This is my' alone (need 'mine')\n- 'I are not' (wrong pairing)\n- Question word order: 'You are coming?' instead of 'Are you coming?'\n- 'Hers' / 'his' confusion",
+    "connections": "Day 4 introduced possessive adjectives, Day 9 completes with pronouns. Day 27 adds question tags using BE."
+  },
+
+  "10": {
+    "theme": "HAVE (possession) + negative (don't have / doesn't have)",
+    "duration_min": 25,
+    "phase": "PATTERN",
+    "core_concepts": [
+      "HAVE verb for possession: I/You/We/They have, He/She/It has",
+      "Negative: don't have / doesn't have",
+      "Question: Do you have? / Does he have?"
+    ],
+    "words": ["I have", "you have", "he has", "she has", "we have", "they have", "I don't have", "she doesn't have", "Do you have", "Does he have", "I have a car", "she has a sister", "I don't have time", "Do you have a pen", "Does she have"],
+    "hook": "Raju says 'I have a pen. She have a book.' Chatur says 'She have? No, she has!' Saavi explains.",
+    "sample_examples": [
+      "I have a car. (आई हैव अ कार) — मेरे पास कार है",
+      "She has a sister. (शी हैज़ अ सिस्टर) — उसकी एक बहन है",
+      "I don't have money. (आई डोंट हैव मनी) — मेरे पास पैसे नहीं हैं",
+      "Does he have a bike? (डज़ ही हैव अ बाइक?) — क्या उसके पास बाइक है?"
+    ],
+    "common_mistake": "'She have' (missing s — third person rule). Saavi: 'Day 6 ka rule yaad hai? He/She/It ke saath HAS use karo. He has, She has, It has — He have GALAT.'",
+    "visual_idea": "Backpack with items. Singular/plural indication. Cross mark icon for negative.",
+    "animation_idea": "Open backpack → items fly out → 'I have...', 'She has...'. Cross mark for negative.",
+    "struggles": "- 'She have' (forgetting -s)\n- 'I am have' (wrong combo with BE)\n- 'I have not' (too formal — use 'don't have')\n- Confusing 'have' (possession) with 'have to' (obligation — Day 11)",
+    "connections": "Builds on Day 6 (third person -s rule). Day 11 introduces HAVE TO (obligation — Indian-specific fix)."
+  },
+
+  "11": {
+    "theme": "HAVE TO (obligation) + Question Tags",
+    "duration_min": 30,
+    "phase": "PATTERN + WHY",
+    "core_concepts": [
+      "HAVE TO for obligation (Indian confusion fix): I have to go, She has to work (not 'I am going')",
+      "Question tags: You are coming, aren't you? He likes tea, doesn't he?",
+      "Tag formation: positive statement → negative tag; negative statement → positive tag"
+    ],
+    "words": ["I have to go", "she has to work", "we have to study", "they have to wait", "I don't have to", "Do you have to", "aren't you", "isn't he", "doesn't she", "don't you", "haven't you", "won't they", "didn't he", "weren't you", "wasn't it"],
+    "hook": "Raju says 'Main jaana hoon — I am going.' Saavi says 'No, that means I am in motion. You mean I have to go (मुझे जाना है).'",
+    "sample_examples": [
+      "I have to go now. (आई हैव टू गो नाउ) — मुझे अब जाना है",
+      "She has to study. (शी हैज़ टू स्टडी) — उसे पढ़ना है",
+      "You are coming, aren't you? (यू आर कमिंग, आरंट यू?) — तुम आ रहे हो, है ना?",
+      "He doesn't smoke, does he? (ही डज़ंट स्मोक, डज़ ही?) — वह सिगरेट नहीं पीता, है ना?"
+    ],
+    "common_mistake": "'I am going' for obligation. Saavi: 'मुझे जाना है = I have to go (duty/zaroorat). I am going = abhi ja raha hoon (action right now). Yeh sabse important Indian fix hai!'",
+    "visual_idea": "Two roads: 'Have to' (must do — duty bag icon) vs 'Want to' (optional — heart icon). Tag formation table.",
+    "animation_idea": "Character with deadline clock → 'I have to go'. Speech bubble with statement + tag swinging back like 'isn't it?'.",
+    "struggles": "- 'मुझे जाना है' → 'I am going' (BIGGEST Indian mistake — Saavi MUST emphasize)\n- 'I have to going' (using -ing after to)\n- Wrong tag: positive statement + positive tag\n- 'isn't it?' as universal tag (wrong — depends on verb)",
+    "connections": "Foundation for entire Tab 3 dialogues (real-life uses 'have to' constantly). Day 27 advances question tags."
+  },
+
+  "12": {
+    "theme": "Present Continuous + Countable/Uncountable",
+    "duration_min": 25,
+    "phase": "PATTERN",
+    "core_concepts": [
+      "Present Continuous for actions now: am/is/are + verb+ing (I am eating, She is sleeping)",
+      "Countable nouns (can count, have plural): book, pen, apple — use many, a few",
+      "Uncountable nouns (cannot count, no plural): water, rice, sugar — use much, a little"
+    ],
+    "words": ["I am eating", "she is sleeping", "they are playing", "he is working", "it is raining", "many books", "much water", "a few", "a little", "How many", "How much", "many people", "much money", "a few minutes", "a little sugar"],
+    "hook": "Raju looks out window: 'It rain now.' Saavi corrects 'It is raining now.' Chatur says 'Many water is on road.' Saavi explains countable/uncountable.",
+    "sample_examples": [
+      "I am eating lunch. (आई ऐम ईटिंग लंच) — मैं दोपहर का खाना खा रहा हूँ",
+      "She is sleeping. (शी इज़ स्लीपिंग) — वह सो रही है",
+      "Many books (मेनी बुक्स) — बहुत सी किताबें (countable)",
+      "Much water (मच वॉटर) — बहुत सारा पानी (uncountable)"
+    ],
+    "common_mistake": "'Many water' (using many with uncountable). Saavi: 'Jo cheez count nahi hoti — water, rice, sugar, money — un ke saath MUCH use karo. Jo count hoti — books, pens, apples — un ke saath MANY.'",
+    "visual_idea": "Split screen: left countable (3 books, 5 apples), right uncountable (water bottle, sugar jar). Number labels for countable, level indicator for uncountable.",
+    "animation_idea": "Countable items multiply → 'many books'. Uncountable level rises → 'much water'.",
+    "struggles": "- 'It rain' (missing is + ing)\n- 'I am eat' (missing -ing)\n- 'Many water/rice' (wrong with uncountable)\n- 'How much books' (wrong with countable)",
+    "connections": "Builds on Day 8 (BE verb am/is/are). Day 23 adds Present Perfect (have eaten)."
+  },
+
+  "13": {
+    "theme": "Simple Past (regular verbs)",
+    "duration_min": 25,
+    "phase": "PATTERN",
+    "core_concepts": [
+      "Simple Past for completed actions: add -ed (walk → walked, play → played)",
+      "Spelling rules: add -ed, add -d (like→liked), y→ied (study→studied), double consonant (stop→stopped)",
+      "Pronunciation of -ed endings: /t/ (walked), /d/ (played), /ɪd/ (waited)"
+    ],
+    "words": ["walked", "played", "watched", "studied", "stopped", "cooked", "worked", "talked", "wanted", "waited", "I walked", "she played", "we studied", "they watched", "he didn't go"],
+    "hook": "Raju says 'Yesterday I walk to market.' Saavi corrects 'Yesterday I walked to market.'",
+    "sample_examples": [
+      "I walked to school yesterday. (आई वॉक्ट टू स्कूल यस्टरडे) — मैं कल स्कूल पैदल गया",
+      "She cooked dinner. (शी कुक्ट डिनर) — उसने रात का खाना पकाया",
+      "We played cricket. (वी प्लेड क्रिकेट) — हमने क्रिकेट खेला",
+      "They watched a movie. (दे वॉच्ट अ मूवी) — उन्होंने फ़िल्म देखी"
+    ],
+    "common_mistake": "'I walk yesterday' (present for past). Saavi: 'YESTERDAY, LAST week, AGO sunte hi past tense — verb mein -ed lagao. Walk → walked. Cook → cooked.'",
+    "visual_idea": "Timeline arrow pointing to 'yesterday'. Verbs present → past with red -ed.",
+    "animation_idea": "Character walks, clock goes back → 'walked'. -ed appears in red on the verb.",
+    "struggles": "- 'I walk yesterday' (missing -ed)\n- Spelling: 'studied' not 'studyed', 'stopped' not 'stoped'\n- Pronunciation: 'wait-ed' (3 syllables) vs 'walked' (1 syllable)\n- Confusing with -ed adjectives (tired, bored)",
+    "connections": "Day 15 expands to irregular verbs. Day 22 adds Past Continuous. Day 25 adds Past Perfect."
+  },
+
+  "14": {
+    "theme": "Review + Numbers 21-100 & Prices",
+    "duration_min": 30,
+    "phase": "RIDE",
+    "core_concepts": [
+      "Review Days 8-13 (BE, HAVE, Present Continuous, Simple Past regular)",
+      "Numbers 21-100: twenty-one, twenty-two ... ninety-nine, one hundred",
+      "Prices: 'It costs X rupees', 'How much is it?', 'That's expensive/cheap'"
+    ],
+    "words": ["twenty-one", "thirty", "forty", "fifty", "sixty", "seventy", "eighty", "ninety", "one hundred", "How much is this", "It costs", "rupees", "expensive", "cheap", "discount"],
+    "hook": "Raju goes to market. Shirt is 250 rupees. He doesn't know how to say 250. Saavi teaches numbers and asking prices.",
+    "sample_examples": [
+      "Twenty-one (ट्वेंटी वन) — इक्कीस",
+      "Fifty-five (फ़िफ़्टी फ़ाइव) — पचपन",
+      "How much is this shirt? (हाउ मच इज़ दिस शर्ट?) — यह शर्ट कितने की है?",
+      "It costs two hundred fifty rupees. (इट कॉस्ट्स टू हंड्रेड फ़िफ़्टी रूपीज़) — दो सौ पचास रुपये"
+    ],
+    "common_mistake": "'Twenty five hundred' for 2500. Saavi: '2500 = two thousand five hundred. Twenty-five hundred bhi sahi hai but 'two thousand five hundred' zyada common hai.'",
+    "visual_idea": "Number grid 21-100 in blocks of 10. Price tags on items in market scene.",
+    "animation_idea": "Price display changes as number increases. Coin sound on each increment.",
+    "struggles": "- 'Twenty-one' often dropped hyphen\n- 'Two hundred and fifty' vs 'two hundred fifty' (both ok)\n- Confusing teen numbers (13-19) with -ty numbers (30, 40)\n- Forgetting 'rupees' is plural, no -s on 'one rupee'",
+    "connections": "Day 2 had 1-20, Day 14 extends to 100. Day 31 (Shopping) goes to 1000. Day 17 introduces 'will cost' (future)."
+  },
+
+  "15": {
+    "theme": "Simple Past (irregular verbs)",
+    "duration_min": 30,
+    "phase": "WHY",
+    "core_concepts": [
+      "Simple Past of common irregular verbs (no -ed, change form): go→went, eat→ate, see→saw, come→came, give→gave, take→took",
+      "List of 20 most common irregular verbs with examples",
+      "Recognition: irregular verbs don't follow rules — must memorize"
+    ],
+    "words": ["went", "ate", "saw", "came", "gave", "took", "did", "had", "made", "got", "knew", "felt", "thought", "told", "spoke"],
+    "hook": "Raju says 'Yesterday I goed to market. I eated biryani.' Chatur laughs. Saavi says 'Go→went, eat→ate. Yeh verbs alag hain — yaad karne padenge.'",
+    "sample_examples": [
+      "I went to Delhi. (आई वेन्ट टू दिल्ली) — मैं दिल्ली गया",
+      "She ate an apple. (शी ऐट अन ऐपल) — उसने सेब खाया",
+      "He saw a movie. (ही सॉ अ मूवी) — उसने फ़िल्म देखी",
+      "They came home late. (दे केम होम लेट) — वे देर से घर आए"
+    ],
+    "common_mistake": "'goed, eated, seed' (adding -ed to irregular verbs). Saavi: 'Irregular verbs poori tarah change ho jaate hain — koi -ed nahi. Inhe yaad karna padega: go-went-gone, eat-ate-eaten.'",
+    "visual_idea": "Flip cards: front = V1 (eat), back = V2 (ate) with picture. 20 cards in a grid.",
+    "animation_idea": "Card flips with sound effect. Verb changes shape from V1 to V2 visually.",
+    "struggles": "- 'goed/eated' (most common — assuming all verbs take -ed)\n- Mixing V1, V2, V3 (eat-ate-eaten confusion)\n- 'I saw he' (forgetting object pronoun him)\n- 'I gave to him' (extra 'to')",
+    "connections": "Day 13 covered regular verbs. Day 23 (Present Perfect) needs V3 form (eaten, gone). Day 25 (Past Perfect) needs V3 too."
+  },
+
+  "16": {
+    "theme": "DO/DOES/DID + Wh-questions",
+    "duration_min": 30,
+    "phase": "PATTERN",
+    "core_concepts": [
+      "DO/DOES for present simple questions and negatives (Do you like? Does he eat?)",
+      "DID for past simple questions and negatives (Did you go?)",
+      "Wh-questions: What, Where, When, Why, How, Which — with do/does/did",
+      "Correct word order: Wh-word + helping verb + subject + main verb"
+    ],
+    "words": ["What", "Where", "When", "Why", "How", "Which", "Who", "Whose", "What do you", "Where does he", "When did you", "Why are you", "How do you", "Which color", "Who is"],
+    "hook": "Chatur asks 'What you like?' Saavi corrects 'What do you like?' Raju asks 'Where he went?' Saavi says 'Where did he go?'",
+    "sample_examples": [
+      "What do you do? (वॉट डू यू डू?) — आप क्या करते हैं?",
+      "Where does she live? (वेयर डज़ शी लिव?) — वह कहाँ रहती है?",
+      "Why did you come late? (वाय डिड यू कम लेट?) — आप देर से क्यों आए?",
+      "How do you spell 'water'? (हाउ डू यू स्पेल वॉटर?) — water कैसे लिखते हैं?"
+    ],
+    "common_mistake": "'What you like?' (missing do). Saavi: 'Question banane ke liye Wh-word ke baad DO/DOES/DID daalo, phir SUBJECT, phir VERB. What + DO + you + like? Yeh formula har question mein.'",
+    "visual_idea": "Question word wheel — 7 sectors. Each word with example sentence.",
+    "animation_idea": "Spin wheel → question appears with do/does/did highlighted in red. Word order arrows.",
+    "struggles": "- 'What you like?' missing do\n- 'Where he went?' missing did\n- 'How much it cost?' missing does\n- 'Did you went?' double past (should be 'Did you go?')",
+    "connections": "Day 39 fully reviews Wh-questions. Day 40 covers Yes/No questions. Day 47 uses 'What do you think?' for opinions."
+  },
+
+  "17": {
+    "theme": "Simple Future (will + going to)",
+    "duration_min": 25,
+    "phase": "PATTERN",
+    "core_concepts": [
+      "Simple Future with 'will' for predictions and spontaneous decisions: I will call you, It will rain",
+      "'Going to' for plans and intentions: I am going to study, She is going to travel",
+      "Difference: will (less certain, instant), going to (planned)"
+    ],
+    "words": ["I will", "she will", "won't", "I will call", "It will rain", "I am going to", "she is going to", "are going to", "I won't forget", "Will you", "Will it", "I will see", "I am going to study", "It is going to rain", "We will meet"],
+    "hook": "Raju looks at dark clouds: 'It will rain.' He opens his bag: 'Oh! I forgot umbrella. I will buy one.' Saavi explains 'will' vs 'going to'.",
+    "sample_examples": [
+      "I will call you later. (आई विल कॉल यू लेटर) — मैं बाद में फ़ोन करूँगा",
+      "She is going to study medicine. (शी इज़ गोइंग टू स्टडी मेडिसिन) — वह डॉक्टरी पढ़ने वाली है",
+      "Look at the sky! It is going to rain. (इट इज़ गोइंग टू रेन) — देखो, बारिश होने वाली है",
+      "I won't forget you. (आई वोन्ट फ़र्गेट यू) — मैं तुम्हें नहीं भूलूँगा"
+    ],
+    "common_mistake": "Using 'will' for every future. Saavi: 'PLANNED future (already decided) → going to. SPONTANEOUS (just deciding) → will. Tomorrow exam hai → I am going to study (planned). Phone ring hua → I will answer (instant).'",
+    "visual_idea": "Calendar (going to — planned) vs thought bubble (will — spontaneous). Two icons side by side.",
+    "animation_idea": "Character thinks → 'will' bubble pops. Writes in planner → 'going to' with calendar icon.",
+    "struggles": "- 'I will going' (mixing will + ing)\n- 'I am go to' (forgetting 'going')\n- Using 'will' for everything (sounds unnatural)\n- 'It will to rain' (extra 'to')",
+    "connections": "Day 26 adds Future Continuous and Future Perfect (will be doing, will have done)."
+  },
+
+  "18": {
+    "theme": "CAN/COULD + Polite forms",
+    "duration_min": 25,
+    "phase": "PATTERN",
+    "core_concepts": [
+      "CAN for ability (I can swim) and informal permission (Can I go?)",
+      "COULD for past ability (I could run fast) and polite request (Could you help me?)",
+      "Polite forms: Would you like...? Could you please...? May I...?"
+    ],
+    "words": ["I can", "you can", "she can", "can't", "Can I", "Could you", "Could I", "I could", "Would you like", "Could you please", "May I", "Can you help", "I can speak", "She can drive", "Could you tell"],
+    "hook": "Raju says 'I can to swim.' Chatur says 'Can I come in, sir?' Saavi corrects both — 'I can swim' (no to) and explains Could is more polite than Can for boss/seniors.",
+    "sample_examples": [
+      "I can speak English. (आई कैन स्पीक इंग्लिश) — मैं अंग्रेज़ी बोल सकता हूँ",
+      "Could you please open the door? (कुड यू प्लीज़ ओपन द डोर?) — क्या आप दरवाज़ा खोलेंगे?",
+      "Would you like some tea? (वुड यू लाइक सम टी?) — क्या आप चाय लेंगे?",
+      "May I come in? (मे आई कम इन?) — क्या मैं अंदर आ सकता हूँ?"
+    ],
+    "common_mistake": "'I can to swim' (adding 'to'). Saavi: 'Modal verbs (can/could/will/would/should/must) ke baad VERB ki BASE form direct aati hai — koi to nahi. Can swim, Could go, Should eat. Bilkul to nahi!'",
+    "visual_idea": "Two doors: 'Can' (informal, friend icon), 'Could' (polite, boss icon). Polite phrase bubbles.",
+    "animation_idea": "Door opens, character makes request politely with 'Could you please...'. Bow icon for politeness level.",
+    "struggles": "- 'I can to swim' (extra to)\n- 'Could you please to help?' (extra to after please)\n- Using 'can' with seniors (less polite — use could/would)\n- 'I could swim' for current ability (wrong — use 'I can')",
+    "connections": "Day 19 adds May/Might + exclamations. Day 30 (Phone) heavily uses 'Could you please'. Day 47 uses 'Could you tell me...' for opinions."
+  },
+
+  "19": {
+    "theme": "MAY/MIGHT + Exclamations",
+    "duration_min": 25,
+    "phase": "PATTERN",
+    "core_concepts": [
+      "MAY for permission (May I go?) and possibility (It may rain)",
+      "MIGHT for less certain possibility (I might come, might not)",
+      "Exclamations: What a...! How...! (express surprise, joy, sorrow)"
+    ],
+    "words": ["May I", "It may", "I might", "She might", "may not", "might not", "What a", "How", "What a beautiful", "How fast", "What a surprise", "How nice", "May I sit", "It may rain", "I might come"],
+    "hook": "Raju asks 'May I go to toilet?' Then looks at cloudy sky: 'It may rain or might not.' Dadaji sees a beautiful flower: 'What a flower!'",
+    "sample_examples": [
+      "May I sit here? (मे आई सिट हियर?) — क्या मैं यहाँ बैठ सकता हूँ?",
+      "It may rain today. (इट मे रेन टुडे) — आज बारिश हो सकती है",
+      "I might come to the party. (आई माइट कम टू द पार्टी) — मैं आ सकता हूँ (पक्का नहीं)",
+      "What a beautiful day! (वॉट अ ब्यूटीफ़ुल डे!) — कितना सुंदर दिन है!",
+      "How fast he runs! (हाउ फ़ास्ट ही रन्स!) — वह कितनी तेज़ दौड़ता है!"
+    ],
+    "common_mistake": "'May' for past possibility (should be 'might have'). Saavi: 'May = aaj/abhi possibility. Past mein possibility batane ke liye MIGHT HAVE bolo. He may have gone (gaya hoga).'",
+    "visual_idea": "Permission sign (✋ May I), possibility meter (50% might / 70% may), exclamation balloon.",
+    "animation_idea": "Cloud shades → 'may rain'; faded cloud → 'might rain'; balloon pops with 'What a...!'",
+    "struggles": "- 'May/Might' confusion (might is less certain)\n- 'What beautiful day' (missing 'a')\n- 'How is he tall' (wrong — should be 'How tall he is')\n- 'May he came?' (wrong — should be 'May he have come?')",
+    "connections": "Day 18 covered Can/Could. Day 20 adds Should/Must. Day 33 (Hospital) uses exclamations 'What a relief!'."
+  },
+
+  "20": {
+    "theme": "SHOULD / MUST",
+    "duration_min": 25,
+    "phase": "PATTERN",
+    "core_concepts": [
+      "SHOULD for advice and recommendation (You should rest, We should go now)",
+      "MUST for strong obligation or necessity (I must go, You must obey rules)",
+      "Negative: should not / shouldn't, must not / mustn't (prohibition)"
+    ],
+    "words": ["I should", "you should", "we should", "shouldn't", "I must", "you must", "she must", "mustn't", "should I", "must I", "should be", "must be", "you should drink", "I must finish", "you mustn't"],
+    "hook": "Raju has headache. Doctor says 'You should take rest.' Chatur says 'I must go to office, no rest.' Saavi explains difference between advice (should) and necessity (must).",
+    "sample_examples": [
+      "You should drink more water. (यू शुड ड्रिंक मोर वॉटर) — तुम्हें ज़्यादा पानी पीना चाहिए",
+      "I must finish this work today. (आई मस्ट फ़िनिश दिस वर्क टुडे) — मुझे यह काम आज पूरा करना ही है",
+      "You shouldn't smoke. (यू शुडंट स्मोक) — तुम्हें धूम्रपान नहीं करना चाहिए",
+      "You mustn't touch the fire. (यू मस्टंट टच द फ़ायर) — आग मत छूओ (सख्त मनाही)"
+    ],
+    "common_mistake": "Using 'should' for strong necessity. Saavi: 'Should = SALAH (advice — optional). Must = ZAROORI (compulsory — no choice). Doctor bole \"you should rest\" — choice hai. Police bole \"you must stop\" — koi choice nahi.'",
+    "visual_idea": "Traffic light: green (should — advice), red (must — compulsory). Different intensity icons.",
+    "animation_idea": "Light changes; advice sentence appears for green, obligation for red. Police whistle for must.",
+    "struggles": "- Using 'should' for strict rules (sounds weak)\n- 'You should not to come' (extra to)\n- 'mustn't' vs 'don't have to' confusion (mustn't = forbidden, don't have to = optional)\n- 'I must to go' (extra to)",
+    "connections": "Day 11 had 'have to' (obligation). Day 20 adds nuance: should (soft), must (hard). Day 47 (Opinions) uses 'I think we should...'."
+  },
+
+  "21": {
+    "theme": "Review + Pronunciation of -ed endings",
+    "duration_min": 30,
+    "phase": "WHY",
+    "core_concepts": [
+      "Review of Days 15-20 (irregular past, wh-questions, future, can/could, may/might, should/must)",
+      "Pronunciation of -ed endings: /t/ (voiceless: walked, stopped), /d/ (voiced: played, called), /ɪd/ (t/d sounds: waited, needed)",
+      "Rule: voiceless verb endings (k, p, s, ch, sh, f, x) → /t/. Voiced or vowel → /d/. Verbs ending in t/d → /ɪd/"
+    ],
+    "words": ["walked", "stopped", "watched", "washed", "played", "called", "lived", "loved", "waited", "needed", "wanted", "decided", "ended", "started", "studied"],
+    "hook": "Raju says 'I walk-ed yesterday' (3 syllables). Saavi says 'It's walked — sounds like walkt. Not walk-ed. Sirf -t aur -d wale verbs mein extra syllable hota hai.'",
+    "sample_examples": [
+      "Walked → /t/ (वॉक्ट) — चला/गया",
+      "Played → /d/ (प्लेड) — खेला",
+      "Waited → /ɪd/ (वेइटिड) — इंतज़ार किया",
+      "Needed → /ɪd/ (नीडिड) — ज़रूरत थी"
+    ],
+    "common_mistake": "Pronouncing -ed as separate syllable for all verbs. Saavi: 'Sirf 't' ya 'd' se khatam hone wale verbs mein -ed alag syllable hai (waited, needed). Baki sab ek hi syllable mein /t/ ya /d/ aata hai.'",
+    "visual_idea": "Three columns: /t/, /d/, /ɪd/ with example verbs. Sound icons. Mouth shape diagram.",
+    "animation_idea": "Verb falls into correct column based on ending, sound plays. Lips/mouth animate showing pronunciation.",
+    "struggles": "- 'walk-ed' (3 syllables — sounds Indian-English)\n- 'play-ed' (2 syllables)\n- Mixing /t/ and /d/ sounds\n- Not noticing /ɪd/ for waited/needed",
+    "connections": "Refines Day 13 (regular past). Day 28 covers -s ending pronunciation."
+  },
+
+  "22": {
+    "theme": "Past Continuous",
+    "duration_min": 25,
+    "phase": "PATTERN",
+    "core_concepts": [
+      "Past Continuous: was/were + verb+ing (I was eating, They were playing)",
+      "Use: action in progress at a specific past time, or interrupted by another action",
+      "Interrupted action: I was sleeping when you called (Past Continuous + Simple Past)"
+    ],
+    "words": ["I was", "you were", "he was", "we were", "they were", "wasn't", "weren't", "I was eating", "she was sleeping", "they were playing", "was watching", "were going", "I was working", "she was cooking", "we were waiting"],
+    "hook": "Raju says 'Yesterday at 8 pm, I eat dinner when phone ring.' Saavi corrects 'I was eating dinner when the phone rang.' Past mein bhi ongoing action hota hai — that's Past Continuous.",
+    "sample_examples": [
+      "I was watching TV at 9 pm. (आई वॉज़ वॉचिंग टीवी ऐट नाइन पीएम) — मैं रात 9 बजे टीवी देख रहा था",
+      "They were playing when it started raining. (दे वर वॉयलिंग वेन इट स्टार्टेड रेनिंग) — जब बारिश शुरू हुई, वे खेल रहे थे",
+      "She was cooking dinner. (शी वॉज़ कुकिंग डिनर) — वह रात का खाना पका रही थी",
+      "We were waiting for you. (वी वर वेटिंग फ़ॉर यू) — हम तुम्हारा इंतज़ार कर रहे थे"
+    ],
+    "common_mistake": "'I was eat dinner' (missing -ing). Saavi: 'Past Continuous = was/were + verb+ING. Was eat GALAT, was eatING SAHI. Wahi pattern jo Day 12 mein seekha — bas am/is/are ki jagah was/were.'",
+    "visual_idea": "Two timelines: continuous action (long line), short action (point). Interruption icon (lightning).",
+    "animation_idea": "Clock ticks, character doing continuous action, then suddenly interrupted by phone/doorbell.",
+    "struggles": "- 'I was eat' (missing -ing)\n- 'I were going' (wrong: I was)\n- 'They was playing' (plural needs were)\n- 'Yesterday I was studying' alone (need context — when?)",
+    "connections": "Day 12 covered Present Continuous. Day 22 makes it past. Day 26 adds Future Continuous (will be eating)."
+  },
+
+  "23": {
+    "theme": "Present Perfect (experience — ever/never)",
+    "duration_min": 30,
+    "phase": "PATTERN + WHY",
+    "core_concepts": [
+      "Present Perfect for life experiences: have/has + past participle (V3) (I have been to Delhi)",
+      "Use with ever (कभी) and never (कभी नहीं)",
+      "Without specific time (no yesterday, last week — 'Anytime in life so far')"
+    ],
+    "words": ["I have been", "she has gone", "Have you ever", "I have never", "I have seen", "she has eaten", "we have visited", "they have done", "Have you been", "I have never seen", "ever", "never", "have you tried", "has he met", "I haven't"],
+    "hook": "Raju says 'I visited Mumbai last month.' Saavi says 'That's past (specific time). For experience anytime in life, say I have visited Mumbai. Specific time NAHI batana — sirf experience.'",
+    "sample_examples": [
+      "I have been to Goa. (आई हैव बीन टू गोवा) — मैं गोवा गया हूँ (कभी)",
+      "Have you ever eaten sushi? (हैव यू एवर ईटन सुशी?) — क्या तुमने कभी सुशी खाई है?",
+      "She has never seen snow. (शी हैज़ नेवर सीन स्नो) — उसने कभी बर्फ़ नहीं देखी",
+      "I have visited Delhi twice. (आई हैव विज़िटिड दिल्ली ट्वाइस) — मैंने दिल्ली दो बार देखी है"
+    ],
+    "common_mistake": "'I have gone to Delhi yesterday' (specific time with present perfect). Saavi: 'Present perfect mein KABHI specific time nahi aati. Yesterday/last week ke saath SIMPLE PAST — I went. Anytime ya never ke saath PRESENT PERFECT — I have been.'",
+    "visual_idea": "Passport with stamps for experiences. Globe with visited countries marked.",
+    "animation_idea": "Stamp appears on passport → 'I have visited...'. Question mark floats with 'Have you ever?'.",
+    "struggles": "- 'I have went' (wrong V3 — should be gone)\n- 'I have visited yesterday' (specific time mistake)\n- 'I have ever been' (positive sentences don't use ever — use 'I have been')\n- Verb form: V1 vs V3 confusion (eat-ate-eaten)",
+    "connections": "Builds on Day 15 (irregular V3 forms). Day 24 adds just/already/yet. Day 25 contrasts with Past Perfect."
+  },
+
+  "24": {
+    "theme": "Present Perfect (just / already / yet) + Quantifiers",
+    "duration_min": 25,
+    "phase": "PATTERN",
+    "core_concepts": [
+      "Present Perfect with: just (अभी-अभी), already (पहले से), yet (अभी तक — in questions/negatives)",
+      "Quantifiers with countable/uncountable: some (positive), any (questions/negatives), much/many, a few/a little"
+    ],
+    "words": ["just", "already", "yet", "I have just", "she has already", "haven't yet", "Have you yet", "some", "any", "Do you have any", "I need some", "much", "many", "a few", "a little"],
+    "hook": "Raju says 'I finished homework.' Saavi asks 'Just now? Say I have just finished.' Chatur says 'I have any money?' Saavi corrects 'Do you have any money?'",
+    "sample_examples": [
+      "I have just eaten. (आई हैव जस्ट ईटन) — मैंने अभी-अभी खाना खाया",
+      "She has already left. (शी हैज़ ऑलरेडी लेफ्ट) — वह पहले ही जा चुकी है",
+      "Have you finished yet? (हैव यू फ़िनिश्ड येट?) — क्या तुमने अभी तक खत्म किया?",
+      "I need some water. (आई नीड सम वॉटर) — मुझे थोड़ा पानी चाहिए",
+      "Do you have any questions? (डू यू हैव एनी क्वेश्चन्स?) — क्या आपके कोई सवाल हैं?"
+    ],
+    "common_mistake": "'I have any water' (using any in positive). Saavi: 'POSITIVE sentence mein SOME — I have some water. NEGATIVE ya QUESTION mein ANY — Do you have any? I don't have any. Yeh rule simple hai.'",
+    "visual_idea": "Timeline with 'just' (just now), 'already' (before now), 'yet' (still waiting). Quantifier table some/any.",
+    "animation_idea": "Clock ticks; 'just' appears; checkmark for 'already'; question mark for 'yet'.",
+    "struggles": "- 'I have any' in positive sentence (should be some)\n- 'Already I went' (wrong order — already comes after have)\n- 'Yet' in positive sentence (yet = questions/negatives only)\n- 'Much books' (should be many)",
+    "connections": "Day 23 introduced Present Perfect. Day 24 deepens with adverbs. Day 12 had countable/uncountable basics."
+  },
+
+  "25": {
+    "theme": "Past Perfect",
+    "duration_min": 30,
+    "phase": "PATTERN + WHY",
+    "core_concepts": [
+      "Past Perfect: had + past participle (V3) (I had eaten, She had gone)",
+      "Use: action completed BEFORE another past action (past before past)",
+      "Often used with: before, after, by the time, when"
+    ],
+    "words": ["I had", "she had", "had eaten", "had gone", "had finished", "had arrived", "before he came", "by the time", "when I called", "had already", "had not", "hadn't", "had seen", "had done", "had told"],
+    "hook": "Raju says 'When I reached station, the train left.' Saavi corrects 'When I reached, the train HAD already left (pehle hi chali gayi thi).' Past mein bhi 'pehle' aur 'baad' ka concept hai.",
+    "sample_examples": [
+      "I had eaten before he arrived. (आई हैड ईटन बिफ़ोर ही अराइव्ड) — उसके आने से पहले मैं खा चुका था",
+      "She had finished work when I called. (शी हैड फ़िनिश्ड वर्क वेन आई कॉल्ड) — जब मैंने फ़ोन किया, वह काम खत्म कर चुकी थी",
+      "By the time we arrived, the movie had started. (बाय द टाइम वी अराइव्ड, द मूवी हैड स्टार्टिड) — जब तक हम पहुँचे, फ़िल्म शुरू हो चुकी थी"
+    ],
+    "common_mistake": "'I had eat' (incorrect participle). Saavi: 'Had ke baad V3 form chahiye — had eaten, had gone, had done. Same pattern jo Day 23 mein seekha tha — have/has + V3.'",
+    "visual_idea": "Two arrows on timeline: first action (had + V3) finishes, then second action (simple past). Sequence diagram.",
+    "animation_idea": "Arrow sequence: first arrow finishes its journey, then second starts. 'Had' highlighted in red.",
+    "struggles": "- 'I had eat' wrong V3\n- Confusing with Present Perfect (have eaten vs had eaten)\n- Forgetting context (need 2 past events to use Past Perfect)\n- 'I had ate' (V2 instead of V3)",
+    "connections": "Day 23 had Present Perfect (have + V3). Day 25 makes it past (had + V3). Story-telling gets richer."
+  },
+
+  "26": {
+    "theme": "Future Continuous & Future Perfect",
+    "duration_min": 30,
+    "phase": "PATTERN",
+    "core_concepts": [
+      "Future Continuous: will be + verb+ing (action in progress at a future time): I will be waiting at 5 pm",
+      "Future Perfect: will have + past participle (V3) (action completed before a future time): I will have left by 8 pm",
+      "Use with time expressions: by (then), at (time), when"
+    ],
+    "words": ["will be eating", "will be sleeping", "will be working", "will have done", "will have finished", "will have left", "by 5 pm", "at 9 pm", "by tomorrow", "I will be", "she will have", "we will be", "they will have", "won't be", "won't have"],
+    "hook": "Raju says 'At 6 pm tomorrow, I eat dinner.' Saavi corrects 'I will be eating dinner.' Chatur says 'By 9 pm, I finish work.' Saavi corrects 'I will have finished work.'",
+    "sample_examples": [
+      "I will be sleeping at 11 pm. (आई विल बी स्लीपिंग ऐट इलेवन पीएम) — मैं रात 11 बजे सो रहा हूँगा",
+      "She will have arrived by noon. (शी विल हैव अराइव्ड बाय नून) — वह दोपहर तक पहुँच चुकी होगी",
+      "They will be having dinner at 8. (दे विल बी हैविंग डिनर ऐट एट) — वे 8 बजे खाना खा रहे होंगे"
+    ],
+    "common_mistake": "Using simple future for ongoing future action. Saavi: 'Future mein ongoing action ke liye WILL BE + ING. Future mein completed action ke liye WILL HAVE + V3. Pattern: future continuous = future ka -ing version.'",
+    "visual_idea": "Clock hands moving to future time. Dotted line for continuous, finish line for perfect.",
+    "animation_idea": "Character waiting → clock hits 5 → 'will be waiting'. Another finishes → clock hits 8 → 'will have finished'.",
+    "struggles": "- 'I will be eat' (missing -ing)\n- 'I will have eat' (wrong V3)\n- 'By 5 pm I will eat' (need 'will have eaten' for completion)\n- Confusing with present continuous",
+    "connections": "Day 17 had simple future. Day 22 had Past Continuous. Day 26 completes the tense matrix with Future Continuous + Future Perfect."
+  },
+
+  "27": {
+    "theme": "Mixed Tenses + Question Tags (advanced)",
+    "duration_min": 30,
+    "phase": "RIDE + PATTERN",
+    "core_concepts": [
+      "Mixed tenses in conversation: switch between past, present, future naturally",
+      "Question tags review with all tenses: You have seen this, haven't you? He didn't come, did he? She will help, won't she?",
+      "Special tag: I am right, aren't I? (not amn't I)"
+    ],
+    "words": ["haven't you", "did he", "will she", "isn't he", "aren't they", "wasn't it", "weren't they", "doesn't she", "don't they", "wouldn't you", "couldn't you", "shouldn't we", "mustn't they", "aren't I", "right"],
+    "hook": "Raju tells story: 'Yesterday I went to market. I buy vegetables. Now I am cooking.' Saavi helps mix tenses correctly. Dadaji says 'I am late, isn't it?' Saavi corrects 'I am late, aren't I?'",
+    "sample_examples": [
+      "You have been to Jaipur, haven't you? (हैव्न्ट यू?) — तुम जयपुर गए हो, है ना?",
+      "She didn't call, did she? (डिड शी?) — उसने फ़ोन नहीं किया, क्या किया?",
+      "They will come, won't they? (वोन्ट दे?) — वे आएँगे, है ना?",
+      "I am right, aren't I? (आरंट आय?) — मैं सही हूँ, है ना?"
+    ],
+    "common_mistake": "'I am right, amn't I?' (no such form). Saavi: 'I am ke saath SPECIAL tag hai — aren\\'t I. Amn\\'t doesn\\'t exist in English. Yeh ek exception hai.'",
+    "visual_idea": "Three time arrows. Tag formation table for each tense. Special box for 'aren't I'.",
+    "animation_idea": "Story sequence with tense changes. Question tag appears with correct helping verb swinging back.",
+    "struggles": "- Wrong helping verb in tag (e.g., 'You went, doesn't?' should be 'didn't you?')\n- Positive tag for positive statement (rule violated)\n- 'amn't I' (doesn't exist)\n- Mixing tenses incorrectly within same sentence",
+    "connections": "Day 11 introduced basic tags. Day 27 advances them. Day 45 (Small talk) heavily uses tags."
+  },
+
+  "28": {
+    "theme": "Review + Pronunciation of -s endings",
+    "duration_min": 30,
+    "phase": "WHY",
+    "core_concepts": [
+      "Review Days 22-27 (Past Continuous, Present Perfect, Past Perfect, Future, Mixed tenses)",
+      "Pronunciation of -s endings for plurals and 3rd person verbs: /s/ (unvoiced: eats, books), /z/ (voiced: plays, dogs), /ɪz/ (sibilant: watches, churches)",
+      "Rule: voiceless ending → /s/. Voiced ending → /z/. Sibilant ending (s/sh/ch/x/z) → /ɪz/"
+    ],
+    "words": ["eats", "books", "stops", "plays", "dogs", "lives", "watches", "churches", "boxes", "buses", "writes", "reads", "loves", "passes", "wishes"],
+    "hook": "Raju says 'He eatss' (with extra s sound). Saavi corrects: 'It's eats — sounds like eets. Watches mein /ɪz/ hai (extra syllable), eats mein nahi.'",
+    "sample_examples": [
+      "Eats → /ts/ (ईट्स) — खाता है",
+      "Plays → /z/ (प्लेज़) — खेलता है",
+      "Watches → /ɪz/ (वॉचिज़) — देखता है",
+      "Boxes → /ɪz/ (बॉक्सिज़) — डिब्बे"
+    ],
+    "common_mistake": "Pronouncing -s as always /s/. Saavi: 'Voiceless ending (k, t, p) ke baad /s/. Voiced ending (b, d, g, vowel) ke baad /z/. Sibilant ending (s, sh, ch, x) ke baad /ɪz/ — extra syllable.'",
+    "visual_idea": "Three boxes with mouth shapes for each sound. Verb falls into correct box.",
+    "animation_idea": "Verb falls into correct box, sound plays, lips/mouth move accordingly.",
+    "struggles": "- 'Watch-es' (3 syllables) — sounds Indian\n- /s/ vs /z/ confusion (eats vs plays)\n- 'Box-es' overemphasizing -es\n- Mixing pronunciation rules",
+    "connections": "Day 6 introduced -s for third person. Day 21 covered -ed pronunciation. Day 28 completes pronunciation patterns."
+  },
+
+  "29": {
+    "theme": "Office Basic + There is/are (review)",
+    "duration_min": 25,
+    "phase": "RIDE",
+    "core_concepts": [
+      "Office vocabulary: boss, meeting, report, deadline, computer, printer, email, file",
+      "Polite requests at work: Could you send this email? I need a pen, please. Let me check.",
+      "There is/There are review for office (There is a meeting at 3 pm)"
+    ],
+    "words": ["boss", "meeting", "report", "deadline", "email", "file", "computer", "printer", "Could you send", "I need", "Let me check", "I will update", "Sorry for delay", "There is a meeting", "Please find attached"],
+    "hook": "Raju's first day at office. He needs to ask for help but doesn't know how. Chatur says 'Give me pen!' Saavi teaches polite way.",
+    "sample_examples": [
+      "Could you please send this email? (कुड यू प्लीज़ सेन्ड दिस ईमेल?) — क्या आप यह ईमेल भेज सकते हैं?",
+      "I need the report by 5 pm. (आई नीड द रिपोर्ट बाय फ़ाइव पीएम) — मुझे रिपोर्ट 5 बजे तक चाहिए",
+      "There is a meeting at 3 pm. (देयर इज़ अ मीटिंग ऐट थ्री पीएम) — दोपहर 3 बजे मीटिंग है",
+      "Let me check and get back to you. (लेट मी चेक एंड गेट बैक टू यू) — मैं देखकर बताता हूँ"
+    ],
+    "common_mistake": "'Give me pen' (impolite, missing 'a'). Saavi: 'Office mein politeness ZAROORI hai. Use Could you please... ya I need a... Pen ke pehle 'a' bhi zaroori — give me a pen.'",
+    "visual_idea": "Office desk with computer, calendar, meeting room icon. Polite phrase bubbles.",
+    "animation_idea": "Click on computer → 'Could you send...'. Meeting alert pops up at 3 pm.",
+    "struggles": "- 'Give me pen' (impolite + missing 'a')\n- 'I want this email' (sounds aggressive)\n- 'Where boss?' (missing is)\n- Forgetting 'please' in requests",
+    "connections": "Day 18 introduced 'Could you'. Day 30 (Phone) extends polite requests."
+  },
+
+  "30": {
+    "theme": "Telephone + Polite requests",
+    "duration_min": 25,
+    "phase": "RIDE",
+    "core_concepts": [
+      "Telephone phrases: Hello, may I speak to X? This is Y speaking. Please hold on. I will call back. Sorry, wrong number.",
+      "Polite requests on phone: Could you please repeat that? Can you tell him that I called?"
+    ],
+    "words": ["Hello", "May I speak to", "This is speaking", "Please hold on", "I will call back", "Sorry wrong number", "Could you repeat", "Can you tell him", "Speaking", "Who is this", "Hold the line", "Let me check", "I will transfer", "Goodbye", "Have a good day"],
+    "hook": "Raju calls his boss but speaks rudely: 'I want to speak to boss!' Saavi teaches proper phone etiquette.",
+    "sample_examples": [
+      "Hello, may I speak to Mr. Sharma? (हलो, मे आय स्पीक टू मिस्टर शर्मा?) — हलो, क्या मिस्टर शर्मा से बात हो सकती है?",
+      "This is Raju speaking. (दिस इज़ राजू स्पीकिंग) — मैं राजू बोल रहा हूँ",
+      "Please hold on. (प्लीज़ होल्ड ऑन) — कृपया लाइन पर रहें",
+      "Could you please repeat that? (कुड यू प्लीज़ रिपीट दैट?) — क्या आप दोबारा कह सकते हैं?"
+    ],
+    "common_mistake": "'I am Raju' on phone. Saavi: 'Phone par identify karne ke liye \"This is Raju\" ya \"This is Raju speaking\" bolte hain. \"I am Raju\" face-to-face mein hai.'",
+    "visual_idea": "Two phones with speech bubbles. Caller and receiver shown. Phone etiquette icons.",
+    "animation_idea": "Phone rings, receiver picks up, dialogue appears. Hold music plays. Hang up at end.",
+    "struggles": "- 'I am Raju' on phone (wrong context)\n- 'Tell him I am call' (wrong tense)\n- 'Repeat please' (missing helping verb)\n- 'Wrong number' said rudely",
+    "connections": "Day 18 (Polite forms). Day 29 (Office). Phone is daily essential."
+  },
+
+  "31": {
+    "theme": "Shopping / Bargaining + Numbers 100-1000",
+    "duration_min": 30,
+    "phase": "RIDE",
+    "core_concepts": [
+      "Shopping phrases: How much is this? Can I get a discount? That's too expensive. I'll take it.",
+      "Numbers 100-1000: one hundred, two hundred, five hundred, one thousand",
+      "Bargaining: Would you take X rupees? Sorry, final price."
+    ],
+    "words": ["How much", "discount", "expensive", "cheap", "I'll take", "final price", "one hundred", "two hundred", "five hundred", "one thousand", "Can I get", "It costs", "Would you take", "Sorry", "Too much"],
+    "hook": "Raju goes to buy shirt. Price 500 rupees. He wants to bargain but doesn't know words. Saavi teaches.",
+    "sample_examples": [
+      "How much is this shirt? (हाउ मच इज़ दिस शर्ट?) — यह शर्ट कितने की है?",
+      "Can you give me a discount? (कैन यू गिव मी अ डिस्काउंट?) — कुछ कम कर लो?",
+      "That's too expensive. (दैट्स टू एक्सपेन्सिव) — बहुत महँगा है",
+      "I'll take it for two hundred. (आइल टेक इट फ़ॉर टू हंड्रेड) — मैं दो सौ में लूँगा"
+    ],
+    "common_mistake": "'How much price?' Saavi: '\"How much is it?\" ya \"What is the price?\" — donon sahi. \"How much price\" hindi-style hai, English mein nahi.'",
+    "visual_idea": "Shop counter with price tags. Number grid 100-1000. Bargaining gesture icons.",
+    "animation_idea": "Price tag changes as buyer offers lower amount. Coin sound on agreement.",
+    "struggles": "- 'How much price' (Indian English)\n- 'Give discount' (impolite — use 'Can you give...')\n- 'Too much expensive' (extra much)\n- 'Final price?' as question (need 'Is this the final price?')",
+    "connections": "Day 14 had numbers up to 100, Day 31 to 1000. Day 32 (Restaurant) reuses 'How much?'."
+  },
+
+  "32": {
+    "theme": "Restaurant + Polite offers",
+    "duration_min": 25,
+    "phase": "RIDE",
+    "core_concepts": [
+      "Restaurant phrases: Table for two, menu, I would like to order, What do you recommend? The bill, please.",
+      "Polite offers: Would you like...? Can I get you...? How about...?",
+      "Food vocabulary: vegetarian, non-veg, spicy, sweet, dessert"
+    ],
+    "words": ["Table for two", "menu", "I would like", "What do you recommend", "The bill please", "Would you like", "Can I get you", "How about", "vegetarian", "non-veg", "spicy", "sweet", "dessert", "starters", "main course"],
+    "hook": "Raju takes family to restaurant. He doesn't know how to order. Chatur shouts 'Give me biryani!' Saavi teaches polite ordering.",
+    "sample_examples": [
+      "I would like a table for two. (आई वुड लाइक अ टेबल फ़ॉर टू) — दो लोगों के लिए टेबल चाहिए",
+      "Could I see the menu, please? (कुड आय सी द मेन्यू, प्लीज़?) — कृपया मेन्यू दिखा दीजिए",
+      "What do you recommend? (वॉट डू यू रेकमेंड?) — आप क्या सुझाव देंगे?",
+      "Would you like some dessert? (वुड यू लाइक सम डिज़र्ट?) — क्या आप मिठाई लेंगे?"
+    ],
+    "common_mistake": "'Give me water' (impolite). Saavi: 'Restaurant mein \"I would like a glass of water\" ya \"Could I have some water, please?\" — yeh polite hai. Give me sounds like demanding.'",
+    "visual_idea": "Restaurant table with menu, waiter approaching. Food icons. Politeness scale.",
+    "animation_idea": "Waiter approaches, guest orders politely, food appears. Bill at end.",
+    "struggles": "- 'Give me water' (rude)\n- 'I want biryani' (better: I would like)\n- 'Bill!' (need 'The bill, please')\n- 'How much?' as standalone (need 'How much is the bill?')",
+    "connections": "Day 4 (Food restaurant) had basics. Day 32 advances politeness."
+  },
+
+  "33": {
+    "theme": "Hospital / Symptoms + Exclamations",
+    "duration_min": 25,
+    "phase": "RIDE",
+    "core_concepts": [
+      "Hospital/Doctor phrases: I have a fever/headache/cough. My stomach hurts. I feel dizzy.",
+      "Describing symptoms: She is vomiting. He has a rash. I am allergic to...",
+      "Exclamations (review): What a pain! How terrible! Oh no! Thank God!"
+    ],
+    "words": ["fever", "headache", "cough", "cold", "I have a fever", "My stomach hurts", "I feel dizzy", "I am allergic to", "What a pain", "How terrible", "Oh no", "Thank God", "vomiting", "rash", "pain"],
+    "hook": "Raju has fever and goes to doctor. He says 'I am fever.' Doctor corrects 'I have a fever.' Dadaji sees injection: 'What a big needle!'",
+    "sample_examples": [
+      "I have a headache. (आई हैव अ हेडेक) — सिरदर्द है",
+      "My stomach hurts. (माय स्टमक हर्ट्स) — पेट दर्द",
+      "What a relief! (वॉट अ रिलीफ़!) — कितनी राहत है!",
+      "Oh no! I forgot the medicine. (ओ नो! आय फ़र्गोट द मेडिसिन) — अरे नहीं! दवाई भूल गया"
+    ],
+    "common_mistake": "'I am fever' instead of 'I have a fever'. Saavi: 'Bimari ke liye HAVE use karte hain — I have fever, headache, cough. \"I am fever\" galat hai. Same: she has a cold (cold ho gaya).'",
+    "visual_idea": "Body diagram with pain points. Thermometer. Exclamation balloon.",
+    "animation_idea": "Click on body part → symptom sentence appears. Exclamation balloon for surprise.",
+    "struggles": "- 'I am fever' (BE instead of HAVE)\n- 'My head paining' (Indian English — 'My head hurts')\n- 'What a pain!' tone (should be sympathy, not anger)\n- 'I have headache' missing 'a'",
+    "connections": "Day 8 (BE) vs Day 10 (HAVE) — when to use which. Day 19 (Exclamations) reused."
+  },
+
+  "34": {
+    "theme": "Travel (auto, bus) + Telling time (quarter to, quarter past)",
+    "duration_min": 25,
+    "phase": "RIDE",
+    "core_concepts": [
+      "Travel phrases: Where is the bus stop? How far is the station? How much to go to X? Please stop here.",
+      "Telling time advanced: quarter past (सवा), quarter to (पौने), half past (साढ़े)",
+      "Numbers for fare: 20 rupees, 50 rupees, etc."
+    ],
+    "words": ["Where is the bus stop", "How far", "How much to go to", "Please stop", "quarter past", "quarter to", "half past", "rupees", "auto", "bus", "train", "ticket", "station", "platform", "fare"],
+    "hook": "Raju needs to go to station. He stops an auto: 'How much to station?' Driver says '100 rupees.' Raju bargains. Saavi teaches travel phrases and time.",
+    "sample_examples": [
+      "Where is the bus stop? (वेयर इज़ द बस स्टॉप?) — बस स्टॉप कहाँ है?",
+      "How far is the station from here? (हाउ फ़ार इज़ द स्टेशन फ़्रॉम हियर?) — स्टेशन यहाँ से कितनी दूर है?",
+      "Please stop here. (प्लीज़ स्टॉप हियर) — कृपया यहाँ रोकें",
+      "The bus leaves at quarter to eight. (द बस लीव्स ऐट क्वार्टर टू एट) — बस सवा आठ बजे चलती है"
+    ],
+    "common_mistake": "'Station how far?' (missing verb). Saavi: 'Question mein verb ZAROORI hai — \"How far IS the station?\" Indian-English mein hum verb skip karte hain par English mein galat hai.'",
+    "visual_idea": "Map with bus stop, station, auto. Clock showing quarter to/past with shaded zones.",
+    "animation_idea": "Auto moves on map; clock hands move and show 'quarter past 5' with sound.",
+    "struggles": "- 'Station how far?' missing verb\n- '15 minutes past' instead of 'quarter past'\n- 'Half past 4' confused with 4:30 (correct)\n- '4 and half' (Indian style — wrong)",
+    "connections": "Day 3 had basic time (o'clock, half past). Day 34 adds quarter to/past. Day 14 had numbers for fare."
+  },
+
+  "35": {
+    "theme": "Multi-scenario role-play (market-auto-doctor-restaurant)",
+    "duration_min": 30,
+    "phase": "RIDE",
+    "core_concepts": [
+      "Real-life flow: start at market, take auto, go to doctor, then restaurant — all in one conversation",
+      "Switching between scenarios smoothly using linking words (then, after that, later)",
+      "Review all polite forms, question tags, exclamations from Days 1-34"
+    ],
+    "words": ["then", "after that", "later", "first", "next", "finally", "How much are these", "Please take me to", "I have a", "I would like a", "How was your day", "It is", "isn't it", "What a"],
+    "hook": "Raju has a busy day. He needs to buy vegetables, go to doctor, take auto, and eat at restaurant. Saavi helps him connect all scenarios.",
+    "sample_examples": [
+      "Market: How much are these tomatoes? (हाउ मच आर दीज़ टमेटोज़?) — ये टमाटर कितने के हैं?",
+      "Auto: Please take me to City Hospital. (प्लीज़ टेक मी टू सिटी हॉस्पिटल) — कृपया मुझे सिटी हॉस्पिटल ले चलिए",
+      "Doctor: I have a headache and fever. (आय हैव अ हेडेक एंड फ़ीवर) — मुझे सिरदर्द और बुख़ार है",
+      "Restaurant: I would like a glass of water. (आय वुड लाइक अ ग्लास ऑफ़ वॉटर) — एक गिलास पानी चाहिए"
+    ],
+    "common_mistake": "Mixing tenses and losing politeness under pressure. Saavi: 'Saans lo. Patterns yaad rakho. Politeness pressure mein bhi maintain karo.'",
+    "visual_idea": "Map with 4 locations connected by arrows. Each popup with key phrases. Walking character.",
+    "animation_idea": "User clicks location, character speaks line, moves to next location with linking word.",
+    "struggles": "- Forgetting politeness under stress\n- Losing track of tenses while switching scenarios\n- Not using linking words (sentences feel disconnected)\n- Reverting to Hindi-style English",
+    "connections": "Synthesizes Days 29 (Office), 30 (Phone), 31 (Shopping), 32 (Restaurant), 33 (Hospital), 34 (Travel)."
+  },
+
+  "36": {
+    "theme": "Prepositions (in, on, at, to, from)",
+    "duration_min": 30,
+    "phase": "PATTERN + WHY",
+    "core_concepts": [
+      "Prepositions of place: in (inside), on (surface), at (specific point), to (direction), from (origin)",
+      "Prepositions of time: in (month/year), on (day/date), at (clock time), from...to (duration)",
+      "Common phrases: in Delhi, on Monday, at 5 pm, from here to there"
+    ],
+    "words": ["in", "on", "at", "to", "from", "in Delhi", "on Monday", "at 5 pm", "from here to there", "in the room", "on the table", "at the station", "in 2024", "on Sunday", "from morning"],
+    "hook": "Chatur says 'I live AT Delhi.' Rancho asks 'AT Delhi or IN Delhi?' Saavi explains difference between in/on/at.",
+    "sample_examples": [
+      "I live in Delhi. (आय लिव इन दिल्ली) — बड़े स्थान के लिए IN — मैं दिल्ली में रहता हूँ",
+      "The book is on the table. (द बुक इज़ ऑन द टेबल) — सतह पर — किताब मेज़ पर है",
+      "Let's meet at the station. (लेट्स मीट ऐट द स्टेशन) — विशिष्ट बिंदु — स्टेशन पर मिलते हैं",
+      "I go to office from home every day. (आय गो टू ऑफ़िस फ़्रॉम होम एवरी डे) — दिशा/स्रोत"
+    ],
+    "common_mistake": "'I live at Delhi' (using at for city). Saavi: 'Cities/countries ke liye IN — I live IN Delhi/India. Specific addresses ke liye AT — I live AT 123 Main Street. Yeh choti choti cheezein important hain.'",
+    "visual_idea": "Box (in), flat line (on), pin (at), arrow (to), starting point (from). Clock with time prepositions.",
+    "animation_idea": "Object moves into box → 'in', onto surface → 'on', pin drops → 'at'. Arrow shoots → 'to'.",
+    "struggles": "- 'In' vs 'at' for cities\n- 'On' for time (need 'on Monday' but 'in 2024')\n- 'In bus' instead of 'on bus' (English uses on for transport)\n- 'I am in here' (just 'I am here')",
+    "connections": "Used in every day from now. Day 39 questions need prepositions. Day 47 opinions use 'I think about...'."
+  },
+
+  "37": {
+    "theme": "Connectors (and, but, because, so, or)",
+    "duration_min": 25,
+    "phase": "PATTERN",
+    "core_concepts": [
+      "And (add): I like tea AND coffee.",
+      "But (contrast): He is rich BUT unhappy.",
+      "Because (reason): I stayed home BECAUSE it was raining.",
+      "So (result): It was raining, SO I stayed home.",
+      "Or (choice): Would you like tea OR coffee?"
+    ],
+    "words": ["and", "but", "because", "so", "or", "I like tea and coffee", "rich but unhappy", "passed because worked hard", "tired so sleep", "tea or coffee", "and also", "but still", "because of", "so that", "or else"],
+    "hook": "Raju says 'I like tea I like coffee.' Saavi says 'Use AND.' Chatur says 'I am tired I will sleep.' Saavi corrects 'I am tired, SO I will sleep.'",
+    "sample_examples": [
+      "I like apples and oranges. (आय लाइक ऐपल्स एंड ऑरंजेस) — मुझे सेब और संतरे पसंद हैं",
+      "She is small but strong. (शी इज़ स्मॉल बट स्ट्रॉन्ग) — वह छोटी पर मज़बूत है",
+      "He passed because he worked hard. (ही पास्ट बिकॉज़ ही वर्क्ड हार्ड) — मेहनत से पास हुआ",
+      "I was hungry, so I ate. (आय वॉज़ हंग्री, सो आय एट) — भूखा था, इसलिए खाया"
+    ],
+    "common_mistake": "'Because... so' together. Saavi: 'Donon ek saath nahi — \"Because it was raining, so I stayed home\" GALAT. Sirf ek connector — \"Because it was raining, I stayed home\" ya \"It was raining, so I stayed home\".'",
+    "visual_idea": "Puzzle pieces joining sentences. Color-coded connectors: and (blue), but (orange), because (purple), so (green), or (yellow).",
+    "animation_idea": "Two sentences slide together with connector appearing in middle.",
+    "struggles": "- 'Because... so' double connector\n- Comma rules with connectors\n- 'But' overuse for any contrast\n- Forgetting 'or' for choices",
+    "connections": "Foundation for fluent speech. Day 41 (Conditionals) needs 'if'. Day 47 (Opinions) needs 'because'."
+  },
+
+  "38": {
+    "theme": "Comparisons (better, worse, more, less, than)",
+    "duration_min": 25,
+    "phase": "PATTERN",
+    "core_concepts": [
+      "Comparative adjectives: -er than (taller than), more/less than (more beautiful than)",
+      "Irregular comparisons: good→better, bad→worse, far→farther/further",
+      "Equality: as...as (as tall as)"
+    ],
+    "words": ["taller than", "smaller than", "better than", "worse than", "more than", "less than", "as tall as", "the best", "the worst", "more beautiful", "less expensive", "as good as", "more interesting", "older than", "younger than"],
+    "hook": "Raju says 'I am good than Chatur.' Saavi corrects 'I am BETTER than Chatur.' Chatur says 'My English is more better.' Saavi: 'No double comparative — just better.'",
+    "sample_examples": [
+      "Raju is taller than Chatur. (राजू इज़ टॉलर दैन चतुर) — राजू चतुर से लम्बा है",
+      "This phone is cheaper than that one. (दिस फ़ोन इज़ चीपर दैन दैट वन) — यह फ़ोन उससे सस्ता है",
+      "Her English is better than mine. (हर इंग्लिश इज़ बेटर दैन माइन) — उसकी अंग्रेज़ी मेरी से अच्छी है",
+      "This is less expensive. (दिस इज़ लेस एक्सपेन्सिव) — यह कम महँगा है"
+    ],
+    "common_mistake": "'More better' (double comparative). Saavi: 'BETTER ka matlab pehle se hi \"more good\" hai. \"More better\" matlab \"more more good\" — galat. Sirf BETTER bolo.'",
+    "visual_idea": "Two objects side by side, scale tipping. Comparative form highlighted.",
+    "animation_idea": "Scale tips toward better side. Highlight 'er' or 'more' on the comparative.",
+    "struggles": "- 'More better/More worse' (double)\n- 'Tall than' missing 'er'\n- 'Best than' (best is superlative, not comparative)\n- 'As tall like' (should be 'as tall as')",
+    "connections": "Day 33 already used 'more terrible'. Day 47 (Opinions) uses 'better' a lot."
+  },
+
+  "39": {
+    "theme": "Wh-questions (full review)",
+    "duration_min": 25,
+    "phase": "RIDE",
+    "core_concepts": [
+      "All Wh-question words: What (thing), Where (place), When (time), Why (reason), How (manner/degree), Which (choice), Who (person), Whose (possession)",
+      "Word order: Wh-word + helping verb + subject + main verb?",
+      "Common question patterns"
+    ],
+    "words": ["What", "Where", "When", "Why", "How", "Which", "Who", "Whose", "What is your name", "Where do you live", "When will you come", "Why are you sad", "How much is this", "Which color", "Who is that"],
+    "hook": "Rancho asks 'What you are doing?' Saavi corrects 'What ARE YOU doing?' Word order important.",
+    "sample_examples": [
+      "What is your name? (वॉट इज़ योर नेम?) — आपका नाम क्या है?",
+      "Where do you live? (वेयर डू यू लिव?) — आप कहाँ रहते हैं?",
+      "When will you come? (वेन विल यू कम?) — आप कब आएँगे?",
+      "Why are you sad? (वाय आर यू सैड?) — आप दुखी क्यों हैं?",
+      "How much is this? (हाउ मच इज़ दिस?) — यह कितने का है?",
+      "Which color do you prefer? (विच कलर डू यू प्रीफ़र?) — कौन सा रंग पसंद है?"
+    ],
+    "common_mistake": "'What you are doing?' (incorrect inversion). Saavi: 'Wh-word ke baad HELPING verb pehle, phir SUBJECT. What + are + you + doing? Yeh formula har question mein same.'",
+    "visual_idea": "Question word wheel. Each word with example. Word order arrows.",
+    "animation_idea": "Spin wheel → question appears with correct word order shown by arrows.",
+    "struggles": "- 'What you are doing?' wrong order\n- 'Why he came?' missing did\n- 'How much it cost?' missing does\n- Confusing 'whose' with 'who's'",
+    "connections": "Day 16 introduced Wh-questions with do/does/did. Day 39 reviews ALL question words. Day 40 covers Yes/No questions."
+  },
+
+  "40": {
+    "theme": "Yes/No questions + Short answers",
+    "duration_min": 25,
+    "phase": "PATTERN",
+    "core_concepts": [
+      "Yes/No questions: start with helping verb (Do you...? Are you...? Have you...? Will you...?)",
+      "Short answers: Yes, subject + helping verb / No, subject + helping verb + not",
+      "Practice with all tenses and modals"
+    ],
+    "words": ["Do you", "Are you", "Have you", "Will you", "Did you", "Were you", "Has he", "Yes I do", "Yes I am", "Yes I have", "Yes I will", "No I don't", "No I am not", "No I haven't", "No I won't"],
+    "hook": "Chatur asks 'You like tea?' Saavi corrects 'DO YOU like tea?' Raju answers 'Yes, I like.' Saavi corrects 'Yes, I DO.' Short answer mein helping verb chahiye.",
+    "sample_examples": [
+      "Do you speak English? — Yes, I do. / No, I don't.",
+      "Are you coming? — Yes, I am. / No, I'm not.",
+      "Have you eaten? — Yes, I have. / No, I haven't.",
+      "Can you help me? — Yes, I can. / No, I can't."
+    ],
+    "common_mistake": "'Yes, I like' (incomplete). Saavi: 'Short answers mein helping verb REPEAT karna padta hai. Do you like? → Yes, I do. NOT \"Yes, I like\". Yeh natural conversation rule hai.'",
+    "visual_idea": "Toggle switch: Yes / No. Two columns: Question, Short Answer.",
+    "animation_idea": "Flip switch → complete short answer appears with helping verb highlighted.",
+    "struggles": "- 'Yes, I like' (missing helping verb)\n- 'No, I am no' (should be 'I am not')\n- Wrong helping verb in answer\n- Mixing tenses in question and answer",
+    "connections": "Day 16 had Wh-questions. Day 27 had question tags. Day 40 covers Yes/No specifically."
+  },
+
+  "41": {
+    "theme": "Conditionals (If/Then)",
+    "duration_min": 30,
+    "phase": "WHY",
+    "core_concepts": [
+      "Zero conditional (general truths): If + present, present (If you heat ice, it melts)",
+      "First conditional (real possibility): If + present, will + verb (If it rains, I will stay home)",
+      "Second conditional (unreal present/future): If + past, would + verb (If I had money, I would buy a car)"
+    ],
+    "words": ["If you heat", "If it rains", "If I had money", "I will stay", "I would buy", "If you study", "you will pass", "If I were", "I would go", "if not", "Unless", "even if", "Only if", "What if", "If you want"],
+    "hook": "Raju says 'If it WILL rain, I will stay.' Saavi corrects 'If it RAINS, I will stay.' (no will after if).",
+    "sample_examples": [
+      "If you heat water, it boils. (इफ़ यू हीट वॉटर, इट बॉयल्स) — पानी गर्म करो, उबलता है (universal truth)",
+      "If it rains tomorrow, we will cancel the picnic. (इफ़ इट रेन्स टमारो, वी विल कैंसल द पिकनिक) — possible future",
+      "If I were rich, I would buy a house. (इफ़ आय वर रिच, आय वुड बाय अ हाउस) — imaginary"
+    ],
+    "common_mistake": "'If it will rain' (using will after if). Saavi: 'If-clause mein WILL kabhi nahi aata. \"If it rains\" — present tense use karo even though future ki baat hai. Yeh English ka special rule hai.'",
+    "visual_idea": "Two doors: condition door (if), result door (then). Different colors for each conditional type.",
+    "animation_idea": "Open first door (rain), then second door (stay home). Connected by arrow.",
+    "struggles": "- 'If it will rain' (will after if)\n- Mixing conditional types\n- 'If I would have money' (wrong — should be 'If I had')\n- 'If I am you' (should be 'If I were you')",
+    "connections": "Builds on tenses (Days 5-26). Day 47 (Opinions) often uses 'I would think...'."
+  },
+
+  "42": {
+    "theme": "Full conversation practice (making plans)",
+    "duration_min": 30,
+    "phase": "RIDE",
+    "core_concepts": [
+      "Making plans: suggesting, accepting, declining, rescheduling",
+      "Full conversation flow: 'What are you doing on Sunday?' → 'How about a movie?' → 'Sorry, I'm busy.' → 'Then let's meet on Monday.'",
+      "Review polite offers and conditional sentences"
+    ],
+    "words": ["What are you doing", "How about", "I'd love to", "Sorry I'm busy", "Let's meet", "this weekend", "next week", "free", "If you are free", "Would you like to", "Sounds good", "Can we", "What time", "Where shall we"],
+    "hook": "Raju and Farhaan plan a picnic. They use all phrases learned across 41 days.",
+    "sample_examples": [
+      "What are you doing this weekend? (वॉट आर यू डूइंग दिस वीकेंड?) — इस वीकेंड क्या प्लान है?",
+      "How about going to the cinema? (हाउ अबाउट गोइंग टू द सिनेमा?) — सिनेमा जाने का क्या ख़याल?",
+      "I'd love to, but I have to work. (आइड लव टू, बट आय हैव टू वर्क) — बहुत ख़ुशी से, पर काम है",
+      "If you are free on Monday, we can meet then. (इफ़ यू आर फ़्री ऑन मंडे, वी कैन मीट देन) — सोमवार को मिलते हैं"
+    ],
+    "common_mistake": "One-word refusal without reason. Saavi: 'Plan decline karte waqt sirf \"No\" mat bolo. Polite reason do — \"Sorry, I have to work\" ya \"I'd love to but I'm busy.\" Yeh respect dikhata hai.'",
+    "visual_idea": "Chat bubbles. Flowchart: suggest → accept/decline → suggest alternative.",
+    "animation_idea": "Bubbles appear one by one, user chooses next line. Conversation builds.",
+    "struggles": "- 'No' (rude)\n- 'Maybe' (non-committal)\n- Forgetting to suggest alternative when declining\n- Past tense mistakes when describing plans",
+    "connections": "Synthesizes all polite forms (Day 18, 30), conditional (Day 41), question tags (Day 27)."
+  },
+
+  "43": {
+    "theme": "Complaints & Problem solving",
+    "duration_min": 25,
+    "phase": "RIDE",
+    "core_concepts": [
+      "Complaints: This is not working. I have a problem. There is an issue.",
+      "Asking for help: Can you help me? Could you please fix this?",
+      "Offering solutions: Let me check. I will send someone. Try restarting."
+    ],
+    "words": ["This is not working", "I have a problem", "There is an issue", "Can you help", "Could you please fix", "Let me check", "I will send", "Try restarting", "It's broken", "It's not working properly", "I would like to complain", "When can you", "How long", "What can be done", "I need a refund"],
+    "hook": "Raju's phone stops working. He goes to repair shop. Chatur says 'Phone no working!' Saavi teaches polite complaint.",
+    "sample_examples": [
+      "This phone is not working. (दिस फ़ोन इज़ नॉट वर्किंग) — यह फ़ोन काम नहीं कर रहा",
+      "I have a complaint. (आय हैव अ कम्प्लेंट) — मेरी एक शिकायत है",
+      "Can you help me solve this problem? (कैन यू हेल्प मी सॉल्व दिस प्रॉब्लम?) — क्या आप यह समस्या हल कर सकते हैं?",
+      "Please send someone to fix the AC. (प्लीज़ सेंड समवन टू फ़िक्स द एसी) — एसी ठीक करवाने के लिए किसी को भेजिए"
+    ],
+    "common_mistake": "'Why it not working?' (missing is). Saavi: 'Question mein verb chahiye — \"Why IS it not working?\" Helping verb ko miss mat karo.'",
+    "visual_idea": "Broken object with exclamation mark. Repair person icon. Solution flow.",
+    "animation_idea": "Click on broken object → complaint sentence. Repair person appears with solution.",
+    "struggles": "- Missing helping verbs in questions\n- Aggressive tone (use polite forms)\n- 'No working' (need 'not working')\n- Forgetting to ask for solution",
+    "connections": "Day 29 (Office) had requests. Day 30 (Phone). Day 43 specializes in complaint flow."
+  },
+
+  "44": {
+    "theme": "Invitations & Making plans",
+    "duration_min": 25,
+    "phase": "RIDE",
+    "core_concepts": [
+      "Inviting: Would you like to come? Let's go to... How about joining us?",
+      "Accepting: I'd love to. Sure, sounds great.",
+      "Declining: Sorry, I can't. I'd love to but...",
+      "Making alternative plans: How about next weekend? Let's plan for Sunday."
+    ],
+    "words": ["Would you like to come", "Let's go", "How about joining us", "I'd love to", "Sure", "sounds great", "Sorry I can't", "I'd love to but", "How about next weekend", "Let's plan", "What time should we meet", "Can I bring", "Where shall we go", "Maybe next time", "Thanks for the invitation"],
+    "hook": "Saavi invites Raju to a party. Raju doesn't know how to accept/decline politely.",
+    "sample_examples": [
+      "Would you like to come to my party? (वुड यू लाइक टू कम टू माय पार्टी?) — क्या आप मेरी पार्टी में आएँगे?",
+      "I'd love to. (आइड लव टू) — बहुत ख़ुशी से",
+      "Sorry, I'm busy. (सॉरी, आइम बिज़ी) — माफ़ कीजिए, व्यस्त हूँ",
+      "How about next Sunday? (हाउ अबाउट नेक्स्ट सन्डे?) — अगले रविवार का क्या ख़याल?"
+    ],
+    "common_mistake": "Saying just 'No' to an invitation. Saavi: 'Invitation decline karte waqt polite reason bhi do — \"Sorry, I have a meeting\" ya alternative suggest karo — \"How about Saturday?\" Yeh respect dikhata hai.'",
+    "visual_idea": "Invitation card. RSVP options (Yes/Maybe/No with smileys).",
+    "animation_idea": "Invitation opens, user selects accept/decline, polite response appears.",
+    "struggles": "- One-word refusal\n- 'I am busy' too direct (use 'Sorry, I'm busy')\n- 'I will come' instead of 'I'd love to come'\n- Not suggesting alternative time",
+    "connections": "Day 42 had plans. Day 44 specializes in invitation etiquette."
+  },
+
+  "45": {
+    "theme": "Small talk + Exclamations + Question tags",
+    "duration_min": 25,
+    "phase": "RIDE",
+    "core_concepts": [
+      "Small talk topics: weather, weekend plans, family, hobbies",
+      "Combining exclamations (What a...! How...!) and question tags (isn't it? aren't they?) in casual conversation",
+      "Keeping conversation flowing with follow-up questions"
+    ],
+    "words": ["Beautiful day", "isn't it", "What a lovely", "How was your weekend", "I love cricket", "don't you", "How about you", "What do you think", "Really", "That's interesting", "Nice weather", "Lovely evening", "What a surprise", "How nice", "By the way"],
+    "hook": "Dadaji says 'Nice weather, isn't it?' Raju says 'Yes.' Saavi teaches how to keep conversation going.",
+    "sample_examples": [
+      "Beautiful day, isn't it? (ब्यूटीफ़ुल डे, इज़ंट इट?) — सुंदर दिन है, है ना?",
+      "What a lovely evening! (वॉट अ लव्ली ईव्निंग!) — कितनी प्यारी शाम है!",
+      "How was your weekend? (हाउ वॉज़ योर वीकेंड?) — आपका वीकेंड कैसा रहा?",
+      "I love cricket, don't you? (आय लव क्रिकेट, डोंट यू?) — मुझे क्रिकेट पसंद है, तुम्हें नहीं?"
+    ],
+    "common_mistake": "Giving one-word answers ('Yes', 'No'). Saavi: 'Small talk mein \"Yes/No\" sufficient nahi hai. Add karo: \"Yes, I love cricket because...\" Conversation flow karna chahiye, dead-end nahi banna.'",
+    "visual_idea": "Weather icons, weekend calendar, speech bubbles with tags. Two characters chatting at bus stop.",
+    "animation_idea": "Characters at bus stop; question tag appears, user adds comment to keep conversation going.",
+    "struggles": "- One-word answers (kills conversation)\n- Wrong tag formation\n- Awkward silence\n- Not asking follow-up questions",
+    "connections": "Day 27 (tags). Day 19 (exclamations). Day 45 makes it conversational."
+  },
+
+  "46": {
+    "theme": "Job interview basics",
+    "duration_min": 30,
+    "phase": "RIDE + WHY",
+    "core_concepts": [
+      "Common questions: 'Tell me about yourself.' 'Why do you want this job?' 'What are your strengths/weaknesses?'",
+      "Answer structure: present (current role) → past (experience) → future (goals)",
+      "Politeness and confidence: 'Thank you for this opportunity.' 'I believe I am a good fit.'"
+    ],
+    "words": ["Tell me about yourself", "Why do you want this job", "What are your strengths", "What are your weaknesses", "I have years of experience", "I am a team player", "I am willing to learn", "Thank you for this opportunity", "I look forward to", "When can I join", "What is the salary", "I believe I am a good fit", "My biggest strength", "I worked at", "I am passionate about"],
+    "hook": "Raju goes for an interview. He says 'Myself Raju. I want job.' Saavi teaches proper interview answers.",
+    "sample_examples": [
+      "Tell me about yourself. (टेल मी अबाउट योरसेल्फ़) — अपने बारे में बताइए",
+      "I have two years of experience in sales. (आय हैव टू ईयर्स ऑफ़ एक्सपीरियंस इन सेल्स) — मुझे सेल्स में दो साल का अनुभव है",
+      "My strength is hard work. (माय स्ट्रेंथ इज़ हार्ड वर्क) — मेरी ताक़त मेहनत है",
+      "Thank you for this opportunity. (थैंक यू फ़ॉर दिस ऑप्पर्च्यूनिटी) — इस अवसर के लिए धन्यवाद"
+    ],
+    "common_mistake": "'My self Raju' or memorized robotic answers. Saavi: 'Interview mein natural raho. Patterns yaad rakho but feeling daalo. \"My name is Raju, and I am passionate about...\" — yeh impressive lagta hai.'",
+    "visual_idea": "Interview table with candidate and interviewer. Question-answer bubbles. Confidence meter.",
+    "animation_idea": "Interviewer asks, candidate answers with help bubbles showing patterns.",
+    "struggles": "- 'Myself Raju' (Day 2 mistake repeated under pressure)\n- Robotic memorized answers\n- Not connecting to job's needs\n- Forgetting to thank at end",
+    "connections": "Day 2 (Self-intro), Day 47 (Opinions), Day 8 (BE), Day 23 (Present Perfect for experience)."
+  },
+
+  "47": {
+    "theme": "Expressing opinions & Agree/Disagree",
+    "duration_min": 30,
+    "phase": "RIDE",
+    "core_concepts": [
+      "Giving opinion: I think..., I believe..., In my opinion..., From my point of view...",
+      "Agreeing: I agree. That's right. Exactly. You're right.",
+      "Partially agreeing: I see your point, but..., That's true, however...",
+      "Disagreeing politely: I disagree. I'm not sure about that. I see it differently.",
+      "Asking for opinion: What do you think? How do you feel about that?"
+    ],
+    "words": ["I think", "I believe", "In my opinion", "I agree", "That's right", "I disagree", "I'm not sure", "I see your point", "That's true however", "What do you think", "How do you feel", "From my point of view", "Exactly", "You're right", "I see it differently"],
+    "hook": "Chatur says 'Cricket is the only good sport.' Rancho disagrees but doesn't know how to say politely. Saavi teaches.",
+    "sample_examples": [
+      "I think learning English is important. (आय थिंक लर्निंग इंग्लिश इज़ इम्पॉर्टंट) — मुझे लगता है अंग्रेज़ी सीखना ज़रूरी है",
+      "I agree with you. (आय अग्री विद यू) — मैं आपसे सहमत हूँ",
+      "I'm sorry, I disagree. (आइम सॉरी, आय डिसअग्री) — माफ़ कीजिए, मैं असहमत हूँ",
+      "What's your opinion on this? (वॉट्स योर ऑपीनियन ऑन दिस?) — इस पर आपकी क्या राय है?"
+    ],
+    "common_mistake": "'I am agree' (missing verb, sounds weird). Saavi: 'Agree khud ek verb hai — \"I AGREE\" sahi hai, NOT \"I am agree\". Same with disagree — \"I disagree\".'",
+    "visual_idea": "Opinion meter (agree ↔ disagree). Dialogue bubbles. Two heads nodding/shaking.",
+    "animation_idea": "Character states opinion, listener selects agree/disagree, appropriate phrase appears.",
+    "struggles": "- 'I am agree' (extra BE)\n- Aggressive disagreement\n- Forgetting to soften ('I'm not sure' before 'I disagree')\n- Not asking back ('What do you think?')",
+    "connections": "Day 18 (politeness). Day 37 (connectors but/however). Day 47 = full conversation tool."
+  },
+
+  "48": {
+    "theme": "Pronunciation & Intonation (rise/fall)",
+    "duration_min": 30,
+    "phase": "WHY",
+    "core_concepts": [
+      "Rising intonation for yes/no questions: 'Are you coming?' (voice goes up at the end)",
+      "Falling intonation for statements and wh-questions: 'I am coming.' 'What is your name?' (voice falls)",
+      "Polite requests (Can you help me?) — usually rising to be more polite",
+      "Practice with minimal pairs and common phrases"
+    ],
+    "words": ["You are coming", "Where do you live", "Could you help me", "That's fantastic", "Are you sure", "What is your name", "Please pass", "Have a good day", "How are you", "Did you eat", "I am tired", "Why so late", "Welcome", "Thank you", "Goodbye"],
+    "hook": "Chatur says 'You are coming?' with flat tone (sounds Indian). Saavi shows how rising tone shows a question. Dadaji repeats 'Thank you' with falling tone.",
+    "sample_examples": [
+      "You are coming? (यू आर कमिंग↗?) — voice rises at end (question)",
+      "Where do you live? (वेयर डू यू लिव↘?) — voice falls (Wh-question)",
+      "Could you help me? (कुड यू हेल्प मी↗?) — rise for politeness",
+      "That's fantastic! (दैट्स फ़ैंटास्टिक↘!) — falling excitement"
+    ],
+    "common_mistake": "Flat tone for all sentences (sounds Indian/angry). Saavi: 'English mein \"music\" hota hai. Question pe up jaata hai (↗), statement pe down jaata hai (↘). Bilkul flat bolne se English Indian-style sound karti hai.'",
+    "visual_idea": "Waveform diagram — rising line for questions, falling line for statements. Up arrow / down arrow on each example.",
+    "animation_idea": "Sentence appears, waveform animates with voice, pitch indicator moves up or down.",
+    "struggles": "- Flat monotone Indian speech\n- Wrong rise/fall (statement up, question down)\n- Word stress wrong (rec-OR-ded vs RE-corded)\n- Not pausing where needed",
+    "connections": "Day 21 (-ed sounds), Day 28 (-s sounds). Day 48 = melody on top of pronunciation."
+  },
+
+  "49": {
+    "theme": "Final mock conversation (5 scenarios in one flow)",
+    "duration_min": 45,
+    "phase": "RIDE (capstone)",
+    "core_concepts": [
+      "Integrate ALL 48 days: self-intro, greetings, family, office, market, auto, hospital, restaurant, complaints, phone, interview, small talk",
+      "Fluid conversation moving from one scenario to another using connectors (first, then, after that, later, finally)",
+      "Use all politeness levels, tenses, conditionals, question tags, exclamations appropriately"
+    ],
+    "words": ["First I", "Then I", "After that", "Later", "Finally", "I had", "I was", "I will", "I have to", "Could you", "Would you", "I'd like", "Thank you", "What a day", "isn't it"],
+    "hook": "Raju's full day simulation: starts at home (family), goes to office, takes auto to market, feels sick, goes to hospital, then restaurant, calls friend, goes for interview, ends with small talk. Complete journey using ALL 48 days' learning.",
+    "sample_examples": [
+      "Morning at home: 'My mother is making tea. I have to go to office.'",
+      "Office: 'Could you please send this email? There is a meeting at 11.'",
+      "Auto: 'Please take me to City Hospital. How much?'",
+      "Hospital: 'I have a headache. What should I do?'",
+      "Restaurant: 'I would like a glass of water. The food is delicious, isn't it?'",
+      "Phone: 'May I speak to Mr. Sharma? This is Raju.'",
+      "Small talk: 'What a beautiful evening! You like cricket, don't you?'"
+    ],
+    "common_mistake": "Forgetting transitions between scenarios (sentences feel disconnected). Saavi: 'Connectors use karo — \"After that\", \"Then\", \"Later\". Yeh sentences ko jod ke ek smooth story banata hai.'",
+    "visual_idea": "Complete journey map with 7+ locations. Each location popup with key phrases and tags. Certificate at end.",
+    "animation_idea": "User clicks location → speaks line → moves to next location. At the end, certificate appears with 'Tu kar chuka hai' message from SAAVI.",
+    "struggles": "- Forgetting earlier days' lessons under pressure\n- Mixing tenses incorrectly\n- Reverting to Hindi-style English\n- Not using connectors",
+    "connections": "Final synthesis. Touches every single concept from Days 1-48. Graduation day."
+  }
+}

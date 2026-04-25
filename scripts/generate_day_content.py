@@ -159,6 +159,30 @@ but always rewrite in SHRUTAM's voice and structure.
 # Each entry matches the tested batch prompts from shrutam_week*_batch_prompts.md
 # Fields: theme, words, scenario, struggles, connections
 # Optional: special (extra per-day instructions), repeat (spiral scenario info)
+
+
+# ── Curriculum V2 loader (Rapidex-based 49-day sequence) ────────────────────
+# If scripts/curriculum_v2.json exists, it overrides the embedded DAY_TOPICS.
+# V2 entries have richer fields: core_concepts, hook, sample_examples,
+# common_mistake, visual_idea, animation_idea — DeepSeek uses these directly.
+def _load_curriculum_v2():
+    path = Path(__file__).resolve().parent / 'curriculum_v2.json'
+    if not path.exists():
+        return None
+    try:
+        data = json.loads(path.read_text(encoding='utf-8'))
+        # Keys are stringified day numbers in JSON; convert to int
+        result = {int(k): v for k, v in data.items() if k.isdigit()}
+        print(f"  [info] Loaded curriculum_v2.json: {len(result)} days", file=sys.stderr)
+        return result
+    except Exception as e:
+        print(f"  [warn] Failed to load curriculum_v2.json: {e}", file=sys.stderr)
+        return None
+
+
+_CURRICULUM_V2 = _load_curriculum_v2()
+
+
 DAY_TOPICS = {
 
     # ══ WEEK 1: JAADU — Foundation + Grammar Bridge ══════════════════════════
@@ -1618,6 +1642,12 @@ DAY_TOPICS = {
 }
 
 
+# Override embedded DAY_TOPICS with curriculum_v2.json if present
+# (V2 = Rapidex-based 49-day sequence with rich per-day fields)
+if _CURRICULUM_V2:
+    DAY_TOPICS = _CURRICULUM_V2
+
+
 # ── Build user prompt ─────────────────────────────────────────────────────────
 def build_user_prompt(lang: str, day: int) -> str:
     cfg  = LANG_CONFIG[lang]
@@ -1627,6 +1657,43 @@ def build_user_prompt(lang: str, day: int) -> str:
     special_section = ''
     if topic.get('special'):
         special_section = f'\nSPECIAL INSTRUCTIONS FOR THIS DAY:\n{topic["special"]}\n'
+
+    # ── V2 (Rapidex-based) rich fields — concentrate DeepSeek's output ──
+    v2_section = ''
+    if topic.get('core_concepts'):
+        # Format core concepts as numbered list
+        concepts_list = '\n'.join([f'{i}. {c}' for i, c in enumerate(topic['core_concepts'], 1)])
+        examples_list = '\n'.join([f'- {ex}' for ex in topic.get('sample_examples', [])])
+        phase = topic.get('phase', 'RIDE')
+        duration = topic.get('duration_min', 25)
+
+        v2_section = f"""
+═══════════════════════════════════════════════════════════
+📕 RAPIDEX-BASED LESSON BLUEPRINT (use these EXACT inputs)
+═══════════════════════════════════════════════════════════
+LESSON PHASE: {phase}  (RIDE = 60% experience, PATTERN = 30% formula, WHY = 10% optional)
+DURATION: {duration} minutes core
+
+🎯 CORE CONCEPTS (cover ALL of these — non-negotiable):
+{concepts_list}
+
+🎬 HOOK / OPENING STORY (use this exact scenario):
+{topic.get('hook', '')}
+
+📝 SAMPLE EXAMPLES (use these as reference, expand to 5 per word):
+{examples_list}
+
+🚫 COMMON INDIAN MISTAKE TO ADDRESS:
+{topic.get('common_mistake', '')}
+
+🎨 VISUAL IDEA (describe in tab_1.visuals):
+{topic.get('visual_idea', '')}
+
+🎬 ANIMATION IDEA (describe in tab_1.animation):
+{topic.get('animation_idea', '')}
+
+═══════════════════════════════════════════════════════════
+"""
 
     # Day-specific concept teaching (if defined)
     concept_section = ''
@@ -1647,13 +1714,17 @@ Concept screens mein:
 ═══════════════════════════════════════════════════════════
 """
 
-    return f"""Generate Day {day} of 50.
+    # V2 fallback: derive Tab 3 scenario from hook if not provided
+    tab3_scenario = topic.get('scenario') or topic.get('hook', '🏠 Daily life context')
+    duration_min = topic.get('duration_min', 20)
+
+    return f"""Generate Day {day} of 49.
 
 LANGUAGE: {cfg['name']}
 
 TOPIC: {topic['theme']}
 
-SCENARIO FOR TAB 3: {topic['scenario']}
+SCENARIO FOR TAB 3: {tab3_scenario}
 
 WORDS/PHRASES TO TEACH (15 items):
 {words_str}
@@ -1663,8 +1734,8 @@ WHERE STUDENTS STRUGGLE:
 
 CONNECTIONS TO OTHER DAYS:
 {topic['connections']}
-{special_section}{concept_section}
-TOTAL DURATION: 20 minutes core
+{special_section}{concept_section}{v2_section}
+TOTAL DURATION: {duration_min} minutes core
 
 ═══════════════════════════════════════════════════════════
 ⚠️ NON-NEGOTIABLE RULES (Reading these carefully = pass)
