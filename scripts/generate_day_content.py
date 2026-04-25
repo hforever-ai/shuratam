@@ -1558,11 +1558,75 @@ MANDATORY REQUIREMENTS:
 Return COMPLETE valid JSON only. No preamble, no markdown."""
 
 
-# ── Gemini API call ───────────────────────────────────────────────────────────
+# ── DeepSeek V4 Flash API call (default) ─────────────────────────────────────
+# Set CONTENT_PROVIDER=gemini to fall back to Gemini.
+def _load_deepseek_key() -> str:
+    if os.environ.get('DEEPSEEK_API_KEY'):
+        return os.environ['DEEPSEEK_API_KEY']
+    keys_file = Path(__file__).resolve().parent.parent / 'safety' / 'keys.json'
+    if keys_file.exists():
+        return json.loads(keys_file.read_text()).get('DEEPSEEK_API_KEY', '')
+    return ''
+
+DEEPSEEK_KEY = _load_deepseek_key()
+PROVIDER = os.environ.get('CONTENT_PROVIDER', 'deepseek').lower()
+
+
+def _generate_deepseek(system: str, user: str) -> str:
+    """Call DeepSeek V4 Flash via OpenAI-compatible API. Returns raw JSON text."""
+    payload = json.dumps({
+        'model': os.environ.get('CONTENT_MODEL', 'deepseek-v4-flash'),
+        'messages': [
+            {'role': 'system', 'content': system},
+            {'role': 'user', 'content': user},
+        ],
+        'temperature': 0.7,
+        'max_tokens': 65536,
+        'response_format': {'type': 'json_object'},
+        'stream': False,
+    }).encode()
+
+    url = 'https://api.deepseek.com/v1/chat/completions'
+    req = urllib.request.Request(
+        url, data=payload,
+        headers={
+            'Content-Type': 'application/json',
+            'Authorization': f'Bearer {DEEPSEEK_KEY}',
+        },
+    )
+    print(f"  Calling DeepSeek V4 Flash (key ...{DEEPSEEK_KEY[-6:]})")
+    with urllib.request.urlopen(req, timeout=600) as resp:
+        data = json.loads(resp.read())
+    choice = data['choices'][0]
+    finish = choice.get('finish_reason', 'stop')
+    if finish == 'length':
+        print("  WARNING: Response truncated (max_tokens hit)")
+    return choice['message']['content']
+
+
 def generate(lang: str, day: int) -> dict:
     system = get_system_prompt()
     user   = build_user_prompt(lang, day)
 
+    lang_name = LANG_CONFIG[lang]['name']
+    print(f"Generating {lang_name} Day {day} via {PROVIDER}...")
+    print(f"  System prompt: {len(system)} chars")
+    print(f"  User prompt:   {len(user)} chars")
+
+    # Route to DeepSeek (default) — Gemini fallback for explicit override
+    if PROVIDER == 'deepseek':
+        if not DEEPSEEK_KEY:
+            raise RuntimeError("DEEPSEEK_API_KEY missing in safety/keys.json")
+        text = _generate_deepseek(system, user)
+        text = text.strip()
+        if text.startswith('```'):
+            text = text.split('\n', 1)[1] if '\n' in text else text[3:]
+        if text.endswith('```'):
+            text = text[:-3]
+        text = text.strip()
+        return json.loads(text)
+
+    # ── Gemini fallback (CONTENT_PROVIDER=gemini) ──
     payload = json.dumps({
         'contents': [{'role': 'user', 'parts': [{'text': user}]}],
         'systemInstruction': {'parts': [{'text': system}]},
@@ -1572,11 +1636,6 @@ def generate(lang: str, day: int) -> dict:
             'responseMimeType': 'application/json',
         },
     }).encode()
-
-    lang_name = LANG_CONFIG[lang]['name']
-    print(f"Generating {lang_name} Day {day}...")
-    print(f"  System prompt: {len(system)} chars")
-    print(f"  User prompt:   {len(user)} chars")
     print(f"  Keys available: {len(GEMINI_KEYS)}")
 
     n = len(GEMINI_KEYS)
