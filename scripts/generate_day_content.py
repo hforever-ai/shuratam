@@ -61,26 +61,99 @@ LANG_CONFIG = {
 
 # ── System prompt (loaded from file once) ────────────────────────────────────
 _SYSTEM_PROMPT_CACHE = None
+_RAPIDEX_CACHE = None
+
+
+def _load_rapidex() -> str:
+    """Load Rapidex English Speaking Course book as reference material.
+    Set INCLUDE_RAPIDEX=0 env var to disable."""
+    global _RAPIDEX_CACHE
+    if _RAPIDEX_CACHE is not None:
+        return _RAPIDEX_CACHE
+    if os.environ.get('INCLUDE_RAPIDEX', '1') == '0':
+        _RAPIDEX_CACHE = ''
+        return ''
+    # Try repo first, then Downloads
+    candidates = [
+        Path(__file__).resolve().parent / 'rapidex.docx',
+        Path.home() / 'Downloads' / 'rapid.docx',
+    ]
+    for path in candidates:
+        if not path.exists():
+            continue
+        try:
+            from docx import Document
+            doc = Document(str(path))
+            text = '\n'.join([p.text for p in doc.paragraphs if p.text.strip()])
+            _RAPIDEX_CACHE = text
+            return text
+        except ImportError:
+            print("  [warn] python-docx not installed; skipping Rapidex.", file=sys.stderr)
+            _RAPIDEX_CACHE = ''
+            return ''
+        except Exception as e:
+            print(f"  [warn] Could not read Rapidex from {path}: {e}", file=sys.stderr)
+    _RAPIDEX_CACHE = ''
+    return ''
+
 
 def get_system_prompt() -> str:
     global _SYSTEM_PROMPT_CACHE
     if _SYSTEM_PROMPT_CACHE:
         return _SYSTEM_PROMPT_CACHE
+
     # Primary: scripts/system_prompt_v4.md (checked into repo)
     primary = Path(__file__).resolve().parent / 'system_prompt_v4.md'
-    if primary.exists():
-        _SYSTEM_PROMPT_CACHE = primary.read_text(encoding='utf-8')
-        return _SYSTEM_PROMPT_CACHE
-    # Fallback: Downloads folder
     fallback = Path.home() / 'Downloads' / 'spoken english' / 'shrutam_system_prompt_v4_FINAL.md'
-    if fallback.exists():
-        _SYSTEM_PROMPT_CACHE = fallback.read_text(encoding='utf-8')
-        return _SYSTEM_PROMPT_CACHE
-    raise FileNotFoundError(
-        f"System prompt not found.\n"
-        f"Expected: {primary}\n"
-        f"Copy shrutam_system_prompt_v4_FINAL.md to scripts/system_prompt_v4.md"
-    )
+
+    if primary.exists():
+        base = primary.read_text(encoding='utf-8')
+    elif fallback.exists():
+        base = fallback.read_text(encoding='utf-8')
+    else:
+        raise FileNotFoundError(
+            f"System prompt not found.\n"
+            f"Expected: {primary}\n"
+            f"Copy shrutam_system_prompt_v4_FINAL.md to scripts/system_prompt_v4.md"
+        )
+
+    # Append Rapidex book as reference material
+    rapidex = _load_rapidex()
+    if rapidex:
+        book_section = f"""
+
+═══════════════════════════════════════════════════════════
+📕 REFERENCE BOOK: Rapidex English Speaking Course (Hindi)
+═══════════════════════════════════════════════════════════
+
+The full text of the Rapidex English Speaking Course book is below.
+This is India's most popular English speaking course book — students
+have been using it for 30+ years.
+
+USE THIS BOOK AS SOURCE MATERIAL:
+- Extract authentic Hindi-English phrase pairs
+- Use the book's example sentences and conversation patterns
+- Borrow real-life situations (office, market, doctor, family)
+- Reference the book's grammar explanations as a starting point
+
+DO NOT COPY THE BOOK'S DRY TEXTBOOK STYLE:
+- Transform content into SAAVI's warm, story-driven teaching
+- Add the 6-character cast (Raju, Farhaan, Rancho, Chatur, Dadaji)
+- Use bhai-style voice instead of formal grammar lecture
+- Modernize examples (WhatsApp, Zomato, Uber) where Rapidex feels dated
+
+The book is YOUR REFERENCE ENCYCLOPEDIA — pull from it as needed,
+but always rewrite in SHRUTAM's voice and structure.
+
+═══ BEGIN RAPIDEX BOOK ═══
+{rapidex}
+═══ END RAPIDEX BOOK ═══
+"""
+        _SYSTEM_PROMPT_CACHE = base + book_section
+        print(f"  [info] System prompt: {len(base):,} chars + Rapidex book {len(rapidex):,} chars", file=sys.stderr)
+    else:
+        _SYSTEM_PROMPT_CACHE = base
+    return _SYSTEM_PROMPT_CACHE
 
 # ── 50-Day Topics ────────────────────────────────────────────────────────────
 # Each entry matches the tested batch prompts from shrutam_week*_batch_prompts.md

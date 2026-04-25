@@ -200,6 +200,71 @@ Example:
 ## SECTION 5: 5-TAB ARCHITECTURE (LESSON STRUCTURE)
 ============================================================
 
+═══════════════════════════════════════════════════════════
+🎯 ONE DAY = ONE TOPIC (NON-NEGOTIABLE)
+═══════════════════════════════════════════════════════════
+
+Each day MUST teach exactly ONE clear topic/concept.
+- Topic is provided in the user prompt under "TOPIC:"
+- Do NOT mix multiple unrelated grammar concepts in one day
+- Do NOT teach random words — every word must connect to the day's ONE concept
+- The day's title, intro, examples, dialogue, and quiz must ALL revolve around this single topic
+- Connections to other days are mentioned but other concepts are NOT taught
+
+═══════════════════════════════════════════════════════════
+🌉 HINDI ↔ ENGLISH CONCEPT MAPPING (MANDATORY MIN 2-3 SCREENS)
+═══════════════════════════════════════════════════════════
+
+The MOST important pedagogical principle: Indian students already KNOW the concept in Hindi.
+Our job is to MAP that knowledge to English — not teach a new concept from scratch.
+
+Every day's Tab 1 MUST include a "concept" section with AT LEAST 2-3 detailed Hindi→English
+mapping screens BEFORE word teaching. These screens show:
+
+📺 MAPPING SCREEN 1 — Hindi Pattern (3 min)
+   • Hindi mein yeh concept kya hai? (3-5 sentences in pure Hindi)
+   • Hindi grammar terminology — use Sanskrit/Hindi terms (वर्तमान काल, संज्ञा, सर्वनाम)
+   • 3-5 Hindi-only example sentences (no English yet)
+   • Hindi structure formula: subject + क्रिया + object pattern
+   • Example: "वर्तमान काल mein hum 'हूँ/है/हैं' use karte hain"
+     - मैं खाता हूँ (Main khata hoon)
+     - वो खाता है (Vo khata hai)
+     - हम खाते हैं (Hum khate hain)
+
+📺 MAPPING SCREEN 2 — English Pattern (3 min)
+   • Same concept in English with full pronunciation
+   • English grammar formula matched to Hindi
+   • 3-5 English example sentences (with देवनागरी pronunciation)
+   • Example: "Present Tense mein 'am/is/are' use karte hain"
+     - I eat (आई ईट)
+     - He eats (ही ईट्स) — third person rule
+     - We eat (वी ईट)
+   • Pronunciation in {script} for EVERY English word
+
+📺 MAPPING SCREEN 3 — Side-by-Side Mapping (2 min)
+   • Direct comparison table:
+
+   | Hindi Pattern | Hindi Example | English Pattern | English Example |
+   |---------------|---------------|-----------------|-----------------|
+   | मैं + क्रिया + हूँ | मैं खाता हूँ | I + verb | I eat (आई ईट) |
+   | वो + क्रिया + है | वो खाता है | He + verb+s | He eats (ही ईट्स) |
+   | हम + क्रिया + हैं | हम खाते हैं | We + verb | We eat (वी ईट) |
+
+   • CRITICAL: Show what's DIFFERENT
+     - Hindi mein "हूँ/है/हैं" hai, English mein "I/He/We" se decide hota hai
+     - Hindi mein verb pehle, English mein subject pehle
+     - Third person mein -s lagna (Hindi mein nahi)
+   • Common mistakes (Chatur attribution):
+     - ❌ "He eat" (Hindi-style, no -s) → ✅ "He eats"
+     - ❌ "I am eat" (Hindi "हूँ" = "am" mistake) → ✅ "I eat"
+
+For grammar concept days (Day 2, 6, 8, 13, 14, 15-21, 36-41), expand to 6-8 screens.
+For situation/vocabulary days (Day 1, 3, 4, 22-30), 2-3 mapping screens are minimum.
+
+The Hindi→English mapping is the SHRUTAM SIGNATURE FEATURE — it's what makes us
+different from textbook courses. Students leave saying "Maine yeh seekha
+kyunki yeh meri Hindi se match hota hai!"
+
 Every day's lesson is divided into 5 TABS.
 
 **TOTAL DURATION: 20 minutes per day (core)**
