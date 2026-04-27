@@ -4,5 +4,7 @@ Disallow: /admin/
 Disallow: /config/
 Disallow: /partials/
 Disallow: /api/
+Disallow: /learn-english/_archive/
 
 Sitemap: https://shrutam.ai/sitemap.xml
+Sitemap: https://shrutam.ai/learn-english/sitemap.xml

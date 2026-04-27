@@ -6,23 +6,58 @@ $schema      = json_encode([
   "@context" => "https://schema.org",
   "@graph"   => [
     [
-      "@type"     => "Organization",
-      "name"      => "Aarambha",
-      "legalName" => "Aarambha",
-      "url"       => "https://aarambhax.ai",
-      "brand"     => ["@type" => "Brand", "name" => "Shrutam", "url" => "https://shrutam.ai"],
+      "@type"        => "EducationalOrganization",
+      "@id"          => "https://shrutam.ai/#org",
+      "name"         => "Shrutam",
+      "alternateName"=> "शृतम्",
+      "legalName"    => "Aarambha",
+      "url"          => "https://shrutam.ai/",
+      "logo"         => "https://shrutam.ai/assets/images/logo/shrutam-logo.png",
+      "description"  => "India's first audio-first AI learning platform for Class 5-10 students. Free 50-Day Spoken English course in Hindi, Marathi, Telugu. AI teacher SAAVI with blind-accessible learning mode.",
+      "areaServed"   => ["@type" => "Country", "name" => "India"],
+      "sameAs"       => [
+        "https://twitter.com/shrutam_ai",
+        "https://aarambhax.ai/",
+      ],
+      "parentOrganization" => [
+        "@type" => "Organization",
+        "name"  => "Aarambha",
+        "url"   => "https://aarambhax.ai/",
+      ],
+      "contactPoint" => [
+        [
+          "@type"            => "ContactPoint",
+          "contactType"      => "customer support",
+          "email"            => "hello@shrutam.ai",
+          "availableLanguage"=> ["en", "hi", "mr", "te"],
+        ],
+        [
+          "@type"            => "ContactPoint",
+          "contactType"      => "accessibility",
+          "email"            => "accessibility@shrutam.ai",
+        ],
+      ],
     ],
     [
       "@type"       => "Product",
       "name"        => "Shrutam",
-      "description" => "Audio-first AI learning platform for Hindi-medium students, Class 6-10",
-      "brand"       => ["@type" => "Brand", "name" => "Aarambha"],
+      "description" => "Audio-first AI learning platform for Hindi-medium students, Class 5-10",
+      "brand"       => ["@type" => "Brand", "name" => "Shrutam", "@id" => "https://shrutam.ai/#org"],
       "offers"      => [
         "@type"        => "Offer",
         "price"        => "199",
         "priceCurrency"=> "INR",
         "availability" => "https://schema.org/PreOrder",
+        "url"          => "https://shrutam.ai/pricing/",
       ],
+    ],
+    [
+      "@type"            => "WebSite",
+      "@id"              => "https://shrutam.ai/#website",
+      "url"              => "https://shrutam.ai/",
+      "name"             => "Shrutam",
+      "publisher"        => ["@id" => "https://shrutam.ai/#org"],
+      "inLanguage"       => ["hi", "en", "mr", "te"],
     ],
   ],
 ], JSON_UNESCAPED_SLASHES | JSON_UNESCAPED_UNICODE);
@@ -34,11 +69,103 @@ include 'partials/nav.php';
 <main id="main">
 <!-- Announcement Banner -->
 <div style="background: linear-gradient(90deg, var(--accent), var(--primary)); padding: 10px 0; text-align: center;">
-    <a href="/spoken-english/" class="flex items-center justify-center gap-2" style="color: var(--text-inverse); text-decoration: none; font-weight: 600; font-size: 0.95rem;">
+    <a href="/learn-english/" class="flex items-center justify-center gap-2" style="color: var(--text-inverse); text-decoration: none; font-weight: 600; font-size: 0.95rem;">
         🆓 NEW: Free English Speaking Course — 50 Days with AI Teacher SAAVI
         <span style="background: rgba(255,255,255,0.2); padding: 2px 10px; border-radius: 12px; font-size: 0.8rem;">Start Free →</span>
     </a>
 </div>
+
+  <!-- ========================================================
+       FEATURED LAUNCH — Free English Speaking Course (LIVE NOW)
+       ======================================================== -->
+  <style>
+    @keyframes course-pulse {
+      0%, 100% { box-shadow: 0 0 0 0 rgba(255,255,255,0.55); }
+      50%      { box-shadow: 0 0 0 10px rgba(255,255,255,0); }
+    }
+    .course-live-dot {
+      width: 10px; height: 10px; border-radius: 50%;
+      background: #fff; animation: course-pulse 1.8s ease-in-out infinite;
+      display: inline-block; flex-shrink: 0;
+    }
+    .course-pill {
+      background: rgba(255,255,255,0.16); backdrop-filter: blur(4px);
+      color: #fff; padding: 6px 14px; border-radius: 999px;
+      font-size: 0.85rem; font-weight: 600;
+      border: 1px solid rgba(255,255,255,0.22);
+      white-space: nowrap;
+    }
+    .course-cta {
+      display: inline-flex; align-items: center; gap: 8px;
+      background: #fff; color: var(--accent) !important;
+      padding: 14px 26px; border-radius: 12px;
+      font-weight: 800; font-size: 1.05rem;
+      text-decoration: none;
+      box-shadow: 0 8px 24px rgba(0,0,0,0.25);
+      transition: transform 0.15s, box-shadow 0.15s;
+    }
+    .course-cta:hover { transform: translateY(-2px); box-shadow: 0 12px 32px rgba(0,0,0,0.32); }
+    .course-banner-bg {
+      background: linear-gradient(135deg, var(--accent) 0%, var(--primary) 100%);
+      position: relative; overflow: hidden;
+    }
+    .course-banner-bg::before {
+      content: ''; position: absolute; inset: 0;
+      background: radial-gradient(ellipse at top right, rgba(255,255,255,0.12), transparent 60%);
+      pointer-events: none;
+    }
+    .course-banner-img {
+      max-width: 220px; width: 100%; height: auto;
+      filter: drop-shadow(0 10px 30px rgba(0,0,0,0.3));
+    }
+    @media (min-width: 768px) {
+      .course-banner-img { max-width: 260px; }
+    }
+  </style>
+
+  <section class="course-banner-bg" aria-labelledby="course-featured-heading" style="padding: 36px 0;">
+    <div class="container" style="position: relative; z-index: 1;">
+      <div class="grid grid-cols-1 md:grid-cols-[1fr_auto] gap-6 items-center">
+
+        <!-- Left: Copy + CTA -->
+        <div style="color: #fff;">
+          <div class="flex items-center gap-2 mb-3">
+            <span class="course-live-dot" aria-hidden="true"></span>
+            <span style="text-transform: uppercase; letter-spacing: 0.12em; font-size: 0.78rem; font-weight: 800; color: #fff;">
+              Live Now · 100% Free
+            </span>
+          </div>
+
+          <h2 id="course-featured-heading" class="text-3xl lg:text-4xl font-heading font-bold mb-2" style="color: #fff; line-height: 1.15;">
+            50-Day Free English Speaking Course
+          </h2>
+          <p class="text-base lg:text-lg mb-4" style="color: rgba(255,255,255,0.94); max-width: 640px;">
+            SAAVI didi ke saath roz 10 minute — Hindi, Marathi, ya Telugu mein guide. Audio + video + quiz + live chat. Aaj se shuru karo, abhi.
+          </p>
+
+          <div class="flex flex-wrap gap-2 mb-5">
+            <span class="course-pill">🎧 Audio + video lessons</span>
+            <span class="course-pill">🗣️ Hindi · Marathi · Telugu</span>
+            <span class="course-pill">💬 Live chat with SAAVI</span>
+          </div>
+
+          <a href="/learn-english/" class="course-cta">
+            Start Day 1 — Free →
+          </a>
+        </div>
+
+        <!-- Right: SAAVI portrait (transparent PNG; .htaccess auto-serves .webp) -->
+        <div class="flex justify-center md:justify-end">
+          <img src="/assets/images/hero/saavi-banner.png"
+               alt="SAAVI — your AI English teacher, waving hello"
+               width="1024" height="1024"
+               loading="lazy"
+               class="course-banner-img">
+        </div>
+
+      </div>
+    </div>
+  </section>
 
   <!-- ========================================================
        SECTION 1: HERO
@@ -122,7 +249,7 @@ include 'partials/nav.php';
         <div class="flex flex-col gap-0 w-full">
           <!-- SAAVI avatar — compact -->
           <div class="chalkboard w-full" style="border-radius: var(--radius-lg) var(--radius-lg) 0 0; border-bottom: none; padding: 0.25rem;">
-            <img src="/assets/images/hero/saavi-teaching.png" alt="SAAVI didi teaching students" loading="lazy" class="w-full rounded-t-lg" style="max-height: 160px; object-fit: cover; object-position: top;">
+            <img src="/assets/images/hero/saavi-teaching.png" alt="SAAVI didi teaching students" loading="lazy" class="w-full rounded-t-lg" style="max-height: 160px; width: 100%; object-fit: cover; object-position: top;">
           </div>
 
           <!-- Chat demo — connected to image above -->
@@ -487,7 +614,7 @@ include 'partials/nav.php';
             <div class="text-xs mb-2" style="color: var(--accent);">50 दिन में English बोलो — Hindi & Marathi</div>
             <p class="text-sm" style="color: var(--text-secondary);">SAAVI AI teacher ke saath — Audio, Video, Quiz, Live Chat. Bilkul FREE.</p>
           </div>
-          <a href="/spoken-english/" class="btn btn-primary mt-auto" style="font-size: 0.85rem;">Start Free Course →</a>
+          <a href="/learn-english/" class="btn btn-primary mt-auto" style="font-size: 0.85rem;">Start Free Course →</a>
         </div>
 
         <!-- 10: Exam Notes -->

@@ -5,9 +5,32 @@
  * Variables set by router: $lang, $htmlLang, $t, $availableLangs, $currentPath, $pageType
  */
 
+require_once __DIR__ . '/../partials/_seo.php';
+
 $baseUrl   = "https://shrutam.ai/{$lang}";
 $pagesFile = __DIR__ . "/../content/translations/pages-{$lang}.json";
 $p         = file_exists($pagesFile) ? json_decode(file_get_contents($pagesFile), true) : [];
+
+// Localized "Home" breadcrumb label
+$homeLabel = $t['common']['home'] ?? 'Home';
+
+// Page-type → display name lookup for breadcrumbs
+$pageNames = [
+    'features'   => 'Features',
+    'pricing'    => $t['common']['pricing']    ?? 'Pricing',
+    'blind-mode' => 'Blind Mode',
+    'saavi'      => 'SAAVI',
+    'faq'        => 'FAQ',
+    'about'      => $t['common']['about']      ?? 'About',
+    'waitlist'   => $t['common']['waitlist']   ?? 'Waitlist',
+    'blog'       => 'Blog',
+];
+
+// Default breadcrumb for any shared page (Home > {pageName})
+$defaultBreadcrumb = shrutam_breadcrumb([
+    ['name' => $homeLabel,                   'url' => "https://shrutam.ai/{$lang}/"],
+    ['name' => $pageNames[$pageType] ?? ucfirst($pageType), 'url' => "{$baseUrl}/{$pageType}/"],
+]);
 
 switch ($pageType) {
 
@@ -19,7 +42,7 @@ switch ($pageType) {
     $title       = htmlspecialchars($pd['headline'] ?? 'SAAVI Features') . ' | Shrutam';
     $description = $pd['subtext'] ?? '';
     $canonical   = "{$baseUrl}/features/";
-    $schema      = '';
+    $schema      = shrutam_schema_graph([$defaultBreadcrumb]);
 
     include __DIR__ . '/../partials/head.php';
     include __DIR__ . '/../partials/nav.php';
@@ -102,11 +125,16 @@ switch ($pageType) {
     $title       = htmlspecialchars($pd['headline'] ?? 'Pricing') . ' | Shrutam';
     $description = $pd['comparison_note'] ?? '';
     $canonical   = "{$baseUrl}/pricing/";
-    $schema      = json_encode([
-      '@context' => 'https://schema.org', '@type' => 'Offer',
-      'name' => 'Shrutam Pro', 'price' => '199', 'priceCurrency' => 'INR',
-      'availability' => 'https://schema.org/PreOrder', 'url' => $canonical,
-    ], JSON_UNESCAPED_SLASHES);
+    $schema      = shrutam_schema_graph([
+      $defaultBreadcrumb,
+      [
+        '@type'       => 'Product',
+        'name'        => 'Shrutam Pro',
+        'description' => 'Audio-first AI tutor for Class 5-10 — all subjects, unlimited doubts, parent app, blind mode.',
+        'brand'       => shrutam_org_ref(),
+        'offers'      => shrutam_pro_offer(),
+      ],
+    ]);
 
     include __DIR__ . '/../partials/head.php';
     include __DIR__ . '/../partials/nav.php';
@@ -249,7 +277,7 @@ switch ($pageType) {
     $title       = htmlspecialchars($pd['headline'] ?? 'Blind Mode') . ' | Shrutam';
     $description = $pd['intro'] ?? '';
     $canonical   = "{$baseUrl}/blind-mode/";
-    $schema      = '';
+    $schema      = shrutam_schema_graph([$defaultBreadcrumb]);
 
     include __DIR__ . '/../partials/head.php';
     include __DIR__ . '/../partials/nav.php';
@@ -325,7 +353,7 @@ switch ($pageType) {
     $title       = htmlspecialchars($pd['headline'] ?? 'Meet SAAVI') . ' | Shrutam';
     $description = $pd['intro'] ?? '';
     $canonical   = "{$baseUrl}/saavi/";
-    $schema      = '';
+    $schema      = shrutam_schema_graph([$defaultBreadcrumb]);
 
     include __DIR__ . '/../partials/head.php';
     include __DIR__ . '/../partials/nav.php';
@@ -422,7 +450,7 @@ switch ($pageType) {
       ? 'SAAVI, Blind Mode, pricing, boards — सब कुछ हिंदी में।'
       : 'SAAVI, Blind Mode, pricing, boards — everything answered.';
     $canonical   = "{$baseUrl}/faq/";
-    $schema      = '';
+    $schema      = shrutam_schema_graph([$defaultBreadcrumb]);
 
     include __DIR__ . '/../partials/head.php';
     include __DIR__ . '/../partials/nav.php';
@@ -480,7 +508,7 @@ switch ($pageType) {
     $title       = htmlspecialchars($pd['headline'] ?? 'About Shrutam') . ' | Aarambha';
     $description = $pd['mission'] ?? '';
     $canonical   = "{$baseUrl}/about/";
-    $schema      = '';
+    $schema      = shrutam_schema_graph([$defaultBreadcrumb]);
 
     include __DIR__ . '/../partials/head.php';
     include __DIR__ . '/../partials/nav.php';
@@ -565,7 +593,7 @@ switch ($pageType) {
     $title       = htmlspecialchars($pd['headline'] ?? 'Join Waitlist') . ' | Shrutam';
     $description = $pd['subtext'] ?? '';
     $canonical   = "{$baseUrl}/waitlist/";
-    $schema      = '';
+    $schema      = shrutam_schema_graph([$defaultBreadcrumb]);
 
     include __DIR__ . '/../partials/head.php';
     include __DIR__ . '/../partials/nav.php';
@@ -641,7 +669,7 @@ switch ($pageType) {
       ? 'Science और Maths को Hindi में समझो। SAAVI style। Board exam tips, study hacks।'
       : 'Science and Maths explained simply. SAAVI style. Board exam tips, study hacks.';
     $canonical   = "{$baseUrl}/blog/";
-    $schema      = '';
+    $schema      = shrutam_schema_graph([$defaultBreadcrumb]);
 
     include __DIR__ . '/../partials/head.php';
     include __DIR__ . '/../partials/nav.php';

@@ -26,10 +26,16 @@ audio_output/
 # Generated outputs (deploy separately via rsync)
 outputs/
 training/
-learn-english/
 player_static/
 logs/
+
+# learn-english/ source (templates, helpers, content) is tracked.
+# Only the archived old structure stays out of git — local-only, won't deploy.
+learn-english/_archive/
 
 # Temp
 *.log
 nohup.out
+
+# MCP server configs (contain API tokens)
+.mcp.json

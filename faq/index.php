@@ -3,9 +3,20 @@ $title       = "FAQ — Aksar Pooche Jane Wale Sawaal | Shrutam SAAVI";
 $description = "Shrutam ke baare mein sab sawaal — SAAVI, Blind Mode, pricing, boards, parent portal. Hindi mein.";
 $canonical   = "https://shrutam.ai/faq/";
 $schema      = json_encode([
-  "@context"   => "https://schema.org",
-  "@type"      => "FAQPage",
-  "mainEntity" => [
+  "@context" => "https://schema.org",
+  "@graph"   => [
+    [
+      "@type"           => "BreadcrumbList",
+      "itemListElement" => [
+        ["@type" => "ListItem", "position" => 1, "name" => "Shrutam", "item" => "https://shrutam.ai/"],
+        ["@type" => "ListItem", "position" => 2, "name" => "FAQ",     "item" => "https://shrutam.ai/faq/"],
+      ],
+    ],
+    [
+      "@type"      => "FAQPage",
+      "url"        => "https://shrutam.ai/faq/",
+      "publisher"  => ["@id" => "https://shrutam.ai/#org"],
+      "mainEntity" => [
     // About SAAVI
     [
       "@type"          => "Question",
@@ -136,6 +147,8 @@ $schema      = json_encode([
       "@type"          => "Question",
       "name"           => "Kya main dekhne ke liye khud SAAVI use kar sakta hoon?",
       "acceptedAnswer" => ["@type" => "Answer", "text" => "Haan! Parent account se demo mode mein SAAVI try kar sakte ho."],
+    ],
+      ],
     ],
   ],
 ], JSON_UNESCAPED_SLASHES | JSON_UNESCAPED_UNICODE);

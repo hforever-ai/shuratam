@@ -13,9 +13,22 @@ $subjects = json_decode(file_get_contents(__DIR__ . '/content/subjects.json'), t
 $urls = [];
 
 // Helper to add URL
-function addUrl(&$urls, $loc, $priority, $changefreq = 'monthly') {
-    $urls[] = ['loc' => $loc, 'priority' => $priority, 'changefreq' => $changefreq];
+// $lastmod is optional ISO date string (YYYY-MM-DD); falls back to today.
+function addUrl(&$urls, $loc, $priority, $changefreq = 'monthly', $lastmod = null) {
+    $urls[] = [
+        'loc'        => $loc,
+        'priority'   => $priority,
+        'changefreq' => $changefreq,
+        'lastmod'    => $lastmod ?? date('Y-m-d'),
+    ];
 }
+
+// Per-path lastmod override map (set explicit dates for stable pages so Google
+// doesn't think every URL was just edited). Keys match the $loc passed to addUrl.
+$lastmodOverrides = [
+    '/privacy/' => '2026-03-01',
+    '/terms/'   => '2026-03-01',
+];
 
 // ---- Existing Hinglish pages (root) ----
 $hinglishPages = [
@@ -122,12 +135,21 @@ foreach ($boards as $slug => $board) {
     }
 }
 
+// Apply lastmod overrides for stable pages
+foreach ($urls as &$u) {
+    if (isset($lastmodOverrides[$u['loc']])) {
+        $u['lastmod'] = $lastmodOverrides[$u['loc']];
+    }
+}
+unset($u);
+
 // ---- Output XML ----
 echo '<?xml version="1.0" encoding="UTF-8"?>' . "\n";
 echo '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">' . "\n";
 foreach ($urls as $u) {
     echo "  <url>\n";
     echo "    <loc>{$baseUrl}{$u['loc']}</loc>\n";
+    echo "    <lastmod>{$u['lastmod']}</lastmod>\n";
     echo "    <priority>{$u['priority']}</priority>\n";
     echo "    <changefreq>{$u['changefreq']}</changefreq>\n";
     echo "  </url>\n";

@@ -1,23 +1,38 @@
 <?php
-$og_image = $og_image ?? 'https://shrutam.ai/assets/images/og/default.png';
-$schema = $schema ?? '';
+$og_image  = $og_image ?? 'https://shrutam.ai/assets/images/og/default.png';
+$schema    = $schema ?? '';
+$htmlLang  = $htmlLang ?? 'en-IN';
+$theme     = $theme ?? 'navy';
+
+// Map BCP-47 html lang → og:locale (underscore form)
+$ogLocaleMap = [
+    'hi-IN' => 'hi_IN', 'mr-IN' => 'mr_IN', 'te-IN' => 'te_IN',
+    'en-IN' => 'en_IN', 'en'    => 'en_US',
+];
+$ogLocale = $ogLocaleMap[$htmlLang] ?? 'en_IN';
+
+// Map html lang → image preview directive (helps Google rank pages with images)
+$robotsMeta = $robotsMeta ?? 'index, follow, max-image-preview:large, max-snippet:-1';
 ?>
 <!DOCTYPE html>
-<html lang="<?= $htmlLang ?? 'hi-IN' ?>" dir="ltr" data-theme="navy">
+<html lang="<?= htmlspecialchars($htmlLang) ?>" dir="ltr" data-theme="<?= htmlspecialchars($theme) ?>">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title><?= htmlspecialchars($title) ?></title>
   <meta name="description" content="<?= htmlspecialchars($description) ?>">
+  <meta name="robots" content="<?= htmlspecialchars($robotsMeta) ?>">
   <link rel="canonical" href="<?= htmlspecialchars($canonical) ?>">
 
   <!-- Open Graph -->
-  <meta property="og:type" content="website">
+  <meta property="og:type" content="<?= htmlspecialchars($ogType ?? 'website') ?>">
   <meta property="og:url" content="<?= htmlspecialchars($canonical) ?>">
   <meta property="og:title" content="<?= htmlspecialchars($title) ?>">
   <meta property="og:description" content="<?= htmlspecialchars($description) ?>">
   <meta property="og:image" content="<?= htmlspecialchars($og_image) ?>">
-  <meta property="og:locale" content="hi_IN">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:locale" content="<?= htmlspecialchars($ogLocale) ?>">
   <meta property="og:site_name" content="Shrutam">
 
   <!-- Twitter Card -->
@@ -45,20 +60,14 @@ $schema = $schema ?? '';
 
   <!-- Styles -->
   <link rel="stylesheet" href="/assets/css/main.css">
+  <link rel="stylesheet" href="/assets/css/mobile-consistency.css?v=1">
 
   <!-- Schema -->
   <?php if ($schema): ?>
   <script type="application/ld+json"><?= $schema ?></script>
   <?php endif; ?>
 
-  <!-- Google Analytics -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-R4NKQ8R15T"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-    gtag('config', 'G-R4NKQ8R15T');
-  </script>
+  <?php include __DIR__ . '/analytics.php'; ?>
 </head>
 <body>
   <a href="#main" class="skip-link">Skip to main content</a>

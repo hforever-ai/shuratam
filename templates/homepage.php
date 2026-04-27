@@ -5,6 +5,8 @@
  * Variables set by router: $lang, $htmlLang, $t, $allBoards, $availableLangs, $currentPath
  */
 
+require_once __DIR__ . '/../partials/_seo.php';
+
 // Load page-specific content
 $pagesFile = __DIR__ . "/../content/translations/pages-{$lang}.json";
 $p = file_exists($pagesFile) ? json_decode(file_get_contents($pagesFile), true) : [];
@@ -12,30 +14,41 @@ $p = file_exists($pagesFile) ? json_decode(file_get_contents($pagesFile), true) 
 $title       = htmlspecialchars(($p['hero']['h1_line1'] ?? '') . ' ' . ($p['hero']['h1_line2'] ?? '')) . ' | Shrutam SAAVI';
 $description = $p['hero']['saavi_intro'] ?? ($t['hero']['body'] ?? 'SAAVI is your AI teacher. In your language. 24/7.');
 $canonical   = "https://shrutam.ai/{$lang}/";
-$schema      = json_encode([
-  "@context" => "https://schema.org",
-  "@graph"   => [
+
+$schema = shrutam_schema_graph([
     [
-      "@type"     => "Organization",
-      "name"      => "Aarambha",
-      "legalName" => "Aarambha",
-      "url"       => "https://aarambhax.ai",
-      "brand"     => ["@type" => "Brand", "name" => "Shrutam", "url" => "https://shrutam.ai"],
+        '@type'         => 'EducationalOrganization',
+        '@id'           => 'https://shrutam.ai/#org',
+        'name'          => 'Shrutam',
+        'alternateName' => 'शृतम्',
+        'legalName'     => 'Aarambha',
+        'url'           => 'https://shrutam.ai/',
+        'logo'          => 'https://shrutam.ai/assets/images/logo/shrutam-logo.png',
+        'description'   => "India's audio-first AI learning platform for Class 5-10. Free Spoken English in Hindi/Marathi/Telugu. AI teacher SAAVI with blind-accessible mode.",
+        'areaServed'    => ['@type' => 'Country', 'name' => 'India'],
+        'sameAs'        => ['https://twitter.com/shrutam_ai', 'https://aarambhax.ai/'],
+        'parentOrganization' => [
+            '@type' => 'Organization',
+            'name'  => 'Aarambha',
+            'url'   => 'https://aarambhax.ai/',
+        ],
     ],
     [
-      "@type"       => "Product",
-      "name"        => "Shrutam",
-      "description" => "Audio-first AI learning platform for Hindi-medium students, Class 6-10",
-      "brand"       => ["@type" => "Brand", "name" => "Aarambha"],
-      "offers"      => [
-        "@type"         => "Offer",
-        "price"         => "199",
-        "priceCurrency" => "INR",
-        "availability"  => "https://schema.org/PreOrder",
-      ],
+        '@type'       => 'Product',
+        'name'        => 'Shrutam',
+        'description' => 'Audio-first AI learning platform for Hindi-medium students, Class 5-10',
+        'brand'       => shrutam_org_ref(),
+        'offers'      => shrutam_pro_offer(),
     ],
-  ],
-], JSON_UNESCAPED_SLASHES | JSON_UNESCAPED_UNICODE);
+    [
+        '@type'      => 'WebSite',
+        '@id'        => "https://shrutam.ai/{$lang}/#website",
+        'url'        => $canonical,
+        'name'       => 'Shrutam',
+        'inLanguage' => $lang,
+        'publisher'  => shrutam_org_ref(),
+    ],
+]);
 
 include __DIR__ . '/../partials/head.php';
 include __DIR__ . '/../partials/nav.php';
@@ -119,7 +132,7 @@ include __DIR__ . '/../partials/nav.php';
         <div class="flex flex-col gap-0 w-full">
           <!-- SAAVI avatar -->
           <div class="chalkboard w-full" style="border-radius: var(--radius-lg) var(--radius-lg) 0 0; border-bottom: none;">
-            <img src="/assets/images/hero/saavi-teaching.png" alt="SAAVI didi teaching students" loading="lazy" class="w-full rounded-t-lg">
+            <img  width="1024"  height="1024" src="/assets/images/hero/saavi-teaching.png" alt="SAAVI didi teaching students" loading="lazy" class="w-full rounded-t-lg">
           </div>
 
           <!-- Chat demo -->
